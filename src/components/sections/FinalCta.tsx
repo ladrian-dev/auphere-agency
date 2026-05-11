@@ -15,8 +15,8 @@ export function FinalCta() {
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <Eyebrow variant="dark">{t('eyebrow')}</Eyebrow>
           <h2 className="font-display font-bold text-[clamp(2.25rem,5vw,4rem)] leading-[1.05] tracking-[-0.03em] text-[var(--color-bone)] mt-6">
-            {t('headline')}{' '}
-            <span className="font-accent italic text-[var(--color-caribbean-green)]">
+            {t('headline')}
+            <span className="block font-accent italic text-[var(--color-caribbean-green)] mt-2">
               {t('headlineAccent')}
             </span>
           </h2>

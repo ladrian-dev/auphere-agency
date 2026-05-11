@@ -19,19 +19,19 @@ export function Footer() {
             </p>
             <div className="flex gap-3 mt-6">
               <SocialLink
-                href="https://linkedin.com/company/somos-auphere"
+                href="https://www.linkedin.com/company/auphere/"
                 label="LinkedIn"
               >
                 <LinkedInIcon />
               </SocialLink>
               <SocialLink
-                href="https://instagram.com/somos.auphere"
+                href="https://www.instagram.com/somos.auphere"
                 label="Instagram"
               >
                 <InstagramIcon />
               </SocialLink>
               <SocialLink
-                href="https://tiktok.com/@somos.auphere"
+                href="https://www.tiktok.com/@auphere"
                 label="TikTok"
               >
                 <TikTokIcon />
