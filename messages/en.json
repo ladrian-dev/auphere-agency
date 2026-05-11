@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "title": "Bespoke AI agents · built, run and improved for you",
+    "description": "We design, deploy and operate custom AI agents that handle the repetitive work — booking, follow-up, support, ops — so your team can stop doing it."
+  },
+  "nav": {
+    "howItWorks": "How it works",
+    "cases": "Cases",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "cta": "Book"
+  },
+  "hero": {
+    "eyebrow": "BESPOKE AI AGENTS · BUILT, RUN AND IMPROVED FOR YOU",
+    "headlineLine1": "Cut 30 hours of",
+    "headlineLine2": "repetitive work. Every week.",
+    "subheadline": "Bespoke AI agents that handle booking, follow-up, support and ops — designed, deployed and run by us, so your team doesn't have to.",
+    "ctaPrimary": "Book a 30-min diagnostic",
+    "ctaSecondary": "See Spa Sereno's case →",
+    "ctaMicrocopy": "You'll talk to an engineer, not a salesperson. We leave with a go/no-go.",
+    "chat": {
+      "businessName": "Spa Sereno",
+      "subtitle": "Auphere Agent · WhatsApp",
+      "online": "online",
+      "m1": "Hi, do you have an opening this afternoon for a deep-tissue massage?",
+      "m2": "Hi! I have a slot at 5:30pm with Carla or 7:00pm with Marina. Which works for you?",
+      "m3": "5:30pm sounds perfect",
+      "m4": "Booked ✓ I'll send a confirmation and a link to reschedule if anything changes. See you this afternoon.",
+      "trustNumber": "1,500+",
+      "trustLabel": "conversations handled monthly for Spa Sereno"
+    }
+  },
+  "howWeWork": {
+    "marker": {
+      "label": "How we work",
+      "meta": "3 stages · honest"
+    },
+    "headline": "Diagnose · Configure · Live.",
+    "intro": "We start by deciding together whether automation actually solves your problem. If it doesn't, we tell you. If it does, you walk out with a written plan.",
+    "steps": {
+      "diagnose": {
+        "timing": "30 min",
+        "title": "Diagnose",
+        "body": "A 30-minute call with your team to look at the operation honestly and decide together whether automation actually solves your problem. If it doesn't, we tell you straight. If it does, you walk out with a written plan: which workflows, which integrations, what it'll cost, what to expect."
+      },
+      "configure": {
+        "timing": "2 to 6 weeks",
+        "title": "Configure",
+        "body": "We build your agent end-to-end: integrations with the tools you already use, training on your real data, personalization to your voice and rules. You review every sprint. Nothing goes live until you sign off."
+      },
+      "goLive": {
+        "timing": "Continuous · 24/7",
+        "title": "Go Live",
+        "body": "Your agent goes into production. We monitor it 24/7, measure performance against the metrics we agreed in the diagnostic, and improve it monthly. You see the dashboard. Your team focuses on the work that needs a human."
+      }
+    }
+  },
+  "pullQuote": {
+    "text": "We build, run and improve the AI agent your team needs — without you having to hire anyone new.",
+    "attribution": "Auphere"
+  },
+  "cases": {
+    "marker": {
+      "label": "Cases",
+      "meta": "Real metrics · real names"
+    },
+    "headline": "Working agents. Measurable wins.",
+    "intro": "We don't ship case studies until the metric is real and the client signs off.",
+    "portraitPlaceholder": "Hand-drawn portrait — coming soon",
+    "moreSoon": "More cases coming soon — Q3 2026",
+    "items": {
+      "spaSereno": {
+        "industry": "Beauty & Wellness",
+        "year": "2026",
+        "tier": "Configuration + Go Live · Pro",
+        "title": "Cut no-shows by 38% with automated WhatsApp follow-up.",
+        "quote": "We used to lose 2 sessions a day with no warning. Now the agent reschedules on its own. My team can focus on what they do best — taking care of people.",
+        "author": {
+          "name": "[Owner name — to confirm]",
+          "role": "Owner, Spa Sereno"
+        },
+        "metric": {
+          "value": "38%",
+          "label": "fewer no-shows in 2 months"
+        }
+      }
+    }
+  },
+  "whyAuphere": {
+    "marker": {
+      "label": "Why Auphere",
+      "meta": "4 promises · zero hype"
+    },
+    "headline": "Not a SaaS template. Not a dead-on-arrival project.",
+    "intro": "An AI ops partner that designs the agent around your operation, runs it on our infrastructure, and improves it every month.",
+    "promises": {
+      "bespoke": {
+        "title": "Built around your operation, not the other way around.",
+        "body": "Not a SaaS template you have to fight with. We configure, train and personalize the agent for your real workflows, your tools, your tone of voice, your rules."
+      },
+      "managed": {
+        "title": "We run it. You don't need to hire an AI engineer.",
+        "body": "The agent lives on our infrastructure, monitored 24/7 by the same team that built it. You get a dashboard, an SLA and a monthly improvement cycle — not a codebase to babysit."
+      },
+      "diagnostic": {
+        "title": "Honest diagnostic before any commitment.",
+        "body": "No cost. We decide together whether automation actually solves your problem. If it doesn't, we tell you. Most agencies wouldn't say that out loud."
+      },
+      "oneTeam": {
+        "title": "One team end-to-end. One point of contact.",
+        "body": "The person who scopes the diagnostic is the same one who configures the agent and the same one who calls you when something needs attention in production. No subcontracting. No handoffs."
+      }
+    }
+  },
+  "pricing": {
+    "marker": {
+      "label": "Pricing",
+      "meta": "USD · taxes not incl."
+    },
+    "headline": "Honest numbers. No surprise invoices.",
+    "intro": "A flat diagnostic, a one-time setup, and a monthly fee that scales with the conversations and integrations your agent actually uses.",
+    "toggle": {
+      "ariaLabel": "Billing cadence",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "savings": "Save 10%"
+    },
+    "setup": "Setup (one-time)",
+    "monthly": "Monthly",
+    "perMonth": "mo",
+    "recommended": "★ Recommended",
+    "cta": "Book diagnostic",
+    "microcopy": "Every plan starts with a free 30-min diagnostic call. Payment: 50% on signing · 50% on kickoff. Cancel any month after the first 3.",
+    "tiers": {
+      "essential": {
+        "name": "Essential",
+        "tagline": "For lean teams ready to automate one channel.",
+        "features": {
+          "volume": "Up to 1,500 conversations / month",
+          "channels": "1 channel (WhatsApp or web)",
+          "integrations": "Basic (1–2 tools)",
+          "workflows": "Conversational",
+          "cycle": "Monthly improvement cycle"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "tagline": "Most teams land here. Multiple channels, real workflows.",
+        "features": {
+          "volume": "Up to 4,000 conversations / month",
+          "channels": "Up to 3 channels",
+          "integrations": "Standard (up to 5)",
+          "workflows": "Conversational + actions",
+          "cycle": "Bi-weekly improvement cycle"
+        }
+      },
+      "business": {
+        "name": "Business 360",
+        "tagline": "High volume, complex ops, guaranteed response window.",
+        "features": {
+          "volume": "Up to 10,000 conversations / month",
+          "channels": "Up to 3 channels + 4h SLA",
+          "integrations": "Advanced (no cap in agreed scope)",
+          "workflows": "Conversational + actions + reactivation",
+          "cycle": "Weekly improvement cycle"
+        }
+      }
+    },
+    "features": {
+      "volume": { "label": "Volume" },
+      "channels": { "label": "Channels" },
+      "integrations": { "label": "Integrations" },
+      "workflows": { "label": "Workflows" },
+      "cycle": { "label": "Improvement" }
+    }
+  },
+  "qualifier": {
+    "marker": {
+      "label": "Is this for you?",
+      "meta": "Honest filter · 4 + 2"
+    },
+    "headline": "Built for teams that already feel the bottleneck.",
+    "yesTitle": "This is for you if…",
+    "yes": {
+      "yes1": "Your team is losing real hours every week to repetitive customer interactions — booking, follow-up, status questions, post-sale support.",
+      "yes2": "You're past the \"can AI help?\" stage and ready for an agent that runs in production with measurable results in weeks, not quarters.",
+      "yes3": "You've tried no-code or off-the-shelf chatbots (Zapier, Make, Intercom flows) and they broke the moment volume or edge cases showed up.",
+      "yes4": "You'd rather get a working agent we operate for you than another tool, codebase or contractor to manage."
+    },
+    "noTitle": "This is NOT for you if…",
+    "no": {
+      "no1": "You're shopping purely on price. Our floor is $850 setup + $120/mo — there are cheaper templates if that's the priority.",
+      "no2": "You need someone live tomorrow. Our diagnostic slots open 2–3 weeks out and we don't cut corners on scoping."
+    }
+  },
+  "faq": {
+    "marker": {
+      "label": "FAQ",
+      "meta": "Plain answers · no marketing"
+    },
+    "headline": "Questions everyone asks.",
+    "intro": "If yours isn't here, drop it in the diagnostic call.",
+    "items": {
+      "cost": {
+        "q": "How much does it cost?",
+        "a": "Every engagement starts with a free 30-minute diagnostic call. If we both agree to move forward, you pick a tier: Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, where most teams land) or Business 360 ($2,990 + $390/mo). USD, taxes excluded. 50% on signing, 50% on kickoff. 10% off when billed annually."
+      },
+      "timing": {
+        "q": "How long until the agent is live?",
+        "a": "Most agents go live 3 to 4 weeks after kickoff — up to 6 weeks if integrations are heavy or your data needs cleanup first. The diagnostic gives you the exact timeline (and the milestones) in writing before you commit to setup."
+      },
+      "codeOwnership": {
+        "q": "Do we own the code?",
+        "a": "No — and that's by design. Your agent runs on infrastructure we monitor and improve 24/7. You own everything that actually matters: your data, conversation history, integrations, business rules, and the agent's logic and tone. You can export all of it at any time. What you don't get is a codebase to maintain, hire for, or babysit. That's our job."
+      },
+      "leaving": {
+        "q": "What if we want to leave?",
+        "a": "Cancel any month after the first 3, with 30 days' notice. We export your data, conversation history and configuration in standard formats. If you're moving to another vendor, we help with the handoff. No clawbacks, no contractual lock-in."
+      },
+      "compliance": {
+        "q": "Is our data safe? GDPR / CCPA?",
+        "a": "Yes. EU-hosted infrastructure for European clients (GDPR-compliant by default). DPA signed before any real data touches our systems. Your data is never used to train models we sell to other clients. SOC 2 Type 1 in progress, target Q3 2026."
+      },
+      "channels": {
+        "q": "Which channels and tools do you integrate with?",
+        "a": "Out of the box: WhatsApp Business, Instagram DM, web chat, email, Google Calendar, Outlook, Stripe, Cal.com, HubSpot, common PMS / CRM / booking systems, and most no-code platforms (Make, n8n, Zapier). Anything with a documented API is fair game — the diagnostic confirms the exact list before you sign."
+      },
+      "engineer": {
+        "q": "Do we need an in-house engineer to manage this?",
+        "a": "No. That's the entire point. You get a working agent and a dashboard. Operations, monitoring, model upgrades and the monthly improvement cycle are on us. Your team only does the work that genuinely needs a human."
+      },
+      "metrics": {
+        "q": "What do you actually measure — and how do we know it's working?",
+        "a": "We agree on 2 to 3 outcome metrics during the diagnostic — usually something like response time, resolution rate, no-shows recovered, or cost per handled conversation. From day one you see them live in your dashboard, alongside conversation logs you can audit. If a metric drifts, the next improvement cycle prioritizes fixing it."
+      },
+      "nda": {
+        "q": "Do you sign NDAs?",
+        "a": "Yes — but not for the first call. Our standard MSA + DPA cover most clients. We sign custom NDAs for regulated industries (healthcare, financial services, legal) on request, no friction."
+      },
+      "different": {
+        "q": "How do we know you're different from another AI agency?",
+        "a": "Two ways to test it. One: ask for a 15-minute reference call with a live client before you commit — we'll arrange it. Two: the diagnostic itself. An agency that wants to sell at any cost doesn't tell clients to walk away — we do, when it's the right call. Shipping something the wrong client won't use is worse for both sides."
+      },
+      "noNeed": {
+        "q": "What if the diagnostic concludes we don't need you?",
+        "a": "We tell you straight and you keep whatever notes and recommendations came out of the call to act on however you want — in-house, with another vendor, or shelved for later. We'd rather lose one deal than ship something that won't earn its keep. Long term, that's the only marketing that scales."
+      }
+    }
+  },
+  "finalCta": {
+    "eyebrow": "LET'S SEE IF WE FIT",
+    "headline": "30 minutes.",
+    "headlineAccent": "No cost. No deck.",
+    "subheadline": "You'll talk to an engineer, not a salesperson. We leave with a go/no-go — yours or ours.",
+    "microcopy": "Don't see a slot that works? Email contacto@auphere.com and we'll find one."
+  },
+  "footer": {
+    "tagline": "Bespoke AI agents — built, run and improved for the operations that keep your business moving.",
+    "product": {
+      "title": "Product",
+      "how": "How it works",
+      "pricing": "Pricing",
+      "cases": "Cases",
+      "faq": "FAQ"
+    },
+    "company": {
+      "title": "Company",
+      "contact": "Talk to us",
+      "about": "About"
+    },
+    "legal": {
+      "title": "Legal & Trust",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "trust": "Trust & Security"
+    }
+  }
+}

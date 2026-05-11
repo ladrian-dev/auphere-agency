@@ -1,0 +1,176 @@
+/*
+ * Auphere — Design Tokens
+ * Source of truth: ~/Work/Auphere/brand/brand-system.md
+ * Validated WCAG 2.2 AA on critical fg/bg pairs.
+ */
+
+@theme {
+  /* ─────────────────────────────────────────────
+   * Color · primarios (escala verde Auphere)
+   * ───────────────────────────────────────────── */
+  --color-rich-black:        #0D0F01;  /* --ink — texto darkest */
+  --color-dark-green:        #032221;  /* superficies inmersivas alt */
+  --color-bangladesh-green:  #03624C;  /* --primary-deep · brand dark */
+  --color-mountain-meadow:   #2CC295;  /* --primary-mid · hover */
+  --color-caribbean-green:   #00DF81;  /* --primary · CTAs, links */
+  --color-anti-flash:        #F1F7F6;  /* --bone — bg claro principal */
+
+  /* secundarios (escala verde extendida) */
+  --color-pine:              #0B453A;
+  --color-basil:             #116958;
+  --color-forest:            #095544;
+  --color-frog:              #17876D;
+  --color-mint:              #2FA98C;
+  --color-pistachio:         #AACBC4;
+  --color-sand:              #E4ECEA;
+
+  /* ─────────────────────────────────────────────
+   * Color · roles semánticos (alias humanos)
+   * ───────────────────────────────────────────── */
+  --color-ink:               var(--color-rich-black);
+  --color-bone:              var(--color-anti-flash);
+  --color-primary:           var(--color-caribbean-green);
+  --color-primary-mid:       var(--color-mountain-meadow);
+  --color-primary-deep:      var(--color-bangladesh-green);
+  --color-accent-bright:     var(--color-caribbean-green);
+  --color-accent-mid:        var(--color-mint);
+  --color-accent-soft:       var(--color-pistachio);
+
+  /* Attio-inspired refined gray scale (jerarquía por color, no por size) */
+  --color-ink-dim:           color-mix(in srgb, var(--color-ink) 30%, var(--color-bone));
+  --color-ink-muted:         color-mix(in srgb, var(--color-ink) 55%, var(--color-bone));
+  --color-ink-subtle:        color-mix(in srgb, var(--color-ink) 12%, var(--color-bone));
+  --color-ink-faint:         color-mix(in srgb, var(--color-ink) 6%, var(--color-bone));
+
+  /* Estados */
+  --color-status-positive:   var(--color-caribbean-green);
+  --color-status-warning:    #B5874A;
+  --color-status-danger:     #A8443A;
+  --color-status-info:       var(--color-mint);
+
+  /* ─────────────────────────────────────────────
+   * Tipografía
+   * ───────────────────────────────────────────── */
+  --font-display: var(--font-display), system-ui, -apple-system, sans-serif;
+  --font-body:    var(--font-display), system-ui, -apple-system, sans-serif;
+  --font-accent:  var(--font-accent), Georgia, serif;
+  --font-mono:    var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+
+  /* Escala — tokens estáticos para uso directo */
+  --text-xs:    12px;
+  --text-sm:    14px;
+  --text-base:  16px;
+  --text-md:    18px;
+  --text-lg:    20px;
+  --text-xl:    24px;
+  --text-2xl:   32px;
+  --text-3xl:   44px;
+  --text-4xl:   60px;
+  --text-5xl:   84px;
+  --text-6xl:   120px;
+
+  /* Tracking */
+  --tracking-tightest: -0.04em;
+  --tracking-tighter:  -0.03em;
+  --tracking-tight:    -0.02em;
+  --tracking-normal:   0em;
+  --tracking-wide:     0.04em;
+  --tracking-eyebrow:  0.12em;
+
+  /* Leading */
+  --leading-tight:    1.05;
+  --leading-snug:     1.2;
+  --leading-normal:   1.5;
+  --leading-relaxed:  1.65;
+
+  /* ─────────────────────────────────────────────
+   * Spacing (4px base)
+   * ───────────────────────────────────────────── */
+  --spacing-1:  4px;
+  --spacing-2:  8px;
+  --spacing-3:  12px;
+  --spacing-4:  16px;
+  --spacing-5:  24px;
+  --spacing-6:  32px;
+  --spacing-7:  48px;
+  --spacing-8:  64px;
+  --spacing-9:  96px;
+  --spacing-10: 128px;
+  --spacing-11: 192px;
+
+  /* ─────────────────────────────────────────────
+   * Borders / Radii — sistema único 0·4·8·999
+   * ───────────────────────────────────────────── */
+  --radius-none: 0;
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;     /* solo cards grandes editoriales (Attio) */
+  --radius-xl:   24px;     /* mockups */
+  --radius-2xl:  32px;     /* hero card */
+  --radius-pill: 999px;
+
+  /* ─────────────────────────────────────────────
+   * Shadows (editoriales, casi inexistentes)
+   * ───────────────────────────────────────────── */
+  --shadow-1: 0 1px 2px rgb(10 15 14 / 0.04);
+  --shadow-2: 0 4px 16px rgb(10 15 14 / 0.06);
+  --shadow-3: 0 16px 48px rgb(10 15 14 / 0.10);
+  --shadow-glow: 0 0 0 4px color-mix(in srgb, var(--color-primary) 20%, transparent);
+
+  /* ─────────────────────────────────────────────
+   * Motion — easings y durations
+   * ───────────────────────────────────────────── */
+  --ease-out:    cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --dur-instant: 80ms;
+  --dur-fast:    200ms;
+  --dur-base:    400ms;
+  --dur-slow:    800ms;
+  --dur-reveal:  1200ms;
+
+  /* ─────────────────────────────────────────────
+   * Backgrounds editoriales (Attio-inspired)
+   * ───────────────────────────────────────────── */
+  --bg-dot-grid: radial-gradient(
+    circle at 1px 1px,
+    color-mix(in srgb, var(--color-ink) 7%, transparent) 1px,
+    transparent 0
+  );
+  --bg-hatching: repeating-linear-gradient(
+    -45deg,
+    transparent 0,
+    transparent 8px,
+    color-mix(in srgb, var(--color-ink) 4%, transparent) 8px,
+    color-mix(in srgb, var(--color-ink) 4%, transparent) 9px
+  );
+}
+
+/* ─────────────────────────────────────────────
+ * Custom utilities
+ * ───────────────────────────────────────────── */
+
+@utility dot-grid {
+  background-image: var(--bg-dot-grid);
+  background-size: 20px 20px;
+  background-position: 0 0;
+}
+
+@utility hatching {
+  background-image: var(--bg-hatching);
+}
+
+@utility surface-dark {
+  background-color: var(--color-bangladesh-green);
+  color: var(--color-bone);
+}
+
+@utility surface-darker {
+  background-color: var(--color-ink);
+  color: var(--color-bone);
+}
+
+@utility surface-light {
+  background-color: var(--color-bone);
+  color: var(--color-ink);
+}

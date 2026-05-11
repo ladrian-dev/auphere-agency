@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "title": "Agentes de IA a medida · los construimos, operamos y mejoramos",
+    "description": "Diseñamos, desplegamos y operamos agentes de IA a medida que se encargan del trabajo repetitivo —reservas, seguimiento, soporte, operaciones— para que tu equipo deje de hacerlo."
+  },
+  "nav": {
+    "howItWorks": "Cómo trabajamos",
+    "cases": "Casos",
+    "pricing": "Precios",
+    "faq": "FAQ",
+    "cta": "Reservar"
+  },
+  "hero": {
+    "eyebrow": "AGENTES DE IA A MEDIDA · LOS CONSTRUIMOS, OPERAMOS Y MEJORAMOS",
+    "headlineLine1": "Recupera 30 horas",
+    "headlineLine2": "de trabajo repetitivo. Cada semana.",
+    "subheadline": "Agentes de IA a medida para reservas, seguimiento, soporte y operaciones — diseñados, desplegados y operados por nosotros, para que tu equipo no tenga que hacerlo.",
+    "ctaPrimary": "Reservar diagnóstico (30 min)",
+    "ctaSecondary": "Ver caso de Spa Sereno →",
+    "ctaMicrocopy": "Hablas con un engineer, no con un comercial. Salimos con un go/no-go.",
+    "chat": {
+      "businessName": "Spa Sereno",
+      "subtitle": "Agente Auphere · WhatsApp",
+      "online": "activo",
+      "m1": "Hola, ¿tenéis hueco esta tarde para masaje descontracturante?",
+      "m2": "¡Hola! Tengo hueco a las 17:30 con Carla o a las 19:00 con Marina. ¿Cuál prefieres?",
+      "m3": "17:30 perfecto",
+      "m4": "Reservado ✓ Te paso confirmación y enlace para reprogramar si surge algo. Hasta esta tarde.",
+      "trustNumber": "1.500+",
+      "trustLabel": "conversaciones automatizadas cada mes para Spa Sereno"
+    }
+  },
+  "howWeWork": {
+    "marker": {
+      "label": "Cómo trabajamos",
+      "meta": "3 etapas · honestas"
+    },
+    "headline": "Diagnóstico · Configuración · Go Live.",
+    "intro": "Empezamos decidiendo juntos si automatizar realmente resuelve tu problema. Si no, te lo decimos. Si sí, sales con un plan escrito.",
+    "steps": {
+      "diagnose": {
+        "timing": "30 min",
+        "title": "Diagnóstico",
+        "body": "Una llamada de 30 minutos con tu equipo para mirar tu operación con honestidad y decidir juntos si automatizar realmente resuelve tu problema. Si no es así, te lo decimos sin rodeos. Si sí, sales con un plan escrito: qué flujos, qué integraciones, cuánto cuesta, qué esperar."
+      },
+      "configure": {
+        "timing": "2 a 6 semanas",
+        "title": "Configuración",
+        "body": "Construimos tu agente end-to-end: integraciones con las herramientas que ya usas, entrenamiento con tus datos reales, personalización a tu voz y a tus reglas de negocio. Revisas cada sprint. Nada va a producción sin tu visto bueno."
+      },
+      "goLive": {
+        "timing": "Continuo · 24/7",
+        "title": "Go Live",
+        "body": "Tu agente entra en producción. Lo monitoreamos 24/7, medimos su rendimiento contra las métricas pactadas en el diagnóstico y lo mejoramos mes a mes. Tú ves el dashboard. Tu equipo se enfoca en el trabajo que requiere un humano."
+      }
+    }
+  },
+  "pullQuote": {
+    "text": "Construimos, operamos y mejoramos el agente de IA que tu equipo necesita — sin que tengas que contratar a nadie nuevo.",
+    "attribution": "Auphere"
+  },
+  "cases": {
+    "marker": {
+      "label": "Casos",
+      "meta": "Métricas reales · nombres reales"
+    },
+    "headline": "Agentes en producción. Resultados medibles.",
+    "intro": "No publicamos casos hasta que la métrica es real y el cliente lo aprueba.",
+    "portraitPlaceholder": "Retrato hand-drawn — próximamente",
+    "moreSoon": "Más casos próximamente — Q3 2026",
+    "items": {
+      "spaSereno": {
+        "industry": "Belleza & Bienestar",
+        "year": "2026",
+        "tier": "Configuración + Go Live · Pro",
+        "title": "Reduce no-shows un 38% con seguimiento automático en WhatsApp.",
+        "quote": "Antes perdíamos 2 sesiones al día sin que nadie avisara. Ahora el agente reagenda solo. Mi equipo puede ocuparse de lo que sabe hacer mejor: cuidar a la gente.",
+        "author": {
+          "name": "[Nombre del propietario — pendiente confirmar]",
+          "role": "Owner, Spa Sereno"
+        },
+        "metric": {
+          "value": "38%",
+          "label": "menos no-shows en 2 meses"
+        }
+      }
+    }
+  },
+  "whyAuphere": {
+    "marker": {
+      "label": "Por qué Auphere",
+      "meta": "4 promesas · cero hype"
+    },
+    "headline": "No es un SaaS-template. No es un proyecto que se entrega y muere.",
+    "intro": "Un partner de IA-ops que diseña el agente alrededor de tu operación, lo opera en nuestra infraestructura y lo mejora cada mes.",
+    "promises": {
+      "bespoke": {
+        "title": "Construido alrededor de tu operación, no al revés.",
+        "body": "No es un SaaS-template que tienes que pelear. Configuramos, entrenamos y personalizamos el agente para tus flujos reales, tus herramientas, tu tono de voz y tus reglas de negocio."
+      },
+      "managed": {
+        "title": "Lo operamos nosotros. No necesitas contratar a un ingeniero de IA.",
+        "body": "El agente vive en nuestra infraestructura, monitoreado 24/7 por el mismo equipo que lo construyó. Recibes un dashboard, un SLA y un ciclo mensual de mejora — no un código que cuidar."
+      },
+      "diagnostic": {
+        "title": "Diagnóstico honesto antes de cualquier compromiso.",
+        "body": "Sin coste. Decidimos juntos si automatizar realmente resuelve tu problema. Si concluimos que no, te lo decimos. Pocas agencias dicen esto en voz alta."
+      },
+      "oneTeam": {
+        "title": "Un solo equipo end-to-end. Un único punto de contacto.",
+        "body": "La persona que hace el diagnóstico es la misma que configura el agente y la misma que te llama cuando algo necesita atención en producción. Sin subcontratistas. Sin handoffs."
+      }
+    }
+  },
+  "pricing": {
+    "marker": {
+      "label": "Precios",
+      "meta": "USD · imp. no incluidos"
+    },
+    "headline": "Números honestos. Cero facturas sorpresa.",
+    "intro": "Un diagnóstico cerrado, una configuración única y una mensualidad que escala con las conversaciones e integraciones que tu agente realmente usa.",
+    "toggle": {
+      "ariaLabel": "Periodicidad",
+      "monthly": "Mensual",
+      "yearly": "Anual",
+      "savings": "Ahorra 10%"
+    },
+    "setup": "Instalación (única)",
+    "monthly": "Mensual",
+    "perMonth": "mes",
+    "recommended": "★ Recomendado",
+    "cta": "Reservar diagnóstico",
+    "microcopy": "Cada plan empieza con un diagnóstico gratuito de 30 min. Pago: 50% al firmar · 50% al arrancar. Cancelable cualquier mes después de los 3 primeros.",
+    "tiers": {
+      "essential": {
+        "name": "Esencial",
+        "tagline": "Para equipos compactos listos para automatizar un canal.",
+        "features": {
+          "volume": "Hasta 1.500 conversaciones / mes",
+          "channels": "1 canal (WhatsApp o web)",
+          "integrations": "Básicas (1–2 herramientas)",
+          "workflows": "Conversacional",
+          "cycle": "Mejora mensual"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "tagline": "La mayoría de equipos aterriza aquí. Multicanal y workflows reales.",
+        "features": {
+          "volume": "Hasta 4.000 conversaciones / mes",
+          "channels": "Hasta 3 canales",
+          "integrations": "Estándar (hasta 5)",
+          "workflows": "Conversacional + acciones",
+          "cycle": "Mejora quincenal"
+        }
+      },
+      "business": {
+        "name": "Business 360",
+        "tagline": "Alto volumen, operación compleja, ventana de respuesta garantizada.",
+        "features": {
+          "volume": "Hasta 10.000 conversaciones / mes",
+          "channels": "Hasta 3 canales + SLA 4h",
+          "integrations": "Avanzadas (sin tope en scope acordado)",
+          "workflows": "Conversacional + acciones + reactivación",
+          "cycle": "Mejora semanal"
+        }
+      }
+    },
+    "features": {
+      "volume": { "label": "Volumen" },
+      "channels": { "label": "Canales" },
+      "integrations": { "label": "Integraciones" },
+      "workflows": { "label": "Workflows" },
+      "cycle": { "label": "Mejora" }
+    }
+  },
+  "qualifier": {
+    "marker": {
+      "label": "¿Es para ti?",
+      "meta": "Filtro honesto · 4 + 2"
+    },
+    "headline": "Pensado para equipos que ya sienten el cuello de botella.",
+    "yesTitle": "Esto es para ti si…",
+    "yes": {
+      "yes1": "Tu equipo pierde horas reales cada semana en interacciones repetitivas con clientes — reservas, seguimiento, preguntas de estado, soporte post-venta.",
+      "yes2": "Ya superaste la fase de \"¿puede ayudar la IA?\" y quieres un agente en producción con resultados medibles en semanas, no en trimestres.",
+      "yes3": "Probaste con no-code o chatbots de catálogo (Zapier, Make, flujos de Intercom) y se rompieron en cuanto subió el volumen o aparecieron casos borde.",
+      "yes4": "Prefieres un agente que funcione y operemos por ti antes que otra herramienta, código o proveedor que gestionar."
+    },
+    "noTitle": "Esto NO es para ti si…",
+    "no": {
+      "no1": "Buscas únicamente el precio más bajo. Nuestro suelo es $850 de setup + $120/mes — hay plantillas más baratas si esa es la prioridad.",
+      "no2": "Necesitas a alguien activo mañana. Nuestros slots de diagnóstico abren con 2–3 semanas de antelación y no recortamos en el scoping."
+    }
+  },
+  "faq": {
+    "marker": {
+      "label": "FAQ",
+      "meta": "Respuestas planas · sin marketing"
+    },
+    "headline": "Preguntas que todo el mundo hace.",
+    "intro": "Si la tuya no está aquí, llévala a la llamada de diagnóstico.",
+    "items": {
+      "cost": {
+        "q": "¿Cuánto cuesta?",
+        "a": "Cada proyecto empieza con una llamada de diagnóstico gratuita de 30 minutos. Si los dos decidimos seguir, eliges un tier: Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, donde aterriza la mayoría) o Business 360 ($2.990 + $390/mes). USD, impuestos no incluidos. Pago 50% al firmar y 50% al arrancar. 10% de descuento si contratas anual."
+      },
+      "timing": {
+        "q": "¿Cuánto tiempo hasta que el agente esté operando?",
+        "a": "La mayoría de los agentes entran en producción en 3 a 4 semanas tras el arranque — hasta 6 semanas si hay muchas integraciones o tus datos necesitan limpieza previa. El diagnóstico te entrega el cronograma exacto y los hitos por escrito antes de que firmes el setup."
+      },
+      "codeOwnership": {
+        "q": "¿El código es nuestro?",
+        "a": "No — y es deliberado. Tu agente vive en infraestructura que monitoreamos y mejoramos 24/7. Es tuyo todo lo que de verdad importa: tus datos, tu historial de conversaciones, tus integraciones, tus reglas de negocio y la lógica y personalidad del agente. Puedes exportar todo cuando quieras. Lo que no recibes es un repositorio que mantener, contratar para o cuidar. Eso es trabajo nuestro."
+      },
+      "leaving": {
+        "q": "¿Qué pasa si nos queremos ir?",
+        "a": "Cancelable cualquier mes después de los 3 primeros, con 30 días de preaviso. Exportamos tus datos, historial de conversaciones y configuración en formatos estándar. Si te mueves a otro proveedor, ayudamos con el handoff. Sin clawbacks ni lock-in contractual."
+      },
+      "compliance": {
+        "q": "¿Nuestros datos están seguros? ¿GDPR / CCPA?",
+        "a": "Sí. Infraestructura EU-hosted para clientes europeos (GDPR-compliant por defecto). DPA firmado antes de que cualquier dato real toque nuestros sistemas. Tus datos nunca se usan para entrenar modelos que vendemos a otros clientes. SOC 2 Type 1 en curso, target Q3 2026."
+      },
+      "channels": {
+        "q": "¿Con qué canales y herramientas integráis?",
+        "a": "De fábrica: WhatsApp Business, Instagram DM, web chat, email, Google Calendar, Outlook, Stripe, Cal.com, HubSpot, PMS / CRM / sistemas de reservas comunes y la mayoría de plataformas no-code (Make, n8n, Zapier). Cualquier herramienta con API documentada es candidata — el diagnóstico confirma la lista exacta antes de firmar."
+      },
+      "engineer": {
+        "q": "¿Necesitamos un ingeniero interno para gestionarlo?",
+        "a": "No. Ese es exactamente el punto. Recibes un agente que funciona y un dashboard. Operación, monitoreo, upgrades de modelos y el ciclo mensual de mejora corren por nuestra cuenta. Tu equipo solo hace el trabajo que de verdad necesita un humano."
+      },
+      "metrics": {
+        "q": "¿Qué medís exactamente y cómo sabemos que está funcionando?",
+        "a": "Acordamos 2 o 3 métricas de resultado durante el diagnóstico — habitualmente tiempo de respuesta, tasa de resolución, no-shows recuperados o coste por conversación gestionada. Desde el día uno las ves en vivo en tu dashboard, junto a los logs de conversación que puedes auditar. Si una métrica se desvía, el siguiente ciclo de mejora prioriza arreglarla."
+      },
+      "nda": {
+        "q": "¿Firmáis NDAs?",
+        "a": "Sí — pero no para la primera llamada. Nuestro MSA + DPA estándar cubren la mayoría de clientes. Firmamos NDAs custom para industrias reguladas (salud, servicios financieros, legal) bajo solicitud, sin fricción."
+      },
+      "different": {
+        "q": "¿Cómo sabemos que sois distintos a otra \"AI agency\"?",
+        "a": "Dos formas de probarlo. Una: pide una llamada de referencia de 15 min con un cliente activo antes de comprometerte — la organizamos. Dos: el diagnóstico mismo. Una agencia que quiere vender a cualquier coste no le dice a un cliente que se vaya — nosotros sí, cuando es lo correcto. Entregar algo que el cliente equivocado no usará es peor para ambos."
+      },
+      "noNeed": {
+        "q": "¿Y si el diagnóstico concluye que no nos hacéis falta?",
+        "a": "Te lo decimos sin rodeos y te quedas con las notas y recomendaciones que salgan de la llamada para que las ejecutes como prefieras — internamente, con otro proveedor o aparcado para más adelante. Preferimos perder un deal a entregar algo que no se va a ganar el sueldo. A largo plazo es la única estrategia de marketing que escala."
+      }
+    }
+  },
+  "finalCta": {
+    "eyebrow": "VEAMOS SI ENCAJAMOS",
+    "headline": "30 minutos.",
+    "headlineAccent": "Sin coste. Sin deck.",
+    "subheadline": "Hablas con un engineer, no con un comercial. Salimos con un go/no-go — tuyo o nuestro.",
+    "microcopy": "¿No ves un slot que te encaje? Escríbenos a contacto@auphere.com y encontramos uno."
+  },
+  "footer": {
+    "tagline": "Agentes de IA a medida — construidos, operados y mejorados para las operaciones que mantienen tu negocio en marcha.",
+    "product": {
+      "title": "Producto",
+      "how": "Cómo trabajamos",
+      "pricing": "Precios",
+      "cases": "Casos",
+      "faq": "FAQ"
+    },
+    "company": {
+      "title": "Empresa",
+      "contact": "Hablemos",
+      "about": "Sobre nosotros"
+    },
+    "legal": {
+      "title": "Legal & Trust",
+      "privacy": "Privacidad",
+      "terms": "Términos",
+      "trust": "Trust & Seguridad"
+    }
+  }
+}
