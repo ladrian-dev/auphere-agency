@@ -40,14 +40,14 @@ export function Footer() {
           </div>
 
           <FooterColumn title={t('product.title')} className="md:col-span-2">
-            <FooterLink href="#how">{t('product.how')}</FooterLink>
-            <FooterLink href="#pricing">{t('product.pricing')}</FooterLink>
-            {/* <FooterLink href="#cases">{t('product.cases')}</FooterLink> — re-enable with Cases section */}
-            <FooterLink href="#faq">{t('product.faq')}</FooterLink>
+            <FooterLink href={`/${locale}#how`}>{t('product.how')}</FooterLink>
+            <FooterLink href={`/${locale}#pricing`}>{t('product.pricing')}</FooterLink>
+            {/* <FooterLink href={`/${locale}#cases`}>{t('product.cases')}</FooterLink> — re-enable with Cases section */}
+            <FooterLink href={`/${locale}#faq`}>{t('product.faq')}</FooterLink>
           </FooterColumn>
 
           <FooterColumn title={t('company.title')} className="md:col-span-2">
-            <FooterLink href="#book">{t('company.contact')}</FooterLink>
+            <FooterLink href={`/${locale}#book`}>{t('company.contact')}</FooterLink>
             <FooterLink href={`/${locale}/about`}>{t('company.about')}</FooterLink>
           </FooterColumn>
 

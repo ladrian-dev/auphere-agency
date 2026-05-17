@@ -72,6 +72,10 @@ export function Nav() {
 
   const otherLocale = locale === 'en' ? 'es' : 'en';
 
+  // Anchor links must point to the landing root from any inner page (about, privacy, ...).
+  // On the landing itself, `/{locale}#xxx` still resolves to a same-page hash navigation.
+  const landingHash = (hash: string) => `/${locale}${hash}`;
+
   // Slower, more graceful spring — less abrupt morph than a snappy stiff one.
   // The pill takes ~600-700ms to settle, matching the more luxurious feel of
   // the andresmatos.framer.ai reference.
@@ -164,16 +168,16 @@ export function Nav() {
                 aria-label="Sections"
                 className="hidden md:flex items-center gap-6 text-[14px] text-[var(--color-ink-muted)] px-4 whitespace-nowrap"
               >
-                <a href="#how" className="hover:text-[var(--color-ink)] transition-colors">
+                <a href={landingHash('#how')} className="hover:text-[var(--color-ink)] transition-colors">
                   {t('howItWorks')}
                 </a>
-                {/* <a href="#cases" className="hover:text-[var(--color-ink)] transition-colors">
+                {/* <a href={landingHash('#cases')} className="hover:text-[var(--color-ink)] transition-colors">
                   {t('cases')}
                 </a> — re-enable when Cases section is published */}
-                <a href="#pricing" className="hover:text-[var(--color-ink)] transition-colors">
+                <a href={landingHash('#pricing')} className="hover:text-[var(--color-ink)] transition-colors">
                   {t('pricing')}
                 </a>
-                <a href="#faq" className="hover:text-[var(--color-ink)] transition-colors">
+                <a href={landingHash('#faq')} className="hover:text-[var(--color-ink)] transition-colors">
                   {t('faq')}
                 </a>
               </motion.nav>
@@ -209,7 +213,7 @@ export function Nav() {
 
           {/* CTA — always visible, sits as a nested pill (Andres Matos pattern). */}
           <a
-            href="#book"
+            href={landingHash('#book')}
             className={cn(
               'inline-flex items-center justify-center h-[40px] px-[18px]',
               'rounded-full font-medium text-[13px] tracking-tight whitespace-nowrap',
