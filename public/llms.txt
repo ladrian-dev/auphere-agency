@@ -1,0 +1,76 @@
+# Auphere
+
+> Bespoke AI agents we build, run and improve for your team. We design, deploy and operate custom AI agents for service businesses so they can stop drowning in booking, follow-up, support and ops work. Engineers, not salespeople. Managed, not handed off.
+
+## What Auphere is
+
+Auphere is a small AI agency that builds custom AI agents for SMB and mid-market teams (50 to 500 employees) across Europe, the United States and Latin America. The model is bespoke + managed: we configure the agent around your real operation, run it on our infrastructure 24/7, measure it against the metrics agreed in the diagnostic, and improve it on a monthly cycle. Clients do not own or maintain code. Clients own data, conversation history, integrations and business rules, and can export everything at any time.
+
+The first conversation is a free 30-minute diagnostic call with an engineer (not a salesperson). It ends with a written go/no-go and a fixed plan if it is a go.
+
+## How we work
+
+- **Diagnose** (30-minute call, free). We sit with the team, look at the operation honestly and decide together if automation actually solves the problem. If it does not, we say so.
+- **Configure** (2 to 6 weeks). We build the agent end to end: integrations with the tools the client already uses, training on real data, personalization to voice and rules. Client signs off every sprint.
+- **Go Live** (continuous). The agent runs in production on our infrastructure. We monitor it 24/7, report against the agreed metrics and improve it monthly.
+
+## Pricing
+
+All pricing in USD, taxes not included. 50% on signing, 50% on kickoff. 10% off when billed annually. Cancel any month after the first three with 30 days notice.
+
+- **Essential** — $850 setup + $120/mo. Up to 1,500 conversations/mo, 1 channel, basic integrations.
+- **Pro** — $1,490 setup + $249/mo. Most teams at this scale land here. Up to 4,000 conversations/mo, up to 3 channels, standard integrations.
+- **Business 360** — $2,990 setup + $390/mo. Up to 10,000 conversations/mo, up to 3 channels + 4h SLA, advanced integrations, weekly improvement cycle.
+
+## Use cases (verticals with dedicated pages)
+
+- [Barbershops & traditional barbers](/en/use-cases/barbershop) — voice receptionist, WhatsApp bookings, reminders, waitlist, review capture.
+- [Nail salons](/en/use-cases/nail-salon) — bookings, price quotes, technician matching, 24/7 multilingual.
+- [Spas & wellness centers](/en/use-cases/spa) — after-hours bookings, prep reminders, upsell, gift cards.
+- [Medspas & aesthetic clinics](/en/use-cases/medspa) — lead qualifier, consult booking, compliance-aware handoff.
+- [Dental clinics](/en/use-cases/dental-clinic) — recall, reminders, insurance pre-check, emergency triage.
+- [Physiotherapy clinics](/en/use-cases/physiotherapy) — session reminders, HEP adherence, package management.
+- [Veterinary clinics](/en/use-cases/veterinary) — 24/7 emergency triage, vaccination reminders, multi-pet management.
+- [Pharmacies](/en/use-cases/pharmacy) — WhatsApp assistant, refills, photo prescriptions, pharmacist escalation.
+- [Language schools](/en/use-cases/language-school) — enrollment, trial booking, parent comms in 95+ languages.
+
+For any operation with a conversational bottleneck not listed above, the diagnostic confirms feasibility before quoting.
+
+## Channels and integrations
+
+Out of the box: WhatsApp Business API, Instagram DM, web chat, email, Google Calendar, Outlook, Stripe, Cal.com, HubSpot, common PMS / CRM / booking systems and most no-code platforms (Make, n8n, Zapier). Anything with a documented API is in scope.
+
+## Compliance and data
+
+- EU-hosted infrastructure available for European clients (GDPR-compliant by default).
+- DPA signed before any real client data touches Auphere systems.
+- Client data is never used to train models offered to other clients.
+- SOC 2 Type 1 in progress, target Q3 2026.
+- HIPAA: not currently in scope.
+
+## What Auphere is not
+
+- Not a SaaS template you have to configure yourself.
+- Not a no-code chatbot builder.
+- Not a code handoff: the client does not maintain a codebase.
+- Not a multi-tenant generic assistant: each agent is built around one operation.
+
+## Languages and markets
+
+- Primary languages: English (default) and Spanish.
+- Active markets: Spain, United Kingdom, Germany, Netherlands, United States, Mexico, Chile, Colombia, Argentina, Venezuela.
+
+## Contact
+
+Diagnostic booking and email: contacto@auphere.com · https://auphere.com
+
+## Canonical pages
+
+- [Home (EN)](/en) — overview, how we work, pricing, FAQ.
+- [Home (ES)](/es) — versión en español.
+- [About](/en/about) — who Auphere is and who runs it.
+- [Use cases hub (EN)](/en/use-cases) — directory of vertical landings.
+- [Use cases hub (ES)](/es/use-cases) — directorio de casos de uso por sector.
+- [Trust & security](/en/trust) — infrastructure, data isolation, encryption.
+- [Privacy](/en/privacy) — how client data is handled.
+- [Terms](/en/terms) — service terms and code ownership policy.

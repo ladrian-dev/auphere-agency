@@ -16,7 +16,7 @@ interface Props {
  */
 export function PageHeader({ eyebrow, meta, title, intro }: Props) {
   return (
-    <Container width="wide" className="pb-12 md:pb-16">
+    <Container width="wide" className="pt-32 md:pt-40 pb-12 md:pb-16">
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}

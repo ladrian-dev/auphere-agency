@@ -171,9 +171,9 @@ export function Nav() {
                 <a href={landingHash('#how')} className="hover:text-[var(--color-ink)] transition-colors">
                   {t('howItWorks')}
                 </a>
-                {/* <a href={landingHash('#cases')} className="hover:text-[var(--color-ink)] transition-colors">
-                  {t('cases')}
-                </a> — re-enable when Cases section is published */}
+                <Link href="/use-cases" className="hover:text-[var(--color-ink)] transition-colors">
+                  {t('useCases')}
+                </Link>
                 <a href={landingHash('#pricing')} className="hover:text-[var(--color-ink)] transition-colors">
                   {t('pricing')}
                 </a>

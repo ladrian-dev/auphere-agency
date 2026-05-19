@@ -5,14 +5,21 @@ import { useTranslations } from 'next-intl';
 import { Container } from '@/components/primitives/Container';
 import { SectionMarker } from '@/components/primitives/SectionMarker';
 import { cn } from '@/lib/utils/cn';
-import type { FaqItemData } from './faq-utils';
+import type { VerticalSlug } from '@/lib/use-cases/verticals';
+import type { VerticalFaqItem } from './verticalFaqUtils';
 
-export function Faq({ items }: { items: FaqItemData[] }) {
-  const t = useTranslations('faq');
+interface Props {
+  vertical: VerticalSlug;
+  items: VerticalFaqItem[];
+  number: string;
+}
+
+export function VerticalFaq({ vertical, items, number }: Props) {
+  const t = useTranslations(`useCases.${vertical}.faq`);
 
   return (
-    <section id="faq" className="py-24 md:py-32">
-      <SectionMarker number="05" label={t('marker.label')} meta={t('marker.meta')} />
+    <section id="vertical-faq" className="py-24 md:py-32 bg-[var(--color-bone)]">
+      <SectionMarker number={number} label={t('marker.label')} meta={t('marker.meta')} />
 
       <Container width="default">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20">
@@ -20,9 +27,6 @@ export function Faq({ items }: { items: FaqItemData[] }) {
             <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.03em]">
               {t('headline')}
             </h2>
-            <p className="text-[var(--color-ink-muted)] mt-5 leading-relaxed">
-              {t('intro')}
-            </p>
           </div>
 
           <div className="flex flex-col">
@@ -50,29 +54,29 @@ function FaqAccordionItem({
 
   return (
     <div className="border-b border-[var(--color-ink-subtle)] first:border-t">
-      <h3 className="m-0">
-        <button
-          type="button"
-          className="w-full flex items-start justify-between gap-6 py-6 text-left group font-display font-semibold text-lg md:text-xl tracking-[-0.01em] text-[var(--color-ink)] hover:text-[var(--color-bangladesh-green)] transition-colors"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
+      <button
+        type="button"
+        className="w-full flex items-start justify-between gap-6 py-6 text-left group"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+      >
+        <span className="font-display font-semibold text-lg md:text-xl tracking-[-0.01em] text-[var(--color-ink)] group-hover:text-[var(--color-bangladesh-green)] transition-colors">
+          {q}
+        </span>
+        <motion.span
+          aria-hidden
+          animate={{ rotate: open ? 45 : 0 }}
+          transition={reducedMotion ? { duration: 0 } : { duration: 0.3, ease: [0.32, 0.72, 0, 1] }}
+          className={cn(
+            'shrink-0 w-[28px] h-[28px] rounded-full border border-[var(--color-ink-subtle)] flex items-center justify-center text-[var(--color-ink-muted)] mt-0.5',
+            'group-hover:border-[var(--color-ink-dim)] transition-colors',
+          )}
         >
-          <span>{q}</span>
-          <motion.span
-            aria-hidden
-            animate={{ rotate: open ? 45 : 0 }}
-            transition={reducedMotion ? { duration: 0 } : { duration: 0.3, ease: [0.32, 0.72, 0, 1] }}
-            className={cn(
-              'shrink-0 w-7 h-7 rounded-full border border-[var(--color-ink-subtle)] flex items-center justify-center text-[var(--color-ink-muted)] mt-0.5',
-              'group-hover:border-[var(--color-ink-dim)] transition-colors',
-            )}
-          >
-            <svg viewBox="0 0 16 16" className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-              <path d="M8 3v10M3 8h10" />
-            </svg>
-          </motion.span>
-        </button>
-      </h3>
+          <svg viewBox="0 0 16 16" className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            <path d="M8 3v10M3 8h10" />
+          </svg>
+        </motion.span>
+      </button>
       <AnimatePresence initial={false}>
         {open && (
           <motion.div
@@ -93,4 +97,3 @@ function FaqAccordionItem({
     </div>
   );
 }
-

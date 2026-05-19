@@ -41,6 +41,7 @@ export function Footer() {
 
           <FooterColumn title={t('product.title')} className="md:col-span-2">
             <FooterLink href={`/${locale}#how`}>{t('product.how')}</FooterLink>
+            <FooterLink href={`/${locale}/use-cases`}>{t('product.useCases')}</FooterLink>
             <FooterLink href={`/${locale}#pricing`}>{t('product.pricing')}</FooterLink>
             {/* <FooterLink href={`/${locale}#cases`}>{t('product.cases')}</FooterLink> — re-enable with Cases section */}
             <FooterLink href={`/${locale}#faq`}>{t('product.faq')}</FooterLink>

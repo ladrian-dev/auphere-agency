@@ -23,12 +23,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!hasLocale(routing.locales, locale)) return {};
   const t = await getTranslations({ locale, namespace: 'trust.meta' });
   const url = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://auphere.com';
+  const pageUrl = `${url}/${locale}/trust`;
   return {
     title: t('title'),
     description: t('description'),
     alternates: {
-      canonical: `${url}/${locale}/trust`,
+      canonical: pageUrl,
       languages: Object.fromEntries(routing.locales.map((l) => [l, `${url}/${l}/trust`])),
+    },
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      url: pageUrl,
+      siteName: 'Auphere',
+      locale: locale === 'es' ? 'es_ES' : 'en_US',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('title'),
+      description: t('description'),
     },
   };
 }

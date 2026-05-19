@@ -11,6 +11,7 @@ import { WhyAuphere } from '@/components/sections/WhyAuphere';
 import { Pricing } from '@/components/sections/Pricing';
 import { Qualifier } from '@/components/sections/Qualifier';
 import { Faq } from '@/components/sections/Faq';
+import { FaqJsonLd } from '@/components/sections/FaqJsonLd';
 import { getFaqItems } from '@/components/sections/faq-utils';
 import { FinalCta } from '@/components/sections/FinalCta';
 import { Footer } from '@/components/sections/Footer';
@@ -41,6 +42,7 @@ export default async function HomePage({ params }: Props) {
         <WhyAuphere />
         <Pricing />
         <Qualifier />
+        <FaqJsonLd items={faqItems} />
         <Faq items={faqItems} />
         <FinalCta />
       </main>

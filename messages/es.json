@@ -1,10 +1,14 @@
 {
   "meta": {
-    "title": "Agentes de IA a medida · los construimos, operamos y mejoramos",
-    "description": "Diseñamos, desplegamos y operamos agentes de IA a medida que se encargan del trabajo repetitivo —reservas, seguimiento, soporte, operaciones— para que tu equipo deje de hacerlo."
+    "title": "Auphere · Agentes de IA que construimos, operamos y mejoramos por ti",
+    "description": "Construimos, operamos y mejoramos agentes de IA a medida para negocios de servicio: reservas, seguimiento, soporte y operaciones. En producción en 3 a 4 semanas. Reserva un diagnóstico gratuito de 30 min."
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido"
   },
   "nav": {
     "howItWorks": "Cómo trabajamos",
+    "useCases": "Casos de uso",
     "cases": "Casos",
     "pricing": "Precios",
     "faq": "FAQ",
@@ -14,20 +18,18 @@
     "eyebrow": "AGENTES DE IA A MEDIDA · LOS CONSTRUIMOS, OPERAMOS Y MEJORAMOS",
     "headlineLine1": "Recupera 30 horas",
     "headlineLine2": "de trabajo repetitivo. Cada semana.",
-    "subheadline": "Agentes de IA a medida para reservas, seguimiento, soporte y operaciones — diseñados, desplegados y operados por nosotros, para que tu equipo no tenga que hacerlo.",
+    "subheadline": "Agentes de IA a medida para reservas, seguimiento, soporte y operaciones. Los construimos, operamos y mejoramos nosotros, para que tu equipo no tenga que hacerlo.",
     "ctaPrimary": "Reservar diagnóstico (30 min)",
-    "ctaSecondary": "Ver caso de Spa Sereno →",
+    "ctaSecondary": "Ver cómo funciona →",
     "ctaMicrocopy": "Hablas con un engineer, no con un comercial. Salimos con un go/no-go.",
     "chat": {
-      "businessName": "Spa Sereno",
+      "businessName": "Tu negocio",
       "subtitle": "Agente Auphere · WhatsApp",
       "online": "activo",
       "m1": "Hola, ¿tenéis hueco esta tarde para masaje descontracturante?",
       "m2": "¡Hola! Tengo hueco a las 17:30 con Carla o a las 19:00 con Marina. ¿Cuál prefieres?",
       "m3": "17:30 perfecto",
-      "m4": "Reservado ✓ Te paso confirmación y enlace para reprogramar si surge algo. Hasta esta tarde.",
-      "trustNumber": "1.500+",
-      "trustLabel": "conversaciones automatizadas cada mes para Spa Sereno"
+      "m4": "Reservado ✓ Te paso confirmación y enlace para reprogramar si surge algo. Hasta esta tarde."
     }
   },
   "howWeWork": {
@@ -56,35 +58,18 @@
     }
   },
   "pullQuote": {
-    "text": "Construimos, operamos y mejoramos el agente de IA que tu equipo necesita — sin que tengas que contratar a nadie nuevo.",
+    "text": "Construimos, operamos y mejoramos el agente de IA que tu equipo necesita, sin que tengas que contratar a nadie nuevo.",
     "attribution": "Auphere"
   },
   "cases": {
     "marker": {
       "label": "Casos",
-      "meta": "Métricas reales · nombres reales"
+      "meta": "Próximamente"
     },
     "headline": "Agentes en producción. Resultados medibles.",
-    "intro": "No publicamos casos hasta que la métrica es real y el cliente lo aprueba.",
-    "portraitPlaceholder": "Retrato hand-drawn — próximamente",
-    "moreSoon": "Más casos próximamente — Q3 2026",
-    "items": {
-      "spaSereno": {
-        "industry": "Belleza & Bienestar",
-        "year": "2026",
-        "tier": "Configuración + Go Live · Pro",
-        "title": "Reduce no-shows un 38% con seguimiento automático en WhatsApp.",
-        "quote": "Antes perdíamos 2 sesiones al día sin que nadie avisara. Ahora el agente reagenda solo. Mi equipo puede ocuparse de lo que sabe hacer mejor: cuidar a la gente.",
-        "author": {
-          "name": "[Nombre del propietario — pendiente confirmar]",
-          "role": "Owner, Spa Sereno"
-        },
-        "metric": {
-          "value": "38%",
-          "label": "menos no-shows en 2 meses"
-        }
-      }
-    }
+    "intro": "No publicamos casos hasta que la métrica es real y el cliente lo aprueba. Los nuevos casos aparecerán aquí cuando eso ocurra.",
+    "portraitPlaceholder": "Retrato hand-drawn (próximamente)",
+    "moreSoon": "Primeros casos próximamente"
   },
   "whyAuphere": {
     "marker": {
@@ -100,7 +85,7 @@
       },
       "managed": {
         "title": "Lo operamos nosotros. No necesitas contratar a un ingeniero de IA.",
-        "body": "El agente vive en nuestra infraestructura, monitoreado 24/7 por el mismo equipo que lo construyó. Recibes un dashboard, un SLA y un ciclo mensual de mejora — no un código que cuidar."
+        "body": "El agente vive en nuestra infraestructura, monitoreado 24/7 por el mismo equipo que lo construyó. Recibes un dashboard, un SLA y un ciclo mensual de mejora. No un repo del que ocuparte."
       },
       "diagnostic": {
         "title": "Diagnóstico honesto antes de cualquier compromiso.",
@@ -130,7 +115,7 @@
     "perMonth": "mes",
     "recommended": "★ Recomendado",
     "cta": "Reservar diagnóstico",
-    "microcopy": "Cada plan empieza con un diagnóstico gratuito de 30 min. Pago: 50% al firmar · 50% al arrancar. Cancelable cualquier mes después de los 3 primeros.",
+    "microcopy": "Cada plan empieza con un diagnóstico gratuito de 30 min. Pago: 50% al firmar · 50% al arrancar. Cancela cualquier mes después de los 3 primeros.",
     "tiers": {
       "essential": {
         "name": "Esencial",
@@ -167,11 +152,21 @@
       }
     },
     "features": {
-      "volume": { "label": "Volumen" },
-      "channels": { "label": "Canales" },
-      "integrations": { "label": "Integraciones" },
-      "workflows": { "label": "Workflows" },
-      "cycle": { "label": "Mejora" }
+      "volume": {
+        "label": "Volumen"
+      },
+      "channels": {
+        "label": "Canales"
+      },
+      "integrations": {
+        "label": "Integraciones"
+      },
+      "workflows": {
+        "label": "Workflows"
+      },
+      "cycle": {
+        "label": "Mejora"
+      }
     }
   },
   "qualifier": {
@@ -182,15 +177,15 @@
     "headline": "Pensado para equipos que ya sienten el cuello de botella.",
     "yesTitle": "Esto es para ti si…",
     "yes": {
-      "yes1": "Tu equipo pierde horas reales cada semana en interacciones repetitivas con clientes — reservas, seguimiento, preguntas de estado, soporte post-venta.",
+      "yes1": "Tu equipo pierde horas reales cada semana en interacciones repetitivas con clientes: reservas, seguimiento, preguntas de estado y soporte post-venta.",
       "yes2": "Ya superaste la fase de \"¿puede ayudar la IA?\" y quieres un agente en producción con resultados medibles en semanas, no en trimestres.",
       "yes3": "Probaste con no-code o chatbots de catálogo (Zapier, Make, flujos de Intercom) y se rompieron en cuanto subió el volumen o aparecieron casos borde.",
       "yes4": "Prefieres un agente que funcione y operemos por ti antes que otra herramienta, código o proveedor que gestionar."
     },
     "noTitle": "Esto NO es para ti si…",
     "no": {
-      "no1": "Buscas únicamente el precio más bajo. Nuestro suelo es $850 de setup + $120/mes — hay plantillas más baratas si esa es la prioridad.",
-      "no2": "Necesitas a alguien activo mañana. Nuestros slots de diagnóstico abren con 2–3 semanas de antelación y no recortamos en el scoping."
+      "no1": "Buscas únicamente el precio más bajo. Nuestro suelo es $850 de setup + $120/mes; hay plantillas más baratas si esa es la prioridad.",
+      "no2": "Necesitas a alguien activo mañana. Nuestros slots de diagnóstico abren con 2–3 semanas de antelación y no recortamos en el alcance."
     }
   },
   "faq": {
@@ -203,19 +198,19 @@
     "items": {
       "cost": {
         "q": "¿Cuánto cuesta?",
-        "a": "Cada proyecto empieza con una llamada de diagnóstico gratuita de 30 minutos. Si los dos decidimos seguir, eliges un tier: Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, donde aterriza la mayoría) o Business 360 ($2.990 + $390/mes). USD, impuestos no incluidos. Pago 50% al firmar y 50% al arrancar. 10% de descuento si contratas anual."
+        "a": "Cada proyecto empieza con una llamada de diagnóstico gratuita de 30 minutos. Si los dos decidimos seguir, eliges un tier: Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, el tier donde encaja la mayoría de equipos de este tamaño) o Business 360 ($2.990 + $390/mes). USD, impuestos no incluidos. Pago 50% al firmar y 50% al arrancar. 10% de descuento si contratas anual."
       },
       "timing": {
         "q": "¿Cuánto tiempo hasta que el agente esté operando?",
-        "a": "La mayoría de los agentes entran en producción en 3 a 4 semanas tras el arranque — hasta 6 semanas si hay muchas integraciones o tus datos necesitan limpieza previa. El diagnóstico te entrega el cronograma exacto y los hitos por escrito antes de que firmes el setup."
+        "a": "La mayoría de los agentes entran en producción en 3 a 4 semanas tras el arranque. Hasta 6 semanas si hay muchas integraciones o tus datos necesitan limpieza previa. El diagnóstico te entrega el cronograma exacto y los hitos por escrito antes de que firmes el setup."
       },
       "codeOwnership": {
         "q": "¿El código es nuestro?",
-        "a": "No — y es deliberado. Tu agente vive en infraestructura que monitoreamos y mejoramos 24/7. Es tuyo todo lo que de verdad importa: tus datos, tu historial de conversaciones, tus integraciones, tus reglas de negocio y la lógica y personalidad del agente. Puedes exportar todo cuando quieras. Lo que no recibes es un repositorio que mantener, contratar para o cuidar. Eso es trabajo nuestro."
+        "a": "No, y es deliberado. Tu agente vive en infraestructura que monitoreamos y mejoramos 24/7. Es tuyo todo lo que de verdad importa: tus datos, tu historial de conversaciones, tus integraciones, tus reglas de negocio y la lógica y personalidad del agente. Puedes exportar todo cuando quieras. Lo que no recibes es un repositorio que mantener, contratar para o cuidar. Ese trabajo corre por nuestra cuenta."
       },
       "leaving": {
         "q": "¿Qué pasa si nos queremos ir?",
-        "a": "Cancelable cualquier mes después de los 3 primeros, con 30 días de preaviso. Exportamos tus datos, historial de conversaciones y configuración en formatos estándar. Si te mueves a otro proveedor, ayudamos con el handoff. Sin clawbacks ni lock-in contractual."
+        "a": "Cancela cualquier mes después de los 3 primeros, con 30 días de preaviso. Exportamos tus datos, historial de conversaciones y configuración en formatos estándar. Si te mueves a otro proveedor, ayudamos con el handoff. Sin clawbacks ni lock-in contractual."
       },
       "compliance": {
         "q": "¿Nuestros datos están seguros? ¿GDPR / CCPA?",
@@ -223,7 +218,7 @@
       },
       "channels": {
         "q": "¿Con qué canales y herramientas integráis?",
-        "a": "De fábrica: WhatsApp Business, Instagram DM, web chat, email, Google Calendar, Outlook, Stripe, Cal.com, HubSpot, PMS / CRM / sistemas de reservas comunes y la mayoría de plataformas no-code (Make, n8n, Zapier). Cualquier herramienta con API documentada es candidata — el diagnóstico confirma la lista exacta antes de firmar."
+        "a": "De fábrica: WhatsApp Business, Instagram DM, web chat, email, Google Calendar, Outlook, Stripe, Cal.com, HubSpot, PMS / CRM / sistemas de reservas comunes y la mayoría de plataformas no-code (Make, n8n, Zapier). Cualquier herramienta con API documentada es candidata; el diagnóstico confirma la lista exacta antes de firmar."
       },
       "engineer": {
         "q": "¿Necesitamos un ingeniero interno para gestionarlo?",
@@ -231,19 +226,19 @@
       },
       "metrics": {
         "q": "¿Qué medís exactamente y cómo sabemos que está funcionando?",
-        "a": "Acordamos 2 o 3 métricas de resultado durante el diagnóstico — habitualmente tiempo de respuesta, tasa de resolución, no-shows recuperados o coste por conversación gestionada. Desde el día uno las ves en vivo en tu dashboard, junto a los logs de conversación que puedes auditar. Si una métrica se desvía, el siguiente ciclo de mejora prioriza arreglarla."
+        "a": "Acordamos 2 o 3 métricas de resultado durante el diagnóstico: habitualmente tiempo de respuesta, tasa de resolución, no-shows recuperados o coste por conversación gestionada. Desde el día uno las ves en vivo en tu dashboard, junto a los logs de conversación que puedes auditar. Si una métrica se desvía, el siguiente ciclo de mejora prioriza arreglarla."
       },
       "nda": {
         "q": "¿Firmáis NDAs?",
-        "a": "Sí — pero no para la primera llamada. Nuestro MSA + DPA estándar cubren la mayoría de clientes. Firmamos NDAs custom para industrias reguladas (salud, servicios financieros, legal) bajo solicitud, sin fricción."
+        "a": "Sí, pero no para la primera llamada. Nuestro MSA + DPA estándar cubren la mayoría de clientes. Firmamos NDAs custom para industrias reguladas (salud, servicios financieros, legal) bajo solicitud, sin fricción."
       },
       "different": {
         "q": "¿Cómo sabemos que sois distintos a otra \"AI agency\"?",
-        "a": "Dos formas de probarlo. Una: pide una llamada de referencia de 15 min con un cliente activo antes de comprometerte — la organizamos. Dos: el diagnóstico mismo. Una agencia que quiere vender a cualquier coste no le dice a un cliente que se vaya — nosotros sí, cuando es lo correcto. Entregar algo que el cliente equivocado no usará es peor para ambos."
+        "a": "Dos formas de probarlo. Una: pide una llamada de referencia de 15 min con un cliente activo antes de comprometerte; la organizamos. Dos: el diagnóstico mismo. Una agencia que quiere vender a cualquier coste no le dice a un cliente que se vaya. Nosotros sí, cuando es lo correcto. Entregar algo que el cliente equivocado no usará es peor para ambos."
       },
       "noNeed": {
         "q": "¿Y si el diagnóstico concluye que no nos hacéis falta?",
-        "a": "Te lo decimos sin rodeos y te quedas con las notas y recomendaciones que salgan de la llamada para que las ejecutes como prefieras — internamente, con otro proveedor o aparcado para más adelante. Preferimos perder un deal a entregar algo que no se va a ganar el sueldo. A largo plazo es la única estrategia de marketing que escala."
+        "a": "Te lo decimos sin rodeos y te quedas con las notas y recomendaciones que salgan de la llamada para que las ejecutes como prefieras: internamente, con otro proveedor o aparcado para más adelante. Preferimos perder un deal a entregar algo que no se va a ganar el sueldo. A largo plazo es la única estrategia de marketing que escala."
       }
     }
   },
@@ -251,25 +246,1376 @@
     "eyebrow": "VEAMOS SI ENCAJAMOS",
     "headline": "30 minutos.",
     "headlineAccent": "Sin coste. Sin deck.",
-    "subheadline": "Hablas con un engineer, no con un comercial. Salimos con un go/no-go — tuyo o nuestro.",
+    "subheadline": "Hablas con un engineer, no con un comercial. Salimos con un go/no-go. Tuyo o nuestro.",
     "microcopy": "¿No ves un slot que te encaje? Escríbenos a contacto@auphere.com y encontramos uno."
+  },
+  "useCases": {
+    "common": {
+      "ctaPrimary": "Reservar diagnóstico (30 min)",
+      "ctaSecondary": "Cómo trabajamos →",
+      "ctaMicrocopy": "Hablas con un engineer, no con un comercial. Salimos con un go/no-go.",
+      "outcomesNote": "Rangos honestos basados en investigación del sector, no son garantías. El diagnóstico fija los objetivos contra los que mediremos."
+    },
+    "hub": {
+      "meta": {
+        "title": "Casos de uso · Agentes de IA pensados como trabaja tu sector",
+        "description": "Cómo Auphere construye agentes de IA a medida para la operación real de barberías, medspas, farmacias y otros negocios de servicio: recepcionistas de voz, cualificadores de leads, gestores de recurrencia y más."
+      },
+      "header": {
+        "eyebrow": "CASOS DE USO",
+        "meta": "A medida por sector · en producción en semanas",
+        "title": "Donde los agentes Auphere se ganan el sueldo.",
+        "intro": "No es un chatbot genérico replicado sobre cada sector. Cada vertical de abajo tiene sus dolores, sus integraciones y su definición de \"funcionando\". Elige la que se parece a la tuya y te enseñamos qué hace el agente exactamente el lunes por la mañana."
+      },
+      "list": {
+        "barbershop": {
+          "kicker": "Recepcionista · Reservas · Recordatorios",
+          "title": "Barberías y peluquerías",
+          "summary": "Tus barberos cortan. El agente contesta, reserva, recuerda y caza al no-show antes de que ocurra.",
+          "stat": "35%",
+          "statLabel": "llamadas perdidas hoy · dato del sector"
+        },
+        "nail-salon": {
+          "kicker": "Reservas · Precios · Asignación de técnica",
+          "title": "Estudios de uñas",
+          "summary": "Manos en uñas. El agente cotiza, asigna técnica y reserva: 24/7, en cualquier idioma.",
+          "stat": "79%",
+          "statLabel": "consultas recurrentes auto-resueltas"
+        },
+        "spa": {
+          "kicker": "Reservas · Preparación · Upsell",
+          "title": "Spas y centros de bienestar",
+          "summary": "Sala en calma, teléfono en silencio, agenda llena. Reservas y preparación en tu tono, incluso a las 23h.",
+          "stat": "46–50%",
+          "statLabel": "de reservas de spa son fuera de horario"
+        },
+        "medspa": {
+          "kicker": "Cualificador de leads · Reservas · Compliance",
+          "title": "Medspas y clínicas estéticas",
+          "summary": "Cada lead respondido en menos de un minuto. Cada consulta cualificada y preparada, sin que el front desk se ahogue.",
+          "stat": "<1 min",
+          "statLabel": "respuesta a leads · 24/7"
+        },
+        "dental-clinic": {
+          "kicker": "Recall · Recordatorios · Verificación de seguro",
+          "title": "Clínicas dentales",
+          "summary": "Cada paciente en mora contactado, cada sillón lleno. Recall, recordatorios y triage de urgencias: 24/7.",
+          "stat": "20–30%",
+          "statLabel": "de pacientes en mora · dato del sector"
+        },
+        "physiotherapy": {
+          "kicker": "Reservas · Adherencia · Recall",
+          "title": "Clínicas de fisioterapia",
+          "summary": "Los fisios tratan. El agente recuerda, reserva y mantiene los ejercicios en casa haciéndose.",
+          "stat": "<50%",
+          "statLabel": "adherencia a HEP sin recordatorios"
+        },
+        "veterinary": {
+          "kicker": "Triage de urgencias · Vacunas · Multi-mascota",
+          "title": "Clínicas veterinarias",
+          "summary": "Los vets tratan animales. El agente contesta a humanos: 24/7, con triage que solo llama al vet de guardia cuando importa.",
+          "stat": "24/7",
+          "statLabel": "triage de urgencias · sueño restaurado"
+        },
+        "pharmacy": {
+          "kicker": "WhatsApp · Recurrencia · Escalado",
+          "title": "Farmacias",
+          "summary": "Disponibilidad, recordatorios y recogidas resueltos en segundos. El farmacéutico entra solo cuando realmente importa.",
+          "stat": "60–70%",
+          "statLabel": "llamadas no clínicas · dato del sector"
+        },
+        "language-school": {
+          "kicker": "Matrícula · Pruebas · Padres",
+          "title": "Escuelas de idiomas",
+          "summary": "Cada lead respondido en su idioma. Clases de prueba reservadas, padres informados, alumnos recordados: 24/7.",
+          "stat": "95+",
+          "statLabel": "idiomas detectados automáticamente"
+        }
+      },
+      "bespoke": {
+        "title": "¿No ves tu sector?",
+        "intro": "El mismo motor se adapta a cualquier operación con cuello de botella conversacional: inmobiliarias, hoteles, brokers de seguros, laboratorios dentales, gimnasios, talleres. Cuéntanos el tuyo en el diagnóstico y lo mapeamos antes de cotizar.",
+        "ctaLabel": "Reservar diagnóstico →"
+      }
+    },
+    "barbershop": {
+      "meta": {
+        "title": "Recepcionista de IA para barberías · reservas, recordatorios y reseñas",
+        "description": "Un agente de IA que contesta el teléfono de tu barbería 24/7, gestiona reservas, recorta no-shows con recordatorios y pide la reseña de Google, sin que nadie se levante del sillón."
+      },
+      "hero": {
+        "eyebrow": "CASO DE USO · BARBERÍA",
+        "meta": "Voz + WhatsApp · operativo en 3–4 semanas",
+        "kicker": "Para barberos independientes y locales de 1 a 10 sillones",
+        "headline": "Tus barberos cortan. El agente contesta el teléfono.",
+        "subheadline": "Reservas, recordatorios y reseñas, sin que nadie deje su trabajo para atender una llamada. En producción en 3–4 semanas, operado 24/7 por nosotros.",
+        "chat": {
+          "businessName": "Barbería La Constancia",
+          "subtitle": "Agente Auphere · Voz + WhatsApp",
+          "online": "activo"
+        }
+      },
+      "pain": {
+        "marker": {
+          "label": "El dolor",
+          "meta": "Datos · sector 2026"
+        },
+        "headline": "El teléfono siempre suena en el peor momento.",
+        "intro": "No son nuestros, son los números que cualquier dueño de barbería ya siente. Nosotros solo dejamos de ignorarlos.",
+        "items": {
+          "missedCalls": {
+            "stat": "35%",
+            "title": "de las llamadas se pierden en horario de apertura",
+            "body": "Tu momento más rentable es mitad-corte. Es también cuando suena el teléfono, y se queda sonando."
+          },
+          "handsBusy": {
+            "stat": "75%",
+            "title": "cuelga antes de dos minutos en espera",
+            "body": "Cuando alguien se libera, el cliente ya reservó en otro sitio. La pérdida es silenciosa."
+          },
+          "noShows": {
+            "stat": "2 sesiones/día",
+            "title": "el coste medio de no-show para un local de 3 sillones",
+            "body": "Sin recordatorio, sin reagendado, sin oferta a la lista de espera: solo un sillón vacío y una hora perdida."
+          },
+          "reviews": {
+            "stat": "73%",
+            "title": "más fieles cuando reservar y contactar es fácil",
+            "body": "La fidelidad en 2026 no va de precio. Va de ser accesible cuando el cliente piensa en ti."
+          }
+        }
+      },
+      "roles": {
+        "marker": {
+          "label": "Qué hace el agente",
+          "meta": "Ajustado a tus sillones"
+        },
+        "headline": "El trabajo que aleja a tus barberos del sillón, fuera.",
+        "intro": "Elige en el diagnóstico qué tareas te están vaciando el día. Conectamos esas, dejamos el resto apagado, y solo ves la parte que te ayuda a cortar más.",
+        "items": {
+          "voiceReceptionist": {
+            "title": "Recepcionista de voz",
+            "body": "Contesta en menos de 3 segundos, reserva en Booksy/Treatwell/Fresha o en tu agenda, conoce tus precios, tus barberos y tus reglas. Suena humano, no a contestador."
+          },
+          "whatsappBookings": {
+            "title": "Reservas por WhatsApp",
+            "body": "Mismo cerebro, canal escrito. El cliente pregunta, el agente reserva. Confirmación con link de reagendado de un solo toque."
+          },
+          "reminders": {
+            "title": "Recordatorios y reagendado",
+            "body": "24h antes el agente avisa al cliente. Si toca reagendar, ofrece dos huecos que encajan con tu agenda y las preferencias del barbero."
+          },
+          "waitlist": {
+            "title": "Lista de espera inteligente",
+            "body": "Cancela alguien. El agente ofrece el hueco a la primera persona en lista en segundos. El sillón se queda lleno."
+          },
+          "reviewCapture": {
+            "title": "Captación de reseñas",
+            "body": "Dos horas después del corte, un mensaje suave con link directo a tu perfil de Google. Más reseñas, sin la incomodidad de pedirlas."
+          }
+        }
+      },
+      "conversation": {
+        "marker": {
+          "label": "Cómo suena",
+          "meta": "Ejemplo real · WhatsApp"
+        },
+        "headline": "Sábado por la mañana, fade reservado, tijeras sin interrumpir.",
+        "intro": "Cómo se resuelve una consulta típica de sábado. Los nombres son inventados; el flujo es exactamente el que verían tus clientes.",
+        "t1": "Hola, ¿tenéis algo para fade + barba el sábado por la mañana?",
+        "t2": "Sí, 9:30 con Luis o 11:00 con Marco. Ambos 35 min, 28€ fade + 12€ barba. ¿Cuál te encaja?",
+        "t3": "9:30 con Luis",
+        "t4": "Reservado ✓ Sábado 9:30 con Luis. Te recuerdo el viernes por la noche con un link de reagendado de un toque por si surge algo."
+      },
+      "integrations": {
+        "marker": {
+          "label": "Se conecta con lo que ya usas",
+          "meta": "Booksy · Treatwell · Fresha · Square · y más"
+        },
+        "headline": "No te pedimos cambiar de herramienta.",
+        "intro": "El agente habla con tu sistema de reservas, tu calendario y tu número de WhatsApp. Si una herramienta no está en la lista pero tiene API, entra en scope."
+      },
+      "outcomes": {
+        "marker": {
+          "label": "Qué esperar",
+          "meta": "Rangos · no garantías"
+        },
+        "headline": "Lo que suele moverse en 8 semanas con el agente.",
+        "intro": "Rangos honestos sacados de datos del sector de barberías y de los primeros locales con los que hemos trabajado. El diagnóstico fija el número exacto al que firmamos, medido contra tu agenda actual.",
+        "items": {
+          "noShowReduction": {
+            "value": "−25% a −40%",
+            "label": "no-shows en 8 semanas"
+          },
+          "callsRecovered": {
+            "value": "+15% a +30%",
+            "label": "reservas recuperadas de llamadas perdidas"
+          },
+          "reviewLift": {
+            "value": "3–5×",
+            "label": "más reseñas en Google al mes"
+          }
+        }
+      },
+      "faq": {
+        "marker": {
+          "label": "Lo que los barberos preguntan",
+          "meta": "Respuestas planas"
+        },
+        "headline": "Lo que los barberos preguntan antes de firmar.",
+        "items": {
+          "system": {
+            "q": "¿Funciona con Booksy / Treatwell / Fresha?",
+            "a": "Sí, de fábrica. Si usas otra cosa (Square, una hoja de Google, un sistema propio), integramos vía API o, cuando no es posible, con una sesión de navegador que reserva en el panel como lo haría un humano. El diagnóstico lo confirma antes de que pagues nada."
+          },
+          "voiceQuality": {
+            "q": "¿Mis clientes se darán cuenta de que es una IA?",
+            "a": "La mayoría no. Usamos voces neurales que manejan acentos, ruido de fondo y pausas naturales. Si un cliente pide explícitamente hablar con una persona, el agente escala por SMS o WhatsApp a tu barbero, sin bucles robóticos."
+          },
+          "walkIn": {
+            "q": "¿Qué pasa con los walk-ins?",
+            "a": "El agente no reemplaza el criterio de tu barbero. Los walk-ins siguen siendo walk-ins. El agente solo asegura que la siguiente llamada no se convierta en una reserva perdida mientras terminas el corte actual."
+          },
+          "multiLocation": {
+            "q": "Tenemos varios locales. ¿Un agente o varios?",
+            "a": "Un agente, una estrategia de teléfono, agendas y reglas separadas por local. El routing se acuerda en el diagnóstico: por número, idioma, historial del cliente, lo que encaje."
+          },
+          "pricing": {
+            "q": "¿Cuánto cuesta?",
+            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, el tier donde encaja la mayoría de locales de este tamaño) o Business 360 ($2.990 + $390/mes) según volumen y canales."
+          },
+          "launch": {
+            "q": "¿En cuánto tiempo contesta mi teléfono?",
+            "a": "3 a 4 semanas desde el kickoff para un local único. Más rápido si tu sistema de reservas tiene API amigable, más lento si hay limpieza de datos o varios locales."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "¿Quieres oírlo contestar tu teléfono?",
+        "subheadline": "Te montamos una demo con la voz, los precios y los servicios de tu local en menos de 48h tras el diagnóstico. Sin compromiso de desplegar.",
+        "ctaLabel": "Reservar el diagnóstico"
+      }
+    },
+    "nail-salon": {
+      "meta": {
+        "title": "Asistente de IA para estudios de uñas · llamadas 24/7, precios, técnica preferida",
+        "description": "Un agente de IA que contesta el teléfono y WhatsApp de tu estudio de uñas 24/7, gestiona reservas, da precios al instante, asigna a la técnica preferida y reduce los no-shows."
+      },
+      "hero": {
+        "eyebrow": "CASO DE USO · ESTUDIO DE UÑAS",
+        "meta": "Voz + WhatsApp · en producción en 3–4 semanas",
+        "kicker": "Para estudios independientes y cadenas pequeñas",
+        "headline": "Manos en uñas. El agente atiende las llamadas.",
+        "subheadline": "Reservas, precios, asignación de técnica y recordatorios respondidos en segundos, 24/7. Operado por nosotros, integrado con el sistema que ya usas.",
+        "chat": {
+          "businessName": "Tu estudio de uñas",
+          "subtitle": "Agente Auphere · WhatsApp",
+          "online": "activo"
+        }
+      },
+      "pain": {
+        "marker": { "label": "El dolor", "meta": "Datos · sector 2026" },
+        "headline": "El teléfono no para. Las manos de las técnicas tampoco arrancan.",
+        "intro": "Los estudios de uñas reciben más llamadas de reserva que cualquier vertical de belleza, y la tasa de respuesta es la más baja porque todo el mundo tiene las manos ocupadas. El coste aparece en silencio: en DMs sin contestar, en walk-ins que se fueron, en clientas habituales que probaron otro sitio a medianoche.",
+        "items": {
+          "walkInChaos": {
+            "stat": "33%",
+            "title": "más ocupación de agenda con reservas por IA",
+            "body": "Cuando disponibilidad, precios y matching se contestan en segundos, la agenda se llena más y los double-bookings desaparecen."
+          },
+          "priceQuestions": {
+            "stat": "79%",
+            "title": "de las consultas recurrentes las gestiona la IA en tiempo real",
+            "body": "Precios, servicios, parking, gel vs. acrílico, tiempos de secado: las preguntas que saturan el teléfono del estudio cada hora."
+          },
+          "noShows": {
+            "stat": "15–30%",
+            "title": "tasa de no-show del sector",
+            "body": "Sin recordatorios multi-touch y enlace fácil de reagendado, cada cancelación es una hora desperdiciada en la mesa."
+          },
+          "technicianMatch": {
+            "stat": "57%",
+            "title": "más fidelidad cuando las clientas pueden elegir técnica",
+            "body": "Matching por técnica es un palanca de retención, no un lujo. La mayoría de flujos de reserva la ignoran."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "Qué hace el agente", "meta": "Ajustado a tus mesas y técnicas" },
+        "headline": "El teléfono fuera de las manos. Las técnicas en su sitio.",
+        "intro": "Pides en el diagnóstico qué tareas te están vaciando la mesa: cotizaciones, walk-ins fuera de horario, asignación de técnica, rebooking. Encendemos solo esas, dejamos el resto apagado.",
+        "items": {
+          "voiceReceptionist": {
+            "title": "Recepcionista de voz",
+            "body": "Contesta en menos de 3 segundos, reserva en Booksy/Fresha/GlossGenius o en tu sistema. Conoce tus precios, tus add-ons y tus reglas de la casa."
+          },
+          "whatsappBookings": {
+            "title": "Reservas por WhatsApp",
+            "body": "Mismo cerebro, canal escrito. Las clientas preguntan, el agente cotiza y reserva. Confirmación con reagendado de un toque."
+          },
+          "priceFaq": {
+            "title": "Cotización instantánea",
+            "body": "Gel, acrílico, dip, francesa, builder, retirado: el agente cotiza cada variación con precisión, en el momento. Se acabó el \"déjame consultar y te llamo\"."
+          },
+          "technicianMatching": {
+            "title": "Asignación de técnica",
+            "body": "Las clientas habituales van a su técnica de siempre por defecto. Las nuevas se asignan por tipo de servicio, idioma y disponibilidad."
+          },
+          "loyaltyCapture": {
+            "title": "Fidelidad y rebooking",
+            "body": "Tras el servicio, el agente invita a reservar en 3 semanas (gel) o 2 (natural) con un toque. Mantiene la retención sin que nadie persiga."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "Cómo suena", "meta": "Ejemplo real · WhatsApp" },
+        "headline": "Builder gel cotizado, técnica habitual, hueco viernes tarde.",
+        "intro": "Una clienta tipica preguntando precio y hueco a las once de la noche, cuando el estudio lleva horas cerrado. Los nombres son inventados; las cifras y el flujo son los que verán tus clientas.",
+        "t1": "Hola, ¿cuánto cuesta un builder gel con francesa y tenéis algo el viernes después de las 17h?",
+        "t2": "Builder gel + francesa son 60€, ~75 min. Viernes tengo 17:15 con Sofía (tu técnica habitual) o 18:30 con Lena. ¿Cuál te encaja?",
+        "t3": "17:15 con Sofía",
+        "t4": "Reservado ✓ Viernes 17:15 con Sofía, builder gel + francesa. Te recuerdo el jueves con un toque por si necesitas reagendar."
+      },
+      "integrations": {
+        "marker": { "label": "Se conecta con lo que ya usas", "meta": "Booksy · Fresha · GlossGenius · Square · Vagaro" },
+        "headline": "No te pedimos cambiar de herramienta.",
+        "intro": "El agente habla con tu sistema de reservas, tu calendario y tu número de WhatsApp. Si una herramienta no está en la lista pero tiene API, entra en scope."
+      },
+      "outcomes": {
+        "marker": { "label": "Qué esperar", "meta": "Rangos · no garantías" },
+        "headline": "Lo que se mueve en la mesa en 8 semanas.",
+        "intro": "Rangos sacados de benchmarks de salones de uñas en Booksy y Fresha y de los primeros estudios con los que hemos trabajado. El diagnóstico fija el número exacto al que firmamos, medido contra la ocupación actual de tus mesas.",
+        "items": {
+          "inquiriesHandled": { "value": "70% a 80%", "label": "consultas recurrentes resueltas por el agente" },
+          "occupancyLift": { "value": "+20% a +35%", "label": "ocupación de agenda en 8 semanas" },
+          "noShowReduction": { "value": "−20% a −35%", "label": "no-shows con secuencia de recordatorios" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Lo que los dueños de estudio preguntan", "meta": "Respuestas planas" },
+        "headline": "Lo que las dueñas de nail-salon preguntan antes de firmar.",
+        "items": {
+          "technicianPref": {
+            "q": "¿Puede recordar la técnica preferida de cada clienta?",
+            "a": "Sí. En cuanto el agente ha reservado una vez para una clienta habitual, recuerda su técnica y la ofrece primero. Si tu sistema ya lo registra (Booksy/Fresha lo hacen), lo leemos de ahí; si no, el agente construye el perfil desde el historial de conversaciones."
+          },
+          "walkIn": {
+            "q": "¿Qué pasa con los walk-ins?",
+            "a": "Los walk-ins siguen siendo walk-ins. El agente solo asegura que la siguiente llamada no se convierta en una reserva perdida mientras terminas un set. Si el estudio está lleno, ofrece el siguiente hueco o añade a la clienta a una lista de espera."
+          },
+          "multiLanguage": {
+            "q": "Mis clientas hablan varios idiomas. ¿El agente también?",
+            "a": "Sí. El agente detecta el idioma en el que escribe o habla cada clienta y responde en el mismo. Español, inglés, vietnamita, portugués y mandarín por defecto; otros se añaden en el diagnóstico."
+          },
+          "integrations": {
+            "q": "¿Funciona con mi sistema de reservas?",
+            "a": "Booksy, Fresha, GlossGenius, Square, Vagaro: de fábrica. Cualquier otro con API documentada entra en scope. El diagnóstico confirma la lista exacta antes de firmar."
+          },
+          "pricing": {
+            "q": "¿Cuánto cuesta?",
+            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, el tier donde encaja la mayoría de estudios de este tamaño) o Business 360 ($2.990 + $390/mes) según volumen y canales."
+          },
+          "launch": {
+            "q": "¿En cuánto tiempo entra en producción?",
+            "a": "3 a 4 semanas desde el kickoff para un estudio único. Más rápido si tu sistema de reservas tiene API amigable, más lento si limpiamos datos o integramos varios locales."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "¿Quieres oírlo contestar tu teléfono?",
+        "subheadline": "Te montamos una demo con tus servicios, precios y técnicas en menos de 48h tras el diagnóstico. Sin compromiso de desplegar.",
+        "ctaLabel": "Reservar el diagnóstico"
+      }
+    },
+    "spa": {
+      "meta": {
+        "title": "Recepcionista de IA para spas y centros de bienestar · reservas 24/7, preparación, upsell",
+        "description": "Un agente de IA que contesta las llamadas y WhatsApp de tu spa 24/7, reserva tratamientos, envía instrucciones de preparación y sugiere add-ons y bonos, sin que el front desk se queme."
+      },
+      "hero": {
+        "eyebrow": "CASO DE USO · SPA & BIENESTAR",
+        "meta": "Voz + WhatsApp · en producción en 3–5 semanas",
+        "kicker": "Para day spas, centros de masaje y bienestar",
+        "headline": "Sala en calma. Teléfono en silencio. Agenda llena.",
+        "subheadline": "Reservas, preparación, add-ons y bonos gestionados en el tono de la sala. Operado por nosotros, 24/7, integrado con el sistema que ya usas.",
+        "chat": {
+          "businessName": "Tu spa",
+          "subtitle": "Agente Auphere · WhatsApp",
+          "online": "activo"
+        }
+      },
+      "pain": {
+        "marker": { "label": "El dolor", "meta": "Datos · sector 2026" },
+        "headline": "La sala queda en paz. El ingreso, menos.",
+        "intro": "Las clientas de spa reservan cuando se acuerdan, normalmente a las 22h. Tu front desk está cerrado; la llamada va al buzón; la reserva se va a un competidor. Las pérdidas son silenciosas y constantes.",
+        "items": {
+          "afterHoursBookings": {
+            "stat": "46–50%",
+            "title": "de las reservas de spa ocurren fuera de horario",
+            "body": "La mitad de tu demanda aparece cuando no hay nadie en recepción. Sin cobertura 24/7, la mitad de tu demanda también se pierde."
+          },
+          "noShowCost": {
+            "stat": "$20k/mes",
+            "title": "coste medio de no-shows para un spa de 100 tratamientos/sem",
+            "body": "20% de no-shows con ticket medio de $100 sangran $20k al mes. Confirmación multi-touch baja eso a ~5%: son $15k/mes recuperados."
+          },
+          "missedCalls": {
+            "stat": "30–35%",
+            "title": "de las llamadas en horario quedan sin contestar",
+            "body": "El front desk está cobrando, contestando email o gestionando una queja. El teléfono solo sigue sonando."
+          },
+          "upsellLost": {
+            "stat": "1 de 3",
+            "title": "llamadas perdidas es un upsell potencial",
+            "body": "Add-ons, bonos, paquetes: surgidos naturalmente en conversación, convierten. Surgidos en la prisa del cobro, no."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "Qué hace el agente", "meta": "En el tono de tu sala" },
+        "headline": "El ruido del teléfono fuera de la cabina.",
+        "intro": "Decidimos en el diagnóstico qué reservas, qué preparación y qué upsell entran en scope, y afinamos la voz hasta que suena como tu recepción en su mejor día. Lo que no encaja con tu tono no se activa.",
+        "items": {
+          "voiceReceptionist": {
+            "title": "Recepcionista de voz",
+            "body": "Contesta con calma, en tu tono. Reserva en Mindbody/Booker/Zenoti o en tu agenda. Conoce tratamientos, duraciones, terapeutas, contraindicaciones."
+          },
+          "whatsappBookings": {
+            "title": "Reservas por WhatsApp",
+            "body": "Mismo cerebro, canal escrito. Confirmación con el número de sala, nombre del terapeuta y notas de preparación, todo en el mismo mensaje."
+          },
+          "prepReminders": {
+            "title": "Preparación previa",
+            "body": "24h y 2h antes el agente envía notas específicas del tratamiento: llegar 15 min antes, sin perfume, hidratarse, evitar el sol. La sala se mantiene en horario."
+          },
+          "upsell": {
+            "title": "Upsell natural",
+            "body": "Cuando una clienta reserva 60 min de masaje, el agente ofrece el upgrade a 90 min o el add-on (piedras calientes, aromaterapia) solo si tiene sentido. Nunca insistente, nunca fuera de contexto."
+          },
+          "giftCards": {
+            "title": "Bonos y membresías",
+            "body": "Vacaciones, cumpleaños, aniversarios: el agente gestiona la compra de bonos y la renovación de membresías sin que nadie persiga."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "Cómo suena", "meta": "Ejemplo real · WhatsApp" },
+        "headline": "Masaje reservado a las once de la noche, upgrade ofrecido una sola vez.",
+        "intro": "El mensaje que llega cuando ya tienes la sala cerrada y la recepción en casa. Los nombres son inventados; el upgrade aparece exactamente así, una vez, sin insistir.",
+        "t1": "Hola, ¿tenéis algo para masaje descontracturante el sábado por la tarde?",
+        "t2": "Sí, 15:00 con Carla (60 min, 95€) o 17:30 con Marina (60 min, 95€). ¿Te sugiero los 90 min por 125€? Misma terapeuta, trabajo más profundo.",
+        "t3": "15:00 con Carla, 60 min está bien",
+        "t4": "Reservado ✓ Sábado 15:00 con Carla. Te envío las notas de preparación 2h antes. Resumen: sin perfume, hidratarse, llegar 10 min antes."
+      },
+      "integrations": {
+        "marker": { "label": "Se conecta con lo que ya usas", "meta": "Mindbody · Booker · Zenoti · Vagaro · Mangomint" },
+        "headline": "Tu sistema, tu calendario, tu tono.",
+        "intro": "El agente habla con tu software de spa, tu calendario y tu WhatsApp. Si una herramienta no está en la lista pero tiene API, entra en scope."
+      },
+      "outcomes": {
+        "marker": { "label": "Qué esperar", "meta": "Rangos · no garantías" },
+        "headline": "Después de horas, sala llena, ticket medio arriba.",
+        "intro": "Rangos sacados de benchmarks de Mindbody y Zenoti sobre captura nocturna, no-shows y upsell en day spas. El diagnóstico los traduce a las tres cifras concretas que firmamos, medidas contra tus últimos tres meses de agenda y caja.",
+        "items": {
+          "afterHoursCapture": { "value": "+30% a +50%", "label": "reservas capturadas fuera de horario" },
+          "noShowReduction": { "value": "−25% a −45%", "label": "no-shows en 8 semanas" },
+          "upsellLift": { "value": "+10% a +20%", "label": "ticket medio vía upsell natural" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Lo que los dueños de spa preguntan", "meta": "Respuestas planas" },
+        "headline": "Lo que los dueños de spa preguntan antes de confiarnos la voz de la sala.",
+        "items": {
+          "tone": {
+            "q": "¿Sonará como un spa, no como un contestador?",
+            "a": "Sí. Afinamos la voz y la elección de palabras a tu marca durante la configuración. Calmado, sin prisas, nunca insistente. Podemos hacer que grabes frases específicas (saludo, nombres de tratamientos signature) para que se digan con tu voz."
+          },
+          "walkIn": {
+            "q": "¿Qué pasa con walk-ins y clientas con bono que aparecen sin avisar?",
+            "a": "El agente gestiona llamadas y mensajes entrantes. Los walk-ins en sala siguen con tu recepción. El agente puede verificar saldos de bono por teléfono antes de que la clienta llegue."
+          },
+          "multiTherapist": {
+            "q": "Tenemos un equipo de terapeutas con diferentes especialidades. ¿Puede asignar?",
+            "a": "Sí. El agente aprende especialidades, idiomas y horarios de cada terapeuta y asigna a clientas nuevas según corresponda. Las habituales van a su terapeuta por defecto."
+          },
+          "integrations": {
+            "q": "¿Funciona con Mindbody / Booker / Zenoti?",
+            "a": "Sí, los tres de fábrica, igual que Vagaro y Mangomint. Cualquier otro con API documentada entra en scope. El diagnóstico confirma la lista exacta antes de firmar."
+          },
+          "pricing": {
+            "q": "¿Cuánto cuesta?",
+            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, el tier donde encaja la mayoría de spas de este tamaño) o Business 360 ($2.990 + $390/mes) según volumen y canales."
+          },
+          "launch": {
+            "q": "¿En cuánto tiempo entra en producción?",
+            "a": "3 a 5 semanas desde el kickoff para un local único. Más rápido si tu sistema de reservas tiene API amigable, más lento si integramos varios locales o migramos datos."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "¿Quieres oírlo en tu tono?",
+        "subheadline": "Te montamos una demo con tus tratamientos, terapeutas y voz de marca en menos de una semana tras el diagnóstico. Sin compromiso de desplegar.",
+        "ctaLabel": "Reservar el diagnóstico"
+      }
+    },
+    "medspa": {
+      "meta": {
+        "title": "Cualificador y recepcionista de IA para medspa · GDPR",
+        "description": "Un agente de IA que responde a cada lead de medspa en menos de un minuto, lo cualifica como toca, reserva la consulta y la prepara. Sobre infraestructura diseñada para clínicas que manejan datos sensibles de pacientes."
+      },
+      "hero": {
+        "eyebrow": "CASO DE USO · MEDSPA",
+        "meta": "Cualificador + voz · en producción en 4–6 semanas",
+        "kicker": "Para clínicas estéticas y medspas",
+        "headline": "Cada lead respondido en menos de 1 min.",
+        "subheadline": "Un agente de IA que cualifica, agenda y prepara. Sobre infraestructura diseñada para clínicas que manejan datos sensibles, con un DPA firmado antes de que fluya nada real.",
+        "chat": {
+          "businessName": "Refine Medspa",
+          "subtitle": "Agente Auphere · Web + WhatsApp",
+          "online": "activo"
+        }
+      },
+      "pain": {
+        "marker": {
+          "label": "El dolor",
+          "meta": "Datos · sector 2026"
+        },
+        "headline": "El lead no espera. El compliance, tampoco.",
+        "intro": "Los medspas tienen el coste de no-show más alto del sector servicios y la línea de compliance más estricta. Ambos problemas empiezan en el mismo punto: el primer contacto sin respuesta.",
+        "items": {
+          "leadDecay": {
+            "stat": "10×",
+            "title": "menos conversión pasados 5 minutos",
+            "body": "Si el láser está encendido o el front desk está cobrando, un lead nuevo se enfría más rápido de lo que tarda la crema en aclararse."
+          },
+          "noShows": {
+            "stat": "$820/sem",
+            "title": "coste medio de no-shows por medspa: $42.640 al año",
+            "body": "Las salas de tratamiento vacías son la pieza inmobiliaria más cara que tienes. Sin confirmación multi-touch, el margen se evapora."
+          },
+          "qualification": {
+            "stat": "1 de 3",
+            "title": "consultas no son realmente candidatas",
+            "body": "Tipo de piel equivocado, expectativas equivocadas, medicación incompatible. Tiempo perdido que pudo ir a un candidato real, si alguien hubiera preguntado lo correcto antes."
+          },
+          "compliance": {
+            "stat": "DPA",
+            "title": "todo proveedor que toque datos del paciente debe firmar uno",
+            "body": "La mayoría de chatbots no pueden firmar un Data Processing Agreement serio. Nosotros sí, y lo firmamos antes de que cualquier dato real de paciente fluya."
+          }
+        }
+      },
+      "roles": {
+        "marker": {
+          "label": "Qué hace el agente",
+          "meta": "Dentro de un perímetro clínico estricto"
+        },
+        "headline": "Lead entra, paciente preparada sale. Nada clínico entre medio.",
+        "intro": "Lo que el agente sí hace y lo que deliberadamente no hace queda escrito en el contrato antes de salir en vivo. La lista de abajo es el menú; el diagnóstico decide qué entra en la mesa de tu clínica.",
+        "items": {
+          "leadQualifier": {
+            "title": "Cualificador de leads",
+            "body": "Hace las preguntas en el orden correcto: interés, primera o recurrente, condiciones relevantes, plazo, presupuesto orientativo. Entrega el resultado a tu equipo puntuado y listo."
+          },
+          "consultBooking": {
+            "title": "Reserva de consulta",
+            "body": "Reserva directamente en Boulevard/Mindbody/Zenoti contra la agenda del profesional correcto. Bloquea el hueco solo cuando el lead está cualificado: sin basura en la agenda."
+          },
+          "prepReminders": {
+            "title": "Preparación y recordatorios",
+            "body": "Confirmación multi-touch 7d / 48h / 2h antes, con las instrucciones de preparación específicas del tratamiento: sin sol, sin retinol, sin maquillaje, en ayunas, etc."
+          },
+          "reEngagement": {
+            "title": "Re-engagement",
+            "body": "Leads dormidos a los 30 / 60 / 90 días reciben una secuencia afinada a su interés original. Suave, no insistente. Diseñada para recuperar una parte significativa de leads que de otro modo se enfriarían."
+          },
+          "humanHandoff": {
+            "title": "Handoff a humano",
+            "body": "En el momento en que una pregunta cruza a consejo médico o manejo de datos de paciente fuera del scope contratado, el agente escala a un humano nominal con el contexto completo. Sin zonas grises."
+          }
+        }
+      },
+      "conversation": {
+        "marker": {
+          "label": "Cómo suena",
+          "meta": "Ejemplo real · chat web"
+        },
+        "headline": "Cualificado, reservado y preparado en cinco turnos.",
+        "intro": "Fíjate en lo que el agente no pregunta: nada clínico que deba venir de tu profesional. Fíjate en lo que sí pregunta: solo lo necesario para decidir si encaja.",
+        "t1": "Hola, estoy pensando en depilación láser para axilas, ¿cuánto vale?",
+        "t2": "Te ayudo. Antes te hago un par de preguntas rápidas para cotizarte bien y comprobar que eres candidata. ¿Es tu primera sesión de láser o ya te has hecho?",
+        "t3": "Primera vez. Pero tengo melasma, ¿eso afecta?",
+        "t4": "Puede afectar qué láser usamos. Te reservo una consulta gratuita de 15 min con la Dra. Patel; ella confirmará el abordaje correcto y te cotiza en el momento. Tengo jueves 16h o sábado 11h.",
+        "t5": "Reservado ✓ Sábado 11h. Te envío las pautas de preparación 48h antes. Resumen: sin sol, sin autobronceador, depilar la mañana misma."
+      },
+      "integrations": {
+        "marker": {
+          "label": "Se conecta con el stack que ya usas",
+          "meta": "Boulevard · Mindbody · Zenoti · Vagaro · GoHighLevel · HubSpot · y más"
+        },
+        "headline": "Tu PMS, tu CRM, tu flujo de booking.",
+        "intro": "Soportamos todos los sistemas habituales de medspa. Firmamos un DPA con todo proveedor que toque datos de paciente antes de que el agente vea un registro real."
+      },
+      "outcomes": {
+        "marker": {
+          "label": "Qué esperar",
+          "meta": "Rangos · no garantías"
+        },
+        "headline": "Las tres cifras que mira la dueña de la clínica.",
+        "intro": "Rangos que aguantan los benchmarks de medspa en respuesta, conversión y no-shows con preparación. El diagnóstico los convierte en los objetivos exactos que firmamos en contrato, medidos contra tus últimos tres meses de datos.",
+        "items": {
+          "leadResponse": {
+            "value": "<1 min",
+            "label": "respuesta a leads · 24/7"
+          },
+          "consultConversion": {
+            "value": "+20% a +35%",
+            "label": "lead → consulta reservada"
+          },
+          "noShowReduction": {
+            "value": "−30% a −50%",
+            "label": "no-shows con secuencia de preparación"
+          }
+        }
+      },
+      "faq": {
+        "marker": {
+          "label": "Lo que los dueños de medspa preguntan",
+          "meta": "Respuestas planas"
+        },
+        "headline": "Lo que las dueñas preguntan antes de confiarnos sus leads.",
+        "items": {
+          "compliance": {
+            "q": "¿Cómo manejáis los datos de paciente y el compliance?",
+            "a": "Operamos sobre infraestructura EU-hosted que cumple los safeguards técnicos relevantes (cifrado en tránsito y en reposo, aislamiento por tenant, logs de auditoría) y usamos APIs LLM zero-retention. Firmamos un DPA con cada clínica antes de que fluyan datos reales de paciente. Los datos de tus conversaciones nunca se usan para entrenar modelos que vendamos a otros. Si tu operación tiene requisitos regulatorios específicos más allá de GDPR, los mapeamos en el diagnóstico y te decimos de frente si somos el partner adecuado."
+          },
+          "qualification": {
+            "q": "¿Puede cualificar bien sin ejercer la medicina?",
+            "a": "Sí, porque las preguntas de cualificación son sobre candidatura, expectativas y logística, no diagnóstico. El agente tiene un perímetro explícito de \"no aconsejar\": cualquier cosa clínica (interacciones, dosificación, contraindicaciones) hace handoff a un humano nominal dentro de tu equipo."
+          },
+          "integrations": {
+            "q": "¿Funciona con nuestro PMS / CRM?",
+            "a": "Si usas Boulevard, Mindbody, Zenoti, Vagaro, Aesthetics Pro, GoHighLevel o HubSpot: de fábrica. Cualquier otra cosa con API entra en scope. El diagnóstico confirma la lista exacta antes de que firmes."
+          },
+          "humanEscalation": {
+            "q": "¿Cuándo entra un humano?",
+            "a": "Tres triggers: cualquier cosa clínica, cualquier cosa fuera del scope contratado, o cualquier cosa que el cliente pida explícitamente. El escalado va a un inbox o teléfono nominal con el contexto completo. Sin pelotas que se caen."
+          },
+          "pricing": {
+            "q": "¿Cuánto cuesta?",
+            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes) o Business 360 ($2.990 + $390/mes, el tier donde encaja la mayoría de clínicas dada la operación y el SLA requerido)."
+          },
+          "launch": {
+            "q": "¿Cuánto hasta tenerlo en vivo?",
+            "a": "4 a 6 semanas para una clínica única. Más si requiere routing multi-profesional o personalización profunda del PMS. El diagnóstico entrega el cronograma por escrito antes del kickoff."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "¿Quieres una demo funcionando con tus protocolos?",
+        "subheadline": "Te montamos una demo con tus tratamientos y preguntas de cualificación en una semana tras el diagnóstico. Sin datos reales de paciente: solo sintéticos.",
+        "ctaLabel": "Reservar el diagnóstico"
+      }
+    },
+    "dental-clinic": {
+      "meta": {
+        "title": "Recepcionista de IA para clínicas dentales · recall, recordatorios, seguros",
+        "description": "Un agente de IA que contesta el teléfono de tu clínica dental 24/7, reactiva pacientes en mora, reserva limpiezas y revisiones, verifica seguros y triage de urgencias, sin ahogar al front desk."
+      },
+      "hero": {
+        "eyebrow": "CASO DE USO · CLÍNICA DENTAL",
+        "meta": "Voz + WhatsApp · en producción en 4–6 semanas",
+        "kicker": "Para consultas individuales y clínicas multi-sillón",
+        "headline": "Cada paciente en mora contactado. Cada sillón lleno.",
+        "subheadline": "Recall, recordatorios, verificación de seguro y triage de urgencias gestionados en segundos, 24/7. El sillón de higiene deja de estar vacío.",
+        "chat": {
+          "businessName": "Tu clínica dental",
+          "subtitle": "Agente Auphere · WhatsApp",
+          "online": "activo"
+        }
+      },
+      "pain": {
+        "marker": { "label": "El dolor", "meta": "Datos · sector 2026" },
+        "headline": "La lista de recall es la hoja más rentable que nunca llamas.",
+        "intro": "Las matemáticas son brutales: 20-30% de tu base de pacientes está en mora, cada sillón vacío es coste fijo quemado y nadie en recepción tiene tiempo de perseguir 600 nombres. La IA no parpadea.",
+        "items": {
+          "overdueRecall": {
+            "stat": "20–30%",
+            "title": "de la base de pacientes está en mora",
+            "body": "Recalls de higiene, controles post-tratamiento, coberturas de seguro que vencen. Cada uno es ingreso real esperando en una hoja que nadie tiene tiempo de trabajar."
+          },
+          "noShows": {
+            "stat": "45%",
+            "title": "reducción de no-shows con recordatorios multi-touch",
+            "body": "Secuencias de tres touches (7d / 48h / 2h) antes de la cita cortan los no-shows a la mitad. La mayoría de clínicas siguen mandando un SMS o ninguno."
+          },
+          "insuranceFriction": {
+            "stat": "10–15 min",
+            "title": "de recepción por verificación de seguro",
+            "body": "Verificar coberturas manualmente antes de cada cita quema horas todos los días. El agente lo hace en segundos, y rechaza las reservas que no estarán cubiertas."
+          },
+          "afterHours": {
+            "stat": "Después de 18h",
+            "title": "es cuando los dolores de muelas llaman",
+            "body": "Las urgencias dentales no ocurren en tu horario. Sin triage 24/7, la llamada va al buzón y el paciente acaba en el sillón de otro al día siguiente."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "Qué hace el agente", "meta": "Solo agenda y triage" },
+        "headline": "Cada paciente en mora llamado. Cada sillón lleno.",
+        "intro": "El agente se encarga de las llamadas, el recall y el triage fuera de horario. La línea clínica queda escrita en el contrato, por escrito, antes de que nada salga en vivo. El diagnóstico decide qué roles de la lista necesita realmente tu clínica.",
+        "items": {
+          "voiceReceptionist": {
+            "title": "Recepcionista de voz",
+            "body": "Contesta en segundos, reserva limpiezas, controles y consultas en Dentrix/Open Dental/Eaglesoft. Conoce a tus profesionales, higienistas y reglas de agenda."
+          },
+          "recallReactivation": {
+            "title": "Recall y reactivación",
+            "body": "Trabaja la lista de morosos automáticamente. Contacto personal, en calma, en el idioma del paciente, con rebooking de un toque. Recupera el ingreso de recall que tu equipo no puede atender."
+          },
+          "insurancePrecheck": {
+            "title": "Verificación de seguro",
+            "body": "Verifica coberturas durante la llamada de reserva. Confirma cobertura, anticipa copagos y avisa si hay fuera-de-red antes de que el paciente se siente en el sillón."
+          },
+          "reminders": {
+            "title": "Recordatorios multi-touch",
+            "body": "Secuencias 7d / 48h / 2h con reagendado de un toque. Adaptadas al tipo de cita: un recall de higiene avisa distinto que una endodoncia."
+          },
+          "emergencyTriage": {
+            "title": "Triage de urgencias",
+            "body": "Fuera de horario, un flujo de triage dental pregunta lo correcto, ofrece hueco mismo día cuando aplica y escala al dentista de guardia en urgencias reales. La línea clínica es dura."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "Cómo suena", "meta": "Ejemplo real · teléfono" },
+        "headline": "En mora, verificado, reservado. Una sola llamada entrante.",
+        "intro": "El tipo de llamada que hoy se devuelve mañana (o nunca). Los nombres son inventados; el chequeo de cobertura y la reserva ocurren exactamente así.",
+        "t1": "Hola, creo que debo una limpieza ¿no?",
+        "t2": "Hola. Déjame revisar. Sí, tu última limpieza con la Dra. Patel fue hace 9 meses, te toca. Tu seguro cubre dos limpiezas al año y solo usaste una, así que sería sin coste. ¿Te la reservo?",
+        "t3": "Sí, ¿algo el martes por la tarde?",
+        "t4": "Reservado ✓ Martes 15:00 con Maya (tu higienista habitual), 45 min. Te recuerdo 48h antes con reagendado de un toque. Hasta entonces."
+      },
+      "integrations": {
+        "marker": { "label": "Se conecta con tu software de gestión", "meta": "Dentrix · Open Dental · Eaglesoft · Curve · Carestack" },
+        "headline": "Tu PMS, tu lista de recall, tu flujo de seguros.",
+        "intro": "Integramos con todos los sistemas dentales habituales vía API o, cuando hace falta, middleware seguro. Sin doble carga, sin sincronización manual."
+      },
+      "outcomes": {
+        "marker": { "label": "Qué esperar", "meta": "Rangos · no garantías" },
+        "headline": "Recall trabajado, no-shows abajo, ingresos de vuelta en la agenda.",
+        "intro": "Rangos sacados de datos del sector dental sobre recuperación de recall y reducción de no-shows. El diagnóstico los convierte en los números que firmamos, medidos contra los últimos doce meses de tu PMS.",
+        "items": {
+          "noShowReduction": { "value": "−30% a −45%", "label": "no-shows en 8 semanas" },
+          "reactivation": { "value": "15% a 25%", "label": "de pacientes en mora reactivados" },
+          "recallRevenue": { "value": "+$80k a $150k", "label": "ingresos anuales de recall recuperados" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Lo que los dueños de clínica preguntan", "meta": "Respuestas planas" },
+        "headline": "Lo que las dueñas preguntan antes de soltarnos la lista de recall.",
+        "items": {
+          "insurance": {
+            "q": "¿Puede realmente verificar el seguro durante la llamada?",
+            "a": "Para la mayoría de aseguradoras grandes en EEUU, sí. Integramos con APIs de verificación y clearinghouses para consultar coberturas en vivo mientras el paciente sigue en la línea. Para aseguradoras sin API, el agente recoge la póliza y deja la verificación marcada para tu equipo."
+          },
+          "recall": {
+            "q": "¿Cómo funciona el flujo de recall?",
+            "a": "Importamos tu lista de morosos del PMS, segmentamos por tipo de tratamiento y fecha de última visita, y la trabajamos en el calendario que pactemos. Llamadas y mensajes salientes personales y en calma, en el idioma del paciente. Ves cada contacto en tu dashboard."
+          },
+          "emergency": {
+            "q": "¿El agente gestiona dudas clínicas o solo agenda?",
+            "a": "Solo agenda y triage. Cualquier duda clínica (dosis, dudas post-quirúrgicas, sospechas de urgencia) se escala a un dentista nominal o al profesional de guardia con contexto completo. El perímetro clínico se escribe en el contrato antes del lanzamiento."
+          },
+          "integrations": {
+            "q": "¿Funciona con Dentrix / Open Dental / Eaglesoft?",
+            "a": "Sí, los tres de fábrica, más Curve, Carestack, Dentally y la mayoría de sistemas europeos. Cualquier otro con API documentada entra en scope. El diagnóstico confirma la lista exacta antes de firmar."
+          },
+          "pricing": {
+            "q": "¿Cuánto cuesta?",
+            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes) o Business 360 ($2.990 + $390/mes, el tier donde encaja la mayoría dado el volumen y SLA)."
+          },
+          "launch": {
+            "q": "¿En cuánto tiempo entra en producción?",
+            "a": "4 a 6 semanas para una clínica única. Más si hay que importar una lista de recall legacy grande o integrar varias sedes. El diagnóstico entrega el cronograma por escrito antes del kickoff."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "¿Quieres verlo trabajando tu lista de recall?",
+        "subheadline": "Te montamos una demo sobre tus pacientes en mora (datos sintéticos) en menos de una semana tras el diagnóstico. Sin datos reales involucrados.",
+        "ctaLabel": "Reservar el diagnóstico"
+      }
+    },
+    "physiotherapy": {
+      "meta": {
+        "title": "Asistente de IA para clínicas de fisioterapia · sesiones, adherencia, recall",
+        "description": "Un agente de IA para clínicas de fisioterapia que reserva sesiones, envía recordatorios de ejercicios en casa, gestiona paquetes multi-sesión y reactiva pacientes dormidos, sin que los fisios hagan admin entre pacientes."
+      },
+      "hero": {
+        "eyebrow": "CASO DE USO · FISIOTERAPIA",
+        "meta": "Voz + WhatsApp · en producción en 3–5 semanas",
+        "kicker": "Para fisios independientes y clínicas multi-terapeuta",
+        "headline": "Los fisios tratan. El agente hace el resto.",
+        "subheadline": "Reservas, recordatorios de sesión, ejercicios en casa y recall gestionados en segundos, 24/7. Tu equipo deja de hacer admin entre pacientes.",
+        "chat": {
+          "businessName": "Tu clínica de fisio",
+          "subtitle": "Agente Auphere · WhatsApp",
+          "online": "activo"
+        }
+      },
+      "pain": {
+        "marker": { "label": "El dolor", "meta": "Lo que siente cada clínica de fisio" },
+        "headline": "Los ejercicios solo funcionan si el paciente los hace.",
+        "intro": "Los resultados de fisioterapia dependen de la adherencia, los paquetes dependen del completado, y ambos dependen de un loop de seguimiento que la mayoría de clínicas no puede dotar. El agente corre ese loop sin descanso.",
+        "items": {
+          "packageDropoff": {
+            "stat": "1 de 4",
+            "title": "pacientes abandona el paquete antes de terminar",
+            "body": "Las sesiones 4-8 son donde cae la asistencia. Sin un empujón, el paquete queda sin usar, el resultado sufre y la renovación nunca llega."
+          },
+          "hepAdherence": {
+            "stat": "<50%",
+            "title": "adherencia a los ejercicios en casa sin recordatorios",
+            "body": "Los ejercicios solo funcionan si se hacen. Los recordatorios suben la adherencia por encima del 70%, y los recordatorios solo funcionan si alguien los manda."
+          },
+          "noShows": {
+            "stat": "−20%",
+            "title": "cancelaciones de última hora con recordatorios personalizados",
+            "body": "Mensajes personalizados (no SMS genéricos en bloque) cortan cancelaciones un quinto. Tus fisios tratan pacientes, no salas vacías."
+          },
+          "recall": {
+            "stat": "60 días",
+            "title": "tiempo medio a ROI positivo",
+            "body": "La mayoría de clínicas de fisio cubren la inversión en un agente gestionado en menos de dos meses, solo por reducción de no-shows y reactivación de recall."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "Qué hace el agente", "meta": "Fuera de la camilla, sin tocar lo clínico" },
+        "headline": "Tus fisios tratan. El loop de adherencia corre solo.",
+        "intro": "Elegimos en el diagnóstico qué partes del loop (recordatorios de sesión, ejercicios en casa, paquetes, recall) puede llevar el agente, y dejamos por escrito qué cruza siempre a un fisio humano antes de que nada salga en vivo.",
+        "items": {
+          "voiceReceptionist": {
+            "title": "Recepcionista de voz",
+            "body": "Contesta y reserva en Cliniko/Jane/WebPT. Conoce a tus terapeutas, disponibilidad de salas, duraciones y tipos de paquete."
+          },
+          "sessionReminders": {
+            "title": "Recordatorios de sesión",
+            "body": "Recordatorios multi-touch 48h / 24h / 2h antes con reagendado de un toque. Adaptados al paciente y al tipo de tratamiento."
+          },
+          "hepReminders": {
+            "title": "Recordatorios de ejercicios en casa",
+            "body": "Empujes personalizados en la pauta que marcó el terapeuta (diario / 3×/sem / antes de dormir). Pide al paciente que registre completado y retroalimenta el plan de la siguiente sesión."
+          },
+          "packageManagement": {
+            "title": "Gestión de paquetes",
+            "body": "Lleva el saldo de sesiones de cada paciente, ofrece la siguiente reserva al ritmo correcto y avisa cuando un paquete está por caducar para que se renueve antes."
+          },
+          "recallReactivation": {
+            "title": "Recall y reactivación",
+            "body": "Los pacientes que terminaron un paquete hace 3-6 meses reciben un check-in personal: ¿cómo te sientes, listo para una puesta a punto? Recupera dormidos sin que nadie persiga."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "Cómo suena", "meta": "Ejemplo real · WhatsApp" },
+        "headline": "Reagendado en un toque, duda clínica al fisio.",
+        "intro": "La mezcla típica: una reserva que se mueve y una pregunta sobre ejercicios. Los nombres son inventados; lo importante es ver dónde el agente para y pasa el balón al fisio.",
+        "t1": "Hola, necesito reagendar la sesión de mañana, me salió algo en el trabajo",
+        "t2": "Sin problema. Tus siguientes huecos con Daniel son jueves 10:00 o viernes 16:00. Ambos 50 min. ¿Cuál te encaja?",
+        "t3": "Viernes 16:00 por favor. Y rapidito, ¿los ejercicios con banda van antes o después de los puentes?",
+        "t4": "Reagendado ✓ Viernes 16:00 con Daniel. Para la duda del orden de ejercicios te paso con Daniel directamente; te contesta en la próxima hora con el orden correcto."
+      },
+      "integrations": {
+        "marker": { "label": "Se conecta con tu PMS", "meta": "Cliniko · Jane App · WebPT · ClinicSense · Mindbody · Calendly" },
+        "headline": "Tu PMS, agendas de terapeutas, paquetes.",
+        "intro": "Integramos con todos los sistemas habituales de fisio/salud aliada vía API. Saldos de paquete y contadores de sesión se mantienen sincronizados: sin doble carga, sin reconciliación manual."
+      },
+      "outcomes": {
+        "marker": { "label": "Qué esperar", "meta": "Rangos · no garantías" },
+        "headline": "Adherencia arriba, paquetes terminados, sesiones que no se pierden.",
+        "intro": "Rangos sacados de literatura de fisio sobre HEP y de los datos de Cliniko y Jane App en clínicas similares. El diagnóstico los traduce al objetivo exacto que firmamos, medido contra la adherencia y el completado de tus últimos 90 días.",
+        "items": {
+          "noShowReduction": { "value": "−15% a −25%", "label": "no-shows en 8 semanas" },
+          "adherenceLift": { "value": "+30% a +60%", "label": "adherencia a ejercicios en casa con recordatorios" },
+          "packageCompletion": { "value": "+15% a +25%", "label": "tasa de completado de paquetes" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Lo que los dueños de fisio preguntan", "meta": "Respuestas planas" },
+        "headline": "Lo que los fisios preguntan antes de soltarnos el HEP.",
+        "items": {
+          "hep": {
+            "q": "¿Cómo funcionan exactamente los recordatorios de ejercicios en casa?",
+            "a": "El terapeuta define el programa y la pauta en tu PMS (o en nuestro dashboard). El agente lo traduce a mensajes personales en el canal preferido del paciente: diario, 3×/sem, antes de dormir, lo que se prescribió. El paciente puede marcar ejercicios hechos, hacer preguntas (que escalan al terapeuta) o reagendar la próxima sesión, todo en un hilo."
+          },
+          "packageManagement": {
+            "q": "¿Puede llevar paquetes de varias sesiones?",
+            "a": "Sí. El agente lee el saldo del paquete desde tu PMS, ofrece la siguiente sesión al ritmo correcto y avisa cuando faltan 2 sesiones para vencer para que se renueve a tiempo. Se acabaron los pacientes que pierden sesiones por olvido."
+          },
+          "integrations": {
+            "q": "¿Funciona con Cliniko / Jane App / WebPT?",
+            "a": "Sí, los tres de fábrica, más ClinicSense, Mindbody y la mayoría de PMS de fisio europeos. Cualquier otro con API documentada entra en scope."
+          },
+          "escalation": {
+            "q": "¿Y si un paciente pregunta algo clínico?",
+            "a": "El agente escala al terapeuta nominal con contexto completo. Escribimos el perímetro clínico en el contrato antes del lanzamiento: niveles de dolor, banderas rojas, dudas post-cirugía van a humano."
+          },
+          "pricing": {
+            "q": "¿Cuánto cuesta?",
+            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, el tier donde encaja la mayoría de clínicas de este tamaño) o Business 360 ($2.990 + $390/mes) según volumen e integraciones."
+          },
+          "launch": {
+            "q": "¿En cuánto tiempo entra en producción?",
+            "a": "3 a 5 semanas desde el kickoff para una clínica única. Más si integramos varios terapeutas con horarios distintos o migramos datos de paquetes legacy. El diagnóstico entrega el cronograma por escrito."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "¿Quieres ver subir la adherencia?",
+        "subheadline": "Te montamos una demo sobre una cohorte de pacientes sintética en menos de una semana tras el diagnóstico: recordatorios de ejercicio, gestión de paquetes, recall, todo.",
+        "ctaLabel": "Reservar el diagnóstico"
+      }
+    },
+    "veterinary": {
+      "meta": {
+        "title": "Recepcionista de IA para clínicas veterinarias · triage de urgencias 24/7, vacunas",
+        "description": "Un agente de IA para clínicas veterinarias que contesta llamadas 24/7, hace triage de urgencias, gestiona hogares con varias mascotas, envía recordatorios de vacunación y reserva citas, para que los veterinarios se centren en pacientes, no en teléfonos."
+      },
+      "hero": {
+        "eyebrow": "CASO DE USO · VETERINARIA",
+        "meta": "Voz + WhatsApp · en producción en 4–6 semanas",
+        "kicker": "Para clínicas de pequeños animales y multi-veterinario",
+        "headline": "Los vets tratan animales. El agente contesta a los humanos.",
+        "subheadline": "Reservas, triage de urgencias, recordatorios de vacunación y hogares multi-mascota, atendidos 24/7. Al vet de guardia solo se le llama cuando realmente importa.",
+        "chat": {
+          "businessName": "Tu clínica veterinaria",
+          "subtitle": "Agente Auphere · Voz + WhatsApp",
+          "online": "activo"
+        }
+      },
+      "pain": {
+        "marker": { "label": "El dolor", "meta": "Lo que siente cada clínica veterinaria" },
+        "headline": "Los animales no agendan horario de oficina.",
+        "intro": "Las urgencias ocurren a las 3 de la madrugada. Las vacunas se olvidan. Los hogares con tres mascotas son una pesadilla de agenda. El agente no duerme, no olvida y solo le pide ayuda al vet de guardia cuando realmente la necesita.",
+        "items": {
+          "afterHoursEmergencies": {
+            "stat": "24/7",
+            "title": "es cuando ocurren las urgencias, no cuando abres",
+            "body": "Sin capa de triage, cada llamada fuera de horario o llama al vet de guardia (burnout) o va al buzón (la mascota acaba en otra clínica)."
+          },
+          "vaccinationsForgotten": {
+            "stat": "Perdidos",
+            "title": "ciclos de vacunación que los dueños olvidan sin recordatorios",
+            "body": "Rabia, polivalente, leucemia felina: cada especie y raza tiene su pauta. Los dueños no la siguen; tu recepción no tiene tiempo. La lista de recall crece en silencio."
+          },
+          "multiPet": {
+            "stat": "Hogares",
+            "title": "con varias mascotas son pesadilla de agenda",
+            "body": "Tres perros, dos gatos, pautas de vacunación distintas, veterinarios distintos: coordinar bajo un perfil es complejidad que los humanos fallan la mitad de las veces."
+          },
+          "noShows": {
+            "stat": "−30% a −40%",
+            "title": "reducción de no-shows con recordatorios SMS + WhatsApp",
+            "body": "Las citas con mascotas se pierden todavía a ritmo doloroso. Recordatorios multi-touch cortan eso un tercio, solo si alguien los manda."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "Qué hace el agente", "meta": "Protocolo de triage por escrito" },
+        "headline": "El vet de guardia solo suena cuando es una urgencia real.",
+        "intro": "El vet jefe escribe contigo el protocolo de triage durante la configuración: qué síntoma es urgente, qué se ve mismo día, qué se refiere a la 24/7 más cercana. El agente no improvisa fuera de ese protocolo.",
+        "items": {
+          "voiceReceptionist": {
+            "title": "Recepcionista de voz",
+            "body": "Contesta en segundos, reserva controles de bienestar, vacunaciones y cirugías en AVImark/Cornerstone/ezyVet. Conoce a tus vets, disponibilidad de sala y especializaciones por especie."
+          },
+          "emergencyTriage": {
+            "title": "Triage de urgencias",
+            "body": "Triage fuera de horario con checklist de síntomas definido por el vet. Ofrece huecos mismo día cuando aplica, refiere a la urgencia 24/7 más cercana cuando hace falta, llama al vet de guardia solo en urgencias reales."
+          },
+          "vaccinationReminders": {
+            "title": "Recordatorios de vacunación",
+            "body": "Lleva la pauta de vacunación por especie y raza de cada mascota (rabia, polivalente, FVRCP, FeLV) y contacta antes de cada vencimiento, con reserva de un toque."
+          },
+          "multiPetManagement": {
+            "title": "Hogares multi-mascota",
+            "body": "Consolida mascotas bajo un perfil de dueño. Sugiere citas agrupadas cuando tiene sentido, envía un solo recordatorio para visitas solapadas, mantiene la historia médica individual."
+          },
+          "vetEscalation": {
+            "title": "Escalado clínico",
+            "body": "Cualquier pregunta que cruce a diagnóstico, tratamiento, dosis o interacción medicamentosa se escala a un vet nominal con contexto completo. Nunca improvisa en lo clínico."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "Cómo suena", "meta": "Ejemplo real · llamada fuera de horario" },
+        "headline": "Una intoxicación a las 2 AM, triage hecho, vet de guardia llamado.",
+        "intro": "La llamada que hoy va al buzón o quema al vet de guardia sin necesidad. Los nombres son inventados; las preguntas de triage son exactamente las que tu vet jefe escribirá en el protocolo.",
+        "t1": "Mi perro se comió una tableta entera de chocolate, ¿qué hago?",
+        "t2": "Lo siento, el chocolate puede ser serio. Preguntas rápidas para triage: ¿qué tamaño tiene tu perro, hace cuánto ocurrió, y qué tipo de chocolate (con leche, negro, de cocinar)?",
+        "t3": "Labrador de 40kg, hace unos 30 minutos, chocolate negro.",
+        "t4": "Esto es urgente. Llamo a la Dra. Mehta de guardia. Te llamará en 5 minutos. Mientras: no provocar vómito, mantener al perro tranquilo. La urgencia 24/7 más cercana está a 8 min si no puedes esperar. Te paso la dirección por SMS ahora."
+      },
+      "integrations": {
+        "marker": { "label": "Se conecta con tu PMS", "meta": "AVImark · Cornerstone · eVetPractice · Provet Cloud · ezyVet" },
+        "headline": "Tu PMS, pautas de vacunación, rotación de guardias.",
+        "intro": "Integramos con todos los sistemas habituales veterinarios. Fichas de mascota, historiales de vacunación y contactos de guardia sincronizados: sin doble carga."
+      },
+      "outcomes": {
+        "marker": { "label": "Qué esperar", "meta": "Rangos · no garantías" },
+        "headline": "Cada urgencia con triage, cada vacuna en plazo.",
+        "intro": "Rangos sacados de benchmarks veterinarios sobre cobertura 24/7, cumplimiento de pauta vacunal y no-shows en pequeños animales. El diagnóstico fija los objetivos exactos que firmamos, medidos contra el historial de tu PMS.",
+        "items": {
+          "emergenciesTriaged": { "value": "100%", "label": "llamadas fuera de horario con triage · 24/7" },
+          "vaccinationCompliance": { "value": "+20% a +40%", "label": "vacunaciones en plazo con recordatorios" },
+          "noShowReduction": { "value": "−30% a −40%", "label": "no-shows en 8 semanas" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Lo que los dueños de clínica preguntan", "meta": "Respuestas planas" },
+        "headline": "Lo que los veterinarios preguntan antes de pasarnos la guardia.",
+        "items": {
+          "emergencyTriage": {
+            "q": "¿Cómo funciona exactamente el triage de urgencias?",
+            "a": "Co-diseñamos el protocolo con tu vet jefe durante la configuración: qué cuenta como urgente, qué tiene hueco mismo día, qué dispara llamada al vet de guardia, qué refiere a la urgencia 24/7 más cercana. El protocolo se escribe, versiona y audita. El agente no improvisa."
+          },
+          "multiPet": {
+            "q": "¿Puede gestionar un hogar con varias mascotas?",
+            "a": "Sí, es una capacidad central. Todas las mascotas bajo un perfil de dueño, con historial e historial de vacunación individuales. El agente puede sugerir citas agrupadas cuando tiene sentido, o coordinar visitas separadas en el hogar."
+          },
+          "vaccinations": {
+            "q": "¿Realmente lleva la pauta de vacunación por especie?",
+            "a": "Sí. Perros (polivalente, rabia, bordetella, leptospirosis), gatos (FVRCP, FeLV, rabia), conejos (RHDV, mixomatosis): pautas por especie, raza y etapa de vida. Las leemos de tu PMS o las configuramos en nuestro dashboard."
+          },
+          "integrations": {
+            "q": "¿Funciona con AVImark / Cornerstone / ezyVet?",
+            "a": "Sí, los tres de fábrica, más Provet Cloud y eVetPractice. Cualquier otro con API documentada entra en scope. El diagnóstico confirma la lista exacta antes de firmar."
+          },
+          "pricing": {
+            "q": "¿Cuánto cuesta?",
+            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes) o Business 360 ($2.990 + $390/mes, el tier donde encaja la mayoría dado el SLA 24/7)."
+          },
+          "launch": {
+            "q": "¿En cuánto tiempo entra en producción?",
+            "a": "4 a 6 semanas para una clínica única. El diseño del protocolo de triage lleva un par de semanas extra sobre el setup normal. El diagnóstico entrega el cronograma por escrito."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "¿Quieres oírlo hacer triage de una llamada de chocolate?",
+        "subheadline": "Te montamos una demo con tu protocolo de triage y pautas de vacunación en menos de una semana tras el diagnóstico. Sin datos reales de paciente.",
+        "ctaLabel": "Reservar el diagnóstico"
+      }
+    },
+    "pharmacy": {
+      "meta": {
+        "title": "Asistente de IA para farmacias · WhatsApp, recetas y recogidas",
+        "description": "Un agente de IA para farmacias comunitarias que contesta el WhatsApp, gestiona la recurrencia de recetas, lee fotos de prescripciones y solo escala al farmacéutico cuando hace falta."
+      },
+      "hero": {
+        "eyebrow": "CASO DE USO · FARMACIA",
+        "meta": "WhatsApp + voz · en producción en 3–5 semanas",
+        "kicker": "Para farmacias comunitarias y cadenas pequeñas",
+        "headline": "Tu farmacia contesta el WhatsApp. Incluso con cola.",
+        "subheadline": "Disponibilidad, recordatorios de receta y recogidas. El farmacéutico solo entra cuando la consulta realmente lo requiere.",
+        "chat": {
+          "businessName": "Farmacia Central",
+          "subtitle": "Agente Auphere · WhatsApp",
+          "online": "activo"
+        }
+      },
+      "pain": {
+        "marker": {
+          "label": "El dolor",
+          "meta": "Lo que siente cada mostrador"
+        },
+        "headline": "Las consultas no paran. El mostrador tiene un solo humano.",
+        "intro": "La farmacia no es un sector \"chatbot\", hasta que separas lo verdaderamente clínico de lo meramente operativo. La mayor parte de lo que satura el mostrador es lo segundo.",
+        "items": {
+          "repetitiveQuestions": {
+            "stat": "60–70%",
+            "title": "de las llamadas no son clínicas",
+            "body": "¿Horarios? ¿Stock? ¿Sustitución por genérico? ¿Protector solar infantil? No requieren un título, pero sí una respuesta ahora."
+          },
+          "refills": {
+            "stat": "1 de 4",
+            "title": "pacientes crónicos pierde su ciclo de recogida",
+            "body": "Adherencia perdida, ingreso recurrente perdido, relación perdida. Nadie tuvo tiempo de llamar antes de que se le acabara la medicación."
+          },
+          "whatsappChaos": {
+            "stat": "Disperso",
+            "title": "los pedidos por WhatsApp se mezclan con teléfonos personales",
+            "body": "Algunos se contestan. Otros se pierden. Ninguno deja rastro. La farmacia no puede saber cuál es cuál."
+          },
+          "clinicalLine": {
+            "stat": "Línea dura",
+            "title": "el trabajo del farmacéutico es innegociable",
+            "body": "Interacciones, dosificación, contraindicaciones: el agente se queda fuera de todo eso. Ese perímetro es contractual, no aspiracional."
+          }
+        }
+      },
+      "roles": {
+        "marker": {
+          "label": "Qué hace el agente",
+          "meta": "Operativo sí, clínico nunca"
+        },
+        "headline": "Lo operativo, fuera del mostrador. Lo clínico, siempre del farmacéutico.",
+        "intro": "Separamos en el diagnóstico qué consultas son operativas (stock, horarios, recogidas, recurrencia) y cuáles son clínicas (dosis, interacciones, pediatría, embarazo). Las primeras las contesta el agente. Las segundas siempre pasan al farmacéutico nominal. La línea se firma en el contrato.",
+        "items": {
+          "whatsappAssistant": {
+            "title": "Asistente WhatsApp y voz",
+            "body": "Contesta en segundos: horarios, farmacias de guardia cercanas, parking, disponibilidad de producto, FAQ no clínica. Las preguntas más comunes, todas."
+          },
+          "refillManager": {
+            "title": "Gestor de recurrencia",
+            "body": "Detecta el ciclo de cada paciente crónico (28 días, mensual, trimestral) y escribe antes de que se le acabe. Un toque para reservar la medicación para recogida o entrega."
+          },
+          "photoPrescription": {
+            "title": "Receta por foto",
+            "body": "El paciente envía foto de la receta. El agente la lee, comprueba stock y deja el pedido en cola para que la técnica verifique y prepare."
+          },
+          "serviceCapture": {
+            "title": "Captación de servicios",
+            "body": "SPD, cita con nutricionista, ortopedia, óptica: los servicios de tu farmacia se ofrecen cuando son relevantes a la consulta, no como anuncios."
+          },
+          "pharmacistEscalation": {
+            "title": "Escalado al farmacéutico",
+            "body": "Cualquier atisbo de consulta clínica (interacciones, dosificación, efectos adversos, dudas en pediatría o embarazo) y el agente hace handoff a un farmacéutico nominal con el contexto completo."
+          }
+        }
+      },
+      "conversation": {
+        "marker": {
+          "label": "Cómo suena",
+          "meta": "Ejemplo real · WhatsApp"
+        },
+        "headline": "Dos recogidas, cero tiempo de mostrador.",
+        "intro": "Fíjate en la línea que el agente no cruza: cualquier cosa que fuera consejo lleva el nombre del farmacéutico adjunto.",
+        "t1": "Hola, ¿tenéis Enantyum 25mg?",
+        "t2": "Sí, tenemos 12 cajas en stock y abrimos hasta las 22h hoy. ¿Te reservo una para recogida?",
+        "t3": "Sí por favor. ¿Y cada cuánto se puede tomar?",
+        "t4": "Reservado ✓ lista en mostrador, pide la Caja 41. Para la dosificación te paso con Marta, farmacéutica de turno; te contesta en menos de 5 minutos."
+      },
+      "integrations": {
+        "marker": {
+          "label": "Se conecta con tu software de dispensación",
+          "meta": "Farmatic · Unycop · Nixfarma · Bitfarma · WhatsApp Business"
+        },
+        "headline": "Stock, precios y fichas de paciente, en vivo.",
+        "intro": "Leemos disponibilidad y precios directamente de tu software de dispensación, así las respuestas nunca se quedan obsoletas. Sin doble carga, sin sincronización manual."
+      },
+      "outcomes": {
+        "marker": {
+          "label": "Qué esperar",
+          "meta": "Rangos · no garantías"
+        },
+        "headline": "Mostrador descongestionado, recurrencia recuperada, respuesta en segundos.",
+        "intro": "Rangos sacados de datos de farmacia comunitaria sobre consultas operativas vs. clínicas, adherencia en pacientes crónicos y tiempos de respuesta en WhatsApp. El diagnóstico fija los números exactos que firmamos, medidos contra el flujo real de tu mostrador.",
+        "items": {
+          "questionsHandled": {
+            "value": "60% a 80%",
+            "label": "consultas no clínicas resueltas sin mostrador"
+          },
+          "adherence": {
+            "value": "+10% a +20%",
+            "label": "adherencia en pacientes crónicos"
+          },
+          "responseTime": {
+            "value": "<10 s",
+            "label": "respuesta WhatsApp en horario"
+          }
+        }
+      },
+      "faq": {
+        "marker": {
+          "label": "Lo que los titulares de farmacia preguntan",
+          "meta": "Respuestas planas"
+        },
+        "headline": "Lo que los farmacéuticos preguntan antes de ponernos en el mostrador.",
+        "items": {
+          "clinicalEscalation": {
+            "q": "¿Dónde termina exactamente el agente y empieza el farmacéutico?",
+            "a": "Escribimos el perímetro en el contrato antes del lanzamiento. Como regla: cualquier pregunta sobre dosificación, interacciones, contraindicaciones, uso pediátrico o en embarazo, efectos adversos, o cualquier ambigüedad, el agente hace handoff a un farmacéutico nominal con la conversación completa. Sin zonas grises."
+          },
+          "integrations": {
+            "q": "¿Funciona con Farmatic / Unycop / Nixfarma?",
+            "a": "Sí. Integramos vía la API del software de dispensación o, cuando hace falta, vía middleware seguro para que el agente lea stock y precios en vivo. Sin doble carga, sin sincronización manual."
+          },
+          "photoPrescription": {
+            "q": "¿Realmente puede leer una receta desde una foto?",
+            "a": "Para la mayoría de recetas impresas y selladas, sí. El agente lee la foto, comprueba stock y deja un borrador de pedido en cola, pero un técnico humano siempre verifica antes de dispensar. Las recetas manuscritas o con foto de baja calidad se escalan automáticamente."
+          },
+          "compliance": {
+            "q": "¿Es compatible con GDPR para los datos del paciente?",
+            "a": "Sí. Infraestructura EU-hosted por defecto, DPA firmado antes de que fluyan datos reales, APIs LLM zero-retention. Nunca usamos tus conversaciones con pacientes para entrenar modelos que vendamos a otros."
+          },
+          "pricing": {
+            "q": "¿Cuánto cuesta?",
+            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, el tier donde encaja la mayoría de farmacias de este tamaño) o Business 360 ($2.990 + $390/mes) según volumen e integraciones."
+          },
+          "launch": {
+            "q": "¿En cuánto tiempo contesta el WhatsApp?",
+            "a": "3 a 5 semanas desde el kickoff para una farmacia única con software de dispensación estándar. Más si integramos varias farmacias o construimos un conector custom con un sistema menos común."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "¿Quieres verlo contestar tu WhatsApp?",
+        "subheadline": "Te montamos una demo con tus horarios, una muestra de stock y tu FAQ real en una semana tras el diagnóstico. Sin datos de paciente.",
+        "ctaLabel": "Reservar el diagnóstico"
+      }
+    },
+    "language-school": {
+      "meta": {
+        "title": "Asistente de IA para escuelas de idiomas · clases de prueba, matrícula, comunicación con padres",
+        "description": "Un agente de IA para escuelas de idiomas que cualifica leads, reserva clases de prueba, contesta a padres en su idioma y mantiene a los alumnos enganchados entre clases, sin ahogar al equipo de admin en WhatsApp."
+      },
+      "hero": {
+        "eyebrow": "CASO DE USO · ESCUELA DE IDIOMAS",
+        "meta": "WhatsApp + voz · en producción en 3–5 semanas",
+        "kicker": "Para academias, escuelas online y centros de tutoría",
+        "headline": "Cada lead respondido en su idioma. Cada clase de prueba reservada.",
+        "subheadline": "Cualificador de matrícula, reserva de prueba, FAQ de padres y retención de alumnos: en segundos, en cualquier idioma, 24/7. Tu equipo de admin vuelve a enseñar.",
+        "chat": {
+          "businessName": "Tu escuela de idiomas",
+          "subtitle": "Agente Auphere · WhatsApp",
+          "online": "activo"
+        }
+      },
+      "pain": {
+        "marker": { "label": "El dolor", "meta": "Lo que siente cada escuela" },
+        "headline": "Los leads llegan en 12 idiomas. Tu equipo contesta en dos.",
+        "intro": "La demanda en escuelas de idiomas tiene una asimetría brutal: leads llegan en todos los idiomas, a todas horas, con todos los niveles de intención. La mayoría de escuelas contesta en 24 horas, en un idioma, con la misma plantilla. La brecha de conversión es el coste.",
+        "items": {
+          "trialConversion": {
+            "stat": "10–20%",
+            "title": "mejora de retención tras desplegar chatbot",
+            "body": "Las escuelas que automatizaron el funnel de lead a prueba vieron mejoras medibles en reservas de prueba y matrícula posterior."
+          },
+          "parentQuestions": {
+            "stat": "60–80%",
+            "title": "de las preguntas rutinarias de padres son repetitivas",
+            "body": "Horarios, vacaciones, plazos de pago, fechas de examen, descripciones de nivel: las mismas preguntas, todos los días, en distintos idiomas. El agente las contesta; tu equipo se queda con lo que de verdad necesita humano."
+          },
+          "retention": {
+            "stat": "10–20%",
+            "title": "mejora de retención con recordatorios y motivación",
+            "body": "La caída a mitad de curso es real. Check-ins personales (\"no te he visto en clase esta semana, ¿todo bien?\") suben retención dos dígitos."
+          },
+          "multilingual": {
+            "stat": "95+",
+            "title": "idiomas, con detección automática",
+            "body": "La IA conversacional moderna contesta en el idioma en que escribió el lead. Eso solo ya cierra una brecha de conversión que muchas escuelas no sabían que tenían."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "Qué hace el agente", "meta": "En el idioma del que escribe" },
+        "headline": "Lead respondido al instante. Padre atendido en su idioma. Alumno enganchado entre clases.",
+        "intro": "Decidimos en el diagnóstico qué cursos, niveles y audiencias puede atender el agente, qué deja siempre al equipo de admisiones y en qué idiomas operamos por defecto. Lo que requiere humano se escribe antes de salir en vivo.",
+        "items": {
+          "enrollmentQualifier": {
+            "title": "Cualificador de matrícula",
+            "body": "Hace las preguntas correctas: qué idioma, nivel actual, objetivos, niño o adulto, grupal o 1:1, horario preferido. Entrega un lead puntuado al equipo de admisiones, listo para matricular."
+          },
+          "trialBooking": {
+            "title": "Reserva de clase de prueba",
+            "body": "Reserva clases de prueba directamente en tu calendario contra la disponibilidad del profesor adecuado y el nivel del alumno. Envía el enlace, las notas de preparación y la secuencia de recordatorios."
+          },
+          "parentFaq": {
+            "title": "FAQ de padres",
+            "body": "Horarios, vacaciones, tarifas, fechas de examen, descripciones de nivel, qué traer el primer día: contestados en segundos, en el idioma del padre. Las mismas preguntas dejan de interrumpir al equipo de admin."
+          },
+          "retentionReminders": {
+            "title": "Recordatorios de retención",
+            "body": "Empujes personales cuando un alumno falta a dos clases seguidas, cuando toca renovación, cuando se acerca la prueba de nivel. Retención sin que nadie persiga."
+          },
+          "multilingualSupport": {
+            "title": "Soporte multilingüe",
+            "body": "Detecta el idioma de cada mensaje entrante y contesta en él. El mismo agente atiende a padres anglo, abuelos chino-parlantes y alumnos árabes, todo en un hilo por familia."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "Cómo suena", "meta": "Ejemplo real · WhatsApp" },
+        "headline": "Una madre buscando inglés para su hijo, clase de prueba reservada.",
+        "intro": "El mensaje que llega a las nueve de la noche cuando admisiones ya cerró. Los nombres son inventados; las opciones de grupo y 1:1 son las que tu escuela configurará en setup.",
+        "t1": "Hola, busco clases de inglés para mi hijo de 10 años, ¿qué tienen?",
+        "t2": "¡Hola! Tenemos dos opciones para 10 años: grupo (4 alumnos, jueves 17:30, 80€/mes) o 1:1 (horario flexible, 32€/clase). ¿Hizo alguna prueba de nivel antes?",
+        "t3": "No, nunca",
+        "t4": "Sin problema. Te reservo una clase de prueba gratuita el sábado 11:00 con Marta; ella evalúa el nivel y te recomienda el formato. Te paso el enlace de Zoom y una nota de preparación 24h antes."
+      },
+      "integrations": {
+        "marker": { "label": "Se conecta con lo que ya usas", "meta": "Google Calendar · Calendly · Stripe · Mailchimp · HubSpot · LMS custom" },
+        "headline": "Tu calendario, tu cobro, tu CRM.",
+        "intro": "Integramos con tu stack de agenda, cobro y gestión de alumnos. Si tu LMS tiene API, leemos matrículas y asistencia en vivo; si no, corremos sobre Google Calendar + Stripe + tu hoja de control."
+      },
+      "outcomes": {
+        "marker": { "label": "Qué esperar", "meta": "Rangos · no garantías" },
+        "headline": "Prueba a matrícula arriba, padres atendidos, alumnos que no se caen.",
+        "intro": "Rangos sacados de datos del sector edu-tech sobre funnels de clase de prueba, atención multilingüe a padres y retención a mitad de curso. El diagnóstico los traduce a los objetivos firmados, medidos contra tu cohorte de los últimos dos trimestres.",
+        "items": {
+          "trialToEnroll": { "value": "+15% a +30%", "label": "conversión clase prueba → matrícula" },
+          "parentQuestionsHandled": { "value": "60% a 80%", "label": "preguntas rutinarias de padres resueltas por el agente" },
+          "retentionLift": { "value": "+10% a +20%", "label": "retención de alumnos con secuencia de check-in" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Lo que los dueños de escuela preguntan", "meta": "Respuestas planas" },
+        "headline": "Lo que los dueños de escuela preguntan antes de soltarnos los leads de matrícula.",
+        "items": {
+          "multilingual": {
+            "q": "¿Cuántos idiomas habla el agente de verdad?",
+            "a": "El agente detecta y responde en el idioma en que llegó cada mensaje, soportando 95+ idiomas de fábrica. Para tu mercado específico (portugués brasileño, español mexicano, chino simplificado vs. tradicional), afinamos tono y vocabulario durante la configuración."
+          },
+          "parentCommunication": {
+            "q": "¿Pueden padres y alumnos compartir el mismo hilo?",
+            "a": "Sí: un hilo por familia, con el agente identificando quién escribe (padre vs. alumno) y adaptando tono y contenido. Los alumnos adultos tienen su propio hilo por defecto."
+          },
+          "enrollment": {
+            "q": "¿El agente realmente cierra la matrícula o solo cualifica?",
+            "a": "Lo que prefieras. Por defecto cualifica y reserva la prueba; tu equipo de admisiones cierra tras la prueba. Si quieres self-serve (Stripe + prueba de nivel), lo cableamos, pero la mayoría de escuelas prefieren el cierre humano."
+          },
+          "integrations": {
+            "q": "¿Funciona con mi LMS?",
+            "a": "Si tu LMS tiene API (la mayoría las tienen: TutorBird, Bridge, Moodle, Google Classroom), sí. Si no, podemos correr sobre Google Calendar + Stripe + una hoja compartida durante los primeros 90 días mientras evaluamos si una integración más profunda merece la pena."
+          },
+          "pricing": {
+            "q": "¿Cuánto cuesta?",
+            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, el tier donde encaja la mayoría de escuelas de este tamaño) o Business 360 ($2.990 + $390/mes) según volumen y canales."
+          },
+          "launch": {
+            "q": "¿En cuánto tiempo entra en producción?",
+            "a": "3 a 5 semanas desde el kickoff para una escuela única. Más si integramos varios campus o construimos un conector custom para LMS. El diagnóstico entrega el cronograma por escrito."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "¿Quieres verlo cualificar a un padre en portugués?",
+        "subheadline": "Te montamos una demo con tus cursos, niveles y precios (en los idiomas que sirvas) en menos de una semana tras el diagnóstico.",
+        "ctaLabel": "Reservar el diagnóstico"
+      }
+    }
   },
   "about": {
     "meta": {
       "title": "Sobre Auphere",
-      "description": "Auphere diseña, despliega y opera agentes de IA a medida para equipos SMB y mid-market en Europa, EEUU y LATAM. Bespoke + managed — no es un SaaS-template, no es un proyecto one-shot."
+      "description": "Auphere construye, opera y mejora agentes de IA a medida para equipos SMB y mid-market en Europa, EEUU y LATAM. Bespoke + managed: no es un SaaS-template, no es un proyecto one-shot."
     },
     "header": {
       "eyebrow": "SOBRE NOSOTROS",
       "meta": "EU · US · LATAM",
       "title": "Ingeniería serena para empresas que quieren automatizar sin perderse.",
-      "intro": "Construimos, operamos y mejoramos agentes de IA que se encargan del trabajo repetitivo — reservas, seguimiento, soporte, operaciones — para que el equipo que ya tienes se enfoque en lo que realmente necesita una persona."
+      "intro": "Construimos, operamos y mejoramos agentes de IA que se encargan del trabajo repetitivo (reservas, seguimiento, soporte, operaciones) para que el equipo que ya tienes se enfoque en lo que realmente necesita una persona."
     },
     "mission": {
       "title": "Por qué existimos",
       "p1": "La mayoría de equipos que intentan automatizar terminan con tres cosas que no querían: un prototipo no-code que se rompe el día que llega volumen real, un SaaS-template que no encaja con su operación, o un proyecto freelance que desaparece al día siguiente del despliegue.",
-      "p2": "Auphere es la tercera opción. Diseñamos, desplegamos y operamos un agente a la vez, configurado alrededor de tu operación real, monitoreado 24/7 por el mismo equipo que lo construyó.",
-      "p3": "Venimos de Ladrian Studio — un estudio que pasó años entregando trabajo de producción donde el código tenía que funcionar el lunes por la mañana, no solo demostrar bien el viernes."
+      "p2": "Auphere es la tercera opción. Construimos, operamos y mejoramos un agente a la vez, configurado alrededor de tu operación real, monitoreado 24/7 por el mismo equipo que lo construyó.",
+      "p3": "Venimos de Ladrian Studio, un estudio que pasó años entregando trabajo de producción donde el código tenía que funcionar el lunes por la mañana, no solo demostrar bien el viernes."
     },
     "promises": {
       "title": "Cinco cosas que prometemos",
@@ -341,19 +1687,19 @@
   "privacy": {
     "meta": {
       "title": "Privacidad",
-      "description": "Cómo Auphere recolecta, usa y protege datos personales — alineado con GDPR, CCPA y LGPD."
+      "description": "Cómo Auphere recolecta, usa y protege datos personales, alineado con GDPR, CCPA y LGPD."
     },
     "header": {
       "eyebrow": "PRIVACIDAD",
       "meta": "Actualizado 2026-05-17",
-      "title": "Cómo manejamos los datos — los tuyos y los de tus clientes.",
+      "title": "Cómo manejamos los datos: los tuyos y los de tus clientes.",
       "intro": "Esta política describe qué recolecta Auphere, por qué, dónde vive, quién puede tocarlo y cuánto tiempo lo conservamos. Aplica a auphere.com, a clientes del servicio gestionado de agentes y a las personas que interactúan con agentes que operamos."
     },
     "sections": {
       "controller": {
         "title": "Quiénes somos",
-        "p1": "Auphere es el responsable del tratamiento de los datos personales descritos en esta política. Para cualquier consulta sobre privacidad, escribe a privacy@auphere.com — leemos todos los mensajes y respondemos en menos de 30 días.",
-        "p2": "Si resides en el Espacio Económico Europeo, Reino Unido o Suiza, tienes derecho a presentar una reclamación ante tu autoridad local de protección de datos — cooperaremos plenamente."
+        "p1": "Auphere es el responsable del tratamiento de los datos personales descritos en esta política. Para cualquier consulta sobre privacidad, escribe a privacy@auphere.com; leemos todos los mensajes y respondemos en menos de 30 días.",
+        "p2": "Si resides en el Espacio Económico Europeo, Reino Unido o Suiza, tienes derecho a presentar una reclamación ante tu autoridad local de protección de datos; cooperaremos plenamente."
       },
       "dataCollected": {
         "title": "Datos que recolectamos",
@@ -361,7 +1707,7 @@
         "groups": {
           "visitors": {
             "term": "Visitantes del sitio",
-            "description": "Analítica respetuosa con la privacidad (Plausible) — sin cookies, sin tracking cross-site, sin identificadores personales. Agregamos páginas vistas, referrers y país (nunca IP)."
+            "description": "Analítica respetuosa con la privacidad (Plausible): sin cookies, sin tracking cross-site, sin identificadores personales. Agregamos páginas vistas, referrers y país (nunca IP)."
           },
           "leads": {
             "term": "Personas que agendan llamada o nos escriben",
@@ -369,7 +1715,7 @@
           },
           "clients": {
             "term": "Clientes activos y sus usuarios finales",
-            "description": "Lo que tu contrato indica que procesamos por tu cuenta — logs de conversación, metadatos de integración, configuración. Para estos datos somos encargados del tratamiento; tú eres el responsable. Firmamos un DPA antes de tocar datos reales."
+            "description": "Lo que tu contrato indica que procesamos por tu cuenta: logs de conversación, metadatos de integración, configuración. Para estos datos somos encargados del tratamiento; tú eres el responsable. Firmamos un DPA antes de tocar datos reales."
           }
         }
       },
@@ -386,7 +1732,7 @@
           },
           "legitimate": {
             "term": "Interés legítimo",
-            "description": "Para operar el sitio, combatir abuso, evaluar leads entrantes y mejorar los agentes que operamos — siempre que tus derechos fundamentales no prevalezcan."
+            "description": "Para operar el sitio, combatir abuso, evaluar leads entrantes y mejorar los agentes que operamos, siempre que tus derechos fundamentales no prevalezcan."
           },
           "legal": {
             "term": "Obligación legal",
@@ -412,7 +1758,7 @@
           },
           "anthropic": {
             "term": "Anthropic (EU/US)",
-            "description": "Proveedor de LLM (Claude Sonnet 4.6, Haiku 4.5). Los datos no se usan para entrenar modelos — API zero-retention."
+            "description": "Proveedor de LLM (Claude Sonnet 4.6, Haiku 4.5). Los datos no se usan para entrenar modelos: API zero-retention."
           },
           "openai": {
             "term": "OpenAI (EU/US)",
@@ -420,7 +1766,7 @@
           },
           "ycloud": {
             "term": "YCloud (EU)",
-            "description": "Business Solution Provider de WhatsApp — usado solo para clientes con canal WhatsApp."
+            "description": "Business Solution Provider de WhatsApp, usado solo para clientes con canal WhatsApp."
           },
           "composio": {
             "term": "Composio (EU/US)",
@@ -428,11 +1774,11 @@
           },
           "browserbase": {
             "term": "Browserbase (EU/US)",
-            "description": "Sesiones de navegador headless para reservar en paneles de terceros — solo cuando el agente debe operar una UI de proveedor."
+            "description": "Sesiones de navegador headless para reservar en paneles de terceros, solo cuando el agente debe operar una UI de proveedor."
           },
           "langfuse": {
             "term": "Langfuse (EU)",
-            "description": "Observabilidad LLM — trazas, evaluaciones y ciclos de mejora."
+            "description": "Observabilidad LLM: trazas, evaluaciones y ciclos de mejora."
           },
           "plausible": {
             "term": "Plausible (EU)",
@@ -486,7 +1832,7 @@
       },
       "transfers": {
         "title": "Transferencias internacionales",
-        "p1": "Cuando los datos salen de la UE, nos apoyamos en Cláusulas Contractuales Tipo (SCCs) y en el mecanismo de transferencia de cada proveedor. Los clientes europeos pueden solicitar procesamiento EU-only — lo honramos salvo para proveedores sin región europea (listados arriba con claridad)."
+        "p1": "Cuando los datos salen de la UE, nos apoyamos en Cláusulas Contractuales Tipo (SCCs) y en el mecanismo de transferencia de cada proveedor. Los clientes europeos pueden solicitar procesamiento EU-only; lo honramos salvo para proveedores sin región europea (listados arriba con claridad)."
       },
       "cookies": {
         "title": "Cookies",
@@ -501,7 +1847,7 @@
   "terms": {
     "meta": {
       "title": "Términos",
-      "description": "El contrato del diagnóstico, setup y servicio gestionado de Auphere. Bespoke + managed — el código se queda con nosotros, tus datos siguen siendo tuyos."
+      "description": "El contrato del diagnóstico, setup y servicio gestionado de Auphere. Bespoke + managed: el código se queda con nosotros, tus datos siguen siendo tuyos."
     },
     "header": {
       "eyebrow": "TÉRMINOS",
@@ -513,7 +1859,7 @@
       "service": {
         "title": "Qué entregamos",
         "p1": "Auphere opera un servicio bespoke de agente de IA en tres fases: una llamada de diagnóstico (gratuita, 30 minutos), un setup del agente (pago único, alcance acordado por escrito) y un servicio gestionado continuo (cuota mensual, el agente corre en nuestra infraestructura bajo SLA).",
-        "p2": "No somos un proveedor SaaS. No somos un contratista de software que entrega un codebase y se va. La relación es la operación — corremos el agente mientras el contrato esté vigente."
+        "p2": "No somos un proveedor SaaS. No somos un contratista de software que entrega un codebase y se va. La relación es la operación: corremos el agente mientras el contrato esté vigente."
       },
       "diagnostic": {
         "title": "El diagnóstico",
@@ -522,23 +1868,23 @@
       },
       "bespoke": {
         "title": "Bespoke + managed",
-        "p1": "Tras firmar, configuramos el agente para tu operación real — tus herramientas, tu voz, tus reglas. El setup es un pago único, alcance por escrito, 50% al firmar y 50% al kickoff. El agente sale en vivo solo cuando tú validas la configuración.",
+        "p1": "Tras firmar, configuramos el agente para tu operación real: tus herramientas, tu voz, tus reglas. El setup es un pago único, alcance por escrito, 50% al firmar y 50% al kickoff. El agente sale en vivo solo cuando tú validas la configuración.",
         "p2": "Desde el go-live, el agente corre bajo un servicio gestionado mensual: lo hospedamos, lo monitoreamos 24/7, arreglamos lo que se rompa y lo mejoramos en un ciclo acordado (mensual, quincenal o semanal según el tier)."
       },
       "code": {
         "title": "Propiedad del código e infraestructura",
-        "p1": "El agente corre en infraestructura operada por Auphere. El código, los modelos, los prompts, la lógica de orquestación y la plataforma subyacente pertenecen a Auphere — no al cliente.",
+        "p1": "El agente corre en infraestructura operada por Auphere. El código, los modelos, los prompts, la lógica de orquestación y la plataforma subyacente pertenecen a Auphere, no al cliente.",
         "p2": "Esto es deliberado. Compras un agente funcionando y un servicio, no un codebase que mantener, contratar engineers para él o babysittear. Esa es nuestra responsabilidad."
       },
       "clientData": {
         "title": "Lo que sí es tuyo",
-        "p1": "Tus datos son tuyos. Tu historial de conversaciones es tuyo. Tus reglas de negocio, tus integraciones, la configuración del agente y el tono de voz que afinamos a tu marca — todo tuyo. Puedes exportarlo cuando quieras, en formatos estándar.",
+        "p1": "Tus datos son tuyos. Tu historial de conversaciones es tuyo. Tus reglas de negocio, tus integraciones, la configuración del agente y el tono de voz que afinamos a tu marca: todo tuyo. Puedes exportarlo cuando quieras, en formatos estándar.",
         "p2": "Auphere nunca usa tus datos para entrenar modelos que vendemos a otros clientes. El DPA que firmamos lo codifica."
       },
       "fees": {
         "title": "Cuotas y facturación",
         "p1": "Los precios son en USD, impuestos excluidos. El setup se paga 50% al firmar el contrato, 50% al kickoff. El servicio gestionado se factura mensualmente (o anualmente, con 10% de descuento).",
-        "p2": "Si el uso supera el volumen contratado (conversaciones, integraciones), acordamos el siguiente tier antes del siguiente ciclo de facturación — sin facturas sorpresa."
+        "p2": "Si el uso supera el volumen contratado (conversaciones, integraciones), acordamos el siguiente tier antes del siguiente ciclo de facturación. Sin facturas sorpresa."
       },
       "cancellation": {
         "title": "Cancelación",
@@ -557,7 +1903,7 @@
       "liability": {
         "title": "Responsabilidad",
         "p1": "Nuestra responsabilidad agregada está limitada a las cuotas pagadas a Auphere en los doce meses anteriores a la reclamación. Excluimos daños indirectos y consecuenciales en la medida permitida por la ley.",
-        "p2": "Estos límites no aplican a indemnizaciones por incumplimientos de confidencialidad, conducta dolosa o incumplimiento de obligaciones de protección de datos — el MSA detalla las excepciones."
+        "p2": "Estos límites no aplican a indemnizaciones por incumplimientos de confidencialidad, conducta dolosa o incumplimiento de obligaciones de protección de datos; el MSA detalla las excepciones."
       },
       "law": {
         "title": "Ley aplicable",
@@ -587,7 +1933,7 @@
         "items": {
           "rls": {
             "term": "Aislamiento por fila",
-            "description": "Los datos de cada tenant están particionados a nivel de base de datos. El contexto de tenant se aplica automáticamente en cada query — el código de aplicación no puede aceptar un tenant_id de un caller, por diseño."
+            "description": "Los datos de cada tenant están particionados a nivel de base de datos. El contexto de tenant se aplica automáticamente en cada query: el código de aplicación no puede aceptar un tenant_id de un caller, por diseño."
           },
           "tools": {
             "term": "Whitelist de herramientas",
@@ -606,7 +1952,7 @@
       },
       "access": {
         "title": "Quién accede a qué",
-        "p1": "El acceso a datos de cliente está restringido a los engineers que están entregando o soportando activamente el agente de ese cliente — una lista corta y nominal por engagement. Todo acceso queda logueado.",
+        "p1": "El acceso a datos de cliente está restringido a los engineers que están entregando o soportando activamente el agente de ese cliente: una lista corta y nominal por engagement. Todo acceso queda logueado.",
         "p2": "Los engineers usan cuentas nominales, MFA por hardware y credenciales de vida corta. Sin cuentas compartidas. Sin reutilización de contraseñas entre sistemas."
       },
       "compliance": {
@@ -622,7 +1968,7 @@
           },
           "lgpd": {
             "term": "LGPD",
-            "description": "Clientes brasileños pueden solicitar procesamiento alineado con LGPD — mismas garantías operativas que GDPR, con enmiendas contractuales según sea necesario."
+            "description": "Clientes brasileños pueden solicitar procesamiento alineado con LGPD: mismas garantías operativas que GDPR, con enmiendas contractuales según sea necesario."
           },
           "soc2": {
             "term": "SOC 2 Type 1",
@@ -646,10 +1992,11 @@
     }
   },
   "footer": {
-    "tagline": "Agentes de IA a medida — construidos, operados y mejorados para las operaciones que mantienen tu negocio en marcha.",
+    "tagline": "Agentes de IA a medida, construidos, operados y mejorados para las operaciones que mantienen tu negocio en marcha.",
     "product": {
       "title": "Producto",
       "how": "Cómo trabajamos",
+      "useCases": "Casos de uso",
       "pricing": "Precios",
       "cases": "Casos",
       "faq": "FAQ"

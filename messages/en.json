@@ -1,10 +1,14 @@
 {
   "meta": {
-    "title": "Bespoke AI agents · built, run and improved for you",
-    "description": "We design, deploy and operate custom AI agents that handle the repetitive work — booking, follow-up, support, ops — so your team can stop doing it."
+    "title": "Auphere · AI agents we build, run and improve for your team",
+    "description": "We build, run and improve bespoke AI agents for service businesses: booking, follow-up, support and ops. Live in 3 to 4 weeks. Book a free 30-min diagnostic."
+  },
+  "a11y": {
+    "skipToContent": "Skip to content"
   },
   "nav": {
     "howItWorks": "How it works",
+    "useCases": "Use cases",
     "cases": "Cases",
     "pricing": "Pricing",
     "faq": "FAQ",
@@ -14,20 +18,18 @@
     "eyebrow": "BESPOKE AI AGENTS · BUILT, RUN AND IMPROVED FOR YOU",
     "headlineLine1": "Cut 30 hours of",
     "headlineLine2": "repetitive work. Every week.",
-    "subheadline": "Bespoke AI agents that handle booking, follow-up, support and ops — designed, deployed and run by us, so your team doesn't have to.",
+    "subheadline": "Bespoke AI agents that handle booking, follow-up, support and ops. We build, run and improve them, so your team doesn't have to.",
     "ctaPrimary": "Book a 30-min diagnostic",
-    "ctaSecondary": "See Spa Sereno's case →",
+    "ctaSecondary": "See how it works →",
     "ctaMicrocopy": "You'll talk to an engineer, not a salesperson. We leave with a go/no-go.",
     "chat": {
-      "businessName": "Spa Sereno",
+      "businessName": "Your business",
       "subtitle": "Auphere Agent · WhatsApp",
       "online": "online",
       "m1": "Hi, do you have an opening this afternoon for a deep-tissue massage?",
       "m2": "Hi! I have a slot at 5:30pm with Carla or 7:00pm with Marina. Which works for you?",
       "m3": "5:30pm sounds perfect",
-      "m4": "Booked ✓ I'll send a confirmation and a link to reschedule if anything changes. See you this afternoon.",
-      "trustNumber": "1,500+",
-      "trustLabel": "conversations handled monthly for Spa Sereno"
+      "m4": "Booked ✓ I'll send a confirmation and a link to reschedule if anything changes. See you this afternoon."
     }
   },
   "howWeWork": {
@@ -56,35 +58,18 @@
     }
   },
   "pullQuote": {
-    "text": "We build, run and improve the AI agent your team needs — without you having to hire anyone new.",
+    "text": "We build, run and improve the AI agent your team needs, so you don't have to hire anyone new.",
     "attribution": "Auphere"
   },
   "cases": {
     "marker": {
       "label": "Cases",
-      "meta": "Real metrics · real names"
+      "meta": "Coming soon"
     },
     "headline": "Working agents. Measurable wins.",
-    "intro": "We don't ship case studies until the metric is real and the client signs off.",
-    "portraitPlaceholder": "Hand-drawn portrait — coming soon",
-    "moreSoon": "More cases coming soon — Q3 2026",
-    "items": {
-      "spaSereno": {
-        "industry": "Beauty & Wellness",
-        "year": "2026",
-        "tier": "Configuration + Go Live · Pro",
-        "title": "Cut no-shows by 38% with automated WhatsApp follow-up.",
-        "quote": "We used to lose 2 sessions a day with no warning. Now the agent reschedules on its own. My team can focus on what they do best — taking care of people.",
-        "author": {
-          "name": "[Owner name — to confirm]",
-          "role": "Owner, Spa Sereno"
-        },
-        "metric": {
-          "value": "38%",
-          "label": "fewer no-shows in 2 months"
-        }
-      }
-    }
+    "intro": "We don't ship case studies until the metric is real and the client signs off. New cases land here as that happens.",
+    "portraitPlaceholder": "Hand-drawn portrait, coming soon",
+    "moreSoon": "First case studies coming soon"
   },
   "whyAuphere": {
     "marker": {
@@ -100,7 +85,7 @@
       },
       "managed": {
         "title": "We run it. You don't need to hire an AI engineer.",
-        "body": "The agent lives on our infrastructure, monitored 24/7 by the same team that built it. You get a dashboard, an SLA and a monthly improvement cycle — not a codebase to babysit."
+        "body": "The agent lives on our infrastructure, monitored 24/7 by the same team that built it. You get a dashboard, an SLA and a monthly improvement cycle. Not a codebase to babysit."
       },
       "diagnostic": {
         "title": "Honest diagnostic before any commitment.",
@@ -182,14 +167,14 @@
     "headline": "Built for teams that already feel the bottleneck.",
     "yesTitle": "This is for you if…",
     "yes": {
-      "yes1": "Your team is losing real hours every week to repetitive customer interactions — booking, follow-up, status questions, post-sale support.",
+      "yes1": "Your team loses real hours every week to repetitive customer interactions: booking, follow-up, status questions, post-sale support.",
       "yes2": "You're past the \"can AI help?\" stage and ready for an agent that runs in production with measurable results in weeks, not quarters.",
       "yes3": "You've tried no-code or off-the-shelf chatbots (Zapier, Make, Intercom flows) and they broke the moment volume or edge cases showed up.",
       "yes4": "You'd rather get a working agent we operate for you than another tool, codebase or contractor to manage."
     },
     "noTitle": "This is NOT for you if…",
     "no": {
-      "no1": "You're shopping purely on price. Our floor is $850 setup + $120/mo — there are cheaper templates if that's the priority.",
+      "no1": "You're shopping purely on price. Our floor is $850 setup + $120/mo, and there are cheaper templates if that's the priority.",
       "no2": "You need someone live tomorrow. Our diagnostic slots open 2–3 weeks out and we don't cut corners on scoping."
     }
   },
@@ -203,15 +188,15 @@
     "items": {
       "cost": {
         "q": "How much does it cost?",
-        "a": "Every engagement starts with a free 30-minute diagnostic call. If we both agree to move forward, you pick a tier: Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, where most teams land) or Business 360 ($2,990 + $390/mo). USD, taxes excluded. 50% on signing, 50% on kickoff. 10% off when billed annually."
+        "a": "Every engagement starts with a free 30-minute diagnostic call. If we both agree to move forward, you pick a tier: Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, the tier most teams at this scale tend to fit) or Business 360 ($2,990 + $390/mo). USD, taxes excluded. 50% on signing, 50% on kickoff. 10% off when billed annually."
       },
       "timing": {
         "q": "How long until the agent is live?",
-        "a": "Most agents go live 3 to 4 weeks after kickoff — up to 6 weeks if integrations are heavy or your data needs cleanup first. The diagnostic gives you the exact timeline (and the milestones) in writing before you commit to setup."
+        "a": "Most agents go live 3 to 4 weeks after kickoff. Up to 6 weeks if integrations are heavy or your data needs cleanup first. The diagnostic gives you the exact timeline (and the milestones) in writing before you commit to setup."
       },
       "codeOwnership": {
         "q": "Do we own the code?",
-        "a": "No — and that's by design. Your agent runs on infrastructure we monitor and improve 24/7. You own everything that actually matters: your data, conversation history, integrations, business rules, and the agent's logic and tone. You can export all of it at any time. What you don't get is a codebase to maintain, hire for, or babysit. That's our job."
+        "a": "No, and that's by design. Your agent runs on infrastructure we monitor and improve 24/7. You own everything that actually matters: your data, conversation history, integrations, business rules, and the agent's logic and tone. You can export all of it at any time. What you don't get is a codebase to maintain, hire for, or babysit. That's our job."
       },
       "leaving": {
         "q": "What if we want to leave?",
@@ -223,27 +208,27 @@
       },
       "channels": {
         "q": "Which channels and tools do you integrate with?",
-        "a": "Out of the box: WhatsApp Business, Instagram DM, web chat, email, Google Calendar, Outlook, Stripe, Cal.com, HubSpot, common PMS / CRM / booking systems, and most no-code platforms (Make, n8n, Zapier). Anything with a documented API is fair game — the diagnostic confirms the exact list before you sign."
+        "a": "Out of the box: WhatsApp Business, Instagram DM, web chat, email, Google Calendar, Outlook, Stripe, Cal.com, HubSpot, common PMS / CRM / booking systems, and most no-code platforms (Make, n8n, Zapier). Anything with a documented API is fair game. The diagnostic confirms the exact list before you sign."
       },
       "engineer": {
         "q": "Do we need an in-house engineer to manage this?",
         "a": "No. That's the entire point. You get a working agent and a dashboard. Operations, monitoring, model upgrades and the monthly improvement cycle are on us. Your team only does the work that genuinely needs a human."
       },
       "metrics": {
-        "q": "What do you actually measure — and how do we know it's working?",
-        "a": "We agree on 2 to 3 outcome metrics during the diagnostic — usually something like response time, resolution rate, no-shows recovered, or cost per handled conversation. From day one you see them live in your dashboard, alongside conversation logs you can audit. If a metric drifts, the next improvement cycle prioritizes fixing it."
+        "q": "What do you actually measure, and how do we know it's working?",
+        "a": "We agree on 2 to 3 outcome metrics during the diagnostic, usually response time, resolution rate, no-shows recovered, or cost per handled conversation. From day one you see them live in your dashboard, alongside conversation logs you can audit. If a metric drifts, the next improvement cycle prioritizes fixing it."
       },
       "nda": {
         "q": "Do you sign NDAs?",
-        "a": "Yes — but not for the first call. Our standard MSA + DPA cover most clients. We sign custom NDAs for regulated industries (healthcare, financial services, legal) on request, no friction."
+        "a": "Yes, but not for the first call. Our standard MSA + DPA cover most clients. We sign custom NDAs for regulated industries (healthcare, financial services, legal) on request, no friction."
       },
       "different": {
         "q": "How do we know you're different from another AI agency?",
-        "a": "Two ways to test it. One: ask for a 15-minute reference call with a live client before you commit — we'll arrange it. Two: the diagnostic itself. An agency that wants to sell at any cost doesn't tell clients to walk away — we do, when it's the right call. Shipping something the wrong client won't use is worse for both sides."
+        "a": "Two ways to test it. One: ask for a 15-minute reference call with a live client before you commit, and we'll arrange it. Two: the diagnostic itself. An agency that wants to sell at any cost doesn't tell clients to walk away. We do, when it's the right call. Shipping something the wrong client won't use is worse for both sides."
       },
       "noNeed": {
         "q": "What if the diagnostic concludes we don't need you?",
-        "a": "We tell you straight and you keep whatever notes and recommendations came out of the call to act on however you want — in-house, with another vendor, or shelved for later. We'd rather lose one deal than ship something that won't earn its keep. Long term, that's the only marketing that scales."
+        "a": "We tell you straight and you keep whatever notes and recommendations came out of the call to act on however you want: in-house, with another vendor, or shelved for later. We'd rather lose one deal than ship something that won't earn its keep. Long term, that's the only marketing that scales."
       }
     }
   },
@@ -251,25 +236,1295 @@
     "eyebrow": "LET'S SEE IF WE FIT",
     "headline": "30 minutes.",
     "headlineAccent": "No cost. No deck.",
-    "subheadline": "You'll talk to an engineer, not a salesperson. We leave with a go/no-go — yours or ours.",
+    "subheadline": "You'll talk to an engineer, not a salesperson. We leave with a go/no-go. Yours or ours.",
     "microcopy": "Don't see a slot that works? Email contacto@auphere.com and we'll find one."
+  },
+  "useCases": {
+    "common": {
+      "ctaPrimary": "Book a 30-min diagnostic",
+      "ctaSecondary": "See how we work →",
+      "ctaMicrocopy": "You'll talk to an engineer, not a salesperson. We leave with a go/no-go.",
+      "outcomesNote": "Honest ranges grounded in industry research. Not guarantees. The diagnostic sets the targets we measure against."
+    },
+    "hub": {
+      "meta": {
+        "title": "Use cases · AI agents that fit the way your industry actually works",
+        "description": "How Auphere builds bespoke AI agents for the operations of barbershops, medspas, pharmacies and other service businesses: voice receptionists, lead qualifiers, refill managers and more."
+      },
+      "header": {
+        "eyebrow": "USE CASES",
+        "meta": "Bespoke per vertical · live in weeks",
+        "title": "Where Auphere agents earn their keep.",
+        "intro": "Not a generic chatbot dropped on every industry. Each vertical below has its own pains, its own integrations and its own definition of \"working\". Pick the one that looks like yours, and we'll show you what the agent actually does on Monday morning."
+      },
+      "list": {
+        "barbershop": {
+          "kicker": "Receptionist · Bookings · Reminders",
+          "title": "Barbershops & traditional barbers",
+          "summary": "Your barbers cut. The agent answers, books and reminds. And chases the no-show before it happens.",
+          "stat": "35%",
+          "statLabel": "calls missed today · sector data"
+        },
+        "nail-salon": {
+          "kicker": "Bookings · Prices · Technician matching",
+          "title": "Nail salons",
+          "summary": "Hands on nails. The agent quotes prices, matches the technician and books. Around the clock, in any language.",
+          "stat": "79%",
+          "statLabel": "recurring inquiries auto-handled"
+        },
+        "spa": {
+          "kicker": "Bookings · Prep · Upsell",
+          "title": "Spas & wellness centers",
+          "summary": "Calm room, quiet phone, full schedule. Bookings and prep in your tone, even at 11pm.",
+          "stat": "46–50%",
+          "statLabel": "of spa bookings happen after hours"
+        },
+        "medspa": {
+          "kicker": "Lead qualifier · Consult booking · Compliance-aware",
+          "title": "Medspas & aesthetic clinics",
+          "summary": "Every lead answered in under a minute. Every consult qualified and prepped, without your front desk drowning.",
+          "stat": "<1 min",
+          "statLabel": "lead response · 24/7"
+        },
+        "dental-clinic": {
+          "kicker": "Recall · Reminders · Insurance pre-check",
+          "title": "Dental clinics",
+          "summary": "Every overdue patient called, every chair filled. Recall, reminders and emergency triage, around the clock.",
+          "stat": "20–30%",
+          "statLabel": "of patients overdue · sector data"
+        },
+        "physiotherapy": {
+          "kicker": "Bookings · Adherence · Recall",
+          "title": "Physiotherapy clinics",
+          "summary": "Therapists treat. The agent reminds, books, and keeps the home exercises actually getting done.",
+          "stat": "<50%",
+          "statLabel": "HEP adherence without reminders"
+        },
+        "veterinary": {
+          "kicker": "Emergency triage · Vaccinations · Multi-pet",
+          "title": "Veterinary clinics",
+          "summary": "Vets treat animals. The agent answers humans, with 24/7 triage that only pages the on-call when it matters.",
+          "stat": "24/7",
+          "statLabel": "emergency triage · sleep restored"
+        },
+        "pharmacy": {
+          "kicker": "WhatsApp · Refills · Pharmacist handoff",
+          "title": "Pharmacies",
+          "summary": "Availability, refills and pickups answered in seconds. The pharmacist only steps in when it genuinely matters.",
+          "stat": "60–70%",
+          "statLabel": "non-clinical calls · sector data"
+        },
+        "language-school": {
+          "kicker": "Enrollment · Trials · Parent comms",
+          "title": "Language schools",
+          "summary": "Every lead answered in their language. Trial classes booked, parents informed, students reminded, around the clock.",
+          "stat": "95+",
+          "statLabel": "languages auto-detected"
+        }
+      },
+      "bespoke": {
+        "title": "Don't see your vertical?",
+        "intro": "The same engine adapts to any operation with a conversational bottleneck: real-estate, hotels, insurance brokers, dental labs, gyms, auto service. Tell us yours in the diagnostic and we'll map it out before quoting.",
+        "ctaLabel": "Book a diagnostic →"
+      }
+    },
+    "barbershop": {
+      "meta": {
+        "title": "AI receptionist for barbershops · bookings, reminders, reviews",
+        "description": "An AI agent that answers your barbershop phone 24/7, books appointments, cuts no-shows with reminders and asks for the Google review, without anyone leaving the chair."
+      },
+      "hero": {
+        "eyebrow": "USE CASE · BARBERSHOP",
+        "meta": "Voice + WhatsApp · live in 3–4 weeks",
+        "kicker": "For independent barbers and 1-to-10-chair shops",
+        "headline": "Your barbers cut. The agent answers the phone.",
+        "subheadline": "Bookings, reminders and reviews, without anyone dropping their work to pick up a call. Live in 3 to 4 weeks, run 24/7 by us.",
+        "chat": {
+          "businessName": "Barbería La Constancia",
+          "subtitle": "Auphere Agent · Voice + WhatsApp",
+          "online": "online"
+        }
+      },
+      "pain": {
+        "marker": { "label": "The pain", "meta": "Data · 2026 industry surveys" },
+        "headline": "The phone is always rung at the worst moment.",
+        "intro": "These aren't ours. They're the numbers every barbershop owner already feels. We just stopped ignoring them.",
+        "items": {
+          "missedCalls": {
+            "stat": "35%",
+            "title": "of calls go unanswered during business hours",
+            "body": "Your highest-revenue moment is mid-haircut. That's also when the phone rings, and gets ignored."
+          },
+          "handsBusy": {
+            "stat": "75%",
+            "title": "of callers hang up before two minutes on hold",
+            "body": "By the time someone is free, the client has already booked somewhere else. The loss is silent."
+          },
+          "noShows": {
+            "stat": "2 sessions/day",
+            "title": "the average no-show cost for a 3-chair shop",
+            "body": "No reminder, no reschedule, no waitlist offer. Just an empty chair and a lost hour."
+          },
+          "reviews": {
+            "stat": "73%",
+            "title": "more loyal when booking and contact are friction-free",
+            "body": "Loyalty in 2026 isn't about price. It's about being reachable when the client thinks of you."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "What the agent does", "meta": "Tuned to your chairs" },
+        "headline": "The work that pulls your barbers away from the chair, gone.",
+        "intro": "Pick the jobs that drain your day in the diagnostic. We wire those, leave the rest off, and you only see the part that helps you cut more.",
+        "items": {
+          "voiceReceptionist": {
+            "title": "Voice receptionist",
+            "body": "Answers in under 3 seconds, books on Booksy/Treatwell/Fresha or your sheet, knows your prices, your barbers and your policy. Sounds like a human, not a phone tree."
+          },
+          "whatsappBookings": {
+            "title": "WhatsApp bookings",
+            "body": "Same brain, written channel. Clients ask, the agent books. Confirmation with a reschedule link they can tap with one thumb."
+          },
+          "reminders": {
+            "title": "Reminders & reschedule",
+            "body": "24h before, the agent pings the client. If they tap reschedule, it offers two slots that fit your calendar and the barber's preferences."
+          },
+          "waitlist": {
+            "title": "Smart waitlist",
+            "body": "Someone cancels. The agent offers the slot to the first person on the waitlist within seconds. The chair stays full."
+          },
+          "reviewCapture": {
+            "title": "Review capture",
+            "body": "Two hours after the haircut, a soft nudge with a one-tap link to your Google profile. More reviews, less awkward asking."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "How it sounds", "meta": "Real example · WhatsApp" },
+        "headline": "Saturday morning, fade booked, scissors uninterrupted.",
+        "intro": "How a typical Saturday inquiry actually plays out. Names made up, the flow is what your clients would see.",
+        "t1": "Hey, do you have anything for a fade + beard this Saturday morning?",
+        "t2": "Yes, 9:30 with Luis or 11:00 with Marco. Both 35 min, $28 fade + $12 beard. Which works?",
+        "t3": "9:30 with Luis",
+        "t4": "Booked ✓ Saturday 9:30 with Luis. I'll remind you Friday evening with a one-tap reschedule if anything changes."
+      },
+      "integrations": {
+        "marker": { "label": "It plugs into what you already use", "meta": "Booksy · Treatwell · Fresha · Square · more" },
+        "headline": "We don't ask you to switch tools.",
+        "intro": "The agent talks to your booking system, your calendar and your WhatsApp number. If a tool isn't on this list but has an API, it's in scope."
+      },
+      "outcomes": {
+        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "headline": "What 8 weeks with the agent usually moves.",
+        "intro": "Honest brackets pulled from barbershop sector data and the early shops we've worked with. The diagnostic locks the specific number we sign for, against your current calendar.",
+        "items": {
+          "noShowReduction": { "value": "−25% to −40%", "label": "no-shows in 8 weeks" },
+          "callsRecovered": { "value": "+15% to +30%", "label": "bookings recovered from missed calls" },
+          "reviewLift": { "value": "3–5×", "label": "more Google reviews per month" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Questions barbers actually ask", "meta": "Plain answers" },
+        "headline": "What barbers ask us before they sign.",
+        "items": {
+          "system": {
+            "q": "Does it work with Booksy / Treatwell / Fresha?",
+            "a": "Yes, out of the box. If you're on something else (Square, a Google Sheet, a custom system), we integrate via API or, when that's not possible, with a browser session that books on the panel just like a human. The diagnostic confirms it before you pay anything."
+          },
+          "voiceQuality": {
+            "q": "Will my clients hear that it's an AI?",
+            "a": "Most don't. We use neural voices that handle accents, ambient noise and natural pauses. If a client explicitly asks for a human, the agent escalates by SMS or WhatsApp to your barber. No robot loop."
+          },
+          "walkIn": {
+            "q": "What about walk-ins?",
+            "a": "The agent doesn't replace your barber's judgment. Walk-ins stay walk-ins. The agent simply makes sure the next caller doesn't become a missed booking while you're finishing the current cut."
+          },
+          "multiLocation": {
+            "q": "We have more than one shop. Same agent or different ones?",
+            "a": "One agent, one phone strategy, separate calendars and rules per location. We agree the routing during the diagnostic: by phone number, by language, by client history, whatever fits."
+          },
+          "pricing": {
+            "q": "How much does it cost?",
+            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, the tier most shops at this scale tend to fit) or Business 360 ($2,990 + $390/mo) depending on volume and channels."
+          },
+          "launch": {
+            "q": "How long until it's answering my phone?",
+            "a": "3 to 4 weeks from kickoff for a single-location shop. Faster if your booking system is API-friendly, slower if we're cleaning up data or integrating multiple locations."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "Want to hear it answer your phone?",
+        "subheadline": "We can build you a demo with your shop's voice and prices in under 48 hours after the diagnostic. No commitment to deploy.",
+        "ctaLabel": "Book the diagnostic"
+      }
+    },
+    "nail-salon": {
+      "meta": {
+        "title": "AI booking assistant for nail salons · 24/7 calls, walk-ins, prices",
+        "description": "An AI agent that answers your nail salon's phone and WhatsApp 24/7, books appointments, quotes prices instantly, matches clients to their preferred technician and cuts no-shows."
+      },
+      "hero": {
+        "eyebrow": "USE CASE · NAIL SALON",
+        "meta": "Voice + WhatsApp · live in 3–4 weeks",
+        "kicker": "For independent nail bars and chains",
+        "headline": "Hands on nails. The agent handles the calls.",
+        "subheadline": "Bookings, prices, technician matching and reminders, answered in seconds, 24/7. Run by us, integrated with the system you already use.",
+        "chat": {
+          "businessName": "Your nail bar",
+          "subtitle": "Auphere Agent · WhatsApp",
+          "online": "online"
+        }
+      },
+      "pain": {
+        "marker": { "label": "The pain", "meta": "Data · 2026 industry surveys" },
+        "headline": "The phone never stops. The technicians' hands never start.",
+        "intro": "Nail salons get more booking calls than any other beauty vertical, and the answer-rate is the lowest because everyone's gloved up. The cost shows up quietly: in unanswered DMs, in walk-ins that walked back out, in repeat clients who tried a different salon at midnight.",
+        "items": {
+          "walkInChaos": {
+            "stat": "33%",
+            "title": "average lift in schedule occupancy with AI booking",
+            "body": "When availability, pricing and matching are answered in seconds, the schedule fills tighter and the double-bookings vanish."
+          },
+          "priceQuestions": {
+            "stat": "79%",
+            "title": "of recurring questions are handled by AI in real time",
+            "body": "Prices, services, parking, gel vs. acrylic, drying time. The questions that saturate the salon line every single hour."
+          },
+          "noShows": {
+            "stat": "15–30%",
+            "title": "industry no-show rate",
+            "body": "Without multi-touch reminders and easy reschedule links, every cancelation is a wasted hour at the table."
+          },
+          "technicianMatch": {
+            "stat": "57%",
+            "title": "more loyal when clients can book their preferred technician",
+            "body": "Matching by technician is a retention lever, not a luxury. Most booking flows ignore it."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "What the agent does", "meta": "Off your tables, never on them" },
+        "headline": "Gloves stay on. The phone still gets answered.",
+        "intro": "Pick the jobs that pull your technicians off the table in the diagnostic. We wire those, leave the rest off, and you only see the part that fills more chairs.",
+        "items": {
+          "voiceReceptionist": {
+            "title": "Voice receptionist",
+            "body": "Answers in under 3 seconds, books on Booksy/Fresha/GlossGenius or your own system. Knows your prices, your add-ons and your house rules."
+          },
+          "whatsappBookings": {
+            "title": "WhatsApp bookings",
+            "body": "Same brain, written channel. Clients ask, the agent quotes and books. Confirmation with one-tap reschedule."
+          },
+          "priceFaq": {
+            "title": "Instant price quotes",
+            "body": "Gel, acrylic, dip, French, builder, soak-off. The agent quotes every variation accurately, on the spot. No more 'let me check and call you back'."
+          },
+          "technicianMatching": {
+            "title": "Technician matching",
+            "body": "Returning clients are routed to their usual technician by default. New clients are matched by service type, language and availability."
+          },
+          "loyaltyCapture": {
+            "title": "Loyalty & rebooking",
+            "body": "After a service, the agent invites the client to rebook in 3 weeks (for gels) or 2 (for naturals) with one tap, keeping retention up without anyone chasing."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "How it sounds", "meta": "Real example · WhatsApp" },
+        "headline": "Price, slot, technician. Three turns.",
+        "intro": "The kind of late-night DM that today gets read tomorrow (or never). The names are made up; the quote, the matching and the booking happen exactly like this.",
+        "t1": "Hi, how much is a builder gel with French tip, and do you have anything Friday after 5?",
+        "t2": "Builder gel + French is $65, around 75 min. Friday I have 5:15pm with Sofia (your usual) or 6:30pm with Lena. Which works?",
+        "t3": "5:15 with Sofia please",
+        "t4": "Booked ✓ Friday 5:15pm with Sofia, builder gel + French. I'll remind you Thursday with a one-tap reschedule if anything changes."
+      },
+      "integrations": {
+        "marker": { "label": "It plugs into what you already use", "meta": "Booksy · Fresha · GlossGenius · Square · Vagaro" },
+        "headline": "We don't ask you to switch tools.",
+        "intro": "The agent talks to your booking system, your calendar and your WhatsApp number. If a tool isn't on this list but has an API, it's in scope."
+      },
+      "outcomes": {
+        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "headline": "Tighter schedule, fewer holes, more rebookings.",
+        "intro": "Honest brackets pulled from nail-salon sector data and the early bars we've worked with. The diagnostic locks the specific number we sign for, against your current calendar.",
+        "items": {
+          "inquiriesHandled": { "value": "70% to 80%", "label": "of recurring inquiries resolved by the agent" },
+          "occupancyLift": { "value": "+20% to +35%", "label": "schedule occupancy in 8 weeks" },
+          "noShowReduction": { "value": "−20% to −35%", "label": "no-shows with reminder sequence" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Questions nail salon owners ask", "meta": "Plain answers" },
+        "headline": "What nail-salon owners ask before they let us touch the booking line.",
+        "items": {
+          "technicianPref": {
+            "q": "Can the agent remember which technician each client prefers?",
+            "a": "Yes. As soon as the agent has booked a returning client once, it remembers their usual technician and offers them first. If your system already tracks this (Booksy/Fresha do), we read it from there; if not, the agent builds the profile from conversation history."
+          },
+          "walkIn": {
+            "q": "What about walk-ins?",
+            "a": "Walk-ins stay walk-ins. The agent simply makes sure the next caller doesn't become a missed booking while you're finishing a set. If the salon is full, it offers the next slot or adds the client to a waitlist."
+          },
+          "multiLanguage": {
+            "q": "My clients speak multiple languages. Can the agent too?",
+            "a": "Yes. The agent detects the language each client writes or speaks in and replies in that language. Spanish, English, Vietnamese, Portuguese and Mandarin are configured by default; others are added during the diagnostic."
+          },
+          "integrations": {
+            "q": "Does it work with my booking software?",
+            "a": "Booksy, Fresha, GlossGenius, Square, Vagaro, all out of the box. Anything else with a documented API is in scope. The diagnostic confirms the exact integration list before you sign."
+          },
+          "pricing": {
+            "q": "How much does it cost?",
+            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, the tier most salons at this scale tend to fit) or Business 360 ($2,990 + $390/mo) depending on volume and channels."
+          },
+          "launch": {
+            "q": "How long until it's live?",
+            "a": "3 to 4 weeks from kickoff for a single salon. Faster if your booking system is API-friendly, slower if we're cleaning up data or integrating multiple locations."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "Want to hear it answer your phone?",
+        "subheadline": "We can build a demo with your services, prices and technicians in under 48 hours of the diagnostic. No commitment to deploy.",
+        "ctaLabel": "Book the diagnostic"
+      }
+    },
+    "spa": {
+      "meta": {
+        "title": "AI receptionist for spas & wellness centers · 24/7 bookings, prep, upsell",
+        "description": "An AI agent that answers your spa's calls and WhatsApp 24/7, books treatments, sends pre-treatment instructions, and surfaces add-ons and gift cards naturally, without your front desk burning out."
+      },
+      "hero": {
+        "eyebrow": "USE CASE · SPA & WELLNESS",
+        "meta": "Voice + WhatsApp · live in 3–5 weeks",
+        "kicker": "For day spas, massage studios and wellness centers",
+        "headline": "Calm room. Quiet phone. Full schedule.",
+        "subheadline": "Bookings, prep, add-ons and gift cards, handled in a tone that matches the room. Run by us, 24/7, integrated with the system you already use.",
+        "chat": {
+          "businessName": "Your spa",
+          "subtitle": "Auphere Agent · WhatsApp",
+          "online": "online"
+        }
+      },
+      "pain": {
+        "marker": { "label": "The pain", "meta": "Data · 2026 industry surveys" },
+        "headline": "The room stays peaceful. The revenue, less so.",
+        "intro": "Spa clients book when they remember, usually at 10pm. Your front desk is closed; the call goes to voicemail; the booking goes to a competitor. The losses are quiet and consistent.",
+        "items": {
+          "afterHoursBookings": {
+            "stat": "46–50%",
+            "title": "of spa bookings happen outside business hours",
+            "body": "Half your demand shows up when nobody's at the front desk. Without 24/7 coverage, half your demand is also lost."
+          },
+          "noShowCost": {
+            "stat": "$20k/mo",
+            "title": "average no-show cost for a 100-treatment/wk spa",
+            "body": "20% no-shows on $100 average tickets bleeds $20k a month. Multi-touch confirmation drops it to ~5%, recovering $15k/mo."
+          },
+          "missedCalls": {
+            "stat": "30–35%",
+            "title": "of in-hours calls go unanswered",
+            "body": "The front desk is checking someone out, answering an email, or settling a complaint. The phone just keeps ringing."
+          },
+          "upsellLost": {
+            "stat": "1 in 3",
+            "title": "missed calls is a potential upsell",
+            "body": "Add-ons, gift cards, packages. Surfaced naturally in conversation, they convert. Surfaced in a checkout rush, they don't."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "What the agent does", "meta": "Tuned to the tone of your room" },
+        "headline": "A receptionist that never raises its voice.",
+        "intro": "Pick the rooms and rituals the agent should serve in the diagnostic. We tune the voice to your brand, write the prep notes from your treatments, and leave anything off-tone off the table.",
+        "items": {
+          "voiceReceptionist": {
+            "title": "Voice receptionist",
+            "body": "Answers calmly, in your tone. Books on Mindbody/Booker/Zenoti or your own calendar. Knows treatments, durations, therapists, contraindications."
+          },
+          "whatsappBookings": {
+            "title": "WhatsApp bookings",
+            "body": "Same brain, written channel. Confirmation with the room number, therapist name and prep notes, all in the same message."
+          },
+          "prepReminders": {
+            "title": "Pre-treatment prep",
+            "body": "24h and 2h before, the agent sends prep notes specific to the treatment: arrive 15 min early, no perfume, drink water, avoid sun. The room stays on time."
+          },
+          "upsell": {
+            "title": "Natural upsell",
+            "body": "When a client books a 60-min massage, the agent surfaces the 90-min upgrade or the add-on (hot stones, aromatherapy) only if relevant. Never pushy, never out of context."
+          },
+          "giftCards": {
+            "title": "Gift cards & memberships",
+            "body": "Holidays, birthdays, anniversaries. The agent handles gift card purchases and renews memberships without anyone chasing."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "How it sounds", "meta": "Real example · WhatsApp" },
+        "headline": "A booking, a prep note, an upgrade offered once.",
+        "intro": "The 10pm message that today would sit in voicemail until morning. The names are made up; the upgrade offer and the prep note land exactly like this.",
+        "t1": "Hi, do you have anything for a deep-tissue massage Saturday afternoon?",
+        "t2": "Yes. 3:00pm with Carla (60 min, $110) or 5:30pm with Marina (60 min, $110). Want me to suggest the 90-min for $145? Same therapist, deeper work.",
+        "t3": "3:00pm with Carla, 60 min is fine",
+        "t4": "Booked ✓ Saturday 3:00pm with Carla. I'll send prep notes 2h before. Short version: no perfume, drink water, arrive 10 min early."
+      },
+      "integrations": {
+        "marker": { "label": "It plugs into what you already use", "meta": "Mindbody · Booker · Zenoti · Vagaro · Mangomint" },
+        "headline": "Your booking system, your calendar, your tone.",
+        "intro": "The agent talks to your spa software, your calendar and your WhatsApp number. If a tool isn't on this list but has an API, it's in scope."
+      },
+      "outcomes": {
+        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "headline": "After-hours bookings captured, no-shows soft, tickets a bit fuller.",
+        "intro": "Brackets pulled from spa and wellness sector data, plus the early studios we've worked with. The diagnostic locks the specific number we sign for, measured against your last quarter.",
+        "items": {
+          "afterHoursCapture": { "value": "+30% to +50%", "label": "bookings captured after hours" },
+          "noShowReduction": { "value": "−25% to −45%", "label": "no-shows in 8 weeks" },
+          "upsellLift": { "value": "+10% to +20%", "label": "average ticket value via natural upsell" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Questions spa owners ask", "meta": "Plain answers" },
+        "headline": "What spa owners ask before they let us speak to a guest.",
+        "items": {
+          "tone": {
+            "q": "Will it sound like a spa, not a phone tree?",
+            "a": "Yes. We tune the voice and word choice to your brand during the configuration phase. Calm, unhurried, never pushy. We can also have you record specific phrases (greeting, signature treatment names) so they're spoken in your voice."
+          },
+          "walkIn": {
+            "q": "What about walk-ins and gift card holders showing up unannounced?",
+            "a": "The agent handles inbound calls and messages. In-room walk-ins stay with your front desk. The agent can verify gift card balances on the phone before the guest arrives."
+          },
+          "multiTherapist": {
+            "q": "We have a team of therapists with different specialties. Can the agent match them?",
+            "a": "Yes. The agent learns each therapist's specialties, languages and schedules, and matches new clients accordingly. Returning clients are routed to their usual therapist by default."
+          },
+          "integrations": {
+            "q": "Does it work with Mindbody / Booker / Zenoti?",
+            "a": "Yes, all three are supported out of the box, as are Vagaro and Mangomint. Anything else with a documented API is in scope. The diagnostic confirms the exact list before you sign."
+          },
+          "pricing": {
+            "q": "How much does it cost?",
+            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, the tier most spas at this scale tend to fit) or Business 360 ($2,990 + $390/mo) depending on volume and channels."
+          },
+          "launch": {
+            "q": "How long until it's live?",
+            "a": "3 to 5 weeks from kickoff for a single location. Faster if your booking system is API-friendly, slower if we're integrating multiple locations or migrating data first."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "Want to hear it in your tone?",
+        "subheadline": "We can build a demo with your treatments, therapists and brand voice in under a week of the diagnostic. No commitment to deploy.",
+        "ctaLabel": "Book the diagnostic"
+      }
+    },
+    "medspa": {
+      "meta": {
+        "title": "AI lead qualifier & receptionist for medspas · GDPR-aware",
+        "description": "An AI agent that answers every medspa lead in under a minute, qualifies them properly, books the consult and preps them, on infrastructure designed for clinics handling sensitive patient data."
+      },
+      "hero": {
+        "eyebrow": "USE CASE · MEDSPA",
+        "meta": "Lead qualifier + voice · live in 4–6 weeks",
+        "kicker": "For aesthetic practices and medspas",
+        "headline": "Every lead answered in under a minute. Every consult prepped.",
+        "subheadline": "An AI agent that qualifies, books and preps, on infrastructure designed for clinics that handle sensitive patient data, with a DPA signed before anything real flows.",
+        "chat": {
+          "businessName": "Refine Medspa",
+          "subtitle": "Auphere Agent · Web + WhatsApp",
+          "online": "online"
+        }
+      },
+      "pain": {
+        "marker": { "label": "The pain", "meta": "Data · 2026 industry surveys" },
+        "headline": "The lead doesn't wait. The compliance does.",
+        "intro": "Medspas have the highest no-show cost in the service industry and the strictest compliance line. Both problems start at the same place: the unanswered first contact.",
+        "items": {
+          "leadDecay": {
+            "stat": "10×",
+            "title": "less likely to convert after the 5-minute mark",
+            "body": "If the laser is on or the front desk is checking someone out, a fresh lead goes cold faster than the cream rinses off."
+          },
+          "noShows": {
+            "stat": "$820/wk",
+            "title": "average no-show cost per medspa, $42,640 a year",
+            "body": "Empty treatment rooms are the most expensive piece of real estate you own. Without multi-touch confirmation, margins evaporate."
+          },
+          "qualification": {
+            "stat": "1 in 3",
+            "title": "consults aren't actually candidates",
+            "body": "Wrong skin type, wrong expectations, wrong medication. Time burned that could have gone to a real candidate, if anyone had asked the right questions upfront."
+          },
+          "compliance": {
+            "stat": "DPA",
+            "title": "every vendor touching patient data must sign one",
+            "body": "Most chatbots can't sign a proper Data Processing Agreement. We can, and do, before any real patient data flows."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "What the agent does", "meta": "Inside a strict clinical perimeter" },
+        "headline": "Lead in, prepped patient out. Nothing clinical in between.",
+        "intro": "What the agent owns and what it deliberately doesn't are written into the contract before anything goes live. The list below is the menu, the diagnostic decides which items end up on the table for your clinic.",
+        "items": {
+          "leadQualifier": {
+            "title": "Lead qualifier",
+            "body": "Asks the questions in the right order: interest, first-time or returning, relevant conditions, timeframe, rough budget. Hands the result to your team scored and ready."
+          },
+          "consultBooking": {
+            "title": "Consult booking",
+            "body": "Books straight into Boulevard/Mindbody/Zenoti against the right provider's calendar. Holds the slot only when the lead is qualified. No junk on the schedule."
+          },
+          "prepReminders": {
+            "title": "Prep & reminders",
+            "body": "Multi-touch confirmation 7d / 48h / 2h before, with the prep instructions specific to the treatment: no sun, no retinol, no makeup, fasted, etc."
+          },
+          "reEngagement": {
+            "title": "Re-engagement",
+            "body": "Dormant leads at 30 / 60 / 90 days get a sequence tuned to their original interest. Quiet, not pushy. Designed to recover a meaningful share of leads that would otherwise go cold."
+          },
+          "humanHandoff": {
+            "title": "Human handoff",
+            "body": "The moment a question crosses into medical advice or handling of patient data outside the contracted scope, the agent escalates to a named human with full context. No grey area."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "How it sounds", "meta": "Real example · web chat" },
+        "headline": "Qualified, booked and prepped, in five turns.",
+        "intro": "Notice what the agent doesn't ask: anything clinical that should come from your provider. Notice what it does ask: only what we need to decide if this is a fit.",
+        "t1": "Hi, I'm thinking about laser hair removal for my underarms. What's the price?",
+        "t2": "Happy to help. A few quick questions first so I quote you accurately and check you're a candidate. Is this your first laser session, or have you done it before?",
+        "t3": "First time. I do have melasma though. Does that matter?",
+        "t4": "It can affect which laser we use. Let me hold a free 15-min consult with Dr. Patel, she'll confirm the right approach and quote you on the spot. I have Thursday 4pm or Saturday 11am.",
+        "t5": "Booked ✓ Sat 11am. I'll send prep notes 48h before. Short version: no sun, no self-tanner, shave morning of."
+      },
+      "integrations": {
+        "marker": { "label": "It plugs into the stack you already run", "meta": "Boulevard · Mindbody · Zenoti · Vagaro · GoHighLevel · HubSpot · more" },
+        "headline": "Your PMS, your CRM, your booking flow.",
+        "intro": "Every common medspa system is supported. We sign a DPA with every vendor that touches patient data before the agent ever sees a real record."
+      },
+      "outcomes": {
+        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "headline": "The three numbers a clinic owner actually watches.",
+        "intro": "Brackets that hold up against medspa benchmarks for response, conversion and prep-driven no-shows. The diagnostic turns them into the specific targets we sign for in the contract, against your last three months of data.",
+        "items": {
+          "leadResponse": { "value": "<1 min", "label": "lead response · 24/7" },
+          "consultConversion": { "value": "+20% to +35%", "label": "lead → booked consult" },
+          "noShowReduction": { "value": "−30% to −50%", "label": "no-shows with prep sequence" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Questions medspa owners ask", "meta": "Plain answers" },
+        "headline": "What medspa owners ask before they trust us with leads.",
+        "items": {
+          "compliance": {
+            "q": "How do you handle our patient data and compliance?",
+            "a": "We operate on EU-hosted infrastructure that meets the relevant technical safeguards (encryption in transit and at rest, tenant isolation, audit logging) and use zero-retention LLM APIs. We sign a DPA with every clinic before any real patient data flows through the agent. Your conversation data is never used to train models we sell to other clients. If your operation has specific regulatory requirements beyond GDPR, we'll map them out during the diagnostic and tell you upfront whether we're a fit."
+          },
+          "qualification": {
+            "q": "Can it really qualify properly without practicing medicine?",
+            "a": "Yes, because the qualification questions are about candidacy, expectations and logistics, not diagnosis. The agent has an explicit \"do not advise\" perimeter: anything clinical (interactions, dosing, contraindications) hands off to a named human inside your team."
+          },
+          "integrations": {
+            "q": "Does it work with our PMS / CRM?",
+            "a": "If you run Boulevard, Mindbody, Zenoti, Vagaro, Aesthetics Pro, GoHighLevel or HubSpot, out of the box. Anything else with an API is in scope. The diagnostic confirms the exact integration list before you sign."
+          },
+          "humanEscalation": {
+            "q": "When does a human take over?",
+            "a": "Three triggers: anything clinical, anything outside the contracted scope, or anything the client explicitly asks. Escalation goes to a named human inbox or phone with full conversation context. No dropped balls."
+          },
+          "pricing": {
+            "q": "How much does it cost?",
+            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo) or Business 360 ($2,990 + $390/mo, the tier most clinics tend to fit given volume and SLA needs)."
+          },
+          "launch": {
+            "q": "How long until it's live?",
+            "a": "4 to 6 weeks for a single clinic, longer if we need multi-provider routing or deep PMS customization. The diagnostic gives you the timeline in writing before kickoff."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "Want a working demo with your protocols?",
+        "subheadline": "We can stand up a demo with your treatments and qualifying questions within a week of the diagnostic. No real patient data involved, synthetic data only.",
+        "ctaLabel": "Book the diagnostic"
+      }
+    },
+    "dental-clinic": {
+      "meta": {
+        "title": "AI receptionist for dental clinics · recall, reminders, insurance",
+        "description": "An AI agent that answers your dental clinic's phone 24/7, reactivates overdue patients, books cleanings and check-ups, runs insurance pre-checks and triages emergencies, without your front desk drowning."
+      },
+      "hero": {
+        "eyebrow": "USE CASE · DENTAL CLINIC",
+        "meta": "Voice + WhatsApp · live in 4–6 weeks",
+        "kicker": "For solo practices and multi-chair clinics",
+        "headline": "Every overdue patient called. Every chair filled.",
+        "subheadline": "Recall, reminders, insurance pre-check and emergency triage, handled in seconds, 24/7. The hygienist's chair stops sitting empty.",
+        "chat": {
+          "businessName": "Your dental clinic",
+          "subtitle": "Auphere Agent · WhatsApp",
+          "online": "online"
+        }
+      },
+      "pain": {
+        "marker": { "label": "The pain", "meta": "Data · 2026 industry surveys" },
+        "headline": "The recall list is the most valuable spreadsheet you never call.",
+        "intro": "The math is brutal: 20–30% of your patient base is overdue, every empty chair is a fixed cost burned, and nobody on your front desk has the time to chase 600 names. The AI doesn't blink.",
+        "items": {
+          "overdueRecall": {
+            "stat": "20–30%",
+            "title": "of the patient base is overdue for care",
+            "body": "Hygiene recalls, post-treatment check-ins, expired insurance benefits. Each one is real revenue sitting in a spreadsheet no human has time to work."
+          },
+          "noShows": {
+            "stat": "45%",
+            "title": "no-show reduction with multi-touch reminders",
+            "body": "Three-touch reminder sequences (7d / 48h / 2h) before the appointment cut no-shows in half. Most clinics still do one SMS or none."
+          },
+          "insuranceFriction": {
+            "stat": "10–15 min",
+            "title": "of front desk time per insurance check",
+            "body": "Verifying benefits manually before each appointment burns hours every day. The agent does it in seconds, and rejects the bookings that won't be covered."
+          },
+          "afterHours": {
+            "stat": "After 6pm",
+            "title": "when toothaches actually call",
+            "body": "Dental emergencies don't happen on your schedule. Without 24/7 triage, the call goes to voicemail and the patient ends up in someone else's chair the next morning."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "What the agent does", "meta": "Scheduling and triage only" },
+        "headline": "Every overdue patient called. Every chair filled.",
+        "intro": "The agent handles the calling, the recalls and the after-hours triage. The clinical line is drawn in the contract, in writing, before anything goes live. The diagnostic decides which roles below your clinic actually needs.",
+        "items": {
+          "voiceReceptionist": {
+            "title": "Voice receptionist",
+            "body": "Answers in seconds, books cleanings, check-ups and consults on Dentrix/Open Dental/Eaglesoft. Knows your providers, your hygienists and your scheduling rules."
+          },
+          "recallReactivation": {
+            "title": "Recall & reactivation",
+            "body": "Works the overdue list automatically. Personal, calm outreach in the patient's language, with one-tap rebooking. Recovers the recall revenue your team can't get to."
+          },
+          "insurancePrecheck": {
+            "title": "Insurance pre-check",
+            "body": "Verifies benefits during the booking call. Confirms coverage, surfaces co-pays, and flags out-of-network situations before the patient sits in the chair."
+          },
+          "reminders": {
+            "title": "Multi-touch reminders",
+            "body": "7d / 48h / 2h sequences with one-tap reschedule. Adapted to the appointment type: a hygiene recall pings differently than a root canal."
+          },
+          "emergencyTriage": {
+            "title": "Emergency triage",
+            "body": "After hours, a dental-aware triage flow asks the right questions, offers same-day slots when warranted, and escalates to the on-call dentist for true emergencies. The clinical line is hard."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "How it sounds", "meta": "Real example · phone" },
+        "headline": "Overdue, verified, booked. One inbound call.",
+        "intro": "The kind of call that today gets a callback tomorrow (or never). The names are made up; the eligibility check and the booking happen exactly like this.",
+        "t1": "Hi, I think I'm overdue for a cleaning?",
+        "t2": "Hi, let me check. Yes, your last cleaning with Dr. Patel was 9 months ago, you're due. Your insurance covers two cleanings a year and you've only used one, so this would be at no cost to you. Want me to book?",
+        "t3": "Yes, anything Tuesday afternoon?",
+        "t4": "Booked ✓ Tuesday 3:00pm with Maya (your usual hygienist), 45 min. I'll send a reminder 48h before with a one-tap reschedule. See you then."
+      },
+      "integrations": {
+        "marker": { "label": "It plugs into your practice management system", "meta": "Dentrix · Open Dental · Eaglesoft · Curve · Carestack · more" },
+        "headline": "Your PMS, your recall list, your insurance flow.",
+        "intro": "We integrate with all major dental PMS systems via API or, when needed, secure middleware. No double-entry, no manual sync."
+      },
+      "outcomes": {
+        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "headline": "Recall worked, no-shows down, revenue back on the books.",
+        "intro": "Brackets pulled from dental sector data on recall recovery and no-show reduction. The diagnostic turns them into the numbers we sign for, measured against your last twelve months of PMS data.",
+        "items": {
+          "noShowReduction": { "value": "−30% to −45%", "label": "no-shows in 8 weeks" },
+          "reactivation": { "value": "15% to 25%", "label": "of overdue patients reactivated" },
+          "recallRevenue": { "value": "+$80k to $150k", "label": "annual recall revenue recovered" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Questions dental owners ask", "meta": "Plain answers" },
+        "headline": "What dental owners ask before they hand us the recall list.",
+        "items": {
+          "insurance": {
+            "q": "Can it really verify insurance during the call?",
+            "a": "For most major US carriers, yes. We integrate with insurance verification APIs and clearinghouses to pull live benefits while the patient is still on the line. For carriers without API access, the agent collects the policy info and flags the verification for your team."
+          },
+          "recall": {
+            "q": "How does the recall flow work?",
+            "a": "We import your PMS's overdue patient list, segment by treatment type and last-visit date, then work it on a schedule we agree with you. Personal, calm outbound calls and messages in the patient's language. You see every contact in your dashboard."
+          },
+          "emergency": {
+            "q": "Does the agent handle clinical questions or just scheduling?",
+            "a": "Scheduling and triage only. Anything clinical (dosing, post-op concerns, suspected emergencies) is escalated to a named dentist or on-call provider with full context. The clinical perimeter is written into the contract before launch."
+          },
+          "integrations": {
+            "q": "Does it work with Dentrix / Open Dental / Eaglesoft?",
+            "a": "Yes, all three out of the box, plus Curve, Carestack, Dentally and most EU systems. Anything with a documented API is in scope. The diagnostic confirms the exact list before you sign."
+          },
+          "pricing": {
+            "q": "How much does it cost?",
+            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo) or Business 360 ($2,990 + $390/mo, the tier most clinics tend to fit given volume and SLA needs)."
+          },
+          "launch": {
+            "q": "How long until it's live?",
+            "a": "4 to 6 weeks for a single clinic, longer if we need to import a large legacy recall list or integrate multiple offices. The diagnostic gives you the timeline in writing before kickoff."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "Want to see it work your recall list?",
+        "subheadline": "We can stand up a demo on your overdue patients (synthetic data) within a week of the diagnostic. No real PHI involved.",
+        "ctaLabel": "Book the diagnostic"
+      }
+    },
+    "physiotherapy": {
+      "meta": {
+        "title": "AI assistant for physiotherapy clinics · sessions, adherence, recall",
+        "description": "An AI agent for physiotherapy clinics that books sessions, sends home-exercise reminders, manages multi-session packages and reactivates dormant patients, without your therapists doing admin between sessions."
+      },
+      "hero": {
+        "eyebrow": "USE CASE · PHYSIOTHERAPY",
+        "meta": "Voice + WhatsApp · live in 3–5 weeks",
+        "kicker": "For solo physios and multi-therapist clinics",
+        "headline": "Therapists treat. The agent handles the rest.",
+        "subheadline": "Bookings, session reminders, home-exercise nudges and recall, handled in seconds, 24/7. Your team stops doing admin between patients.",
+        "chat": {
+          "businessName": "Your physio clinic",
+          "subtitle": "Auphere Agent · WhatsApp",
+          "online": "online"
+        }
+      },
+      "pain": {
+        "marker": { "label": "The pain", "meta": "What every physio clinic feels" },
+        "headline": "The exercises only work if the patient does them.",
+        "intro": "Physiotherapy outcomes depend on adherence, packages depend on completion, and both depend on a follow-up loop most clinics can't staff. The agent runs that loop without a coffee break.",
+        "items": {
+          "packageDropoff": {
+            "stat": "1 in 4",
+            "title": "patients abandon their package before finishing",
+            "body": "Sessions 4-8 are where attendance drops off. Without a nudge, the package goes unused, the outcome suffers, and the renewal never happens."
+          },
+          "hepAdherence": {
+            "stat": "<50%",
+            "title": "adherence to home exercise programs without reminders",
+            "body": "The exercises only work if they get done. Reminders nudge adherence above 70%, and reminders only work if someone sends them."
+          },
+          "noShows": {
+            "stat": "−20%",
+            "title": "last-minute cancellations with personalized reminders",
+            "body": "Personalized messages (not generic SMS blasts) cut cancellations by a fifth. Your therapists treat patients, not empty rooms."
+          },
+          "recall": {
+            "stat": "60 days",
+            "title": "average time to positive ROI",
+            "body": "Most physio clinics break even on a managed agent inside two months, purely from no-show reduction and recall reactivation."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "What the agent does", "meta": "Adherence and packages, not advice" },
+        "headline": "The follow-up loop your team can't staff, run on autopilot.",
+        "intro": "Pick the parts of the loop your clinic actually leaks on in the diagnostic: session reminders, exercise nudges, package balance, dormant patients. The clinical perimeter is written into the contract before launch.",
+        "items": {
+          "voiceReceptionist": {
+            "title": "Voice receptionist",
+            "body": "Answers and books on Cliniko/Jane/WebPT. Knows your therapists, room availability, session durations and package types."
+          },
+          "sessionReminders": {
+            "title": "Session reminders",
+            "body": "Multi-touch reminders 48h / 24h / 2h before with one-tap reschedule. Adapted to the patient and the treatment type."
+          },
+          "hepReminders": {
+            "title": "Home exercise reminders",
+            "body": "Personalized nudges on the schedule the therapist set (daily / 3×/wk / before bed). Asks the patient to log completion, which feeds back into their session plan."
+          },
+          "packageManagement": {
+            "title": "Package management",
+            "body": "Tracks each patient's session balance, surfaces the next booking at the right cadence, and flags when a package is about to expire so it gets renewed before it lapses."
+          },
+          "recallReactivation": {
+            "title": "Recall & reactivation",
+            "body": "Patients who finished a package 3-6 months ago get a personal check-in: how are you feeling, ready for a tune-up? Recovers dormant patients without anyone on your team chasing."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "How it sounds", "meta": "Real example · WhatsApp" },
+        "headline": "Session booked, exercises remembered.",
+        "intro": "The reschedule plus clinical question that today eats fifteen minutes of admin. The names are made up; the rebooking and the handoff happen exactly like this.",
+        "t1": "Hi, I need to reschedule tomorrow's session, something came up at work",
+        "t2": "No problem. Your next available slots with Daniel are Thursday 10am or Friday 4pm. Both 50 min. Which works?",
+        "t3": "Friday 4pm please. And quick question, am I supposed to do the band exercises before or after the bridges?",
+        "t4": "Rebooked ✓ Friday 4pm with Daniel. For the exercise question I'll pass you to Daniel directly. He'll reply within the hour with the right order."
+      },
+      "integrations": {
+        "marker": { "label": "It plugs into your PMS", "meta": "Cliniko · Jane App · WebPT · ClinicSense · Mindbody · Calendly" },
+        "headline": "Your PMS, your therapist calendars, your packages.",
+        "intro": "We integrate with all major physio/allied-health PMS systems via API. Package balances and session counts stay in sync, no double-entry, no manual reconciliation."
+      },
+      "outcomes": {
+        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "headline": "Adherence up, packages finished, dormant patients back.",
+        "intro": "Brackets pulled from physio sector data on HEP adherence and package completion. The diagnostic turns them into the numbers we sign for, against your last six months of session data.",
+        "items": {
+          "noShowReduction": { "value": "−15% to −25%", "label": "no-shows in 8 weeks" },
+          "adherenceLift": { "value": "+30% to +60%", "label": "home exercise adherence with reminders" },
+          "packageCompletion": { "value": "+15% to +25%", "label": "package completion rate" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Questions physio owners ask", "meta": "Plain answers" },
+        "headline": "What physio owners ask before they trust us with adherence.",
+        "items": {
+          "hep": {
+            "q": "How does the home exercise program reminder actually work?",
+            "a": "The therapist sets the program and cadence in your PMS (or in our dashboard). The agent translates that into personal messages on the patient's preferred channel: daily, 3×/wk, before bed, whatever was prescribed. The patient can mark exercises done, ask follow-ups (which get escalated to the therapist), or reschedule the next session, all in one thread."
+          },
+          "packageManagement": {
+            "q": "Can it track multi-session packages?",
+            "a": "Yes. The agent reads the patient's package balance from your PMS, surfaces the next session at the right cadence, and flags when a package is 2 sessions from expiring so it gets renewed in time. No more patients losing sessions because they forgot."
+          },
+          "integrations": {
+            "q": "Does it work with Cliniko / Jane App / WebPT?",
+            "a": "Yes, all three out of the box, plus ClinicSense, Mindbody and most EU physio PMS systems. Anything else with a documented API is in scope."
+          },
+          "escalation": {
+            "q": "What if a patient asks something clinical?",
+            "a": "The agent escalates to the named therapist with full context. We write the clinical perimeter into the contract before launch: pain levels, red flags, post-op concerns all hand off to a human."
+          },
+          "pricing": {
+            "q": "How much does it cost?",
+            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, the tier most clinics at this scale tend to fit) or Business 360 ($2,990 + $390/mo) depending on volume and integrations."
+          },
+          "launch": {
+            "q": "How long until it's live?",
+            "a": "3 to 5 weeks from kickoff for a single clinic, longer if we're integrating multiple therapists with different schedules or migrating legacy package data. The diagnostic gives you the timeline in writing before kickoff."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "Want to see adherence climb?",
+        "subheadline": "We can stand up a demo on a synthetic patient cohort within a week of the diagnostic: exercise reminders, package tracking, recall, the lot.",
+        "ctaLabel": "Book the diagnostic"
+      }
+    },
+    "veterinary": {
+      "meta": {
+        "title": "AI receptionist for veterinary clinics · 24/7 emergency triage, vaccinations",
+        "description": "An AI agent for veterinary clinics that answers calls 24/7, triages emergencies, manages multi-pet households, sends vaccination reminders and books appointments, so your vets can focus on patients, not phones."
+      },
+      "hero": {
+        "eyebrow": "USE CASE · VETERINARY",
+        "meta": "Voice + WhatsApp · live in 4–6 weeks",
+        "kicker": "For small-animal practices and multi-vet clinics",
+        "headline": "Vets treat animals. The agent answers the humans.",
+        "subheadline": "Bookings, emergency triage, vaccination reminders and multi-pet households, answered 24/7. The on-call vet gets paged only when it actually matters.",
+        "chat": {
+          "businessName": "Your vet clinic",
+          "subtitle": "Auphere Agent · Voice + WhatsApp",
+          "online": "online"
+        }
+      },
+      "pain": {
+        "marker": { "label": "The pain", "meta": "What every vet clinic feels" },
+        "headline": "The animals don't book office hours.",
+        "intro": "Emergencies happen at 3am. Vaccinations get forgotten. Households with three pets are scheduling nightmares. The agent doesn't sleep, doesn't forget, and doesn't ask the on-call vet for help unless it actually needs to.",
+        "items": {
+          "afterHoursEmergencies": {
+            "stat": "24/7",
+            "title": "is when emergencies happen, not when you're open",
+            "body": "Without a triage layer, every after-hours call either pages the on-call vet (burnout) or goes to voicemail (the pet ends up at someone else's clinic)."
+          },
+          "vaccinationsForgotten": {
+            "stat": "Lost",
+            "title": "vaccination cycles owners forget without reminders",
+            "body": "Rabies, DHPP, FVRCP: each species and breed has its own schedule. Owners can't track it; your front desk doesn't have time. The recall list grows quietly."
+          },
+          "multiPet": {
+            "stat": "Households",
+            "title": "with multiple pets are scheduling nightmares",
+            "body": "Three dogs, two cats, different vaccination schedules, different vets. Coordinating across one profile is the kind of complexity humans get wrong half the time."
+          },
+          "noShows": {
+            "stat": "−30% to −40%",
+            "title": "no-show reduction with SMS + WhatsApp reminders",
+            "body": "Pet appointments are still missed at painful rates. Multi-touch reminders cut that by a third, but only if someone sends them."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "What the agent does", "meta": "Triage protocol, signed by your lead vet" },
+        "headline": "The on-call vet stops getting paged for false alarms.",
+        "intro": "Your lead vet co-writes the triage protocol with us in the diagnostic: what's urgent, what waits till morning, what gets the on-call pager, what gets referred to the 24/7 emergency clinic. The agent runs the protocol. It does not improvise.",
+        "items": {
+          "voiceReceptionist": {
+            "title": "Voice receptionist",
+            "body": "Answers in seconds, books wellness exams, vaccinations and surgeries on AVImark/Cornerstone/ezyVet. Knows your vets, your room availability, your species specializations."
+          },
+          "emergencyTriage": {
+            "title": "Emergency triage",
+            "body": "After-hours triage with a vet-defined symptom checklist. Offers same-day slots when warranted, refers to the nearest 24/7 emergency clinic when needed, pages the on-call vet only for actual emergencies."
+          },
+          "vaccinationReminders": {
+            "title": "Vaccination reminders",
+            "body": "Tracks each pet's species- and breed-specific vaccination schedule (rabies, DHPP, FVRCP, FeLV) and reaches out before each one is due, with one-tap booking."
+          },
+          "multiPetManagement": {
+            "title": "Multi-pet households",
+            "body": "Consolidates pets under one owner profile. Suggests grouped appointments where it makes sense, sends one reminder for all overlapping visits, keeps each pet's medical history individual."
+          },
+          "vetEscalation": {
+            "title": "Clinical escalation",
+            "body": "Any question that crosses into diagnosis, treatment, dosing or medication interaction hands off to a named vet with full context. Never improvises on clinical matters."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "How it sounds", "meta": "Real example · after-hours call" },
+        "headline": "Triage in three turns.",
+        "intro": "The 3am call that today either pages your on-call vet for nothing or gets missed entirely. The names are made up; the triage questions and the escalation happen exactly like this.",
+        "t1": "My dog ate a whole bar of chocolate, what do I do?",
+        "t2": "I'm sorry, chocolate can be serious. Quick questions to triage: how big is your dog, when did this happen, and what kind of chocolate (milk, dark, baking)?",
+        "t3": "40kg labrador, about 30 minutes ago, dark chocolate.",
+        "t4": "This is urgent. Paging Dr. Mehta on call. She'll call you within 5 minutes. In the meantime: do not induce vomiting, keep your dog calm. The nearest 24/7 emergency clinic is 8 min away if you can't wait. Address coming on SMS now."
+      },
+      "integrations": {
+        "marker": { "label": "It plugs into your PMS", "meta": "AVImark · Cornerstone · eVetPractice · Provet Cloud · ezyVet" },
+        "headline": "Your PMS, your vaccination schedules, your on-call rotation.",
+        "intro": "We integrate with all major veterinary PMS systems. Pet records, vaccination histories and emergency contact rotations stay in sync, no double-entry."
+      },
+      "outcomes": {
+        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "headline": "Every after-hours call triaged, vaccinations on schedule.",
+        "intro": "Brackets pulled from small-animal practice data on vaccination compliance and no-show reduction. The diagnostic turns them into the numbers we sign for, against your PMS history.",
+        "items": {
+          "emergenciesTriaged": { "value": "100%", "label": "after-hours calls triaged · 24/7" },
+          "vaccinationCompliance": { "value": "+20% to +40%", "label": "on-schedule vaccinations with reminders" },
+          "noShowReduction": { "value": "−30% to −40%", "label": "no-shows in 8 weeks" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Questions vet owners ask", "meta": "Plain answers" },
+        "headline": "What vets ask before they let an agent triage their on-call line.",
+        "items": {
+          "emergencyTriage": {
+            "q": "How does the emergency triage actually work?",
+            "a": "We co-design the triage protocol with your lead vet during configuration: what counts as urgent, what gets a same-day slot, what triggers paging the on-call vet, what gets referred to the nearest 24/7 emergency clinic. The protocol is written, versioned and audited. The agent doesn't improvise."
+          },
+          "multiPet": {
+            "q": "Can it handle a household with several pets?",
+            "a": "Yes, that's a core capability. All pets sit under one owner profile, with individual medical histories and vaccination schedules. The agent can suggest grouped appointments where it makes sense, or coordinate separate visits across the household."
+          },
+          "vaccinations": {
+            "q": "Does it really track each species' vaccination schedule?",
+            "a": "Yes. Dogs (DHPP, rabies, bordetella, leptospirosis), cats (FVRCP, FeLV, rabies), rabbits (RHDV, myxomatosis): schedules per species, breed and life stage. We pull them from your PMS or set them up in our dashboard."
+          },
+          "integrations": {
+            "q": "Does it work with AVImark / Cornerstone / ezyVet?",
+            "a": "Yes, all three out of the box, plus Provet Cloud and eVetPractice. Anything else with a documented API is in scope. The diagnostic confirms the exact integration list before you sign."
+          },
+          "pricing": {
+            "q": "How much does it cost?",
+            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo) or Business 360 ($2,990 + $390/mo, the tier most clinics tend to fit given the 24/7 SLA needs)."
+          },
+          "launch": {
+            "q": "How long until it's live?",
+            "a": "4 to 6 weeks for a single clinic. The triage protocol design takes a couple of weeks on top of normal setup. The diagnostic gives you the timeline in writing before kickoff."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "Want to hear it triage a chocolate-bar call?",
+        "subheadline": "We can stand up a demo with your triage protocol and vaccination schedules in under a week of the diagnostic. No real patient data needed.",
+        "ctaLabel": "Book the diagnostic"
+      }
+    },
+    "pharmacy": {
+      "meta": {
+        "title": "AI assistant for pharmacies · WhatsApp, refills and pickups",
+        "description": "An AI agent for community pharmacies that answers WhatsApp, manages refill recurrence, reads prescription photos and only escalates to the pharmacist when it actually matters."
+      },
+      "hero": {
+        "eyebrow": "USE CASE · PHARMACY",
+        "meta": "WhatsApp + voice · live in 3–5 weeks",
+        "kicker": "For community pharmacies and small chains",
+        "headline": "Your pharmacy answers WhatsApp. Even mid-queue.",
+        "subheadline": "Availability, refill reminders and pickups. The pharmacist only steps in when the question genuinely needs them.",
+        "chat": {
+          "businessName": "Farmacia Central",
+          "subtitle": "Auphere Agent · WhatsApp",
+          "online": "online"
+        }
+      },
+      "pain": {
+        "marker": { "label": "The pain", "meta": "What every counter feels" },
+        "headline": "The questions don't stop. The counter is one human deep.",
+        "intro": "Pharmacy isn't a chatbot industry, until you separate the truly clinical from the merely operational. Most of what saturates the counter is the second.",
+        "items": {
+          "repetitiveQuestions": {
+            "stat": "60–70%",
+            "title": "of calls are non-clinical",
+            "body": "Hours? Stock? Generic substitution? Sun protection for kids? These don't need a degree, but they do need an answer right now."
+          },
+          "refills": {
+            "stat": "1 in 4",
+            "title": "chronic patients miss their refill cycle",
+            "body": "Lost adherence, lost recurring revenue, lost relationship. Nobody had time to call them before the meds ran out."
+          },
+          "whatsappChaos": {
+            "stat": "Mixed",
+            "title": "WhatsApp orders bleed into personal phones",
+            "body": "Some get answered. Some get lost. None have a paper trail. The pharmacy can't tell which is which."
+          },
+          "clinicalLine": {
+            "stat": "Hard line",
+            "title": "the pharmacist's job is non-negotiable",
+            "body": "Interactions, dosing, contraindications: the agent stays out of all of it. That perimeter is contractual, not aspirational."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "What the agent does", "meta": "Operational only · the counter stays clinical" },
+        "headline": "Off the counter, never on the pharmacist's job.",
+        "intro": "We turn on what your pharmacy needs and explicitly mark what the agent must never touch. Both lists are written into the contract before launch.",
+        "items": {
+          "whatsappAssistant": {
+            "title": "WhatsApp & voice assistant",
+            "body": "Answers in seconds: hours, on-duty pharmacies nearby, parking, product availability, non-clinical FAQ. The most common questions, all of them."
+          },
+          "refillManager": {
+            "title": "Refill manager",
+            "body": "Detects each chronic patient's cycle (28-day, monthly, quarterly) and reaches out before they run out. One tap to reserve the meds for pickup or delivery."
+          },
+          "photoPrescription": {
+            "title": "Prescription by photo",
+            "body": "Patient sends a photo of their prescription. The agent reads it, checks stock, and queues the order for the technician to verify and prepare."
+          },
+          "serviceCapture": {
+            "title": "Service capture",
+            "body": "SPD (pillboxes), nutritionist appointments, orthopedics, optics: your specialty services get surfaced when they're relevant to the question, not as ads."
+          },
+          "pharmacistEscalation": {
+            "title": "Pharmacist escalation",
+            "body": "Any hint of a clinical question (interactions, dosing, adverse effects, paediatric or pregnancy concerns) and the agent hands off to a named pharmacist with full context."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "How it sounds", "meta": "Real example · WhatsApp" },
+        "headline": "Two pickups, no counter time burned.",
+        "intro": "Notice the line the agent doesn't cross: anything that would be advice gets the pharmacist's name attached.",
+        "t1": "Hi, do you have Enantyum 25mg in stock?",
+        "t2": "Yes, we have 12 boxes in stock and it's open until 10pm tonight. Want me to reserve one for pickup?",
+        "t3": "Yes please. And how often can I take it?",
+        "t4": "Reserved ✓ ready at the counter, ask for Box 41. For dosing I'll pass you to Marta, our pharmacist on shift. She'll reply in under 5 minutes."
+      },
+      "integrations": {
+        "marker": { "label": "It plugs into your dispensing software", "meta": "Farmatic · Unycop · Nixfarma · Bitfarma · WhatsApp Business" },
+        "headline": "Stock, prices and patient files, all live.",
+        "intro": "We read availability and prices straight from your dispensing software, so the answers are never out of date. No double-entry, no manual sync."
+      },
+      "outcomes": {
+        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "headline": "Counter freed, refills on time, WhatsApp answered fast.",
+        "intro": "Brackets pulled from community pharmacy sector data on adherence and counter saturation. The diagnostic turns them into the targets we sign for, measured against your dispensing software.",
+        "items": {
+          "questionsHandled": { "value": "60% to 80%", "label": "non-clinical questions resolved without counter" },
+          "adherence": { "value": "+10% to +20%", "label": "refill adherence on chronic patients" },
+          "responseTime": { "value": "<10 s", "label": "WhatsApp response in business hours" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Questions pharmacy owners ask", "meta": "Plain answers" },
+        "headline": "What pharmacists ask before they put an agent in front of patients.",
+        "items": {
+          "clinicalEscalation": {
+            "q": "Where exactly does the agent stop and the pharmacist start?",
+            "a": "We write the perimeter into the contract before launch. As a rule: any question about dosing, interactions, contraindications, paediatric or pregnancy use, adverse effects, or anything ambiguous, the agent hands off to a named pharmacist with the full conversation. No grey area."
+          },
+          "integrations": {
+            "q": "Does it work with Farmatic / Unycop / Nixfarma?",
+            "a": "Yes. We integrate via the dispensing software's API or, when needed, via a secure middleware so the agent reads stock and prices live. No double-entry, no manual sync."
+          },
+          "photoPrescription": {
+            "q": "Can it really read a prescription from a photo?",
+            "a": "For most printed and stamped prescriptions, yes. The agent reads the photo, checks stock and queues a draft order, but a human technician always verifies before dispensing. Handwritten or low-quality photos get escalated automatically."
+          },
+          "compliance": {
+            "q": "Is this GDPR-compliant for our patient data?",
+            "a": "Yes. EU-hosted infrastructure by default, DPA signed before any real data flows, zero-retention LLM APIs. We never use your patient conversations to train models we sell to others."
+          },
+          "pricing": {
+            "q": "How much does it cost?",
+            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, the tier most pharmacies at this scale tend to fit) or Business 360 ($2,990 + $390/mo) depending on volume and integrations."
+          },
+          "launch": {
+            "q": "How long until it's answering WhatsApp?",
+            "a": "3 to 5 weeks from kickoff for a single pharmacy on standard dispensing software. Longer if we're integrating multiple sites or building a custom integration with a less common system."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "Want to see it answering your WhatsApp?",
+        "subheadline": "We can stand up a demo with your hours, stock samples and your real FAQ within a week of the diagnostic. No patient data needed.",
+        "ctaLabel": "Book the diagnostic"
+      }
+    },
+    "language-school": {
+      "meta": {
+        "title": "AI assistant for language schools · trial bookings, enrollment, parent comms",
+        "description": "An AI agent for language schools that qualifies leads, books trial classes, answers parents in their own language, and keeps students engaged between classes, without your admin team drowning in WhatsApp."
+      },
+      "hero": {
+        "eyebrow": "USE CASE · LANGUAGE SCHOOL",
+        "meta": "WhatsApp + voice · live in 3–5 weeks",
+        "kicker": "For language academies, online schools and tutoring centers",
+        "headline": "Every lead answered in their language. Every trial class booked.",
+        "subheadline": "Enrollment qualifier, trial booking, parent FAQ and student retention, answered in seconds, in any language, 24/7. Your admin team gets to teach again.",
+        "chat": {
+          "businessName": "Your language school",
+          "subtitle": "Auphere Agent · WhatsApp",
+          "online": "online"
+        }
+      },
+      "pain": {
+        "marker": { "label": "The pain", "meta": "What every school feels" },
+        "headline": "The leads come in 12 languages. Your team replies in two.",
+        "intro": "Language school demand has a brutal asymmetry: leads arrive in every language, at every hour, with every level of intent. Most schools answer in 24 hours, in one language, with the same template. The conversion gap is the cost.",
+        "items": {
+          "trialConversion": {
+            "stat": "10–20%",
+            "title": "retention improvement after chatbot deployment",
+            "body": "Schools that automated the lead-to-trial funnel saw measurable lifts in both trial bookings and post-trial enrollment."
+          },
+          "parentQuestions": {
+            "stat": "60–80%",
+            "title": "of routine parent questions are repeatable",
+            "body": "Schedules, holidays, fee deadlines, exam dates, level descriptions: the same questions, every day, in different languages. The agent handles them; the admin team handles what actually needs them."
+          },
+          "retention": {
+            "stat": "10–20%",
+            "title": "retention lift with reminder and motivation messages",
+            "body": "Mid-course drop-off is real. Personal check-ins (\"haven't seen you in class this week, everything ok?\") move retention double digits."
+          },
+          "multilingual": {
+            "stat": "95+",
+            "title": "languages, with automatic detection",
+            "body": "Modern conversational AI replies in whatever language the lead wrote in. That alone closes a conversion gap most schools didn't know they had."
+          }
+        }
+      },
+      "roles": {
+        "marker": { "label": "What the agent does", "meta": "Speaks your families' languages, not yours" },
+        "headline": "The trial gets booked while your admin team teaches.",
+        "intro": "Pick which courses, levels and audiences the agent speaks to in the diagnostic. We wire the trial-to-enrollment loop, leave the rest off, and write the handoff to your admissions team into the contract.",
+        "items": {
+          "enrollmentQualifier": {
+            "title": "Enrollment qualifier",
+            "body": "Asks the right questions: which language, current level, goals, child or adult, group or 1:1, preferred schedule. Hands a scored lead to your admissions team, ready to enroll."
+          },
+          "trialBooking": {
+            "title": "Trial class booking",
+            "body": "Books trial classes straight into your calendar against the right teacher's availability and the student's level. Sends the joining link, the prep notes and the reminder sequence."
+          },
+          "parentFaq": {
+            "title": "Parent FAQ",
+            "body": "Schedules, holidays, fees, exam dates, level descriptions, what to bring on day one: answered in seconds, in the parent's language. The same questions stop interrupting the admin team."
+          },
+          "retentionReminders": {
+            "title": "Retention reminders",
+            "body": "Personal nudges when a student misses two classes in a row, when a renewal is due, when the level test is around the corner. Drives retention without anyone chasing."
+          },
+          "multilingualSupport": {
+            "title": "Multilingual support",
+            "body": "Detects the language of every inbound message and replies in it. The same agent serves English-speaking parents, Mandarin-speaking grandparents, and Arabic-speaking students, all in one thread per family."
+          }
+        }
+      },
+      "conversation": {
+        "marker": { "label": "How it sounds", "meta": "Real example · WhatsApp" },
+        "headline": "Qualified, booked, prepped, in four turns.",
+        "intro": "The Spanish-speaking parent that today would wait two days for a reply in English. The names are made up; the language switch and the trial booking happen exactly like this.",
+        "t1": "Hola, busco clases de inglés para mi hijo de 10 años, ¿qué tienen?",
+        "t2": "¡Hola! Tenemos dos opciones para 10 años: grupo (4 alumnos, jueves 17:30, $80/mes) o 1:1 (horario flexible, $32/clase). ¿Hizo alguna prueba de nivel antes?",
+        "t3": "No, nunca",
+        "t4": "Sin problema. Te reservo una clase de prueba gratuita el sábado 11:00 con Marta. Ella evalúa el nivel y te recomienda el formato. Te paso el enlace de Zoom y una nota de preparación 24h antes."
+      },
+      "integrations": {
+        "marker": { "label": "It plugs into what you already use", "meta": "Google Calendar · Calendly · Stripe · Mailchimp · HubSpot · custom LMS" },
+        "headline": "Your calendar, your billing, your CRM.",
+        "intro": "We integrate with your scheduling, billing and student management stack. If your LMS has an API, we read class enrollments and attendance live; if not, we run on Google Calendar + Stripe + your spreadsheet of truth."
+      },
+      "outcomes": {
+        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "headline": "More trials booked, more trials enrolled, fewer mid-course drops.",
+        "intro": "Brackets pulled from language-school sector data on trial conversion and student retention. The diagnostic locks the specific number we sign for, against your last enrollment cycle.",
+        "items": {
+          "trialToEnroll": { "value": "+15% to +30%", "label": "trial → paid enrollment conversion" },
+          "parentQuestionsHandled": { "value": "60% to 80%", "label": "routine parent questions resolved by agent" },
+          "retentionLift": { "value": "+10% to +20%", "label": "student retention with check-in sequence" }
+        }
+      },
+      "faq": {
+        "marker": { "label": "Questions school owners ask", "meta": "Plain answers" },
+        "headline": "What school owners ask before they let us reply to a parent.",
+        "items": {
+          "multilingual": {
+            "q": "How many languages does the agent really speak?",
+            "a": "The agent detects and replies in the language each message arrives in, supporting 95+ languages out of the box. For your specific market (e.g. Brazilian Portuguese, Mexican Spanish, simplified vs. traditional Chinese), we tune tone and vocabulary during configuration."
+          },
+          "parentCommunication": {
+            "q": "Can parents and students share the same thread?",
+            "a": "Yes, one thread per family, with the agent tracking who's writing (parent vs. student) and adapting tone and content accordingly. Adult learners get their own thread by default."
+          },
+          "enrollment": {
+            "q": "Does the agent actually close the enrollment, or just qualify?",
+            "a": "Either, depending on your preference. By default the agent qualifies and books the trial; your admissions team closes after the trial. If you want self-serve enrollment (Stripe + level placement test), we can wire that in, but most schools prefer the human close."
+          },
+          "integrations": {
+            "q": "Does it work with my LMS?",
+            "a": "If your LMS has an API (most do: TutorBird, Bridge, Moodle, Google Classroom), yes. If not, we can run on Google Calendar + Stripe + a shared spreadsheet during the first 90 days while we evaluate whether a deeper integration is worth it."
+          },
+          "pricing": {
+            "q": "How much does it cost?",
+            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, the tier most schools at this scale tend to fit) or Business 360 ($2,990 + $390/mo) depending on volume and channels."
+          },
+          "launch": {
+            "q": "How long until it's live?",
+            "a": "3 to 5 weeks from kickoff for a single school, longer if we're integrating multiple campuses or building a custom LMS connector. The diagnostic gives you the timeline in writing before kickoff."
+          }
+        }
+      },
+      "finalCta": {
+        "headline": "Want to see it qualify a parent in Portuguese?",
+        "subheadline": "We can stand up a demo with your courses, levels and price list, in any languages you serve, within a week of the diagnostic.",
+        "ctaLabel": "Book the diagnostic"
+      }
+    }
   },
   "about": {
     "meta": {
       "title": "About Auphere",
-      "description": "Auphere designs, deploys and operates custom AI agents for SMB and mid-market teams across Europe, the US and LATAM. Bespoke + managed — not a SaaS template, not a one-shot project."
+      "description": "Auphere builds, runs and improves custom AI agents for SMB and mid-market teams across Europe, the US and LATAM. Bespoke + managed, not a SaaS template, not a one-shot project."
     },
     "header": {
       "eyebrow": "ABOUT",
       "meta": "EU · US · LATAM",
       "title": "Calm engineering for businesses ready to automate without losing themselves.",
-      "intro": "We build, run and improve AI agents that handle the repetitive work — booking, follow-up, support, ops — so the team you already have can focus on what genuinely needs a human."
+      "intro": "We build, run and improve AI agents that handle the repetitive work (booking, follow-up, support, ops) so the team you already have can focus on what genuinely needs a human."
     },
     "mission": {
       "title": "Why we exist",
       "p1": "Most teams that try to automate end up with three things they didn't want: a no-code prototype that breaks the moment volume shows up, a SaaS template that doesn't fit their workflow, or a freelance project that goes dark the day after deployment.",
-      "p2": "Auphere is the third option. We design, deploy and operate one AI agent at a time, configured around your real operation, monitored 24/7 by the same people who built it.",
-      "p3": "We come from Ladrian Studio — a studio that spent years shipping production work where the code had to actually run on Monday morning, not just demo well on Friday."
+      "p2": "Auphere is the third option. We build, run and improve one AI agent at a time, configured around your real operation, monitored 24/7 by the same people who built it.",
+      "p3": "We come from Ladrian Studio, a studio that spent years shipping production work where the code had to actually run on Monday morning, not just demo well on Friday."
     },
     "promises": {
       "title": "Five things we promise",
@@ -341,19 +1596,19 @@
   "privacy": {
     "meta": {
       "title": "Privacy",
-      "description": "How Auphere collects, uses and protects personal data — GDPR, CCPA and LGPD aligned."
+      "description": "How Auphere collects, uses and protects personal data, GDPR, CCPA and LGPD aligned."
     },
     "header": {
       "eyebrow": "PRIVACY",
       "meta": "Last updated 2026-05-17",
-      "title": "How we handle data — yours, and your customers'.",
+      "title": "How we handle data: yours, and your customers'.",
       "intro": "This policy describes what Auphere collects, why, where it lives, who can touch it, and how long we keep it. It applies to auphere.com, to clients of our managed agent service, and to people who interact with agents we operate."
     },
     "sections": {
       "controller": {
         "title": "Who we are",
-        "p1": "Auphere is the controller of the personal data described in this policy. For any privacy question, write to privacy@auphere.com — we read every message and reply within 30 days.",
-        "p2": "If you are a resident of the European Economic Area, the United Kingdom or Switzerland, you have the right to lodge a complaint with your local supervisory authority — we'll cooperate fully."
+        "p1": "Auphere is the controller of the personal data described in this policy. For any privacy question, write to privacy@auphere.com. We read every message and reply within 30 days.",
+        "p2": "If you are a resident of the European Economic Area, the United Kingdom or Switzerland, you have the right to lodge a complaint with your local supervisory authority. We'll cooperate fully."
       },
       "dataCollected": {
         "title": "Data we collect",
@@ -361,7 +1616,7 @@
         "groups": {
           "visitors": {
             "term": "Site visitors",
-            "description": "Privacy-respecting analytics (Plausible) — no cookies, no cross-site tracking, no personal identifiers. We aggregate page views, referrers and country (never IP)."
+            "description": "Privacy-respecting analytics (Plausible): no cookies, no cross-site tracking, no personal identifiers. We aggregate page views, referrers and country (never IP)."
           },
           "leads": {
             "term": "People who book a call or email us",
@@ -369,7 +1624,7 @@
           },
           "clients": {
             "term": "Active clients and their end-users",
-            "description": "Whatever your contract says we process on your behalf — conversation logs, integration metadata, configuration. We are a processor for this data; you are the controller. A DPA is signed before any real data is touched."
+            "description": "Whatever your contract says we process on your behalf: conversation logs, integration metadata, configuration. We are a processor for this data; you are the controller. A DPA is signed before any real data is touched."
           }
         }
       },
@@ -386,7 +1641,7 @@
           },
           "legitimate": {
             "term": "Legitimate interest",
-            "description": "To run the website, fight abuse, evaluate inbound leads, and improve the agents we operate — provided your fundamental rights are not overridden."
+            "description": "To run the website, fight abuse, evaluate inbound leads, and improve the agents we operate, provided your fundamental rights are not overridden."
           },
           "legal": {
             "term": "Legal obligation",
@@ -412,7 +1667,7 @@
           },
           "anthropic": {
             "term": "Anthropic (EU/US)",
-            "description": "LLM provider (Claude Sonnet 4.6, Haiku 4.5). Data is not used to train Anthropic models — zero-retention API."
+            "description": "LLM provider (Claude Sonnet 4.6, Haiku 4.5). Data is not used to train Anthropic models. Zero-retention API."
           },
           "openai": {
             "term": "OpenAI (EU/US)",
@@ -420,7 +1675,7 @@
           },
           "ycloud": {
             "term": "YCloud (EU)",
-            "description": "WhatsApp Business Solution Provider — used only for clients with a WhatsApp channel."
+            "description": "WhatsApp Business Solution Provider, used only for clients with a WhatsApp channel."
           },
           "composio": {
             "term": "Composio (EU/US)",
@@ -428,11 +1683,11 @@
           },
           "browserbase": {
             "term": "Browserbase (EU/US)",
-            "description": "Headless browser sessions for booking on third-party panels — used only when the agent must operate a vendor UI."
+            "description": "Headless browser sessions for booking on third-party panels, used only when the agent must operate a vendor UI."
           },
           "langfuse": {
             "term": "Langfuse (EU)",
-            "description": "LLM observability — traces, evaluations and improvement cycles."
+            "description": "LLM observability: traces, evaluations and improvement cycles."
           },
           "plausible": {
             "term": "Plausible (EU)",
@@ -486,7 +1741,7 @@
       },
       "transfers": {
         "title": "International transfers",
-        "p1": "When data leaves the EU, we rely on Standard Contractual Clauses (SCCs) and on each vendor's transfer mechanism. EU clients can request EU-only processing — we honour it for everything except providers without an EU region (clearly listed above)."
+        "p1": "When data leaves the EU, we rely on Standard Contractual Clauses (SCCs) and on each vendor's transfer mechanism. EU clients can request EU-only processing, and we honour it for everything except providers without an EU region (clearly listed above)."
       },
       "cookies": {
         "title": "Cookies",
@@ -501,7 +1756,7 @@
   "terms": {
     "meta": {
       "title": "Terms",
-      "description": "The contract for Auphere's diagnostic, setup and managed agent service. Bespoke + managed — code stays with us, your data stays yours."
+      "description": "The contract for Auphere's diagnostic, setup and managed agent service. Bespoke + managed: code stays with us, your data stays yours."
     },
     "header": {
       "eyebrow": "TERMS",
@@ -513,7 +1768,7 @@
       "service": {
         "title": "What we deliver",
         "p1": "Auphere operates a bespoke AI agent service in three phases: a diagnostic call (free, 30 minutes), an agent setup (one-time, scoped in writing), and an ongoing managed service (monthly fee, the agent runs on our infrastructure under an SLA).",
-        "p2": "We are not a SaaS vendor. We are not a software contractor that hands over a codebase. The relationship is the operation — we run the agent for you for as long as the contract is in force."
+        "p2": "We are not a SaaS vendor. We are not a software contractor that hands over a codebase. The relationship is the operation: we run the agent for you for as long as the contract is in force."
       },
       "diagnostic": {
         "title": "The diagnostic",
@@ -522,23 +1777,23 @@
       },
       "bespoke": {
         "title": "Bespoke + managed",
-        "p1": "Once you sign, we configure the agent to your real operation — your tools, your voice, your rules. Setup is a one-time fee, scoped in writing, paid 50% on signing and 50% on kickoff. The agent goes live only when you sign off on the configuration.",
+        "p1": "Once you sign, we configure the agent to your real operation: your tools, your voice, your rules. Setup is a one-time fee, scoped in writing, paid 50% on signing and 50% on kickoff. The agent goes live only when you sign off on the configuration.",
         "p2": "From go-live, the agent runs under a monthly managed service: we host it, monitor it 24/7, fix what breaks, and improve it on an agreed cycle (monthly, bi-weekly or weekly depending on tier)."
       },
       "code": {
         "title": "Code and infrastructure ownership",
-        "p1": "The agent runs on infrastructure operated by Auphere. The codebase, models, prompts, orchestration logic and underlying platform belong to Auphere — not to the client.",
+        "p1": "The agent runs on infrastructure operated by Auphere. The codebase, models, prompts, orchestration logic and underlying platform belong to Auphere, not to the client.",
         "p2": "This is deliberate. You buy a working agent and a service, not a codebase to maintain, hire engineers for, or babysit. That is our job."
       },
       "clientData": {
         "title": "What is yours",
-        "p1": "Your data is yours. Your conversation history is yours. Your business rules, your integrations, the agent's configuration and the tone of voice we tuned to your brand — all yours. You can export them at any time, in standard formats.",
+        "p1": "Your data is yours. Your conversation history is yours. Your business rules, your integrations, the agent's configuration and the tone of voice we tuned to your brand: all yours. You can export them at any time, in standard formats.",
         "p2": "Auphere never uses your data to train models we sell to other clients. The DPA we sign codifies this."
       },
       "fees": {
         "title": "Fees and billing",
         "p1": "Prices are in USD, taxes excluded. Setup is paid 50% on contract signing, 50% on project kickoff. The managed service is invoiced monthly (or annually, with a 10% discount).",
-        "p2": "If usage exceeds the contracted volume (conversations, integrations), we agree the next tier before the next billing cycle — no surprise invoices."
+        "p2": "If usage exceeds the contracted volume (conversations, integrations), we agree the next tier before the next billing cycle. No surprise invoices."
       },
       "cancellation": {
         "title": "Cancellation",
@@ -557,7 +1812,7 @@
       "liability": {
         "title": "Liability",
         "p1": "Our aggregate liability is capped at the fees paid to Auphere in the twelve months preceding the claim. We exclude indirect and consequential damages to the extent permitted by law.",
-        "p2": "These caps do not apply to indemnities for confidentiality breaches, willful misconduct or the breach of data protection obligations — the MSA spells out the carve-outs."
+        "p2": "These caps do not apply to indemnities for confidentiality breaches, willful misconduct or the breach of data protection obligations. The MSA spells out the carve-outs."
       },
       "law": {
         "title": "Governing law",
@@ -587,7 +1842,7 @@
         "items": {
           "rls": {
             "term": "Row-level isolation",
-            "description": "Each tenant's data is partitioned at the database level. Tenant context is scoped automatically on every query — application code cannot accept a tenant ID from a caller, by design."
+            "description": "Each tenant's data is partitioned at the database level. Tenant context is scoped automatically on every query. Application code cannot accept a tenant ID from a caller, by design."
           },
           "tools": {
             "term": "Tool whitelist",
@@ -606,7 +1861,7 @@
       },
       "access": {
         "title": "Who can access what",
-        "p1": "Access to client data is restricted to the engineers actively delivering or supporting that client's agent — a small, named list per engagement. All access is logged.",
+        "p1": "Access to client data is restricted to the engineers actively delivering or supporting that client's agent: a small, named list per engagement. All access is logged.",
         "p2": "Engineers use named accounts, hardware MFA and short-lived credentials. No shared accounts. No password reuse across systems."
       },
       "compliance": {
@@ -622,7 +1877,7 @@
           },
           "lgpd": {
             "term": "LGPD",
-            "description": "Brazilian clients can request LGPD-aligned processing — same operational guarantees as GDPR, contract amendments as needed."
+            "description": "Brazilian clients can request LGPD-aligned processing: same operational guarantees as GDPR, contract amendments as needed."
           },
           "soc2": {
             "term": "SOC 2 Type 1",
@@ -646,10 +1901,11 @@
     }
   },
   "footer": {
-    "tagline": "Bespoke AI agents — built, run and improved for the operations that keep your business moving.",
+    "tagline": "Bespoke AI agents, built, run and improved for the operations that keep your business moving.",
     "product": {
       "title": "Product",
       "how": "How it works",
+      "useCases": "Use cases",
       "pricing": "Pricing",
       "cases": "Cases",
       "faq": "FAQ"
