@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useId, useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'motion/react';
 import { useTranslations } from 'next-intl';
 import { Container } from '@/components/primitives/Container';
@@ -7,12 +7,22 @@ import { SectionMarker } from '@/components/primitives/SectionMarker';
 import { cn } from '@/lib/utils/cn';
 import type { FaqItemData } from './faq-utils';
 
-export function Faq({ items }: { items: FaqItemData[] }) {
-  const t = useTranslations('faq');
+export function Faq({
+  items,
+  namespace = 'faq',
+  sectionNumber = '05',
+}: {
+  items: FaqItemData[];
+  namespace?: string;
+  sectionNumber?: string;
+}) {
+  // next-intl types the namespace as a strict literal union; we accept any
+  // string here so this component can be reused by multiple landing pages.
+  const t = useTranslations(namespace as Parameters<typeof useTranslations>[0]);
 
   return (
     <section id="faq" className="py-24 md:py-32">
-      <SectionMarker number="05" label={t('marker.label')} meta={t('marker.meta')} />
+      <SectionMarker number={sectionNumber} label={t('marker.label')} meta={t('marker.meta')} />
 
       <Container width="default">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20">
@@ -47,15 +57,21 @@ function FaqAccordionItem({
 }) {
   const [open, setOpen] = useState(defaultOpen);
   const reducedMotion = useReducedMotion();
+  // Stable IDs for ARIA accordion pattern (APG Disclosure / accordion)
+  const uid = useId();
+  const buttonId = `faq-btn-${uid}`;
+  const panelId = `faq-panel-${uid}`;
 
   return (
     <div className="border-b border-[var(--color-ink-subtle)] first:border-t">
       <h3 className="m-0">
         <button
           type="button"
+          id={buttonId}
+          aria-expanded={open}
+          aria-controls={panelId}
           className="w-full flex items-start justify-between gap-6 py-6 text-left group font-display font-semibold text-lg md:text-xl tracking-[-0.01em] text-[var(--color-ink)] hover:text-[var(--color-bangladesh-green)] transition-colors"
           onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
         >
           <span>{q}</span>
           <motion.span
@@ -76,6 +92,9 @@ function FaqAccordionItem({
       <AnimatePresence initial={false}>
         {open && (
           <motion.div
+            id={panelId}
+            role="region"
+            aria-labelledby={buttonId}
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}

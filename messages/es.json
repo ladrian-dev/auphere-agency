@@ -1600,6 +1600,255 @@
       }
     }
   },
+  "whatsapp": {
+    "meta": {
+      "title": "Agentes de IA para WhatsApp · construidos y operados",
+      "description": "Agentes de IA para WhatsApp, compliant con la política de Meta 2026. Reservas, cualificación de leads, tracking y postventa. En producción en 3 a 4 semanas. Construidos, operados y mejorados por nosotros."
+    },
+    "hero": {
+      "eyebrow": "AGENTES DE IA PARA WHATSAPP · CONSTRUIDOS PARA TI",
+      "meta": "WhatsApp Business API · en producción en 3 a 4 semanas",
+      "kicker": "Para negocios de servicio, no plataformas buscando usuarios",
+      "headlineLine1": "Agentes para WhatsApp que",
+      "headlineLine2": "construimos, operamos y mejoramos.",
+      "subheadline": "Un agente de WhatsApp configurado alrededor de tu operación real, corriendo en nuestra infraestructura y mejorado cada mes. No un SaaS-template que tú configuras.",
+      "ctaPrimary": "Reservar diagnóstico (30 min)",
+      "ctaSecondary": "Escúchalo →",
+      "ctaMicrocopy": "Hablas con un engineer, no con un comercial. Salimos con un go/no-go."
+    },
+    "category": {
+      "marker": { "label": "Por qué un agente de IA para WhatsApp", "meta": "No es un chatbot" },
+      "headline": "Un agente de IA no es un chatbot.",
+      "intro": "Un chatbot responde. Un agente de IA decide, reserva, escala y recuerda el contexto a lo largo de toda la conversación. La diferencia se ve en el segundo en que el cliente pregunta algo que un árbol de menús no cubre.",
+      "definitions": {
+        "chatbot": {
+          "term": "Chatbot",
+          "body": "Árbol de decisión guionizado. Sirve para FAQ. Se rompe en cuanto el cliente dice algo que el guion no anticipó."
+        },
+        "assistant": {
+          "term": "Asistente de IA",
+          "body": "Modelo generativo respondiendo preguntas abiertas. Inteligente, pero sin memoria ni acción. No reserva, no actúa, no hace seguimiento."
+        },
+        "agent": {
+          "term": "Agente de IA",
+          "body": "Decide, llama herramientas, reserva en sistemas reales, escala cuando algo sale del scope y arrastra el contexto en toda la conversación. La categoría que Meta ahora permite en WhatsApp."
+        }
+      }
+    },
+    "comparison": {
+      "marker": { "label": "Plataforma vs agencia vs Auphere", "meta": "Cómo decide la compra realmente" },
+      "headline": "Tres caminos. Dos te dejan el trabajo.",
+      "intro": "Casi todo el que busca un agente de WhatsApp termina eligiendo entre un SaaS que configura, una agencia que entrega y desaparece, o un equipo interno que no tiene. La tercera columna es lo que hace Auphere.",
+      "columns": {
+        "platform": {
+          "title": "SaaS (Wati, Charles, AiSensy)",
+          "rows": {
+            "fit": "Lo configura tu equipo, sobre su plantilla",
+            "ops": "Tu equipo lo opera y lo afina",
+            "edge": "Los casos raros se van a tickets de soporte",
+            "data": "Multi-tenant. Tu data convive con la de otros",
+            "exit": "La exportación rara vez es completa"
+          }
+        },
+        "agency": {
+          "title": "Agencia tradicional",
+          "rows": {
+            "fit": "Custom, pero scopeado una sola vez",
+            "ops": "Entregado a ti el día del go-live",
+            "edge": "Lo arregla tu engineer interno",
+            "data": "Tus servidores, tu problema",
+            "exit": "Heredas un codebase que mantener"
+          }
+        },
+        "auphere": {
+          "title": "Auphere · bespoke + managed",
+          "rows": {
+            "fit": "Construido alrededor de tu operación en el diagnóstico",
+            "ops": "Operado por nosotros en nuestra infra, 24/7",
+            "edge": "Lo cazamos nosotros. Lo ves arreglado en el ciclo mensual",
+            "data": "Aislado por tenant, EU-hosted, DPA firmado",
+            "exit": "Cancela cualquier mes tras los primeros 3. Exportamos todo"
+          }
+        }
+      }
+    },
+    "useCases": {
+      "marker": { "label": "Qué hace el agente en WhatsApp", "meta": "Se elige en el diagnóstico" },
+      "headline": "Cinco trabajos fuera de la bandeja de tu equipo.",
+      "intro": "Casi toda operación necesita dos o tres de los cinco. El diagnóstico decide cuáles, y el resto se queda apagado. Aquí no hay nada que tengas que activar a la fuerza.",
+      "items": {
+        "booking": {
+          "title": "Reservas y reagendado",
+          "body": "Restaurantes, salones, clínicas, dentales, veterinarias. El agente cotiza, reserva en tu sistema, manda la preparación y reagenda con un toque.",
+          "exampleTurn": "\"¿Tenéis algo para dos esta noche sobre las 21?\" → \"Sí, 21:15 en la barra del chef o 21:30 en sala principal. ¿Cuál te encaja?\""
+        },
+        "leadQualification": {
+          "title": "Cualificación de leads, 24/7",
+          "body": "B2B y B2C high-ticket. Hace las preguntas en el orden correcto, puntúa el lead y entrega un prospecto cualificado con contexto completo a tu equipo de ventas.",
+          "exampleTurn": "\"Hola, ¿precio del láser?\" → \"Te cotizo. ¿Primera vez o ya te has hecho? ¿Qué zona? ¿Alguna condición que deba marcar para la doctora?\""
+        },
+        "tracking": {
+          "title": "Tracking de pedidos y recuperación de carrito",
+          "body": "E-commerce en LATAM y EU. Consulta el pedido, da un estado real, recupera el carrito abandonado con el empujón adecuado, nunca spamea.",
+          "exampleTurn": "\"¿Dónde está mi pedido?\" → \"En el centro local del courier desde ayer, programado hoy entre 16 y 19h. ¿Te aviso 30 min antes?\""
+        },
+        "followUp": {
+          "title": "Postventa, NPS, upsell",
+          "body": "Pregunta tras la entrega o visita, captura el NPS y abre un upsell suave solo cuando la respuesta fue un 9 o un 10. En silencio el resto del tiempo.",
+          "exampleTurn": "\"¿Qué tal?\" → \"10. Encantada.\" → \"Genial. Acabamos de sacar suscripción de refill. ¿Te paso link ahora o lo guardas para luego?\""
+        },
+        "reminders": {
+          "title": "Recordatorios proactivos que se accionan",
+          "body": "Refills, recall, preparación de citas, ofertas que caducan. Recordatorios con el botón de acción en el mismo mensaje. Un toque, hecho.",
+          "exampleTurn": "\"Te toca limpieza dental. Martes 15:00 con Maya (la de siempre). ¿Confirmamos?\" → \"Sí\" → \"Reservado ✓\""
+        }
+      }
+    },
+    "compliance": {
+      "marker": { "label": "Política Meta 2026", "meta": "La parte que nadie explica" },
+      "headline": "El cambio de política que nadie te avisó.",
+      "intro": "Meta actualizó los términos de la WhatsApp Business API en 2026. El cambio mató en silencio toda una categoría de bots de IA y abrió otra. Muchas agencias siguen vendiendo la que mataron.",
+      "blocks": {
+        "killed": {
+          "title": "Qué prohíbe ahora Meta",
+          "body": "Asistentes de IA genéricos y de propósito abierto en WhatsApp Business. Esos de \"pregúntame lo que quieras\". Si no puedes escribir el caso de uso específico al que sirve el agente, el equipo de políticas de Meta acaba marcando el número. Muchos bots lanzados en 2024 y 2025 viven dentro de ese riesgo."
+        },
+        "allowed": {
+          "title": "Qué permite (y premia) Meta",
+          "body": "Agentes de IA con propósito de negocio documentado y acotado. Reservas. Cualificación de leads. Tracking. Postventa. Cada uno con scope explícito, handoff humano explícito y un contrato que nombra el caso de uso. Así enviamos en Auphere cada agente."
+        },
+        "auphere": {
+          "title": "Cómo lo firmamos",
+          "body": "El diagnóstico produce un scope escrito: qué casos de uso, qué triggers de handoff, qué conversaciones escalan a humano y cuándo. Ese scope vive en el MSA. Si después el cliente pide un caso fuera, se negocia como enmienda explícita, no como scope creep. Eso es compliance en la práctica, no en marketing."
+        }
+      },
+      "footnote": "Última revisión: mayo 2026. La política de Meta es un documento vivo. Lo revisamos cada trimestre y avisamos al cliente cuando se mueve."
+    },
+    "benchmarks": {
+      "marker": { "label": "Lo que suele moverse en 8 semanas", "meta": "Rangos · no garantías" },
+      "headline": "Las cuatro cifras que firmamos.",
+      "intro": "Rangos sacados de investigación de WhatsApp Business, reportes de Yalo, Respond.io y Twixor, y los primeros despliegues de Auphere. El diagnóstico fija el número exacto al que firmamos, medido contra tu operación actual.",
+      "items": {
+        "responseTime": {
+          "value": "4–12h → <30s",
+          "label": "Tiempo de primera respuesta",
+          "source": "WhatsApp Business 2025 · benchmark sector"
+        },
+        "leadQualified": {
+          "value": "15–25% → 50–70%",
+          "label": "Leads cualificados antes de que entre un humano",
+          "source": "Benchmarks de funnel B2B WhatsApp 2026"
+        },
+        "bookingRate": {
+          "value": "8–15% → 25–45%",
+          "label": "Consulta a reserva confirmada",
+          "source": "Datos sector negocios de servicio"
+        },
+        "humanLoad": {
+          "value": "−60% a −70%",
+          "label": "Conversaciones gestionadas por el agente",
+          "source": "Primeros despliegues Auphere · rango realista"
+        }
+      }
+    },
+    "conversations": {
+      "marker": { "label": "Cómo suena", "meta": "Tres flujos reales · WhatsApp" },
+      "headline": "Tres conversaciones, tres verticales, un mismo motor.",
+      "intro": "Tres flujos que el agente atiende todos los días. Nombres inventados; la lógica y los puntos de handoff son exactamente los que verían tus clientes.",
+      "flows": {
+        "restaurant": {
+          "title": "Reserva en restaurante",
+          "subtitle": "Viernes 21h · mesa para cuatro",
+          "businessName": "Casa Verde",
+          "online": "en línea",
+          "t1": "Hola, ¿mesa para 4 mañana por la noche sobre las 9?",
+          "t2": "Tenemos 21:15 en la barra del chef o 21:30 en sala principal. Ambas franja de 2h. ¿Alguna restricción dietética que deba marcar?",
+          "t3": "Una persona vegana, por favor. Barra del chef.",
+          "t4": "Reservado ✓ Sábado 21:15, 4 personas, barra del chef, vegano marcado. Te recuerdo el viernes con reagendado de un toque por si surge algo."
+        },
+        "clinic": {
+          "title": "Cualificación de lead clínico",
+          "subtitle": "Lead frío · consulta láser",
+          "businessName": "Dra. Patel Estética",
+          "online": "en línea",
+          "t1": "Hola, estoy pensando en depilación láser. ¿Cuánto vale?",
+          "t2": "Te cotizo correctamente. ¿Es tu primera vez o ya te has hecho antes? ¿Y qué zona estás considerando?",
+          "t3": "Primera vez, axilas. Tengo melasma, ¿afecta?",
+          "t4": "Puede afectar qué láser usamos. Te reservo una consulta gratuita de 15 min con la Dra. Patel; ella confirmará el abordaje y te cotiza en el momento. Tengo jueves 16h o sábado 11h.",
+          "t5": "Reservado ✓ Sábado 11h. Pautas de preparación 48h antes: sin sol, sin autobronceador, depilar la mañana misma."
+        },
+        "ecomm": {
+          "title": "Tracking de e-commerce",
+          "subtitle": "Tracking + carrito abandonado",
+          "businessName": "Lumen MX",
+          "online": "en línea",
+          "t1": "¿Dónde está mi pedido?",
+          "t2": "Está en el centro de DHL Polanco desde ayer, programado para hoy entre 16:00 y 19:00. ¿Quieres que te avise 30 min antes?",
+          "t3": "Sí, por favor. Y vi unas cremas en su catálogo, ¿siguen con descuento?",
+          "t4": "El descuento aplicable a tu próxima compra es 10% (LUMEN10), válido hasta el domingo. ¿Te paso el link al producto que viste o prefieres ver el catálogo entero?"
+        }
+      }
+    },
+    "qualifier": {
+      "marker": { "label": "¿Es para ti?", "meta": "Filtro honesto · 3 + 2" },
+      "headline": "Pensado para equipos que ya mueven volumen real en WhatsApp.",
+      "yesTitle": "Es para ti si…",
+      "yes": {
+        "yes1": "WhatsApp ya es un canal real de tu negocio. Ves cientos de mensajes entrantes a la semana y la cola está dañando a tu equipo o a tu tasa de conversión.",
+        "yes2": "Has pasado la fase de \"¿me sirve un bot?\" y necesitas un agente que reserva, cualifica o trackea en sistemas reales, no un chatbot de árbol de menús.",
+        "yes3": "Prefieres que un engineer lo construya, opere y mejore antes que comprar una licencia de Wati y configurarla tú entre todo lo demás que haces."
+      },
+      "noTitle": "NO es para ti si…",
+      "no": {
+        "no1": "Recibes 5 mensajes a la semana. La economía aún no cuadra. Arranca con una herramienta de plantilla y vuelve cuando el volumen duela.",
+        "no2": "Buscas un asistente genérico tipo \"pregúntame lo que quieras\" en WhatsApp. Meta ya no lo permite y nosotros tampoco. El agente sale con un scope documentado."
+      }
+    },
+    "faq": {
+      "marker": { "label": "FAQ", "meta": "Respuestas planas · sin marketing" },
+      "headline": "Lo que los equipos preguntan antes de ponernos en WhatsApp.",
+      "intro": "Si la tuya no está, déjala en la llamada de diagnóstico.",
+      "items": {
+        "metaCompliance": {
+          "q": "¿El agente cumple con la política Meta 2026 de WhatsApp?",
+          "a": "Sí, por diseño. Meta permite agentes de IA con caso de uso de negocio documentado (reservas, cualificación, tracking, postventa) y prohíbe asistentes genéricos abiertos. El diagnóstico produce un scope escrito que vive en el contrato. Revisamos la política de Meta trimestralmente y avisamos al cliente cuando cambia."
+        },
+        "setup": {
+          "q": "¿Cuánto tarda el setup de WhatsApp Business API?",
+          "a": "Tres a cuatro semanas desde el kickoff para un número, incluyendo onboarding con BSP, aprobación de plantillas e integración. Más rápido si ya tienes un número con BSP activo. El diagnóstico te entrega el cronograma exacto por escrito."
+        },
+        "number": {
+          "q": "¿Necesitamos nuestro propio número o lo proveéis vosotros?",
+          "a": "Tú aportas el número. Lo conectamos al agente vía un Business Solution Provider (Twilio, 360dialog, Meta directo según geografía y precio). El número sigue siendo tuyo. Si aún no tienes uno de WhatsApp Business, te ayudamos a obtenerlo antes del kickoff."
+        },
+        "languages": {
+          "q": "¿Puede manejar varios idiomas en un solo número?",
+          "a": "Sí. El agente detecta el idioma del mensaje entrante y responde en el mismo. Lista de idiomas soportados configurable por cliente. La mayoría de despliegues cubre 5 a 10 idiomas (inglés, español, portugués, francés, alemán, italiano). Podemos extender a 95+ bajo petición."
+        },
+        "handoff": {
+          "q": "¿Cómo funciona el handoff a humano?",
+          "a": "Tres triggers: cualquier cosa fuera del scope contratado, cualquier cosa que el cliente pida explícitamente, o cualquier cosa en la que la confianza del agente baje del umbral. El handoff cae en un inbox humano nominal (WhatsApp del equipo, Slack, email o HubSpot) con el contexto completo de la conversación. Sin pelotas que se caen, sin sala de espera."
+        },
+        "platforms": {
+          "q": "Wati, Charles, Sirena, AiSensy vs Auphere. ¿Cuál es la diferencia real?",
+          "a": "Esos son SaaS que tú configuras. Auphere es una agencia que construye el agente alrededor de tu operación y lo opera en nuestra infraestructura 24/7. No recibes un dashboard que configurar. Recibes un agente que ya funciona para tu equipo, un SLA y un ciclo de mejora que no tienes que dotar de personal."
+        },
+        "data": {
+          "q": "GDPR, LGPD, ¿qué pasa con los datos del cliente en WhatsApp?",
+          "a": "Infraestructura EU-hosted con aislamiento por tenant para clientes europeos. DPA firmado antes de que fluya cualquier conversación real. Los datos del cliente nunca se usan para entrenar modelos que vendamos a otros. Para clientes LATAM honramos LGPD (Brasil) y normativas equivalentes en MX, CO, AR. Lo específico se confirma en el diagnóstico."
+        },
+        "pricing": {
+          "q": "¿Cuánto cuesta?",
+          "a": "Mismos precios que el resto de Auphere. Diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, donde aterrizan la mayoría de los equipos a esta escala) o Business 360 ($2.990 + $390/mes) según volumen, idiomas e integraciones. Las tarifas de conversación del BSP de WhatsApp son aparte y las cobra tu proveedor."
+        }
+      }
+    },
+    "finalCta": {
+      "headline": "¿Quieres oírlo contestando tu WhatsApp?",
+      "subheadline": "Te montamos una demo en tu número, con la voz de tu negocio y un flujo de reserva real, en menos de una semana tras el diagnóstico. Sin compromiso de desplegar.",
+      "ctaLabel": "Reservar el diagnóstico"
+    }
+  },
   "about": {
     "meta": {
       "title": "Sobre Auphere",
@@ -1691,14 +1940,14 @@
     },
     "header": {
       "eyebrow": "PRIVACIDAD",
-      "meta": "Actualizado 2026-05-17",
+      "meta": "Actualizado 2026-05-21",
       "title": "Cómo manejamos los datos: los tuyos y los de tus clientes.",
       "intro": "Esta política describe qué recolecta Auphere, por qué, dónde vive, quién puede tocarlo y cuánto tiempo lo conservamos. Aplica a auphere.com, a clientes del servicio gestionado de agentes y a las personas que interactúan con agentes que operamos."
     },
     "sections": {
       "controller": {
         "title": "Quiénes somos",
-        "p1": "Auphere es el responsable del tratamiento de los datos personales descritos en esta política. Para cualquier consulta sobre privacidad, escribe a privacy@auphere.com; leemos todos los mensajes y respondemos en menos de 30 días.",
+        "p1": "Auphere es el responsable del tratamiento de los datos personales descritos en esta política. Para cualquier consulta sobre privacidad, escribe a contacto@auphere.com; leemos todos los mensajes y respondemos en menos de 30 días.",
         "p2": "Si resides en el Espacio Económico Europeo, Reino Unido o Suiza, tienes derecho a presentar una reclamación ante tu autoridad local de protección de datos; cooperaremos plenamente."
       },
       "dataCollected": {
@@ -1715,7 +1964,7 @@
           },
           "clients": {
             "term": "Clientes activos y sus usuarios finales",
-            "description": "Lo que tu contrato indica que procesamos por tu cuenta: logs de conversación, metadatos de integración, configuración. Para estos datos somos encargados del tratamiento; tú eres el responsable. Firmamos un DPA antes de tocar datos reales."
+            "description": "Lo que tu contrato indica que procesamos por tu cuenta: logs de conversación, metadatos de integración, configuración. Para estos datos somos encargados del tratamiento; tú eres el responsable. Firmamos un DPA antes de tocar datos reales. Cuando el canal es WhatsApp, somos Tech Provider autorizado de Meta Platforms, Inc. y procesamos datos obtenidos vía WhatsApp Business Platform: número de teléfono del usuario final (E.164), profile name, contenido de los mensajes (texto, voz, media, ubicación, reacciones), identificadores de mensaje (wamid) y Business-Scoped User ID (BSUID) — solo para operar el agente que tú nos contrataste."
           }
         }
       },
@@ -1764,9 +2013,9 @@
             "term": "OpenAI (EU/US)",
             "description": "Proveedor LLM de respaldo (GPT-4o). Mismas condiciones zero-retention."
           },
-          "ycloud": {
-            "term": "YCloud (EU)",
-            "description": "Business Solution Provider de WhatsApp, usado solo para clientes con canal WhatsApp."
+          "meta": {
+            "term": "Meta Platforms, Inc. (US)",
+            "description": "WhatsApp Business Platform (Cloud API y Coexistence). Auphere opera como Tech Provider autorizado: procesamos mensajes, números E.164, profile names, BSUID e identificadores de WABA estrictamente para entregar el canal WhatsApp que contrataste. Meta factura directamente al cliente final el consumo de mensajería."
           },
           "composio": {
             "term": "Composio (EU/US)",
@@ -1802,7 +2051,7 @@
       },
       "rights": {
         "title": "Tus derechos",
-        "intro": "Independientemente de tu jurisdicción, honramos lo siguiente bajo solicitud. Escribe a privacy@auphere.com.",
+        "intro": "Independientemente de tu jurisdicción, honramos lo siguiente bajo solicitud. Escribe a contacto@auphere.com.",
         "items": {
           "access": {
             "term": "Acceso",
@@ -1840,7 +2089,7 @@
       },
       "contact": {
         "title": "Contacto",
-        "p1": "Consultas, solicitudes, reclamaciones: privacy@auphere.com. Respondemos en menos de 30 días, normalmente en la misma semana."
+        "p1": "Consultas, solicitudes, reclamaciones, solicitudes de borrado de datos: contacto@auphere.com. Acusamos recibo en 5 días hábiles y respondemos en menos de 30 días, normalmente en la misma semana."
       }
     }
   },
@@ -1851,7 +2100,7 @@
     },
     "header": {
       "eyebrow": "TÉRMINOS",
-      "meta": "Actualizado 2026-05-17",
+      "meta": "Actualizado 2026-05-21",
       "title": "El contrato, en español claro.",
       "intro": "Estos términos regulan la llamada de diagnóstico, el setup del agente y el servicio gestionado continuo. Aplican junto al Master Services Agreement (MSA) y al Data Processing Agreement (DPA) que firmamos antes de procesar datos reales."
     },
@@ -1859,7 +2108,7 @@
       "service": {
         "title": "Qué entregamos",
         "p1": "Auphere opera un servicio bespoke de agente de IA en tres fases: una llamada de diagnóstico (gratuita, 30 minutos), un setup del agente (pago único, alcance acordado por escrito) y un servicio gestionado continuo (cuota mensual, el agente corre en nuestra infraestructura bajo SLA).",
-        "p2": "No somos un proveedor SaaS. No somos un contratista de software que entrega un codebase y se va. La relación es la operación: corremos el agente mientras el contrato esté vigente."
+        "p2": "No somos un proveedor SaaS. No somos un contratista de software que entrega un codebase y se va. La relación es la operación: corremos el agente mientras el contrato esté vigente. Cuando el canal es WhatsApp, Auphere opera como Tech Provider autorizado por Meta Platforms, Inc.: el cliente conserva la propiedad de su WhatsApp Business Account (WABA) y Meta factura directamente al cliente el consumo de mensajería; Auphere solo cobra la cuota del servicio gestionado."
       },
       "diagnostic": {
         "title": "El diagnóstico",
@@ -1879,7 +2128,7 @@
       "clientData": {
         "title": "Lo que sí es tuyo",
         "p1": "Tus datos son tuyos. Tu historial de conversaciones es tuyo. Tus reglas de negocio, tus integraciones, la configuración del agente y el tono de voz que afinamos a tu marca: todo tuyo. Puedes exportarlo cuando quieras, en formatos estándar.",
-        "p2": "Auphere nunca usa tus datos para entrenar modelos que vendemos a otros clientes. El DPA que firmamos lo codifica."
+        "p2": "Auphere nunca usa tus datos para entrenar modelos que vendemos a otros clientes. El DPA que firmamos lo codifica. Como contrapartida, el cliente se obliga a una política de uso aceptable: cumplir las políticas de WhatsApp (Business Messaging Policy y Commerce Policy), obtener opt-in válido del usuario final antes de iniciar conversaciones, no usar listas compradas o scrapeadas, y honrar las solicitudes de baja sin reintento. Si detectamos riesgo material de compliance — caída sostenida del quality rating, alerta de Meta, patrón de abuso — podemos suspender el canal de forma inmediata para proteger al resto de clientes; notificamos lo antes posible y damos al cliente la oportunidad de presentar descargos."
       },
       "fees": {
         "title": "Cuotas y facturación",
@@ -1964,7 +2213,7 @@
           },
           "ccpa": {
             "term": "CCPA",
-            "description": "No vendemos información personal. Residentes en California pueden ejercer derechos CCPA vía privacy@auphere.com."
+            "description": "No vendemos información personal. Residentes en California pueden ejercer derechos CCPA vía contacto@auphere.com."
           },
           "lgpd": {
             "term": "LGPD",
@@ -1987,7 +2236,7 @@
       },
       "vuln": {
         "title": "Reportar una vulnerabilidad",
-        "p1": "Si crees haber encontrado un problema de seguridad, escribe a security@auphere.com. Acusamos recibo en 1 día laboral, arreglamos los problemas verificados sin ceremonia y damos crédito a los reporteros que quieran el reconocimiento."
+        "p1": "Si crees haber encontrado un problema de seguridad, escribe a contacto@auphere.com con asunto [security]. Acusamos recibo en 1 día laboral, arreglamos los problemas verificados sin ceremonia y damos crédito a los reporteros que quieran el reconocimiento."
       }
     }
   },

@@ -38,14 +38,19 @@ export function ScrollColorReveal({ text, className }: Props) {
   }
 
   return (
-    <p ref={ref} className={className} aria-label={text}>
-      {words.map((word, i) => {
-        const start = i / words.length;
-        const end = (i + 0.85) / words.length;
-        return (
-          <RevealWord key={i} word={word} start={start} end={end} progress={scrollYProgress} />
-        );
-      })}
+    <p ref={ref} className={className}>
+      {/* Accessible name for screen readers — read once, full text */}
+      <span className="sr-only">{text}</span>
+      {/* Decorative animated words — hidden from SR */}
+      <span aria-hidden="true">
+        {words.map((word, i) => {
+          const start = i / words.length;
+          const end = (i + 0.85) / words.length;
+          return (
+            <RevealWord key={i} word={word} start={start} end={end} progress={scrollYProgress} />
+          );
+        })}
+      </span>
     </p>
   );
 }

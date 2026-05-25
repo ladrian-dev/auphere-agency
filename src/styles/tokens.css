@@ -36,9 +36,13 @@
   --color-accent-mid:        var(--color-mint);
   --color-accent-soft:       var(--color-pistachio);
 
-  /* Attio-inspired refined gray scale (jerarquía por color, no por size) */
+  /* Attio-inspired refined gray scale (jerarquía por color, no por size)
+   * NOTE: --color-ink-muted bumped from 55% → 65% on 2026-05-25 to pass WCAG 1.4.3 AA
+   * contrast (4.5:1 minimum) against --color-bone background. Verified via axe-core
+   * 4.10.2 — previous 55% mix computed to #74776F → 4.2:1 (failed AA across 39 nodes).
+   * --color-ink-dim kept at 30% for decorative/disabled states (not body copy). */
   --color-ink-dim:           color-mix(in srgb, var(--color-ink) 30%, var(--color-bone));
-  --color-ink-muted:         color-mix(in srgb, var(--color-ink) 55%, var(--color-bone));
+  --color-ink-muted:         color-mix(in srgb, var(--color-ink) 65%, var(--color-bone));
   --color-ink-subtle:        color-mix(in srgb, var(--color-ink) 12%, var(--color-bone));
   --color-ink-faint:         color-mix(in srgb, var(--color-ink) 6%, var(--color-bone));
 

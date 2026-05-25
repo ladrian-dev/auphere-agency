@@ -1,4 +1,5 @@
 'use client';
+import { Fragment } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
 import { cn } from '@/lib/utils/cn';
 
@@ -19,8 +20,12 @@ interface Props {
  * Word-by-word blur reveal — Salix's signature pattern, ported to Motion.
  * Each word starts blurred + transparent, animates to clear + visible.
  *
- * A11y: the full text is announced once via aria-label on the wrapper;
- * each word span is aria-hidden so screen readers don't read word-by-word.
+ * A11y pattern (axe-clean, WCAG 2.1.1):
+ *   - The full text is exposed to screen readers ONCE via a visually-hidden
+ *     <span class="sr-only"> (standards-compliant accessible name).
+ *   - The animated word spans are wrapped in a single aria-hidden="true"
+ *     container so SR ignores them entirely (no per-word stutter).
+ *   - Avoids aria-label on <span> (axe rule `aria-prohibited-attr`).
  *
  * Reduced motion: renders text statically with no animation.
  */
@@ -53,30 +58,37 @@ export function SplitText({
 
   return (
     <Tag
-      aria-label={text}
       className={cn('inline-block', className)}
       {...triggerProps}
       variants={{ hidden: {}, visible: {} }}
     >
-      {words.map((word, i) => (
-        <motion.span
-          key={`${word}-${i}`}
-          aria-hidden
-          className="inline-block will-change-[filter,opacity,transform]"
-          variants={{
-            hidden: { filter: 'blur(20px)', opacity: 0, y: 16 },
-            visible: { filter: 'blur(0px)', opacity: 1, y: 0 },
-          }}
-          transition={{
-            duration: 0.85,
-            delay: delay + i * stagger,
-            ease: [0.32, 0.72, 0, 1],
-          }}
-        >
-          {word}
-          {i < words.length - 1 && ' '}
-        </motion.span>
-      ))}
+      {/* Accessible name for screen readers — read once, full text */}
+      <span className="sr-only">{text}</span>
+      {/* Decorative animated words — hidden from SR.
+          Spaces live OUTSIDE the inline-block motion.spans so they don't
+          collapse at the inline-block edges (browsers strip trailing
+          whitespace at the boundary of inline-block boxes). */}
+      <span aria-hidden="true">
+        {words.map((word, i) => (
+          <Fragment key={`${word}-${i}`}>
+            <motion.span
+              className="inline-block will-change-[filter,opacity,transform]"
+              variants={{
+                hidden: { filter: 'blur(20px)', opacity: 0, y: 16 },
+                visible: { filter: 'blur(0px)', opacity: 1, y: 0 },
+              }}
+              transition={{
+                duration: 0.85,
+                delay: delay + i * stagger,
+                ease: [0.32, 0.72, 0, 1],
+              }}
+            >
+              {word}
+            </motion.span>
+            {i < words.length - 1 && ' '}
+          </Fragment>
+        ))}
+      </span>
     </Tag>
   );
 }
