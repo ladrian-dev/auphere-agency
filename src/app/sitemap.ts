@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 import { VERTICAL_SLUGS } from '@/lib/use-cases/verticals';
+import { DOC_PAGES } from '@/content/docs/registry';
 
 const STATIC_ROUTES = [
   '',
@@ -13,6 +14,8 @@ const STATIC_ROUTES = [
 ] as const;
 
 const VERTICAL_ROUTES = VERTICAL_SLUGS.map((slug) => `/use-cases/${slug}` as const);
+
+const DOCS_ROUTES = ['/docs', ...DOC_PAGES.map((page) => `/docs/${page.slug.join('/')}`)];
 
 function priorityFor(route: string): number {
   if (route === '') return 1;
@@ -30,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const url = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://auphere.com';
   const now = new Date();
 
-  const routes = [...STATIC_ROUTES, ...VERTICAL_ROUTES];
+  const routes = [...STATIC_ROUTES, ...VERTICAL_ROUTES, ...DOCS_ROUTES];
 
   return routing.locales.flatMap((locale) =>
     routes.map((route) => ({

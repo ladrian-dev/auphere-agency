@@ -2149,12 +2149,41 @@
       }
     }
   },
+  "docs": {
+    "meta": {
+      "title": "Documentation — Auphere",
+      "description": "Official guides and API reference for building with Auphere: embed WhatsApp agents and template broadcasts into your own product."
+    },
+    "home": {
+      "eyebrow": "Documentation",
+      "title": "Build with Auphere",
+      "intro": "Guides and reference for integrating Auphere into your product. Start with the quickstart — you'll have a working integration in one sitting.",
+      "productTitle": "Embed WhatsApp agents in your SaaS",
+      "productDescription": "@auphere/embed lets your platform offer WhatsApp agents and template broadcasts to your own clients — a thin SDK, one endpoint in your backend, and a secure iframe we keep updated for you.",
+      "quickstartCta": "Quickstart",
+      "browseCta": "Overview",
+      "help": "Questions the docs don't answer? Write to"
+    },
+    "chrome": {
+      "navLabel": "Documentation",
+      "product": "Auphere Embed",
+      "menu": "Documentation menu",
+      "onThisPage": "On this page",
+      "copy": "Copy",
+      "copied": "Copied",
+      "previous": "Previous",
+      "next": "Next",
+      "required": "Required",
+      "version": "v0.1"
+    }
+  },
   "footer": {
     "tagline": "Bespoke AI agents, built, run and improved for the operations that keep your business moving.",
     "product": {
       "title": "Product",
       "how": "How it works",
       "useCases": "Use cases",
+      "docs": "Documentation",
       "pricing": "Pricing",
       "cases": "Cases",
       "faq": "FAQ"

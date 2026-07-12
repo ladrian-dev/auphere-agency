@@ -2240,12 +2240,41 @@
       }
     }
   },
+  "docs": {
+    "meta": {
+      "title": "Documentación — Auphere",
+      "description": "Guías oficiales y referencia de API para construir con Auphere: integra agentes de WhatsApp y campañas de plantillas en tu propio producto."
+    },
+    "home": {
+      "eyebrow": "Documentación",
+      "title": "Construye con Auphere",
+      "intro": "Guías y referencia para integrar Auphere en tu producto. Empieza por el quickstart — tendrás una integración funcionando en una sola sesión.",
+      "productTitle": "Integra agentes de WhatsApp en tu SaaS",
+      "productDescription": "@auphere/embed permite a tu plataforma ofrecer agentes de WhatsApp y campañas de plantillas a tus propios clientes — un SDK fino, un endpoint en tu backend y un iframe seguro que nosotros mantenemos actualizado.",
+      "quickstartCta": "Quickstart",
+      "browseCta": "Introducción",
+      "help": "¿Preguntas que la documentación no responde? Escríbenos a"
+    },
+    "chrome": {
+      "navLabel": "Documentación",
+      "product": "Auphere Embed",
+      "menu": "Menú de documentación",
+      "onThisPage": "En esta página",
+      "copy": "Copiar",
+      "copied": "Copiado",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "required": "Requerido",
+      "version": "v0.1"
+    }
+  },
   "footer": {
     "tagline": "Agentes de IA a medida, construidos, operados y mejorados para las operaciones que mantienen tu negocio en marcha.",
     "product": {
       "title": "Producto",
       "how": "Cómo trabajamos",
       "useCases": "Casos de uso",
+      "docs": "Documentación",
       "pricing": "Precios",
       "cases": "Casos",
       "faq": "FAQ"
