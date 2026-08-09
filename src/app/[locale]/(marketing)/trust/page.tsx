@@ -102,16 +102,21 @@ function TrustContent() {
           <LegalDefinitionList items={compliance} topBorder={false} />
         </LegalSection>
 
-        <LegalSection number="06" title={t('sections.subprocessors.title')}>
+        <LegalSection number="06" title={t('sections.aitransparency.title')}>
+          <p>{t('sections.aitransparency.p1')}</p>
+          <p>{t('sections.aitransparency.p2')}</p>
+        </LegalSection>
+
+        <LegalSection number="07" title={t('sections.subprocessors.title')}>
           <p>{t('sections.subprocessors.p1')}</p>
         </LegalSection>
 
-        <LegalSection number="07" title={t('sections.incident.title')}>
+        <LegalSection number="08" title={t('sections.incident.title')}>
           <p>{t('sections.incident.p1')}</p>
           <p>{t('sections.incident.p2')}</p>
         </LegalSection>
 
-        <LegalSection number="08" title={t('sections.vuln.title')}>
+        <LegalSection number="09" title={t('sections.vuln.title')}>
           <p>{t('sections.vuln.p1')}</p>
         </LegalSection>
       </LegalProse>

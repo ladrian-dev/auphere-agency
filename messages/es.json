@@ -48,12 +48,12 @@
       "configure": {
         "timing": "2 a 6 semanas",
         "title": "Configuración",
-        "body": "Construimos tu agente end-to-end: integraciones con las herramientas que ya usas, entrenamiento con tus datos reales, personalización a tu voz y a tus reglas de negocio. Revisas cada sprint. Nada va a producción sin tu visto bueno."
+        "body": "Construimos tu agente end-to-end: integraciones con las herramientas que ya usas, entrenamiento con tus datos reales, personalización a tu voz y a tus reglas de negocio. Revisas cada sprint y apruebas cada versión antes de que se promueva a producción."
       },
       "goLive": {
         "timing": "Continuo · 24/7",
         "title": "Go Live",
-        "body": "Tu agente entra en producción. Lo monitoreamos 24/7, medimos su rendimiento contra las métricas pactadas en el diagnóstico y lo mejoramos mes a mes. Tú ves el dashboard. Tu equipo se enfoca en el trabajo que requiere un humano."
+        "body": "Tu agente entra en producción. Lo monitoreamos 24/7, medimos su rendimiento contra las métricas pactadas en el diagnóstico y lo mejoramos mes a mes. Tienes línea directa por WhatsApp con el equipo que lo opera. Tu equipo se enfoca en el trabajo que requiere un humano."
       }
     }
   },
@@ -85,7 +85,7 @@
       },
       "managed": {
         "title": "Lo operamos nosotros. No necesitas contratar a un ingeniero de IA.",
-        "body": "El agente vive en nuestra infraestructura, monitoreado 24/7 por el mismo equipo que lo construyó. Recibes un dashboard, un SLA y un ciclo mensual de mejora. No un repo del que ocuparte."
+        "body": "El agente vive en nuestra infraestructura, monitoreado 24/7 por el mismo equipo que lo construyó. Recibes una línea directa con el equipo que lo opera y un ciclo mensual de mejora. No un repo del que ocuparte."
       },
       "diagnostic": {
         "title": "Diagnóstico honesto antes de cualquier compromiso.",
@@ -214,7 +214,7 @@
       },
       "compliance": {
         "q": "¿Nuestros datos están seguros? ¿GDPR / CCPA?",
-        "a": "Sí. Infraestructura EU-hosted para clientes europeos (GDPR-compliant por defecto). DPA firmado antes de que cualquier dato real toque nuestros sistemas. Tus datos nunca se usan para entrenar modelos que vendemos a otros clientes. SOC 2 Type 1 en curso, target Q3 2026."
+        "a": "Sí. Infraestructura EU-hosted para clientes europeos (GDPR-compliant por defecto). DPA firmado antes de que cualquier dato real toque nuestros sistemas. Tus datos nunca se usan para entrenar modelos que vendemos a otros clientes. SOC 2 está en nuestro roadmap; hasta entonces compartimos el cuestionario de seguridad y los controles vigentes bajo NDA."
       },
       "channels": {
         "q": "¿Con qué canales y herramientas integráis?",
@@ -222,11 +222,11 @@
       },
       "engineer": {
         "q": "¿Necesitamos un ingeniero interno para gestionarlo?",
-        "a": "No. Ese es exactamente el punto. Recibes un agente que funciona y un dashboard. Operación, monitoreo, upgrades de modelos y el ciclo mensual de mejora corren por nuestra cuenta. Tu equipo solo hace el trabajo que de verdad necesita un humano."
+        "a": "No. Ese es exactamente el punto. Recibes un agente que funciona y una línea directa con el equipo que lo opera. Operación, monitoreo, upgrades de modelos y el ciclo mensual de mejora corren por nuestra cuenta. Tu equipo solo hace el trabajo que de verdad necesita un humano."
       },
       "metrics": {
         "q": "¿Qué medís exactamente y cómo sabemos que está funcionando?",
-        "a": "Acordamos 2 o 3 métricas de resultado durante el diagnóstico: habitualmente tiempo de respuesta, tasa de resolución, no-shows recuperados o coste por conversación gestionada. Desde el día uno las ves en vivo en tu dashboard, junto a los logs de conversación que puedes auditar. Si una métrica se desvía, el siguiente ciclo de mejora prioriza arreglarla."
+        "a": "Acordamos 2 o 3 métricas de resultado durante el diagnóstico: habitualmente tiempo de respuesta, tasa de resolución, no-shows recuperados o coste por conversación gestionada. Las medimos en continuo y las revisamos contigo en cada ciclo de mejora, junto a los logs de conversación, que puedes pedir cuando quieras. Si una métrica se desvía, el siguiente ciclo de mejora prioriza arreglarla."
       },
       "nda": {
         "q": "¿Firmáis NDAs?",
@@ -395,7 +395,7 @@
         "items": {
           "voiceReceptionist": {
             "title": "Recepcionista de voz",
-            "body": "Contesta en menos de 3 segundos, reserva en Booksy/Treatwell/Fresha o en tu agenda, conoce tus precios, tus barberos y tus reglas. Suena humano, no a contestador."
+            "body": "Contesta en menos de 3 segundos, reserva en Booksy/Treatwell/Fresha o en tu agenda, conoce tus precios, tus barberos y tus reglas. Conversación natural, no un contestador; y si alguien pide una persona, escala a tu barbero."
           },
           "whatsappBookings": {
             "title": "Reservas por WhatsApp",
@@ -470,7 +470,7 @@
           },
           "voiceQuality": {
             "q": "¿Mis clientes se darán cuenta de que es una IA?",
-            "a": "La mayoría no. Usamos voces neurales que manejan acentos, ruido de fondo y pausas naturales. Si un cliente pide explícitamente hablar con una persona, el agente escala por SMS o WhatsApp a tu barbero, sin bucles robóticos."
+            "a": "Sí: el agente se identifica como IA desde el primer momento — lo exige el art. 50 del Reglamento europeo de IA desde agosto de 2026, y además convierte mejor. Lo que tus clientes valoran no es que parezca humano: es que les resuelva. Habla con naturalidad, maneja acentos y ruido de fondo, y si alguien pide una persona, escala por SMS o WhatsApp a tu barbero, sin bucles robóticos."
           },
           "walkIn": {
             "q": "¿Qué pasa con los walk-ins?",
@@ -903,7 +903,7 @@
           },
           "pricing": {
             "q": "¿Cuánto cuesta?",
-            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes) o Business 360 ($2.990 + $390/mes, el tier donde encaja la mayoría de clínicas dada la operación y el SLA requerido)."
+            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes) o Business 360 ($2.990 + $390/mes, el tier donde encaja la mayoría de clínicas dada la operación y la cobertura 24/7 que requiere)."
           },
           "launch": {
             "q": "¿Cuánto hasta tenerlo en vivo?",
@@ -1022,7 +1022,7 @@
           },
           "recall": {
             "q": "¿Cómo funciona el flujo de recall?",
-            "a": "Importamos tu lista de morosos del PMS, segmentamos por tipo de tratamiento y fecha de última visita, y la trabajamos en el calendario que pactemos. Llamadas y mensajes salientes personales y en calma, en el idioma del paciente. Ves cada contacto en tu dashboard."
+            "a": "Importamos tu lista de morosos del PMS, segmentamos por tipo de tratamiento y fecha de última visita, y la trabajamos en el calendario que pactemos. Llamadas y mensajes salientes personales y en calma, en el idioma del paciente. Cada contacto queda registrado y puedes revisarlo cuando quieras."
           },
           "emergency": {
             "q": "¿El agente gestiona dudas clínicas o solo agenda?",
@@ -1034,7 +1034,7 @@
           },
           "pricing": {
             "q": "¿Cuánto cuesta?",
-            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes) o Business 360 ($2.990 + $390/mes, el tier donde encaja la mayoría dado el volumen y SLA)."
+            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes) o Business 360 ($2.990 + $390/mes, el tier donde encaja la mayoría dado el volumen y la cobertura que requiere)."
           },
           "launch": {
             "q": "¿En cuánto tiempo entra en producción?",
@@ -1149,7 +1149,7 @@
         "items": {
           "hep": {
             "q": "¿Cómo funcionan exactamente los recordatorios de ejercicios en casa?",
-            "a": "El terapeuta define el programa y la pauta en tu PMS (o en nuestro dashboard). El agente lo traduce a mensajes personales en el canal preferido del paciente: diario, 3×/sem, antes de dormir, lo que se prescribió. El paciente puede marcar ejercicios hechos, hacer preguntas (que escalan al terapeuta) o reagendar la próxima sesión, todo en un hilo."
+            "a": "El terapeuta define el programa y la pauta en tu PMS (o lo configuramos contigo). El agente lo traduce a mensajes personales en el canal preferido del paciente: diario, 3×/sem, antes de dormir, lo que se prescribió. El paciente puede marcar ejercicios hechos, hacer preguntas (que escalan al terapeuta) o reagendar la próxima sesión, todo en un hilo."
           },
           "packageManagement": {
             "q": "¿Puede llevar paquetes de varias sesiones?",
@@ -1288,7 +1288,7 @@
           },
           "vaccinations": {
             "q": "¿Realmente lleva la pauta de vacunación por especie?",
-            "a": "Sí. Perros (polivalente, rabia, bordetella, leptospirosis), gatos (FVRCP, FeLV, rabia), conejos (RHDV, mixomatosis): pautas por especie, raza y etapa de vida. Las leemos de tu PMS o las configuramos en nuestro dashboard."
+            "a": "Sí. Perros (polivalente, rabia, bordetella, leptospirosis), gatos (FVRCP, FeLV, rabia), conejos (RHDV, mixomatosis): pautas por especie, raza y etapa de vida. Las leemos de tu PMS o las configuramos contigo."
           },
           "integrations": {
             "q": "¿Funciona con AVImark / Cornerstone / ezyVet?",
@@ -1296,7 +1296,7 @@
           },
           "pricing": {
             "q": "¿Cuánto cuesta?",
-            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes) o Business 360 ($2.990 + $390/mes, el tier donde encaja la mayoría dado el SLA 24/7)."
+            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes) o Business 360 ($2.990 + $390/mes, el tier donde encaja la mayoría dada la cobertura 24/7)."
           },
           "launch": {
             "q": "¿En cuánto tiempo entra en producción?",
@@ -1831,7 +1831,7 @@
         },
         "platforms": {
           "q": "Wati, Charles, Sirena, AiSensy vs Auphere. ¿Cuál es la diferencia real?",
-          "a": "Esos son SaaS que tú configuras. Auphere es una agencia que construye el agente alrededor de tu operación y lo opera en nuestra infraestructura 24/7. No recibes un dashboard que configurar. Recibes un agente que ya funciona para tu equipo, un SLA y un ciclo de mejora que no tienes que dotar de personal."
+          "a": "Esos son SaaS que tú configuras. Auphere es una agencia que construye el agente alrededor de tu operación y lo opera en nuestra infraestructura 24/7. No recibes un panel que configurar. Recibes un agente que ya funciona para tu equipo, operado 24/7, y un ciclo de mejora que no tienes que dotar de personal."
         },
         "data": {
           "q": "GDPR, LGPD, ¿qué pasa con los datos del cliente en WhatsApp?",
@@ -1875,11 +1875,11 @@
         },
         "glassbox": {
           "term": "Operación glass-box",
-          "description": "Ves qué hizo el agente, por qué, y qué cambió en el último ciclo de mejora. Dashboard, logs de conversación, decisiones documentadas."
+          "description": "Ves qué hizo el agente, por qué, y qué cambió en el último ciclo de mejora. Logs de conversación, decisiones documentadas y línea directa con el equipo que lo opera."
         },
         "compliance": {
           "term": "Compliance-by-design",
-          "description": "GDPR y CCPA como cimiento, no como checklist. EU-hosted por defecto. DPA firmado antes de tocar datos reales. SOC 2 Type 1 en curso."
+          "description": "GDPR y CCPA como cimiento, no como checklist. EU-hosted por defecto. DPA firmado antes de tocar datos reales. SOC 2 en el roadmap de certificación."
         },
         "diagnostic": {
           "term": "Diagnóstico honesto",
@@ -1901,7 +1901,7 @@
         },
         "us": {
           "term": "Estados Unidos",
-          "description": "NYC, San Francisco, Austin, Miami. Estructura contractual lista para engagements en EEUU. SOC 2 Type 1 objetivo Q3 2026."
+          "description": "NYC, San Francisco, Austin, Miami. Estructura contractual lista para engagements en EEUU."
         },
         "latam": {
           "term": "Latinoamérica",
@@ -2107,7 +2107,7 @@
     "sections": {
       "service": {
         "title": "Qué entregamos",
-        "p1": "Auphere opera un servicio bespoke de agente de IA en tres fases: una llamada de diagnóstico (gratuita, 30 minutos), un setup del agente (pago único, alcance acordado por escrito) y un servicio gestionado continuo (cuota mensual, el agente corre en nuestra infraestructura bajo SLA).",
+        "p1": "Auphere opera un servicio bespoke de agente de IA en tres fases: una llamada de diagnóstico (gratuita, 30 minutos), un setup del agente (pago único, alcance acordado por escrito) y un servicio gestionado continuo (cuota mensual, el agente corre en nuestra infraestructura, operado 24/7 por nuestro equipo).",
         "p2": "No somos un proveedor SaaS. No somos un contratista de software que entrega un codebase y se va. La relación es la operación: corremos el agente mientras el contrato esté vigente. Cuando el canal es WhatsApp, Auphere opera como Tech Provider autorizado por Meta Platforms, Inc.: el cliente conserva la propiedad de su WhatsApp Business Account (WABA) y Meta factura directamente al cliente el consumo de mensajería; Auphere solo cobra la cuota del servicio gestionado."
       },
       "diagnostic": {
@@ -2146,8 +2146,8 @@
       },
       "sla": {
         "title": "Niveles de servicio",
-        "p1": "Cada tier incluye un SLA, escrito en el contrato. Business 360 incluye una ventana de respuesta de 4 horas para incidentes en producción.",
-        "p2": "Medimos métricas de resultado acordadas en el diagnóstico (tiempo de respuesta, tasa de resolución, no-shows recuperados, coste por conversación gestionada). Las ves en vivo en tu dashboard. Si una métrica se desvía, el siguiente ciclo de mejora prioriza arreglarla."
+        "p1": "Cada tier incluye un compromiso de respuesta a incidentes, escrito en el contrato. Business 360 incluye una ventana de respuesta de 4 horas para incidentes en producción.",
+        "p2": "Medimos métricas de resultado acordadas en el diagnóstico (tiempo de respuesta, tasa de resolución, no-shows recuperados, coste por conversación gestionada). Las revisamos contigo en cada ciclo de mejora. Si una métrica se desvía, el siguiente ciclo de mejora prioriza arreglarla."
       },
       "liability": {
         "title": "Responsabilidad",
@@ -2220,10 +2220,15 @@
             "description": "Clientes brasileños pueden solicitar procesamiento alineado con LGPD: mismas garantías operativas que GDPR, con enmiendas contractuales según sea necesario."
           },
           "soc2": {
-            "term": "SOC 2 Type 1",
-            "description": "Auditoría en curso. Objetivo de cierre Q3 2026. Compartimos el cuestionario de seguridad y los controles vigentes bajo NDA, a solicitud."
+            "term": "SOC 2",
+            "description": "Aún no iniciada: está en nuestro roadmap de certificación. Mientras tanto, compartimos el cuestionario de seguridad y los controles vigentes bajo NDA, a solicitud."
           }
         }
+      },
+      "aitransparency": {
+        "title": "Transparencia de IA (art. 50 del Reglamento europeo de IA)",
+        "p1": "Todo agente de Auphere se identifica como IA desde el primer mensaje, en todos los canales. Es un deber de diseño del art. 50 del Reglamento europeo de IA, aplicable desde el 2 de agosto de 2026: en voz, el agente lo dice al inicio de la llamada; en texto, en su presentación. No diseñamos agentes para hacerse pasar por humanos, y rechazamos configuraciones que lo pidan.",
+        "p2": "Cuando el agente no puede o no debe resolver algo, escala a una persona con el contexto completo de la conversación. Ese escalado a humano viene activado de serie — es también lo que exige a los bots de atención al cliente la Ley 10/2025 en España a partir del 28 de diciembre de 2026."
       },
       "subprocessors": {
         "title": "Subencargados",
