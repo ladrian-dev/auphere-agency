@@ -1,59 +1,80 @@
 # Auphere
 
-> Bespoke AI agents we build, run and improve for your team. We design, deploy and operate custom AI agents for service businesses so they can stop drowning in booking, follow-up, support and ops work. Engineers, not salespeople. Managed, not handed off.
+> Auphere builds, operates and answers for AI agents in production — AI as a Service
+> for companies that need the outcome without building an AI team, and for technology
+> and service companies that want to offer AI to their clients without building the
+> platform. EU-hosted, EU AI Act Article 50 compliant by design, human escalation
+> enabled by default. Operated 24/7 by the team that built it.
 
 ## What Auphere is
 
-Auphere is a small AI agency that builds custom AI agents for SMB and mid-market teams (50 to 500 employees) across Europe, the United States and Latin America. The model is bespoke + managed: we configure the agent around your real operation, run it on our infrastructure 24/7, measure it against the metrics agreed in the diagnostic, and improve it on a monthly cycle. Clients do not own or maintain code. Clients own data, conversation history, integrations and business rules, and can export everything at any time.
+Auphere operates an AI agent platform with three delivery models: Direct (your agent,
+built around your operation and operated by us), Reseller (agencies and MSPs sell
+under their own brand at their own price; Auphere runs the platform and the
+guarantees), and Embedded (AI inside a SaaS product via API). The home page routes
+these as "hire it · resell it · embed it".
 
-The first conversation is a free 30-minute diagnostic call with an engineer (not a salesperson). It ends with a written go/no-go and a fixed plan if it is a go.
+Every commercial claim on the site is backed by a claims registry enforced in CI:
+capabilities that do not exist yet are always published with a date, never as if live.
 
-## How we work
+## Capabilities in production today
 
-- **Diagnose** (30-minute call, free). We sit with the team, look at the operation honestly and decide together if automation actually solves the problem. If it does not, we say so.
-- **Configure** (2 to 6 weeks). We build the agent end to end: integrations with the tools the client already uses, training on real data, personalization to voice and rules. Client signs off every sprint.
-- **Go Live** (continuous). The agent runs in production on our infrastructure. We monitor it 24/7, report against the agreed metrics and improve it monthly.
+Understanding voice notes and photos (not just text) · per-customer memory across
+conversations · 10 vertical skills (health, claims, pre/post-op, escalation…) ·
+continuous evals with an automated judge and per-vertical rubrics · browser automation
+for software without an API · STAGED→ACTIVE versioning with owner approval and audited
+rollback · database-enforced tenant isolation (RLS) with blocking tests · WhatsApp
+number-quality hygiene with Meta · owner backchannel over WhatsApp · human escalation
+with three triggers and full context.
 
-## Pricing
+## Channels
 
-All pricing in USD, taxes not included. 50% on signing, 50% on kickoff. 10% off when billed annually. Cancel any month after the first three with 30 days notice.
+WhatsApp Business API, Instagram DM and TikTok business messaging are live. Real-time
+voice is on the technical roadmap with an assigned phase (audio replies to voice notes
+land earlier). Integrations: calendars (Google Calendar, Booksy, Treatwell, Fresha…),
+CRMs, payments, and anything with a documented API — plus the browser-automation rule
+for systems without one.
 
-- **Essential** — $850 setup + $120/mo. Up to 1,500 conversations/mo, 1 channel, basic integrations.
-- **Pro** — $1,490 setup + $249/mo. Most teams at this scale land here. Up to 4,000 conversations/mo, up to 3 channels, standard integrations.
-- **Business 360** — $2,990 setup + $390/mo. Up to 10,000 conversations/mo, up to 3 channels + 4h SLA, advanced integrations, weekly improvement cycle.
+## Pricing (Direct tier, published)
+
+All pricing in USD, taxes not included. 50% on signing, 50% on kickoff. 10% off billed
+annually. Cancel any month after the first three with 30 days notice.
+
+- **Essential** — $850 setup + $120/mo. Up to 1,500 conversations/mo, 1 channel.
+- **Pro** — $1,490 setup + $249/mo. Up to 4,000 conversations/mo, up to 3 channels.
+- **Business 360** — $2,990 setup + $390/mo. Up to 10,000 conversations/mo, 4h incident-response window.
+
+Enterprise and partner economics are discussed in calls, not published.
 
 ## Use cases (verticals with dedicated pages)
 
-- [Barbershops & traditional barbers](/en/use-cases/barbershop) — voice receptionist, WhatsApp bookings, reminders, waitlist, review capture.
+- [Barbershops](/en/use-cases/barbershop) — voice receptionist, WhatsApp bookings, reminders, waitlist, review capture.
 - [Nail salons](/en/use-cases/nail-salon) — bookings, price quotes, technician matching, 24/7 multilingual.
-- [Spas & wellness centers](/en/use-cases/spa) — after-hours bookings, prep reminders, upsell, gift cards.
-- [Medspas & aesthetic clinics](/en/use-cases/medspa) — lead qualifier, consult booking, compliance-aware handoff.
+- [Spas & wellness](/en/use-cases/spa) — after-hours bookings, prep reminders, upsell, gift cards.
+- [Medspas](/en/use-cases/medspa) — lead qualifier, consult booking, compliance-aware handoff.
 - [Dental clinics](/en/use-cases/dental-clinic) — recall, reminders, insurance pre-check, emergency triage.
-- [Physiotherapy clinics](/en/use-cases/physiotherapy) — session reminders, HEP adherence, package management.
-- [Veterinary clinics](/en/use-cases/veterinary) — 24/7 emergency triage, vaccination reminders, multi-pet management.
+- [Physiotherapy](/en/use-cases/physiotherapy) — session reminders, HEP adherence, package management.
+- [Veterinary](/en/use-cases/veterinary) — 24/7 emergency triage, vaccination reminders, multi-pet management.
 - [Pharmacies](/en/use-cases/pharmacy) — WhatsApp assistant, refills, photo prescriptions, pharmacist escalation.
 - [Language schools](/en/use-cases/language-school) — enrollment, trial booking, parent comms in 95+ languages.
 
-For any operation with a conversational bottleneck not listed above, the diagnostic confirms feasibility before quoting.
-
-## Channels and integrations
-
-Out of the box: WhatsApp Business API, Instagram DM, web chat, email, Google Calendar, Outlook, Stripe, Cal.com, HubSpot, common PMS / CRM / booking systems and most no-code platforms (Make, n8n, Zapier). Anything with a documented API is in scope.
-
 ## Compliance and data
 
-- EU-hosted infrastructure available for European clients (GDPR-compliant by default).
-- DPA signed before any real client data touches Auphere systems.
-- Client data is never used to train models offered to other clients.
-- SOC 2 Type 1 in progress, target Q3 2026.
+- The agent identifies itself as AI from the first message on every channel (EU AI Act
+  Article 50, applicable since August 2, 2026). Full posture published at /en/trust.
+- Human escalation ships enabled by default — which is also what Spain's Ley 10/2025
+  requires of customer-service bots from December 28, 2026.
+- EU-hosted production runtime by default; vendor exceptions listed in the privacy policy.
+- DPA signed before any real client data flows. Client data never trains models sold to others.
+- SOC 2 is on the certification roadmap (not started — we say it plainly); security
+  questionnaire and documented controls available under NDA.
 - HIPAA: not currently in scope.
 
-## What Auphere is not
+## Regulation guides
 
-- Not a SaaS template you have to configure yourself.
-- Not a no-code chatbot builder.
-- Not a code handoff: the client does not maintain a codebase.
-- Not a multi-tenant generic assistant: each agent is built around one operation.
+- [EU AI Act Article 50 (EN)](/en/eu-ai-act-article-50) — do chatbots have to disclose they are AI in the EU? Yes: what the article requires, who it binds, white-label liability, extraterritoriality.
+- [Art. 50 Reglamento IA (ES)](/es/eu-ai-act-article-50) — la misma guía en español.
+- [Ley 10/2025 (ES only)](/es/ley-10-2025-atencion-cliente) — desde el 28-dic-2026 tu bot debe ofrecer un humano: a quién aplica, qué exige, los tres errores típicos y checklist de cumplimiento.
 
 ## Languages and markets
 
@@ -66,11 +87,13 @@ Diagnostic booking and email: contacto@auphere.com · https://auphere.com
 
 ## Canonical pages
 
-- [Home (EN)](/en) — overview, how we work, pricing, FAQ.
+- [Home (EN)](/en) — the platform story and the three ways to work with Auphere.
 - [Home (ES)](/es) — versión en español.
-- [About](/en/about) — who Auphere is and who runs it.
-- [Use cases hub (EN)](/en/use-cases) — directory of vertical landings.
-- [Use cases hub (ES)](/es/use-cases) — directorio de casos de uso por sector.
-- [Trust & security](/en/trust) — infrastructure, data isolation, encryption.
-- [Privacy](/en/privacy) — how client data is handled.
-- [Terms](/en/terms) — service terms and code ownership policy.
+- [Platform](/en/platform) — the conversation lifecycle and the 10 live capabilities.
+- [Platform security](/en/platform/security) — the 9 isolation controls with mechanisms.
+- [Enterprise](/en/enterprise) — written guarantees with dates, compliance, launch program.
+- [Partners](/en/partners) — referral/reseller/embedded tracks, honest economics policy.
+- [Use cases hub](/en/use-cases) — directory of vertical landings.
+- [Trust & security](/en/trust) — data, isolation, AI transparency posture.
+- [API documentation](/en/docs) — partner-facing technical docs.
+- [About](/en/about) · [Privacy](/en/privacy) · [Terms](/en/terms)

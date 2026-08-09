@@ -1,6 +1,7 @@
 'use client';
 import { useRef } from 'react';
 import { useAuphereGSAP } from '@/lib/motion/gsap';
+import { track } from '@/lib/analytics';
 
 export interface GuaranteeRowResolved {
   label: string;
@@ -37,7 +38,12 @@ export function GuaranteeTable({ rows, footnote, todayLabel, columnGuarantee, co
       gsap.set(rowEls, { opacity: 0, y: 14 });
       gsap.set(chips, { scale: 0.6, opacity: 0 });
       const tl = gsap.timeline({
-        scrollTrigger: { trigger: root, start: 'top 80%', once: true },
+        scrollTrigger: {
+          trigger: root,
+          start: 'top 80%',
+          once: true,
+          onEnter: () => track('guarantee_table_view'),
+        },
       });
       tl.to(rowEls, { opacity: 1, y: 0, duration: 0.5, ease: 'auphere-expo', stagger: 0.05, clearProps: 'transform' }).to(
         chips,

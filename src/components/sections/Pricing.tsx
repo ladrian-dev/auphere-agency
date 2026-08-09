@@ -5,6 +5,7 @@ import { Link } from '@/i18n/navigation';
 import { Container } from '@/components/primitives/Container';
 import { SectionMarker } from '@/components/primitives/SectionMarker';
 import { cn } from '@/lib/utils/cn';
+import { track } from '@/lib/analytics';
 
 interface Tier {
   id: 'essential' | 'pro' | 'business';
@@ -59,7 +60,12 @@ export function Pricing() {
             role="switch"
             aria-checked={yearly}
             aria-label={t('toggle.ariaLabel')}
-            onClick={() => setYearly((v) => !v)}
+            onClick={() =>
+              setYearly((v) => {
+                track('pricing_toggle', { period: v ? 'monthly' : 'yearly' });
+                return !v;
+              })
+            }
             className={cn(
               'relative inline-flex h-[28px] w-[52px] shrink-0 items-center rounded-full transition-colors duration-200 ease-out',
               'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-bangladesh-green)]',

@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { cn } from '@/lib/utils/cn';
+import { track } from '@/lib/analytics';
 
 interface Copy {
   fields: Record<'name' | 'email' | 'company' | 'website' | 'clients' | 'vertical' | 'country' | 'notes', string>;
@@ -58,6 +59,7 @@ export function PartnerApplicationForm({ locale, copy }: Props) {
         body: JSON.stringify({ ...values, locale }),
       });
       setStatus(res.ok ? 'success' : 'error');
+      if (res.ok) track('partner_apply_submit', { clients: values.clients, vertical: values.vertical });
     } catch {
       setStatus('error');
     }

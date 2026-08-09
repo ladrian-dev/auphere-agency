@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Container } from '@/components/primitives/Container';
 import { SectionMarker } from '@/components/primitives/SectionMarker';
 import { cn } from '@/lib/utils/cn';
+import { track } from '@/lib/analytics';
 import type { FaqItemData } from './faq-utils';
 
 interface FaqHeader {
@@ -83,7 +84,12 @@ function FaqAccordionItem({
           aria-expanded={open}
           aria-controls={panelId}
           className="w-full flex items-start justify-between gap-6 py-6 text-left group font-display font-semibold text-lg md:text-xl tracking-[-0.01em] text-[var(--color-ink)] hover:text-[var(--color-bangladesh-green)] transition-colors"
-          onClick={() => setOpen((v) => !v)}
+          onClick={() =>
+            setOpen((v) => {
+              if (!v) track('faq_open', { question: q.slice(0, 60) });
+              return !v;
+            })
+          }
         >
           <span>{q}</span>
           <span

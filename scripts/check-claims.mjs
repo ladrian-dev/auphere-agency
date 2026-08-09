@@ -26,6 +26,7 @@ function walk(dir, exts) {
 const files = [
   ...walk(join(ROOT, 'messages'), ['.json']),
   ...walk(join(ROOT, 'src/content'), ['.ts', '.tsx', '.json']),
+  ...walk(join(ROOT, 'public'), ['.txt']),
 ].filter((f) => !f.endsWith('claims.ts'));
 
 // Basic structural validation
