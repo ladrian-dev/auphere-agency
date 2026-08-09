@@ -174,7 +174,7 @@ export function Orchestrator({ labels, className, immediate = false }: Props) {
 
       {/* ── Channel nodes ── */}
       {labels.channels.map((label, i) => (
-        <g key={label} data-orch-node>
+        <g key={label} data-orch-node data-orch-group="channels">
           <rect x={30} y={CHANNEL_Y[i]! - 18} width={130} height={36} rx={8} fill="none" stroke={line} strokeWidth={1.2} strokeOpacity={0.7} />
           <circle cx={48} cy={CHANNEL_Y[i]} r={3} fill={accent} opacity={0.8} />
           <text x={62} y={CHANNEL_Y[i]! + 3.5} fontFamily="var(--font-mono)" fontSize={11} letterSpacing="0.08em" fill="currentColor" opacity={0.85}>
@@ -184,7 +184,7 @@ export function Orchestrator({ labels, className, immediate = false }: Props) {
       ))}
 
       {/* ── Classifier ── */}
-      <g data-orch-node>
+      <g data-orch-node data-orch-group="classifier">
         <rect x={300} y={232} width={140} height={64} rx={10} fill="none" stroke={line} strokeWidth={1.4} strokeOpacity={0.85} />
         <rect x={306} y={238} width={128} height={52} rx={7} fill="none" stroke={line} strokeWidth={0.6} strokeOpacity={0.3} />
         <text x={370} y={268} textAnchor="middle" fontFamily="var(--font-mono)" fontSize={11} letterSpacing="0.1em" fill="currentColor" opacity={0.9}>
@@ -194,7 +194,7 @@ export function Orchestrator({ labels, className, immediate = false }: Props) {
 
       {/* ── Tools ── */}
       {labels.tools.map((label, i) => (
-        <g key={label} data-orch-node>
+        <g key={label} data-orch-node data-orch-group="tools">
           <rect x={TOOL_X[i]! - 59} y={496} width={118} height={30} rx={6} fill="none" stroke={line} strokeWidth={1} strokeOpacity={0.55} />
           <text x={TOOL_X[i]} y={515} textAnchor="middle" fontFamily="var(--font-mono)" fontSize={9.5} letterSpacing="0.08em" fill="currentColor" opacity={0.7}>
             {label.toUpperCase()}
@@ -203,7 +203,7 @@ export function Orchestrator({ labels, className, immediate = false }: Props) {
       ))}
 
       {/* ── Response ── */}
-      <g data-orch-node>
+      <g data-orch-node data-orch-group="response">
         <rect x={580} y={258} width={120} height={44} rx={8} fill="none" stroke={accent} strokeWidth={1.3} strokeOpacity={0.9} />
         <text x={640} y={284} textAnchor="middle" fontFamily="var(--font-mono)" fontSize={10.5} letterSpacing="0.09em" fill={accent}>
           {labels.response.toUpperCase()}
@@ -211,7 +211,7 @@ export function Orchestrator({ labels, className, immediate = false }: Props) {
       </g>
 
       {/* ── Human escalation ── */}
-      <g data-orch-node data-orch-human-node>
+      <g data-orch-node data-orch-human-node data-orch-group="human">
         <rect x={560} y={60} width={140} height={40} rx={20} fill="none" stroke={line} strokeWidth={1.2} strokeOpacity={0.75} />
         <circle cx={582} cy={80} r={4} fill="none" stroke={line} strokeWidth={1.2} strokeOpacity={0.8} />
         <path d="M576,90 C576,85 588,85 588,90" fill="none" stroke={line} strokeWidth={1.2} strokeOpacity={0.8} />

@@ -1,232 +1,346 @@
 'use client';
-import { useRef, useState } from 'react';
-import {
-  AnimatePresence,
-  motion,
-  useMotionValueEvent,
-  useReducedMotion,
-  useScroll,
-} from 'motion/react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
-import { usePathname } from '@/i18n/navigation';
-import { Link } from '@/i18n/navigation';
+import { usePathname, Link } from '@/i18n/navigation';
 import { Logo } from '@/components/primitives/Logo';
 import { cn } from '@/lib/utils/cn';
+import { useAuphereGSAP, gsap, ScrollTrigger } from '@/lib/motion/gsap';
 
 /**
- * Floating centered pill nav with **scroll-direction-aware** collapse —
- * pattern lifted from andresmatos.framer.ai (and used by Linear, Vercel,
- * Arc to similar effect).
+ * Nav v3 (§6.0.1) — lineal horizontal Attio-style, no pill flotante.
  *
- * State machine:
- *   · scrollY < EXPAND_THRESHOLD                       → expanded
- *   · scrolling DOWN past COLLAPSE_THRESHOLD           → collapsed
- *   · scrolling UP at any position                     → expanded
- *
- * The pill morphs width (spring), fades the link cluster + locale switcher
- * out, fades a "•••" indicator in. The CTA stays present always because it
- * is the primary conversion element on this site (the reference doesn't
- * keep one because it's a personal portfolio, but for B2B SaaS the CTA
- * must remain reachable).
+ * · Mega-menú (A-02): panel con opacidad+desplazamiento y columnas en
+ *   stagger 0.04 (GSAP, ease auphere, 0.32 s; cierre 0.2 s). Cierra con
+ *   Escape y al perder el foco; aria-expanded/aria-controls.
+ * · Sticky condensado: un único ScrollTrigger alterna data-condensed y el
+ *   CSS transiciona 72→56 px.
+ * · Mobile: drawer full-screen con grupos en acordeón y CTA fijo abajo.
+ * · "Precios" entra al nav cuando cierre el informe de pricing (Fase 6).
  */
 
-const EXPAND_THRESHOLD = 40; // below this, always expanded
-const COLLAPSE_THRESHOLD = 80; // must pass this when scrolling down to collapse
+type MenuId = 'platform' | 'solutions' | 'partners';
+
+interface MenuItem {
+  key: string;
+  href: string;
+}
+
+const MENUS: Record<MenuId, MenuItem[]> = {
+  platform: [
+    { key: 'platformWhat', href: '/platform' },
+    { key: 'platformSecurity', href: '/platform/security' },
+    { key: 'platformTrust', href: '/trust' },
+  ],
+  solutions: [
+    { key: 'solutionsSectors', href: '/use-cases' },
+    { key: 'solutionsWhatsapp', href: '/whatsapp-ai-agent' },
+  ],
+  partners: [
+    { key: 'partnersJoin', href: '/partners' },
+    { key: 'partnersEmbedded', href: '/partners/embedded' },
+    { key: 'partnersDocs', href: '/docs' },
+  ],
+};
+
+const MENU_IDS: MenuId[] = ['platform', 'solutions', 'partners'];
 
 export function Nav() {
   const t = useTranslations('nav');
   const locale = useLocale();
   const pathname = usePathname();
-  const reducedMotion = useReducedMotion();
-
-  // collapsedByScroll = the "should be collapsed" state derived from scroll.
-  // The actually-rendered collapsed flag also factors in hover — when the
-  // user hovers the collapsed pill we re-expand it temporarily so they can
-  // see the full nav without scrolling back up.
-  const [collapsedByScroll, setCollapsedByScroll] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
-  const collapsed = collapsedByScroll && !isHovered;
-
-  const lastY = useRef(0);
-  const { scrollY } = useScroll();
-
-  useMotionValueEvent(scrollY, 'change', (current) => {
-    const previous = lastY.current;
-    const delta = current - previous;
-
-    // Ignore micro-jitter to avoid flicker on rubber-band scrolling.
-    if (Math.abs(delta) < 4) return;
-
-    const direction: 'down' | 'up' = delta > 0 ? 'down' : 'up';
-
-    if (current < EXPAND_THRESHOLD) {
-      setCollapsedByScroll(false);
-    } else if (direction === 'down' && current > COLLAPSE_THRESHOLD) {
-      setCollapsedByScroll(true);
-    } else if (direction === 'up') {
-      setCollapsedByScroll(false);
-    }
-
-    lastY.current = current;
-  });
+  const headerRef = useRef<HTMLElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const closeTimer = useRef<number | null>(null);
+  const [openMenu, setOpenMenu] = useState<MenuId | null>(null);
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   const otherLocale = locale === 'en' ? 'es' : 'en';
-
-  // Anchor links must point to the landing root from any inner page (about, privacy, ...).
-  // On the landing itself, `/{locale}#xxx` still resolves to a same-page hash navigation.
   const landingHash = (hash: string) => `/${locale}${hash}`;
 
-  // Slower, more graceful spring — less abrupt morph than a snappy stiff one.
-  // The pill takes ~600-700ms to settle, matching the more luxurious feel of
-  // the andresmatos.framer.ai reference.
-  const springTransition = reducedMotion
-    ? { duration: 0 }
-    : { type: 'spring' as const, stiffness: 220, damping: 30, mass: 0.95 };
+  // ── Sticky condensado: un solo ScrollTrigger, solo alterna un atributo ──
+  useAuphereGSAP(({ gsap: g }) => {
+    const header = headerRef.current;
+    if (!header) return;
+    ScrollTrigger.create({
+      start: 80,
+      onToggle: (self) => {
+        header.dataset.condensed = self.isActive ? 'true' : 'false';
+      },
+    });
+    void g;
+  });
 
-  // Apple-style cubic for the children — pairs cleanly with the spring without
-  // fighting it.
-  const easeOut = [0.32, 0.72, 0, 1] as const;
+  // ── Mega-menú: animación A-02 al abrir ──
+  useAuphereGSAP(
+    ({ reduced, gsap: g }) => {
+      const panel = panelRef.current;
+      if (!panel || !openMenu) return;
+      if (reduced) {
+        g.set(panel, { opacity: 1, y: 0 });
+        return;
+      }
+      const items = panel.querySelectorAll('[data-menu-item]');
+      g.fromTo(panel, { opacity: 0, y: -8 }, { opacity: 1, y: 0, duration: 0.32, ease: 'auphere' });
+      g.fromTo(items, { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.32, ease: 'auphere', stagger: 0.04 });
+    },
+    { dependencies: [openMenu] },
+  );
+
+  const scheduleClose = useCallback(() => {
+    if (closeTimer.current) window.clearTimeout(closeTimer.current);
+    closeTimer.current = window.setTimeout(() => setOpenMenu(null), 160);
+  }, []);
+  const cancelClose = useCallback(() => {
+    if (closeTimer.current) window.clearTimeout(closeTimer.current);
+  }, []);
+
+  // Escape cierra menú y drawer; el drawer bloquea el scroll del body.
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setOpenMenu(null);
+        setDrawerOpen(false);
+      }
+    };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, []);
+  useEffect(() => {
+    document.documentElement.style.overflow = drawerOpen ? 'hidden' : '';
+    return () => {
+      document.documentElement.style.overflow = '';
+    };
+  }, [drawerOpen]);
+
+  // Cierra el menú al navegar (ajuste de estado derivado en render — patrón React).
+  const [lastPath, setLastPath] = useState(pathname);
+  if (lastPath !== pathname) {
+    setLastPath(pathname);
+    setOpenMenu(null);
+    setDrawerOpen(false);
+  }
+
+  const menuLabel = (id: MenuId) =>
+    id === 'platform' ? t('platform') : id === 'solutions' ? t('solutions') : t('partnersMenu');
 
   return (
     <header
-      className="fixed top-0 inset-x-0 z-50 flex justify-center pointer-events-none px-4 pt-4 md:pt-5"
+      ref={headerRef}
+      data-condensed="false"
+      className="fixed top-0 inset-x-0 z-50 group/nav"
       aria-label="Primary navigation"
+      onMouseLeave={scheduleClose}
     >
-      <motion.div
-        layout
-        transition={springTransition}
-        onHoverStart={() => setIsHovered(true)}
-        onHoverEnd={() => setIsHovered(false)}
+      <div
         className={cn(
-          'pointer-events-auto h-[56px] flex items-center gap-1 pl-2 pr-2',
-          'rounded-full bg-[var(--color-bone)]/85 backdrop-blur-xl',
-          'border border-[var(--color-ink-subtle)]',
-          'shadow-[0_10px_40px_-12px_rgba(13,15,1,0.18)]',
+          'relative bg-[var(--color-bone)]/90 backdrop-blur-xl border-b border-[var(--color-ink-subtle)]',
+          'transition-[box-shadow] duration-300',
+          'group-data-[condensed=true]/nav:shadow-[0_8px_30px_-12px_rgba(13,15,1,0.12)]',
         )}
       >
-        {/* Logo — always visible. Sits in its own pill area on the left. */}
-        <Link
-          href="/"
-          className="flex items-center pl-2 pr-3 h-full shrink-0"
-          aria-label="Auphere"
+        <div
+          className={cn(
+            'mx-auto max-w-[1400px] px-4 md:px-8 flex items-center justify-between gap-4',
+            'h-[64px] md:h-[72px] transition-[height] duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]',
+            'group-data-[condensed=true]/nav:h-[56px] motion-reduce:transition-none',
+          )}
         >
-          <Logo height={22} priority />
-        </Link>
+          <Link href="/" className="flex items-center shrink-0" aria-label="Auphere">
+            <Logo height={22} priority />
+          </Link>
 
-        {/* Center cluster — swaps between full nav links (expanded) and an
-            animated "•••" indicator (collapsed).
-            The crossfade is parallel (no mode="wait"), and BOTH variants
-            translate from the right on entry / to the right on exit. This
-            sells the perception that the right side of the pill is unfolding
-            (matches the andresmatos reference) while the logo on the left
-            stays anchored. */}
-        <div className="flex items-center justify-center min-w-0 overflow-hidden">
-          <AnimatePresence initial={false}>
-            {collapsed ? (
-              <motion.div
-                key="dots"
-                initial={{ opacity: 0, x: 14 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 14 }}
-                transition={{ duration: 0.32, ease: easeOut }}
-                className="hidden md:flex items-center gap-[6px] px-3"
-                aria-hidden
+          {/* Desktop groups */}
+          <nav className="hidden lg:flex items-center gap-1" aria-label="Sections">
+            {MENU_IDS.map((id) => (
+              <button
+                key={id}
+                type="button"
+                aria-expanded={openMenu === id}
+                aria-controls={`nav-panel-${id}`}
+                onMouseEnter={() => {
+                  cancelClose();
+                  setOpenMenu(id);
+                }}
+                onClick={() => setOpenMenu((current) => (current === id ? null : id))}
+                className={cn(
+                  'flex items-center gap-1.5 px-3.5 py-2 rounded-full text-[14px] transition-colors',
+                  openMenu === id
+                    ? 'text-[var(--color-ink)] bg-[var(--color-ink-faint)]'
+                    : 'text-[var(--color-ink-muted)] hover:text-[var(--color-ink)]',
+                )}
               >
-                {[0, 1, 2].map((i) => (
-                  <motion.span
-                    key={i}
-                    className="w-[6px] h-[6px] rounded-full bg-[var(--color-ink)]"
-                    animate={
-                      reducedMotion
-                        ? { opacity: 0.7 }
-                        : {
-                            scale: [1, 1.45, 1],
-                            opacity: [0.45, 1, 0.45],
-                          }
-                    }
-                    transition={
-                      reducedMotion
-                        ? { duration: 0 }
-                        : {
-                            duration: 1.3,
-                            repeat: Infinity,
-                            ease: 'easeInOut',
-                            delay: i * 0.18,
-                            repeatDelay: 0.3,
-                          }
-                    }
-                  />
-                ))}
-              </motion.div>
-            ) : (
-              <motion.nav
-                key="links"
-                initial={{ opacity: 0, x: 28 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 28 }}
-                transition={{ duration: 0.36, ease: easeOut }}
-                aria-label="Sections"
-                className="hidden md:flex items-center gap-6 text-[14px] text-[var(--color-ink-muted)] px-4 whitespace-nowrap"
-              >
-                <a href={landingHash('#how')} className="hover:text-[var(--color-ink)] transition-colors">
-                  {t('howItWorks')}
-                </a>
-                <Link href="/use-cases" className="hover:text-[var(--color-ink)] transition-colors">
-                  {t('useCases')}
-                </Link>
-                <a href={landingHash('#pricing')} className="hover:text-[var(--color-ink)] transition-colors">
-                  {t('pricing')}
-                </a>
-                <a href={landingHash('#faq')} className="hover:text-[var(--color-ink)] transition-colors">
-                  {t('faq')}
-                </a>
-              </motion.nav>
-            )}
-          </AnimatePresence>
-        </div>
-
-        {/* Right side — locale switcher fades with the links, CTA stays. */}
-        <div className="flex items-center gap-2 shrink-0">
-          <AnimatePresence initial={false}>
-            {!collapsed && (
-              <motion.div
-                key="locale"
-                initial={{ opacity: 0, x: 18 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 18 }}
-                transition={{ duration: 0.32, ease: easeOut }}
-                className="hidden md:flex items-center"
-              >
-                <Link
-                  href={pathname}
-                  locale={otherLocale}
-                  className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] transition-colors px-2 whitespace-nowrap"
-                  aria-label={`Switch to ${otherLocale.toUpperCase()}`}
+                {menuLabel(id)}
+                <svg
+                  aria-hidden
+                  viewBox="0 0 10 6"
+                  className={cn('w-2.5 h-1.5 transition-transform duration-200', openMenu === id && 'rotate-180')}
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
                 >
-                  {locale.toUpperCase()}
-                  <span className="text-[var(--color-ink-subtle)] mx-1">·</span>
-                  {otherLocale.toUpperCase()}
-                </Link>
-              </motion.div>
-            )}
-          </AnimatePresence>
+                  <path d="M1 1l4 4 4-4" />
+                </svg>
+              </button>
+            ))}
+            <Link
+              href="/enterprise"
+              className="px-3.5 py-2 rounded-full text-[14px] text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] transition-colors"
+            >
+              {t('enterprise')}
+            </Link>
+          </nav>
 
-          {/* CTA — always visible, sits as a nested pill (Andres Matos pattern). */}
-          <a
-            href={landingHash('#book')}
-            className={cn(
-              'inline-flex items-center justify-center h-[40px] px-[18px]',
-              'rounded-full font-medium text-[13px] tracking-tight whitespace-nowrap',
-              'bg-[var(--color-ink)] text-[var(--color-bone)]',
-              'hover:bg-[var(--color-bangladesh-green)]',
-              'transition-[background-color,transform] duration-200 ease-out active:scale-[0.97]',
-              'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-bangladesh-green)]',
-            )}
-          >
-            {t('cta')}
-          </a>
+          <div className="flex items-center gap-2 shrink-0">
+            <Link
+              href={pathname}
+              locale={otherLocale}
+              className="hidden md:block font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] transition-colors px-2 whitespace-nowrap"
+              aria-label={`Switch to ${otherLocale.toUpperCase()}`}
+            >
+              {locale.toUpperCase()}
+              <span className="text-[var(--color-ink-subtle)] mx-1">·</span>
+              {otherLocale.toUpperCase()}
+            </Link>
+
+            <a
+              href={landingHash('#book')}
+              className={cn(
+                'inline-flex items-center justify-center h-[40px] px-[18px]',
+                'rounded-full font-medium text-[13px] tracking-tight whitespace-nowrap',
+                'bg-[var(--color-ink)] text-[var(--color-bone)] hover:bg-[var(--color-bangladesh-green)]',
+                'transition-[background-color,transform] duration-200 ease-out active:scale-[0.97]',
+                'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-bangladesh-green)]',
+              )}
+            >
+              {t('cta')}
+            </a>
+
+            {/* Mobile hamburger */}
+            <button
+              type="button"
+              className="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-[var(--color-ink-subtle)] text-[var(--color-ink)]"
+              aria-expanded={drawerOpen}
+              aria-label={drawerOpen ? t('closeMenu') : t('openMenu')}
+              onClick={() => setDrawerOpen((v) => !v)}
+            >
+              <svg viewBox="0 0 18 14" className="w-4 h-3.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+                {drawerOpen ? <path d="M2 2l14 10M16 2L2 12" /> : <path d="M1 1h16M1 7h16M1 13h16" />}
+              </svg>
+            </button>
+          </div>
         </div>
-      </motion.div>
+
+        {/* ── Mega-menú desktop ── */}
+        {openMenu && (
+          <div
+            ref={panelRef}
+            id={`nav-panel-${openMenu}`}
+            onMouseEnter={cancelClose}
+            onMouseLeave={scheduleClose}
+            className="hidden lg:block absolute inset-x-0 top-full bg-[var(--color-bone)]/95 backdrop-blur-xl border-b border-[var(--color-ink-subtle)] shadow-[0_24px_60px_-24px_rgba(13,15,1,0.18)]"
+          >
+            <div className="mx-auto max-w-[1400px] px-8 py-8 grid grid-cols-3 gap-6">
+              {MENUS[openMenu].map((item) => (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  data-menu-item
+                  className="group/item rounded-xl p-4 -m-1 hover:bg-[var(--color-ink-faint)] transition-colors focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[var(--color-bangladesh-green)]"
+                >
+                  <p className="font-display font-semibold text-[15.5px] tracking-[-0.01em] text-[var(--color-ink)] group-hover/item:text-[var(--color-bangladesh-green)] transition-colors">
+                    {t(`menu.${item.key}.label` as Parameters<typeof t>[0])}
+                  </p>
+                  <p className="text-[13px] text-[var(--color-ink-muted)] mt-1 leading-snug">
+                    {t(`menu.${item.key}.desc` as Parameters<typeof t>[0])}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* ── Drawer mobile ── */}
+      {drawerOpen && (
+        <div className="lg:hidden fixed inset-0 top-[64px] bg-[var(--color-bone)] flex flex-col overflow-y-auto">
+          <nav className="flex-1 px-6 py-6 flex flex-col gap-1" aria-label="Sections">
+            {MENU_IDS.map((id) => (
+              <MobileGroup key={id} label={menuLabel(id)} items={MENUS[id]} t={t} />
+            ))}
+            <Link
+              href="/enterprise"
+              className="py-4 border-b border-[var(--color-ink-subtle)] font-display font-semibold text-[19px] text-[var(--color-ink)]"
+            >
+              {t('enterprise')}
+            </Link>
+            <Link
+              href={pathname}
+              locale={otherLocale}
+              className="py-4 font-mono text-[12px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]"
+            >
+              {locale.toUpperCase()} → {otherLocale.toUpperCase()}
+            </Link>
+          </nav>
+          <div className="sticky bottom-0 p-5 bg-[var(--color-bone)] border-t border-[var(--color-ink-subtle)]">
+            <a
+              href={landingHash('#book')}
+              className="flex items-center justify-center h-[52px] rounded-full font-medium text-[15px] bg-[var(--color-ink)] text-[var(--color-bone)] active:scale-[0.98] transition-transform"
+            >
+              {t('cta')}
+            </a>
+          </div>
+        </div>
+      )}
     </header>
+  );
+}
+
+function MobileGroup({
+  label,
+  items,
+  t,
+}: {
+  label: string;
+  items: MenuItem[];
+  t: ReturnType<typeof useTranslations<'nav'>>;
+}) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border-b border-[var(--color-ink-subtle)]">
+      <button
+        type="button"
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+        className="w-full flex items-center justify-between py-4 font-display font-semibold text-[19px] text-[var(--color-ink)]"
+      >
+        {label}
+        <svg
+          aria-hidden
+          viewBox="0 0 10 6"
+          className={cn('w-3 h-2 transition-transform duration-200', open && 'rotate-180')}
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.6"
+          strokeLinecap="round"
+        >
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </button>
+      <div
+        className="grid transition-[grid-template-rows] duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:transition-none"
+        style={{ gridTemplateRows: open ? '1fr' : '0fr' }}
+      >
+        <div className="overflow-hidden">
+          <div className="pb-4 flex flex-col gap-3">
+            {items.map((item) => (
+              <Link key={item.key} href={item.href} className="text-[15.5px] text-[var(--color-ink-muted)]">
+                {t(`menu.${item.key}.label` as Parameters<typeof t>[0])}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

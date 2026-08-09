@@ -1,7 +1,8 @@
 'use client';
-import { motion, useReducedMotion } from 'motion/react';
+import { useRef } from 'react';
 import { cn } from '@/lib/utils/cn';
 import type { VerticalSlug } from '@/lib/use-cases/verticals';
+import { useAuphereGSAP } from '@/lib/motion/gsap';
 
 /**
  * Editorial SVG marks · one per vertical.
@@ -25,24 +26,29 @@ interface Props {
   static?: boolean;
 }
 
-const VARIANTS = {
-  hidden: { pathLength: 0, opacity: 0 },
-  show: (i: number) => ({
-    pathLength: 1,
-    opacity: 1,
-    transition: {
-      pathLength: { duration: 1.6, ease: [0.32, 0.72, 0, 1] as const, delay: i * 0.18 },
-      opacity: { duration: 0.4, delay: i * 0.18 },
-    },
-  }),
-} as const;
-
 export function VerticalMark({ vertical, className, size = 280, static: isStatic }: Props) {
-  const reducedMotion = useReducedMotion();
-  const animate = !isStatic && !reducedMotion;
+  const svgRef = useRef<SVGSVGElement>(null);
+  const animate = !isStatic;
+
+  // Single-pass stroke draw on mount (GSAP DrawSVG); tiers staggered by the
+  // data-draw index each path declares. Reduced motion / static: no animation.
+  useAuphereGSAP(
+    ({ reduced, gsap }) => {
+      const svg = svgRef.current;
+      if (!svg || isStatic || reduced) return;
+      svg.querySelectorAll<SVGPathElement>('[data-draw]').forEach((path) => {
+        const tier = Number(path.dataset.draw ?? 0);
+        gsap.set(path, { drawSVG: '0%', opacity: 0 });
+        gsap.to(path, { drawSVG: '100%', duration: 1.6, ease: 'auphere', delay: tier * 0.18 });
+        gsap.to(path, { opacity: 1, duration: 0.4, delay: tier * 0.18 });
+      });
+    },
+    { scope: svgRef, dependencies: [vertical, isStatic] },
+  );
 
   return (
     <svg
+      ref={svgRef}
       width={size}
       height={size}
       viewBox="0 0 200 200"
@@ -70,22 +76,14 @@ export function VerticalMark({ vertical, className, size = 280, static: isStatic
 /* Helpers ---------------------------------------------------------------- */
 
 function makeStrokeProps(animate: boolean) {
-  return (i: number) =>
-    animate
-      ? {
-          initial: 'hidden',
-          animate: 'show',
-          custom: i,
-          variants: VARIANTS,
-        }
-      : {};
+  return (i: number) => (animate ? { 'data-draw': i } : {});
 }
 
 /* ────────────────────────────────────────────────────────────
  * BARBERSHOP — pole + razor diagonal
  * ──────────────────────────────────────────────────────────── */
 function BarberMark({ animate }: { animate: boolean }) {
-  const Comp = animate ? motion.path : 'path';
+  const Comp = 'path';
   const props = makeStrokeProps(animate);
 
   return (
@@ -106,7 +104,7 @@ function BarberMark({ animate }: { animate: boolean }) {
  * Almond-shaped nail with a small four-point sparkle above.
  * ──────────────────────────────────────────────────────────── */
 function NailSalonMark({ animate }: { animate: boolean }) {
-  const Comp = animate ? motion.path : 'path';
+  const Comp = 'path';
   const props = makeStrokeProps(animate);
 
   return (
@@ -129,8 +127,8 @@ function NailSalonMark({ animate }: { animate: boolean }) {
  * SPA — stacked zen stones with a single leaf
  * ──────────────────────────────────────────────────────────── */
 function SpaMark({ animate }: { animate: boolean }) {
-  const Comp = animate ? motion.path : 'path';
-  const Ellipse = animate ? motion.ellipse : 'ellipse';
+  const Comp = 'path';
+  const Ellipse = 'ellipse';
   const props = makeStrokeProps(animate);
 
   return (
@@ -153,8 +151,8 @@ function SpaMark({ animate }: { animate: boolean }) {
  * MEDSPA — botanical halo + dewdrop
  * ──────────────────────────────────────────────────────────── */
 function MedspaMark({ animate }: { animate: boolean }) {
-  const Comp = animate ? motion.path : 'path';
-  const Circle = animate ? motion.circle : 'circle';
+  const Comp = 'path';
+  const Circle = 'circle';
   const props = makeStrokeProps(animate);
 
   return (
@@ -175,7 +173,7 @@ function MedspaMark({ animate }: { animate: boolean }) {
  * DENTAL CLINIC — stylized molar + sparkle
  * ──────────────────────────────────────────────────────────── */
 function DentalMark({ animate }: { animate: boolean }) {
-  const Comp = animate ? motion.path : 'path';
+  const Comp = 'path';
   const props = makeStrokeProps(animate);
 
   return (
@@ -201,8 +199,8 @@ function DentalMark({ animate }: { animate: boolean }) {
  * Three connected strokes suggesting a body mid-stride.
  * ──────────────────────────────────────────────────────────── */
 function PhysioMark({ animate }: { animate: boolean }) {
-  const Comp = animate ? motion.path : 'path';
-  const Circle = animate ? motion.circle : 'circle';
+  const Comp = 'path';
+  const Circle = 'circle';
   const props = makeStrokeProps(animate);
 
   return (
@@ -230,8 +228,8 @@ function PhysioMark({ animate }: { animate: boolean }) {
  * Four toe pads + a main pad below.
  * ──────────────────────────────────────────────────────────── */
 function VeterinaryMark({ animate }: { animate: boolean }) {
-  const Comp = animate ? motion.path : 'path';
-  const Ellipse = animate ? motion.ellipse : 'ellipse';
+  const Comp = 'path';
+  const Ellipse = 'ellipse';
   const props = makeStrokeProps(animate);
 
   return (
@@ -257,8 +255,8 @@ function VeterinaryMark({ animate }: { animate: boolean }) {
  * PHARMACY — rounded Rx bottle + cross
  * ──────────────────────────────────────────────────────────── */
 function PharmacyMark({ animate }: { animate: boolean }) {
-  const Comp = animate ? motion.path : 'path';
-  const Circle = animate ? motion.circle : 'circle';
+  const Comp = 'path';
+  const Circle = 'circle';
   const props = makeStrokeProps(animate);
 
   return (
@@ -279,7 +277,7 @@ function PharmacyMark({ animate }: { animate: boolean }) {
  * LANGUAGE SCHOOL — speech bubble with text lines + small book
  * ──────────────────────────────────────────────────────────── */
 function LanguageSchoolMark({ animate }: { animate: boolean }) {
-  const Comp = animate ? motion.path : 'path';
+  const Comp = 'path';
   const props = makeStrokeProps(animate);
 
   return (

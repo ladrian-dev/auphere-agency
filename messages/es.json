@@ -12,7 +12,47 @@
     "cases": "Casos",
     "pricing": "Precios",
     "faq": "FAQ",
-    "cta": "Reservar"
+    "cta": "Reservar",
+    "platform": "Plataforma",
+    "solutions": "Soluciones",
+    "partnersMenu": "Partners",
+    "enterprise": "Empresas",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "menu": {
+      "platformWhat": {
+        "label": "Qué construimos",
+        "desc": "El ciclo de vida completo y las 10 capacidades"
+      },
+      "platformSecurity": {
+        "label": "Seguridad y aislamiento",
+        "desc": "Los 9 controles, con el mecanismo"
+      },
+      "platformTrust": {
+        "label": "Confianza",
+        "desc": "Datos, art. 50 y postura completa"
+      },
+      "solutionsSectors": {
+        "label": "Por sector",
+        "desc": "9 verticales, de barberías a clínicas"
+      },
+      "solutionsWhatsapp": {
+        "label": "Agente de WhatsApp",
+        "desc": "El canal donde vive tu demanda"
+      },
+      "partnersJoin": {
+        "label": "Ser partner",
+        "desc": "Revende con tu marca; operamos nosotros"
+      },
+      "partnersEmbedded": {
+        "label": "Integrar Auphere",
+        "desc": "IA dentro de tu producto, vía API"
+      },
+      "partnersDocs": {
+        "label": "Documentación API",
+        "desc": "El contrato técnico, publicado"
+      }
+    }
   },
   "hero": {
     "eyebrow": "INFRAESTRUCTURA DE IA OPERADA · UE",
@@ -2491,12 +2531,15 @@
       "docs": "Documentación",
       "pricing": "Precios",
       "cases": "Casos",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "platform": "Plataforma"
     },
     "company": {
       "title": "Empresa",
       "contact": "Hablemos",
-      "about": "Sobre nosotros"
+      "about": "Sobre nosotros",
+      "enterprise": "Empresas",
+      "partners": "Partners"
     },
     "legal": {
       "title": "Legal & Trust",

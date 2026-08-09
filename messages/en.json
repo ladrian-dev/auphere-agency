@@ -12,7 +12,47 @@
     "cases": "Cases",
     "pricing": "Pricing",
     "faq": "FAQ",
-    "cta": "Book"
+    "cta": "Book",
+    "platform": "Platform",
+    "solutions": "Solutions",
+    "partnersMenu": "Partners",
+    "enterprise": "Enterprise",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": {
+      "platformWhat": {
+        "label": "What we build",
+        "desc": "The full lifecycle and the 10 capabilities"
+      },
+      "platformSecurity": {
+        "label": "Security & isolation",
+        "desc": "The 9 controls, with the mechanism"
+      },
+      "platformTrust": {
+        "label": "Trust",
+        "desc": "Data, Article 50 and the full posture"
+      },
+      "solutionsSectors": {
+        "label": "By sector",
+        "desc": "9 verticals, from barbershops to clinics"
+      },
+      "solutionsWhatsapp": {
+        "label": "WhatsApp agent",
+        "desc": "The channel where your demand lives"
+      },
+      "partnersJoin": {
+        "label": "Become a partner",
+        "desc": "Resell under your brand; we operate"
+      },
+      "partnersEmbedded": {
+        "label": "Embed Auphere",
+        "desc": "AI inside your product, via API"
+      },
+      "partnersDocs": {
+        "label": "API documentation",
+        "desc": "The technical contract, published"
+      }
+    }
   },
   "hero": {
     "eyebrow": "OPERATED AI INFRASTRUCTURE · EU",
@@ -2491,12 +2531,15 @@
       "docs": "Documentation",
       "pricing": "Pricing",
       "cases": "Cases",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "platform": "Platform"
     },
     "company": {
       "title": "Company",
       "contact": "Talk to us",
-      "about": "About"
+      "about": "About",
+      "enterprise": "Enterprise",
+      "partners": "Partners"
     },
     "legal": {
       "title": "Legal & Trust",

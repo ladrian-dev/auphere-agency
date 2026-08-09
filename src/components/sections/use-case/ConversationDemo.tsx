@@ -1,6 +1,7 @@
 'use client';
+import { useRef } from 'react';
 import { useTranslations } from 'next-intl';
-import { motion, useReducedMotion } from 'motion/react';
+import { useAuphereGSAP } from '@/lib/motion/gsap';
 import { Container } from '@/components/primitives/Container';
 import { SectionMarker } from '@/components/primitives/SectionMarker';
 import { cn } from '@/lib/utils/cn';
@@ -19,7 +20,24 @@ interface Props {
 export function ConversationDemo({ config, number }: Props) {
   const t = useTranslations(`useCases.${config.slug}.conversation`);
   const tChat = useTranslations(`useCases.${config.slug}.hero.chat`);
-  const reducedMotion = useReducedMotion();
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  useAuphereGSAP(
+    ({ reduced, gsap }) => {
+      const card = cardRef.current;
+      if (!card || reduced) return;
+      const turns = card.querySelectorAll<HTMLElement>('[data-chat-turn]');
+      gsap.set(card, { opacity: 0, y: 30 });
+      gsap.set(turns, { opacity: 0, y: 8 });
+      const tl = gsap.timeline({ scrollTrigger: { trigger: card, start: 'top 80%', once: true } });
+      tl.to(card, { opacity: 1, y: 0, duration: 0.8, ease: 'auphere', clearProps: 'transform' }).to(
+        turns,
+        { opacity: 1, y: 0, duration: 0.4, ease: 'auphere', stagger: 0.18, clearProps: 'transform' },
+        0.6,
+      );
+    },
+    { scope: cardRef },
+  );
 
   return (
     <section id="conversation" className="py-24 md:py-32 bg-[var(--color-bone)]">
@@ -37,11 +55,8 @@ export function ConversationDemo({ config, number }: Props) {
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <motion.div
-              initial={reducedMotion ? { opacity: 1 } : { opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-80px' }}
-              transition={{ duration: 0.8, ease: [0.32, 0.72, 0, 1] }}
+            <div
+              ref={cardRef}
               className="w-full max-w-sm rounded-3xl bg-[var(--color-ink)] p-1.5 shadow-[0_24px_60px_-24px_rgba(13,15,1,0.25)]"
             >
               {/* WhatsApp-style header */}
@@ -61,13 +76,10 @@ export function ConversationDemo({ config, number }: Props) {
 
               {/* Chat body */}
               <div className="bg-[#ECE5DD] p-4 space-y-2.5 min-h-[420px]">
-                {config.conversationTurns.map((turn, i) => (
-                  <motion.div
+                {config.conversationTurns.map((turn) => (
+                  <div
                     key={turn.id}
-                    initial={reducedMotion ? { opacity: 1 } : { opacity: 0, y: 8 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: '-40px' }}
-                    transition={{ duration: 0.4, ease: [0.32, 0.72, 0, 1], delay: 0.6 + i * 0.18 }}
+                    data-chat-turn
                     className={cn(
                       'flex',
                       turn.from === 'us' ? 'justify-end' : 'justify-start',
@@ -83,10 +95,10 @@ export function ConversationDemo({ config, number }: Props) {
                     >
                       {t(turn.id as Parameters<typeof t>[0])}
                     </p>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </Container>

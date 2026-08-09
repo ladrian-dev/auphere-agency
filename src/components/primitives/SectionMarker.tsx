@@ -1,7 +1,7 @@
 'use client';
-import { motion } from 'motion/react';
 import { Container } from './Container';
 import { cn } from '@/lib/utils/cn';
+import { useReveal } from '@/lib/motion/reveal';
 
 interface Props {
   /** Section number — "01", "02"... */
@@ -37,15 +37,10 @@ const VARIANTS = {
  */
 export function SectionMarker({ number, label, meta, className, variant = 'light' }: Props) {
   const v = VARIANTS[variant];
+  const ref = useReveal<HTMLDivElement>({ y: 10 });
   return (
     <Container width="wide" className={cn('mb-12 md:mb-20', className)}>
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-80px' }}
-        transition={{ duration: 0.6, ease: [0.32, 0.72, 0, 1] }}
-        className={cn('flex items-baseline justify-between gap-4 border-b pb-4', v.border)}
-      >
+      <div ref={ref} className={cn('flex items-baseline justify-between gap-4 border-b pb-4', v.border)}>
         <p className="font-mono text-[11px] uppercase tracking-[0.18em]">
           <span className={v.numLabel}>[{number}]</span>
           <span className={cn('ml-3', v.label)}>{label}</span>
@@ -53,7 +48,7 @@ export function SectionMarker({ number, label, meta, className, variant = 'light
         <p className={cn('font-mono text-[11px] uppercase tracking-[0.18em]', v.meta)}>
           / {meta}
         </p>
-      </motion.div>
+      </div>
     </Container>
   );
 }

@@ -40,9 +40,9 @@ export function Footer() {
           </div>
 
           <FooterColumn title={t('product.title')} className="md:col-span-2">
+            <FooterLink href={`/${locale}/platform`}>{t('product.platform')}</FooterLink>
             <FooterLink href={`/${locale}#how`}>{t('product.how')}</FooterLink>
             <FooterLink href={`/${locale}/use-cases`}>{t('product.useCases')}</FooterLink>
-            <FooterLink href={`/${locale}/docs`}>{t('product.docs')}</FooterLink>
             <FooterLink href={`/${locale}#pricing`}>{t('product.pricing')}</FooterLink>
             {/* <FooterLink href={`/${locale}#cases`}>{t('product.cases')}</FooterLink> — re-enable with Cases section */}
             <FooterLink href={`/${locale}#faq`}>{t('product.faq')}</FooterLink>
@@ -50,6 +50,8 @@ export function Footer() {
 
           <FooterColumn title={t('company.title')} className="md:col-span-2">
             <FooterLink href={`/${locale}#book`}>{t('company.contact')}</FooterLink>
+            <FooterLink href={`/${locale}/enterprise`}>{t('company.enterprise')}</FooterLink>
+            <FooterLink href={`/${locale}/partners`}>{t('company.partners')}</FooterLink>
             <FooterLink href={`/${locale}/about`}>{t('company.about')}</FooterLink>
           </FooterColumn>
 

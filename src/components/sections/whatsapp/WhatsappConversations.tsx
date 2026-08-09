@@ -1,7 +1,8 @@
 'use client';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { motion, useReducedMotion } from 'motion/react';
+import { useRef } from 'react';
+import { useAuphereGSAP } from '@/lib/motion/gsap';
 import { Container } from '@/components/primitives/Container';
 import { SectionMarker } from '@/components/primitives/SectionMarker';
 import { cn } from '@/lib/utils/cn';
@@ -93,17 +94,28 @@ export function WhatsappConversations({ number }: { number: string }) {
 
 function ConversationCard({ flow }: { flow: FlowKey }) {
   const t = useTranslations(`whatsapp.conversations.flows.${flow}`);
-  const reducedMotion = useReducedMotion();
   const turns = FLOW_TURNS[flow];
+  const figureRef = useRef<HTMLElement>(null);
+
+  useAuphereGSAP(
+    ({ reduced, gsap }) => {
+      const figure = figureRef.current;
+      if (!figure || reduced) return;
+      const turnEls = figure.querySelectorAll<HTMLElement>('[data-chat-turn]');
+      gsap.set(figure, { opacity: 0, y: 20 });
+      gsap.set(turnEls, { opacity: 0, y: 8 });
+      const tl = gsap.timeline({ scrollTrigger: { trigger: figure, start: 'top 80%', once: true } });
+      tl.to(figure, { opacity: 1, y: 0, duration: 0.7, ease: 'auphere', clearProps: 'transform' }).to(
+        turnEls,
+        { opacity: 1, y: 0, duration: 0.35, ease: 'auphere', stagger: 0.15, clearProps: 'transform' },
+        0.4,
+      );
+    },
+    { scope: figureRef },
+  );
 
   return (
-    <motion.figure
-      initial={reducedMotion ? { opacity: 1 } : { opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-80px' }}
-      transition={{ duration: 0.7, ease: [0.32, 0.72, 0, 1] }}
-      className="flex flex-col gap-3"
-    >
+    <figure ref={figureRef} className="flex flex-col gap-3">
       <figcaption className="flex flex-col gap-1">
         <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">
           {t('subtitle')}
@@ -131,13 +143,10 @@ function ConversationCard({ flow }: { flow: FlowKey }) {
 
         {/* Chat body */}
         <div className="bg-[#ECE5DD] p-4 space-y-2.5 min-h-[440px]">
-          {turns.map((turn, i) => (
-            <motion.div
+          {turns.map((turn) => (
+            <div
               key={turn.id}
-              initial={reducedMotion ? { opacity: 1 } : { opacity: 0, y: 8 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-40px' }}
-              transition={{ duration: 0.35, ease: [0.32, 0.72, 0, 1], delay: 0.4 + i * 0.15 }}
+              data-chat-turn
               className={cn('flex', turn.from === 'us' ? 'justify-end' : 'justify-start')}
             >
               <p
@@ -150,10 +159,10 @@ function ConversationCard({ flow }: { flow: FlowKey }) {
               >
                 {t(turn.id as Parameters<typeof t>[0])}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
-    </motion.figure>
+    </figure>
   );
 }

@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import { motion, AnimatePresence, useReducedMotion } from 'motion/react';
 import { useTranslations } from 'next-intl';
 import { Container } from '@/components/primitives/Container';
 import { SectionMarker } from '@/components/primitives/SectionMarker';
@@ -50,7 +49,6 @@ function FaqAccordionItem({
   defaultOpen?: boolean;
 }) {
   const [open, setOpen] = useState(defaultOpen);
-  const reducedMotion = useReducedMotion();
 
   return (
     <div className="border-b border-[var(--color-ink-subtle)] first:border-t">
@@ -63,37 +61,29 @@ function FaqAccordionItem({
         <span className="font-display font-semibold text-lg md:text-xl tracking-[-0.01em] text-[var(--color-ink)] group-hover:text-[var(--color-bangladesh-green)] transition-colors">
           {q}
         </span>
-        <motion.span
+        <span
           aria-hidden
-          animate={{ rotate: open ? 45 : 0 }}
-          transition={reducedMotion ? { duration: 0 } : { duration: 0.3, ease: [0.32, 0.72, 0, 1] }}
           className={cn(
             'shrink-0 w-[28px] h-[28px] rounded-full border border-[var(--color-ink-subtle)] flex items-center justify-center text-[var(--color-ink-muted)] mt-0.5',
-            'group-hover:border-[var(--color-ink-dim)] transition-colors',
+            'group-hover:border-[var(--color-ink-dim)] transition-[transform,border-color] duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:transition-none',
+            open && 'rotate-45',
           )}
         >
           <svg viewBox="0 0 16 16" className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
             <path d="M8 3v10M3 8h10" />
           </svg>
-        </motion.span>
+        </span>
       </button>
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={
-              reducedMotion ? { duration: 0 } : { duration: 0.4, ease: [0.32, 0.72, 0, 1] }
-            }
-            className="overflow-hidden"
-          >
-            <p className="text-[15px] leading-relaxed text-[var(--color-ink-muted)] pb-6 max-w-2xl">
-              {a}
-            </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <div
+        className="grid transition-[grid-template-rows,opacity] duration-[400ms] ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:transition-none"
+        style={{ gridTemplateRows: open ? '1fr' : '0fr', opacity: open ? 1 : 0 }}
+      >
+        <div className="overflow-hidden">
+          <p className="text-[15px] leading-relaxed text-[var(--color-ink-muted)] pb-6 max-w-2xl">
+            {a}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

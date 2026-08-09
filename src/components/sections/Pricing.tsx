@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import { motion, useReducedMotion } from 'motion/react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { Container } from '@/components/primitives/Container';
@@ -27,7 +26,6 @@ const FEATURE_KEYS = ['volume', 'channels', 'integrations', 'workflows', 'cycle'
 export function Pricing() {
   const t = useTranslations('pricing');
   const [yearly, setYearly] = useState(false);
-  const reducedMotion = useReducedMotion();
 
   return (
     <section id="pricing" className="py-20 md:py-28">
@@ -68,15 +66,10 @@ export function Pricing() {
               yearly ? 'bg-[var(--color-bangladesh-green)]' : 'bg-[var(--color-ink-subtle)]',
             )}
           >
-            <motion.span
+            <span
               aria-hidden
-              className="block h-[22px] w-[22px] rounded-full bg-white shadow-[0_2px_4px_rgba(0,0,0,0.2)]"
-              animate={{ x: yearly ? 27 : 3 }}
-              transition={
-                reducedMotion
-                  ? { duration: 0 }
-                  : { type: 'spring', stiffness: 600, damping: 36 }
-              }
+              className="block h-[22px] w-[22px] rounded-full bg-white shadow-[0_2px_4px_rgba(0,0,0,0.2)] transition-transform duration-200 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:transition-none"
+              style={{ transform: `translateX(${yearly ? 27 : 3}px)` }}
             />
           </button>
 

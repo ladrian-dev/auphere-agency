@@ -1,7 +1,7 @@
 'use client';
-import { motion } from 'motion/react';
 import { cn } from '@/lib/utils/cn';
 import type { ReactNode } from 'react';
+import { useReveal } from '@/lib/motion/reveal';
 
 interface Props {
   children: ReactNode;
@@ -18,7 +18,8 @@ const VARIANT_COLORS = {
 };
 
 export function Eyebrow({ children, className, variant = 'light', style = 'pill', href }: Props) {
-  const Tag = href ? motion.a : motion.span;
+  const ref = useReveal<HTMLElement>({ y: 6 });
+  const Tag = (href ? 'a' : 'span') as 'a';
   const stylesByStyle =
     style === 'link'
       ? 'text-[15px] font-medium hover:opacity-80 transition-opacity'
@@ -30,14 +31,7 @@ export function Eyebrow({ children, className, variant = 'light', style = 'pill'
         );
 
   return (
-    <Tag
-      {...(href ? { href } : {})}
-      initial={{ opacity: 0, y: 6 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-50px' }}
-      transition={{ duration: 0.6, ease: [0.32, 0.72, 0, 1] }}
-      className={cn(stylesByStyle, className)}
-    >
+    <Tag ref={ref as never} {...(href ? { href } : {})} className={cn(stylesByStyle, className)}>
       {children}
       {style === 'link' && (
         <span className="ml-1 inline-block transition-transform group-hover:translate-x-0.5" aria-hidden>
