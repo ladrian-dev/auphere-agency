@@ -216,7 +216,7 @@
       },
       "metrics": {
         "q": "What do you actually measure, and how do we know it's working?",
-        "a": "We agree on 2 to 3 outcome metrics during the diagnostic, usually response time, resolution rate, no-shows recovered, or cost per handled conversation. We measure them continuously and review them with you every improvement cycle, alongside conversation logs you can request at any time. If a metric drifts, the next improvement cycle prioritizes fixing it."
+        "a": "We agree on 2 to 3 outcome metrics during the diagnostic, usually response time, resolution rate or no-shows recovered. We measure them continuously and review them with you every improvement cycle, alongside conversation logs you can request at any time. If a metric drifts, the next improvement cycle prioritizes fixing it."
       },
       "nda": {
         "q": "Do you sign NDAs?",
@@ -2056,7 +2056,7 @@
       "sla": {
         "title": "Service levels",
         "p1": "Each tier ships with an incident-response commitment, written into the contract. Business 360 includes a 4-hour response window for production incidents.",
-        "p2": "We measure outcome metrics agreed during the diagnostic (response time, resolution rate, no-shows recovered, cost per handled conversation). We review them with you every improvement cycle. If a metric drifts, the next improvement cycle prioritises fixing it."
+        "p2": "We measure outcome metrics agreed during the diagnostic (response time, resolution rate, no-shows recovered). We review them with you every improvement cycle. If a metric drifts, the next improvement cycle prioritises fixing it."
       },
       "liability": {
         "title": "Liability",

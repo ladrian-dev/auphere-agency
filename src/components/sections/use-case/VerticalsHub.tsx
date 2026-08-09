@@ -100,12 +100,12 @@ function SoonStrip() {
           </p>
         </div>
         <div className="flex lg:justify-end">
-          <a
+          <Link
             href="/#book"
             className="inline-flex items-center justify-center h-[48px] px-[24px] rounded-full font-medium text-[14px] tracking-tight whitespace-nowrap bg-[var(--color-ink)] text-[var(--color-bone)] hover:bg-[var(--color-bangladesh-green)] transition-colors active:scale-[0.98]"
           >
             {t('ctaLabel')}
-          </a>
+          </Link>
         </div>
       </div>
     </div>

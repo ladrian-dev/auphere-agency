@@ -3,6 +3,7 @@ import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { hasLocale, useTranslations } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import { Link } from '@/i18n/navigation';
 import { Container } from '@/components/primitives/Container';
 import { PageHeader } from '@/components/sections/PageHeader';
 import { LegalDefinitionList } from '@/components/sections/LegalProse';
@@ -128,12 +129,12 @@ function AboutContent() {
             {t('cta.body')}
           </p>
           <div className="mt-10">
-            <a
+            <Link
               href="/#book"
               className="inline-flex items-center justify-center h-[52px] px-[24px] rounded-full font-medium text-[15px] tracking-tight whitespace-nowrap bg-[var(--color-bone)] text-[var(--color-ink)] hover:bg-[var(--color-bone)]/90 transition-colors duration-200 ease-out active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[var(--color-bone)]"
             >
               {t('cta.button')}
-            </a>
+            </Link>
           </div>
         </Container>
       </div>

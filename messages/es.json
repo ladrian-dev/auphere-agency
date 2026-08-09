@@ -226,7 +226,7 @@
       },
       "metrics": {
         "q": "¿Qué medís exactamente y cómo sabemos que está funcionando?",
-        "a": "Acordamos 2 o 3 métricas de resultado durante el diagnóstico: habitualmente tiempo de respuesta, tasa de resolución, no-shows recuperados o coste por conversación gestionada. Las medimos en continuo y las revisamos contigo en cada ciclo de mejora, junto a los logs de conversación, que puedes pedir cuando quieras. Si una métrica se desvía, el siguiente ciclo de mejora prioriza arreglarla."
+        "a": "Acordamos 2 o 3 métricas de resultado durante el diagnóstico: habitualmente tiempo de respuesta, tasa de resolución o no-shows recuperados. Las medimos en continuo y las revisamos contigo en cada ciclo de mejora, junto a los logs de conversación, que puedes pedir cuando quieras. Si una métrica se desvía, el siguiente ciclo de mejora prioriza arreglarla."
       },
       "nda": {
         "q": "¿Firmáis NDAs?",
@@ -2147,7 +2147,7 @@
       "sla": {
         "title": "Niveles de servicio",
         "p1": "Cada tier incluye un compromiso de respuesta a incidentes, escrito en el contrato. Business 360 incluye una ventana de respuesta de 4 horas para incidentes en producción.",
-        "p2": "Medimos métricas de resultado acordadas en el diagnóstico (tiempo de respuesta, tasa de resolución, no-shows recuperados, coste por conversación gestionada). Las revisamos contigo en cada ciclo de mejora. Si una métrica se desvía, el siguiente ciclo de mejora prioriza arreglarla."
+        "p2": "Medimos métricas de resultado acordadas en el diagnóstico (tiempo de respuesta, tasa de resolución, no-shows recuperados). Las revisamos contigo en cada ciclo de mejora. Si una métrica se desvía, el siguiente ciclo de mejora prioriza arreglarla."
       },
       "liability": {
         "title": "Responsabilidad",

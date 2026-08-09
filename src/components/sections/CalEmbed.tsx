@@ -18,8 +18,8 @@ export function CalEmbed() {
     if (typeof window === 'undefined') return;
 
     if (!('IntersectionObserver' in window)) {
-      setShouldLoad(true);
-      return;
+      const id = setTimeout(() => setShouldLoad(true), 0);
+      return () => clearTimeout(id);
     }
 
     const node = containerRef.current;

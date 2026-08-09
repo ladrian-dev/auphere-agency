@@ -1,13 +1,14 @@
-import { FlatCompat } from '@eslint/eslintrc';
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const compat = new FlatCompat({ baseDirectory: __dirname });
+import next from 'eslint-config-next';
 
 export default [
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  ...next,
+  {
+    ignores: ['.next/**', 'node_modules/**'],
+  },
+  {
+    // eslint-plugin-react's auto-detection uses an API removed in ESLint 10.
+    settings: { react: { version: '19' } },
+  },
   {
     rules: {
       'no-restricted-imports': [
@@ -22,9 +23,18 @@ export default [
               name: '@studio-freight/lenis',
               message: 'Use "lenis" — @studio-freight/lenis was renamed to lenis.',
             },
+            {
+              name: 'gsap',
+              message: 'Import from "@/lib/motion/gsap" — the central registry guarantees plugins and brand eases are registered.',
+            },
           ],
         },
       ],
     },
+  },
+  {
+    // The registry itself is the one allowed direct consumer of gsap.
+    files: ['src/lib/motion/gsap.ts'],
+    rules: { 'no-restricted-imports': 'off' },
   },
 ];

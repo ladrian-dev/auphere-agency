@@ -1,5 +1,6 @@
 'use client';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { Container } from '@/components/primitives/Container';
 import { VerticalMark } from './VerticalMark';
 import { cn } from '@/lib/utils/cn';
@@ -41,7 +42,7 @@ export function VerticalFinalCta({ vertical }: Props) {
           </p>
 
           <div className="mt-10">
-            <a
+            <Link
               href="/#book"
               className={cn(
                 'inline-flex items-center justify-center gap-2 h-[54px] px-[28px]',
@@ -53,7 +54,7 @@ export function VerticalFinalCta({ vertical }: Props) {
               )}
             >
               {t('ctaLabel')}
-            </a>
+            </Link>
           </div>
         </div>
       </Container>
