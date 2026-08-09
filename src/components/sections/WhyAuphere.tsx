@@ -3,7 +3,7 @@ import { Container } from '@/components/primitives/Container';
 import { SectionMarker } from '@/components/primitives/SectionMarker';
 import { StaggerGrid, StaggerItem } from '@/components/motion/StaggerGrid';
 
-const PROMISES = ['bespoke', 'managed', 'diagnostic', 'oneTeam'] as const;
+const PROMISES = ['production', 'compliance', 'isolation', 'oneTeam'] as const;
 
 export function WhyAuphere() {
   const t = useTranslations('whyAuphere');

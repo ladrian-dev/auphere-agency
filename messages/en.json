@@ -15,13 +15,13 @@
     "cta": "Book"
   },
   "hero": {
-    "eyebrow": "BESPOKE AI AGENTS · BUILT, RUN AND IMPROVED FOR YOU",
-    "headlineLine1": "Cut 30 hours of",
-    "headlineLine2": "repetitive work. Every week.",
-    "subheadline": "Bespoke AI agents that handle booking, follow-up, support and ops. We build, run and improve them, so your team doesn't have to.",
-    "ctaPrimary": "Book a 30-min diagnostic",
-    "ctaSecondary": "See how it works →",
-    "ctaMicrocopy": "You'll talk to an engineer, not a salesperson. We leave with a go/no-go.",
+    "eyebrow": "OPERATED AI INFRASTRUCTURE · EU",
+    "headlineLine1": "We build, operate and answer for",
+    "headlineLine2": "your AI agent in production.",
+    "subheadline": "40% of agent projects are cancelled before they reach production. Our business is making sure yours is not.",
+    "ctaPrimary": "Book a diagnostic · 30 min",
+    "ctaSecondary": "See the platform →",
+    "ctaMicrocopy": "You talk to an engineer, not a salesperson.",
     "chat": {
       "businessName": "Your business",
       "subtitle": "Auphere Agent · WhatsApp",
@@ -30,6 +30,20 @@
       "m2": "Hi! I have a slot at 5:30pm with Carla or 7:00pm with Marina. Which works for you?",
       "m3": "5:30pm sounds perfect",
       "m4": "Booked ✓ I'll send a confirmation and a link to reschedule if anything changes. See you this afternoon."
+    },
+    "trustLine": "EU · Article 50 by design · Ley 10/2025 ready",
+    "orchestrator": {
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "voice": "Voice",
+      "classifier": "Classify",
+      "calendar": "Calendar",
+      "crm": "CRM",
+      "payments": "Payments",
+      "browser": "Browser",
+      "response": "Respond",
+      "human": "Human"
     }
   },
   "howWeWork": {
@@ -58,7 +72,7 @@
     }
   },
   "pullQuote": {
-    "text": "We build, run and improve the AI agent your team needs, so you don't have to hire anyone new.",
+    "text": "Most AI projects die before they reach production. Our business is making sure yours does not.",
     "attribution": "Auphere"
   },
   "cases": {
@@ -76,24 +90,24 @@
       "label": "Why Auphere",
       "meta": "4 promises · zero hype"
     },
-    "headline": "Not a SaaS template. Not a dead-on-arrival project.",
-    "intro": "An AI ops partner that designs the agent around your operation, runs it on our infrastructure, and improves it every month.",
+    "headline": "It lives in production, or it does not count.",
+    "intro": "The entire category sells demos. Auphere sells the stretch where the others fail: production — and answering for it.",
     "promises": {
-      "bespoke": {
-        "title": "Built around your operation, not the other way around.",
-        "body": "Not a SaaS template you have to fight with. We configure, train and personalize the agent for your real workflows, your tools, your tone of voice, your rules."
+      "production": {
+        "title": "It lives in production or it does not count.",
+        "body": "40% of agent projects are cancelled before reaching production; only a minority of organizations have scaled one. We sell exactly the stretch where the others fail — and we answer for it."
       },
-      "managed": {
-        "title": "We run it. You don't need to hire an AI engineer.",
-        "body": "The agent lives on our infrastructure, monitored 24/7 by the same team that built it. You get a direct line to the team operating it and a monthly improvement cycle. Not a codebase to babysit."
+      "compliance": {
+        "title": "Compliant by design, and upfront about it.",
+        "body": "Your agent identifies itself as AI (Article 50), escalates to a person from day one (Ley 10/2025, ahead of the deadline), and the full stance is published at /trust. Transparency is not a commercial risk: it converts better."
       },
-      "diagnostic": {
-        "title": "Honest diagnostic before any commitment.",
-        "body": "No cost. We decide together whether automation actually solves your problem. If it doesn't, we tell you. Most agencies wouldn't say that out loud."
+      "isolation": {
+        "title": "Isolation you can verify, not take on faith.",
+        "body": "Your data isolation is enforced by the database, not by well-meaning code: RLS, a two-point whitelist, impersonation-aware auditing and tests that block deployment when they fail."
       },
       "oneTeam": {
-        "title": "One team end-to-end. One point of contact.",
-        "body": "The person who scopes the diagnostic is the same one who configures the agent and the same one who calls you when something needs attention in production. No subcontracting. No handoffs."
+        "title": "One team, with operations in writing.",
+        "body": "Whoever runs the diagnostic configures the agent and answers in production. No subcontractors, no handoffs — and with runbooks, owned alerts and contractual continuity, so the bus factor is not your problem."
       }
     }
   },
@@ -152,17 +166,31 @@
       }
     },
     "features": {
-      "volume": { "label": "Volume" },
-      "channels": { "label": "Channels" },
-      "integrations": { "label": "Integrations" },
-      "workflows": { "label": "Workflows" },
-      "cycle": { "label": "Improvement" }
+      "volume": {
+        "label": "Volume"
+      },
+      "channels": {
+        "label": "Channels"
+      },
+      "integrations": {
+        "label": "Integrations"
+      },
+      "workflows": {
+        "label": "Workflows"
+      },
+      "cycle": {
+        "label": "Improvement"
+      }
+    },
+    "partnersLine": {
+      "text": "Are you an agency or a platform? The partner program has its own economics.",
+      "cta": "See the program →"
     }
   },
   "qualifier": {
     "marker": {
       "label": "Is this for you?",
-      "meta": "Honest filter · 4 + 2"
+      "meta": "Honest filter · 4 + 3"
     },
     "headline": "Built for teams that already feel the bottleneck.",
     "yesTitle": "This is for you if…",
@@ -175,7 +203,8 @@
     "noTitle": "This is NOT for you if…",
     "no": {
       "no1": "You're shopping purely on price. Our floor is $850 setup + $120/mo, and there are cheaper templates if that's the priority.",
-      "no2": "You need someone live tomorrow. Our diagnostic slots open 2–3 weeks out and we don't cut corners on scoping."
+      "no2": "You need someone live tomorrow. Our diagnostic slots open 2–3 weeks out and we don't cut corners on scoping.",
+      "no3": "You want your customers not to know they are talking to an AI. Our agents identify themselves as AI — EU law requires it, and it converts better anyway."
     }
   },
   "faq": {
@@ -229,6 +258,10 @@
       "noNeed": {
         "q": "What if the diagnostic concludes we don't need you?",
         "a": "We tell you straight and you keep whatever notes and recommendations came out of the call to act on however you want: in-house, with another vendor, or shelved for later. We'd rather lose one deal than ship something that won't earn its keep. Long term, that's the only marketing that scales."
+      },
+      "aiDisclosure": {
+        "q": "Will my customers know they are talking to an AI?",
+        "a": "Yes: the agent identifies itself as AI from the first message, on every channel. The EU AI Act's Article 50 requires it since August 2026 — and it converts better anyway: what your customers value is not that it seems human, it is that it solves their problem. When it cannot, it hands off to a person on your team with full context."
       }
     }
   },
@@ -346,7 +379,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "The pain", "meta": "Data · 2026 industry surveys" },
+        "marker": {
+          "label": "The pain",
+          "meta": "Data · 2026 industry surveys"
+        },
         "headline": "The phone is always rung at the worst moment.",
         "intro": "These aren't ours. They're the numbers every barbershop owner already feels. We just stopped ignoring them.",
         "items": {
@@ -373,7 +409,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "What the agent does", "meta": "Tuned to your chairs" },
+        "marker": {
+          "label": "What the agent does",
+          "meta": "Tuned to your chairs"
+        },
         "headline": "The work that pulls your barbers away from the chair, gone.",
         "intro": "Pick the jobs that drain your day in the diagnostic. We wire those, leave the rest off, and you only see the part that helps you cut more.",
         "items": {
@@ -400,7 +439,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "How it sounds", "meta": "Real example · WhatsApp" },
+        "marker": {
+          "label": "How it sounds",
+          "meta": "Real example · WhatsApp"
+        },
         "headline": "Saturday morning, fade booked, scissors uninterrupted.",
         "intro": "How a typical Saturday inquiry actually plays out. Names made up, the flow is what your clients would see.",
         "t1": "Hey, do you have anything for a fade + beard this Saturday morning?",
@@ -409,22 +451,40 @@
         "t4": "Booked ✓ Saturday 9:30 with Luis. I'll remind you Friday evening with a one-tap reschedule if anything changes."
       },
       "integrations": {
-        "marker": { "label": "It plugs into what you already use", "meta": "Booksy · Treatwell · Fresha · Square · more" },
+        "marker": {
+          "label": "It plugs into what you already use",
+          "meta": "Booksy · Treatwell · Fresha · Square · more"
+        },
         "headline": "We don't ask you to switch tools.",
         "intro": "The agent talks to your booking system, your calendar and your WhatsApp number. If a tool isn't on this list but has an API, it's in scope."
       },
       "outcomes": {
-        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "marker": {
+          "label": "What you should expect",
+          "meta": "Ranges · not guarantees"
+        },
         "headline": "What 8 weeks with the agent usually moves.",
         "intro": "Honest brackets pulled from barbershop sector data and the early shops we've worked with. The diagnostic locks the specific number we sign for, against your current calendar.",
         "items": {
-          "noShowReduction": { "value": "−25% to −40%", "label": "no-shows in 8 weeks" },
-          "callsRecovered": { "value": "+15% to +30%", "label": "bookings recovered from missed calls" },
-          "reviewLift": { "value": "3–5×", "label": "more Google reviews per month" }
+          "noShowReduction": {
+            "value": "−25% to −40%",
+            "label": "no-shows in 8 weeks"
+          },
+          "callsRecovered": {
+            "value": "+15% to +30%",
+            "label": "bookings recovered from missed calls"
+          },
+          "reviewLift": {
+            "value": "3–5×",
+            "label": "more Google reviews per month"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Questions barbers actually ask", "meta": "Plain answers" },
+        "marker": {
+          "label": "Questions barbers actually ask",
+          "meta": "Plain answers"
+        },
         "headline": "What barbers ask us before they sign.",
         "items": {
           "system": {
@@ -477,7 +537,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "The pain", "meta": "Data · 2026 industry surveys" },
+        "marker": {
+          "label": "The pain",
+          "meta": "Data · 2026 industry surveys"
+        },
         "headline": "The phone never stops. The technicians' hands never start.",
         "intro": "Nail salons get more booking calls than any other beauty vertical, and the answer-rate is the lowest because everyone's gloved up. The cost shows up quietly: in unanswered DMs, in walk-ins that walked back out, in repeat clients who tried a different salon at midnight.",
         "items": {
@@ -504,7 +567,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "What the agent does", "meta": "Off your tables, never on them" },
+        "marker": {
+          "label": "What the agent does",
+          "meta": "Off your tables, never on them"
+        },
         "headline": "Gloves stay on. The phone still gets answered.",
         "intro": "Pick the jobs that pull your technicians off the table in the diagnostic. We wire those, leave the rest off, and you only see the part that fills more chairs.",
         "items": {
@@ -531,7 +597,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "How it sounds", "meta": "Real example · WhatsApp" },
+        "marker": {
+          "label": "How it sounds",
+          "meta": "Real example · WhatsApp"
+        },
         "headline": "Price, slot, technician. Three turns.",
         "intro": "The kind of late-night DM that today gets read tomorrow (or never). The names are made up; the quote, the matching and the booking happen exactly like this.",
         "t1": "Hi, how much is a builder gel with French tip, and do you have anything Friday after 5?",
@@ -540,22 +609,40 @@
         "t4": "Booked ✓ Friday 5:15pm with Sofia, builder gel + French. I'll remind you Thursday with a one-tap reschedule if anything changes."
       },
       "integrations": {
-        "marker": { "label": "It plugs into what you already use", "meta": "Booksy · Fresha · GlossGenius · Square · Vagaro" },
+        "marker": {
+          "label": "It plugs into what you already use",
+          "meta": "Booksy · Fresha · GlossGenius · Square · Vagaro"
+        },
         "headline": "We don't ask you to switch tools.",
         "intro": "The agent talks to your booking system, your calendar and your WhatsApp number. If a tool isn't on this list but has an API, it's in scope."
       },
       "outcomes": {
-        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "marker": {
+          "label": "What you should expect",
+          "meta": "Ranges · not guarantees"
+        },
         "headline": "Tighter schedule, fewer holes, more rebookings.",
         "intro": "Honest brackets pulled from nail-salon sector data and the early bars we've worked with. The diagnostic locks the specific number we sign for, against your current calendar.",
         "items": {
-          "inquiriesHandled": { "value": "70% to 80%", "label": "of recurring inquiries resolved by the agent" },
-          "occupancyLift": { "value": "+20% to +35%", "label": "schedule occupancy in 8 weeks" },
-          "noShowReduction": { "value": "−20% to −35%", "label": "no-shows with reminder sequence" }
+          "inquiriesHandled": {
+            "value": "70% to 80%",
+            "label": "of recurring inquiries resolved by the agent"
+          },
+          "occupancyLift": {
+            "value": "+20% to +35%",
+            "label": "schedule occupancy in 8 weeks"
+          },
+          "noShowReduction": {
+            "value": "−20% to −35%",
+            "label": "no-shows with reminder sequence"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Questions nail salon owners ask", "meta": "Plain answers" },
+        "marker": {
+          "label": "Questions nail salon owners ask",
+          "meta": "Plain answers"
+        },
         "headline": "What nail-salon owners ask before they let us touch the booking line.",
         "items": {
           "technicianPref": {
@@ -608,7 +695,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "The pain", "meta": "Data · 2026 industry surveys" },
+        "marker": {
+          "label": "The pain",
+          "meta": "Data · 2026 industry surveys"
+        },
         "headline": "The room stays peaceful. The revenue, less so.",
         "intro": "Spa clients book when they remember, usually at 10pm. Your front desk is closed; the call goes to voicemail; the booking goes to a competitor. The losses are quiet and consistent.",
         "items": {
@@ -635,7 +725,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "What the agent does", "meta": "Tuned to the tone of your room" },
+        "marker": {
+          "label": "What the agent does",
+          "meta": "Tuned to the tone of your room"
+        },
         "headline": "A receptionist that never raises its voice.",
         "intro": "Pick the rooms and rituals the agent should serve in the diagnostic. We tune the voice to your brand, write the prep notes from your treatments, and leave anything off-tone off the table.",
         "items": {
@@ -662,7 +755,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "How it sounds", "meta": "Real example · WhatsApp" },
+        "marker": {
+          "label": "How it sounds",
+          "meta": "Real example · WhatsApp"
+        },
         "headline": "A booking, a prep note, an upgrade offered once.",
         "intro": "The 10pm message that today would sit in voicemail until morning. The names are made up; the upgrade offer and the prep note land exactly like this.",
         "t1": "Hi, do you have anything for a deep-tissue massage Saturday afternoon?",
@@ -671,22 +767,40 @@
         "t4": "Booked ✓ Saturday 3:00pm with Carla. I'll send prep notes 2h before. Short version: no perfume, drink water, arrive 10 min early."
       },
       "integrations": {
-        "marker": { "label": "It plugs into what you already use", "meta": "Mindbody · Booker · Zenoti · Vagaro · Mangomint" },
+        "marker": {
+          "label": "It plugs into what you already use",
+          "meta": "Mindbody · Booker · Zenoti · Vagaro · Mangomint"
+        },
         "headline": "Your booking system, your calendar, your tone.",
         "intro": "The agent talks to your spa software, your calendar and your WhatsApp number. If a tool isn't on this list but has an API, it's in scope."
       },
       "outcomes": {
-        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "marker": {
+          "label": "What you should expect",
+          "meta": "Ranges · not guarantees"
+        },
         "headline": "After-hours bookings captured, no-shows soft, tickets a bit fuller.",
         "intro": "Brackets pulled from spa and wellness sector data, plus the early studios we've worked with. The diagnostic locks the specific number we sign for, measured against your last quarter.",
         "items": {
-          "afterHoursCapture": { "value": "+30% to +50%", "label": "bookings captured after hours" },
-          "noShowReduction": { "value": "−25% to −45%", "label": "no-shows in 8 weeks" },
-          "upsellLift": { "value": "+10% to +20%", "label": "average ticket value via natural upsell" }
+          "afterHoursCapture": {
+            "value": "+30% to +50%",
+            "label": "bookings captured after hours"
+          },
+          "noShowReduction": {
+            "value": "−25% to −45%",
+            "label": "no-shows in 8 weeks"
+          },
+          "upsellLift": {
+            "value": "+10% to +20%",
+            "label": "average ticket value via natural upsell"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Questions spa owners ask", "meta": "Plain answers" },
+        "marker": {
+          "label": "Questions spa owners ask",
+          "meta": "Plain answers"
+        },
         "headline": "What spa owners ask before they let us speak to a guest.",
         "items": {
           "tone": {
@@ -739,7 +853,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "The pain", "meta": "Data · 2026 industry surveys" },
+        "marker": {
+          "label": "The pain",
+          "meta": "Data · 2026 industry surveys"
+        },
         "headline": "The lead doesn't wait. The compliance does.",
         "intro": "Medspas have the highest no-show cost in the service industry and the strictest compliance line. Both problems start at the same place: the unanswered first contact.",
         "items": {
@@ -766,7 +883,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "What the agent does", "meta": "Inside a strict clinical perimeter" },
+        "marker": {
+          "label": "What the agent does",
+          "meta": "Inside a strict clinical perimeter"
+        },
         "headline": "Lead in, prepped patient out. Nothing clinical in between.",
         "intro": "What the agent owns and what it deliberately doesn't are written into the contract before anything goes live. The list below is the menu, the diagnostic decides which items end up on the table for your clinic.",
         "items": {
@@ -793,7 +913,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "How it sounds", "meta": "Real example · web chat" },
+        "marker": {
+          "label": "How it sounds",
+          "meta": "Real example · web chat"
+        },
         "headline": "Qualified, booked and prepped, in five turns.",
         "intro": "Notice what the agent doesn't ask: anything clinical that should come from your provider. Notice what it does ask: only what we need to decide if this is a fit.",
         "t1": "Hi, I'm thinking about laser hair removal for my underarms. What's the price?",
@@ -803,22 +926,40 @@
         "t5": "Booked ✓ Sat 11am. I'll send prep notes 48h before. Short version: no sun, no self-tanner, shave morning of."
       },
       "integrations": {
-        "marker": { "label": "It plugs into the stack you already run", "meta": "Boulevard · Mindbody · Zenoti · Vagaro · GoHighLevel · HubSpot · more" },
+        "marker": {
+          "label": "It plugs into the stack you already run",
+          "meta": "Boulevard · Mindbody · Zenoti · Vagaro · GoHighLevel · HubSpot · more"
+        },
         "headline": "Your PMS, your CRM, your booking flow.",
         "intro": "Every common medspa system is supported. We sign a DPA with every vendor that touches patient data before the agent ever sees a real record."
       },
       "outcomes": {
-        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "marker": {
+          "label": "What you should expect",
+          "meta": "Ranges · not guarantees"
+        },
         "headline": "The three numbers a clinic owner actually watches.",
         "intro": "Brackets that hold up against medspa benchmarks for response, conversion and prep-driven no-shows. The diagnostic turns them into the specific targets we sign for in the contract, against your last three months of data.",
         "items": {
-          "leadResponse": { "value": "<1 min", "label": "lead response · 24/7" },
-          "consultConversion": { "value": "+20% to +35%", "label": "lead → booked consult" },
-          "noShowReduction": { "value": "−30% to −50%", "label": "no-shows with prep sequence" }
+          "leadResponse": {
+            "value": "<1 min",
+            "label": "lead response · 24/7"
+          },
+          "consultConversion": {
+            "value": "+20% to +35%",
+            "label": "lead → booked consult"
+          },
+          "noShowReduction": {
+            "value": "−30% to −50%",
+            "label": "no-shows with prep sequence"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Questions medspa owners ask", "meta": "Plain answers" },
+        "marker": {
+          "label": "Questions medspa owners ask",
+          "meta": "Plain answers"
+        },
         "headline": "What medspa owners ask before they trust us with leads.",
         "items": {
           "compliance": {
@@ -871,7 +1012,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "The pain", "meta": "Data · 2026 industry surveys" },
+        "marker": {
+          "label": "The pain",
+          "meta": "Data · 2026 industry surveys"
+        },
         "headline": "The recall list is the most valuable spreadsheet you never call.",
         "intro": "The math is brutal: 20–30% of your patient base is overdue, every empty chair is a fixed cost burned, and nobody on your front desk has the time to chase 600 names. The AI doesn't blink.",
         "items": {
@@ -898,7 +1042,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "What the agent does", "meta": "Scheduling and triage only" },
+        "marker": {
+          "label": "What the agent does",
+          "meta": "Scheduling and triage only"
+        },
         "headline": "Every overdue patient called. Every chair filled.",
         "intro": "The agent handles the calling, the recalls and the after-hours triage. The clinical line is drawn in the contract, in writing, before anything goes live. The diagnostic decides which roles below your clinic actually needs.",
         "items": {
@@ -925,7 +1072,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "How it sounds", "meta": "Real example · phone" },
+        "marker": {
+          "label": "How it sounds",
+          "meta": "Real example · phone"
+        },
         "headline": "Overdue, verified, booked. One inbound call.",
         "intro": "The kind of call that today gets a callback tomorrow (or never). The names are made up; the eligibility check and the booking happen exactly like this.",
         "t1": "Hi, I think I'm overdue for a cleaning?",
@@ -934,22 +1084,40 @@
         "t4": "Booked ✓ Tuesday 3:00pm with Maya (your usual hygienist), 45 min. I'll send a reminder 48h before with a one-tap reschedule. See you then."
       },
       "integrations": {
-        "marker": { "label": "It plugs into your practice management system", "meta": "Dentrix · Open Dental · Eaglesoft · Curve · Carestack · more" },
+        "marker": {
+          "label": "It plugs into your practice management system",
+          "meta": "Dentrix · Open Dental · Eaglesoft · Curve · Carestack · more"
+        },
         "headline": "Your PMS, your recall list, your insurance flow.",
         "intro": "We integrate with all major dental PMS systems via API or, when needed, secure middleware. No double-entry, no manual sync."
       },
       "outcomes": {
-        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "marker": {
+          "label": "What you should expect",
+          "meta": "Ranges · not guarantees"
+        },
         "headline": "Recall worked, no-shows down, revenue back on the books.",
         "intro": "Brackets pulled from dental sector data on recall recovery and no-show reduction. The diagnostic turns them into the numbers we sign for, measured against your last twelve months of PMS data.",
         "items": {
-          "noShowReduction": { "value": "−30% to −45%", "label": "no-shows in 8 weeks" },
-          "reactivation": { "value": "15% to 25%", "label": "of overdue patients reactivated" },
-          "recallRevenue": { "value": "+$80k to $150k", "label": "annual recall revenue recovered" }
+          "noShowReduction": {
+            "value": "−30% to −45%",
+            "label": "no-shows in 8 weeks"
+          },
+          "reactivation": {
+            "value": "15% to 25%",
+            "label": "of overdue patients reactivated"
+          },
+          "recallRevenue": {
+            "value": "+$80k to $150k",
+            "label": "annual recall revenue recovered"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Questions dental owners ask", "meta": "Plain answers" },
+        "marker": {
+          "label": "Questions dental owners ask",
+          "meta": "Plain answers"
+        },
         "headline": "What dental owners ask before they hand us the recall list.",
         "items": {
           "insurance": {
@@ -1002,7 +1170,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "The pain", "meta": "What every physio clinic feels" },
+        "marker": {
+          "label": "The pain",
+          "meta": "What every physio clinic feels"
+        },
         "headline": "The exercises only work if the patient does them.",
         "intro": "Physiotherapy outcomes depend on adherence, packages depend on completion, and both depend on a follow-up loop most clinics can't staff. The agent runs that loop without a coffee break.",
         "items": {
@@ -1029,7 +1200,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "What the agent does", "meta": "Adherence and packages, not advice" },
+        "marker": {
+          "label": "What the agent does",
+          "meta": "Adherence and packages, not advice"
+        },
         "headline": "The follow-up loop your team can't staff, run on autopilot.",
         "intro": "Pick the parts of the loop your clinic actually leaks on in the diagnostic: session reminders, exercise nudges, package balance, dormant patients. The clinical perimeter is written into the contract before launch.",
         "items": {
@@ -1056,7 +1230,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "How it sounds", "meta": "Real example · WhatsApp" },
+        "marker": {
+          "label": "How it sounds",
+          "meta": "Real example · WhatsApp"
+        },
         "headline": "Session booked, exercises remembered.",
         "intro": "The reschedule plus clinical question that today eats fifteen minutes of admin. The names are made up; the rebooking and the handoff happen exactly like this.",
         "t1": "Hi, I need to reschedule tomorrow's session, something came up at work",
@@ -1065,22 +1242,40 @@
         "t4": "Rebooked ✓ Friday 4pm with Daniel. For the exercise question I'll pass you to Daniel directly. He'll reply within the hour with the right order."
       },
       "integrations": {
-        "marker": { "label": "It plugs into your PMS", "meta": "Cliniko · Jane App · WebPT · ClinicSense · Mindbody · Calendly" },
+        "marker": {
+          "label": "It plugs into your PMS",
+          "meta": "Cliniko · Jane App · WebPT · ClinicSense · Mindbody · Calendly"
+        },
         "headline": "Your PMS, your therapist calendars, your packages.",
         "intro": "We integrate with all major physio/allied-health PMS systems via API. Package balances and session counts stay in sync, no double-entry, no manual reconciliation."
       },
       "outcomes": {
-        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "marker": {
+          "label": "What you should expect",
+          "meta": "Ranges · not guarantees"
+        },
         "headline": "Adherence up, packages finished, dormant patients back.",
         "intro": "Brackets pulled from physio sector data on HEP adherence and package completion. The diagnostic turns them into the numbers we sign for, against your last six months of session data.",
         "items": {
-          "noShowReduction": { "value": "−15% to −25%", "label": "no-shows in 8 weeks" },
-          "adherenceLift": { "value": "+30% to +60%", "label": "home exercise adherence with reminders" },
-          "packageCompletion": { "value": "+15% to +25%", "label": "package completion rate" }
+          "noShowReduction": {
+            "value": "−15% to −25%",
+            "label": "no-shows in 8 weeks"
+          },
+          "adherenceLift": {
+            "value": "+30% to +60%",
+            "label": "home exercise adherence with reminders"
+          },
+          "packageCompletion": {
+            "value": "+15% to +25%",
+            "label": "package completion rate"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Questions physio owners ask", "meta": "Plain answers" },
+        "marker": {
+          "label": "Questions physio owners ask",
+          "meta": "Plain answers"
+        },
         "headline": "What physio owners ask before they trust us with adherence.",
         "items": {
           "hep": {
@@ -1133,7 +1328,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "The pain", "meta": "What every vet clinic feels" },
+        "marker": {
+          "label": "The pain",
+          "meta": "What every vet clinic feels"
+        },
         "headline": "The animals don't book office hours.",
         "intro": "Emergencies happen at 3am. Vaccinations get forgotten. Households with three pets are scheduling nightmares. The agent doesn't sleep, doesn't forget, and doesn't ask the on-call vet for help unless it actually needs to.",
         "items": {
@@ -1160,7 +1358,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "What the agent does", "meta": "Triage protocol, signed by your lead vet" },
+        "marker": {
+          "label": "What the agent does",
+          "meta": "Triage protocol, signed by your lead vet"
+        },
         "headline": "The on-call vet stops getting paged for false alarms.",
         "intro": "Your lead vet co-writes the triage protocol with us in the diagnostic: what's urgent, what waits till morning, what gets the on-call pager, what gets referred to the 24/7 emergency clinic. The agent runs the protocol. It does not improvise.",
         "items": {
@@ -1187,7 +1388,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "How it sounds", "meta": "Real example · after-hours call" },
+        "marker": {
+          "label": "How it sounds",
+          "meta": "Real example · after-hours call"
+        },
         "headline": "Triage in three turns.",
         "intro": "The 3am call that today either pages your on-call vet for nothing or gets missed entirely. The names are made up; the triage questions and the escalation happen exactly like this.",
         "t1": "My dog ate a whole bar of chocolate, what do I do?",
@@ -1196,22 +1400,40 @@
         "t4": "This is urgent. Paging Dr. Mehta on call. She'll call you within 5 minutes. In the meantime: do not induce vomiting, keep your dog calm. The nearest 24/7 emergency clinic is 8 min away if you can't wait. Address coming on SMS now."
       },
       "integrations": {
-        "marker": { "label": "It plugs into your PMS", "meta": "AVImark · Cornerstone · eVetPractice · Provet Cloud · ezyVet" },
+        "marker": {
+          "label": "It plugs into your PMS",
+          "meta": "AVImark · Cornerstone · eVetPractice · Provet Cloud · ezyVet"
+        },
         "headline": "Your PMS, your vaccination schedules, your on-call rotation.",
         "intro": "We integrate with all major veterinary PMS systems. Pet records, vaccination histories and emergency contact rotations stay in sync, no double-entry."
       },
       "outcomes": {
-        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "marker": {
+          "label": "What you should expect",
+          "meta": "Ranges · not guarantees"
+        },
         "headline": "Every after-hours call triaged, vaccinations on schedule.",
         "intro": "Brackets pulled from small-animal practice data on vaccination compliance and no-show reduction. The diagnostic turns them into the numbers we sign for, against your PMS history.",
         "items": {
-          "emergenciesTriaged": { "value": "100%", "label": "after-hours calls triaged · 24/7" },
-          "vaccinationCompliance": { "value": "+20% to +40%", "label": "on-schedule vaccinations with reminders" },
-          "noShowReduction": { "value": "−30% to −40%", "label": "no-shows in 8 weeks" }
+          "emergenciesTriaged": {
+            "value": "100%",
+            "label": "after-hours calls triaged · 24/7"
+          },
+          "vaccinationCompliance": {
+            "value": "+20% to +40%",
+            "label": "on-schedule vaccinations with reminders"
+          },
+          "noShowReduction": {
+            "value": "−30% to −40%",
+            "label": "no-shows in 8 weeks"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Questions vet owners ask", "meta": "Plain answers" },
+        "marker": {
+          "label": "Questions vet owners ask",
+          "meta": "Plain answers"
+        },
         "headline": "What vets ask before they let an agent triage their on-call line.",
         "items": {
           "emergencyTriage": {
@@ -1264,7 +1486,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "The pain", "meta": "What every counter feels" },
+        "marker": {
+          "label": "The pain",
+          "meta": "What every counter feels"
+        },
         "headline": "The questions don't stop. The counter is one human deep.",
         "intro": "Pharmacy isn't a chatbot industry, until you separate the truly clinical from the merely operational. Most of what saturates the counter is the second.",
         "items": {
@@ -1291,7 +1516,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "What the agent does", "meta": "Operational only · the counter stays clinical" },
+        "marker": {
+          "label": "What the agent does",
+          "meta": "Operational only · the counter stays clinical"
+        },
         "headline": "Off the counter, never on the pharmacist's job.",
         "intro": "We turn on what your pharmacy needs and explicitly mark what the agent must never touch. Both lists are written into the contract before launch.",
         "items": {
@@ -1318,7 +1546,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "How it sounds", "meta": "Real example · WhatsApp" },
+        "marker": {
+          "label": "How it sounds",
+          "meta": "Real example · WhatsApp"
+        },
         "headline": "Two pickups, no counter time burned.",
         "intro": "Notice the line the agent doesn't cross: anything that would be advice gets the pharmacist's name attached.",
         "t1": "Hi, do you have Enantyum 25mg in stock?",
@@ -1327,22 +1558,40 @@
         "t4": "Reserved ✓ ready at the counter, ask for Box 41. For dosing I'll pass you to Marta, our pharmacist on shift. She'll reply in under 5 minutes."
       },
       "integrations": {
-        "marker": { "label": "It plugs into your dispensing software", "meta": "Farmatic · Unycop · Nixfarma · Bitfarma · WhatsApp Business" },
+        "marker": {
+          "label": "It plugs into your dispensing software",
+          "meta": "Farmatic · Unycop · Nixfarma · Bitfarma · WhatsApp Business"
+        },
         "headline": "Stock, prices and patient files, all live.",
         "intro": "We read availability and prices straight from your dispensing software, so the answers are never out of date. No double-entry, no manual sync."
       },
       "outcomes": {
-        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "marker": {
+          "label": "What you should expect",
+          "meta": "Ranges · not guarantees"
+        },
         "headline": "Counter freed, refills on time, WhatsApp answered fast.",
         "intro": "Brackets pulled from community pharmacy sector data on adherence and counter saturation. The diagnostic turns them into the targets we sign for, measured against your dispensing software.",
         "items": {
-          "questionsHandled": { "value": "60% to 80%", "label": "non-clinical questions resolved without counter" },
-          "adherence": { "value": "+10% to +20%", "label": "refill adherence on chronic patients" },
-          "responseTime": { "value": "<10 s", "label": "WhatsApp response in business hours" }
+          "questionsHandled": {
+            "value": "60% to 80%",
+            "label": "non-clinical questions resolved without counter"
+          },
+          "adherence": {
+            "value": "+10% to +20%",
+            "label": "refill adherence on chronic patients"
+          },
+          "responseTime": {
+            "value": "<10 s",
+            "label": "WhatsApp response in business hours"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Questions pharmacy owners ask", "meta": "Plain answers" },
+        "marker": {
+          "label": "Questions pharmacy owners ask",
+          "meta": "Plain answers"
+        },
         "headline": "What pharmacists ask before they put an agent in front of patients.",
         "items": {
           "clinicalEscalation": {
@@ -1395,7 +1644,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "The pain", "meta": "What every school feels" },
+        "marker": {
+          "label": "The pain",
+          "meta": "What every school feels"
+        },
         "headline": "The leads come in 12 languages. Your team replies in two.",
         "intro": "Language school demand has a brutal asymmetry: leads arrive in every language, at every hour, with every level of intent. Most schools answer in 24 hours, in one language, with the same template. The conversion gap is the cost.",
         "items": {
@@ -1422,7 +1674,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "What the agent does", "meta": "Speaks your families' languages, not yours" },
+        "marker": {
+          "label": "What the agent does",
+          "meta": "Speaks your families' languages, not yours"
+        },
         "headline": "The trial gets booked while your admin team teaches.",
         "intro": "Pick which courses, levels and audiences the agent speaks to in the diagnostic. We wire the trial-to-enrollment loop, leave the rest off, and write the handoff to your admissions team into the contract.",
         "items": {
@@ -1449,7 +1704,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "How it sounds", "meta": "Real example · WhatsApp" },
+        "marker": {
+          "label": "How it sounds",
+          "meta": "Real example · WhatsApp"
+        },
         "headline": "Qualified, booked, prepped, in four turns.",
         "intro": "The Spanish-speaking parent that today would wait two days for a reply in English. The names are made up; the language switch and the trial booking happen exactly like this.",
         "t1": "Hola, busco clases de inglés para mi hijo de 10 años, ¿qué tienen?",
@@ -1458,22 +1716,40 @@
         "t4": "Sin problema. Te reservo una clase de prueba gratuita el sábado 11:00 con Marta. Ella evalúa el nivel y te recomienda el formato. Te paso el enlace de Zoom y una nota de preparación 24h antes."
       },
       "integrations": {
-        "marker": { "label": "It plugs into what you already use", "meta": "Google Calendar · Calendly · Stripe · Mailchimp · HubSpot · custom LMS" },
+        "marker": {
+          "label": "It plugs into what you already use",
+          "meta": "Google Calendar · Calendly · Stripe · Mailchimp · HubSpot · custom LMS"
+        },
         "headline": "Your calendar, your billing, your CRM.",
         "intro": "We integrate with your scheduling, billing and student management stack. If your LMS has an API, we read class enrollments and attendance live; if not, we run on Google Calendar + Stripe + your spreadsheet of truth."
       },
       "outcomes": {
-        "marker": { "label": "What you should expect", "meta": "Ranges · not guarantees" },
+        "marker": {
+          "label": "What you should expect",
+          "meta": "Ranges · not guarantees"
+        },
         "headline": "More trials booked, more trials enrolled, fewer mid-course drops.",
         "intro": "Brackets pulled from language-school sector data on trial conversion and student retention. The diagnostic locks the specific number we sign for, against your last enrollment cycle.",
         "items": {
-          "trialToEnroll": { "value": "+15% to +30%", "label": "trial → paid enrollment conversion" },
-          "parentQuestionsHandled": { "value": "60% to 80%", "label": "routine parent questions resolved by agent" },
-          "retentionLift": { "value": "+10% to +20%", "label": "student retention with check-in sequence" }
+          "trialToEnroll": {
+            "value": "+15% to +30%",
+            "label": "trial → paid enrollment conversion"
+          },
+          "parentQuestionsHandled": {
+            "value": "60% to 80%",
+            "label": "routine parent questions resolved by agent"
+          },
+          "retentionLift": {
+            "value": "+10% to +20%",
+            "label": "student retention with check-in sequence"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Questions school owners ask", "meta": "Plain answers" },
+        "marker": {
+          "label": "Questions school owners ask",
+          "meta": "Plain answers"
+        },
         "headline": "What school owners ask before they let us reply to a parent.",
         "items": {
           "multilingual": {
@@ -1526,7 +1802,10 @@
       "ctaMicrocopy": "You'll talk to an engineer, not a salesperson. We leave with a go/no-go."
     },
     "category": {
-      "marker": { "label": "Why a WhatsApp AI agent", "meta": "Not a chatbot" },
+      "marker": {
+        "label": "Why a WhatsApp AI agent",
+        "meta": "Not a chatbot"
+      },
       "headline": "An AI agent is not a chatbot.",
       "intro": "A chatbot answers. An AI agent decides, books, escalates, and remembers context across the entire conversation. The difference shows up the minute a client asks something a tree menu can't handle.",
       "definitions": {
@@ -1545,7 +1824,10 @@
       }
     },
     "comparison": {
-      "marker": { "label": "Platform vs agency vs Auphere", "meta": "How buyers actually decide" },
+      "marker": {
+        "label": "Platform vs agency vs Auphere",
+        "meta": "How buyers actually decide"
+      },
       "headline": "Three paths. Two leave you the work.",
       "intro": "Most teams shopping for a WhatsApp agent end up choosing between a SaaS platform they configure, an agency that builds and disappears, or an in-house team they don't have. The third column is what Auphere does.",
       "columns": {
@@ -1582,7 +1864,10 @@
       }
     },
     "useCases": {
-      "marker": { "label": "What the agent does on WhatsApp", "meta": "Picked in the diagnostic" },
+      "marker": {
+        "label": "What the agent does on WhatsApp",
+        "meta": "Picked in the diagnostic"
+      },
       "headline": "Five jobs out of your team's inbox.",
       "intro": "Most operations need two or three of the five. The diagnostic decides which, and the rest stay off. Nothing here is a feature you have to use.",
       "items": {
@@ -1614,7 +1899,10 @@
       }
     },
     "compliance": {
-      "marker": { "label": "Meta 2026 policy", "meta": "The part nobody explains" },
+      "marker": {
+        "label": "Meta 2026 policy",
+        "meta": "The part nobody explains"
+      },
       "headline": "The policy change nobody warned you about.",
       "intro": "Meta updated its WhatsApp Business API terms in 2026. The change quietly killed an entire category of AI bots and opened the door to another. Most agencies are still selling the killed one.",
       "blocks": {
@@ -1634,7 +1922,10 @@
       "footnote": "Last reviewed: May 2026. Meta's policy is a living document. We re-check quarterly and notify clients when the policy moves."
     },
     "benchmarks": {
-      "marker": { "label": "What 8 weeks usually moves", "meta": "Ranges · not guarantees" },
+      "marker": {
+        "label": "What 8 weeks usually moves",
+        "meta": "Ranges · not guarantees"
+      },
       "headline": "Four numbers we sign for.",
       "intro": "Brackets pulled from WhatsApp Business research, vendor disclosures (Yalo, Respond.io, Twixor) and the early Auphere deployments. The diagnostic locks the specific number we sign for, against your current operation.",
       "items": {
@@ -1661,7 +1952,10 @@
       }
     },
     "conversations": {
-      "marker": { "label": "How it sounds", "meta": "Three real flows · WhatsApp" },
+      "marker": {
+        "label": "How it sounds",
+        "meta": "Three real flows · WhatsApp"
+      },
       "headline": "Three conversations, three verticals, one engine.",
       "intro": "Three flows the agent handles every day. Names made up; the logic and the handoff points are exactly what your clients would see.",
       "flows": {
@@ -1699,7 +1993,10 @@
       }
     },
     "qualifier": {
-      "marker": { "label": "Is this for you?", "meta": "Honest filter · 3 + 2" },
+      "marker": {
+        "label": "Is this for you?",
+        "meta": "Honest filter · 3 + 2"
+      },
       "headline": "Built for teams that already move serious volume on WhatsApp.",
       "yesTitle": "This is for you if…",
       "yes": {
@@ -1714,7 +2011,10 @@
       }
     },
     "faq": {
-      "marker": { "label": "FAQ", "meta": "Plain answers · no marketing" },
+      "marker": {
+        "label": "FAQ",
+        "meta": "Plain answers · no marketing"
+      },
       "headline": "What teams ask before they put us on WhatsApp.",
       "intro": "If yours isn't here, drop it in the diagnostic.",
       "items": {
@@ -2203,6 +2503,76 @@
       "privacy": "Privacy",
       "terms": "Terms",
       "trust": "Trust & Security"
+    }
+  },
+  "threeWays": {
+    "marker": {
+      "label": "Three ways to work",
+      "meta": "Pick your door in 8 seconds"
+    },
+    "headline": "One platform. Three ways to work with it.",
+    "tracks": {
+      "hire": {
+        "verb": "Hire it",
+        "who": "For your operation",
+        "body": "Your agent, built around your business and operated 24/7 by us.",
+        "cta": "See the platform",
+        "href": "/platform"
+      },
+      "resell": {
+        "verb": "Resell it",
+        "who": "Your brand, your client",
+        "body": "Sell AI to your book without building the platform. We operate; you invoice.",
+        "cta": "Partner program",
+        "href": "/partners"
+      },
+      "embed": {
+        "verb": "Embed it",
+        "who": "Inside your product",
+        "body": "AI in your SaaS or platform via API: your brand, your invoice, our infrastructure.",
+        "cta": "Auphere Embedded",
+        "href": "/partners/embedded"
+      }
+    }
+  },
+  "capabilities": {
+    "marker": {
+      "label": "What it already does",
+      "meta": "Verified against code, not against the pitch"
+    },
+    "headline": "What your agent already knows how to do.",
+    "intro": "Nothing on this list is roadmap. All of it is in production today.",
+    "cells": {
+      "media": {
+        "title": "Understands voice notes and photos, not just text",
+        "body": "The audio and photos your customers send, understood and answered.",
+        "detail": "It transcribes voice notes and reads the images that arrive on WhatsApp or Instagram: the payment receipt, the product photo, the two-minute audio with the whole story. Your customer writes how they write; the agent adapts."
+      },
+      "memory": {
+        "title": "Remembers every customer between conversations",
+        "body": "Today's conversation knows what happened last month.",
+        "detail": "Per-customer memory: preferences, history, context. It is the only thing on this list your customer directly perceives — and what turns a bot into an agent."
+      },
+      "jobs": {
+        "title": "Books, reminds, chases unpaid bills and recovers no-shows — on its own",
+        "body": "The four jobs that burn the most hours, with nobody pushing them.",
+        "detail": "Bookings with confirmation and one-tap rescheduling, reminders that cut no-shows, calm payment follow-ups and win-back of absent customers. Each flow activates only if your operation needs it."
+      },
+      "browser": {
+        "title": "Uses your software even if it has no API",
+        "body": "If your management tool only has a screen, the agent uses it anyway.",
+        "detail": "An agent-operated browser session books in your legacy panel exactly as a person would. The software you already run stops being an excuse."
+      },
+      "escalation": {
+        "title": "Knows when to stay quiet and hand off to a person",
+        "body": "Three triggers, full context, a named inbox.",
+        "detail": "Out of scope, explicit request, or low confidence: the agent escalates to your team with the whole conversation. It is also what Spain's Ley 10/2025 requires from December — your agent already complies."
+      },
+      "hygiene": {
+        "title": "Watches your number's standing with Meta",
+        "body": "The real fear of operating WhatsApp, managed by default.",
+        "detail": "Number-quality monitoring, approved templates and a sending cadence that trips no alarms. A burned number is a dead channel: we treat it as part of the service."
+      }
     }
   }
 }

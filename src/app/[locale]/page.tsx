@@ -4,7 +4,9 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Nav } from '@/components/sections/Nav';
 import { Hero } from '@/components/sections/Hero';
-import { HowWeWork } from '@/components/sections/HowWeWork';
+import { StepPin } from '@/components/sections/StepPin';
+import { AudienceSwitch } from '@/components/sections/AudienceSwitch';
+import { CapabilitiesBento } from '@/components/sections/CapabilitiesBento';
 import { PullQuote } from '@/components/sections/PullQuote';
 // import { Cases } from '@/components/sections/Cases'; // TODO: re-enable once we have a real case to publish
 import { WhyAuphere } from '@/components/sections/WhyAuphere';
@@ -36,7 +38,9 @@ export default async function HomePage({ params }: Props) {
       <Nav />
       <main id="main">
         <Hero />
-        <HowWeWork />
+        <AudienceSwitch />
+        <CapabilitiesBento />
+        <StepPin />
         <PullQuote />
         {/* <Cases /> — temporarily hidden, will re-enable when first real case is approved */}
         <WhyAuphere />

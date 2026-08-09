@@ -1,4 +1,5 @@
 "use client";
+import type { ReactNode } from "react";
 import { Container } from "@/components/primitives/Container";
 import { Eyebrow } from "@/components/primitives/Eyebrow";
 import { SplitText } from "@/components/motion/SplitText";
@@ -28,6 +29,10 @@ interface Props {
   ctaSecondary?: CTA;
   /** Small mono microcopy under the CTA row. */
   ctaMicrocopy?: string;
+  /** Mono trust line under the microcopy (compliance badges row). */
+  trustLine?: string;
+  /** Right-side visual. Defaults to the AnimatedMark; the home passes the Orchestrator. */
+  visual?: ReactNode;
   /** Override the default top padding. */
   className?: string;
 }
@@ -49,6 +54,8 @@ export function MarketingHero({
   ctaPrimary,
   ctaSecondary,
   ctaMicrocopy,
+  trustLine,
+  visual,
 }: Props) {
   return (
     <section
@@ -69,15 +76,17 @@ export function MarketingHero({
         }}
       />
 
-      {/* Auphere brand mark — premium hero animation (trace → fill → shimmer loop) */}
-      <AnimatedMark
-        immediate
-        traceDurationSeconds={2.6}
-        fillRevealSeconds={0.9}
-        loopShimmer
-        shimmerIntervalSeconds={11}
-        className="pointer-events-none absolute right-[-14%] top-1/2 -translate-y-1/2 w-[68%] max-w-[900px] hidden md:block"
-      />
+      {/* Right-side visual — AnimatedMark by default, Orchestrator on the home */}
+      {visual ?? (
+        <AnimatedMark
+          immediate
+          traceDurationSeconds={2.6}
+          fillRevealSeconds={0.9}
+          loopShimmer
+          shimmerIntervalSeconds={11}
+          className="pointer-events-none absolute right-[-14%] top-1/2 -translate-y-1/2 w-[68%] max-w-[900px] hidden md:block"
+        />
+      )}
 
       <Container width="wide" className="relative z-10">
         <div className="max-w-2xl">
@@ -150,6 +159,12 @@ export function MarketingHero({
           {ctaMicrocopy && (
             <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-bone)]/50 mt-5 max-w-lg">
               {ctaMicrocopy}
+            </p>
+          )}
+
+          {trustLine && (
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-caribbean-green)]/80 mt-4 max-w-lg">
+              {trustLine}
             </p>
           )}
         </div>

@@ -15,13 +15,13 @@
     "cta": "Reservar"
   },
   "hero": {
-    "eyebrow": "AGENTES DE IA A MEDIDA · LOS CONSTRUIMOS, OPERAMOS Y MEJORAMOS",
-    "headlineLine1": "Recupera 30 horas",
-    "headlineLine2": "de trabajo repetitivo. Cada semana.",
-    "subheadline": "Agentes de IA a medida para reservas, seguimiento, soporte y operaciones. Los construimos, operamos y mejoramos nosotros, para que tu equipo no tenga que hacerlo.",
-    "ctaPrimary": "Reservar diagnóstico (30 min)",
-    "ctaSecondary": "Ver cómo funciona →",
-    "ctaMicrocopy": "Hablas con un engineer, no con un comercial. Salimos con un go/no-go.",
+    "eyebrow": "INFRAESTRUCTURA DE IA OPERADA · UE",
+    "headlineLine1": "Construimos, operamos y respondemos por",
+    "headlineLine2": "tu agente de IA en producción.",
+    "subheadline": "El 40% de los proyectos de agentes se cancela antes de llegar a producción. Nosotros vivimos de que el tuyo no.",
+    "ctaPrimary": "Reservar diagnóstico · 30 min",
+    "ctaSecondary": "Ver la plataforma →",
+    "ctaMicrocopy": "Hablas con un engineer, no con un comercial.",
     "chat": {
       "businessName": "Tu negocio",
       "subtitle": "Agente Auphere · WhatsApp",
@@ -30,6 +30,20 @@
       "m2": "¡Hola! Tengo hueco a las 17:30 con Carla o a las 19:00 con Marina. ¿Cuál prefieres?",
       "m3": "17:30 perfecto",
       "m4": "Reservado ✓ Te paso confirmación y enlace para reprogramar si surge algo. Hasta esta tarde."
+    },
+    "trustLine": "UE · art. 50 por diseño · Ley 10/2025 ready",
+    "orchestrator": {
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "voice": "Voz",
+      "classifier": "Clasifica",
+      "calendar": "Calendario",
+      "crm": "CRM",
+      "payments": "Pagos",
+      "browser": "Navegador",
+      "response": "Responde",
+      "human": "Humano"
     }
   },
   "howWeWork": {
@@ -58,7 +72,7 @@
     }
   },
   "pullQuote": {
-    "text": "Construimos, operamos y mejoramos el agente de IA que tu equipo necesita, sin que tengas que contratar a nadie nuevo.",
+    "text": "La mayoría de los proyectos de IA se muere antes de llegar a producción. Nosotros vivimos de que el tuyo no.",
     "attribution": "Auphere"
   },
   "cases": {
@@ -76,24 +90,24 @@
       "label": "Por qué Auphere",
       "meta": "4 promesas · cero hype"
     },
-    "headline": "No es un SaaS-template. No es un proyecto que se entrega y muere.",
-    "intro": "Un partner de IA-ops que diseña el agente alrededor de tu operación, lo opera en nuestra infraestructura y lo mejora cada mes.",
+    "headline": "Vive en producción, o no vale.",
+    "intro": "La categoría entera vende demos. Auphere vende el tramo donde los demás fallan: la producción, y responder por ella.",
     "promises": {
-      "bespoke": {
-        "title": "Construido alrededor de tu operación, no al revés.",
-        "body": "No es un SaaS-template que tienes que pelear. Configuramos, entrenamos y personalizamos el agente para tus flujos reales, tus herramientas, tu tono de voz y tus reglas de negocio."
+      "production": {
+        "title": "Vive en producción o no vale.",
+        "body": "El 40% de los proyectos de agentes se cancela antes de llegar a producción; solo una minoría de las organizaciones ha escalado uno. Vendemos exactamente el tramo donde los demás fallan — y respondemos por él."
       },
-      "managed": {
-        "title": "Lo operamos nosotros. No necesitas contratar a un ingeniero de IA.",
-        "body": "El agente vive en nuestra infraestructura, monitoreado 24/7 por el mismo equipo que lo construyó. Recibes una línea directa con el equipo que lo opera y un ciclo mensual de mejora. No un repo del que ocuparte."
+      "compliance": {
+        "title": "Cumple por diseño, y lo dice de frente.",
+        "body": "Tu agente se identifica como IA (art. 50), escala a una persona desde el primer día (Ley 10/2025, antes de fecha) y publicamos la postura completa en /trust. La transparencia no es un riesgo comercial: convierte mejor."
       },
-      "diagnostic": {
-        "title": "Diagnóstico honesto antes de cualquier compromiso.",
-        "body": "Sin coste. Decidimos juntos si automatizar realmente resuelve tu problema. Si concluimos que no, te lo decimos. Pocas agencias dicen esto en voz alta."
+      "isolation": {
+        "title": "Aislamiento verificable, no prometido.",
+        "body": "El aislamiento de tus datos lo impone la base de datos, no la buena fe del código: RLS, whitelist en dos puntos, auditoría bajo impersonación y tests que bloquean el despliegue si fallan."
       },
       "oneTeam": {
-        "title": "Un solo equipo end-to-end. Un único punto de contacto.",
-        "body": "La persona que hace el diagnóstico es la misma que configura el agente y la misma que te llama cuando algo necesita atención en producción. Sin subcontratistas. Sin handoffs."
+        "title": "Un solo equipo, con la operación por escrito.",
+        "body": "Quien hace el diagnóstico configura el agente y responde en producción. Sin subcontratas ni handoffs — y con runbooks, alertas con destinatario y continuidad pactada en el contrato, para que el bus factor no sea tu problema."
       }
     }
   },
@@ -167,12 +181,16 @@
       "cycle": {
         "label": "Mejora"
       }
+    },
+    "partnersLine": {
+      "text": "¿Eres agencia o plataforma? El programa de partners tiene su propia economía.",
+      "cta": "Ver el programa →"
     }
   },
   "qualifier": {
     "marker": {
       "label": "¿Es para ti?",
-      "meta": "Filtro honesto · 4 + 2"
+      "meta": "Filtro honesto · 4 + 3"
     },
     "headline": "Pensado para equipos que ya sienten el cuello de botella.",
     "yesTitle": "Esto es para ti si…",
@@ -185,7 +203,8 @@
     "noTitle": "Esto NO es para ti si…",
     "no": {
       "no1": "Buscas únicamente el precio más bajo. Nuestro suelo es $850 de setup + $120/mes; hay plantillas más baratas si esa es la prioridad.",
-      "no2": "Necesitas a alguien activo mañana. Nuestros slots de diagnóstico abren con 2–3 semanas de antelación y no recortamos en el alcance."
+      "no2": "Necesitas a alguien activo mañana. Nuestros slots de diagnóstico abren con 2–3 semanas de antelación y no recortamos en el alcance.",
+      "no3": "Buscas que tus clientes no sepan que hablan con una IA. Nuestros agentes se identifican como IA — lo exige la ley europea y, además, convierte mejor."
     }
   },
   "faq": {
@@ -239,6 +258,10 @@
       "noNeed": {
         "q": "¿Y si el diagnóstico concluye que no nos hacéis falta?",
         "a": "Te lo decimos sin rodeos y te quedas con las notas y recomendaciones que salgan de la llamada para que las ejecutes como prefieras: internamente, con otro proveedor o aparcado para más adelante. Preferimos perder un deal a entregar algo que no se va a ganar el sueldo. A largo plazo es la única estrategia de marketing que escala."
+      },
+      "aiDisclosure": {
+        "q": "¿Mis clientes sabrán que hablan con una IA?",
+        "a": "Sí: el agente se identifica como IA desde el primer mensaje, en todos los canales. Lo exige el art. 50 del Reglamento europeo de IA desde agosto de 2026 — y además convierte mejor: lo que tus clientes valoran no es que parezca humano, es que les resuelva. Cuando no puede, pasa a una persona de tu equipo con el contexto completo."
       }
     }
   },
@@ -514,7 +537,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "El dolor", "meta": "Datos · sector 2026" },
+        "marker": {
+          "label": "El dolor",
+          "meta": "Datos · sector 2026"
+        },
         "headline": "El teléfono no para. Las manos de las técnicas tampoco arrancan.",
         "intro": "Los estudios de uñas reciben más llamadas de reserva que cualquier vertical de belleza, y la tasa de respuesta es la más baja porque todo el mundo tiene las manos ocupadas. El coste aparece en silencio: en DMs sin contestar, en walk-ins que se fueron, en clientas habituales que probaron otro sitio a medianoche.",
         "items": {
@@ -541,7 +567,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "Qué hace el agente", "meta": "Ajustado a tus mesas y técnicas" },
+        "marker": {
+          "label": "Qué hace el agente",
+          "meta": "Ajustado a tus mesas y técnicas"
+        },
         "headline": "El teléfono fuera de las manos. Las técnicas en su sitio.",
         "intro": "Pides en el diagnóstico qué tareas te están vaciando la mesa: cotizaciones, walk-ins fuera de horario, asignación de técnica, rebooking. Encendemos solo esas, dejamos el resto apagado.",
         "items": {
@@ -568,7 +597,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "Cómo suena", "meta": "Ejemplo real · WhatsApp" },
+        "marker": {
+          "label": "Cómo suena",
+          "meta": "Ejemplo real · WhatsApp"
+        },
         "headline": "Builder gel cotizado, técnica habitual, hueco viernes tarde.",
         "intro": "Una clienta tipica preguntando precio y hueco a las once de la noche, cuando el estudio lleva horas cerrado. Los nombres son inventados; las cifras y el flujo son los que verán tus clientas.",
         "t1": "Hola, ¿cuánto cuesta un builder gel con francesa y tenéis algo el viernes después de las 17h?",
@@ -577,22 +609,40 @@
         "t4": "Reservado ✓ Viernes 17:15 con Sofía, builder gel + francesa. Te recuerdo el jueves con un toque por si necesitas reagendar."
       },
       "integrations": {
-        "marker": { "label": "Se conecta con lo que ya usas", "meta": "Booksy · Fresha · GlossGenius · Square · Vagaro" },
+        "marker": {
+          "label": "Se conecta con lo que ya usas",
+          "meta": "Booksy · Fresha · GlossGenius · Square · Vagaro"
+        },
         "headline": "No te pedimos cambiar de herramienta.",
         "intro": "El agente habla con tu sistema de reservas, tu calendario y tu número de WhatsApp. Si una herramienta no está en la lista pero tiene API, entra en scope."
       },
       "outcomes": {
-        "marker": { "label": "Qué esperar", "meta": "Rangos · no garantías" },
+        "marker": {
+          "label": "Qué esperar",
+          "meta": "Rangos · no garantías"
+        },
         "headline": "Lo que se mueve en la mesa en 8 semanas.",
         "intro": "Rangos sacados de benchmarks de salones de uñas en Booksy y Fresha y de los primeros estudios con los que hemos trabajado. El diagnóstico fija el número exacto al que firmamos, medido contra la ocupación actual de tus mesas.",
         "items": {
-          "inquiriesHandled": { "value": "70% a 80%", "label": "consultas recurrentes resueltas por el agente" },
-          "occupancyLift": { "value": "+20% a +35%", "label": "ocupación de agenda en 8 semanas" },
-          "noShowReduction": { "value": "−20% a −35%", "label": "no-shows con secuencia de recordatorios" }
+          "inquiriesHandled": {
+            "value": "70% a 80%",
+            "label": "consultas recurrentes resueltas por el agente"
+          },
+          "occupancyLift": {
+            "value": "+20% a +35%",
+            "label": "ocupación de agenda en 8 semanas"
+          },
+          "noShowReduction": {
+            "value": "−20% a −35%",
+            "label": "no-shows con secuencia de recordatorios"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Lo que los dueños de estudio preguntan", "meta": "Respuestas planas" },
+        "marker": {
+          "label": "Lo que los dueños de estudio preguntan",
+          "meta": "Respuestas planas"
+        },
         "headline": "Lo que las dueñas de nail-salon preguntan antes de firmar.",
         "items": {
           "technicianPref": {
@@ -645,7 +695,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "El dolor", "meta": "Datos · sector 2026" },
+        "marker": {
+          "label": "El dolor",
+          "meta": "Datos · sector 2026"
+        },
         "headline": "La sala queda en paz. El ingreso, menos.",
         "intro": "Las clientas de spa reservan cuando se acuerdan, normalmente a las 22h. Tu front desk está cerrado; la llamada va al buzón; la reserva se va a un competidor. Las pérdidas son silenciosas y constantes.",
         "items": {
@@ -672,7 +725,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "Qué hace el agente", "meta": "En el tono de tu sala" },
+        "marker": {
+          "label": "Qué hace el agente",
+          "meta": "En el tono de tu sala"
+        },
         "headline": "El ruido del teléfono fuera de la cabina.",
         "intro": "Decidimos en el diagnóstico qué reservas, qué preparación y qué upsell entran en scope, y afinamos la voz hasta que suena como tu recepción en su mejor día. Lo que no encaja con tu tono no se activa.",
         "items": {
@@ -699,7 +755,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "Cómo suena", "meta": "Ejemplo real · WhatsApp" },
+        "marker": {
+          "label": "Cómo suena",
+          "meta": "Ejemplo real · WhatsApp"
+        },
         "headline": "Masaje reservado a las once de la noche, upgrade ofrecido una sola vez.",
         "intro": "El mensaje que llega cuando ya tienes la sala cerrada y la recepción en casa. Los nombres son inventados; el upgrade aparece exactamente así, una vez, sin insistir.",
         "t1": "Hola, ¿tenéis algo para masaje descontracturante el sábado por la tarde?",
@@ -708,22 +767,40 @@
         "t4": "Reservado ✓ Sábado 15:00 con Carla. Te envío las notas de preparación 2h antes. Resumen: sin perfume, hidratarse, llegar 10 min antes."
       },
       "integrations": {
-        "marker": { "label": "Se conecta con lo que ya usas", "meta": "Mindbody · Booker · Zenoti · Vagaro · Mangomint" },
+        "marker": {
+          "label": "Se conecta con lo que ya usas",
+          "meta": "Mindbody · Booker · Zenoti · Vagaro · Mangomint"
+        },
         "headline": "Tu sistema, tu calendario, tu tono.",
         "intro": "El agente habla con tu software de spa, tu calendario y tu WhatsApp. Si una herramienta no está en la lista pero tiene API, entra en scope."
       },
       "outcomes": {
-        "marker": { "label": "Qué esperar", "meta": "Rangos · no garantías" },
+        "marker": {
+          "label": "Qué esperar",
+          "meta": "Rangos · no garantías"
+        },
         "headline": "Después de horas, sala llena, ticket medio arriba.",
         "intro": "Rangos sacados de benchmarks de Mindbody y Zenoti sobre captura nocturna, no-shows y upsell en day spas. El diagnóstico los traduce a las tres cifras concretas que firmamos, medidas contra tus últimos tres meses de agenda y caja.",
         "items": {
-          "afterHoursCapture": { "value": "+30% a +50%", "label": "reservas capturadas fuera de horario" },
-          "noShowReduction": { "value": "−25% a −45%", "label": "no-shows en 8 semanas" },
-          "upsellLift": { "value": "+10% a +20%", "label": "ticket medio vía upsell natural" }
+          "afterHoursCapture": {
+            "value": "+30% a +50%",
+            "label": "reservas capturadas fuera de horario"
+          },
+          "noShowReduction": {
+            "value": "−25% a −45%",
+            "label": "no-shows en 8 semanas"
+          },
+          "upsellLift": {
+            "value": "+10% a +20%",
+            "label": "ticket medio vía upsell natural"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Lo que los dueños de spa preguntan", "meta": "Respuestas planas" },
+        "marker": {
+          "label": "Lo que los dueños de spa preguntan",
+          "meta": "Respuestas planas"
+        },
         "headline": "Lo que los dueños de spa preguntan antes de confiarnos la voz de la sala.",
         "items": {
           "tone": {
@@ -935,7 +1012,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "El dolor", "meta": "Datos · sector 2026" },
+        "marker": {
+          "label": "El dolor",
+          "meta": "Datos · sector 2026"
+        },
         "headline": "La lista de recall es la hoja más rentable que nunca llamas.",
         "intro": "Las matemáticas son brutales: 20-30% de tu base de pacientes está en mora, cada sillón vacío es coste fijo quemado y nadie en recepción tiene tiempo de perseguir 600 nombres. La IA no parpadea.",
         "items": {
@@ -962,7 +1042,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "Qué hace el agente", "meta": "Solo agenda y triage" },
+        "marker": {
+          "label": "Qué hace el agente",
+          "meta": "Solo agenda y triage"
+        },
         "headline": "Cada paciente en mora llamado. Cada sillón lleno.",
         "intro": "El agente se encarga de las llamadas, el recall y el triage fuera de horario. La línea clínica queda escrita en el contrato, por escrito, antes de que nada salga en vivo. El diagnóstico decide qué roles de la lista necesita realmente tu clínica.",
         "items": {
@@ -989,7 +1072,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "Cómo suena", "meta": "Ejemplo real · teléfono" },
+        "marker": {
+          "label": "Cómo suena",
+          "meta": "Ejemplo real · teléfono"
+        },
         "headline": "En mora, verificado, reservado. Una sola llamada entrante.",
         "intro": "El tipo de llamada que hoy se devuelve mañana (o nunca). Los nombres son inventados; el chequeo de cobertura y la reserva ocurren exactamente así.",
         "t1": "Hola, creo que debo una limpieza ¿no?",
@@ -998,22 +1084,40 @@
         "t4": "Reservado ✓ Martes 15:00 con Maya (tu higienista habitual), 45 min. Te recuerdo 48h antes con reagendado de un toque. Hasta entonces."
       },
       "integrations": {
-        "marker": { "label": "Se conecta con tu software de gestión", "meta": "Dentrix · Open Dental · Eaglesoft · Curve · Carestack" },
+        "marker": {
+          "label": "Se conecta con tu software de gestión",
+          "meta": "Dentrix · Open Dental · Eaglesoft · Curve · Carestack"
+        },
         "headline": "Tu PMS, tu lista de recall, tu flujo de seguros.",
         "intro": "Integramos con todos los sistemas dentales habituales vía API o, cuando hace falta, middleware seguro. Sin doble carga, sin sincronización manual."
       },
       "outcomes": {
-        "marker": { "label": "Qué esperar", "meta": "Rangos · no garantías" },
+        "marker": {
+          "label": "Qué esperar",
+          "meta": "Rangos · no garantías"
+        },
         "headline": "Recall trabajado, no-shows abajo, ingresos de vuelta en la agenda.",
         "intro": "Rangos sacados de datos del sector dental sobre recuperación de recall y reducción de no-shows. El diagnóstico los convierte en los números que firmamos, medidos contra los últimos doce meses de tu PMS.",
         "items": {
-          "noShowReduction": { "value": "−30% a −45%", "label": "no-shows en 8 semanas" },
-          "reactivation": { "value": "15% a 25%", "label": "de pacientes en mora reactivados" },
-          "recallRevenue": { "value": "+$80k a $150k", "label": "ingresos anuales de recall recuperados" }
+          "noShowReduction": {
+            "value": "−30% a −45%",
+            "label": "no-shows en 8 semanas"
+          },
+          "reactivation": {
+            "value": "15% a 25%",
+            "label": "de pacientes en mora reactivados"
+          },
+          "recallRevenue": {
+            "value": "+$80k a $150k",
+            "label": "ingresos anuales de recall recuperados"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Lo que los dueños de clínica preguntan", "meta": "Respuestas planas" },
+        "marker": {
+          "label": "Lo que los dueños de clínica preguntan",
+          "meta": "Respuestas planas"
+        },
         "headline": "Lo que las dueñas preguntan antes de soltarnos la lista de recall.",
         "items": {
           "insurance": {
@@ -1066,7 +1170,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "El dolor", "meta": "Lo que siente cada clínica de fisio" },
+        "marker": {
+          "label": "El dolor",
+          "meta": "Lo que siente cada clínica de fisio"
+        },
         "headline": "Los ejercicios solo funcionan si el paciente los hace.",
         "intro": "Los resultados de fisioterapia dependen de la adherencia, los paquetes dependen del completado, y ambos dependen de un loop de seguimiento que la mayoría de clínicas no puede dotar. El agente corre ese loop sin descanso.",
         "items": {
@@ -1093,7 +1200,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "Qué hace el agente", "meta": "Fuera de la camilla, sin tocar lo clínico" },
+        "marker": {
+          "label": "Qué hace el agente",
+          "meta": "Fuera de la camilla, sin tocar lo clínico"
+        },
         "headline": "Tus fisios tratan. El loop de adherencia corre solo.",
         "intro": "Elegimos en el diagnóstico qué partes del loop (recordatorios de sesión, ejercicios en casa, paquetes, recall) puede llevar el agente, y dejamos por escrito qué cruza siempre a un fisio humano antes de que nada salga en vivo.",
         "items": {
@@ -1120,7 +1230,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "Cómo suena", "meta": "Ejemplo real · WhatsApp" },
+        "marker": {
+          "label": "Cómo suena",
+          "meta": "Ejemplo real · WhatsApp"
+        },
         "headline": "Reagendado en un toque, duda clínica al fisio.",
         "intro": "La mezcla típica: una reserva que se mueve y una pregunta sobre ejercicios. Los nombres son inventados; lo importante es ver dónde el agente para y pasa el balón al fisio.",
         "t1": "Hola, necesito reagendar la sesión de mañana, me salió algo en el trabajo",
@@ -1129,22 +1242,40 @@
         "t4": "Reagendado ✓ Viernes 16:00 con Daniel. Para la duda del orden de ejercicios te paso con Daniel directamente; te contesta en la próxima hora con el orden correcto."
       },
       "integrations": {
-        "marker": { "label": "Se conecta con tu PMS", "meta": "Cliniko · Jane App · WebPT · ClinicSense · Mindbody · Calendly" },
+        "marker": {
+          "label": "Se conecta con tu PMS",
+          "meta": "Cliniko · Jane App · WebPT · ClinicSense · Mindbody · Calendly"
+        },
         "headline": "Tu PMS, agendas de terapeutas, paquetes.",
         "intro": "Integramos con todos los sistemas habituales de fisio/salud aliada vía API. Saldos de paquete y contadores de sesión se mantienen sincronizados: sin doble carga, sin reconciliación manual."
       },
       "outcomes": {
-        "marker": { "label": "Qué esperar", "meta": "Rangos · no garantías" },
+        "marker": {
+          "label": "Qué esperar",
+          "meta": "Rangos · no garantías"
+        },
         "headline": "Adherencia arriba, paquetes terminados, sesiones que no se pierden.",
         "intro": "Rangos sacados de literatura de fisio sobre HEP y de los datos de Cliniko y Jane App en clínicas similares. El diagnóstico los traduce al objetivo exacto que firmamos, medido contra la adherencia y el completado de tus últimos 90 días.",
         "items": {
-          "noShowReduction": { "value": "−15% a −25%", "label": "no-shows en 8 semanas" },
-          "adherenceLift": { "value": "+30% a +60%", "label": "adherencia a ejercicios en casa con recordatorios" },
-          "packageCompletion": { "value": "+15% a +25%", "label": "tasa de completado de paquetes" }
+          "noShowReduction": {
+            "value": "−15% a −25%",
+            "label": "no-shows en 8 semanas"
+          },
+          "adherenceLift": {
+            "value": "+30% a +60%",
+            "label": "adherencia a ejercicios en casa con recordatorios"
+          },
+          "packageCompletion": {
+            "value": "+15% a +25%",
+            "label": "tasa de completado de paquetes"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Lo que los dueños de fisio preguntan", "meta": "Respuestas planas" },
+        "marker": {
+          "label": "Lo que los dueños de fisio preguntan",
+          "meta": "Respuestas planas"
+        },
         "headline": "Lo que los fisios preguntan antes de soltarnos el HEP.",
         "items": {
           "hep": {
@@ -1197,7 +1328,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "El dolor", "meta": "Lo que siente cada clínica veterinaria" },
+        "marker": {
+          "label": "El dolor",
+          "meta": "Lo que siente cada clínica veterinaria"
+        },
         "headline": "Los animales no agendan horario de oficina.",
         "intro": "Las urgencias ocurren a las 3 de la madrugada. Las vacunas se olvidan. Los hogares con tres mascotas son una pesadilla de agenda. El agente no duerme, no olvida y solo le pide ayuda al vet de guardia cuando realmente la necesita.",
         "items": {
@@ -1224,7 +1358,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "Qué hace el agente", "meta": "Protocolo de triage por escrito" },
+        "marker": {
+          "label": "Qué hace el agente",
+          "meta": "Protocolo de triage por escrito"
+        },
         "headline": "El vet de guardia solo suena cuando es una urgencia real.",
         "intro": "El vet jefe escribe contigo el protocolo de triage durante la configuración: qué síntoma es urgente, qué se ve mismo día, qué se refiere a la 24/7 más cercana. El agente no improvisa fuera de ese protocolo.",
         "items": {
@@ -1251,7 +1388,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "Cómo suena", "meta": "Ejemplo real · llamada fuera de horario" },
+        "marker": {
+          "label": "Cómo suena",
+          "meta": "Ejemplo real · llamada fuera de horario"
+        },
         "headline": "Una intoxicación a las 2 AM, triage hecho, vet de guardia llamado.",
         "intro": "La llamada que hoy va al buzón o quema al vet de guardia sin necesidad. Los nombres son inventados; las preguntas de triage son exactamente las que tu vet jefe escribirá en el protocolo.",
         "t1": "Mi perro se comió una tableta entera de chocolate, ¿qué hago?",
@@ -1260,22 +1400,40 @@
         "t4": "Esto es urgente. Llamo a la Dra. Mehta de guardia. Te llamará en 5 minutos. Mientras: no provocar vómito, mantener al perro tranquilo. La urgencia 24/7 más cercana está a 8 min si no puedes esperar. Te paso la dirección por SMS ahora."
       },
       "integrations": {
-        "marker": { "label": "Se conecta con tu PMS", "meta": "AVImark · Cornerstone · eVetPractice · Provet Cloud · ezyVet" },
+        "marker": {
+          "label": "Se conecta con tu PMS",
+          "meta": "AVImark · Cornerstone · eVetPractice · Provet Cloud · ezyVet"
+        },
         "headline": "Tu PMS, pautas de vacunación, rotación de guardias.",
         "intro": "Integramos con todos los sistemas habituales veterinarios. Fichas de mascota, historiales de vacunación y contactos de guardia sincronizados: sin doble carga."
       },
       "outcomes": {
-        "marker": { "label": "Qué esperar", "meta": "Rangos · no garantías" },
+        "marker": {
+          "label": "Qué esperar",
+          "meta": "Rangos · no garantías"
+        },
         "headline": "Cada urgencia con triage, cada vacuna en plazo.",
         "intro": "Rangos sacados de benchmarks veterinarios sobre cobertura 24/7, cumplimiento de pauta vacunal y no-shows en pequeños animales. El diagnóstico fija los objetivos exactos que firmamos, medidos contra el historial de tu PMS.",
         "items": {
-          "emergenciesTriaged": { "value": "100%", "label": "llamadas fuera de horario con triage · 24/7" },
-          "vaccinationCompliance": { "value": "+20% a +40%", "label": "vacunaciones en plazo con recordatorios" },
-          "noShowReduction": { "value": "−30% a −40%", "label": "no-shows en 8 semanas" }
+          "emergenciesTriaged": {
+            "value": "100%",
+            "label": "llamadas fuera de horario con triage · 24/7"
+          },
+          "vaccinationCompliance": {
+            "value": "+20% a +40%",
+            "label": "vacunaciones en plazo con recordatorios"
+          },
+          "noShowReduction": {
+            "value": "−30% a −40%",
+            "label": "no-shows en 8 semanas"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Lo que los dueños de clínica preguntan", "meta": "Respuestas planas" },
+        "marker": {
+          "label": "Lo que los dueños de clínica preguntan",
+          "meta": "Respuestas planas"
+        },
         "headline": "Lo que los veterinarios preguntan antes de pasarnos la guardia.",
         "items": {
           "emergencyTriage": {
@@ -1486,7 +1644,10 @@
         }
       },
       "pain": {
-        "marker": { "label": "El dolor", "meta": "Lo que siente cada escuela" },
+        "marker": {
+          "label": "El dolor",
+          "meta": "Lo que siente cada escuela"
+        },
         "headline": "Los leads llegan en 12 idiomas. Tu equipo contesta en dos.",
         "intro": "La demanda en escuelas de idiomas tiene una asimetría brutal: leads llegan en todos los idiomas, a todas horas, con todos los niveles de intención. La mayoría de escuelas contesta en 24 horas, en un idioma, con la misma plantilla. La brecha de conversión es el coste.",
         "items": {
@@ -1513,7 +1674,10 @@
         }
       },
       "roles": {
-        "marker": { "label": "Qué hace el agente", "meta": "En el idioma del que escribe" },
+        "marker": {
+          "label": "Qué hace el agente",
+          "meta": "En el idioma del que escribe"
+        },
         "headline": "Lead respondido al instante. Padre atendido en su idioma. Alumno enganchado entre clases.",
         "intro": "Decidimos en el diagnóstico qué cursos, niveles y audiencias puede atender el agente, qué deja siempre al equipo de admisiones y en qué idiomas operamos por defecto. Lo que requiere humano se escribe antes de salir en vivo.",
         "items": {
@@ -1540,7 +1704,10 @@
         }
       },
       "conversation": {
-        "marker": { "label": "Cómo suena", "meta": "Ejemplo real · WhatsApp" },
+        "marker": {
+          "label": "Cómo suena",
+          "meta": "Ejemplo real · WhatsApp"
+        },
         "headline": "Una madre buscando inglés para su hijo, clase de prueba reservada.",
         "intro": "El mensaje que llega a las nueve de la noche cuando admisiones ya cerró. Los nombres son inventados; las opciones de grupo y 1:1 son las que tu escuela configurará en setup.",
         "t1": "Hola, busco clases de inglés para mi hijo de 10 años, ¿qué tienen?",
@@ -1549,22 +1716,40 @@
         "t4": "Sin problema. Te reservo una clase de prueba gratuita el sábado 11:00 con Marta; ella evalúa el nivel y te recomienda el formato. Te paso el enlace de Zoom y una nota de preparación 24h antes."
       },
       "integrations": {
-        "marker": { "label": "Se conecta con lo que ya usas", "meta": "Google Calendar · Calendly · Stripe · Mailchimp · HubSpot · LMS custom" },
+        "marker": {
+          "label": "Se conecta con lo que ya usas",
+          "meta": "Google Calendar · Calendly · Stripe · Mailchimp · HubSpot · LMS custom"
+        },
         "headline": "Tu calendario, tu cobro, tu CRM.",
         "intro": "Integramos con tu stack de agenda, cobro y gestión de alumnos. Si tu LMS tiene API, leemos matrículas y asistencia en vivo; si no, corremos sobre Google Calendar + Stripe + tu hoja de control."
       },
       "outcomes": {
-        "marker": { "label": "Qué esperar", "meta": "Rangos · no garantías" },
+        "marker": {
+          "label": "Qué esperar",
+          "meta": "Rangos · no garantías"
+        },
         "headline": "Prueba a matrícula arriba, padres atendidos, alumnos que no se caen.",
         "intro": "Rangos sacados de datos del sector edu-tech sobre funnels de clase de prueba, atención multilingüe a padres y retención a mitad de curso. El diagnóstico los traduce a los objetivos firmados, medidos contra tu cohorte de los últimos dos trimestres.",
         "items": {
-          "trialToEnroll": { "value": "+15% a +30%", "label": "conversión clase prueba → matrícula" },
-          "parentQuestionsHandled": { "value": "60% a 80%", "label": "preguntas rutinarias de padres resueltas por el agente" },
-          "retentionLift": { "value": "+10% a +20%", "label": "retención de alumnos con secuencia de check-in" }
+          "trialToEnroll": {
+            "value": "+15% a +30%",
+            "label": "conversión clase prueba → matrícula"
+          },
+          "parentQuestionsHandled": {
+            "value": "60% a 80%",
+            "label": "preguntas rutinarias de padres resueltas por el agente"
+          },
+          "retentionLift": {
+            "value": "+10% a +20%",
+            "label": "retención de alumnos con secuencia de check-in"
+          }
         }
       },
       "faq": {
-        "marker": { "label": "Lo que los dueños de escuela preguntan", "meta": "Respuestas planas" },
+        "marker": {
+          "label": "Lo que los dueños de escuela preguntan",
+          "meta": "Respuestas planas"
+        },
         "headline": "Lo que los dueños de escuela preguntan antes de soltarnos los leads de matrícula.",
         "items": {
           "multilingual": {
@@ -1617,7 +1802,10 @@
       "ctaMicrocopy": "Hablas con un engineer, no con un comercial. Salimos con un go/no-go."
     },
     "category": {
-      "marker": { "label": "Por qué un agente de IA para WhatsApp", "meta": "No es un chatbot" },
+      "marker": {
+        "label": "Por qué un agente de IA para WhatsApp",
+        "meta": "No es un chatbot"
+      },
       "headline": "Un agente de IA no es un chatbot.",
       "intro": "Un chatbot responde. Un agente de IA decide, reserva, escala y recuerda el contexto a lo largo de toda la conversación. La diferencia se ve en el segundo en que el cliente pregunta algo que un árbol de menús no cubre.",
       "definitions": {
@@ -1636,7 +1824,10 @@
       }
     },
     "comparison": {
-      "marker": { "label": "Plataforma vs agencia vs Auphere", "meta": "Cómo decide la compra realmente" },
+      "marker": {
+        "label": "Plataforma vs agencia vs Auphere",
+        "meta": "Cómo decide la compra realmente"
+      },
       "headline": "Tres caminos. Dos te dejan el trabajo.",
       "intro": "Casi todo el que busca un agente de WhatsApp termina eligiendo entre un SaaS que configura, una agencia que entrega y desaparece, o un equipo interno que no tiene. La tercera columna es lo que hace Auphere.",
       "columns": {
@@ -1673,7 +1864,10 @@
       }
     },
     "useCases": {
-      "marker": { "label": "Qué hace el agente en WhatsApp", "meta": "Se elige en el diagnóstico" },
+      "marker": {
+        "label": "Qué hace el agente en WhatsApp",
+        "meta": "Se elige en el diagnóstico"
+      },
       "headline": "Cinco trabajos fuera de la bandeja de tu equipo.",
       "intro": "Casi toda operación necesita dos o tres de los cinco. El diagnóstico decide cuáles, y el resto se queda apagado. Aquí no hay nada que tengas que activar a la fuerza.",
       "items": {
@@ -1705,7 +1899,10 @@
       }
     },
     "compliance": {
-      "marker": { "label": "Política Meta 2026", "meta": "La parte que nadie explica" },
+      "marker": {
+        "label": "Política Meta 2026",
+        "meta": "La parte que nadie explica"
+      },
       "headline": "El cambio de política que nadie te avisó.",
       "intro": "Meta actualizó los términos de la WhatsApp Business API en 2026. El cambio mató en silencio toda una categoría de bots de IA y abrió otra. Muchas agencias siguen vendiendo la que mataron.",
       "blocks": {
@@ -1725,7 +1922,10 @@
       "footnote": "Última revisión: mayo 2026. La política de Meta es un documento vivo. Lo revisamos cada trimestre y avisamos al cliente cuando se mueve."
     },
     "benchmarks": {
-      "marker": { "label": "Lo que suele moverse en 8 semanas", "meta": "Rangos · no garantías" },
+      "marker": {
+        "label": "Lo que suele moverse en 8 semanas",
+        "meta": "Rangos · no garantías"
+      },
       "headline": "Las cuatro cifras que firmamos.",
       "intro": "Rangos sacados de investigación de WhatsApp Business, reportes de Yalo, Respond.io y Twixor, y los primeros despliegues de Auphere. El diagnóstico fija el número exacto al que firmamos, medido contra tu operación actual.",
       "items": {
@@ -1752,7 +1952,10 @@
       }
     },
     "conversations": {
-      "marker": { "label": "Cómo suena", "meta": "Tres flujos reales · WhatsApp" },
+      "marker": {
+        "label": "Cómo suena",
+        "meta": "Tres flujos reales · WhatsApp"
+      },
       "headline": "Tres conversaciones, tres verticales, un mismo motor.",
       "intro": "Tres flujos que el agente atiende todos los días. Nombres inventados; la lógica y los puntos de handoff son exactamente los que verían tus clientes.",
       "flows": {
@@ -1790,7 +1993,10 @@
       }
     },
     "qualifier": {
-      "marker": { "label": "¿Es para ti?", "meta": "Filtro honesto · 3 + 2" },
+      "marker": {
+        "label": "¿Es para ti?",
+        "meta": "Filtro honesto · 3 + 2"
+      },
       "headline": "Pensado para equipos que ya mueven volumen real en WhatsApp.",
       "yesTitle": "Es para ti si…",
       "yes": {
@@ -1805,7 +2011,10 @@
       }
     },
     "faq": {
-      "marker": { "label": "FAQ", "meta": "Respuestas planas · sin marketing" },
+      "marker": {
+        "label": "FAQ",
+        "meta": "Respuestas planas · sin marketing"
+      },
       "headline": "Lo que los equipos preguntan antes de ponernos en WhatsApp.",
       "intro": "Si la tuya no está, déjala en la llamada de diagnóstico.",
       "items": {
@@ -2294,6 +2503,76 @@
       "privacy": "Privacidad",
       "terms": "Términos",
       "trust": "Trust & Seguridad"
+    }
+  },
+  "threeWays": {
+    "marker": {
+      "label": "Tres formas de trabajar",
+      "meta": "Elige tu puerta en 8 segundos"
+    },
+    "headline": "Una plataforma. Tres formas de trabajar con ella.",
+    "tracks": {
+      "hire": {
+        "verb": "Contrátalo",
+        "who": "Para tu operación",
+        "body": "Tu agente, construido alrededor de tu negocio y operado 24/7 por nosotros.",
+        "cta": "Ver la plataforma",
+        "href": "/platform"
+      },
+      "resell": {
+        "verb": "Revéndelo",
+        "who": "Tu marca, tu cliente",
+        "body": "Vendes IA a tu cartera sin construir la plataforma. Nosotros operamos; tú facturas.",
+        "cta": "Programa de partners",
+        "href": "/partners"
+      },
+      "embed": {
+        "verb": "Intégralo",
+        "who": "Dentro de tu producto",
+        "body": "IA en tu SaaS o plataforma vía API: tu marca, tu factura, nuestra infraestructura.",
+        "cta": "Auphere Embedded",
+        "href": "/partners/embedded"
+      }
+    }
+  },
+  "capabilities": {
+    "marker": {
+      "label": "Lo que ya sabe hacer",
+      "meta": "Verificado contra el código, no contra el pitch"
+    },
+    "headline": "Lo que tu agente ya sabe hacer.",
+    "intro": "Nada de esta lista es roadmap. Todo está en producción hoy.",
+    "cells": {
+      "media": {
+        "title": "Entiende audios y fotos, no solo texto",
+        "body": "Los audios y las fotos que te mandan tus clientes, entendidos y respondidos.",
+        "detail": "Transcribe las notas de voz y lee las imágenes que llegan por WhatsApp o Instagram: el comprobante de pago, la foto del producto, el audio de dos minutos con toda la historia. Tu cliente escribe como escribe; el agente se adapta."
+      },
+      "memory": {
+        "title": "Recuerda a cada cliente entre conversaciones",
+        "body": "La conversación de hoy sabe lo que pasó el mes pasado.",
+        "detail": "Memoria por cliente final: preferencias, historial, contexto. Es lo único de esta lista que tu cliente percibe directamente — y lo que convierte un bot en un agente."
+      },
+      "jobs": {
+        "title": "Reserva, recuerda, persigue impagos y recupera ausencias — solo",
+        "body": "Los cuatro trabajos que más horas queman, sin que nadie los empuje.",
+        "detail": "Reservas con confirmación y reagendado de un toque, recordatorios que reducen no-shows, seguimiento de impagos en calma y recuperación de clientes ausentes. Cada flujo se activa solo si tu operación lo necesita."
+      },
+      "browser": {
+        "title": "Usa tu software aunque no tenga API",
+        "body": "Si tu gestión solo tiene pantalla, el agente la usa igual.",
+        "detail": "Sesión de navegador operada por el agente: reserva en el panel de tu software legacy exactamente como lo haría una persona. El software que ya tienes deja de ser una excusa."
+      },
+      "escalation": {
+        "title": "Sabe cuándo callarse y pasar a una persona",
+        "body": "Tres disparadores, contexto completo, inbox nominal.",
+        "detail": "Fuera de alcance, petición explícita o confianza baja: el agente escala a tu equipo con toda la conversación. Es también lo que exige la Ley 10/2025 desde diciembre — tu agente ya cumple."
+      },
+      "hygiene": {
+        "title": "Vigila la reputación de tu número ante Meta",
+        "body": "El miedo real de operar WhatsApp, gestionado de serie.",
+        "detail": "Monitoreo de la calidad del número, plantillas aprobadas y ritmo de envío que no dispara alarmas. Un número quemado es un canal muerto: lo cuidamos como parte del servicio."
+      }
     }
   }
 }

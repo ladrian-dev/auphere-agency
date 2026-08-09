@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { Container } from '@/components/primitives/Container';
 import { SectionMarker } from '@/components/primitives/SectionMarker';
 import { cn } from '@/lib/utils/cn';
@@ -194,6 +195,14 @@ export function Pricing() {
         {/* Microcopy */}
         <p className="mt-8 text-center text-[13px] text-[var(--color-ink-muted)] max-w-2xl mx-auto">
           {t('microcopy')}
+        </p>
+
+        {/* §6.1 [04] — único añadido permitido al bloque de precios congelado */}
+        <p className="mt-10 text-center text-[14px] text-[var(--color-ink-muted)]">
+          {t('partnersLine.text')}{' '}
+          <Link href="/partners" className="font-medium text-[var(--color-bangladesh-green)] hover:underline underline-offset-4">
+            {t('partnersLine.cta')}
+          </Link>
         </p>
       </Container>
     </section>
