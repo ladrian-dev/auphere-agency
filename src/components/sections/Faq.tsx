@@ -7,31 +7,45 @@ import { SectionMarker } from '@/components/primitives/SectionMarker';
 import { cn } from '@/lib/utils/cn';
 import type { FaqItemData } from './faq-utils';
 
+interface FaqHeader {
+  label: string;
+  meta: string;
+  headline: string;
+  intro: string;
+}
+
 export function Faq({
   items,
   namespace = 'faq',
   sectionNumber = '05',
+  header,
 }: {
   items: FaqItemData[];
   namespace?: string;
   sectionNumber?: string;
+  /** Header copy passed directly (content-module pages). Overrides namespace lookups. */
+  header?: FaqHeader;
 }) {
   // next-intl types the namespace as a strict literal union; we accept any
   // string here so this component can be reused by multiple landing pages.
   const t = useTranslations(namespace as Parameters<typeof useTranslations>[0]);
+  const label = header?.label ?? t('marker.label');
+  const meta = header?.meta ?? t('marker.meta');
+  const headline = header?.headline ?? t('headline');
+  const intro = header?.intro ?? t('intro');
 
   return (
     <section id="faq" className="py-24 md:py-32">
-      <SectionMarker number={sectionNumber} label={t('marker.label')} meta={t('marker.meta')} />
+      <SectionMarker number={sectionNumber} label={label} meta={meta} />
 
       <Container width="default">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20">
           <div className="lg:sticky lg:top-24 lg:self-start">
             <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.03em]">
-              {t('headline')}
+              {headline}
             </h2>
             <p className="text-[var(--color-ink-muted)] mt-5 leading-relaxed">
-              {t('intro')}
+              {intro}
             </p>
           </div>
 

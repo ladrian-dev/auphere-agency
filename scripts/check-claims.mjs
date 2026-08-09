@@ -49,9 +49,12 @@ for (const c of CLAIMS) {
 const violations = [];
 for (const claim of CLAIMS) {
   if (claim.status === 'live' || !claim.forbiddenPatterns) continue;
+  // `dated` claims may be discussed in their allowedFiles (honesty-table
+  // pattern: always accompanied by their date). `blocked` has no waiver.
+  const allowed = claim.status === 'dated' ? (claim.allowedFiles ?? []) : [];
   for (const pattern of claim.forbiddenPatterns) {
     const re = new RegExp(pattern, 'gi');
-    for (const file of files) {
+    for (const file of files.filter((f) => !allowed.some((a) => f.endsWith(a)))) {
       const text = readFileSync(file, 'utf8');
       const lines = text.split('\n');
       lines.forEach((line, i) => {

@@ -6,7 +6,7 @@ const CAL_LINK =
   process.env.NEXT_PUBLIC_CAL_LINK ||
   'auphere-team/diagnostico-auphere-30-min-sin-coste';
 
-export function CalEmbed() {
+export function CalEmbed({ calLink = CAL_LINK }: { calLink?: string } = {}) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [shouldLoad, setShouldLoad] = useState(false);
 
@@ -71,7 +71,7 @@ export function CalEmbed() {
     >
       {shouldLoad ? (
         <Cal
-          calLink={CAL_LINK}
+          calLink={calLink}
           config={{
             layout: 'month_view',
             theme: 'light',

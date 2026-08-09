@@ -30,6 +30,10 @@ export interface Claim {
   /** Regex (case-insensitive) que NO puede aparecer en messages/ ni en
    *  src/content/ mientras el claim no sea `live`. */
   forbiddenPatterns?: string[];
+  /** Archivos (relativos a la raíz) donde un claim `dated` SÍ puede
+   *  discutirse — porque lo hace con su fecha (patrón tabla de honestidad).
+   *  No aplica a `blocked`: bloqueado es bloqueado en todas partes. */
+  allowedFiles?: string[];
 }
 
 export const CLAIMS: readonly Claim[] = [
@@ -141,6 +145,7 @@ export const CLAIMS: readonly Claim[] = [
       en: '99.5% SLA with service credits — available from Q4 2026',
     },
     forbiddenPatterns: ['SLA de disponibilidad', 'availability SLA', '99[.,]\\d\\s?%\\s?(de\\s)?(disponibilidad|uptime|availability)?'],
+    allowedFiles: ['src/content/enterprise.ts'],
   },
   {
     id: 'resolution-guarantee',
