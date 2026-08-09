@@ -1,5 +1,6 @@
 "use client";
 import type { ReactNode } from "react";
+import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/primitives/Container";
 import { Eyebrow } from "@/components/primitives/Eyebrow";
 import { SplitText } from "@/components/motion/SplitText";
@@ -127,7 +128,7 @@ export function MarketingHero({
           </p>
 
           <div className="mt-7 flex flex-col sm:flex-row gap-3">
-            <a
+            <CtaLink
               href={ctaPrimary.href ?? "#book"}
               className={cn(
                 "inline-flex items-center justify-center gap-2 h-[52px] px-[28px]",
@@ -139,10 +140,10 @@ export function MarketingHero({
               )}
             >
               {ctaPrimary.label}
-            </a>
+            </CtaLink>
 
             {ctaSecondary && (
-              <a
+              <CtaLink
                 href={ctaSecondary.href ?? "#how"}
                 className={cn(
                   "inline-flex items-center justify-center gap-2 h-[52px] px-[24px]",
@@ -152,7 +153,7 @@ export function MarketingHero({
                 )}
               >
                 {ctaSecondary.label}
-              </a>
+              </CtaLink>
             )}
           </div>
 
@@ -170,5 +171,21 @@ export function MarketingHero({
         </div>
       </Container>
     </section>
+  );
+}
+
+/** Route hrefs go through the i18n Link (locale-aware); hash hrefs stay plain anchors. */
+function CtaLink({ href, className, children }: { href: string; className?: string; children: ReactNode }) {
+  if (href.startsWith("/")) {
+    return (
+      <Link href={href} className={className}>
+        {children}
+      </Link>
+    );
+  }
+  return (
+    <a href={href} className={className}>
+      {children}
+    </a>
   );
 }

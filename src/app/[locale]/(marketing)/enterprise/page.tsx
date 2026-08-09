@@ -276,7 +276,7 @@ export default async function EnterprisePage({ params }: Props) {
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl">
             {launchProgram.items.map((item, i) => (
               <li key={i} className="flex items-start gap-4 rounded-xl border border-[var(--color-bone)]/12 p-5">
-                <span aria-hidden className="font-mono text-[11px] tracking-[0.18em] opacity-45 mt-1">
+                <span aria-hidden className="font-mono text-[11px] tracking-[0.18em] opacity-60 mt-1">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <span className="text-[15px] leading-relaxed opacity-85">{pick(item)}</span>

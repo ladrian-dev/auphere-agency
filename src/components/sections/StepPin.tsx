@@ -49,7 +49,7 @@ export function StepPin() {
         if (i > 0) {
           tl.to(steps[i - 1]!, { opacity: 0.28, duration: 0.18 }, at);
           tl.to(step, { opacity: 1, duration: 0.18 }, at);
-          tl.to(numbers[i - 1]!, { color: 'var(--color-ink-dim)', duration: 0.18 }, at);
+          tl.to(numbers[i - 1]!, { color: 'var(--color-ink-muted)', duration: 0.18 }, at);
         }
         tl.to(numbers[i]!, { color: 'var(--color-caribbean-green)', duration: 0.18 }, at);
       });
@@ -80,7 +80,7 @@ export function StepPin() {
           <div className="col-span-2 lg:col-span-1 grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-8">
             {STEP_KEYS.map((key, i) => (
               <article key={key} data-step className="flex flex-col gap-4">
-                <p data-step-number className="font-mono text-[12px] tracking-[0.18em] text-[var(--color-ink-dim)]">
+                <p data-step-number className="font-mono text-[12px] tracking-[0.18em] text-[var(--color-ink-muted)]">
                   {String(i + 1).padStart(2, '0')} / {String(STEP_KEYS.length).padStart(2, '0')}
                 </p>
                 <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">

@@ -60,9 +60,9 @@
   /* Escala de datos para tablas de garantías (✅ / — / 🗓).
    * Base calibrada para bone; la utility surface-deep las remapea a las
    * variantes brillantes para mantener contraste sobre oscuro. */
-  --color-data-positive:     var(--color-frog);
+  --color-data-positive:     var(--color-forest);   /* AA sobre bone (frog daba 4.1:1) */
   --color-data-neutral:      color-mix(in srgb, var(--color-ink) 45%, var(--color-bone));
-  --color-data-pending:      #A1793F;
+  --color-data-pending:      #8A5A15;               /* AA sobre bone */
 
   /* Medidas tipográficas por género de página */
   --measure-editorial: 58ch;

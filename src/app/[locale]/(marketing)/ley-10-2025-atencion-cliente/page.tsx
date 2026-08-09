@@ -157,7 +157,7 @@ export default async function Ley102025Page({ params }: Props) {
               <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)] mt-3">
                 {leyHero.daysLabel}
               </p>
-              <p className="font-mono text-[11px] text-[var(--color-ink-dim)] mt-1">28 · 12 · 2026</p>
+              <p className="font-mono text-[11px] text-[var(--color-ink-muted)] mt-1">28 · 12 · 2026</p>
             </div>
           </div>
         </Container>
@@ -228,7 +228,7 @@ export default async function Ley102025Page({ params }: Props) {
             {leyCompliance.items.map((item, i) => (
               <div key={i} className="border-t border-[var(--color-bone)]/20 pt-5">
                 <h3 className="font-display font-semibold text-[17px] tracking-[-0.01em] text-[var(--color-bone)]">{item.title}</h3>
-                <p className="text-[14px] leading-relaxed text-[var(--color-bone)]/65 mt-2.5">{item.body}</p>
+                <p className="text-[14px] leading-relaxed text-[var(--color-bone)]/85 mt-2.5">{item.body}</p>
               </div>
             ))}
           </div>
@@ -281,7 +281,7 @@ export default async function Ley102025Page({ params }: Props) {
           <h2 className="font-display font-bold text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] tracking-[-0.03em] text-[var(--color-bone)] max-w-3xl mx-auto">
             {leyCta.headline}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.45] text-[var(--color-bone)]/70 mt-5 max-w-2xl mx-auto">
+          <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.45] text-[var(--color-bone)]/85 mt-5 max-w-2xl mx-auto">
             {leyCta.body}
           </p>
           <div className="mt-9">

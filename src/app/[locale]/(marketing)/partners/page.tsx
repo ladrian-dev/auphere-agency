@@ -358,7 +358,7 @@ export default async function PartnersPage({ params }: Props) {
           <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.03em] text-[var(--color-bone)] mt-6 max-w-3xl mx-auto">
             {pick(partnersFinalCta.headline)}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.45] text-[var(--color-bone)]/70 mt-5 max-w-2xl mx-auto">
+          <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.45] text-[var(--color-bone)]/85 mt-5 max-w-2xl mx-auto">
             {pick(partnersFinalCta.body)}
           </p>
           <div className="mt-9">

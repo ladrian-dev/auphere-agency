@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { Container } from '@/components/primitives/Container';
 import { Eyebrow } from '@/components/primitives/Eyebrow';
 import { CalEmbed } from './CalEmbed';
+import { CtaHalo } from '@/components/motion/CtaHalo';
 
 export function FinalCta() {
   const t = useTranslations('finalCta');
@@ -25,7 +26,12 @@ export function FinalCta() {
           </p>
         </div>
 
-        <CalEmbed />
+        <div className="relative">
+          <CtaHalo />
+          <div className="relative">
+            <CalEmbed />
+          </div>
+        </div>
 
         <p className="text-center mt-8 text-[13px] text-[var(--color-bone)]/60">
           {t('microcopy')}
