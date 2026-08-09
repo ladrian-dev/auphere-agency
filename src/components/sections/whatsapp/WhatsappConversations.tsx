@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { useRef } from 'react';
 import { useAuphereGSAP } from '@/lib/motion/gsap';
+import { onEnter } from '@/lib/motion/on-enter';
 import { Container } from '@/components/primitives/Container';
 import { SectionMarker } from '@/components/primitives/SectionMarker';
 import { cn } from '@/lib/utils/cn';
@@ -100,16 +101,17 @@ function ConversationCard({ flow }: { flow: FlowKey }) {
   useAuphereGSAP(
     ({ reduced, gsap }) => {
       const figure = figureRef.current;
-      if (!figure || reduced) return;
+      if (!figure || reduced) return undefined;
       const turnEls = figure.querySelectorAll<HTMLElement>('[data-chat-turn]');
       gsap.set(figure, { opacity: 0, y: 20 });
       gsap.set(turnEls, { opacity: 0, y: 8 });
-      const tl = gsap.timeline({ scrollTrigger: { trigger: figure, start: 'top 80%', once: true } });
+      const tl = gsap.timeline({ paused: true });
       tl.to(figure, { opacity: 1, y: 0, duration: 0.7, ease: 'auphere', clearProps: 'transform' }).to(
         turnEls,
         { opacity: 1, y: 0, duration: 0.35, ease: 'auphere', stagger: 0.15, clearProps: 'transform' },
         0.4,
       );
+      return onEnter(figure, () => tl.play());
     },
     { scope: figureRef },
   );

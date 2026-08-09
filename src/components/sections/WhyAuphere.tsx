@@ -1,17 +1,21 @@
+'use client';
 import { useTranslations } from 'next-intl';
 import { Container } from '@/components/primitives/Container';
 import { SectionMarker } from '@/components/primitives/SectionMarker';
 import { StaggerGrid, StaggerItem } from '@/components/motion/StaggerGrid';
+import { useStageInset } from '@/components/motion/narrative/NarrativeSequence';
+import { cn } from '@/lib/utils/cn';
 
 const PROMISES = ['production', 'compliance', 'isolation', 'oneTeam'] as const;
 
 export function WhyAuphere() {
   const t = useTranslations('whyAuphere');
+  const inset = useStageInset();
 
   return (
     <section id="why" className="py-20 md:py-28 surface-darker">
       <SectionMarker
-        number="02"
+        number="04"
         label={t('marker.label')}
         meta={t('marker.meta')}
         variant="dark"
@@ -27,7 +31,7 @@ export function WhyAuphere() {
           </p>
         </div>
 
-        <StaggerGrid className="grid grid-cols-1 md:grid-cols-2 gap-[20px] md:gap-[24px]">
+        <StaggerGrid className={cn('grid grid-cols-1 md:grid-cols-2 gap-[20px] md:gap-[24px]', inset && 'xl:grid-cols-1')}>
           {PROMISES.map((key, i) => (
             <StaggerItem
               key={key}

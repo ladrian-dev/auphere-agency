@@ -23,11 +23,13 @@ export function Logo({ className, height = 32, variant = 'default', priority = f
       width={Math.round(height * 5)}
       priority={priority}
       className={cn(
-        'w-auto select-none',
+        'select-none',
         variant === 'dark' ? 'invert brightness-0' : '',
         className,
       )}
-      style={{ height: `${height}px` }}
+      // Ambas dimensiones en el style: con solo `height` (o solo la utilidad
+      // `w-auto`) Next avisa en cada carga de que se modificó una sin la otra.
+      style={{ height: `${height}px`, width: 'auto' }}
     />
   );
 }

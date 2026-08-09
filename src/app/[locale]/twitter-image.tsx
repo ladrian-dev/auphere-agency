@@ -18,8 +18,7 @@ export default async function TwitterImage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: 'hero' });
   const tMeta = await getTranslations({ locale, namespace: 'meta' });
 
-  const headlineLine1 = t('headlineLine1');
-  const headlineLine2 = t('headlineLine2');
+  const headline = t('headline');
   const eyebrow =
     locale === 'es'
       ? 'AGENTES DE IA · BESPOKE + MANAGED'
@@ -66,11 +65,8 @@ export default async function TwitterImage({ params }: Props) {
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8, maxWidth: 920 }}>
-          <div style={{ fontSize: 84, fontWeight: 600, lineHeight: 1.02, letterSpacing: '-0.03em', color: '#F1F7F6' }}>
-            {headlineLine1}
-          </div>
-          <div style={{ fontSize: 84, fontWeight: 600, lineHeight: 1.02, letterSpacing: '-0.03em', color: 'rgba(241,247,246,0.55)' }}>
-            {headlineLine2}
+          <div style={{ fontSize: 76, fontWeight: 600, lineHeight: 1.04, letterSpacing: '-0.03em', color: '#F1F7F6' }}>
+            {headline}
           </div>
         </div>
 

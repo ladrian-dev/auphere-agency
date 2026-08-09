@@ -10,7 +10,6 @@
     "howItWorks": "Cómo trabajamos",
     "useCases": "Casos de uso",
     "cases": "Casos",
-    "pricing": "Precios",
     "faq": "FAQ",
     "cta": "Reservar",
     "platform": "Plataforma",
@@ -56,26 +55,13 @@
   },
   "hero": {
     "eyebrow": "INFRAESTRUCTURA DE IA OPERADA · UE",
-    "headlineLine1": "Construimos, operamos y respondemos por",
-    "headlineLine2": "tu agente de IA en producción.",
-    "subheadline": "El 40% de los proyectos de agentes se cancela antes de llegar a producción. Nosotros vivimos de que el tuyo no.",
+    "subheadline": "Atiende a tus clientes en WhatsApp, Instagram y voz. Nosotros lo desplegamos, lo supervisamos 24/7 y lo mejoramos cada mes.",
     "ctaPrimary": "Reservar diagnóstico · 30 min",
     "ctaSecondary": "Ver la plataforma →",
-    "ctaMicrocopy": "Hablas con un engineer, no con un comercial.",
-    "chat": {
-      "businessName": "Tu negocio",
-      "subtitle": "Agente Auphere · WhatsApp",
-      "online": "activo",
-      "m1": "Hola, ¿tenéis hueco esta tarde para masaje descontracturante?",
-      "m2": "¡Hola! Tengo hueco a las 17:30 con Carla o a las 19:00 con Marina. ¿Cuál prefieres?",
-      "m3": "17:30 perfecto",
-      "m4": "Reservado ✓ Te paso confirmación y enlace para reprogramar si surge algo. Hasta esta tarde."
-    },
-    "trustLine": "UE · art. 50 por diseño · Ley 10/2025 ready",
     "orchestrator": {
       "whatsapp": "WhatsApp",
       "instagram": "Instagram",
-      "tiktok": "TikTok",
+      "tiktok": "TikTok · pronto",
       "voice": "Voz",
       "classifier": "Clasifica",
       "calendar": "Calendario",
@@ -84,35 +70,36 @@
       "browser": "Navegador",
       "response": "Responde",
       "human": "Humano"
-    }
+    },
+    "headline": "Tu agente de IA, construido y operado por nosotros."
   },
   "howWeWork": {
     "marker": {
       "label": "Cómo trabajamos",
-      "meta": "3 etapas · honestas"
+      "meta": "3 etapas · 3 a 6 semanas"
     },
-    "headline": "Diagnóstico · Configuración · Go Live.",
-    "intro": "Empezamos decidiendo juntos si automatizar realmente resuelve tu problema. Si no, te lo decimos. Si sí, sales con un plan escrito.",
+    "headline": "De la primera llamada a producción, en tres etapas.",
+    "intro": "Cada etapa cierra con algo que puedes leer: un plan, una versión que apruebas, un informe de rendimiento.",
     "steps": {
       "diagnose": {
         "timing": "30 min",
         "title": "Diagnóstico",
-        "body": "Una llamada de 30 minutos con tu equipo para mirar tu operación con honestidad y decidir juntos si automatizar realmente resuelve tu problema. Si no es así, te lo decimos sin rodeos. Si sí, sales con un plan escrito: qué flujos, qué integraciones, cuánto cuesta, qué esperar."
+        "body": "Media hora con tu equipo para ver dónde se va hoy el tiempo. Si automatizar no es la respuesta, lo decimos y ahí termina. Si lo es, sales con el alcance por escrito: qué flujos, qué integraciones, qué coste y qué esperar en qué semana."
       },
       "configure": {
         "timing": "2 a 6 semanas",
         "title": "Configuración",
-        "body": "Construimos tu agente end-to-end: integraciones con las herramientas que ya usas, entrenamiento con tus datos reales, personalización a tu voz y a tus reglas de negocio. Revisas cada sprint y apruebas cada versión antes de que se promueva a producción."
+        "body": "Integramos con las herramientas que ya usas, entrenamos el agente con tus datos y lo ajustamos a tu voz y a tus reglas de negocio. Revisas cada iteración y ninguna versión llega a producción sin tu aprobación."
       },
       "goLive": {
         "timing": "Continuo · 24/7",
-        "title": "Go Live",
-        "body": "Tu agente entra en producción. Lo monitoreamos 24/7, medimos su rendimiento contra las métricas pactadas en el diagnóstico y lo mejoramos mes a mes. Tienes línea directa por WhatsApp con el equipo que lo opera. Tu equipo se enfoca en el trabajo que requiere un humano."
+        "title": "En producción",
+        "body": "El agente empieza a atender. Nosotros supervisamos su funcionamiento, medimos las métricas acordadas en el diagnóstico y lo mejoramos cada mes. Tienes contacto directo con el equipo que lo opera."
       }
     }
   },
   "pullQuote": {
-    "text": "La mayoría de los proyectos de IA se muere antes de llegar a producción. Nosotros vivimos de que el tuyo no.",
+    "text": "Un agente que nadie opera es una demo con factura mensual.",
     "attribution": "Auphere"
   },
   "cases": {
@@ -128,136 +115,60 @@
   "whyAuphere": {
     "marker": {
       "label": "Por qué Auphere",
-      "meta": "4 promesas · cero hype"
+      "meta": "4 compromisos"
     },
-    "headline": "Vive en producción, o no vale.",
-    "intro": "La categoría entera vende demos. Auphere vende el tramo donde los demás fallan: la producción, y responder por ella.",
+    "headline": "Cuatro compromisos que puedes verificar.",
+    "intro": "Gartner estima que el 40% de los proyectos de agentes se cancelará antes de llegar a producción. El tramo que falla —desplegar, operar y responder por ello— es exactamente el que vendemos.",
     "promises": {
       "production": {
-        "title": "Vive en producción o no vale.",
-        "body": "El 40% de los proyectos de agentes se cancela antes de llegar a producción; solo una minoría de las organizaciones ha escalado uno. Vendemos exactamente el tramo donde los demás fallan — y respondemos por él."
+        "title": "En producción, o no ha pasado nada.",
+        "body": "Medimos el proyecto por una sola cosa: si está atendiendo a clientes reales. Una demo, un piloto o un entorno de staging no cuentan como entrega, y no los facturamos como tal."
       },
       "compliance": {
-        "title": "Cumple por diseño, y lo dice de frente.",
-        "body": "Tu agente se identifica como IA (art. 50), escala a una persona desde el primer día (Ley 10/2025, antes de fecha) y publicamos la postura completa en /trust. La transparencia no es un riesgo comercial: convierte mejor."
+        "title": "Cumple por diseño y lo dice en voz alta.",
+        "body": "Tu agente se identifica como IA —art. 50 del Reglamento Europeo de IA— y escala a una persona desde el primer día, antes de que la Ley 10/2025 lo exija. La postura completa está publicada en /trust, no bajo NDA."
       },
       "isolation": {
-        "title": "Aislamiento verificable, no prometido.",
-        "body": "El aislamiento de tus datos lo impone la base de datos, no la buena fe del código: RLS, whitelist en dos puntos, auditoría bajo impersonación y tests que bloquean el despliegue si fallan."
+        "title": "El aislamiento lo impone la base de datos.",
+        "body": "No la buena fe del código: RLS forzado, whitelist en dos puntos, auditoría bajo impersonación y tests de aislamiento que bloquean el despliegue cuando fallan."
       },
       "oneTeam": {
-        "title": "Un solo equipo, con la operación por escrito.",
-        "body": "Quien hace el diagnóstico configura el agente y responde en producción. Sin subcontratas ni handoffs — y con runbooks, alertas con destinatario y continuidad pactada en el contrato, para que el bus factor no sea tu problema."
+        "title": "Quien lo vende es quien lo opera.",
+        "body": "El mismo equipo hace el diagnóstico, configura el agente y lo sostiene en producción. Sin subcontratas ni traspasos, con runbooks, alertas con destinatario y continuidad pactada en el contrato."
       }
-    }
-  },
-  "pricing": {
-    "marker": {
-      "label": "Precios",
-      "meta": "USD · imp. no incluidos"
-    },
-    "headline": "Números honestos. Cero facturas sorpresa.",
-    "intro": "Un diagnóstico cerrado, una configuración única y una mensualidad que escala con las conversaciones e integraciones que tu agente realmente usa.",
-    "toggle": {
-      "ariaLabel": "Periodicidad",
-      "monthly": "Mensual",
-      "yearly": "Anual",
-      "savings": "Ahorra 10%"
-    },
-    "setup": "Instalación (única)",
-    "monthly": "Mensual",
-    "perMonth": "mes",
-    "recommended": "★ Recomendado",
-    "cta": "Reservar diagnóstico",
-    "microcopy": "Cada plan empieza con un diagnóstico gratuito de 30 min. Pago: 50% al firmar · 50% al arrancar. Cancela cualquier mes después de los 3 primeros.",
-    "tiers": {
-      "essential": {
-        "name": "Esencial",
-        "tagline": "Para equipos compactos listos para automatizar un canal.",
-        "features": {
-          "volume": "Hasta 1.500 conversaciones / mes",
-          "channels": "1 canal (WhatsApp o web)",
-          "integrations": "Básicas (1–2 herramientas)",
-          "workflows": "Conversacional",
-          "cycle": "Mejora mensual"
-        }
-      },
-      "pro": {
-        "name": "Pro",
-        "tagline": "La mayoría de equipos aterriza aquí. Multicanal y workflows reales.",
-        "features": {
-          "volume": "Hasta 4.000 conversaciones / mes",
-          "channels": "Hasta 3 canales",
-          "integrations": "Estándar (hasta 5)",
-          "workflows": "Conversacional + acciones",
-          "cycle": "Mejora quincenal"
-        }
-      },
-      "business": {
-        "name": "Business 360",
-        "tagline": "Alto volumen, operación compleja, ventana de respuesta garantizada.",
-        "features": {
-          "volume": "Hasta 10.000 conversaciones / mes",
-          "channels": "Hasta 3 canales + SLA 4h",
-          "integrations": "Avanzadas (sin tope en scope acordado)",
-          "workflows": "Conversacional + acciones + reactivación",
-          "cycle": "Mejora semanal"
-        }
-      }
-    },
-    "features": {
-      "volume": {
-        "label": "Volumen"
-      },
-      "channels": {
-        "label": "Canales"
-      },
-      "integrations": {
-        "label": "Integraciones"
-      },
-      "workflows": {
-        "label": "Workflows"
-      },
-      "cycle": {
-        "label": "Mejora"
-      }
-    },
-    "partnersLine": {
-      "text": "¿Eres agencia o plataforma? El programa de partners tiene su propia economía.",
-      "cta": "Ver el programa →"
     }
   },
   "qualifier": {
     "marker": {
       "label": "¿Es para ti?",
-      "meta": "Filtro honesto · 4 + 3"
+      "meta": "4 sí · 3 no"
     },
     "headline": "Pensado para equipos que ya sienten el cuello de botella.",
     "yesTitle": "Esto es para ti si…",
     "yes": {
-      "yes1": "Tu equipo pierde horas reales cada semana en interacciones repetitivas con clientes: reservas, seguimiento, preguntas de estado y soporte post-venta.",
-      "yes2": "Ya superaste la fase de \"¿puede ayudar la IA?\" y quieres un agente en producción con resultados medibles en semanas, no en trimestres.",
-      "yes3": "Probaste con no-code o chatbots de catálogo (Zapier, Make, flujos de Intercom) y se rompieron en cuanto subió el volumen o aparecieron casos borde.",
-      "yes4": "Prefieres un agente que funcione y operemos por ti antes que otra herramienta, código o proveedor que gestionar."
+      "yes1": "Tu equipo pierde horas cada semana en las mismas interacciones: reservas, seguimiento, preguntas de estado y soporte post-venta.",
+      "yes2": "Ya pasaste la fase de «¿puede ayudar la IA?» y quieres un agente atendiendo, con resultados medibles en semanas y no en trimestres.",
+      "yes3": "Probaste con no-code o con un chatbot de catálogo y se rompió en cuanto subió el volumen o apareció el primer caso borde.",
+      "yes4": "Prefieres un agente que funcione y que operemos nosotros antes que otra herramienta, otro repositorio y otro proveedor que gestionar."
     },
-    "noTitle": "Esto NO es para ti si…",
+    "noTitle": "Esto no es para ti si…",
     "no": {
-      "no1": "Buscas únicamente el precio más bajo. Nuestro suelo es $850 de setup + $120/mes; hay plantillas más baratas si esa es la prioridad.",
-      "no2": "Necesitas a alguien activo mañana. Nuestros slots de diagnóstico abren con 2–3 semanas de antelación y no recortamos en el alcance.",
-      "no3": "Buscas que tus clientes no sepan que hablan con una IA. Nuestros agentes se identifican como IA — lo exige la ley europea y, además, convierte mejor."
+      "no1": "Compras por precio. Detrás de cada agente hay un equipo operándolo, así que no somos la opción barata: si el criterio es el coste por mes, una plantilla lo gana.",
+      "no2": "Necesitas a alguien activo mañana. Los slots de diagnóstico abren con dos o tres semanas de antelación y no recortamos el alcance para llegar antes.",
+      "no3": "Quieres que tus clientes no sepan que hablan con una IA. Nuestros agentes se identifican siempre: lo exige la ley europea y, además, convierte mejor."
     }
   },
   "faq": {
     "marker": {
       "label": "FAQ",
-      "meta": "Respuestas planas · sin marketing"
+      "meta": "11 preguntas"
     },
     "headline": "Preguntas que todo el mundo hace.",
     "intro": "Si la tuya no está aquí, llévala a la llamada de diagnóstico.",
     "items": {
       "cost": {
-        "q": "¿Cuánto cuesta?",
-        "a": "Cada proyecto empieza con una llamada de diagnóstico gratuita de 30 minutos. Si los dos decidimos seguir, eliges un tier: Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, el tier donde encaja la mayoría de equipos de este tamaño) o Business 360 ($2.990 + $390/mes). USD, impuestos no incluidos. Pago 50% al firmar y 50% al arrancar. 10% de descuento si contratas anual."
+        "q": "¿Cómo se factura?",
+        "a": "Tres partidas y ninguna más: el diagnóstico no se cobra, la puesta en marcha se cotiza cerrada al terminarlo y a partir del go-live hay una cuota mensual de operación. El presupuesto sale del diagnóstico con el alcance por escrito, así que no hay nada que renegociar después. Se paga 50% al firmar y 50% al arrancar, y se cancela con 30 días de preaviso tras los tres primeros meses."
       },
       "timing": {
         "q": "¿Cuánto tiempo hasta que el agente esté operando?",
@@ -273,7 +184,7 @@
       },
       "compliance": {
         "q": "¿Nuestros datos están seguros? ¿GDPR / CCPA?",
-        "a": "Sí. Infraestructura EU-hosted para clientes europeos (GDPR-compliant por defecto). DPA firmado antes de que cualquier dato real toque nuestros sistemas. Tus datos nunca se usan para entrenar modelos que vendemos a otros clientes. SOC 2 está en nuestro roadmap; hasta entonces compartimos el cuestionario de seguridad y los controles vigentes bajo NDA."
+        "a": "Sí. Infraestructura alojada en la UE para clientes europeos (GDPR-compliant por defecto). DPA firmado antes de que cualquier dato real toque nuestros sistemas. Tus datos nunca se usan para entrenar modelos que vendemos a otros clientes. SOC 2 está en nuestro roadmap; hasta entonces compartimos el cuestionario de seguridad y los controles vigentes bajo NDA."
       },
       "channels": {
         "q": "¿Con qué canales y herramientas integráis?",
@@ -289,7 +200,7 @@
       },
       "nda": {
         "q": "¿Firmáis NDAs?",
-        "a": "Sí, pero no para la primera llamada. Nuestro MSA + DPA estándar cubren la mayoría de clientes. Firmamos NDAs custom para industrias reguladas (salud, servicios financieros, legal) bajo solicitud, sin fricción."
+        "a": "Sí, pero no para la primera llamada. Nuestro MSA + DPA estándar cubren la mayoría de clientes. Firmamos NDAs a medida para industrias reguladas (salud, servicios financieros, legal) bajo solicitud, sin fricción."
       },
       "different": {
         "q": "¿Cómo sabemos que sois distintos a otra \"AI agency\"?",
@@ -308,15 +219,16 @@
   "finalCta": {
     "eyebrow": "VEAMOS SI ENCAJAMOS",
     "headline": "30 minutos.",
-    "headlineAccent": "Sin coste. Sin deck.",
-    "subheadline": "Hablas con un engineer, no con un comercial. Salimos con un go/no-go. Tuyo o nuestro.",
-    "microcopy": "¿No ves un slot que te encaje? Escríbenos a contacto@auphere.com y encontramos uno."
+    "headlineAccent": "Sin coste, sin compromiso.",
+    "subheadline": "Media hora para revisar tu operación y decidir si esto te sirve. Sales con una respuesta clara —nuestra o tuya— y, si seguimos, con el alcance por escrito.",
+    "microcopy": "¿No ves un slot que te encaje? Escríbenos a contacto@auphere.com y buscamos uno.",
+    "loadingCalendar": "Cargando calendario…"
   },
   "useCases": {
     "common": {
       "ctaPrimary": "Reservar diagnóstico (30 min)",
       "ctaSecondary": "Cómo trabajamos →",
-      "ctaMicrocopy": "Hablas con un engineer, no con un comercial. Salimos con un go/no-go.",
+      "ctaMicrocopy": "La llamada la hace un ingeniero del equipo que construye el agente. Salimos con un una respuesta clara.",
       "outcomesNote": "Rangos honestos basados en investigación del sector, no son garantías. El diagnóstico fija los objetivos contra los que mediremos."
     },
     "hub": {
@@ -544,12 +456,12 @@
             "a": "Un agente, una estrategia de teléfono, agendas y reglas separadas por local. El routing se acuerda en el diagnóstico: por número, idioma, historial del cliente, lo que encaje."
           },
           "pricing": {
-            "q": "¿Cuánto cuesta?",
-            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, el tier donde encaja la mayoría de locales de este tamaño) o Business 360 ($2.990 + $390/mes) según volumen y canales."
+            "q": "¿Cómo se factura?",
+            "a": "La cotización sale del diagnóstico, no de una tabla. En 30 minutos vemos volumen, canales e integraciones, y sales con el alcance y el presupuesto por escrito: una puesta en marcha cerrada y una cuota mensual de operación. Estamos rehaciendo la tarifa pública; hasta que la publiquemos, el número de tu caso te lo damos en esa llamada."
           },
           "launch": {
             "q": "¿En cuánto tiempo contesta mi teléfono?",
-            "a": "3 a 4 semanas desde el kickoff para un local único. Más rápido si tu sistema de reservas tiene API amigable, más lento si hay limpieza de datos o varios locales."
+            "a": "3 a 4 semanas desde el arranque para un local único. Más rápido si tu sistema de reservas tiene API amigable, más lento si hay limpieza de datos o varios locales."
           }
         }
       },
@@ -702,12 +614,12 @@
             "a": "Booksy, Fresha, GlossGenius, Square, Vagaro: de fábrica. Cualquier otro con API documentada entra en scope. El diagnóstico confirma la lista exacta antes de firmar."
           },
           "pricing": {
-            "q": "¿Cuánto cuesta?",
-            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, el tier donde encaja la mayoría de estudios de este tamaño) o Business 360 ($2.990 + $390/mes) según volumen y canales."
+            "q": "¿Cómo se factura?",
+            "a": "La cotización sale del diagnóstico, no de una tabla. En 30 minutos vemos volumen, canales e integraciones, y sales con el alcance y el presupuesto por escrito: una puesta en marcha cerrada y una cuota mensual de operación. Estamos rehaciendo la tarifa pública; hasta que la publiquemos, el número de tu caso te lo damos en esa llamada."
           },
           "launch": {
             "q": "¿En cuánto tiempo entra en producción?",
-            "a": "3 a 4 semanas desde el kickoff para un estudio único. Más rápido si tu sistema de reservas tiene API amigable, más lento si limpiamos datos o integramos varios locales."
+            "a": "3 a 4 semanas desde el arranque para un estudio único. Más rápido si tu sistema de reservas tiene API amigable, más lento si limpiamos datos o integramos varios locales."
           }
         }
       },
@@ -860,12 +772,12 @@
             "a": "Sí, los tres de fábrica, igual que Vagaro y Mangomint. Cualquier otro con API documentada entra en scope. El diagnóstico confirma la lista exacta antes de firmar."
           },
           "pricing": {
-            "q": "¿Cuánto cuesta?",
-            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, el tier donde encaja la mayoría de spas de este tamaño) o Business 360 ($2.990 + $390/mes) según volumen y canales."
+            "q": "¿Cómo se factura?",
+            "a": "La cotización sale del diagnóstico, no de una tabla. En 30 minutos vemos volumen, canales e integraciones, y sales con el alcance y el presupuesto por escrito: una puesta en marcha cerrada y una cuota mensual de operación. Estamos rehaciendo la tarifa pública; hasta que la publiquemos, el número de tu caso te lo damos en esa llamada."
           },
           "launch": {
             "q": "¿En cuánto tiempo entra en producción?",
-            "a": "3 a 5 semanas desde el kickoff para un local único. Más rápido si tu sistema de reservas tiene API amigable, más lento si integramos varios locales o migramos datos."
+            "a": "3 a 5 semanas desde el arranque para un local único. Más rápido si tu sistema de reservas tiene API amigable, más lento si integramos varios locales o migramos datos."
           }
         }
       },
@@ -1004,7 +916,7 @@
         "items": {
           "compliance": {
             "q": "¿Cómo manejáis los datos de paciente y el compliance?",
-            "a": "Operamos sobre infraestructura EU-hosted que cumple los safeguards técnicos relevantes (cifrado en tránsito y en reposo, aislamiento por tenant, logs de auditoría) y usamos APIs LLM zero-retention. Firmamos un DPA con cada clínica antes de que fluyan datos reales de paciente. Los datos de tus conversaciones nunca se usan para entrenar modelos que vendamos a otros. Si tu operación tiene requisitos regulatorios específicos más allá de GDPR, los mapeamos en el diagnóstico y te decimos de frente si somos el partner adecuado."
+            "a": "Operamos sobre infraestructura alojada en la UE que cumple los safeguards técnicos relevantes (cifrado en tránsito y en reposo, aislamiento por tenant, logs de auditoría) y usamos APIs LLM zero-retention. Firmamos un DPA con cada clínica antes de que fluyan datos reales de paciente. Los datos de tus conversaciones nunca se usan para entrenar modelos que vendamos a otros. Si tu operación tiene requisitos regulatorios específicos más allá de GDPR, los mapeamos en el diagnóstico y te decimos de frente si somos el partner adecuado."
           },
           "qualification": {
             "q": "¿Puede cualificar bien sin ejercer la medicina?",
@@ -1019,12 +931,12 @@
             "a": "Tres triggers: cualquier cosa clínica, cualquier cosa fuera del scope contratado, o cualquier cosa que el cliente pida explícitamente. El escalado va a un inbox o teléfono nominal con el contexto completo. Sin pelotas que se caen."
           },
           "pricing": {
-            "q": "¿Cuánto cuesta?",
-            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes) o Business 360 ($2.990 + $390/mes, el tier donde encaja la mayoría de clínicas dada la operación y la cobertura 24/7 que requiere)."
+            "q": "¿Cómo se factura?",
+            "a": "La cotización sale del diagnóstico, no de una tabla. En 30 minutos vemos volumen, canales e integraciones, y sales con el alcance y el presupuesto por escrito: una puesta en marcha cerrada y una cuota mensual de operación. Estamos rehaciendo la tarifa pública; hasta que la publiquemos, el número de tu caso te lo damos en esa llamada."
           },
           "launch": {
             "q": "¿Cuánto hasta tenerlo en vivo?",
-            "a": "4 a 6 semanas para una clínica única. Más si requiere routing multi-profesional o personalización profunda del PMS. El diagnóstico entrega el cronograma por escrito antes del kickoff."
+            "a": "4 a 6 semanas para una clínica única. Más si requiere routing multi-profesional o personalización profunda del PMS. El diagnóstico entrega el cronograma por escrito antes del arranque."
           }
         }
       },
@@ -1177,12 +1089,12 @@
             "a": "Sí, los tres de fábrica, más Curve, Carestack, Dentally y la mayoría de sistemas europeos. Cualquier otro con API documentada entra en scope. El diagnóstico confirma la lista exacta antes de firmar."
           },
           "pricing": {
-            "q": "¿Cuánto cuesta?",
-            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes) o Business 360 ($2.990 + $390/mes, el tier donde encaja la mayoría dado el volumen y la cobertura que requiere)."
+            "q": "¿Cómo se factura?",
+            "a": "La cotización sale del diagnóstico, no de una tabla. En 30 minutos vemos volumen, canales e integraciones, y sales con el alcance y el presupuesto por escrito: una puesta en marcha cerrada y una cuota mensual de operación. Estamos rehaciendo la tarifa pública; hasta que la publiquemos, el número de tu caso te lo damos en esa llamada."
           },
           "launch": {
             "q": "¿En cuánto tiempo entra en producción?",
-            "a": "4 a 6 semanas para una clínica única. Más si hay que importar una lista de recall legacy grande o integrar varias sedes. El diagnóstico entrega el cronograma por escrito antes del kickoff."
+            "a": "4 a 6 semanas para una clínica única. Más si hay que importar una lista de recall heredado grande o integrar varias sedes. El diagnóstico entrega el cronograma por escrito antes del arranque."
           }
         }
       },
@@ -1335,12 +1247,12 @@
             "a": "El agente escala al terapeuta nominal con contexto completo. Escribimos el perímetro clínico en el contrato antes del lanzamiento: niveles de dolor, banderas rojas, dudas post-cirugía van a humano."
           },
           "pricing": {
-            "q": "¿Cuánto cuesta?",
-            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, el tier donde encaja la mayoría de clínicas de este tamaño) o Business 360 ($2.990 + $390/mes) según volumen e integraciones."
+            "q": "¿Cómo se factura?",
+            "a": "La cotización sale del diagnóstico, no de una tabla. En 30 minutos vemos volumen, canales e integraciones, y sales con el alcance y el presupuesto por escrito: una puesta en marcha cerrada y una cuota mensual de operación. Estamos rehaciendo la tarifa pública; hasta que la publiquemos, el número de tu caso te lo damos en esa llamada."
           },
           "launch": {
             "q": "¿En cuánto tiempo entra en producción?",
-            "a": "3 a 5 semanas desde el kickoff para una clínica única. Más si integramos varios terapeutas con horarios distintos o migramos datos de paquetes legacy. El diagnóstico entrega el cronograma por escrito."
+            "a": "3 a 5 semanas desde el arranque para una clínica única. Más si integramos varios terapeutas con horarios distintos o migramos datos de paquetes heredado. El diagnóstico entrega el cronograma por escrito."
           }
         }
       },
@@ -1493,8 +1405,8 @@
             "a": "Sí, los tres de fábrica, más Provet Cloud y eVetPractice. Cualquier otro con API documentada entra en scope. El diagnóstico confirma la lista exacta antes de firmar."
           },
           "pricing": {
-            "q": "¿Cuánto cuesta?",
-            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes) o Business 360 ($2.990 + $390/mes, el tier donde encaja la mayoría dada la cobertura 24/7)."
+            "q": "¿Cómo se factura?",
+            "a": "La cotización sale del diagnóstico, no de una tabla. En 30 minutos vemos volumen, canales e integraciones, y sales con el alcance y el presupuesto por escrito: una puesta en marcha cerrada y una cuota mensual de operación. Estamos rehaciendo la tarifa pública; hasta que la publiquemos, el número de tu caso te lo damos en esa llamada."
           },
           "launch": {
             "q": "¿En cuánto tiempo entra en producción?",
@@ -1648,15 +1560,15 @@
           },
           "compliance": {
             "q": "¿Es compatible con GDPR para los datos del paciente?",
-            "a": "Sí. Infraestructura EU-hosted por defecto, DPA firmado antes de que fluyan datos reales, APIs LLM zero-retention. Nunca usamos tus conversaciones con pacientes para entrenar modelos que vendamos a otros."
+            "a": "Sí. Infraestructura alojada en la UE por defecto, DPA firmado antes de que fluyan datos reales, APIs LLM zero-retention. Nunca usamos tus conversaciones con pacientes para entrenar modelos que vendamos a otros."
           },
           "pricing": {
-            "q": "¿Cuánto cuesta?",
-            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, el tier donde encaja la mayoría de farmacias de este tamaño) o Business 360 ($2.990 + $390/mes) según volumen e integraciones."
+            "q": "¿Cómo se factura?",
+            "a": "La cotización sale del diagnóstico, no de una tabla. En 30 minutos vemos volumen, canales e integraciones, y sales con el alcance y el presupuesto por escrito: una puesta en marcha cerrada y una cuota mensual de operación. Estamos rehaciendo la tarifa pública; hasta que la publiquemos, el número de tu caso te lo damos en esa llamada."
           },
           "launch": {
             "q": "¿En cuánto tiempo contesta el WhatsApp?",
-            "a": "3 a 5 semanas desde el kickoff para una farmacia única con software de dispensación estándar. Más si integramos varias farmacias o construimos un conector custom con un sistema menos común."
+            "a": "3 a 5 semanas desde el arranque para una farmacia única con software de dispensación estándar. Más si integramos varias farmacias o construimos un conector a medida con un sistema menos común."
           }
         }
       },
@@ -1758,7 +1670,7 @@
       "integrations": {
         "marker": {
           "label": "Se conecta con lo que ya usas",
-          "meta": "Google Calendar · Calendly · Stripe · Mailchimp · HubSpot · LMS custom"
+          "meta": "Google Calendar · Calendly · Stripe · Mailchimp · HubSpot · LMS a medida"
         },
         "headline": "Tu calendario, tu cobro, tu CRM.",
         "intro": "Integramos con tu stack de agenda, cobro y gestión de alumnos. Si tu LMS tiene API, leemos matrículas y asistencia en vivo; si no, corremos sobre Google Calendar + Stripe + tu hoja de control."
@@ -1809,12 +1721,12 @@
             "a": "Si tu LMS tiene API (la mayoría las tienen: TutorBird, Bridge, Moodle, Google Classroom), sí. Si no, podemos correr sobre Google Calendar + Stripe + una hoja compartida durante los primeros 90 días mientras evaluamos si una integración más profunda merece la pena."
           },
           "pricing": {
-            "q": "¿Cuánto cuesta?",
-            "a": "Mismos precios que el resto de Auphere: diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, el tier donde encaja la mayoría de escuelas de este tamaño) o Business 360 ($2.990 + $390/mes) según volumen y canales."
+            "q": "¿Cómo se factura?",
+            "a": "La cotización sale del diagnóstico, no de una tabla. En 30 minutos vemos volumen, canales e integraciones, y sales con el alcance y el presupuesto por escrito: una puesta en marcha cerrada y una cuota mensual de operación. Estamos rehaciendo la tarifa pública; hasta que la publiquemos, el número de tu caso te lo damos en esa llamada."
           },
           "launch": {
             "q": "¿En cuánto tiempo entra en producción?",
-            "a": "3 a 5 semanas desde el kickoff para una escuela única. Más si integramos varios campus o construimos un conector custom para LMS. El diagnóstico entrega el cronograma por escrito."
+            "a": "3 a 5 semanas desde el arranque para una escuela única. Más si integramos varios campus o construimos un conector a medida para LMS. El diagnóstico entrega el cronograma por escrito."
           }
         }
       },
@@ -1834,12 +1746,11 @@
       "eyebrow": "AGENTES DE IA PARA WHATSAPP · CONSTRUIDOS PARA TI",
       "meta": "WhatsApp Business API · en producción en 3 a 4 semanas",
       "kicker": "Para negocios de servicio, no plataformas buscando usuarios",
-      "headlineLine1": "Agentes para WhatsApp que",
-      "headlineLine2": "construimos, operamos y mejoramos.",
       "subheadline": "Un agente de WhatsApp configurado alrededor de tu operación real, corriendo en nuestra infraestructura y mejorado cada mes. No un SaaS-template que tú configuras.",
       "ctaPrimary": "Reservar diagnóstico (30 min)",
       "ctaSecondary": "Escúchalo →",
-      "ctaMicrocopy": "Hablas con un engineer, no con un comercial. Salimos con un go/no-go."
+      "ctaMicrocopy": "La llamada la hace un ingeniero del equipo que construye el agente. Salimos con un una respuesta clara.",
+      "headline": "Agentes para WhatsApp que construimos, operamos y mejoramos."
     },
     "category": {
       "marker": {
@@ -1886,9 +1797,9 @@
           "rows": {
             "fit": "Custom, pero scopeado una sola vez",
             "ops": "Entregado a ti el día del go-live",
-            "edge": "Lo arregla tu engineer interno",
+            "edge": "Lo arregla tu ingeniero interno",
             "data": "Tus servidores, tu problema",
-            "exit": "Heredas un codebase que mantener"
+            "exit": "Heredas un código que mantener"
           }
         },
         "auphere": {
@@ -1897,7 +1808,7 @@
             "fit": "Construido alrededor de tu operación en el diagnóstico",
             "ops": "Operado por nosotros en nuestra infra, 24/7",
             "edge": "Lo cazamos nosotros. Lo ves arreglado en el ciclo mensual",
-            "data": "Aislado por tenant, EU-hosted, DPA firmado",
+            "data": "Aislado por tenant, alojada en la UE, DPA firmado",
             "exit": "Cancela cualquier mes tras los primeros 3. Exportamos todo"
           }
         }
@@ -2042,7 +1953,7 @@
       "yes": {
         "yes1": "WhatsApp ya es un canal real de tu negocio. Ves cientos de mensajes entrantes a la semana y la cola está dañando a tu equipo o a tu tasa de conversión.",
         "yes2": "Has pasado la fase de \"¿me sirve un bot?\" y necesitas un agente que reserva, cualifica o trackea en sistemas reales, no un chatbot de árbol de menús.",
-        "yes3": "Prefieres que un engineer lo construya, opere y mejore antes que comprar una licencia de Wati y configurarla tú entre todo lo demás que haces."
+        "yes3": "Prefieres que un ingeniero lo construya, opere y mejore antes que comprar una licencia de Wati y configurarla tú entre todo lo demás que haces."
       },
       "noTitle": "NO es para ti si…",
       "no": {
@@ -2064,11 +1975,11 @@
         },
         "setup": {
           "q": "¿Cuánto tarda el setup de WhatsApp Business API?",
-          "a": "Tres a cuatro semanas desde el kickoff para un número, incluyendo onboarding con BSP, aprobación de plantillas e integración. Más rápido si ya tienes un número con BSP activo. El diagnóstico te entrega el cronograma exacto por escrito."
+          "a": "Tres a cuatro semanas desde el arranque para un número, incluyendo onboarding con BSP, aprobación de plantillas e integración. Más rápido si ya tienes un número con BSP activo. El diagnóstico te entrega el cronograma exacto por escrito."
         },
         "number": {
           "q": "¿Necesitamos nuestro propio número o lo proveéis vosotros?",
-          "a": "Tú aportas el número. Lo conectamos al agente vía un Business Solution Provider (Twilio, 360dialog, Meta directo según geografía y precio). El número sigue siendo tuyo. Si aún no tienes uno de WhatsApp Business, te ayudamos a obtenerlo antes del kickoff."
+          "a": "Tú aportas el número. Lo conectamos al agente vía un Business Solution Provider (Twilio, 360dialog, Meta directo según geografía y precio). El número sigue siendo tuyo. Si aún no tienes uno de WhatsApp Business, te ayudamos a obtenerlo antes del arranque."
         },
         "languages": {
           "q": "¿Puede manejar varios idiomas en un solo número?",
@@ -2084,11 +1995,11 @@
         },
         "data": {
           "q": "GDPR, LGPD, ¿qué pasa con los datos del cliente en WhatsApp?",
-          "a": "Infraestructura EU-hosted con aislamiento por tenant para clientes europeos. DPA firmado antes de que fluya cualquier conversación real. Los datos del cliente nunca se usan para entrenar modelos que vendamos a otros. Para clientes LATAM honramos LGPD (Brasil) y normativas equivalentes en MX, CO, AR. Lo específico se confirma en el diagnóstico."
+          "a": "Infraestructura alojada en la UE con aislamiento por tenant para clientes europeos. DPA firmado antes de que fluya cualquier conversación real. Los datos del cliente nunca se usan para entrenar modelos que vendamos a otros. Para clientes LATAM honramos LGPD (Brasil) y normativas equivalentes en MX, CO, AR. Lo específico se confirma en el diagnóstico."
         },
         "pricing": {
-          "q": "¿Cuánto cuesta?",
-          "a": "Mismos precios que el resto de Auphere. Diagnóstico gratuito de 30 min, luego Esencial ($850 setup + $120/mes), Pro ($1.490 + $249/mes, donde aterrizan la mayoría de los equipos a esta escala) o Business 360 ($2.990 + $390/mes) según volumen, idiomas e integraciones. Las tarifas de conversación del BSP de WhatsApp son aparte y las cobra tu proveedor."
+          "q": "¿Cómo se factura?",
+          "a": "La cotización sale del diagnóstico, no de una tabla: volumen de conversaciones, idiomas e integraciones mandan. Sales de la llamada con el alcance y el presupuesto por escrito. Aparte van las tarifas de conversación de WhatsApp, que factura Meta a través de tu proveedor y no pasan por nosotros."
         }
       }
     },
@@ -2128,7 +2039,7 @@
         },
         "compliance": {
           "term": "Compliance-by-design",
-          "description": "GDPR y CCPA como cimiento, no como checklist. EU-hosted por defecto. DPA firmado antes de tocar datos reales. SOC 2 en el roadmap de certificación."
+          "description": "GDPR y CCPA como cimiento, no como checklist. alojada en la UE por defecto. DPA firmado antes de tocar datos reales. SOC 2 en el plan de certificación."
         },
         "diagnostic": {
           "term": "Diagnóstico honesto",
@@ -2146,7 +2057,7 @@
       "items": {
         "eu": {
           "term": "Europa",
-          "description": "UK, Alemania, Países Bajos, Francia, Iberia. Infraestructura EU-hosted para todos los clientes europeos. Inglés y español."
+          "description": "UK, Alemania, Países Bajos, Francia, Iberia. Infraestructura alojada en la UE para todos los clientes europeos. Inglés y español."
         },
         "us": {
           "term": "Estados Unidos",
@@ -2168,17 +2079,17 @@
         },
         "notOneShot": {
           "term": "No somos un proyecto one-shot",
-          "description": "No entregamos un codebase y desaparecemos. La relación es la operación: la corremos, la monitoreamos, la mejoramos mes a mes."
+          "description": "No entregamos un código y desaparecemos. La relación es la operación: la corremos, la monitoreamos, la mejoramos mes a mes."
         },
         "notHype": {
           "term": "No somos una AI agency que vende humo",
-          "description": "Sin leverage, sin sinergias, sin 10x. Solo un agente que corre en producción con métricas que acordamos por escrito antes del kickoff."
+          "description": "Sin leverage, sin sinergias, sin 10x. Solo un agente que corre en producción con métricas que acordamos por escrito antes del arranque."
         }
       }
     },
     "cta": {
       "headline": "¿Hablamos?",
-      "body": "30 minutos. Sin coste. Hablas con un engineer, no con un comercial.",
+      "body": "30 minutos. Sin coste. La llamada la hace un ingeniero del equipo que construye el agente.",
       "button": "Agendar diagnóstico"
     }
   },
@@ -2357,22 +2268,22 @@
       "service": {
         "title": "Qué entregamos",
         "p1": "Auphere opera un servicio bespoke de agente de IA en tres fases: una llamada de diagnóstico (gratuita, 30 minutos), un setup del agente (pago único, alcance acordado por escrito) y un servicio gestionado continuo (cuota mensual, el agente corre en nuestra infraestructura, operado 24/7 por nuestro equipo).",
-        "p2": "No somos un proveedor SaaS. No somos un contratista de software que entrega un codebase y se va. La relación es la operación: corremos el agente mientras el contrato esté vigente. Cuando el canal es WhatsApp, Auphere opera como Tech Provider autorizado por Meta Platforms, Inc.: el cliente conserva la propiedad de su WhatsApp Business Account (WABA) y Meta factura directamente al cliente el consumo de mensajería; Auphere solo cobra la cuota del servicio gestionado."
+        "p2": "No somos un proveedor SaaS. No somos un contratista de software que entrega un código y se va. La relación es la operación: corremos el agente mientras el contrato esté vigente. Cuando el canal es WhatsApp, Auphere opera como Tech Provider autorizado por Meta Platforms, Inc.: el cliente conserva la propiedad de su WhatsApp Business Account (WABA) y Meta factura directamente al cliente el consumo de mensajería; Auphere solo cobra la cuota del servicio gestionado."
       },
       "diagnostic": {
         "title": "El diagnóstico",
-        "p1": "El diagnóstico es una conversación de 30 minutos con un engineer. Sin coste y sin compromiso. Salimos con un go/no-go por escrito: qué workflows se automatizarían, qué integraciones harían falta, una estimación y un timeline.",
+        "p1": "El diagnóstico es una conversación de 30 minutos con un ingeniero. Sin coste y sin compromiso. Salimos con un una respuesta clara por escrito: qué workflows se automatizarían, qué integraciones harían falta, una estimación y un timeline.",
         "p2": "Si concluimos que la automatización no resuelve tu problema, lo decimos y la relación termina ahí. Te quedas con nuestras notas."
       },
       "bespoke": {
         "title": "Bespoke + managed",
-        "p1": "Tras firmar, configuramos el agente para tu operación real: tus herramientas, tu voz, tus reglas. El setup es un pago único, alcance por escrito, 50% al firmar y 50% al kickoff. El agente sale en vivo solo cuando tú validas la configuración.",
+        "p1": "Tras firmar, configuramos el agente para tu operación real: tus herramientas, tu voz, tus reglas. El setup es un pago único, alcance por escrito, 50% al firmar y 50% al arranque. El agente sale en vivo solo cuando tú validas la configuración.",
         "p2": "Desde el go-live, el agente corre bajo un servicio gestionado mensual: lo hospedamos, lo monitoreamos 24/7, arreglamos lo que se rompa y lo mejoramos en un ciclo acordado (mensual, quincenal o semanal según el tier)."
       },
       "code": {
         "title": "Propiedad del código e infraestructura",
         "p1": "El agente corre en infraestructura operada por Auphere. El código, los modelos, los prompts, la lógica de orquestación y la plataforma subyacente pertenecen a Auphere, no al cliente.",
-        "p2": "Esto es deliberado. Compras un agente funcionando y un servicio, no un codebase que mantener, contratar engineers para él o babysittear. Esa es nuestra responsabilidad."
+        "p2": "Esto es deliberado. Compras un agente funcionando y un servicio, no un código que mantener, contratar ingenieros para él o vigilar. Esa es nuestra responsabilidad."
       },
       "clientData": {
         "title": "Lo que sí es tuyo",
@@ -2381,7 +2292,7 @@
       },
       "fees": {
         "title": "Cuotas y facturación",
-        "p1": "Los precios son en USD, impuestos excluidos. El setup se paga 50% al firmar el contrato, 50% al kickoff. El servicio gestionado se factura mensualmente (o anualmente, con 10% de descuento).",
+        "p1": "Los precios son en USD, impuestos excluidos. El setup se paga 50% al firmar el contrato, 50% al arranque. El servicio gestionado se factura mensualmente (o anualmente, con 10% de descuento).",
         "p2": "Si el uso supera el volumen contratado (conversaciones, integraciones), acordamos el siguiente tier antes del siguiente ciclo de facturación. Sin facturas sorpresa."
       },
       "cancellation": {
@@ -2450,15 +2361,15 @@
       },
       "access": {
         "title": "Quién accede a qué",
-        "p1": "El acceso a datos de cliente está restringido a los engineers que están entregando o soportando activamente el agente de ese cliente: una lista corta y nominal por engagement. Todo acceso queda logueado.",
-        "p2": "Los engineers usan cuentas nominales, MFA por hardware y credenciales de vida corta. Sin cuentas compartidas. Sin reutilización de contraseñas entre sistemas."
+        "p1": "El acceso a datos de cliente está restringido a los ingenieros que están entregando o soportando activamente el agente de ese cliente: una lista corta y nominal por engagement. Todo acceso queda logueado.",
+        "p2": "Los ingenieros usan cuentas nominales, MFA por hardware y credenciales de vida corta. Sin cuentas compartidas. Sin reutilización de contraseñas entre sistemas."
       },
       "compliance": {
         "title": "Postura de compliance",
         "items": {
           "gdpr": {
             "term": "GDPR",
-            "description": "EU-hosted por defecto. DPA firmado antes de tocar datos reales. Subencargados listados en la política de privacidad."
+            "description": "alojada en la UE por defecto. DPA firmado antes de tocar datos reales. Subencargados listados en la política de privacidad."
           },
           "ccpa": {
             "term": "CCPA",
@@ -2470,7 +2381,7 @@
           },
           "soc2": {
             "term": "SOC 2",
-            "description": "Aún no iniciada: está en nuestro roadmap de certificación. Mientras tanto, compartimos el cuestionario de seguridad y los controles vigentes bajo NDA, a solicitud."
+            "description": "Aún no iniciada: está en nuestro plan de certificación. Mientras tanto, compartimos el cuestionario de seguridad y los controles vigentes bajo NDA, a solicitud."
           }
         }
       },
@@ -2529,7 +2440,6 @@
       "how": "Cómo trabajamos",
       "useCases": "Casos de uso",
       "docs": "Documentación",
-      "pricing": "Precios",
       "cases": "Casos",
       "faq": "FAQ",
       "platform": "Plataforma"
@@ -2551,71 +2461,112 @@
   "threeWays": {
     "marker": {
       "label": "Tres formas de trabajar",
-      "meta": "Elige tu puerta en 8 segundos"
+      "meta": "Contrátalo · Revéndelo · Intégralo"
     },
     "headline": "Una plataforma. Tres formas de trabajar con ella.",
     "tracks": {
       "hire": {
         "verb": "Contrátalo",
         "who": "Para tu operación",
-        "body": "Tu agente, construido alrededor de tu negocio y operado 24/7 por nosotros.",
+        "body": "Construido alrededor de tu operación y respaldado por nuestro equipo.",
         "cta": "Ver la plataforma",
         "href": "/platform"
       },
       "resell": {
         "verb": "Revéndelo",
         "who": "Tu marca, tu cliente",
-        "body": "Vendes IA a tu cartera sin construir la plataforma. Nosotros operamos; tú facturas.",
+        "body": "Vendes IA a tu cartera sin construir la plataforma: nosotros la operamos, tú facturas.",
         "cta": "Programa de partners",
         "href": "/partners"
       },
       "embed": {
         "verb": "Intégralo",
         "who": "Dentro de tu producto",
-        "body": "IA en tu SaaS o plataforma vía API: tu marca, tu factura, nuestra infraestructura.",
+        "body": "IA dentro de tu producto vía API: tu marca, tu factura, nuestra infraestructura.",
         "cta": "Auphere Embedded",
         "href": "/partners/embedded"
       }
-    }
+    },
+    "intro": "El mismo motor en las tres. Cambia quién pone la marca, quién factura y quién da la cara.",
+    "enterpriseLine": "¿Comité de compras, revisión de seguridad y SLA por contrato?",
+    "enterpriseCta": "Auphere para empresas"
   },
   "capabilities": {
     "marker": {
-      "label": "Lo que ya sabe hacer",
-      "meta": "Verificado contra el código, no contra el pitch"
+      "label": "Lo que hace",
+      "meta": "6 capacidades en producción"
     },
-    "headline": "Lo que tu agente ya sabe hacer.",
-    "intro": "Nada de esta lista es roadmap. Todo está en producción hoy.",
+    "headline": "Lo que tu agente hace desde el primer día.",
+    "intro": "Todo lo de esta lista está en producción hoy. Abre cualquiera para ver el detalle técnico.",
     "cells": {
       "media": {
-        "title": "Entiende audios y fotos, no solo texto",
-        "body": "Los audios y las fotos que te mandan tus clientes, entendidos y respondidos.",
-        "detail": "Transcribe las notas de voz y lee las imágenes que llegan por WhatsApp o Instagram: el comprobante de pago, la foto del producto, el audio de dos minutos con toda la historia. Tu cliente escribe como escribe; el agente se adapta."
+        "title": "Entiende audios e imágenes",
+        "body": "La nota de voz de dos minutos y la foto del comprobante, leídas y contestadas.",
+        "detail": "Transcribe las notas de voz y lee las imágenes que llegan por WhatsApp o Instagram: comprobantes de pago, fotos de producto, capturas de pantalla. El cliente escribe como quiere; el agente se adapta."
       },
       "memory": {
-        "title": "Recuerda a cada cliente entre conversaciones",
-        "body": "La conversación de hoy sabe lo que pasó el mes pasado.",
-        "detail": "Memoria por cliente final: preferencias, historial, contexto. Es lo único de esta lista que tu cliente percibe directamente — y lo que convierte un bot en un agente."
+        "title": "Recuerda a cada cliente",
+        "body": "La conversación de hoy conoce el historial de los meses anteriores.",
+        "detail": "Memoria por cliente final: preferencias, historial e incidencias previas. Es lo único de esta lista que el cliente percibe directamente, y lo que separa un agente de un formulario con conversación."
       },
       "jobs": {
-        "title": "Reserva, recuerda, persigue impagos y recupera ausencias — solo",
-        "body": "Los cuatro trabajos que más horas queman, sin que nadie los empuje.",
-        "detail": "Reservas con confirmación y reagendado de un toque, recordatorios que reducen no-shows, seguimiento de impagos en calma y recuperación de clientes ausentes. Cada flujo se activa solo si tu operación lo necesita."
+        "title": "Reserva, recuerda y hace seguimiento",
+        "body": "Citas, recordatorios, impagos y clientes que dejaron de venir.",
+        "detail": "Reservas con confirmación y reagendado en un toque, recordatorios que reducen las ausencias, seguimiento de impagos y recuperación de clientes inactivos. Cada flujo se activa solo si tu operación lo necesita."
       },
       "browser": {
-        "title": "Usa tu software aunque no tenga API",
-        "body": "Si tu gestión solo tiene pantalla, el agente la usa igual.",
-        "detail": "Sesión de navegador operada por el agente: reserva en el panel de tu software legacy exactamente como lo haría una persona. El software que ya tienes deja de ser una excusa."
+        "title": "Trabaja con software sin API",
+        "body": "Si tu sistema de gestión solo tiene pantalla, el agente la usa.",
+        "detail": "El agente opera una sesión de navegador y trabaja en el panel de tu software heredado como lo haría una persona. Tener un sistema antiguo deja de ser el motivo por el que no se puede automatizar."
       },
       "escalation": {
-        "title": "Sabe cuándo callarse y pasar a una persona",
-        "body": "Tres disparadores, contexto completo, inbox nominal.",
-        "detail": "Fuera de alcance, petición explícita o confianza baja: el agente escala a tu equipo con toda la conversación. Es también lo que exige la Ley 10/2025 desde diciembre — tu agente ya cumple."
+        "title": "Deriva a una persona cuando corresponde",
+        "body": "Tres disparadores, la conversación completa y un responsable con nombre.",
+        "detail": "Fuera de alcance, petición explícita del cliente o confianza baja: el agente transfiere el caso a tu equipo con el contexto entero. Es también lo que exige la Ley 10/2025 desde diciembre."
       },
       "hygiene": {
-        "title": "Vigila la reputación de tu número ante Meta",
-        "body": "El miedo real de operar WhatsApp, gestionado de serie.",
-        "detail": "Monitoreo de la calidad del número, plantillas aprobadas y ritmo de envío que no dispara alarmas. Un número quemado es un canal muerto: lo cuidamos como parte del servicio."
+        "title": "Protege la calidad de tu número",
+        "body": "El riesgo real de operar WhatsApp, gestionado como parte del servicio.",
+        "detail": "Vigilancia de la calificación del número, plantillas aprobadas y ritmo de envío dentro de los límites de Meta. Un número bloqueado es un canal perdido: mantenerlo sano es parte del servicio."
       }
+    }
+  },
+  "stage": {
+    "channels": {
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "tiktok": "TikTok · pronto",
+      "voice": "Voz"
+    },
+    "tools": {
+      "calendar": "Calendario",
+      "crm": "CRM",
+      "payments": "Pagos",
+      "browser": "Navegador"
+    },
+    "core": "Clasifica",
+    "out": "Responde",
+    "human": "Persona",
+    "tracks": {
+      "hire": "Contrátalo",
+      "resell": "Revéndelo",
+      "embed": "Intégralo"
+    },
+    "stages": {
+      "diagnose": "Diagnóstico",
+      "configure": "Configuración",
+      "production": "Producción"
+    },
+    "annotations": {
+      "sharedEngine": "El mismo motor",
+      "t0": "30 min",
+      "t1": "2 a 6 semanas",
+      "t2": "Continuo",
+      "tenantA": "Cliente A",
+      "tenantB": "Cliente B",
+      "wall": "RLS",
+      "rowData": "Datos",
+      "rowConv": "Conversaciones"
     }
   }
 }

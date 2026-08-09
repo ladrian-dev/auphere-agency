@@ -9,7 +9,6 @@ import { WhatsappUseCasesList } from '@/components/sections/whatsapp/WhatsappUse
 import { MetaComplianceBlock } from '@/components/sections/whatsapp/MetaComplianceBlock';
 import { WhatsappBenchmarks } from '@/components/sections/whatsapp/WhatsappBenchmarks';
 import { WhatsappConversations } from '@/components/sections/whatsapp/WhatsappConversations';
-import { Pricing } from '@/components/sections/Pricing';
 import { Faq } from '@/components/sections/Faq';
 import { FaqJsonLd } from '@/components/sections/FaqJsonLd';
 import { CalEmbed } from '@/components/sections/CalEmbed';
@@ -128,7 +127,7 @@ export default async function WhatsappAiAgentPage({ params }: Props) {
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: tHero('headlineLine1') + ' ' + tHero('headlineLine2'),
+      name: tHero('headline'),
       itemListElement: offers,
     },
   };
@@ -178,7 +177,6 @@ export default async function WhatsappAiAgentPage({ params }: Props) {
       <MetaComplianceBlock number="04" locale={localeTyped} />
       <WhatsappConversations number="05" />
       <WhatsappBenchmarks number="06" locale={localeTyped} />
-      <Pricing />
       <WhatsappQualifier locale={localeTyped} />
       <Faq items={faqItems} namespace="whatsapp.faq" sectionNumber="09" />
       <WhatsappFinalCta locale={localeTyped} />
@@ -193,7 +191,7 @@ function WhatsappHero() {
       eyebrow={t('eyebrow')}
       meta={t('meta')}
       kicker={t('kicker')}
-      headline={[t('headlineLine1'), t('headlineLine2')]}
+      headline={t('headline')}
       subheadline={t('subheadline')}
       ctaPrimary={{ label: t('ctaPrimary'), href: '#book' }}
       ctaSecondary={{ label: t('ctaSecondary'), href: '#conversation' }}

@@ -3,7 +3,9 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    # `develop` alimenta landing-staging.auphere.com: las puertas corren antes
+    # de que el equipo vea nada, igual que en main.
+    branches: [main, develop]
   pull_request:
 
 jobs:

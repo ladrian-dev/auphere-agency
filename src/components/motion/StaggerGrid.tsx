@@ -2,6 +2,7 @@
 import { useRef, type ReactNode } from 'react';
 import { cn } from '@/lib/utils/cn';
 import { useAuphereGSAP } from '@/lib/motion/gsap';
+import { onEnter } from '@/lib/motion/on-enter';
 
 interface ContainerProps {
   children: ReactNode;
@@ -33,23 +34,24 @@ export function StaggerGrid({
   useAuphereGSAP(
     ({ reduced, gsap }) => {
       const root = ref.current;
-      if (!root || reduced) return;
+      if (!root || reduced) return undefined;
       // Only direct members of THIS grid — nested grids own their items.
       const items = Array.from(root.querySelectorAll<HTMLElement>('[data-stagger-item]')).filter(
         (el) => el.closest('[data-stagger-grid]') === root,
       );
-      if (!items.length) return;
+      if (!items.length) return undefined;
 
       gsap.set(items, { opacity: 0, y: 24 });
-      gsap.to(items, {
-        opacity: 1,
-        y: 0,
-        duration: 0.7,
-        ease: 'auphere-expo',
-        stagger: staggerChildren,
-        delay: delayChildren,
-        clearProps: 'transform',
-        scrollTrigger: { trigger: root, start: 'top 85%', once: true },
+      return onEnter(root, () => {
+        gsap.to(items, {
+          opacity: 1,
+          y: 0,
+          duration: 0.7,
+          ease: 'auphere-expo',
+          stagger: staggerChildren,
+          delay: delayChildren,
+          clearProps: 'transform',
+        });
       });
     },
     { dependencies: [staggerChildren, delayChildren] },

@@ -1,6 +1,7 @@
 'use client';
 import { useRef } from 'react';
 import { useAuphereGSAP } from '@/lib/motion/gsap';
+import { onEnter } from '@/lib/motion/on-enter';
 import { track } from '@/lib/analytics';
 
 export interface GuaranteeRowResolved {
@@ -30,26 +31,23 @@ export function GuaranteeTable({ rows, footnote, todayLabel, columnGuarantee, co
   useAuphereGSAP(
     ({ reduced, gsap }) => {
       const root = ref.current;
-      if (!root || reduced) return;
+      if (!root || reduced) return undefined;
       const rowEls = root.querySelectorAll<HTMLElement>('[data-guarantee-row]');
       const chips = root.querySelectorAll<HTMLElement>('[data-guarantee-chip]');
-      if (!rowEls.length) return;
+      if (!rowEls.length) return undefined;
 
       gsap.set(rowEls, { opacity: 0, y: 14 });
       gsap.set(chips, { scale: 0.6, opacity: 0 });
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: root,
-          start: 'top 80%',
-          once: true,
-          onEnter: () => track('guarantee_table_view'),
-        },
-      });
+      const tl = gsap.timeline({ paused: true });
       tl.to(rowEls, { opacity: 1, y: 0, duration: 0.5, ease: 'auphere-expo', stagger: 0.05, clearProps: 'transform' }).to(
         chips,
         { scale: 1, opacity: 1, duration: 0.08, ease: 'auphere', stagger: 0.05 },
         0.12,
       );
+      return onEnter(root, () => {
+        track('guarantee_table_view');
+        tl.play();
+      });
     },
     { scope: ref },
   );

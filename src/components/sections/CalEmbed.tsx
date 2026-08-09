@@ -1,5 +1,6 @@
 'use client';
 import Cal, { getCalApi } from '@calcom/embed-react';
+import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
 
 const CAL_LINK =
@@ -9,6 +10,8 @@ const CAL_LINK =
 export function CalEmbed({ calLink = CAL_LINK }: { calLink?: string } = {}) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [shouldLoad, setShouldLoad] = useState(false);
+  const locale = useLocale();
+  const t = useTranslations('finalCta');
 
   // Defer loading of the Cal.com embed until the user is close to the section.
   // Cal's iframe + JS is heavy (~400KB) and was always loaded on first paint
@@ -75,8 +78,16 @@ export function CalEmbed({ calLink = CAL_LINK }: { calLink?: string } = {}) {
           config={{
             layout: 'month_view',
             theme: 'light',
+            // El calendario salía en inglés dentro de /es ("August 2026",
+            // "SUN MON TUE"): Cal no hereda el idioma de la página, hay que
+            // pasárselo. Auditoría 2026-08-09 §E-5.
+            locale,
           }}
-          style={{ width: '100%', height: '650px', overflow: 'auto' }}
+          // Sin `overflow: auto`: convertía el contenedor en una región
+          // desplazable que el teclado no puede enfocar (axe
+          // scrollable-region-focusable). Cal redimensiona su propio iframe,
+          // así que basta con una altura mínima. Auditoría 2026-08-09 §E-5.
+          style={{ width: '100%', minHeight: '650px' }}
         />
       ) : (
         <div
@@ -84,7 +95,7 @@ export function CalEmbed({ calLink = CAL_LINK }: { calLink?: string } = {}) {
           className="flex h-[650px] w-full items-center justify-center text-[var(--color-ink-muted)]"
           style={{ fontFamily: 'var(--font-mono)', fontSize: 14, letterSpacing: '0.08em' }}
         >
-          LOADING CALENDAR…
+          {t('loadingCalendar')}
         </div>
       )}
     </div>

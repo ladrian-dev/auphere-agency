@@ -18,8 +18,7 @@ export default async function OpenGraphImage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: 'hero' });
   const tMeta = await getTranslations({ locale, namespace: 'meta' });
 
-  const headlineLine1 = t('headlineLine1');
-  const headlineLine2 = t('headlineLine2');
+  const headline = t('headline');
   const eyebrow =
     locale === 'es'
       ? 'AGENTES DE IA · BESPOKE + MANAGED'
@@ -100,25 +99,14 @@ export default async function OpenGraphImage({ params }: Props) {
         >
           <div
             style={{
-              fontSize: 84,
+              fontSize: 76,
               fontWeight: 600,
-              lineHeight: 1.02,
+              lineHeight: 1.04,
               letterSpacing: '-0.03em',
               color: '#F1F7F6',
             }}
           >
-            {headlineLine1}
-          </div>
-          <div
-            style={{
-              fontSize: 84,
-              fontWeight: 600,
-              lineHeight: 1.02,
-              letterSpacing: '-0.03em',
-              color: 'rgba(241,247,246,0.55)',
-            }}
-          >
-            {headlineLine2}
+            {headline}
           </div>
         </div>
 

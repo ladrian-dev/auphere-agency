@@ -43,7 +43,7 @@ export function Footer() {
             <FooterLink href={`/${locale}/platform`}>{t('product.platform')}</FooterLink>
             <FooterLink href={`/${locale}#how`}>{t('product.how')}</FooterLink>
             <FooterLink href={`/${locale}/use-cases`}>{t('product.useCases')}</FooterLink>
-            <FooterLink href={`/${locale}#pricing`}>{t('product.pricing')}</FooterLink>
+            {/* Precios fuera de la web hasta que cierre el informe de pricing 2026-08. */}
             {/* <FooterLink href={`/${locale}#cases`}>{t('product.cases')}</FooterLink> — re-enable with Cases section */}
             <FooterLink href={`/${locale}#faq`}>{t('product.faq')}</FooterLink>
           </FooterColumn>

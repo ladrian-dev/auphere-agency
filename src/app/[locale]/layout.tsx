@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { helvena, behindTheNineties, jetbrainsMono } from '../fonts';
 import { SmoothScroll } from '@/components/motion/SmoothScroll';
+import { EnvironmentBadge } from '@/components/primitives/EnvironmentBadge';
 import '../globals.css';
 
 interface Props {
@@ -196,9 +197,12 @@ export default async function LocaleLayout({ children, params }: Props) {
           {ta11y('skipToContent')}
         </a>
         <NextIntlClientProvider>
-          <SmoothScroll><CursorDot />
-        {children}</SmoothScroll>
+          <SmoothScroll>
+            <CursorDot />
+            {children}
+          </SmoothScroll>
         </NextIntlClientProvider>
+        <EnvironmentBadge />
       </body>
     </html>
   );

@@ -62,6 +62,9 @@ interface AuphereGSAPContext {
   gsap: typeof gsap;
 }
 
+/** Optional teardown returned by a callback (observers, timers, listeners). */
+type AuphereGSAPCleanup = (() => void) | void;
+
 interface UseAuphereGSAPOptions {
   scope?: RefObject<HTMLElement | SVGSVGElement | null>;
   dependencies?: unknown[];
@@ -73,7 +76,7 @@ interface UseAuphereGSAPOptions {
  * reverted on unmount / dependency change (no leaked ScrollTriggers).
  */
 export function useAuphereGSAP(
-  callback: (ctx: AuphereGSAPContext) => void,
+  callback: (ctx: AuphereGSAPContext) => AuphereGSAPCleanup,
   options: UseAuphereGSAPOptions = {},
 ): void {
   registerAuphereGSAP();
@@ -87,7 +90,12 @@ export function useAuphereGSAP(
         },
         (ctx) => {
           const conditions = ctx.conditions as { reduced: boolean };
-          callback({ reduced: conditions.reduced, gsap });
+          // Devolver el cleanup del callback es obligatorio: gsap.matchMedia lo
+          // ejecuta al revertir. Antes se descartaba, así que los
+          // IntersectionObserver, los listeners de visibilitychange y los
+          // temporizadores de Orchestrator, SplitText y useReveal sobrevivían al
+          // desmontaje.
+          return callback({ reduced: conditions.reduced, gsap });
         },
       );
       return () => mm.revert();

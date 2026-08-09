@@ -104,19 +104,25 @@
   --leading-relaxed:  1.65;
 
   /* ─────────────────────────────────────────────
-   * Spacing (4px base)
+   * Spacing — NO declarar nada aquí.
+   *
+   * En Tailwind 4 el namespace `--spacing-*` no crea tokens paralelos:
+   * reescribe utilidades. Dos accidentes ya vividos (ver
+   * ~/Work/Auphere/landing/audit-2026-08-09-landing-v3.md §A-1):
+   *
+   *   1. `--spacing-1 … --spacing-11` sobrescribían la escala numérica
+   *      entera → `w-10` valía 128 px (el hamburguesa del nav era un óvalo
+   *      de 128 px) y la escala dejaba de ser monótona: `h-8` (64 px) >
+   *      `h-12` (48 px).
+   *   2. Renombrarlos a claves con nombre tampoco es seguro: la clave
+   *      `block` generaba `.inline-block { inline-size: 48px }`, que colisiona
+   *      con la utilidad de display `inline-block` y encogía cada palabra
+   *      del H1 a 48 px.
+   *
+   * La escala de espaciado es la de Tailwind (`--spacing: 0.25rem`, base 4 px).
+   * Ritmo editorial de referencia: 4 · 8 · 12 · 16 · 24 · 32 · 48 · 64 · 96 ·
+   * 128 · 192, que en utilidades es 1 · 2 · 3 · 4 · 6 · 8 · 12 · 16 · 24 · 32 · 48.
    * ───────────────────────────────────────────── */
-  --spacing-1:  4px;
-  --spacing-2:  8px;
-  --spacing-3:  12px;
-  --spacing-4:  16px;
-  --spacing-5:  24px;
-  --spacing-6:  32px;
-  --spacing-7:  48px;
-  --spacing-8:  64px;
-  --spacing-9:  96px;
-  --spacing-10: 128px;
-  --spacing-11: 192px;
 
   /* ─────────────────────────────────────────────
    * Borders / Radii — sistema único 0·4·8·999

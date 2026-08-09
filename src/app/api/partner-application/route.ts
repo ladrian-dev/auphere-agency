@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { z } from 'zod';
 import { Resend } from 'resend';
+import { isProduction } from '@/lib/deployment';
 
 /**
  * Partner program application (§9.2): 8 fields, 2 hard qualifiers.
@@ -53,6 +54,17 @@ export async function POST(request: Request) {
   }
 
   const track = data.clients === '0-2' ? 'REFERRAL' : 'RESELLER';
+
+  // En staging el formulario se puede probar de punta a punta, pero no manda
+  // correo: `landing-staging.auphere.com` comparte código con producción y una
+  // prueba interna no debe aterrizar en la bandeja de leads reales.
+  if (!isProduction()) {
+    console.info('[partner-application] entorno no productivo — no se envía correo', {
+      track,
+      company: data.company,
+    });
+    return NextResponse.json({ ok: true, delivered: false });
+  }
 
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {

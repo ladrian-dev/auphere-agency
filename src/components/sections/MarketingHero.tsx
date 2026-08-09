@@ -20,10 +20,11 @@ interface Props {
   /** Optional italic kicker above the headline (e.g. audience descriptor). */
   kicker?: string;
   /**
-   * Headline — string for a single-line H1, or a tuple of two strings for the
-   * home-style stacked two-line headline. Each line is animated by SplitText.
+   * Headline. One string — the line breaks come from the measure, never from a
+   * hardcoded <br>. The old two-line tuple produced rags that cut mid-phrase
+   * ("Construimos, / operamos y / respondemos por") at every viewport.
    */
-  headline: string | readonly [string, string];
+  headline: string;
   subheadline: string;
   ctaPrimary: CTA;
   /** When present, renders a secondary outline CTA next to the primary. */
@@ -39,12 +40,19 @@ interface Props {
 }
 
 /**
- * Shared marketing hero — dark gradient surface with the animated Auphere
- * mark on the right (AnimatedMark with the same config used on the home),
- * a stacked copy block on the left and one-or-two CTAs.
+ * Shared marketing hero — dark gradient surface, copy on the left, visual on
+ * the right.
  *
- * Used by the home Hero and every /use-cases/[vertical] page. The differences
- * between them are pure copy — passed through props.
+ * Layout contract (auditoría 2026-08-09 §B): copy and visual live in two
+ * **grid columns**, never in overlapping absolute layers. Before, the copy was
+ * `max-w-2xl` and the visual was `absolute right-[-4%] w-[54%]`; from 1024 px up
+ * the H1 ran straight through the WhatsApp node and the visual was clipped by up
+ * to 58 px at the viewport edge. Columns make the collision structurally
+ * impossible at every width.
+ *
+ * The section is sized so the primary CTA clears the fold on a 1280 × 720
+ * laptop: `min-h` uses `svh` with a cap, and the vertical rhythm is tuned
+ * against that budget.
  */
 export function MarketingHero({
   eyebrow,
@@ -60,7 +68,7 @@ export function MarketingHero({
 }: Props) {
   return (
     <section
-      className="relative overflow-hidden pt-32 md:pt-40 pb-24 md:pb-32 min-h-[100svh]"
+      className="relative overflow-hidden pt-24 md:pt-28 pb-14 md:pb-20 min-h-[min(100svh,860px)] flex items-center"
       style={{
         background:
           "radial-gradient(120% 90% at 100% 50%, var(--color-bangladesh-green) 0%, var(--color-pine) 55%, var(--color-ink) 100%)",
@@ -77,97 +85,104 @@ export function MarketingHero({
         }}
       />
 
-      {/* Right-side visual — AnimatedMark by default, Orchestrator on the home */}
-      {visual ?? (
-        <AnimatedMark
-          immediate
-          traceDurationSeconds={2.6}
-          fillRevealSeconds={0.9}
-          loopShimmer
-          shimmerIntervalSeconds={11}
-          className="pointer-events-none absolute right-[-14%] top-1/2 -translate-y-1/2 w-[68%] max-w-[900px] hidden md:block"
-        />
-      )}
+      <Container width="wide" className="relative z-10 w-full">
+        <div className="grid items-center gap-10 xl:gap-12 xl:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)]">
+          {/* ── Copy lane ── */}
+          <div className="min-w-0 max-w-[34rem] xl:max-w-none">
+            <Eyebrow variant="dark">{eyebrow}</Eyebrow>
 
-      <Container width="wide" className="relative z-10">
-        <div className="max-w-2xl">
-          <Eyebrow variant="dark">{eyebrow}</Eyebrow>
-
-          {meta && (
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-bone)]/50 mt-4">
-              / {meta}
-            </p>
-          )}
-
-          {kicker && (
-            <p className="font-accent italic text-[15px] md:text-[16px] text-[var(--color-bone)]/70 mt-6">
-              {kicker}
-            </p>
-          )}
-
-          <h1
-            className={cn(
-              "font-display font-bold leading-[1.02] tracking-[-0.04em] text-[var(--color-bone)]",
-              "text-[clamp(2.25rem,5vw,4.25rem)]",
-              kicker ? "mt-3" : "mt-5",
+            {meta && (
+              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-bone)]/60 mt-4">
+                / {meta}
+              </p>
             )}
-          >
-            {typeof headline === "string" ? (
-              <SplitText text={headline} delay={0.15} stagger={0.05} />
-            ) : (
-              <>
-                <SplitText text={headline[0]} delay={0.2} />
-                <br />
-                <SplitText text={headline[1]} delay={0.6} stagger={0.1} />
-              </>
+
+            {kicker && (
+              <p className="font-accent italic text-[15px] md:text-[16px] text-[var(--color-bone)]/75 mt-5">
+                {kicker}
+              </p>
             )}
-          </h1>
 
-          <p className="font-display font-medium text-[clamp(1.05rem,1.8vw,1.375rem)] leading-[1.4] tracking-[-0.01em] text-[var(--color-bone)]/70 mt-5 max-w-xl">
-            {subheadline}
-          </p>
-
-          <div className="mt-7 flex flex-col sm:flex-row gap-3">
-            <CtaLink
-              href={ctaPrimary.href ?? "#book"}
+            <h1
               className={cn(
-                "inline-flex items-center justify-center gap-2 h-[52px] px-[28px]",
-                "rounded-full font-medium text-[15px] tracking-tight whitespace-nowrap",
-                "bg-[var(--color-bone)] text-[var(--color-ink)]",
-                "hover:bg-[var(--color-caribbean-green)] hover:text-[var(--color-ink)]",
-                "active:scale-[0.98] transition-[background-color,transform] duration-200 ease-out",
-                "focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[var(--color-caribbean-green)]",
+                "font-display font-bold leading-[1.03] tracking-[-0.035em] text-[var(--color-bone)] text-balance",
+                "text-[clamp(2rem,1.05rem+3.2vw,3.375rem)]",
+                kicker ? "mt-3" : "mt-5",
               )}
             >
-              {ctaPrimary.label}
-            </CtaLink>
+              <SplitText text={headline} />
+            </h1>
 
-            {ctaSecondary && (
+            <p className="font-display font-medium text-[clamp(1rem,0.86rem+0.5vw,1.25rem)] leading-[1.45] tracking-[-0.01em] text-[var(--color-bone)]/75 mt-5 max-w-[40ch] text-pretty">
+              {subheadline}
+            </p>
+
+            <div className="mt-7 flex flex-col sm:flex-row gap-3">
               <CtaLink
-                href={ctaSecondary.href ?? "#how"}
+                href={ctaPrimary.href ?? "#book"}
                 className={cn(
-                  "inline-flex items-center justify-center gap-2 h-[52px] px-[24px]",
-                  "rounded-full font-medium text-[15px] tracking-tight whitespace-nowrap",
-                  "border border-[var(--color-bone)]/30 text-[var(--color-bone)]",
-                  "hover:border-[var(--color-bone)]/60 transition-colors",
+                  "inline-flex items-center justify-center gap-2 h-[52px] px-7",
+                  "rounded-full font-medium text-[15px] tracking-tight",
+                  "bg-[var(--color-bone)] text-[var(--color-ink)]",
+                  "hover:bg-[var(--color-caribbean-green)] hover:text-[var(--color-ink)]",
+                  "active:scale-[0.98] transition-[background-color,transform] duration-200 ease-out motion-reduce:transition-none",
+                  "focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[var(--color-caribbean-green)]",
                 )}
               >
-                {ctaSecondary.label}
+                {ctaPrimary.label}
               </CtaLink>
+
+              {ctaSecondary && (
+                <CtaLink
+                  href={ctaSecondary.href ?? "#how"}
+                  className={cn(
+                    "inline-flex items-center justify-center gap-2 h-[52px] px-6",
+                    "rounded-full font-medium text-[15px] tracking-tight",
+                    "border border-[var(--color-bone)]/35 text-[var(--color-bone)]",
+                    "hover:border-[var(--color-bone)]/70 hover:bg-[var(--color-bone)]/5 transition-colors motion-reduce:transition-none",
+                    "focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[var(--color-caribbean-green)]",
+                  )}
+                >
+                  {ctaSecondary.label}
+                </CtaLink>
+              )}
+            </div>
+
+            {/* Microcopy + trust line.
+                Both were `bone/50` at 10–11 px: 3.91:1 on this gradient, below
+                the 4.5:1 AA floor. Raised to /75 and given normal case at 12 px
+                so they read as sentences, not as a wall of tracked-out mono. */}
+            {ctaMicrocopy && (
+              <p className="text-[13px] leading-relaxed text-[var(--color-bone)]/75 mt-4 max-w-[42ch]">
+                {ctaMicrocopy}
+              </p>
+            )}
+
+            {trustLine && (
+              <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--color-caribbean-green)] mt-3.5 leading-relaxed">
+                {trustLine}
+              </p>
             )}
           </div>
 
-          {ctaMicrocopy && (
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-bone)]/50 mt-5 max-w-lg">
-              {ctaMicrocopy}
-            </p>
-          )}
-
-          {trustLine && (
-            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-caribbean-green)]/80 mt-4 max-w-lg">
-              {trustLine}
-            </p>
-          )}
+          {/* ── Visual lane ──
+              Hidden below md (there is no room), shown from md up. It never
+              overlaps the copy because it is a sibling column, not an overlay. */}
+          {/* `w-full` es obligatorio: con `mx-auto` los márgenes automáticos
+              ganan a `align-items: stretch` y el carril se encogía al ancho
+              intrínseco del SVG (300 px por defecto en un <svg> con viewBox). */}
+          <div className="pointer-events-none hidden md:block w-full min-w-0 md:max-w-[38rem] md:mx-auto xl:max-w-none text-[var(--color-bone)]">
+            {visual ?? (
+              <AnimatedMark
+                immediate
+                traceDurationSeconds={2.6}
+                fillRevealSeconds={0.9}
+                loopShimmer
+                shimmerIntervalSeconds={11}
+                className="w-full"
+              />
+            )}
+          </div>
         </div>
       </Container>
     </section>

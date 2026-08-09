@@ -17,8 +17,11 @@
     font-family: var(--font-display);
     color: var(--color-ink);
     background-color: var(--color-bone);
-    /* prevent horizontal scroll from any rogue element */
-    overflow-x: hidden;
+    /* Sin `overflow-x: hidden` global. Era un parche que convertía desbordes
+     * reales en invisibles — tapaba el recorte del orquestador (58 px a
+     * 1440 px) y el de la fila del FAQ (10 px a 390 px). Si algo se sale, que
+     * se vea y se arregle en su sitio; el recorte deliberado va con
+     * `overflow-hidden` en la sección concreta. Auditoría 2026-08-09 §A-2. */
   }
 
   body {

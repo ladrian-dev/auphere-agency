@@ -40,9 +40,22 @@ export const CLAIMS: readonly Claim[] = [
   // ───────────────────────────── LIVE ─────────────────────────────
   {
     id: 'production-24-7',
-    promise: 'Agente en producción 24/7, multicanal (WhatsApp · Instagram · TikTok)',
+    promise: 'Agente en producción 24/7, multicanal (WhatsApp · Instagram · voz)',
     status: 'live',
-    evidence: 'nexus runtime en producción; webhooks meta/tiktok',
+    evidence: 'nexus runtime en producción; webhooks meta',
+  },
+  {
+    id: 'channel-tiktok',
+    promise: 'TikTok como canal de entrada del agente',
+    status: 'dated',
+    gate: 'Pendiente de producción — decisión de producto 2026-08-09',
+    // Donde el canal aparece con nombre va etiquetado como pendiente, nunca
+    // listado junto a los que sí están en producción.
+    publishAs: {
+      es: 'TikTok · pronto',
+      en: 'TikTok · soon',
+    },
+    allowedFiles: ['messages/es.json', 'messages/en.json'],
   },
   {
     id: 'audio-vision',

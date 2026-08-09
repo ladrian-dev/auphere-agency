@@ -10,7 +10,6 @@
     "howItWorks": "How it works",
     "useCases": "Use cases",
     "cases": "Cases",
-    "pricing": "Pricing",
     "faq": "FAQ",
     "cta": "Book",
     "platform": "Platform",
@@ -56,26 +55,13 @@
   },
   "hero": {
     "eyebrow": "OPERATED AI INFRASTRUCTURE · EU",
-    "headlineLine1": "We build, operate and answer for",
-    "headlineLine2": "your AI agent in production.",
-    "subheadline": "40% of agent projects are cancelled before they reach production. Our business is making sure yours is not.",
+    "subheadline": "It answers your customers on WhatsApp, Instagram and voice. We deploy it, monitor it 24/7 and improve it every month.",
     "ctaPrimary": "Book a diagnostic · 30 min",
     "ctaSecondary": "See the platform →",
-    "ctaMicrocopy": "You talk to an engineer, not a salesperson.",
-    "chat": {
-      "businessName": "Your business",
-      "subtitle": "Auphere Agent · WhatsApp",
-      "online": "online",
-      "m1": "Hi, do you have an opening this afternoon for a deep-tissue massage?",
-      "m2": "Hi! I have a slot at 5:30pm with Carla or 7:00pm with Marina. Which works for you?",
-      "m3": "5:30pm sounds perfect",
-      "m4": "Booked ✓ I'll send a confirmation and a link to reschedule if anything changes. See you this afternoon."
-    },
-    "trustLine": "EU · Article 50 by design · Ley 10/2025 ready",
     "orchestrator": {
       "whatsapp": "WhatsApp",
       "instagram": "Instagram",
-      "tiktok": "TikTok",
+      "tiktok": "TikTok · soon",
       "voice": "Voice",
       "classifier": "Classify",
       "calendar": "Calendar",
@@ -84,35 +70,36 @@
       "browser": "Browser",
       "response": "Respond",
       "human": "Human"
-    }
+    },
+    "headline": "Your AI agent, built and run by us."
   },
   "howWeWork": {
     "marker": {
       "label": "How we work",
-      "meta": "3 stages · honest"
+      "meta": "3 stages · 3 to 6 weeks"
     },
-    "headline": "Diagnose · Configure · Live.",
-    "intro": "We start by deciding together whether automation actually solves your problem. If it doesn't, we tell you. If it does, you walk out with a written plan.",
+    "headline": "From first call to production, in three stages.",
+    "intro": "Every stage closes with something you can read: a plan, a version you sign off, a performance report.",
     "steps": {
       "diagnose": {
         "timing": "30 min",
-        "title": "Diagnose",
-        "body": "A 30-minute call with your team to look at the operation honestly and decide together whether automation actually solves your problem. If it doesn't, we tell you straight. If it does, you walk out with a written plan: which workflows, which integrations, what it'll cost, what to expect."
+        "title": "Diagnostic",
+        "body": "Half an hour with your team to see where the time actually goes. If automation is not the answer, we say so and it ends there. If it is, you leave with the scope in writing: which flows, which integrations, what it costs and what to expect in which week."
       },
       "configure": {
         "timing": "2 to 6 weeks",
-        "title": "Configure",
-        "body": "We build your agent end-to-end: integrations with the tools you already use, training on your real data, personalization to your voice and rules. You review every sprint and approve every version before it is promoted to production."
+        "title": "Configuration",
+        "body": "We integrate with the tools you already use, train the agent on your data and tune it to your voice and business rules. You review each iteration, and no version reaches production without your sign-off."
       },
       "goLive": {
-        "timing": "Continuous · 24/7",
-        "title": "Go Live",
-        "body": "Your agent goes into production. We monitor it 24/7, measure performance against the metrics we agreed in the diagnostic, and improve it monthly. You get a direct WhatsApp line to the team operating it. Your team focuses on the work that needs a human."
+        "timing": "Ongoing · 24/7",
+        "title": "In production",
+        "body": "The agent starts answering. We monitor how it performs, measure the metrics agreed in the diagnostic and improve it every month. You have direct contact with the team running it."
       }
     }
   },
   "pullQuote": {
-    "text": "Most AI projects die before they reach production. Our business is making sure yours does not.",
+    "text": "An agent nobody runs is a demo with a monthly invoice.",
     "attribution": "Auphere"
   },
   "cases": {
@@ -128,136 +115,60 @@
   "whyAuphere": {
     "marker": {
       "label": "Why Auphere",
-      "meta": "4 promises · zero hype"
+      "meta": "4 commitments"
     },
-    "headline": "It lives in production, or it does not count.",
-    "intro": "The entire category sells demos. Auphere sells the stretch where the others fail: production — and answering for it.",
+    "headline": "Four commitments you can verify.",
+    "intro": "Gartner expects 40% of agent projects to be scrapped before they reach production. The stretch that fails — deploying it, running it and answering for it — is exactly the one we sell.",
     "promises": {
       "production": {
-        "title": "It lives in production or it does not count.",
-        "body": "40% of agent projects are cancelled before reaching production; only a minority of organizations have scaled one. We sell exactly the stretch where the others fail — and we answer for it."
+        "title": "In production, or nothing happened.",
+        "body": "We measure the project on one thing: whether it is serving real customers. A demo, a pilot or a staging environment does not count as delivery, and we do not invoice it as one."
       },
       "compliance": {
-        "title": "Compliant by design, and upfront about it.",
-        "body": "Your agent identifies itself as AI (Article 50), escalates to a person from day one (Ley 10/2025, ahead of the deadline), and the full stance is published at /trust. Transparency is not a commercial risk: it converts better."
+        "title": "Compliant by design, and it says so out loud.",
+        "body": "Your agent identifies itself as AI — Article 50 of the EU AI Act — and escalates to a person from day one, ahead of what Spain’s Law 10/2025 will require. The full position is published at /trust, not behind an NDA."
       },
       "isolation": {
-        "title": "Isolation you can verify, not take on faith.",
-        "body": "Your data isolation is enforced by the database, not by well-meaning code: RLS, a two-point whitelist, impersonation-aware auditing and tests that block deployment when they fail."
+        "title": "Isolation is enforced by the database.",
+        "body": "Not by the good faith of the code: forced RLS, a whitelist at two points, auditing under impersonation, and isolation tests that block the deploy when they fail."
       },
       "oneTeam": {
-        "title": "One team, with operations in writing.",
-        "body": "Whoever runs the diagnostic configures the agent and answers in production. No subcontractors, no handoffs — and with runbooks, owned alerts and contractual continuity, so the bus factor is not your problem."
+        "title": "Whoever sells it is whoever runs it.",
+        "body": "The same team runs the diagnostic, configures the agent and keeps it up in production. No subcontractors, no handoffs, with runbooks, alerts that have an owner and continuity written into the contract."
       }
-    }
-  },
-  "pricing": {
-    "marker": {
-      "label": "Pricing",
-      "meta": "USD · taxes not incl."
-    },
-    "headline": "Honest numbers. No surprise invoices.",
-    "intro": "A flat diagnostic, a one-time setup, and a monthly fee that scales with the conversations and integrations your agent actually uses.",
-    "toggle": {
-      "ariaLabel": "Billing cadence",
-      "monthly": "Monthly",
-      "yearly": "Yearly",
-      "savings": "Save 10%"
-    },
-    "setup": "Setup (one-time)",
-    "monthly": "Monthly",
-    "perMonth": "mo",
-    "recommended": "★ Recommended",
-    "cta": "Book diagnostic",
-    "microcopy": "Every plan starts with a free 30-min diagnostic call. Payment: 50% on signing · 50% on kickoff. Cancel any month after the first 3.",
-    "tiers": {
-      "essential": {
-        "name": "Essential",
-        "tagline": "For lean teams ready to automate one channel.",
-        "features": {
-          "volume": "Up to 1,500 conversations / month",
-          "channels": "1 channel (WhatsApp or web)",
-          "integrations": "Basic (1–2 tools)",
-          "workflows": "Conversational",
-          "cycle": "Monthly improvement cycle"
-        }
-      },
-      "pro": {
-        "name": "Pro",
-        "tagline": "Most teams land here. Multiple channels, real workflows.",
-        "features": {
-          "volume": "Up to 4,000 conversations / month",
-          "channels": "Up to 3 channels",
-          "integrations": "Standard (up to 5)",
-          "workflows": "Conversational + actions",
-          "cycle": "Bi-weekly improvement cycle"
-        }
-      },
-      "business": {
-        "name": "Business 360",
-        "tagline": "High volume, complex ops, guaranteed response window.",
-        "features": {
-          "volume": "Up to 10,000 conversations / month",
-          "channels": "Up to 3 channels + 4h SLA",
-          "integrations": "Advanced (no cap in agreed scope)",
-          "workflows": "Conversational + actions + reactivation",
-          "cycle": "Weekly improvement cycle"
-        }
-      }
-    },
-    "features": {
-      "volume": {
-        "label": "Volume"
-      },
-      "channels": {
-        "label": "Channels"
-      },
-      "integrations": {
-        "label": "Integrations"
-      },
-      "workflows": {
-        "label": "Workflows"
-      },
-      "cycle": {
-        "label": "Improvement"
-      }
-    },
-    "partnersLine": {
-      "text": "Are you an agency or a platform? The partner program has its own economics.",
-      "cta": "See the program →"
     }
   },
   "qualifier": {
     "marker": {
       "label": "Is this for you?",
-      "meta": "Honest filter · 4 + 3"
+      "meta": "4 yes · 3 no"
     },
-    "headline": "Built for teams that already feel the bottleneck.",
+    "headline": "Built for teams already feeling the bottleneck.",
     "yesTitle": "This is for you if…",
     "yes": {
-      "yes1": "Your team loses real hours every week to repetitive customer interactions: booking, follow-up, status questions, post-sale support.",
-      "yes2": "You're past the \"can AI help?\" stage and ready for an agent that runs in production with measurable results in weeks, not quarters.",
-      "yes3": "You've tried no-code or off-the-shelf chatbots (Zapier, Make, Intercom flows) and they broke the moment volume or edge cases showed up.",
-      "yes4": "You'd rather get a working agent we operate for you than another tool, codebase or contractor to manage."
+      "yes1": "Your team loses hours every week to the same interactions: bookings, follow-ups, status questions and post-sale support.",
+      "yes2": "You are past the “could AI help?” stage and want an agent answering, with measurable results in weeks rather than quarters.",
+      "yes3": "You tried no-code or a catalogue chatbot and it broke the moment volume rose or the first edge case showed up.",
+      "yes4": "You would rather have an agent that works and that we run than one more tool, one more repo and one more vendor to manage."
     },
-    "noTitle": "This is NOT for you if…",
+    "noTitle": "This is not for you if…",
     "no": {
-      "no1": "You're shopping purely on price. Our floor is $850 setup + $120/mo, and there are cheaper templates if that's the priority.",
-      "no2": "You need someone live tomorrow. Our diagnostic slots open 2–3 weeks out and we don't cut corners on scoping.",
-      "no3": "You want your customers not to know they are talking to an AI. Our agents identify themselves as AI — EU law requires it, and it converts better anyway."
+      "no1": "You are buying on price. There is a team running every agent, so we are not the cheap option: if cost per month is the deciding criterion, a template beats us.",
+      "no2": "You need someone live tomorrow. Diagnostic slots open two to three weeks out and we do not cut scope to arrive sooner.",
+      "no3": "You want your customers not to know they are talking to an AI. Our agents always identify themselves: EU law requires it, and it converts better anyway."
     }
   },
   "faq": {
     "marker": {
       "label": "FAQ",
-      "meta": "Plain answers · no marketing"
+      "meta": "11 questions"
     },
-    "headline": "Questions everyone asks.",
-    "intro": "If yours isn't here, drop it in the diagnostic call.",
+    "headline": "Questions everybody asks.",
+    "intro": "If yours is not here, bring it to the diagnostic call.",
     "items": {
       "cost": {
-        "q": "How much does it cost?",
-        "a": "Every engagement starts with a free 30-minute diagnostic call. If we both agree to move forward, you pick a tier: Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, the tier most teams at this scale tend to fit) or Business 360 ($2,990 + $390/mo). USD, taxes excluded. 50% on signing, 50% on kickoff. 10% off when billed annually."
+        "q": "How does billing work?",
+        "a": "Three line items and nothing else: the diagnostic is free, the build is quoted as a fixed fee once it ends, and from go-live there is a monthly fee to run the agent. The budget comes out of the diagnostic with the scope in writing, so there is nothing left to renegotiate. You pay 50% on signing and 50% on kickoff, and you can cancel with 30 days notice after the first three months."
       },
       "timing": {
         "q": "How long until the agent is live?",
@@ -306,11 +217,12 @@
     }
   },
   "finalCta": {
-    "eyebrow": "LET'S SEE IF WE FIT",
+    "eyebrow": "LET’S SEE IF WE FIT",
     "headline": "30 minutes.",
-    "headlineAccent": "No cost. No deck.",
-    "subheadline": "You'll talk to an engineer, not a salesperson. We leave with a go/no-go. Yours or ours.",
-    "microcopy": "Don't see a slot that works? Email contacto@auphere.com and we'll find one."
+    "headlineAccent": "No cost, no commitment.",
+    "subheadline": "Half an hour to review your operation and decide whether this helps. You leave with a clear answer — ours or yours — and, if we continue, with the scope in writing.",
+    "microcopy": "No slot that works for you? Email contacto@auphere.com and we will find one.",
+    "loadingCalendar": "Loading calendar…"
   },
   "useCases": {
     "common": {
@@ -544,8 +456,8 @@
             "a": "One agent, one phone strategy, separate calendars and rules per location. We agree the routing during the diagnostic: by phone number, by language, by client history, whatever fits."
           },
           "pricing": {
-            "q": "How much does it cost?",
-            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, the tier most shops at this scale tend to fit) or Business 360 ($2,990 + $390/mo) depending on volume and channels."
+            "q": "How does billing work?",
+            "a": "The quote comes out of the diagnostic, not off a table. Thirty minutes to look at volume, channels and integrations, and you leave with the scope and the budget in writing: a fixed build fee and a monthly fee to run it. We are rebuilding the public rate card; until it ships, you get your number on that call."
           },
           "launch": {
             "q": "How long until it's answering my phone?",
@@ -702,8 +614,8 @@
             "a": "Booksy, Fresha, GlossGenius, Square, Vagaro, all out of the box. Anything else with a documented API is in scope. The diagnostic confirms the exact integration list before you sign."
           },
           "pricing": {
-            "q": "How much does it cost?",
-            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, the tier most salons at this scale tend to fit) or Business 360 ($2,990 + $390/mo) depending on volume and channels."
+            "q": "How does billing work?",
+            "a": "The quote comes out of the diagnostic, not off a table. Thirty minutes to look at volume, channels and integrations, and you leave with the scope and the budget in writing: a fixed build fee and a monthly fee to run it. We are rebuilding the public rate card; until it ships, you get your number on that call."
           },
           "launch": {
             "q": "How long until it's live?",
@@ -860,8 +772,8 @@
             "a": "Yes, all three are supported out of the box, as are Vagaro and Mangomint. Anything else with a documented API is in scope. The diagnostic confirms the exact list before you sign."
           },
           "pricing": {
-            "q": "How much does it cost?",
-            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, the tier most spas at this scale tend to fit) or Business 360 ($2,990 + $390/mo) depending on volume and channels."
+            "q": "How does billing work?",
+            "a": "The quote comes out of the diagnostic, not off a table. Thirty minutes to look at volume, channels and integrations, and you leave with the scope and the budget in writing: a fixed build fee and a monthly fee to run it. We are rebuilding the public rate card; until it ships, you get your number on that call."
           },
           "launch": {
             "q": "How long until it's live?",
@@ -1019,8 +931,8 @@
             "a": "Three triggers: anything clinical, anything outside the contracted scope, or anything the client explicitly asks. Escalation goes to a named human inbox or phone with full conversation context. No dropped balls."
           },
           "pricing": {
-            "q": "How much does it cost?",
-            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo) or Business 360 ($2,990 + $390/mo, the tier most clinics tend to fit given volume and the coverage they need)."
+            "q": "How does billing work?",
+            "a": "The quote comes out of the diagnostic, not off a table. Thirty minutes to look at volume, channels and integrations, and you leave with the scope and the budget in writing: a fixed build fee and a monthly fee to run it. We are rebuilding the public rate card; until it ships, you get your number on that call."
           },
           "launch": {
             "q": "How long until it's live?",
@@ -1177,8 +1089,8 @@
             "a": "Yes, all three out of the box, plus Curve, Carestack, Dentally and most EU systems. Anything with a documented API is in scope. The diagnostic confirms the exact list before you sign."
           },
           "pricing": {
-            "q": "How much does it cost?",
-            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo) or Business 360 ($2,990 + $390/mo, the tier most clinics tend to fit given volume and the coverage they need)."
+            "q": "How does billing work?",
+            "a": "The quote comes out of the diagnostic, not off a table. Thirty minutes to look at volume, channels and integrations, and you leave with the scope and the budget in writing: a fixed build fee and a monthly fee to run it. We are rebuilding the public rate card; until it ships, you get your number on that call."
           },
           "launch": {
             "q": "How long until it's live?",
@@ -1335,8 +1247,8 @@
             "a": "The agent escalates to the named therapist with full context. We write the clinical perimeter into the contract before launch: pain levels, red flags, post-op concerns all hand off to a human."
           },
           "pricing": {
-            "q": "How much does it cost?",
-            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, the tier most clinics at this scale tend to fit) or Business 360 ($2,990 + $390/mo) depending on volume and integrations."
+            "q": "How does billing work?",
+            "a": "The quote comes out of the diagnostic, not off a table. Thirty minutes to look at volume, channels and integrations, and you leave with the scope and the budget in writing: a fixed build fee and a monthly fee to run it. We are rebuilding the public rate card; until it ships, you get your number on that call."
           },
           "launch": {
             "q": "How long until it's live?",
@@ -1493,8 +1405,8 @@
             "a": "Yes, all three out of the box, plus Provet Cloud and eVetPractice. Anything else with a documented API is in scope. The diagnostic confirms the exact integration list before you sign."
           },
           "pricing": {
-            "q": "How much does it cost?",
-            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo) or Business 360 ($2,990 + $390/mo, the tier most clinics tend to fit given the 24/7 coverage they need)."
+            "q": "How does billing work?",
+            "a": "The quote comes out of the diagnostic, not off a table. Thirty minutes to look at volume, channels and integrations, and you leave with the scope and the budget in writing: a fixed build fee and a monthly fee to run it. We are rebuilding the public rate card; until it ships, you get your number on that call."
           },
           "launch": {
             "q": "How long until it's live?",
@@ -1651,8 +1563,8 @@
             "a": "Yes. EU-hosted infrastructure by default, DPA signed before any real data flows, zero-retention LLM APIs. We never use your patient conversations to train models we sell to others."
           },
           "pricing": {
-            "q": "How much does it cost?",
-            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, the tier most pharmacies at this scale tend to fit) or Business 360 ($2,990 + $390/mo) depending on volume and integrations."
+            "q": "How does billing work?",
+            "a": "The quote comes out of the diagnostic, not off a table. Thirty minutes to look at volume, channels and integrations, and you leave with the scope and the budget in writing: a fixed build fee and a monthly fee to run it. We are rebuilding the public rate card; until it ships, you get your number on that call."
           },
           "launch": {
             "q": "How long until it's answering WhatsApp?",
@@ -1809,8 +1721,8 @@
             "a": "If your LMS has an API (most do: TutorBird, Bridge, Moodle, Google Classroom), yes. If not, we can run on Google Calendar + Stripe + a shared spreadsheet during the first 90 days while we evaluate whether a deeper integration is worth it."
           },
           "pricing": {
-            "q": "How much does it cost?",
-            "a": "Same pricing as the rest of Auphere: a free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, the tier most schools at this scale tend to fit) or Business 360 ($2,990 + $390/mo) depending on volume and channels."
+            "q": "How does billing work?",
+            "a": "The quote comes out of the diagnostic, not off a table. Thirty minutes to look at volume, channels and integrations, and you leave with the scope and the budget in writing: a fixed build fee and a monthly fee to run it. We are rebuilding the public rate card; until it ships, you get your number on that call."
           },
           "launch": {
             "q": "How long until it's live?",
@@ -1834,12 +1746,11 @@
       "eyebrow": "COMPLIANT WHATSAPP AI AGENTS · BUILT FOR YOU",
       "meta": "WhatsApp Business API · live in 3 to 4 weeks",
       "kicker": "For service businesses, not platforms shopping for users",
-      "headlineLine1": "WhatsApp AI agents we",
-      "headlineLine2": "build, run and improve.",
       "subheadline": "A WhatsApp agent configured around your real operation, run on our infrastructure, and improved every month. Not a SaaS template you configure yourself.",
       "ctaPrimary": "Book a 30-min diagnostic",
       "ctaSecondary": "Hear it answer →",
-      "ctaMicrocopy": "You'll talk to an engineer, not a salesperson. We leave with a go/no-go."
+      "ctaMicrocopy": "You'll talk to an engineer, not a salesperson. We leave with a go/no-go.",
+      "headline": "WhatsApp AI agents we build, run and improve."
     },
     "category": {
       "marker": {
@@ -2087,8 +1998,8 @@
           "a": "EU-hosted infrastructure with tenant isolation for European clients. DPA signed before any real conversation flows. Client data is never used to train models we sell to other clients. For LATAM clients, we honor LGPD (Brazil) and equivalent regulations in MX, CO, AR. Specifics confirmed in the diagnostic."
         },
         "pricing": {
-          "q": "How much does it cost?",
-          "a": "Same pricing as the rest of Auphere. Free 30-min diagnostic, then Essential ($850 setup + $120/mo), Pro ($1,490 + $249/mo, where most teams land at this scale) or Business 360 ($2,990 + $390/mo) depending on volume, languages and integrations. WhatsApp BSP conversation fees are separate, billed by your provider."
+          "q": "How does billing work?",
+          "a": "The quote comes out of the diagnostic, not off a table — conversation volume, languages and integrations drive it. You leave the call with scope and budget in writing. WhatsApp conversation fees are separate: Meta bills them through your provider and they never pass through us."
         }
       }
     },
@@ -2529,7 +2440,6 @@
       "how": "How it works",
       "useCases": "Use cases",
       "docs": "Documentation",
-      "pricing": "Pricing",
       "cases": "Cases",
       "faq": "FAQ",
       "platform": "Platform"
@@ -2550,72 +2460,113 @@
   },
   "threeWays": {
     "marker": {
-      "label": "Three ways to work",
-      "meta": "Pick your door in 8 seconds"
+      "label": "Three ways to work with us",
+      "meta": "Hire it · Resell it · Embed it"
     },
     "headline": "One platform. Three ways to work with it.",
     "tracks": {
       "hire": {
         "verb": "Hire it",
         "who": "For your operation",
-        "body": "Your agent, built around your business and operated 24/7 by us.",
+        "body": "Built around your operation and backed by our team.",
         "cta": "See the platform",
         "href": "/platform"
       },
       "resell": {
         "verb": "Resell it",
         "who": "Your brand, your client",
-        "body": "Sell AI to your book without building the platform. We operate; you invoice.",
+        "body": "Sell AI to your book of business without building the platform: we run it, you invoice.",
         "cta": "Partner program",
         "href": "/partners"
       },
       "embed": {
         "verb": "Embed it",
         "who": "Inside your product",
-        "body": "AI in your SaaS or platform via API: your brand, your invoice, our infrastructure.",
+        "body": "AI inside your product over an API: your brand, your invoice, our infrastructure.",
         "cta": "Auphere Embedded",
         "href": "/partners/embedded"
       }
-    }
+    },
+    "intro": "The same engine in all three. What changes is whose brand is on it, who invoices, and who faces the customer.",
+    "enterpriseLine": "Buying committee, security review and a contractual SLA?",
+    "enterpriseCta": "Auphere for enterprise"
   },
   "capabilities": {
     "marker": {
-      "label": "What it already does",
-      "meta": "Verified against code, not against the pitch"
+      "label": "What it does",
+      "meta": "6 capabilities in production"
     },
-    "headline": "What your agent already knows how to do.",
-    "intro": "Nothing on this list is roadmap. All of it is in production today.",
+    "headline": "What your agent does from day one.",
+    "intro": "Everything on this list is in production today. Open any of them for the technical detail.",
     "cells": {
       "media": {
-        "title": "Understands voice notes and photos, not just text",
-        "body": "The audio and photos your customers send, understood and answered.",
-        "detail": "It transcribes voice notes and reads the images that arrive on WhatsApp or Instagram: the payment receipt, the product photo, the two-minute audio with the whole story. Your customer writes how they write; the agent adapts."
+        "title": "Understands audio and images",
+        "body": "The two-minute voice note and the photo of the receipt, read and answered.",
+        "detail": "It transcribes voice notes and reads the images that arrive over WhatsApp or Instagram: payment receipts, product photos, screenshots. Customers write however they like; the agent adapts."
       },
       "memory": {
-        "title": "Remembers every customer between conversations",
-        "body": "Today's conversation knows what happened last month.",
-        "detail": "Per-customer memory: preferences, history, context. It is the only thing on this list your customer directly perceives — and what turns a bot into an agent."
+        "title": "Remembers every customer",
+        "body": "Today’s conversation knows the history from previous months.",
+        "detail": "Per-customer memory: preferences, history and past issues. It is the only item on this list the end customer notices directly, and what separates an agent from a form with a chat window."
       },
       "jobs": {
-        "title": "Books, reminds, chases unpaid bills and recovers no-shows — on its own",
-        "body": "The four jobs that burn the most hours, with nobody pushing them.",
-        "detail": "Bookings with confirmation and one-tap rescheduling, reminders that cut no-shows, calm payment follow-ups and win-back of absent customers. Each flow activates only if your operation needs it."
+        "title": "Books, reminds and follows up",
+        "body": "Appointments, reminders, unpaid invoices and customers who stopped coming.",
+        "detail": "Bookings with one-tap confirmation and rescheduling, reminders that cut no-shows, follow-up on unpaid invoices and win-back for inactive customers. Each flow only switches on if your operation needs it."
       },
       "browser": {
-        "title": "Uses your software even if it has no API",
-        "body": "If your management tool only has a screen, the agent uses it anyway.",
-        "detail": "An agent-operated browser session books in your legacy panel exactly as a person would. The software you already run stops being an excuse."
+        "title": "Works with software that has no API",
+        "body": "If your back office only has a screen, the agent uses the screen.",
+        "detail": "The agent drives a browser session and works your legacy panel the way a person would. Running an older system stops being the reason automation is off the table."
       },
       "escalation": {
-        "title": "Knows when to stay quiet and hand off to a person",
-        "body": "Three triggers, full context, a named inbox.",
-        "detail": "Out of scope, explicit request, or low confidence: the agent escalates to your team with the whole conversation. It is also what Spain's Ley 10/2025 requires from December — your agent already complies."
+        "title": "Hands over to a person when it should",
+        "body": "Three triggers, the full conversation, and a named owner.",
+        "detail": "Out of scope, an explicit customer request, or low confidence: the agent transfers the case to your team with the entire context. It is also what Spain’s Law 10/2025 requires from December."
       },
       "hygiene": {
-        "title": "Watches your number's standing with Meta",
-        "body": "The real fear of operating WhatsApp, managed by default.",
-        "detail": "Number-quality monitoring, approved templates and a sending cadence that trips no alarms. A burned number is a dead channel: we treat it as part of the service."
+        "title": "Protects your number’s quality rating",
+        "body": "The real risk of running WhatsApp, handled as part of the service.",
+        "detail": "Monitoring of the number’s quality rating, approved templates and send rates within Meta’s limits. A blocked number is a lost channel: keeping it healthy is part of the service."
       }
+    }
+  },
+  "stage": {
+    "channels": {
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "tiktok": "TikTok · soon",
+      "voice": "Voice"
+    },
+    "tools": {
+      "calendar": "Calendar",
+      "crm": "CRM",
+      "payments": "Payments",
+      "browser": "Browser"
+    },
+    "core": "Classify",
+    "out": "Respond",
+    "human": "Person",
+    "tracks": {
+      "hire": "Hire it",
+      "resell": "Resell it",
+      "embed": "Embed it"
+    },
+    "stages": {
+      "diagnose": "Diagnostic",
+      "configure": "Configuration",
+      "production": "Production"
+    },
+    "annotations": {
+      "sharedEngine": "One engine",
+      "t0": "30 min",
+      "t1": "2 to 6 weeks",
+      "t2": "Ongoing",
+      "tenantA": "Tenant A",
+      "tenantB": "Tenant B",
+      "wall": "RLS",
+      "rowData": "Data",
+      "rowConv": "Conversations"
     }
   }
 }

@@ -11,7 +11,7 @@ export function Qualifier() {
 
   return (
     <section className="py-20 md:py-28 dot-grid">
-      <SectionMarker number="04" label={t('marker.label')} meta={t('marker.meta')} />
+      <SectionMarker number="05" label={t('marker.label')} meta={t('marker.meta')} />
 
       <Container width="default">
         <div className="max-w-3xl mb-10 md:mb-14">

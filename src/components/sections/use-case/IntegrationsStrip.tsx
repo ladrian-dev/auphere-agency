@@ -4,6 +4,7 @@ import { Container } from "@/components/primitives/Container";
 import { SectionMarker } from "@/components/primitives/SectionMarker";
 import { useRef } from "react";
 import { useAuphereGSAP } from "@/lib/motion/gsap";
+import { onEnter } from "@/lib/motion/on-enter";
 import type { VerticalSlug } from "@/lib/use-cases/verticals";
 
 interface Props {
@@ -26,13 +27,14 @@ export function IntegrationsStrip({ vertical, integrations, number }: Props) {
   useAuphereGSAP(
     ({ reduced, gsap }) => {
       const list = listRef.current;
-      if (!list || reduced) return;
+      if (!list || reduced) return undefined;
       const chips = list.querySelectorAll<HTMLElement>('[data-integration-chip]');
       gsap.set(chips, { opacity: 0, y: 8 });
-      gsap.to(chips, {
+      const tween = gsap.to(chips, {
         opacity: 1, y: 0, duration: 0.4, ease: 'auphere', stagger: 0.05, clearProps: 'transform',
-        scrollTrigger: { trigger: list, start: 'top 85%', once: true },
+        paused: true,
       });
+      return onEnter(list, () => tween.play());
     },
     { scope: listRef },
   );

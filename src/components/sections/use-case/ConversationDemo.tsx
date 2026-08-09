@@ -2,6 +2,7 @@
 import { useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { useAuphereGSAP } from '@/lib/motion/gsap';
+import { onEnter } from '@/lib/motion/on-enter';
 import { Container } from '@/components/primitives/Container';
 import { SectionMarker } from '@/components/primitives/SectionMarker';
 import { cn } from '@/lib/utils/cn';
@@ -25,16 +26,17 @@ export function ConversationDemo({ config, number }: Props) {
   useAuphereGSAP(
     ({ reduced, gsap }) => {
       const card = cardRef.current;
-      if (!card || reduced) return;
+      if (!card || reduced) return undefined;
       const turns = card.querySelectorAll<HTMLElement>('[data-chat-turn]');
       gsap.set(card, { opacity: 0, y: 30 });
       gsap.set(turns, { opacity: 0, y: 8 });
-      const tl = gsap.timeline({ scrollTrigger: { trigger: card, start: 'top 80%', once: true } });
+      const tl = gsap.timeline({ paused: true });
       tl.to(card, { opacity: 1, y: 0, duration: 0.8, ease: 'auphere', clearProps: 'transform' }).to(
         turns,
         { opacity: 1, y: 0, duration: 0.4, ease: 'auphere', stagger: 0.18, clearProps: 'transform' },
         0.6,
       );
+      return onEnter(card, () => tl.play());
     },
     { scope: cardRef },
   );

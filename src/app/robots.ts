@@ -1,7 +1,17 @@
 import type { MetadataRoute } from 'next';
+import { isProduction } from '@/lib/deployment';
 
 export default function robots(): MetadataRoute.Robots {
   const url = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://auphere.com';
+
+  // Staging (`landing-staging.auphere.com`, rama develop) se cierra a todo
+  // rastreador y no publica sitemap. Es la mitad de la protección: robots.txt
+  // pide que no se rastree, pero Google puede indexar igual una URL que
+  // encuentre enlazada. La otra mitad es la cabecera `X-Robots-Tag: noindex`
+  // que pone next.config.ts en el mismo entorno.
+  if (!isProduction()) {
+    return { rules: [{ userAgent: '*', disallow: '/' }] };
+  }
 
   // AI bot policy (decided 2026-05-19):
   //   Allow citation crawlers (we want to appear in ChatGPT Search, Perplexity, Claude answers).

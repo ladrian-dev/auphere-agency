@@ -17,7 +17,7 @@ interface FaqHeader {
 export function Faq({
   items,
   namespace = 'faq',
-  sectionNumber = '05',
+  sectionNumber = '06',
   header,
 }: {
   items: FaqItemData[];
@@ -39,17 +39,17 @@ export function Faq({
       <SectionMarker number={sectionNumber} label={label} meta={meta} />
 
       <Container width="default">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20">
-          <div className="lg:sticky lg:top-24 lg:self-start">
-            <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.03em]">
+        <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] gap-10 lg:gap-16">
+          <div className="min-w-0 lg:sticky lg:top-28 lg:self-start">
+            <h2 className="font-display font-bold text-[clamp(1.875rem,1.1rem+2.4vw,3rem)] leading-[1.06] tracking-[-0.03em] text-balance">
               {headline}
             </h2>
-            <p className="text-[var(--color-ink-muted)] mt-5 leading-relaxed">
+            <p className="text-[var(--color-ink-muted)] mt-5 leading-relaxed max-w-[42ch] text-pretty">
               {intro}
             </p>
           </div>
 
-          <div className="flex flex-col">
+          <div className="min-w-0 flex flex-col">
             {items.map((item, i) => (
               <FaqAccordionItem key={i} q={item.q} a={item.a} defaultOpen={i === 0} />
             ))}
@@ -83,7 +83,7 @@ function FaqAccordionItem({
           id={buttonId}
           aria-expanded={open}
           aria-controls={panelId}
-          className="w-full flex items-start justify-between gap-6 py-6 text-left group font-display font-semibold text-lg md:text-xl tracking-[-0.01em] text-[var(--color-ink)] hover:text-[var(--color-bangladesh-green)] transition-colors"
+          className="w-full flex items-start justify-between gap-4 md:gap-6 py-5 md:py-6 text-left group font-display font-semibold text-[17px] md:text-xl tracking-[-0.01em] text-[var(--color-ink)] hover:text-[var(--color-bangladesh-green)] transition-colors motion-reduce:transition-none"
           onClick={() =>
             setOpen((v) => {
               if (!v) track('faq_open', { question: q.slice(0, 60) });
@@ -91,16 +91,27 @@ function FaqAccordionItem({
             })
           }
         >
-          <span>{q}</span>
+          <span className="min-w-0 text-pretty">{q}</span>
           <span
             aria-hidden
             className={cn(
               'shrink-0 w-7 h-7 rounded-full border border-[var(--color-ink-subtle)] flex items-center justify-center text-[var(--color-ink-muted)] mt-0.5',
-              'group-hover:border-[var(--color-ink-dim)] transition-[transform,border-color] duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:transition-none',
-              open && 'rotate-45',
+              'group-hover:border-[var(--color-ink-dim)] transition-colors duration-300 motion-reduce:transition-none',
             )}
           >
-            <svg viewBox="0 0 16 16" className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            {/* Rota el glifo, no el círculo: rotar el contenedor multiplicaba su
+                caja por √2 (28 → 39,6 px) y desbordaba la fila. §E-7 */}
+            <svg
+              viewBox="0 0 16 16"
+              className={cn(
+                'w-3 h-3 transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:transition-none',
+                open && 'rotate-45',
+              )}
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            >
               <path d="M8 3v10M3 8h10" />
             </svg>
           </span>
