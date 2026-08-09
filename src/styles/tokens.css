@@ -53,6 +53,22 @@
   --color-status-info:       var(--color-mint);
 
   /* ─────────────────────────────────────────────
+   * v3 §10.1 — superficies oscuras extendidas y escala de datos
+   * (/enterprise y /platform/security leen sobre oscuro)
+   * ───────────────────────────────────────────── */
+  --color-surface-deep:      var(--color-dark-green);
+  /* Escala de datos para tablas de garantías (✅ / — / 🗓).
+   * Base calibrada para bone; la utility surface-deep las remapea a las
+   * variantes brillantes para mantener contraste sobre oscuro. */
+  --color-data-positive:     var(--color-frog);
+  --color-data-neutral:      color-mix(in srgb, var(--color-ink) 45%, var(--color-bone));
+  --color-data-pending:      #A1793F;
+
+  /* Medidas tipográficas por género de página */
+  --measure-editorial: 58ch;
+  --measure-technical: 68ch;
+
+  /* ─────────────────────────────────────────────
    * Tipografía
    * ───────────────────────────────────────────── */
   --font-display: var(--font-display), system-ui, -apple-system, sans-serif;
@@ -177,4 +193,14 @@
 @utility surface-light {
   background-color: var(--color-bone);
   color: var(--color-ink);
+}
+
+/* v3 §10.1 — superficie inmersiva de /enterprise y /platform/security.
+ * Remapea la escala de datos a variantes brillantes (contraste sobre oscuro). */
+@utility surface-deep {
+  background-color: var(--color-surface-deep);
+  color: var(--color-bone);
+  --color-data-positive: var(--color-caribbean-green);
+  --color-data-neutral: color-mix(in srgb, var(--color-bone) 62%, var(--color-surface-deep));
+  --color-data-pending: #D9A96A;
 }
