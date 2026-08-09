@@ -1,7 +1,7 @@
 'use client';
-import { motion, useReducedMotion, type Variants } from 'motion/react';
-import type { ReactNode } from 'react';
+import { useRef, type ReactNode } from 'react';
 import { cn } from '@/lib/utils/cn';
+import { useAuphereGSAP } from '@/lib/motion/gsap';
 
 interface ContainerProps {
   children: ReactNode;
@@ -15,25 +15,12 @@ interface ItemProps {
   className?: string;
 }
 
-const containerVariants = (stagger: number, delay: number): Variants => ({
-  hidden: {},
-  show: {
-    transition: { staggerChildren: stagger, delayChildren: delay },
-  },
-});
-
-const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 32, filter: 'blur(6px)' },
-  show: {
-    opacity: 1,
-    y: 0,
-    filter: 'blur(0px)',
-    transition: { duration: 0.8, ease: [0.32, 0.72, 0, 1] as const },
-  },
-};
-
 /**
- * Wrapper that staggers reveal of its <StaggerItem> children when scrolled into view.
+ * A-08 — standard section entrance, on GSAP.
+ * Spec: y 24px + opacity, 0.7 s, ease auphere-expo, once.
+ * One ScrollTrigger per container (never per item); items stagger inside it.
+ *
+ * Reduced motion: static render — the initial hide is never applied.
  */
 export function StaggerGrid({
   children,
@@ -41,27 +28,44 @@ export function StaggerGrid({
   staggerChildren = 0.12,
   delayChildren = 0.1,
 }: ContainerProps) {
-  const reducedMotion = useReducedMotion();
-  if (reducedMotion) {
-    return <div className={className}>{children}</div>;
-  }
+  const ref = useRef<HTMLDivElement>(null);
+
+  useAuphereGSAP(
+    ({ reduced, gsap }) => {
+      const root = ref.current;
+      if (!root || reduced) return;
+      // Only direct members of THIS grid — nested grids own their items.
+      const items = Array.from(root.querySelectorAll<HTMLElement>('[data-stagger-item]')).filter(
+        (el) => el.closest('[data-stagger-grid]') === root,
+      );
+      if (!items.length) return;
+
+      gsap.set(items, { opacity: 0, y: 24 });
+      gsap.to(items, {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        ease: 'auphere-expo',
+        stagger: staggerChildren,
+        delay: delayChildren,
+        clearProps: 'transform',
+        scrollTrigger: { trigger: root, start: 'top 85%', once: true },
+      });
+    },
+    { dependencies: [staggerChildren, delayChildren] },
+  );
+
   return (
-    <motion.div
-      className={cn(className)}
-      variants={containerVariants(staggerChildren, delayChildren)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, margin: '-80px' }}
-    >
+    <div ref={ref} data-stagger-grid className={cn(className)}>
       {children}
-    </motion.div>
+    </div>
   );
 }
 
 export function StaggerItem({ children, className }: ItemProps) {
   return (
-    <motion.div className={className} variants={itemVariants}>
+    <div data-stagger-item className={className}>
       {children}
-    </motion.div>
+    </div>
   );
 }

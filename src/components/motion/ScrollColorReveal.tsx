@@ -1,7 +1,7 @@
 'use client';
-import { motion, useReducedMotion, useScroll, useTransform, type MotionValue } from 'motion/react';
-import { useRef, type ReactNode } from 'react';
+import { Fragment, useRef } from 'react';
 import { cn } from '@/lib/utils/cn';
+import { useAuphereGSAP } from '@/lib/motion/gsap';
 
 interface Props {
   text: string;
@@ -9,70 +9,52 @@ interface Props {
 }
 
 /**
- * Attio-style scroll-driven word color reveal.
- * Each word transitions from dim to full ink as it crosses the
- * configured scroll progress range.
+ * A-07 — scroll-scrubbed pull-quote reveal, on GSAP.
+ * Words go from dim (0.22) to full ink as the paragraph crosses the
+ * viewport band. Spec: scrub, start "top 80%", end "top 30%".
  *
- * Use for editorial pull quotes — the lecture cadence makes the reader
- * actually READ instead of skimming.
- *
- * Reduced motion: shows text fully colored, no animation.
+ * Reduced motion: text at full ink, no scrub.
  */
 export function ScrollColorReveal({ text, className }: Props) {
   const ref = useRef<HTMLParagraphElement>(null);
-  const reducedMotion = useReducedMotion();
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    // Start when the paragraph enters the bottom-15% of viewport, end when it crosses the top-15%
-    offset: ['start 0.85', 'start 0.15'],
-  });
-
   const words = text.split(' ');
 
-  if (reducedMotion) {
-    return (
-      <p ref={ref} className={cn('text-[var(--color-ink)]', className)}>
-        {text}
-      </p>
-    );
-  }
+  useAuphereGSAP(
+    ({ reduced, gsap }) => {
+      const root = ref.current;
+      if (!root || reduced) return;
+      const targets = root.querySelectorAll<HTMLElement>('[data-reveal-word]');
+      if (!targets.length) return;
+
+      gsap.set(targets, { opacity: 0.22 });
+      gsap.to(targets, {
+        opacity: 1,
+        ease: 'none',
+        stagger: 0.06,
+        scrollTrigger: {
+          trigger: root,
+          start: 'top 80%',
+          end: 'top 30%',
+          scrub: true,
+        },
+      });
+    },
+    { dependencies: [text] },
+  );
 
   return (
-    <p ref={ref} className={className}>
+    <p ref={ref} className={cn('text-[var(--color-ink)]', className)}>
       {/* Accessible name for screen readers — read once, full text */}
       <span className="sr-only">{text}</span>
       {/* Decorative animated words — hidden from SR */}
       <span aria-hidden="true">
-        {words.map((word, i) => {
-          const start = i / words.length;
-          const end = (i + 0.85) / words.length;
-          return (
-            <RevealWord key={i} word={word} start={start} end={end} progress={scrollYProgress} />
-          );
-        })}
+        {words.map((word, i) => (
+          <Fragment key={`${word}-${i}`}>
+            <span data-reveal-word>{word}</span>
+            {i < words.length - 1 && ' '}
+          </Fragment>
+        ))}
       </span>
     </p>
-  );
-}
-
-function RevealWord({
-  word,
-  start,
-  end,
-  progress,
-}: {
-  word: string;
-  start: number;
-  end: number;
-  progress: MotionValue<number>;
-}): ReactNode {
-  const opacity = useTransform(progress, [start, end], [0.22, 1]);
-  return (
-    <>
-      <motion.span aria-hidden style={{ opacity }}>
-        {word}
-      </motion.span>
-      {' '}
-    </>
   );
 }

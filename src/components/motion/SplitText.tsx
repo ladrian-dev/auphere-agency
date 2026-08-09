@@ -1,7 +1,7 @@
 'use client';
-import { Fragment } from 'react';
-import { motion, useReducedMotion } from 'motion/react';
+import { Fragment, useRef } from 'react';
 import { cn } from '@/lib/utils/cn';
+import { useAuphereGSAP } from '@/lib/motion/gsap';
 
 interface Props {
   text: string;
@@ -17,74 +17,75 @@ interface Props {
 }
 
 /**
- * Word-by-word blur reveal — Salix's signature pattern, ported to Motion.
- * Each word starts blurred + transparent, animates to clear + visible.
+ * A-01 — word-by-word blur reveal, on GSAP.
+ * Spec: y 12px + blur(6px)→0, ease auphere-expo, stagger 0.06 s.
+ * On `load` it waits for `document.fonts.ready` so the type never animates
+ * mid-FOUT; the tween is created synchronously (paused) so the useGSAP
+ * context still owns and reverts it.
  *
- * A11y pattern (axe-clean, WCAG 2.1.1):
- *   - The full text is exposed to screen readers ONCE via a visually-hidden
- *     <span class="sr-only"> (standards-compliant accessible name).
- *   - The animated word spans are wrapped in a single aria-hidden="true"
- *     container so SR ignores them entirely (no per-word stutter).
- *   - Avoids aria-label on <span> (axe rule `aria-prohibited-attr`).
+ * A11y (axe-clean, WCAG 2.1.1): full text exposed once via sr-only span;
+ * animated word spans live under a single aria-hidden container.
  *
- * Reduced motion: renders text statically with no animation.
+ * Reduced motion: words render statically (no initial hide is ever applied).
  */
 export function SplitText({
   text,
   delay = 0,
-  stagger = 0.08,
+  stagger = 0.06,
   trigger = 'load',
   className,
   as = 'span',
 }: Props) {
-  const reducedMotion = useReducedMotion();
-  const Tag = as === 'div' ? motion.div : motion.span;
-
-  if (reducedMotion) {
-    const StaticTag = as === 'div' ? 'div' : 'span';
-    return <StaticTag className={className}>{text}</StaticTag>;
-  }
-
+  const ref = useRef<HTMLElement>(null);
   const words = text.split(' ');
 
-  const triggerProps =
-    trigger === 'load'
-      ? { initial: 'hidden', animate: 'visible' }
-      : {
-          initial: 'hidden',
-          whileInView: 'visible',
-          viewport: { once: true, margin: '-50px' },
-        };
+  useAuphereGSAP(
+    ({ reduced, gsap }) => {
+      const root = ref.current;
+      if (!root || reduced) return;
+      const targets = root.querySelectorAll<HTMLElement>('[data-split-word]');
+      if (!targets.length) return;
+
+      gsap.set(targets, { opacity: 0, y: 12, filter: 'blur(6px)' });
+      const tween = gsap.to(targets, {
+        opacity: 1,
+        y: 0,
+        filter: 'blur(0px)',
+        duration: 0.9,
+        ease: 'auphere-expo',
+        stagger,
+        delay,
+        clearProps: 'filter,transform',
+        paused: trigger === 'load',
+        ...(trigger === 'inView'
+          ? { scrollTrigger: { trigger: root, start: 'top 85%', once: true } }
+          : {}),
+      });
+
+      if (trigger === 'load') {
+        document.fonts.ready.then(() => {
+          if (tween.isActive() || tween.progress() > 0) return;
+          tween.play();
+        });
+      }
+    },
+    { dependencies: [text, delay, stagger, trigger] },
+  );
+
+  const Tag = as === 'div' ? 'div' : 'span';
 
   return (
-    <Tag
-      className={cn('inline-block', className)}
-      {...triggerProps}
-      variants={{ hidden: {}, visible: {} }}
-    >
+    <Tag ref={ref as never} className={cn('inline-block', className)}>
       {/* Accessible name for screen readers — read once, full text */}
       <span className="sr-only">{text}</span>
-      {/* Decorative animated words — hidden from SR.
-          Spaces live OUTSIDE the inline-block motion.spans so they don't
-          collapse at the inline-block edges (browsers strip trailing
-          whitespace at the boundary of inline-block boxes). */}
+      {/* Decorative animated words — hidden from SR. Spaces live OUTSIDE the
+          inline-block spans so they don't collapse at inline-block edges. */}
       <span aria-hidden="true">
         {words.map((word, i) => (
           <Fragment key={`${word}-${i}`}>
-            <motion.span
-              className="inline-block will-change-[filter,opacity,transform]"
-              variants={{
-                hidden: { filter: 'blur(20px)', opacity: 0, y: 16 },
-                visible: { filter: 'blur(0px)', opacity: 1, y: 0 },
-              }}
-              transition={{
-                duration: 0.85,
-                delay: delay + i * stagger,
-                ease: [0.32, 0.72, 0, 1],
-              }}
-            >
+            <span data-split-word className="inline-block">
               {word}
-            </motion.span>
+            </span>
             {i < words.length - 1 && ' '}
           </Fragment>
         ))}

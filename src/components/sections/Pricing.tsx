@@ -139,7 +139,8 @@ export function Pricing() {
                     {t('setup')}
                   </p>
                   <p className="font-display font-bold text-3xl text-[var(--color-ink)] tracking-[-0.03em] mt-1">
-                    ${setup.toLocaleString()}
+                    {/* Fixed locale — .toLocaleString() without one hydration-mismatches (server "1490" vs client "1,490") */}
+                    ${setup.toLocaleString('en-US')}
                   </p>
                 </div>
 
