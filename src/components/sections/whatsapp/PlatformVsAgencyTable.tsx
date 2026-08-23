@@ -47,15 +47,15 @@ export async function PlatformVsAgencyTable({ number, locale }: Props) {
   );
 
   return (
-    <section className="py-24 md:py-32 border-t border-[var(--color-ink-subtle)]">
+    <section className="section-y section-edge">
       <SectionMarker number={number} label={t('marker.label')} meta={t('marker.meta')} />
 
       <Container width="wide">
         <div className="max-w-3xl mb-12 md:mb-16">
-          <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.03em]">
+          <h2 className="type-h2">
             {t('headline')}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.5] text-[var(--color-ink-muted)] mt-6">
+          <p className="type-intro text-[var(--color-ink-muted)] mt-5">
             {t('intro')}
           </p>
         </div>
@@ -65,7 +65,7 @@ export async function PlatformVsAgencyTable({ number, locale }: Props) {
           <div className="grid grid-cols-[1fr_1.4fr_1.4fr_1.6fr]">
             {/* Header row */}
             <div className="border-b border-[var(--color-ink-subtle)] p-5">
-              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">
+              <p className="type-meta text-[var(--color-ink-muted)]">
                 / {locale === 'es' ? 'Punto de comparación' : 'Compared on'}
               </p>
             </div>
@@ -88,7 +88,7 @@ export async function PlatformVsAgencyTable({ number, locale }: Props) {
             {ROW_KEYS.map((row) => (
               <div key={row} className="contents">
                 <div className="border-t border-[var(--color-ink-subtle)] p-5">
-                  <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">
+                  <p className="type-meta text-[var(--color-ink-muted)]">
                     {ROW_LABELS[row][locale]}
                   </p>
                 </div>
@@ -132,7 +132,7 @@ export async function PlatformVsAgencyTable({ number, locale }: Props) {
               <dl className="space-y-3">
                 {ROW_KEYS.map((row) => (
                   <div key={row}>
-                    <dt className="font-mono text-[10px] uppercase tracking-[0.18em] opacity-60">
+                    <dt className="type-meta opacity-60">
                       {ROW_LABELS[row][locale]}
                     </dt>
                     <dd className="text-[14px] leading-[1.5] mt-1">

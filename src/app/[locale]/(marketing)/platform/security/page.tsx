@@ -60,14 +60,14 @@ export default async function PlatformSecurityPage({ params }: Props) {
   return (
     <>
       {/* ── HERO (surface-deep — página técnica) ── */}
-      <section className="surface-deep relative overflow-hidden pt-36 md:pt-44 pb-16 md:pb-24">
+      <section className="surface-deep hero-dots relative overflow-hidden hero-y">
         <Container width="wide" className="relative z-10">
           <div className="max-w-3xl">
             <Eyebrow variant="dark">{pick(securityHero.eyebrow)}</Eyebrow>
-            <h1 className="font-display font-bold leading-[1.04] tracking-[-0.035em] text-[clamp(2.1rem,4.4vw,3.6rem)] mt-7">
+            <h1 className="type-h1 mt-7">
               {pick(securityHero.headline)}
             </h1>
-            <p className="font-display font-medium text-[clamp(1.02rem,1.6vw,1.25rem)] leading-[1.5] opacity-75 mt-6 max-w-2xl" style={{ maxWidth: 'var(--measure-technical)' }}>
+            <p className="type-lead opacity-75 mt-6 max-w-2xl" style={{ maxWidth: 'var(--measure-technical)' }}>
               {pick(securityHero.subheadline)}
             </p>
           </div>
@@ -75,7 +75,7 @@ export default async function PlatformSecurityPage({ params }: Props) {
       </section>
 
       {/* ── 01 · Los 9 controles ── */}
-      <section className="surface-deep py-16 md:py-24 border-t border-[var(--color-bone)]/10">
+      <section className="surface-deep section-y section-edge">
         <SectionMarker number="01" label={l === 'es' ? 'Aislamiento' : 'Isolation'} meta={l === 'es' ? '9 controles · el mecanismo' : '9 controls · the mechanism'} />
         <Container width="wide">
           <div style={{ ['--control-cell-bg' as string]: 'color-mix(in srgb, var(--color-bone) 4%, transparent)' }}>
@@ -85,7 +85,7 @@ export default async function PlatformSecurityPage({ params }: Props) {
       </section>
 
       {/* ── 02 · Datos, credenciales, no-training, cuestionario ── */}
-      <section className="surface-deep py-16 md:py-24 border-t border-[var(--color-bone)]/10">
+      <section className="surface-deep section-y section-edge">
         <SectionMarker number="02" label={l === 'es' ? 'Datos y acceso' : 'Data & access'} meta={l === 'es' ? 'Para tu equipo de seguridad' : 'For your security team'} />
         <Container width="wide">
           <dl className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 max-w-5xl">
@@ -94,7 +94,7 @@ export default async function PlatformSecurityPage({ params }: Props) {
                 <dt className="font-display font-semibold text-[17px] leading-snug tracking-[-0.01em]">
                   {pick(securitySections[key].title)}
                 </dt>
-                <dd className="text-[14.5px] leading-relaxed opacity-70 mt-2.5" style={{ maxWidth: 'var(--measure-technical)' }}>
+                <dd className="text-[14px] leading-relaxed opacity-70 mt-2.5" style={{ maxWidth: 'var(--measure-technical)' }}>
                   {pick(securitySections[key].body)}
                 </dd>
               </div>
@@ -103,19 +103,19 @@ export default async function PlatformSecurityPage({ params }: Props) {
           <div className="mt-14 flex flex-col sm:flex-row gap-3">
             <a
               href={mailtoQuestionnaire}
-              className="inline-flex items-center justify-center h-[50px] px-[26px] rounded-full font-medium text-[14.5px] tracking-tight bg-[var(--color-bone)] text-[var(--color-ink)] hover:bg-[var(--color-caribbean-green)] transition-colors duration-200 ease-out"
+              className="inline-flex items-center justify-center h-[50px] px-[26px] rounded-full font-medium text-[14px] tracking-tight bg-[var(--color-bone)] text-[var(--color-ink)] hover:bg-[var(--color-caribbean-green)] transition-colors duration-200 ease-out"
             >
               {l === 'es' ? 'Pedir el cuestionario de seguridad' : 'Request the security questionnaire'}
             </a>
             <Link
               href="/trust"
-              className="inline-flex items-center justify-center h-[50px] px-[24px] rounded-full font-medium text-[14.5px] tracking-tight border border-[var(--color-bone)]/30 hover:border-[var(--color-bone)]/60 transition-colors"
+              className="inline-flex items-center justify-center h-[50px] px-[24px] rounded-full font-medium text-[14px] tracking-tight border border-[var(--color-bone)]/30 hover:border-[var(--color-bone)]/60 transition-colors"
             >
               {l === 'es' ? 'Ver /trust — postura completa' : 'See /trust — full posture'}
             </Link>
             <Link
               href="/enterprise"
-              className="inline-flex items-center justify-center h-[50px] px-[24px] rounded-full font-medium text-[14.5px] tracking-tight border border-[var(--color-bone)]/30 hover:border-[var(--color-bone)]/60 transition-colors"
+              className="inline-flex items-center justify-center h-[50px] px-[24px] rounded-full font-medium text-[14px] tracking-tight border border-[var(--color-bone)]/30 hover:border-[var(--color-bone)]/60 transition-colors"
             >
               {l === 'es' ? 'Enterprise: garantías con fecha →' : 'Enterprise: dated guarantees →'}
             </Link>

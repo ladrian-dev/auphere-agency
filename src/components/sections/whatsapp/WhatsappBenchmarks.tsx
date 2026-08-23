@@ -17,15 +17,15 @@ export async function WhatsappBenchmarks({ number, locale }: Props) {
   const t = await getTranslations({ locale, namespace: 'whatsapp.benchmarks' });
 
   return (
-    <section className="py-24 md:py-32 border-t border-[var(--color-ink-subtle)]">
+    <section className="section-y section-edge">
       <SectionMarker number={number} label={t('marker.label')} meta={t('marker.meta')} />
 
       <Container width="wide">
         <div className="max-w-3xl mb-12 md:mb-16">
-          <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.03em]">
+          <h2 className="type-h2">
             {t('headline')}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.5] text-[var(--color-ink-muted)] mt-6">
+          <p className="type-intro text-[var(--color-ink-muted)] mt-5">
             {t('intro')}
           </p>
         </div>
@@ -42,7 +42,7 @@ export async function WhatsappBenchmarks({ number, locale }: Props) {
               <dd className="text-[14px] leading-[1.5] text-[var(--color-ink)] font-medium">
                 {t(`items.${key}.label`)}
               </dd>
-              <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[var(--color-ink-muted)] mt-auto pt-2">
+              <p className="type-meta text-[var(--color-ink-muted)] mt-auto pt-2">
                 {t(`items.${key}.source`)}
               </p>
             </div>

@@ -12,22 +12,22 @@ export function Cases() {
   const t = useTranslations('cases');
 
   return (
-    <section id="cases" className="py-24 md:py-32">
+    <section id="cases" className="section-y">
       <SectionMarker number="02" label={t('marker.label')} meta={t('marker.meta')} />
 
       <Container width="wide">
         <div className="max-w-4xl mb-16 md:mb-24">
-          <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.75rem)] leading-[1.05] tracking-[-0.03em]">
+          <h2 className="type-h2">
             {t('headline')}
           </h2>
-          <p className="font-display font-medium text-[clamp(1.125rem,2vw,1.5rem)] leading-[1.35] text-[var(--color-ink-muted)] mt-6 max-w-2xl">
+          <p className="type-intro text-[var(--color-ink-muted)] mt-5 max-w-2xl">
             {t('intro')}
           </p>
         </div>
 
         <StaggerGrid className="flex flex-col gap-6">
           <StaggerItem className="rounded-2xl border border-dashed border-[var(--color-ink-subtle)] p-8 text-center">
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">
+            <p className="type-meta text-[var(--color-ink-muted)]">
               {t('moreSoon')}
             </p>
           </StaggerItem>

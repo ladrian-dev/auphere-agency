@@ -20,15 +20,15 @@ export function PainGrid({ vertical, painKeys, number }: Props) {
   const t = useTranslations(`useCases.${vertical}.pain`);
 
   return (
-    <section className="py-24 md:py-32 bg-[var(--color-ink-faint)]">
+    <section className="section-y bg-[var(--color-ink-faint)]">
       <SectionMarker number={number} label={t('marker.label')} meta={t('marker.meta')} />
 
       <Container width="wide">
         <div className="max-w-3xl mb-16 md:mb-20">
-          <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.03em] text-[var(--color-ink)]">
+          <h2 className="type-h2 text-[var(--color-ink)]">
             {t('headline')}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.5] text-[var(--color-ink-muted)] mt-6">
+          <p className="type-intro text-[var(--color-ink-muted)] mt-5">
             {t('intro')}
           </p>
         </div>

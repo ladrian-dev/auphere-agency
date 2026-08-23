@@ -10,6 +10,7 @@ import { Eyebrow } from '@/components/primitives/Eyebrow';
 import { Faq } from '@/components/sections/Faq';
 import type { Localized } from '@/content/enterprise';
 import { art50Meta, art50Hero, art50Blocks, art50Faq, art50Cta } from '@/content/regulation';
+import { buttonClasses } from '@/components/primitives/Button';
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -91,17 +92,17 @@ export default async function Article50Page({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
 
       {/* ── HERO ── */}
-      <section className="relative overflow-hidden pt-36 md:pt-44 pb-16 md:pb-20 border-b border-[var(--color-ink-subtle)] dot-grid">
+      <section className="relative overflow-hidden hero-y border-b border-[var(--color-ink-subtle)] dot-grid">
         <Container width="wide">
           <div className="max-w-3xl">
             <Eyebrow>{pick(art50Hero.eyebrow)}</Eyebrow>
-            <h1 className="font-display font-bold leading-[1.05] tracking-[-0.03em] text-[clamp(2.1rem,4.6vw,3.6rem)] mt-7">
+            <h1 className="type-h1 mt-7">
               {pick(art50Hero.headline)}
             </h1>
-            <p className="font-display font-medium text-[clamp(1.02rem,1.7vw,1.3rem)] leading-[1.5] text-[var(--color-ink-muted)] mt-5">
+            <p className="type-lead text-[var(--color-ink-muted)] mt-6">
               {pick(art50Hero.sub)}
             </p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--color-ink-muted)] mt-7">
+            <p className="type-meta text-[var(--color-ink-muted)] mt-7">
               {l === 'es' ? 'Actualizado el' : 'Updated'} {LAST_UPDATED} ·{' '}
               <a href={EURLEX_URL} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-[var(--color-ink)]">
                 EUR-Lex 2024/1689
@@ -116,17 +117,17 @@ export default async function Article50Page({ params }: Props) {
       </section>
 
       {/* ── Answer-first blocks ── */}
-      <section className="py-16 md:py-24">
+      <section className="section-y">
         <SectionMarker
           number="01"
           label={l === 'es' ? 'Las respuestas' : 'The answers'}
           meta={l === 'es' ? 'Citables fuera de contexto' : 'Quotable out of context'}
         />
-        <Container width="default">
+        <Container width="wide">
           <div className="flex flex-col gap-12 max-w-3xl">
             {art50Blocks.map((block, i) => (
               <article key={i} className="border-t border-[var(--color-ink-subtle)] pt-6">
-                <h2 className="font-display font-bold text-[clamp(1.4rem,2.4vw,1.9rem)] leading-[1.12] tracking-[-0.02em]">
+                <h2 className="type-h3">
                   {pick(block.title)}
                 </h2>
                 <p className="text-[16px] leading-relaxed mt-4">{pick(block.answer)}</p>
@@ -152,24 +153,24 @@ export default async function Article50Page({ params }: Props) {
       />
 
       {/* ── CTA ── */}
-      <section className="relative py-20 md:py-24 surface-dark overflow-hidden border-t border-[var(--color-bone)]/10">
+      <section className="relative section-y surface-dark overflow-hidden section-edge">
         <Container width="default" className="relative z-10 text-center">
-          <h2 className="font-display font-bold text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] tracking-[-0.03em] text-[var(--color-bone)] max-w-3xl mx-auto">
+          <h2 className="type-h2 text-[var(--color-bone)] max-w-3xl mx-auto">
             {pick(art50Cta.headline)}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.45] text-[var(--color-bone)]/70 mt-5 max-w-2xl mx-auto">
+          <p className="type-intro text-[var(--color-bone)]/75 mt-5 max-w-2xl mx-auto">
             {pick(art50Cta.body)}
           </p>
           <div className="mt-9 flex flex-col sm:flex-row gap-3 justify-center">
             <a
               href={`mailto:contacto@auphere.com?subject=${encodeURIComponent(l === 'es' ? 'Revisión art. 50 · 45 min' : 'Article 50 review · 45 min')}`}
-              className="inline-flex items-center justify-center h-[52px] px-[32px] rounded-full font-medium text-[15px] tracking-tight bg-[var(--color-bone)] text-[var(--color-ink)] hover:bg-[var(--color-caribbean-green)] transition-colors duration-200 ease-out active:scale-[0.98]"
+              className={buttonClasses({ variant: 'inverse', size: 'lg' })}
             >
               {pick(art50Cta.cta)}
             </a>
             <Link
               href="/trust"
-              className="inline-flex items-center justify-center h-[52px] px-[24px] rounded-full font-medium text-[15px] tracking-tight border border-[var(--color-bone)]/30 text-[var(--color-bone)] hover:border-[var(--color-bone)]/60 transition-colors"
+              className={buttonClasses({ variant: 'outline-inverse', size: 'lg' })}
             >
               {l === 'es' ? 'Nuestra postura en /trust' : 'Our posture at /trust'}
             </Link>

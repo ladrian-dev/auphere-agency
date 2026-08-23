@@ -11,6 +11,7 @@ import { GuaranteeTable, type GuaranteeRowResolved } from '@/components/sections
 import { Faq } from '@/components/sections/Faq';
 import { CalEmbed } from '@/components/sections/CalEmbed';
 import { getClaim } from '@/content/claims';
+import { buttonClasses } from '@/components/primitives/Button';
 import {
   enterpriseMeta,
   enterpriseHero,
@@ -125,39 +126,31 @@ export default async function EnterprisePage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
 
       {/* ── 01 · HERO — tono de reducción de riesgo, sobre surface-deep ── */}
-      <section className="surface-deep relative overflow-hidden pt-36 md:pt-44 pb-20 md:pb-28">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 opacity-[0.14]"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(241,247,246,0.35) 1px, transparent 0)',
-            backgroundSize: '22px 22px',
-          }}
-        />
+      <section className="surface-deep hero-dots relative overflow-hidden hero-y">
         <Container width="wide" className="relative z-10">
           <div className="max-w-3xl">
             <Eyebrow variant="dark">{pick(enterpriseHero.eyebrow)}</Eyebrow>
-            <h1 className="font-display font-bold leading-[1.04] tracking-[-0.035em] text-[clamp(2.25rem,4.6vw,3.9rem)] mt-7">
+            <h1 className="type-h1 mt-7">
               {pick(enterpriseHero.headline)}
             </h1>
-            <p className="font-display font-medium text-[clamp(1.05rem,1.7vw,1.3rem)] leading-[1.45] opacity-75 mt-6 max-w-2xl">
+            <p className="type-lead opacity-75 mt-6 max-w-2xl">
               {pick(enterpriseHero.subheadline)}
             </p>
             <div className="mt-9 flex flex-col sm:flex-row gap-3">
               <a
                 href="#book"
-                className="inline-flex items-center justify-center gap-2 h-[52px] px-[28px] rounded-full font-medium text-[15px] tracking-tight whitespace-nowrap bg-[var(--color-bone)] text-[var(--color-ink)] hover:bg-[var(--color-caribbean-green)] active:scale-[0.98] transition-[background-color,transform] duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[var(--color-caribbean-green)]"
+                className={buttonClasses({ variant: 'inverse', size: 'lg' })}
               >
                 {pick(enterpriseHero.ctaPrimary)}
               </a>
               <a
                 href={mailtoSecurity}
-                className="inline-flex items-center justify-center gap-2 h-[52px] px-[24px] rounded-full font-medium text-[15px] tracking-tight whitespace-nowrap border border-[var(--color-bone)]/30 hover:border-[var(--color-bone)]/60 transition-colors"
+                className={buttonClasses({ variant: 'outline-inverse', size: 'lg' })}
               >
                 {pick(enterpriseHero.ctaSecondary)}
               </a>
             </div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] opacity-50 mt-6">
+            <p className="type-meta opacity-50 mt-6">
               {pick(enterpriseHero.microcopy)}
             </p>
           </div>
@@ -165,7 +158,7 @@ export default async function EnterprisePage({ params }: Props) {
       </section>
 
       {/* ── 02 · QUÉ TE GARANTIZAMOS POR ESCRITO ── */}
-      <section className="surface-deep py-20 md:py-28 border-t border-[var(--color-bone)]/10">
+      <section className="surface-deep section-y section-edge">
         <SectionMarker
           number="02"
           label={l === 'es' ? 'Garantías' : 'Guarantees'}
@@ -173,7 +166,7 @@ export default async function EnterprisePage({ params }: Props) {
         />
         <Container width="wide">
           <div className="max-w-3xl mb-10 md:mb-14">
-            <h2 className="font-display font-bold text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] tracking-[-0.03em]">
+            <h2 className="type-h2">
               {l === 'es' ? 'Qué te garantizamos por escrito.' : 'What we guarantee in writing.'}
             </h2>
             <p className="opacity-70 mt-5 leading-relaxed max-w-2xl">
@@ -193,7 +186,7 @@ export default async function EnterprisePage({ params }: Props) {
       </section>
 
       {/* ── 03 · CUMPLIMIENTO ── */}
-      <section className="surface-deep py-20 md:py-28 border-t border-[var(--color-bone)]/10">
+      <section className="surface-deep section-y section-edge">
         <SectionMarker
           number="03"
           label={l === 'es' ? 'Cumplimiento' : 'Compliance'}
@@ -201,17 +194,17 @@ export default async function EnterprisePage({ params }: Props) {
         />
         <Container width="wide">
           <div className="max-w-3xl mb-10 md:mb-14">
-            <h2 className="font-display font-bold text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] tracking-[-0.03em]">
+            <h2 className="type-h2">
               {l === 'es' ? 'Cumple por diseño. Y lo dice de frente.' : 'Compliant by design. And upfront about it.'}
             </h2>
           </div>
           <dl className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 max-w-5xl">
             {complianceItems.map((item, i) => (
               <div key={i} className={i === 0 ? 'md:col-span-2 max-w-3xl' : undefined}>
-                <dt className="font-display font-semibold text-[17px] leading-snug tracking-[-0.01em]">
+                <dt className="type-h4 tracking-[-0.01em]">
                   {pick(item.title)}
                 </dt>
-                <dd className="text-[14.5px] leading-relaxed opacity-70 mt-2.5">{pick(item.body)}</dd>
+                <dd className="text-[14px] leading-relaxed opacity-70 mt-2.5">{pick(item.body)}</dd>
               </div>
             ))}
           </dl>
@@ -219,7 +212,7 @@ export default async function EnterprisePage({ params }: Props) {
       </section>
 
       {/* ── 04 · AISLAMIENTO — el detalle que nadie enseña ── */}
-      <section className="surface-deep py-20 md:py-28 border-t border-[var(--color-bone)]/10">
+      <section className="surface-deep section-y section-edge">
         <SectionMarker
           number="04"
           label={l === 'es' ? 'Aislamiento' : 'Isolation'}
@@ -227,7 +220,7 @@ export default async function EnterprisePage({ params }: Props) {
         />
         <Container width="wide">
           <div className="max-w-3xl mb-10 md:mb-14">
-            <h2 className="font-display font-bold text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] tracking-[-0.03em]">
+            <h2 className="type-h2">
               {l === 'es' ? 'El detalle que tu equipo de seguridad sabe valorar.' : 'The detail your security team knows how to value.'}
             </h2>
             <p className="opacity-70 mt-5 leading-relaxed max-w-2xl">
@@ -243,32 +236,32 @@ export default async function EnterprisePage({ params }: Props) {
       </section>
 
       {/* ── 05 · CÓMO SE MIDE + 06 · PRECIO gated ── */}
-      <section className="surface-deep py-20 md:py-28 border-t border-[var(--color-bone)]/10">
+      <section className="surface-deep section-y section-edge">
         <SectionMarker number="05" label={l === 'es' ? 'Medición · Precio' : 'Measurement · Pricing'} meta="Evals · blueprint" />
         <Container width="wide">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 max-w-5xl">
             <div>
-              <h2 className="font-display font-bold text-[clamp(1.5rem,2.6vw,2.1rem)] leading-[1.1] tracking-[-0.02em]">
+              <h2 className="type-h3">
                 {pick(measurement.headline)}
               </h2>
-              <p className="text-[14.5px] leading-relaxed opacity-70 mt-4">{pick(measurement.body)}</p>
+              <p className="text-[14px] leading-relaxed opacity-70 mt-4">{pick(measurement.body)}</p>
             </div>
             <div>
-              <h2 className="font-display font-bold text-[clamp(1.5rem,2.6vw,2.1rem)] leading-[1.1] tracking-[-0.02em]">
+              <h2 className="type-h3">
                 {pick(pricingGated.headline)}
               </h2>
-              <p className="text-[14.5px] leading-relaxed opacity-70 mt-4">{pick(pricingGated.body)}</p>
+              <p className="text-[14px] leading-relaxed opacity-70 mt-4">{pick(pricingGated.body)}</p>
             </div>
           </div>
         </Container>
       </section>
 
       {/* ── 07 · PROGRAMA DE LANZAMIENTO ── */}
-      <section className="surface-deep py-20 md:py-28 border-t border-[var(--color-bone)]/10">
+      <section className="surface-deep section-y section-edge">
         <SectionMarker number="07" label={l === 'es' ? 'Programa de lanzamiento' : 'Launch program'} meta="3-5 cuentas" />
         <Container width="wide">
           <div className="max-w-3xl mb-10">
-            <h2 className="font-display font-bold text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] tracking-[-0.03em]">
+            <h2 className="type-h2">
               {pick(launchProgram.headline)}
             </h2>
             <p className="opacity-70 mt-5 leading-relaxed">{pick(launchProgram.intro)}</p>
@@ -287,17 +280,17 @@ export default async function EnterprisePage({ params }: Props) {
       </section>
 
       {/* ── 08 · PROCESO ── */}
-      <section className="surface-deep py-20 md:py-28 border-t border-[var(--color-bone)]/10">
+      <section className="surface-deep section-y section-edge">
         <SectionMarker number="08" label={l === 'es' ? 'Proceso' : 'Process'} meta={l === 'es' ? 'Semana a semana' : 'Week by week'} />
         <Container width="wide">
           <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl">
             {processWeeks.map((step, i) => (
               <li key={i} className="flex flex-col gap-3 border-t border-[var(--color-bone)]/20 pt-5">
-                <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-caribbean-green)]">
+                <span className="type-meta text-[var(--color-caribbean-green)]">
                   {pick(step.period)}
                 </span>
-                <h3 className="font-display font-semibold text-[17px] leading-snug">{pick(step.title)}</h3>
-                <p className="text-[13.5px] leading-relaxed opacity-65">{pick(step.body)}</p>
+                <h3 className="type-h4">{pick(step.title)}</h3>
+                <p className="text-[14px] leading-relaxed opacity-65">{pick(step.body)}</p>
               </li>
             ))}
           </ol>
@@ -319,19 +312,19 @@ export default async function EnterprisePage({ params }: Props) {
       </div>
 
       {/* ── 10 · CTA FINAL + contacto con nombre y cargo ── */}
-      <section id="book" className="relative py-20 md:py-28 surface-dark overflow-hidden border-t border-[var(--color-bone)]/10">
+      <section id="book" className="relative section-y surface-dark overflow-hidden section-edge">
         <Container width="default" className="relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
             <Eyebrow variant="dark">{pick(enterpriseHero.eyebrow)}</Eyebrow>
-            <h2 className="font-display font-bold text-[clamp(2.25rem,5vw,4rem)] leading-[1.05] tracking-[-0.03em] text-[var(--color-bone)] mt-6">
+            <h2 className="type-h2 text-[var(--color-bone)] mt-6">
               {pick(enterpriseFinalCta.headline)}
             </h2>
-            <p className="font-display font-medium text-[clamp(1.05rem,1.8vw,1.375rem)] leading-[1.4] text-[var(--color-bone)]/70 mt-5">
+            <p className="type-intro text-[var(--color-bone)]/75 mt-5">
               {pick(enterpriseFinalCta.body)}
             </p>
           </div>
           <CalEmbed calLink={CAL_LINK_ENTERPRISE} />
-          <p className="text-center mt-8 text-[13px] text-[var(--color-bone)]/60">
+          <p className="text-center mt-8 text-[14px] text-[var(--color-bone)]/60">
             {enterpriseFinalCta.contactName} · {pick(enterpriseFinalCta.contactRole)} ·{' '}
             <a className="underline hover:text-[var(--color-bone)]" href={`mailto:${enterpriseFinalCta.contactEmail}`}>
               {enterpriseFinalCta.contactEmail}

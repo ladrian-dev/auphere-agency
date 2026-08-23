@@ -21,7 +21,7 @@ export function VerticalFinalCta({ vertical }: Props) {
   return (
     <section
       id="book"
-      className="relative overflow-hidden py-24 md:py-32"
+      className="relative overflow-hidden section-y"
       style={{ background: 'var(--color-bangladesh-green)' }}
     >
       {/* Soft mark backdrop */}
@@ -34,10 +34,10 @@ export function VerticalFinalCta({ vertical }: Props) {
 
       <Container width="wide" className="relative z-10">
         <div className="max-w-2xl">
-          <h2 className="font-display font-bold text-[clamp(2rem,5vw,4rem)] leading-[1.02] tracking-[-0.03em] text-[var(--color-bone)]">
+          <h2 className="type-h2 text-[var(--color-bone)]">
             {t('headline')}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,1.8vw,1.375rem)] leading-[1.45] text-[var(--color-bone)]/75 mt-6 max-w-xl">
+          <p className="type-intro text-[var(--color-bone)]/75 mt-5 max-w-xl">
             {t('subheadline')}
           </p>
 

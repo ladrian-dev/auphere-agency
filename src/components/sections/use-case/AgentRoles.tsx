@@ -22,15 +22,15 @@ export function AgentRoles({ vertical, roleKeys, number }: Props) {
   const t = useTranslations(`useCases.${vertical}.roles`);
 
   return (
-    <section className="py-24 md:py-32">
+    <section className="section-y">
       <SectionMarker number={number} label={t('marker.label')} meta={t('marker.meta')} />
 
       <Container width="wide">
         <div className="max-w-3xl mb-16 md:mb-20">
-          <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.03em]">
+          <h2 className="type-h2">
             {t('headline')}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.5] text-[var(--color-ink-muted)] mt-6">
+          <p className="type-intro text-[var(--color-ink-muted)] mt-5">
             {t('intro')}
           </p>
         </div>
@@ -45,7 +45,7 @@ export function AgentRoles({ vertical, roleKeys, number }: Props) {
                 <div className="shrink-0 w-[44px] h-[44px] rounded-xl bg-[var(--color-sand)] flex items-center justify-center text-[var(--color-bangladesh-green)] group-hover:bg-[var(--color-bangladesh-green)] group-hover:text-[var(--color-bone)] transition-colors">
                   <RoleIcon role={key} />
                 </div>
-                <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)] mt-4">
+                <p className="type-meta text-[var(--color-ink-muted)] mt-4">
                   / {String(i + 1).padStart(2, '0')}
                 </p>
               </div>

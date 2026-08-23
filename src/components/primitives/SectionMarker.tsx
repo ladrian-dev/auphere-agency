@@ -41,11 +41,11 @@ export function SectionMarker({ number, label, meta, className, variant = 'light
   return (
     <Container width="wide" className={cn('mb-12 md:mb-20', className)}>
       <div ref={ref} className={cn('flex items-baseline justify-between gap-4 border-b pb-4', v.border)}>
-        <p className="font-mono text-[11px] uppercase tracking-[0.18em]">
+        <p className="type-meta">
           <span className={v.numLabel}>[{number}]</span>
           <span className={cn('ml-3', v.label)}>{label}</span>
         </p>
-        <p className={cn('font-mono text-[11px] uppercase tracking-[0.18em]', v.meta)}>
+        <p className={cn('type-meta', v.meta)}>
           / {meta}
         </p>
       </div>

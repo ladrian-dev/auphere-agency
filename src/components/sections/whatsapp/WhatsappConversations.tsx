@@ -46,16 +46,16 @@ export function WhatsappConversations({ number }: { number: string }) {
   return (
     <section
       id="conversation"
-      className="py-24 md:py-32 border-t border-[var(--color-ink-subtle)] bg-[var(--color-bone)]"
+      className="section-y section-edge bg-[var(--color-bone)]"
     >
       <SectionMarker number={number} label={t('marker.label')} meta={t('marker.meta')} />
 
       <Container width="wide">
         <div className="max-w-3xl mb-12 md:mb-16">
-          <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.03em]">
+          <h2 className="type-h2">
             {t('headline')}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.5] text-[var(--color-ink-muted)] mt-6">
+          <p className="type-intro text-[var(--color-ink-muted)] mt-5">
             {t('intro')}
           </p>
         </div>
@@ -134,7 +134,7 @@ function ConversationCard({ flow }: { flow: FlowKey }) {
             Au
           </div>
           <div className="flex-1 min-w-0">
-            <p className="text-white text-[13px] font-medium truncate">
+            <p className="text-white text-[14px] font-medium truncate">
               {t('businessName')}
             </p>
             <p className="text-white/70 text-[11px] truncate">
@@ -153,7 +153,7 @@ function ConversationCard({ flow }: { flow: FlowKey }) {
             >
               <p
                 className={cn(
-                  'max-w-[88%] rounded-2xl px-3.5 py-2.5 text-[13px] leading-[1.42]',
+                  'max-w-[88%] rounded-2xl px-3.5 py-2.5 text-[14px] leading-[1.42]',
                   turn.from === 'us'
                     ? 'bg-[#DCF8C6] text-[var(--color-ink)] rounded-br-sm'
                     : 'bg-white text-[var(--color-ink)] rounded-bl-sm shadow-sm',

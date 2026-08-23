@@ -34,7 +34,7 @@ export default async function DocsLayout({ children, params }: Props) {
   );
 
   return (
-    <div className="pt-28 md:pt-36 pb-24 md:pb-32">
+    <div className="hero-y">
       <Container width="wide">
         <div className="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-14">
           <aside className="hidden lg:block">
@@ -44,9 +44,8 @@ export default async function DocsLayout({ children, params }: Props) {
           </aside>
 
           <div className="min-w-0">
-            {/* Project spacing scale is non-linear (spacing-7 = 48px) — see tokens.css */}
             <details className="lg:hidden mb-7 border border-[var(--color-ink-subtle)] rounded-[8px] group">
-              <summary className="cursor-pointer list-none px-5 py-3.5 font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)] flex items-center justify-between gap-4">
+              <summary className="cursor-pointer list-none px-5 py-3.5 type-meta text-[var(--color-ink-muted)] flex items-center justify-between gap-4">
                 {t('menu')}
                 <span aria-hidden className="transition-transform group-open:rotate-45 text-[14px]">
                   +

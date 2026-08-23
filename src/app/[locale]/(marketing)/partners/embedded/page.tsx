@@ -8,6 +8,7 @@ import { Container } from '@/components/primitives/Container';
 import { SectionMarker } from '@/components/primitives/SectionMarker';
 import { Eyebrow } from '@/components/primitives/Eyebrow';
 import type { Localized } from '@/content/enterprise';
+import { buttonClasses } from '@/components/primitives/Button';
 import {
   embeddedMeta,
   embeddedHero,
@@ -65,40 +66,40 @@ export default async function EmbeddedPage({ params }: Props) {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="surface-deep relative overflow-hidden pt-36 md:pt-44 pb-16 md:pb-24">
+      <section className="surface-deep hero-dots relative overflow-hidden hero-y">
         <Container width="wide" className="relative z-10">
           <div className="max-w-3xl">
             <Eyebrow variant="dark">{pick(embeddedHero.eyebrow)}</Eyebrow>
-            <h1 className="font-display font-bold leading-[1.04] tracking-[-0.035em] text-[clamp(2.1rem,4.6vw,3.7rem)] mt-7">
+            <h1 className="type-h1 mt-7">
               {pick(embeddedHero.headline)}
             </h1>
-            <p className="font-display font-medium text-[clamp(1.02rem,1.7vw,1.28rem)] leading-[1.5] opacity-75 mt-6 max-w-2xl">
+            <p className="type-lead opacity-75 mt-6 max-w-2xl">
               {pick(embeddedHero.subheadline)}
             </p>
             <div className="mt-9 flex flex-col sm:flex-row gap-3">
               <a
                 href={mailtoEngineering}
-                className="inline-flex items-center justify-center h-[52px] px-[28px] rounded-full font-medium text-[15px] tracking-tight bg-[var(--color-bone)] text-[var(--color-ink)] hover:bg-[var(--color-caribbean-green)] active:scale-[0.98] transition-[background-color,transform] duration-200 ease-out"
+                className={buttonClasses({ variant: 'inverse', size: 'lg' })}
               >
                 {pick(embeddedHero.ctaPrimary)}
               </a>
               <Link
                 href="/partners"
-                className="inline-flex items-center justify-center h-[52px] px-[24px] rounded-full font-medium text-[15px] tracking-tight border border-[var(--color-bone)]/30 hover:border-[var(--color-bone)]/60 transition-colors"
+                className={buttonClasses({ variant: 'outline-inverse', size: 'lg' })}
               >
                 {pick(embeddedHero.ctaSecondary)}
               </Link>
             </div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] opacity-50 mt-6">{pick(embeddedHero.microcopy)}</p>
+            <p className="type-meta opacity-50 mt-6">{pick(embeddedHero.microcopy)}</p>
           </div>
         </Container>
       </section>
 
       {/* ── 01 · La verdad primero ── */}
-      <section className="surface-deep py-14 md:py-20 border-t border-[var(--color-bone)]/10">
-        <Container width="default">
+      <section className="surface-deep section-y section-edge">
+        <Container width="wide">
           <div className="rounded-2xl border border-[var(--color-data-pending)]/35 bg-[var(--color-bone)]/[0.03] p-7 md:p-9 max-w-3xl">
-            <h2 className="font-display font-bold text-[clamp(1.4rem,2.4vw,1.8rem)] tracking-[-0.02em]" style={{ color: 'var(--color-data-pending)' }}>
+            <h2 className="type-h3" style={{ color: 'var(--color-data-pending)' }}>
               {pick(embeddedHonesty.headline)}
             </h2>
             <p className="text-[15px] leading-relaxed opacity-80 mt-4">{pick(embeddedHonesty.body)}</p>
@@ -107,7 +108,7 @@ export default async function EmbeddedPage({ params }: Props) {
       </section>
 
       {/* ── 02 · El contrato técnico, con fecha ── */}
-      <section className="surface-deep py-16 md:py-24 border-t border-[var(--color-bone)]/10">
+      <section className="surface-deep section-y section-edge">
         <SectionMarker
           number="02"
           label={l === 'es' ? 'El contrato técnico' : 'The technical contract'}
@@ -119,9 +120,9 @@ export default async function EmbeddedPage({ params }: Props) {
               <div key={i} className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-3 md:gap-8 px-5 md:px-7 py-5 border-b border-[var(--color-bone)]/10 last:border-b-0 items-start">
                 <div>
                   <p className="font-display font-semibold text-[16px] leading-snug">{pick(piece.name)}</p>
-                  <p className="text-[13.5px] leading-relaxed opacity-60 mt-1.5 max-w-xl">{pick(piece.detail)}</p>
+                  <p className="text-[14px] leading-relaxed opacity-60 mt-1.5 max-w-xl">{pick(piece.detail)}</p>
                 </div>
-                <p className="font-mono text-[11px] uppercase tracking-[0.14em] md:text-right md:pt-1" style={{ color: 'var(--color-data-pending)' }}>
+                <p className="type-meta md:text-right md:pt-1" style={{ color: 'var(--color-data-pending)' }}>
                   {pick(apiPiecesDate)}
                 </p>
               </div>
@@ -136,13 +137,13 @@ export default async function EmbeddedPage({ params }: Props) {
       </section>
 
       {/* ── 03 · Precio, sandbox, versionado ── */}
-      <section className="surface-deep py-16 md:py-24 border-t border-[var(--color-bone)]/10">
+      <section className="surface-deep section-y section-edge">
         <SectionMarker number="03" label={l === 'es' ? 'Lo que preguntarás después' : 'What you will ask next'} meta={l === 'es' ? 'Precio · sandbox · cambios' : 'Pricing · sandbox · change'} />
         <Container width="wide">
           <dl className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
             {embeddedExtras.map((extra, i) => (
               <div key={i} className="border-t border-[var(--color-bone)]/20 pt-5">
-                <dt className="font-display font-semibold text-[16.5px] tracking-[-0.01em]">{pick(extra.title)}</dt>
+                <dt className="font-display font-semibold text-[16px] tracking-[-0.01em]">{pick(extra.title)}</dt>
                 <dd className="text-[14px] leading-relaxed opacity-65 mt-2.5">{pick(extra.body)}</dd>
               </div>
             ))}
@@ -151,18 +152,18 @@ export default async function EmbeddedPage({ params }: Props) {
       </section>
 
       {/* ── CTA ── */}
-      <section className="relative py-20 md:py-24 surface-dark overflow-hidden border-t border-[var(--color-bone)]/10">
+      <section className="relative section-y surface-dark overflow-hidden section-edge">
         <Container width="default" className="relative z-10 text-center">
-          <h2 className="font-display font-bold text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] tracking-[-0.03em] text-[var(--color-bone)] max-w-3xl mx-auto">
+          <h2 className="type-h2 text-[var(--color-bone)] max-w-3xl mx-auto">
             {pick(embeddedCta.headline)}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.45] text-[var(--color-bone)]/85 mt-5 max-w-2xl mx-auto">
+          <p className="type-intro text-[var(--color-bone)]/75 mt-5 max-w-2xl mx-auto">
             {pick(embeddedCta.body)}
           </p>
           <div className="mt-9">
             <a
               href={mailtoEngineering}
-              className="inline-flex items-center justify-center h-[52px] px-[32px] rounded-full font-medium text-[15px] tracking-tight bg-[var(--color-bone)] text-[var(--color-ink)] hover:bg-[var(--color-caribbean-green)] transition-colors duration-200 ease-out active:scale-[0.98]"
+              className={buttonClasses({ variant: 'inverse', size: 'lg' })}
             >
               {pick(embeddedHero.ctaPrimary)}
             </a>

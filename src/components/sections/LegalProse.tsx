@@ -36,10 +36,10 @@ export function LegalSection({ number, title, children }: SectionProps) {
   return (
     <section className="mt-14 md:mt-20 first:mt-0 scroll-mt-32" id={`section-${number}`}>
       <div className="flex items-baseline gap-4 border-b border-[var(--color-ink-subtle)] pb-3 mb-6">
-        <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">
+        <span className="type-meta text-[var(--color-ink-muted)]">
           {number}
         </span>
-        <h2 className="font-display text-[22px] md:text-[28px] leading-[1.2] tracking-[-0.01em] text-[var(--color-ink)]">
+        <h2 className="type-h3 text-[var(--color-ink)]">
           {title}
         </h2>
       </div>
@@ -68,7 +68,7 @@ export function LegalDefinitionList({ items, topBorder = true }: ListProps) {
     >
       {items.map((item) => (
         <div key={item.term} className="py-4 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2 md:gap-6">
-          <dt className="font-mono text-[12px] uppercase tracking-[0.12em] text-[var(--color-ink-muted)] pt-0.5">
+          <dt className="type-meta text-[var(--color-ink-muted)] pt-0.5">
             {item.term}
           </dt>
           <dd className="text-[15px] md:text-[16px] leading-[1.55] text-[var(--color-ink)]">

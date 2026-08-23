@@ -10,19 +10,19 @@ export function Qualifier() {
   const t = useTranslations('qualifier');
 
   return (
-    <section className="py-20 md:py-28 dot-grid">
+    <section className="section-y dot-grid">
       <SectionMarker number="05" label={t('marker.label')} meta={t('marker.meta')} />
 
-      <Container width="default">
+      <Container width="wide">
         <div className="max-w-3xl mb-10 md:mb-14">
-          <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.75rem)] leading-[1.05] tracking-[-0.03em]">
+          <h2 className="type-h2">
             {t('headline')}
           </h2>
         </div>
 
         <StaggerGrid className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
           <StaggerItem>
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-mountain-meadow)] mb-6">
+            <p className="type-meta text-[var(--color-mountain-meadow)] mb-6">
               {t('yesTitle')}
             </p>
             <ul className="flex flex-col gap-5">
@@ -38,7 +38,7 @@ export function Qualifier() {
           </StaggerItem>
 
           <StaggerItem>
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-status-danger)] mb-6">
+            <p className="type-meta text-[var(--color-status-danger)] mb-6">
               {t('noTitle')}
             </p>
             <ul className="flex flex-col gap-5">

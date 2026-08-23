@@ -25,7 +25,7 @@ export function Eyebrow({ children, className, variant = 'light', style = 'pill'
       ? 'text-[15px] font-medium hover:opacity-80 transition-opacity'
       : cn(
           'inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5',
-          'font-mono text-[11px] uppercase tracking-[0.18em]',
+          'type-meta',
           'backdrop-blur-sm',
           VARIANT_COLORS[variant],
         );

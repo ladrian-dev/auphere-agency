@@ -1,4 +1,3 @@
-import { CursorDot } from '@/components/motion/CursorDot';
 import type { Metadata, Viewport } from 'next';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
@@ -198,7 +197,6 @@ export default async function LocaleLayout({ children, params }: Props) {
         </a>
         <NextIntlClientProvider>
           <SmoothScroll>
-            <CursorDot />
             {children}
           </SmoothScroll>
         </NextIntlClientProvider>

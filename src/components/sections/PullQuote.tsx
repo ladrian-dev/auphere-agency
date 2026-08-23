@@ -11,13 +11,13 @@ export function PullQuote() {
   const t = useTranslations('pullQuote');
 
   return (
-    <section className="dot-grid py-24 md:py-32 flex items-center">
+    <section className="dot-grid section-y flex items-center">
       <Container width="default" className="text-center">
         <ScrollColorReveal
           text={t('text')}
           className="font-display font-semibold text-[clamp(1.5rem,3.6vw,2.75rem)] leading-[1.35] tracking-[-0.02em] text-[var(--color-ink)]"
         />
-        <p className="mt-12 font-mono text-[11px] uppercase tracking-[0.22em] text-[var(--color-ink-muted)]">
+        <p className="mt-12 type-meta text-[var(--color-ink-muted)]">
           — {t('attribution')}
         </p>
       </Container>

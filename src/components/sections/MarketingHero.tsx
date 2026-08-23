@@ -6,6 +6,7 @@ import { Eyebrow } from "@/components/primitives/Eyebrow";
 import { SplitText } from "@/components/motion/SplitText";
 import { AnimatedMark } from "@/components/motion/AnimatedMark";
 import { cn } from "@/lib/utils/cn";
+import { buttonClasses } from '@/components/primitives/Button';
 
 interface CTA {
   label: string;
@@ -66,25 +67,11 @@ export function MarketingHero({
   trustLine,
   visual,
 }: Props) {
+  // El padding vertical es propio y no `hero-y`: este hero se centra dentro de
+  // `min-h`, así que su aire lo pone la altura, no el padding. La superficie y
+  // la trama sí son las compartidas con /platform y /partners.
   return (
-    <section
-      className="relative overflow-hidden pt-24 md:pt-28 pb-14 md:pb-20 min-h-[min(100svh,860px)] flex items-center"
-      style={{
-        background:
-          "radial-gradient(120% 90% at 100% 50%, var(--color-bangladesh-green) 0%, var(--color-pine) 55%, var(--color-ink) 100%)",
-      }}
-    >
-      {/* Dot grid texture */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.18]"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 1px 1px, rgba(241,247,246,0.35) 1px, transparent 0)",
-          backgroundSize: "22px 22px",
-        }}
-      />
-
+    <section className="surface-hero hero-dots relative overflow-hidden pt-24 md:pt-28 pb-14 md:pb-20 min-h-[min(100svh,860px)] flex items-center">
       <Container width="wide" className="relative z-10 w-full">
         <div className="grid items-center gap-10 xl:gap-12 xl:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)]">
           {/* ── Copy lane ── */}
@@ -92,7 +79,7 @@ export function MarketingHero({
             <Eyebrow variant="dark">{eyebrow}</Eyebrow>
 
             {meta && (
-              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-bone)]/60 mt-4">
+              <p className="type-meta text-[var(--color-bone)]/60 mt-4">
                 / {meta}
               </p>
             )}
@@ -105,29 +92,21 @@ export function MarketingHero({
 
             <h1
               className={cn(
-                "font-display font-bold leading-[1.03] tracking-[-0.035em] text-[var(--color-bone)] text-balance",
-                "text-[clamp(2rem,1.05rem+3.2vw,3.375rem)]",
+                "type-h1 text-[var(--color-bone)]",
                 kicker ? "mt-3" : "mt-5",
               )}
             >
               <SplitText text={headline} />
             </h1>
 
-            <p className="font-display font-medium text-[clamp(1rem,0.86rem+0.5vw,1.25rem)] leading-[1.45] tracking-[-0.01em] text-[var(--color-bone)]/75 mt-5 max-w-[40ch] text-pretty">
+            <p className="type-lead text-[var(--color-bone)]/75 mt-6 max-w-[40ch] text-pretty">
               {subheadline}
             </p>
 
             <div className="mt-7 flex flex-col sm:flex-row gap-3">
               <CtaLink
                 href={ctaPrimary.href ?? "#book"}
-                className={cn(
-                  "inline-flex items-center justify-center gap-2 h-[52px] px-7",
-                  "rounded-full font-medium text-[15px] tracking-tight",
-                  "bg-[var(--color-bone)] text-[var(--color-ink)]",
-                  "hover:bg-[var(--color-caribbean-green)] hover:text-[var(--color-ink)]",
-                  "active:scale-[0.98] transition-[background-color,transform] duration-200 ease-out motion-reduce:transition-none",
-                  "focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[var(--color-caribbean-green)]",
-                )}
+                className={buttonClasses({ variant: 'inverse', size: 'lg' })}
               >
                 {ctaPrimary.label}
               </CtaLink>
@@ -135,13 +114,7 @@ export function MarketingHero({
               {ctaSecondary && (
                 <CtaLink
                   href={ctaSecondary.href ?? "#how"}
-                  className={cn(
-                    "inline-flex items-center justify-center gap-2 h-[52px] px-6",
-                    "rounded-full font-medium text-[15px] tracking-tight",
-                    "border border-[var(--color-bone)]/35 text-[var(--color-bone)]",
-                    "hover:border-[var(--color-bone)]/70 hover:bg-[var(--color-bone)]/5 transition-colors motion-reduce:transition-none",
-                    "focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[var(--color-caribbean-green)]",
-                  )}
+                  className={buttonClasses({ variant: 'outline-inverse', size: 'lg' })}
                 >
                   {ctaSecondary.label}
                 </CtaLink>
@@ -150,16 +123,16 @@ export function MarketingHero({
 
             {/* Microcopy + trust line.
                 Both were `bone/50` at 10–11 px: 3.91:1 on this gradient, below
-                the 4.5:1 AA floor. Raised to /75 and given normal case at 12 px
+                the 4.5:1 AA floor. Raised to /75 and given normal case at 14 px
                 so they read as sentences, not as a wall of tracked-out mono. */}
             {ctaMicrocopy && (
-              <p className="text-[13px] leading-relaxed text-[var(--color-bone)]/75 mt-4 max-w-[42ch]">
+              <p className="text-[14px] leading-relaxed text-[var(--color-bone)]/75 mt-4 max-w-[42ch]">
                 {ctaMicrocopy}
               </p>
             )}
 
             {trustLine && (
-              <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--color-caribbean-green)] mt-3.5 leading-relaxed">
+              <p className="type-meta text-[var(--color-caribbean-green)] mt-3.5 leading-relaxed">
                 {trustLine}
               </p>
             )}

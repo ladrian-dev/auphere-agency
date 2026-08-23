@@ -40,19 +40,19 @@ export function CodeBlock({ code, language, title, copyLabel, copiedLabel }: Pro
   return (
     <figure className="my-6 rounded-[8px] overflow-hidden border border-[var(--color-ink-subtle)]">
       <figcaption className="flex items-center justify-between gap-4 bg-[var(--color-ink)] border-b border-[color-mix(in_srgb,var(--color-bone)_14%,transparent)] px-4 py-2.5">
-        <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-[color-mix(in_srgb,var(--color-bone)_60%,transparent)] truncate">
+        <span className="type-meta text-[color-mix(in_srgb,var(--color-bone)_60%,transparent)] truncate">
           {title ?? language}
         </span>
         <button
           type="button"
           onClick={copy}
-          className="font-mono text-[11px] uppercase tracking-[0.12em] text-[color-mix(in_srgb,var(--color-bone)_60%,transparent)] hover:text-[var(--color-bone)] transition-colors py-1 px-2 -mr-2 rounded-[4px]"
+          className="type-meta text-[color-mix(in_srgb,var(--color-bone)_60%,transparent)] hover:text-[var(--color-bone)] transition-colors py-1 px-2 -mr-2 rounded-[4px]"
           aria-live="polite"
         >
           {copied ? copiedLabel : copyLabel}
         </button>
       </figcaption>
-      <pre className="bg-[var(--color-ink)] text-[var(--color-bone)] text-[13px] leading-[1.7] font-mono p-4 overflow-x-auto">
+      <pre className="bg-[var(--color-ink)] text-[var(--color-bone)] text-[14px] leading-[1.7] font-mono p-4 overflow-x-auto">
         <code>{code}</code>
       </pre>
     </figure>

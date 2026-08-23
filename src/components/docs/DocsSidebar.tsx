@@ -22,7 +22,7 @@ export function DocsSidebar({ groups, homeHref, homeLabel, productLabel }: Props
     <nav aria-label={homeLabel}>
       <a
         href={homeHref}
-        className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] transition-colors"
+        className="type-meta text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] transition-colors"
       >
         {homeLabel}
       </a>
@@ -32,7 +32,7 @@ export function DocsSidebar({ groups, homeHref, homeLabel, productLabel }: Props
       <div className="mt-4 space-y-6">
         {groups.map((group) => (
           <div key={group.id}>
-            <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--color-ink-dim)] mb-2">
+            <p className="type-meta text-[var(--color-ink-dim)] mb-2">
               {group.label}
             </p>
             <ul className="space-y-0.5 border-l border-[var(--color-ink-subtle)]">

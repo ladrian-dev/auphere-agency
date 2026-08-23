@@ -63,10 +63,10 @@ export function GuaranteeTable({ rows, footnote, todayLabel, columnGuarantee, co
           role="row"
           className="grid grid-cols-[1fr_auto] md:grid-cols-[1fr_260px] gap-4 px-5 md:px-7 py-4 border-b border-[var(--color-bone)]/15 bg-[var(--color-bone)]/[0.03]"
         >
-          <span role="columnheader" className="font-mono text-[10px] uppercase tracking-[0.18em] opacity-60">
+          <span role="columnheader" className="type-meta opacity-60">
             {columnGuarantee}
           </span>
-          <span role="columnheader" className="font-mono text-[10px] uppercase tracking-[0.18em] opacity-60">
+          <span role="columnheader" className="type-meta opacity-60">
             {columnStatus}
           </span>
         </div>
@@ -79,8 +79,8 @@ export function GuaranteeTable({ rows, footnote, todayLabel, columnGuarantee, co
             className="grid grid-cols-[1fr_auto] md:grid-cols-[1fr_260px] gap-4 px-5 md:px-7 py-4 border-b border-[var(--color-bone)]/10 last:border-b-0 items-start"
           >
             <div role="cell">
-              <p className="font-display font-medium text-[15.5px] leading-snug">{row.label}</p>
-              {row.note && <p className="text-[12.5px] leading-snug opacity-55 mt-1 max-w-md">{row.note}</p>}
+              <p className="font-display font-medium text-[15px] leading-snug">{row.label}</p>
+              {row.note && <p className="text-[12px] leading-snug opacity-55 mt-1 max-w-md">{row.note}</p>}
             </div>
             <div role="cell" className="flex items-start gap-2.5">
               <span
@@ -107,7 +107,7 @@ export function GuaranteeTable({ rows, footnote, todayLabel, columnGuarantee, co
                 )}
               </span>
               <span
-                className="text-[13.5px] leading-snug pt-0.5"
+                className="text-[14px] leading-snug pt-0.5"
                 style={{ color: row.status === 'live' ? 'var(--color-data-positive)' : 'var(--color-data-pending)' }}
               >
                 {row.status === 'live' ? todayLabel : row.dateText}

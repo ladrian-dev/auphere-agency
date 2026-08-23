@@ -85,17 +85,17 @@ export default async function DocPage({ params }: Props) {
       <article className="min-w-0 max-w-[720px]">
         <header>
           <div className="flex items-baseline justify-between gap-4 border-b border-[var(--color-ink-subtle)] pb-3">
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">
+            <p className="type-meta text-[var(--color-ink-muted)]">
               {t('product')} · {group?.label[docsLocale]}
             </p>
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">
+            <p className="type-meta text-[var(--color-ink-muted)]">
               / {t('version')}
             </p>
           </div>
-          <h1 className="mt-8 font-display text-[32px] md:text-[44px] leading-[1.08] tracking-[-0.02em] text-[var(--color-ink)] [text-wrap:balance]">
+          <h1 className="mt-8 type-h1 text-[var(--color-ink)] [text-wrap:balance]">
             {content.title}
           </h1>
-          <p className="mt-4 text-[17px] md:text-[19px] leading-[1.5] text-[var(--color-ink-muted)] [text-wrap:pretty]">
+          <p className="mt-4 text-[17px] md:text-[18px] leading-[1.5] text-[var(--color-ink-muted)] [text-wrap:pretty]">
             {content.description}
           </p>
         </header>
@@ -121,7 +121,7 @@ export default async function DocPage({ params }: Props) {
       {toc.length >= 2 ? (
         <aside className="hidden xl:block" aria-label={t('onThisPage')}>
           <div className="sticky top-28">
-            <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--color-ink-dim)] mb-3">
+            <p className="type-meta text-[var(--color-ink-dim)] mb-3">
               {t('onThisPage')}
             </p>
             <ul className="space-y-2 border-l border-[var(--color-ink-subtle)]">
@@ -129,7 +129,7 @@ export default async function DocPage({ params }: Props) {
                 <li key={heading.id}>
                   <a
                     href={`#${heading.id}`}
-                    className="block pl-3 text-[13px] leading-snug text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] transition-colors"
+                    className="block pl-3 text-[14px] leading-snug text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] transition-colors"
                   >
                     {heading.text}
                   </a>

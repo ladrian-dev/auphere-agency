@@ -42,16 +42,16 @@ export function ConversationDemo({ config, number }: Props) {
   );
 
   return (
-    <section id="conversation" className="py-24 md:py-32 bg-[var(--color-bone)]">
+    <section id="conversation" className="section-y bg-[var(--color-bone)]">
       <SectionMarker number={number} label={t('marker.label')} meta={t('marker.meta')} />
 
       <Container width="wide">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 lg:gap-20 items-center">
           <div className="max-w-xl">
-            <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.03em]">
+            <h2 className="type-h2">
               {t('headline')}
             </h2>
-            <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.5] text-[var(--color-ink-muted)] mt-6">
+            <p className="type-intro text-[var(--color-ink-muted)] mt-5">
               {t('intro')}
             </p>
           </div>
@@ -89,7 +89,7 @@ export function ConversationDemo({ config, number }: Props) {
                   >
                     <p
                       className={cn(
-                        'max-w-[85%] rounded-2xl px-3.5 py-2.5 text-[13.5px] leading-[1.4]',
+                        'max-w-[85%] rounded-2xl px-3.5 py-2.5 text-[14px] leading-[1.4]',
                         turn.from === 'us'
                           ? 'bg-[#DCF8C6] text-[var(--color-ink)] rounded-br-sm'
                           : 'bg-white text-[var(--color-ink)] rounded-bl-sm shadow-sm',

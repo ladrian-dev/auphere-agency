@@ -7,6 +7,7 @@ import { Link } from '@/i18n/navigation';
 import { Container } from '@/components/primitives/Container';
 import { PageHeader } from '@/components/sections/PageHeader';
 import { LegalDefinitionList } from '@/components/sections/LegalProse';
+import { buttonClasses } from '@/components/primitives/Button';
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -78,7 +79,7 @@ function AboutContent() {
 
       <Container width="wide" className="pb-24 md:pb-32">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
-          <h2 className="md:col-span-4 font-display text-[24px] md:text-[28px] leading-[1.2] tracking-[-0.01em] text-[var(--color-ink)]">
+          <h2 className="md:col-span-4 type-h3 text-[var(--color-ink)]">
             {t('mission.title')}
           </h2>
           <div className="md:col-span-8 space-y-5 text-[17px] md:text-[18px] leading-[1.6] text-[var(--color-ink)]">
@@ -90,9 +91,9 @@ function AboutContent() {
       </Container>
 
       <div className="border-t border-[var(--color-ink-subtle)]">
-        <Container width="wide" className="py-24 md:py-32">
+        <Container width="wide" className="section-y">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
-            <h2 className="md:col-span-4 font-display text-[24px] md:text-[28px] leading-[1.2] tracking-[-0.01em] text-[var(--color-ink)]">
+            <h2 className="md:col-span-4 type-h3 text-[var(--color-ink)]">
               {t('promises.title')}
             </h2>
             <div className="md:col-span-8">
@@ -103,10 +104,10 @@ function AboutContent() {
       </div>
 
       <div className="border-t border-[var(--color-ink-subtle)]">
-        <Container width="wide" className="py-24 md:py-32">
+        <Container width="wide" className="section-y">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16">
             <div className="md:col-span-4">
-              <h2 className="font-display text-[24px] md:text-[28px] leading-[1.2] tracking-[-0.01em] text-[var(--color-ink)]">
+              <h2 className="type-h3 text-[var(--color-ink)]">
                 {t('notWho.title')}
               </h2>
               <p className="mt-5 text-[16px] leading-[1.6] text-[var(--color-ink-muted)]">
@@ -121,17 +122,17 @@ function AboutContent() {
       </div>
 
       <div className="border-t border-[var(--color-ink-subtle)] bg-[var(--color-ink)] text-[var(--color-bone)]">
-        <Container width="default" className="py-24 md:py-32 text-center">
-          <h2 className="font-display text-[36px] md:text-[56px] leading-[1.05] tracking-[-0.02em]">
+        <Container width="default" className="section-y text-center">
+          <h2 className="type-h2">
             {t('cta.headline')}
           </h2>
-          <p className="mt-5 text-[17px] md:text-[19px] leading-[1.5] text-[var(--color-bone)]/70 max-w-xl mx-auto">
+          <p className="mt-5 text-[17px] md:text-[18px] leading-[1.5] text-[var(--color-bone)]/70 max-w-xl mx-auto">
             {t('cta.body')}
           </p>
           <div className="mt-10">
             <Link
               href="/#book"
-              className="inline-flex items-center justify-center h-[52px] px-[24px] rounded-full font-medium text-[15px] tracking-tight whitespace-nowrap bg-[var(--color-bone)] text-[var(--color-ink)] hover:bg-[var(--color-bone)]/90 transition-colors duration-200 ease-out active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[var(--color-bone)]"
+              className={buttonClasses({ variant: 'inverse', size: 'lg' })}
             >
               {t('cta.button')}
             </Link>

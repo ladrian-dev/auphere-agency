@@ -69,7 +69,7 @@ export function PartnerApplicationForm({ locale, copy }: Props) {
     return (
       <div role="status" className="rounded-2xl border border-[var(--color-bangladesh-green)]/30 bg-[var(--color-bangladesh-green)]/5 p-8 text-center">
         <p className="font-display font-semibold text-xl text-[var(--color-bangladesh-green)]">✓</p>
-        <p className="mt-3 text-[15.5px] leading-relaxed">{copy.success}</p>
+        <p className="mt-3 text-[15px] leading-relaxed">{copy.success}</p>
       </div>
     );
   }
@@ -92,7 +92,7 @@ export function PartnerApplicationForm({ locale, copy }: Props) {
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--color-ink-muted)] mb-2" htmlFor="pa-name">
+        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-name">
           {copy.fields.name}
         </label>
         <input id="pa-name" className={inputClasses} autoComplete="name" {...register('name')} />
@@ -100,7 +100,7 @@ export function PartnerApplicationForm({ locale, copy }: Props) {
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--color-ink-muted)] mb-2" htmlFor="pa-email">
+        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-email">
           {copy.fields.email}
         </label>
         <input id="pa-email" type="email" className={inputClasses} autoComplete="email" {...register('email')} />
@@ -108,7 +108,7 @@ export function PartnerApplicationForm({ locale, copy }: Props) {
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--color-ink-muted)] mb-2" htmlFor="pa-company">
+        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-company">
           {copy.fields.company}
         </label>
         <input id="pa-company" className={inputClasses} autoComplete="organization" {...register('company')} />
@@ -116,7 +116,7 @@ export function PartnerApplicationForm({ locale, copy }: Props) {
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--color-ink-muted)] mb-2" htmlFor="pa-website">
+        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-website">
           {copy.fields.website}
         </label>
         <input id="pa-website" className={inputClasses} inputMode="url" {...register('website')} />
@@ -124,7 +124,7 @@ export function PartnerApplicationForm({ locale, copy }: Props) {
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--color-ink-muted)] mb-2" htmlFor="pa-clients">
+        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-clients">
           {copy.fields.clients}
         </label>
         <select id="pa-clients" className={inputClasses} defaultValue="" {...register('clients')}>
@@ -139,7 +139,7 @@ export function PartnerApplicationForm({ locale, copy }: Props) {
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--color-ink-muted)] mb-2" htmlFor="pa-vertical">
+        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-vertical">
           {copy.fields.vertical}
         </label>
         <select id="pa-vertical" className={inputClasses} defaultValue="" {...register('vertical')}>
@@ -154,7 +154,7 @@ export function PartnerApplicationForm({ locale, copy }: Props) {
       </div>
 
       <div>
-        <label className="block font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--color-ink-muted)] mb-2" htmlFor="pa-country">
+        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-country">
           {copy.fields.country}
         </label>
         <input id="pa-country" className={inputClasses} autoComplete="country-name" {...register('country')} />
@@ -162,7 +162,7 @@ export function PartnerApplicationForm({ locale, copy }: Props) {
       </div>
 
       <div className="md:col-span-2">
-        <label className="block font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--color-ink-muted)] mb-2" htmlFor="pa-notes">
+        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-notes">
           {copy.fields.notes}
         </label>
         <textarea id="pa-notes" rows={3} className={cn(inputClasses, 'h-auto py-3')} {...register('notes')} />
@@ -182,7 +182,7 @@ export function PartnerApplicationForm({ locale, copy }: Props) {
           {status === 'sending' ? copy.sending : copy.submit}
         </button>
         {status === 'error' && (
-          <p role="alert" className="text-[13.5px] text-[var(--color-status-danger)]">
+          <p role="alert" className="text-[14px] text-[var(--color-status-danger)]">
             {copy.error}
           </p>
         )}

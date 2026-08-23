@@ -195,7 +195,7 @@ export function Nav() {
             <Link
               href={pathname}
               locale={otherLocale}
-              className="hidden md:block font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] transition-colors px-2 whitespace-nowrap"
+              className="hidden md:block type-meta text-[var(--color-ink-muted)] hover:text-[var(--color-ink)] transition-colors px-2 whitespace-nowrap"
               aria-label={`Switch to ${otherLocale.toUpperCase()}`}
             >
               {locale.toUpperCase()}
@@ -207,7 +207,7 @@ export function Nav() {
               href={landingHash('#book')}
               className={cn(
                 'inline-flex items-center justify-center h-[40px] px-[18px]',
-                'rounded-full font-medium text-[13px] tracking-tight whitespace-nowrap',
+                'rounded-full font-medium text-[14px] tracking-tight whitespace-nowrap',
                 'bg-[var(--color-ink)] text-[var(--color-bone)] hover:bg-[var(--color-bangladesh-green)]',
                 'transition-[background-color,transform] duration-200 ease-out active:scale-[0.97]',
                 'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-bangladesh-green)]',
@@ -248,10 +248,10 @@ export function Nav() {
                   data-menu-item
                   className="group/item rounded-xl p-4 -m-1 hover:bg-[var(--color-ink-faint)] transition-colors focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[var(--color-bangladesh-green)]"
                 >
-                  <p className="font-display font-semibold text-[15.5px] tracking-[-0.01em] text-[var(--color-ink)] group-hover/item:text-[var(--color-bangladesh-green)] transition-colors">
+                  <p className="font-display font-semibold text-[15px] tracking-[-0.01em] text-[var(--color-ink)] group-hover/item:text-[var(--color-bangladesh-green)] transition-colors">
                     {t(`menu.${item.key}.label` as Parameters<typeof t>[0])}
                   </p>
-                  <p className="text-[13px] text-[var(--color-ink-muted)] mt-1 leading-snug">
+                  <p className="text-[14px] text-[var(--color-ink-muted)] mt-1 leading-snug">
                     {t(`menu.${item.key}.desc` as Parameters<typeof t>[0])}
                   </p>
                 </Link>
@@ -270,14 +270,14 @@ export function Nav() {
             ))}
             <Link
               href="/enterprise"
-              className="py-4 border-b border-[var(--color-ink-subtle)] font-display font-semibold text-[19px] text-[var(--color-ink)]"
+              className="py-4 border-b border-[var(--color-ink-subtle)] font-display font-semibold text-[18px] text-[var(--color-ink)]"
             >
               {t('enterprise')}
             </Link>
             <Link
               href={pathname}
               locale={otherLocale}
-              className="py-4 font-mono text-[12px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]"
+              className="py-4 type-meta text-[var(--color-ink-muted)]"
             >
               {locale.toUpperCase()} → {otherLocale.toUpperCase()}
             </Link>
@@ -312,7 +312,7 @@ function MobileGroup({
         type="button"
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
-        className="w-full flex items-center justify-between py-4 font-display font-semibold text-[19px] text-[var(--color-ink)]"
+        className="w-full flex items-center justify-between py-4 font-display font-semibold text-[18px] text-[var(--color-ink)]"
       >
         {label}
         <svg
@@ -334,7 +334,7 @@ function MobileGroup({
         <div className="overflow-hidden">
           <div className="pb-4 flex flex-col gap-3">
             {items.map((item) => (
-              <Link key={item.key} href={item.href} className="text-[15.5px] text-[var(--color-ink-muted)]">
+              <Link key={item.key} href={item.href} className="text-[15px] text-[var(--color-ink-muted)]">
                 {t(`menu.${item.key}.label` as Parameters<typeof t>[0])}
               </Link>
             ))}

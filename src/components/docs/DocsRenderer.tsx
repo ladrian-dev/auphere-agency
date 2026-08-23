@@ -77,7 +77,7 @@ function Block({
         >
           {block.title ? (
             <p
-              className={`font-mono text-[11px] uppercase tracking-[0.12em] mb-2 ${
+              className={`type-meta mb-2 ${
                 isWarning ? 'text-[var(--color-status-warning)]' : 'text-[var(--color-primary-deep)]'
               }`}
             >
@@ -98,7 +98,7 @@ function Block({
         </li>
       ));
       return block.ordered ? (
-        <ol className="mt-4 space-y-2.5 list-decimal pl-5 marker:font-mono marker:text-[13px] marker:text-[var(--color-ink-dim)]">
+        <ol className="mt-4 space-y-2.5 list-decimal pl-5 marker:font-mono marker:text-[14px] marker:text-[var(--color-ink-dim)]">
           {items}
         </ol>
       ) : (
@@ -118,7 +118,7 @@ function Block({
                   <th
                     key={i}
                     scope="col"
-                    className="py-2.5 pr-6 font-mono text-[11px] uppercase tracking-[0.12em] font-normal text-[var(--color-ink-muted)] whitespace-nowrap"
+                    className="py-2.5 pr-6 type-meta font-normal text-[var(--color-ink-muted)] whitespace-nowrap"
                   >
                     {cell}
                   </th>
@@ -185,7 +185,7 @@ function Block({
                   </span>
                 ) : null}
                 {param.required ? (
-                  <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-[var(--color-primary-deep)]">
+                  <span className="type-meta text-[var(--color-primary-deep)]">
                     {chrome.required}
                   </span>
                 ) : null}

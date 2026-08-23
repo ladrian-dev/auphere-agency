@@ -20,22 +20,22 @@ export function PageHeader({ eyebrow, meta, title, intro }: Props) {
   const introRef = useReveal<HTMLParagraphElement>({ mode: 'load', delay: 0.12, y: 14 });
 
   return (
-    <Container width="wide" className="pt-32 md:pt-40 pb-12 md:pb-16">
+    <Container width="wide" className="hero-y">
       <div
         ref={barRef}
         className="flex items-baseline justify-between gap-4 border-b border-[var(--color-ink-subtle)] pb-4 mb-10 md:mb-14"
       >
-        <p className="font-mono text-[11px] uppercase tracking-[0.18em]">
+        <p className="type-meta">
           <span className="text-[var(--color-ink-muted)]">{eyebrow}</span>
         </p>
-        <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">
+        <p className="type-meta text-[var(--color-ink-muted)]">
           / {meta}
         </p>
       </div>
 
       <h1
         ref={titleRef}
-        className="font-display text-[40px] md:text-[64px] leading-[1.05] tracking-[-0.02em] text-[var(--color-ink)] max-w-4xl"
+        className="type-h1 text-[var(--color-ink)] max-w-4xl"
       >
         {title}
       </h1>

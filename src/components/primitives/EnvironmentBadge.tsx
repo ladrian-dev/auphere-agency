@@ -21,7 +21,7 @@ export function EnvironmentBadge() {
       // El lector de pantalla lo anuncia una vez: es contexto útil, no ruido.
       role="status"
     >
-      <span className="inline-flex items-center gap-2 rounded-full border border-[var(--color-status-warning)]/50 bg-[var(--color-ink)]/90 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--color-status-warning)] backdrop-blur-sm">
+      <span className="inline-flex items-center gap-2 rounded-full border border-[var(--color-status-warning)]/50 bg-[var(--color-ink)]/90 px-3 py-1.5 type-meta text-[var(--color-status-warning)] backdrop-blur-sm">
         <span
           aria-hidden
           className="inline-block size-1.5 rounded-full bg-[var(--color-status-warning)]"

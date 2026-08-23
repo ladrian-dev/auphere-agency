@@ -5,7 +5,7 @@ export default function NotFound() {
     <html lang="en">
       <body className="min-h-screen flex items-center justify-center bg-[var(--color-bone)] text-[var(--color-ink)] px-6">
         <div className="text-center max-w-md">
-          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">
+          <p className="type-meta text-[var(--color-ink-muted)]">
             [404] · Not found
           </p>
           <h1 className="font-display font-bold text-5xl tracking-[-0.04em] mt-4">

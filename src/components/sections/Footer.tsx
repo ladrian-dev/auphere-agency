@@ -9,7 +9,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-[var(--color-ink-subtle)] py-16 md:py-20">
+    <footer className="section-edge section-y-tight">
       <Container width="wide">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
           <div className="md:col-span-5">
@@ -62,7 +62,7 @@ export function Footer() {
           </FooterColumn>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-[var(--color-ink-subtle)] text-[13px] text-[var(--color-ink-muted)]">
+        <div className="mt-16 pt-8 border-t border-[var(--color-ink-subtle)] text-[14px] text-[var(--color-ink-muted)]">
           <p>© {year} Auphere</p>
         </div>
       </Container>
@@ -81,7 +81,7 @@ function FooterColumn({
 }) {
   return (
     <div className={className}>
-      <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)] mb-4">
+      <p className="type-meta text-[var(--color-ink-muted)] mb-4">
         {title}
       </p>
       <ul className="flex flex-col gap-3">{children}</ul>

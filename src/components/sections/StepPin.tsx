@@ -114,15 +114,15 @@ export function StepPin() {
     <section
       ref={sectionRef}
       id="how"
-      className="relative py-20 md:py-28 border-t border-[var(--color-ink-subtle)]"
+      className="relative section-y section-edge"
     >
       <SectionMarker number="03" label={t('marker.label')} meta={t('marker.meta')} />
       <Container width="wide">
         <div className="max-w-3xl mb-12 lg:mb-16">
-          <h2 className="font-display font-bold text-[clamp(1.875rem,1.1rem+2.6vw,3.25rem)] leading-[1.05] tracking-[-0.03em] text-balance">
+          <h2 className="type-h2 text-balance">
             {t('headline')}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,0.9rem+0.4vw,1.1875rem)] leading-[1.5] text-[var(--color-ink-muted)] mt-5 max-w-[56ch] text-pretty">
+          <p className="type-intro text-[var(--color-ink-muted)] mt-5 max-w-[56ch] text-pretty">
             {t('intro')}
           </p>
         </div>
@@ -146,13 +146,13 @@ export function StepPin() {
                 >
                   {String(i + 1).padStart(2, '0')} / {String(STEP_KEYS.length).padStart(2, '0')}
                 </p>
-                <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">
+                <p className="type-meta text-[var(--color-ink-muted)]">
                   {t(`steps.${key}.timing`)}
                 </p>
-                <h3 className="font-display font-bold text-[24px] md:text-[28px] leading-[1.08] tracking-[-0.02em] text-balance">
+                <h3 className="type-h3 text-balance">
                   {t(`steps.${key}.title`)}
                 </h3>
-                <p className="text-[14.5px] leading-relaxed text-[var(--color-ink-muted)] text-pretty">
+                <p className="text-[14px] leading-relaxed text-[var(--color-ink-muted)] text-pretty">
                   {t(`steps.${key}.body`)}
                 </p>
               </li>

@@ -49,7 +49,7 @@ function VerticalCard({ slug }: { slug: VerticalSlug }) {
       </div>
 
       <div className="relative z-10 flex flex-col h-full">
-        <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">
+        <p className="type-meta text-[var(--color-ink-muted)]">
           {t('kicker')}
         </p>
 
@@ -66,7 +66,7 @@ function VerticalCard({ slug }: { slug: VerticalSlug }) {
             <p className="font-display font-bold text-[clamp(1.75rem,3vw,2.5rem)] leading-none tracking-[-0.04em] text-[var(--color-bangladesh-green)]">
               {t('stat')}
             </p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[var(--color-ink-muted)] mt-2 max-w-[160px]">
+            <p className="type-meta text-[var(--color-ink-muted)] mt-2 max-w-[160px]">
               {t('statLabel')}
             </p>
           </div>

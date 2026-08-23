@@ -16,8 +16,8 @@ export function ControlList({ controls }: { controls: Control[] }) {
           <span aria-hidden className="font-mono text-[11px] tracking-[0.18em] opacity-60">
             {String(i + 1).padStart(2, '0')}
           </span>
-          <h3 className="font-display font-semibold text-[16.5px] leading-snug tracking-[-0.01em]">{control.name}</h3>
-          <p className="text-[13.5px] leading-relaxed opacity-70">{control.mechanism}</p>
+          <h3 className="font-display font-semibold text-[16px] leading-snug tracking-[-0.01em]">{control.name}</h3>
+          <p className="text-[14px] leading-relaxed opacity-70">{control.mechanism}</p>
         </li>
       ))}
     </ol>

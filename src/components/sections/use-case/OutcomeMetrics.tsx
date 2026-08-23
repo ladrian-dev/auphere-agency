@@ -21,7 +21,7 @@ export function OutcomeMetrics({ vertical, outcomeKeys, number }: Props) {
   const tCommon = useTranslations('useCases.common');
 
   return (
-    <section className="py-24 md:py-32 bg-[var(--color-ink)] text-[var(--color-bone)] relative overflow-hidden">
+    <section className="section-y bg-[var(--color-ink)] text-[var(--color-bone)] relative overflow-hidden">
       {/* Dot grid */}
       <div
         aria-hidden
@@ -38,10 +38,10 @@ export function OutcomeMetrics({ vertical, outcomeKeys, number }: Props) {
 
         <Container width="wide">
           <div className="max-w-3xl mb-16 md:mb-20">
-            <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.03em] text-[var(--color-bone)]">
+            <h2 className="type-h2 text-[var(--color-bone)]">
               {t('headline')}
             </h2>
-            <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.5] text-[var(--color-bone)]/70 mt-6">
+            <p className="type-intro text-[var(--color-bone)]/75 mt-5">
               {t('intro')}
             </p>
           </div>
@@ -55,7 +55,7 @@ export function OutcomeMetrics({ vertical, outcomeKeys, number }: Props) {
                 <p className="font-display font-bold text-[clamp(2.25rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.04em] text-[var(--color-caribbean-green)]">
                   {t(`items.${key}.value` as Parameters<typeof t>[0])}
                 </p>
-                <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-bone)]/60 mt-4">
+                <p className="type-meta text-[var(--color-bone)]/60 mt-4">
                   {t(`items.${key}.label` as Parameters<typeof t>[0])}
                 </p>
               </StaggerItem>

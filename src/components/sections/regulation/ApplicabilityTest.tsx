@@ -26,7 +26,7 @@ export function ApplicabilityTest({ headline, intro, questions, verdictApplies, 
 
   return (
     <div className="rounded-2xl border border-[var(--color-ink-subtle)] p-6 md:p-8">
-      <h3 className="font-display font-bold text-[22px] md:text-[26px] tracking-[-0.02em]">{headline}</h3>
+      <h3 className="type-h3">{headline}</h3>
       <p className="text-[14px] text-[var(--color-ink-muted)] mt-2">{intro}</p>
 
       <ol className="mt-6 flex flex-col gap-5">
@@ -43,7 +43,7 @@ export function ApplicabilityTest({ headline, intro, questions, verdictApplies, 
                     setAnswers((prev) => prev.map((a, j) => (j === i ? value : a)))
                   }
                   className={cn(
-                    'h-9 px-4 rounded-full border text-[13.5px] font-medium transition-colors',
+                    'h-9 px-4 rounded-full border text-[14px] font-medium transition-colors',
                     answers[i] === value
                       ? 'bg-[var(--color-bangladesh-green)] text-[var(--color-bone)] border-transparent'
                       : 'border-[var(--color-ink-subtle)] text-[var(--color-ink-muted)] hover:border-[var(--color-ink-dim)]',

@@ -85,7 +85,7 @@ export function PartnerCalculator({ tiers, platformFee, labels, onInteract }: Pr
     <div className="rounded-2xl border border-[var(--color-ink-subtle)] p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="flex flex-col gap-6">
         <label className="block">
-          <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--color-ink-muted)]">
+          <span className="type-meta text-[var(--color-ink-muted)]">
             {labels.clients}: <strong className="text-[var(--color-ink)]">{clients}</strong>
           </span>
           <input
@@ -98,7 +98,7 @@ export function PartnerCalculator({ tiers, platformFee, labels, onInteract }: Pr
           />
         </label>
         <label className="block">
-          <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--color-ink-muted)]">
+          <span className="type-meta text-[var(--color-ink-muted)]">
             {labels.pricePerClient}: <strong className="text-[var(--color-ink)]">{fmt(price)}</strong>
           </span>
           <input
@@ -115,7 +115,7 @@ export function PartnerCalculator({ tiers, platformFee, labels, onInteract }: Pr
 
       <div className="flex flex-col gap-4">
         <div>
-          <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--color-ink-muted)]">{labels.monthlyMargin}</p>
+          <p className="type-meta text-[var(--color-ink-muted)]">{labels.monthlyMargin}</p>
           <p className={cn('font-display font-bold text-4xl tracking-[-0.03em] mt-1', margin < 0 && 'text-[var(--color-status-danger)]')}>
             {fmt(margin)}
           </p>
@@ -126,7 +126,7 @@ export function PartnerCalculator({ tiers, platformFee, labels, onInteract }: Pr
         <p className="text-[14px] text-[var(--color-ink-muted)]">
           {labels.annualMargin}: <strong className="text-[var(--color-ink)]">{fmt(annual)}</strong>
         </p>
-        <p className="text-[13px] text-[var(--color-ink-muted)]">
+        <p className="text-[14px] text-[var(--color-ink-muted)]">
           {coveredAt !== null ? `${labels.feeCovered}: ${coveredAt}` : labels.feeCoveredNever}
         </p>
       </div>

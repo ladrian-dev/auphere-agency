@@ -26,14 +26,14 @@ export function AudienceSwitch() {
   const inset = useStageInset();
 
   return (
-    <section className="py-20 md:py-24 border-t border-[var(--color-ink-subtle)]">
+    <section className="section-y section-edge">
       <SectionMarker number="01" label={t('marker.label')} meta={t('marker.meta')} />
       <Container width="wide">
         <div className="max-w-3xl mb-10 md:mb-12">
-          <h2 className="font-display font-bold text-[clamp(1.875rem,1.1rem+2.6vw,3.25rem)] leading-[1.05] tracking-[-0.03em] text-balance">
+          <h2 className="type-h2 text-balance">
             {t('headline')}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,0.9rem+0.4vw,1.1875rem)] leading-[1.5] text-[var(--color-ink-muted)] mt-5 max-w-[52ch] text-pretty">
+          <p className="type-intro text-[var(--color-ink-muted)] mt-5 max-w-[52ch] text-pretty">
             {t('intro')}
           </p>
         </div>
@@ -50,16 +50,16 @@ export function AudienceSwitch() {
               href={t(`tracks.${key}.href`)}
               className="group bg-[var(--color-bone)] p-6 md:p-8 flex flex-col gap-3 hover:bg-[var(--color-ink-faint)] transition-colors motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[var(--color-bangladesh-green)]"
             >
-              <h3 className="font-display font-bold text-[26px] md:text-[30px] leading-[1.05] tracking-[-0.02em]">
+              <h3 className="type-h3">
                 {t(`tracks.${key}.verb`)}
               </h3>
-              <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-[var(--color-bangladesh-green)]">
+              <p className="type-meta text-[var(--color-bangladesh-green)]">
                 {t(`tracks.${key}.who`)}
               </p>
-              <p className="text-[14.5px] leading-relaxed text-[var(--color-ink-muted)] flex-1 text-pretty">
+              <p className="text-[14px] leading-relaxed text-[var(--color-ink-muted)] flex-1 text-pretty">
                 {t(`tracks.${key}.body`)}
               </p>
-              <span className="font-medium text-[14.5px] text-[var(--color-bangladesh-green)] group-hover:underline underline-offset-4">
+              <span className="font-medium text-[14px] text-[var(--color-bangladesh-green)] group-hover:underline underline-offset-4">
                 {t(`tracks.${key}.cta`)} <span aria-hidden>→</span>
               </span>
             </Link>
@@ -68,7 +68,7 @@ export function AudienceSwitch() {
 
         {/* Cuarto público: compra por comité. No es un verbo más — es otra
             conversación, así que va como línea, no como cuarta tarjeta. */}
-        <p className="mt-6 flex flex-wrap items-baseline gap-x-2 gap-y-1 text-[14.5px] text-[var(--color-ink-muted)]">
+        <p className="mt-6 flex flex-wrap items-baseline gap-x-2 gap-y-1 text-[14px] text-[var(--color-ink-muted)]">
           <span>{t('enterpriseLine')}</span>
           <Link
             href="/enterprise"

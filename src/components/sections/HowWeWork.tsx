@@ -9,15 +9,15 @@ export function HowWeWork() {
   const t = useTranslations('howWeWork');
 
   return (
-    <section id="how" className="py-20 md:py-28">
+    <section id="how" className="section-y">
       <SectionMarker number="01" label={t('marker.label')} meta={t('marker.meta')} />
 
       <Container width="wide">
         <div className="max-w-4xl mb-12 md:mb-16">
-          <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.75rem)] leading-[1.05] tracking-[-0.03em] text-[var(--color-ink)]">
+          <h2 className="type-h2 text-[var(--color-ink)]">
             {t('headline')}
           </h2>
-          <p className="font-display font-medium text-[clamp(1.05rem,1.8vw,1.375rem)] leading-[1.4] text-[var(--color-ink-muted)] mt-5 max-w-2xl">
+          <p className="type-intro text-[var(--color-ink-muted)] mt-5 max-w-2xl">
             {t('intro')}
           </p>
         </div>
@@ -29,10 +29,10 @@ export function HowWeWork() {
               className="bg-[var(--color-bone)] p-6 md:p-7 flex flex-col"
             >
               <div className="flex items-center justify-between gap-3 mb-5">
-                <span className="font-mono text-[10.5px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)] whitespace-nowrap">
+                <span className="type-meta text-[var(--color-ink-muted)] whitespace-nowrap">
                   {String(i + 1).padStart(2, '0')} / 03
                 </span>
-                <span className="font-mono text-[10.5px] uppercase tracking-[0.18em] text-[var(--color-bangladesh-green)] whitespace-nowrap">
+                <span className="type-meta text-[var(--color-bangladesh-green)] whitespace-nowrap">
                   {t(`steps.${stepKey}.timing`)}
                 </span>
               </div>
@@ -41,7 +41,7 @@ export function HowWeWork() {
                 {t(`steps.${stepKey}.title`)}
               </h3>
 
-              <p className="text-[14.5px] leading-relaxed text-[var(--color-ink-muted)] flex-1">
+              <p className="text-[14px] leading-relaxed text-[var(--color-ink-muted)] flex-1">
                 {t(`steps.${stepKey}.body`)}
               </p>
             </StaggerItem>

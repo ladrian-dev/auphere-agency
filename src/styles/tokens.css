@@ -189,16 +189,19 @@
 @utility surface-dark {
   background-color: var(--color-bangladesh-green);
   color: var(--color-bone);
+  --section-edge: color-mix(in srgb, var(--color-bone) 12%, transparent);
 }
 
 @utility surface-darker {
   background-color: var(--color-ink);
   color: var(--color-bone);
+  --section-edge: color-mix(in srgb, var(--color-bone) 12%, transparent);
 }
 
 @utility surface-light {
   background-color: var(--color-bone);
   color: var(--color-ink);
+  --section-edge: var(--color-ink-subtle);
 }
 
 /* v3 §10.1 — superficie inmersiva de /enterprise y /platform/security.
@@ -206,7 +209,165 @@
 @utility surface-deep {
   background-color: var(--color-surface-deep);
   color: var(--color-bone);
+  --section-edge: color-mix(in srgb, var(--color-bone) 12%, transparent);
   --color-data-positive: var(--color-caribbean-green);
   --color-data-neutral: color-mix(in srgb, var(--color-bone) 62%, var(--color-surface-deep));
   --color-data-pending: #D9A96A;
+}
+
+/* ─────────────────────────────────────────────
+ * Capa de composición — ritmo, tipografía y superficies
+ *
+ * Existe porque la v3 se construyó en cinco fases y cada una fijó sus propios
+ * valores a mano: 5 ritmos verticales distintos (`py-24 md:py-32`,
+ * `py-20 md:py-28`, `py-16 md:py-24`, `py-14 md:py-20`, `py-20 md:py-24`) y
+ * ~50 recetas tipográficas para lo que son cuatro roles. El resultado es que
+ * cada página se leía como un sitio distinto.
+ *
+ * Regla: ninguna sección declara su propio padding vertical ni su propia
+ * escala de titular. Se usan estas utilidades. Los valores salen de
+ * brand-system.md §2 (escala) y §4 (ritmo vertical 96–128 px).
+ * ───────────────────────────────────────────── */
+
+/* ── Ritmo vertical ─────────────────────────── */
+
+/** Ritmo canónico entre secciones: 64 px en móvil → 128 px en desktop. */
+@utility section-y {
+  padding-block: clamp(4rem, 7vw, 8rem);
+}
+
+/** Variante densa para bloques técnicos y de apoyo: 48 → 96 px. */
+@utility section-y-tight {
+  padding-block: clamp(3rem, 5vw, 6rem);
+}
+
+/** Hero de página interior. El padding-top reserva el nav fijo (144 → 176 px). */
+@utility hero-y {
+  padding-top: clamp(9rem, 4vw + 7rem, 11rem);
+  padding-bottom: clamp(3.5rem, 6vw, 7rem);
+}
+
+/* ── Separadores de sección ─────────────────── */
+
+/**
+ * Borde superior de sección. El color se resuelve por superficie: cada
+ * utilidad de superficie redefine `--section-edge`, así que una sección
+ * oscura nunca hereda el borde de la clara (y al revés).
+ */
+@utility section-edge {
+  border-top: 1px solid var(--section-edge, var(--color-ink-subtle));
+}
+
+/* ── Escala tipográfica por rol ─────────────── */
+
+/** H1 de página. Único en la pantalla.
+ *  El máximo (56 px) es el que ya tenía el hero de la home, que está calibrado
+ *  para que el CTA primario quede sobre el fold en 1280 × 720 (auditoría §B-1).
+ *  Las páginas interiores bajan de 62 a 56 px y pasan a compartirlo. */
+@utility type-h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.25rem, 4.4vw, 3.5rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+/** H2 de sección. */
+@utility type-h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 4.2vw, 3.25rem);
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+/** H3 — bloques dentro de una sección, tarjetas grandes, pull quotes cortos. */
+@utility type-h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+/** Título de tarjeta o de ítem de lista — el escalón por debajo de `type-h3`. */
+@utility type-h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.0625rem, 1.2vw, 1.25rem);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+/** Subtítulo del hero — acompaña siempre a `type-h1`. */
+@utility type-lead {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+
+/** Entradilla de sección — acompaña siempre a `type-h2`. */
+@utility type-intro {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+/** Metadato monoespaciado: marcadores, microcopy, etiquetas de dato. */
+@utility type-meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+/* ── Superficies de hero ────────────────────── */
+
+/**
+ * Degradado de hero de las páginas de plataforma y canal. Estaba escrito a
+ * mano, idéntico, en `/platform` y `/partners`; cualquier ajuste en una
+ * dejaba la otra atrás.
+ */
+@utility surface-hero {
+  background-image: radial-gradient(
+    120% 90% at 100% 50%,
+    var(--color-bangladesh-green) 0%,
+    var(--color-pine) 55%,
+    var(--color-ink) 100%
+  );
+  color: var(--color-bone);
+  --section-edge: color-mix(in srgb, var(--color-bone) 12%, transparent);
+}
+
+/**
+ * Trama de puntos de los heroes oscuros. Antes era un `<div aria-hidden>` con
+ * estilo inline repetido en cuatro páginas, con dos tamaños de rejilla
+ * distintos. Ahora es una capa del propio hero.
+ */
+@utility hero-dots {
+  position: relative;
+  isolation: isolate;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.14;
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      color-mix(in srgb, var(--color-bone) 35%, transparent) 1px,
+      transparent 0
+    );
+    background-size: 22px 22px;
+  }
 }

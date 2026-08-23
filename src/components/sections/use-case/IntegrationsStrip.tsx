@@ -40,7 +40,7 @@ export function IntegrationsStrip({ vertical, integrations, number }: Props) {
   );
 
   return (
-    <section className="py-24 md:py-32">
+    <section className="section-y">
       <SectionMarker
         number={number}
         label={t("marker.label")}
@@ -50,7 +50,7 @@ export function IntegrationsStrip({ vertical, integrations, number }: Props) {
       <Container width="wide">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20">
           <div>
-            <h2 className="font-display font-bold text-[clamp(1.75rem,3.5vw,2.75rem)] leading-[1.1] tracking-[-0.03em]">
+            <h2 className="type-h2">
               {t("headline")}
             </h2>
             <p className="text-[var(--color-ink-muted)] mt-5 leading-relaxed text-[16px] md:text-[17px] max-w-md">
@@ -63,7 +63,7 @@ export function IntegrationsStrip({ vertical, integrations, number }: Props) {
               <span
                 key={name}
                 data-integration-chip
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--color-sand)] text-[var(--color-ink)] text-[13.5px] font-medium leading-none whitespace-nowrap hover:bg-[var(--color-pistachio)]/60 transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--color-sand)] text-[var(--color-ink)] text-[14px] font-medium leading-none whitespace-nowrap hover:bg-[var(--color-pistachio)]/60 transition-colors"
               >
                 <span
                   aria-hidden

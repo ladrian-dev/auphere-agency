@@ -24,15 +24,15 @@ export async function WhatsappUseCasesList({ number, locale }: Props) {
   const t = await getTranslations({ locale, namespace: 'whatsapp.useCases' });
 
   return (
-    <section className="py-24 md:py-32 border-t border-[var(--color-ink-subtle)] bg-[var(--color-bone)]">
+    <section className="section-y section-edge bg-[var(--color-bone)]">
       <SectionMarker number={number} label={t('marker.label')} meta={t('marker.meta')} />
 
       <Container width="wide">
         <div className="max-w-3xl mb-12 md:mb-16">
-          <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.03em]">
+          <h2 className="type-h2">
             {t('headline')}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.5] text-[var(--color-ink-muted)] mt-6">
+          <p className="type-intro text-[var(--color-ink-muted)] mt-5">
             {t('intro')}
           </p>
         </div>
@@ -43,10 +43,10 @@ export async function WhatsappUseCasesList({ number, locale }: Props) {
               key={key}
               className="bg-[var(--color-bone)] p-6 md:p-8 flex flex-col gap-4"
             >
-              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">
+              <p className="type-meta text-[var(--color-ink-muted)]">
                 {String(i + 1).padStart(2, '0')} / {locale === 'es' ? 'Caso' : 'Use case'}
               </p>
-              <h3 className="font-display font-semibold text-[20px] md:text-[24px] leading-[1.25] tracking-[-0.01em] text-[var(--color-ink)]">
+              <h3 className="type-h4 text-[var(--color-ink)]">
                 {t(`items.${key}.title`)}
               </h3>
               <p className="text-[15px] leading-[1.6] text-[var(--color-ink-muted)]">

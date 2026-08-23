@@ -17,13 +17,13 @@ export function VerticalFaq({ vertical, items, number }: Props) {
   const t = useTranslations(`useCases.${vertical}.faq`);
 
   return (
-    <section id="vertical-faq" className="py-24 md:py-32 bg-[var(--color-bone)]">
+    <section id="vertical-faq" className="section-y bg-[var(--color-bone)]">
       <SectionMarker number={number} label={t('marker.label')} meta={t('marker.meta')} />
 
-      <Container width="default">
+      <Container width="wide">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20">
           <div className="lg:sticky lg:top-24 lg:self-start">
-            <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.03em]">
+            <h2 className="type-h2">
               {t('headline')}
             </h2>
           </div>

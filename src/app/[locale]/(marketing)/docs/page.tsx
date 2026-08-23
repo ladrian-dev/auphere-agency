@@ -56,26 +56,26 @@ export default async function DocsHomePage({ params }: Props) {
     <article className="max-w-[720px]">
       <header>
         <div className="flex items-baseline justify-between gap-4 border-b border-[var(--color-ink-subtle)] pb-3">
-          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">
+          <p className="type-meta text-[var(--color-ink-muted)]">
             {t('eyebrow')}
           </p>
-          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-ink-muted)]">
+          <p className="type-meta text-[var(--color-ink-muted)]">
             / {tc('version')}
           </p>
         </div>
-        <h1 className="mt-8 font-display text-[36px] md:text-[52px] leading-[1.08] tracking-[-0.02em] text-[var(--color-ink)] [text-wrap:balance]">
+        <h1 className="mt-8 type-h1 text-[var(--color-ink)] [text-wrap:balance]">
           {t('title')}
         </h1>
-        <p className="mt-4 text-[17px] md:text-[19px] leading-[1.5] text-[var(--color-ink-muted)] [text-wrap:pretty]">
+        <p className="mt-4 text-[17px] md:text-[18px] leading-[1.5] text-[var(--color-ink-muted)] [text-wrap:pretty]">
           {t('intro')}
         </p>
       </header>
 
       <section className="mt-12 rounded-[16px] border border-[var(--color-ink-subtle)] p-6 md:p-7">
-        <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-primary-deep)]">
+        <p className="type-meta text-[var(--color-primary-deep)]">
           {tc('product')}
         </p>
-        <h2 className="mt-3 font-display text-[22px] md:text-[26px] leading-[1.2] tracking-[-0.01em]">
+        <h2 className="mt-3 type-h3">
           {t('productTitle')}
         </h2>
         <p className="mt-3 text-[15px] md:text-[16px] leading-[1.6] text-[var(--color-ink-muted)] [text-wrap:pretty]">
@@ -100,7 +100,7 @@ export default async function DocsHomePage({ params }: Props) {
       <section className="mt-12">
         {groups.map((group) => (
           <div key={group.id} className="mt-8 first:mt-0">
-            <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--color-ink-dim)] border-b border-[var(--color-ink-subtle)] pb-2">
+            <p className="type-meta text-[var(--color-ink-dim)] border-b border-[var(--color-ink-subtle)] pb-2">
               {group.label}
             </p>
             <ul className="divide-y divide-[var(--color-ink-subtle)]">

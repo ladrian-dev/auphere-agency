@@ -76,14 +76,14 @@ export function CapabilitiesBento() {
   }
 
   return (
-    <section className="py-24 md:py-32 border-t border-[var(--color-ink-subtle)]" onKeyDown={onKeyDown}>
+    <section className="section-y section-edge" onKeyDown={onKeyDown}>
       <SectionMarker number="02" label={t('marker.label')} meta={t('marker.meta')} />
       <Container width="wide">
         <div className="max-w-3xl mb-10 md:mb-14">
-          <h2 className="font-display font-bold text-[clamp(1.875rem,1.1rem+2.6vw,3.25rem)] leading-[1.05] tracking-[-0.03em] text-balance">
+          <h2 className="type-h2 text-balance">
             {t('headline')}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,0.9rem+0.4vw,1.1875rem)] leading-[1.5] text-[var(--color-ink-muted)] mt-5 max-w-[56ch] text-pretty">
+          <p className="type-intro text-[var(--color-ink-muted)] mt-5 max-w-[56ch] text-pretty">
             {t('intro')}
           </p>
         </div>
@@ -141,13 +141,13 @@ export function CapabilitiesBento() {
                       </svg>
                     </span>
                   </span>
-                  <span className="text-[13.5px] leading-relaxed text-[var(--color-ink-muted)] text-pretty">
+                  <span className="text-[14px] leading-relaxed text-[var(--color-ink-muted)] text-pretty">
                     {t(`cells.${key}.body`)}
                   </span>
                   {isOpen && (
                     <span
                       data-bento-detail
-                      className="block text-[14.5px] leading-relaxed text-[var(--color-ink)] mt-3 border-t border-[var(--color-ink-subtle)] pt-4 text-pretty"
+                      className="block text-[14px] leading-relaxed text-[var(--color-ink)] mt-3 border-t border-[var(--color-ink-subtle)] pt-4 text-pretty"
                     >
                       {t(`cells.${key}.detail`)}
                     </span>

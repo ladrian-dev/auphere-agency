@@ -204,14 +204,14 @@ async function CategoryDefinitions({ locale }: { locale: 'en' | 'es' }) {
   const t = await getTranslations({ locale, namespace: 'whatsapp.category' });
   const keys = ['chatbot', 'assistant', 'agent'] as const;
   return (
-    <section className="py-24 md:py-32 border-t border-[var(--color-ink-subtle)]">
+    <section className="section-y section-edge">
       <SectionMarker number="02" label={t('marker.label')} meta={t('marker.meta')} />
       <Container width="wide">
         <div className="max-w-3xl mb-12 md:mb-16">
-          <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] tracking-[-0.03em]">
+          <h2 className="type-h2">
             {t('headline')}
           </h2>
-          <p className="font-display font-medium text-[clamp(1rem,1.6vw,1.25rem)] leading-[1.5] text-[var(--color-ink-muted)] mt-6">
+          <p className="type-intro text-[var(--color-ink-muted)] mt-5">
             {t('intro')}
           </p>
         </div>
@@ -223,13 +223,13 @@ async function CategoryDefinitions({ locale }: { locale: 'en' | 'es' }) {
                 k === 'agent' ? 'bg-[var(--color-bangladesh-green)] text-[var(--color-bone)]' : 'bg-[var(--color-bone)]'
               }`}
             >
-              <dt className="font-mono text-[11px] uppercase tracking-[0.18em] opacity-70">
+              <dt className="type-meta opacity-70">
                 {locale === 'es' ? 'Categoría' : 'Category'}
               </dt>
               <dd className="font-display font-bold text-[24px] md:text-[28px] leading-[1.1] tracking-[-0.02em]">
                 {t(`definitions.${k}.term`)}
               </dd>
-              <p className="text-[14.5px] leading-[1.55] opacity-85">
+              <p className="text-[14px] leading-[1.55] opacity-85">
                 {t(`definitions.${k}.body`)}
               </p>
             </div>
@@ -246,17 +246,17 @@ async function WhatsappQualifier({ locale }: { locale: 'en' | 'es' }) {
   const noKeys = ['no1', 'no2'] as const;
 
   return (
-    <section className="py-20 md:py-28 dot-grid border-t border-[var(--color-ink-subtle)]">
+    <section className="section-y dot-grid section-edge">
       <SectionMarker number="08" label={t('marker.label')} meta={t('marker.meta')} />
-      <Container width="default">
+      <Container width="wide">
         <div className="max-w-3xl mb-10 md:mb-14">
-          <h2 className="font-display font-bold text-[clamp(2rem,4.5vw,3.75rem)] leading-[1.05] tracking-[-0.03em]">
+          <h2 className="type-h2">
             {t('headline')}
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
           <div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-mountain-meadow)] mb-6">
+            <p className="type-meta text-[var(--color-mountain-meadow)] mb-6">
               {t('yesTitle')}
             </p>
             <ul className="flex flex-col gap-5">
@@ -273,7 +273,7 @@ async function WhatsappQualifier({ locale }: { locale: 'en' | 'es' }) {
             </ul>
           </div>
           <div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-status-danger)] mb-6">
+            <p className="type-meta text-[var(--color-status-danger)] mb-6">
               {t('noTitle')}
             </p>
             <ul className="flex flex-col gap-5">
@@ -299,19 +299,19 @@ async function WhatsappFinalCta({ locale }: { locale: 'en' | 'es' }) {
   const t = await getTranslations({ locale, namespace: 'whatsapp.finalCta' });
   const tHero = await getTranslations({ locale, namespace: 'whatsapp.hero' });
   return (
-    <section id="book" className="relative py-20 md:py-28 surface-dark overflow-hidden border-t border-[var(--color-bone)]/10">
+    <section id="book" className="relative section-y surface-dark overflow-hidden section-edge">
       <Container width="default" className="relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <Eyebrow variant="dark">{tHero('eyebrow')}</Eyebrow>
-          <h2 className="font-display font-bold text-[clamp(2.25rem,5vw,4rem)] leading-[1.05] tracking-[-0.03em] text-[var(--color-bone)] mt-6">
+          <h2 className="type-h2 text-[var(--color-bone)] mt-6">
             {t('headline')}
           </h2>
-          <p className="font-display font-medium text-[clamp(1.05rem,1.8vw,1.375rem)] leading-[1.4] text-[var(--color-bone)]/70 mt-5">
+          <p className="type-intro text-[var(--color-bone)]/75 mt-5">
             {t('subheadline')}
           </p>
         </div>
         <CalEmbed />
-        <p className="text-center mt-8 text-[13px] text-[var(--color-bone)]/60">
+        <p className="text-center mt-8 text-[14px] text-[var(--color-bone)]/60">
           {tHero('ctaMicrocopy')}
         </p>
       </Container>

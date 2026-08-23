@@ -66,7 +66,7 @@ export function LifecycleNarrative({ labels, stops, marker }: Props) {
   );
 
   return (
-    <section ref={rootRef} className="py-24 md:py-32 border-t border-[var(--color-ink-subtle)]">
+    <section ref={rootRef} className="section-y section-edge">
       <SectionMarker number="01" label={marker.label} meta={marker.meta} />
       <Container width="wide">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
@@ -90,7 +90,7 @@ export function LifecycleNarrative({ labels, stops, marker }: Props) {
                 <p className="font-mono text-[12px] tracking-[0.18em] text-[var(--color-bangladesh-green)]">
                   {String(i + 1).padStart(2, '0')} / {String(stops.length).padStart(2, '0')}
                 </p>
-                <h3 className="font-display font-bold text-[24px] md:text-[30px] leading-[1.08] tracking-[-0.02em] mt-3">
+                <h3 className="type-h3 mt-3">
                   {stop.title}
                 </h3>
                 <p className="text-[15px] leading-relaxed text-[var(--color-ink-muted)] mt-4">{stop.body}</p>

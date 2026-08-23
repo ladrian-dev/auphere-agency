@@ -35,13 +35,13 @@ export function Faq({
   const intro = header?.intro ?? t('intro');
 
   return (
-    <section id="faq" className="py-24 md:py-32">
+    <section id="faq" className="section-y">
       <SectionMarker number={sectionNumber} label={label} meta={meta} />
 
-      <Container width="default">
+      <Container width="wide">
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] gap-10 lg:gap-16">
           <div className="min-w-0 lg:sticky lg:top-28 lg:self-start">
-            <h2 className="font-display font-bold text-[clamp(1.875rem,1.1rem+2.4vw,3rem)] leading-[1.06] tracking-[-0.03em] text-balance">
+            <h2 className="type-h2 text-balance">
               {headline}
             </h2>
             <p className="text-[var(--color-ink-muted)] mt-5 leading-relaxed max-w-[42ch] text-pretty">

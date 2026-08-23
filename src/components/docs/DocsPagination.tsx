@@ -21,7 +21,7 @@ export function DocsPagination({ previous, next, previousLabel, nextLabel }: Pro
       <div>
         {previous ? (
           <a href={previous.href} className="group block py-2">
-            <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--color-ink-dim)]">
+            <span className="type-meta text-[var(--color-ink-dim)]">
               ← {previousLabel}
             </span>
             <span className="block mt-1.5 text-[15px] text-[var(--color-ink)] group-hover:text-[var(--color-primary-deep)] transition-colors">
@@ -33,7 +33,7 @@ export function DocsPagination({ previous, next, previousLabel, nextLabel }: Pro
       <div className="sm:text-right">
         {next ? (
           <a href={next.href} className="group block py-2">
-            <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--color-ink-dim)]">
+            <span className="type-meta text-[var(--color-ink-dim)]">
               {nextLabel} →
             </span>
             <span className="block mt-1.5 text-[15px] text-[var(--color-ink)] group-hover:text-[var(--color-primary-deep)] transition-colors">
