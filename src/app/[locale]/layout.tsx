@@ -2,10 +2,12 @@ import type { Metadata, Viewport } from 'next';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import Script from 'next/script';
 import { routing } from '@/i18n/routing';
 import { helvena, behindTheNineties, jetbrainsMono } from '../fonts';
 import { SmoothScroll } from '@/components/motion/SmoothScroll';
 import { EnvironmentBadge } from '@/components/primitives/EnvironmentBadge';
+import { isProduction } from '@/lib/deployment';
 import '../globals.css';
 
 interface Props {
@@ -14,6 +16,7 @@ interface Props {
 }
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://auphere.com';
+const PLAUSIBLE_DOMAIN = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
 
 export async function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -140,10 +143,12 @@ function buildOrganizationSchema(locale: string, metaDescription: string) {
         areaServed: ['EU', 'US', 'LATAM'],
       },
     ],
+    // Mismos perfiles que enlaza el pie (Footer.tsx). Un `sameAs` que no
+    // coincide con los enlaces visibles debilita la entidad ante los motores.
     sameAs: [
       'https://www.linkedin.com/company/auphere',
-      'https://github.com/auphere',
-      'https://x.com/auphere',
+      'https://www.instagram.com/somos.auphere',
+      'https://www.tiktok.com/@somos.auphere',
     ],
   };
 }
@@ -201,6 +206,17 @@ export default async function LocaleLayout({ children, params }: Props) {
           </SmoothScroll>
         </NextIntlClientProvider>
         <EnvironmentBadge />
+        {/* Plausible (sin cookies, §9.3). Solo en el despliegue de producción:
+            staging y local no deben contaminar las métricas. Sin esta etiqueta
+            `track()` en lib/analytics.ts es un no-op silencioso. */}
+        {isProduction() && PLAUSIBLE_DOMAIN ? (
+          <Script
+            defer
+            data-domain={PLAUSIBLE_DOMAIN}
+            src="https://plausible.io/js/script.outbound-links.tagged-events.js"
+            strategy="afterInteractive"
+          />
+        ) : null}
       </body>
     </html>
   );

@@ -168,7 +168,7 @@
     "items": {
       "cost": {
         "q": "How does billing work?",
-        "a": "Three line items and nothing else: the diagnostic is free, the build is quoted as a fixed fee once it ends, and from go-live there is a monthly fee to run the agent. The budget comes out of the diagnostic with the scope in writing, so there is nothing left to renegotiate. You pay 50% on signing and 50% on kickoff, and you can cancel with 30 days notice after the first three months."
+        "a": "Three line items and nothing else: the diagnostic is free, the build is quoted as a fixed fee once it ends, and from go-live there is a monthly fee to run the agent. The budget comes out of the diagnostic with the scope in writing, so there is nothing left to renegotiate. You pay 50% on signing and 50% on kickoff. No annual contracts: after the first three months you can cancel with 30 days notice."
       },
       "timing": {
         "q": "How long until the agent is live?",
@@ -188,7 +188,7 @@
       },
       "channels": {
         "q": "Which channels and tools do you integrate with?",
-        "a": "Out of the box: WhatsApp Business, Instagram DM, web chat, email, Google Calendar, Outlook, Stripe, Cal.com, HubSpot, common PMS / CRM / booking systems, and most no-code platforms (Make, n8n, Zapier). Anything with a documented API is fair game. The diagnostic confirms the exact list before you sign."
+        "a": "Out of the box: WhatsApp Business, Instagram DM, email, Google Calendar, Outlook, Stripe, Cal.com, HubSpot, common PMS / CRM / booking systems, and most no-code platforms (Make, n8n, Zapier). Anything with a documented API is fair game. The diagnostic confirms the exact list before you sign."
       },
       "engineer": {
         "q": "Do we need an in-house engineer to manage this?",

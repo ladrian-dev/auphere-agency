@@ -168,7 +168,7 @@
     "items": {
       "cost": {
         "q": "¿Cómo se factura?",
-        "a": "Tres partidas y ninguna más: el diagnóstico no se cobra, la puesta en marcha se cotiza cerrada al terminarlo y a partir del go-live hay una cuota mensual de operación. El presupuesto sale del diagnóstico con el alcance por escrito, así que no hay nada que renegociar después. Se paga 50% al firmar y 50% al arrancar, y se cancela con 30 días de preaviso tras los tres primeros meses."
+        "a": "Tres partidas y ninguna más: el diagnóstico no se cobra, la puesta en marcha se cotiza cerrada al terminarlo y a partir del go-live hay una cuota mensual de operación. El presupuesto sale del diagnóstico con el alcance por escrito, así que no hay nada que renegociar después. Se paga 50% al firmar y 50% al arrancar. Sin contratos anuales: pasados los tres primeros meses, se cancela con 30 días de preaviso."
       },
       "timing": {
         "q": "¿Cuánto tiempo hasta que el agente esté operando?",
@@ -188,7 +188,7 @@
       },
       "channels": {
         "q": "¿Con qué canales y herramientas integráis?",
-        "a": "De fábrica: WhatsApp Business, Instagram DM, web chat, email, Google Calendar, Outlook, Stripe, Cal.com, HubSpot, PMS / CRM / sistemas de reservas comunes y la mayoría de plataformas no-code (Make, n8n, Zapier). Cualquier herramienta con API documentada es candidata; el diagnóstico confirma la lista exacta antes de firmar."
+        "a": "De fábrica: WhatsApp Business, Instagram DM, email, Google Calendar, Outlook, Stripe, Cal.com, HubSpot, PMS / CRM / sistemas de reservas comunes y la mayoría de plataformas no-code (Make, n8n, Zapier). Cualquier herramienta con API documentada es candidata; el diagnóstico confirma la lista exacta antes de firmar."
       },
       "engineer": {
         "q": "¿Necesitamos un ingeniero interno para gestionarlo?",

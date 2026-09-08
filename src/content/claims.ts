@@ -290,8 +290,18 @@ export const CLAIMS: readonly Claim[] = [
     promise: 'Precios nuevos (Direct v2, suelo Enterprise, economía del canal)',
     status: 'blocked',
     gate: 'Informe de pricing 2026-08: unidad definida · consumo medido · consumo facturable',
-    // Sin patrones — la vigilancia es humana: ninguna cifra nueva de precio
-    // fuera del bloque publicado hoy en la home.
+    // Ninguna cifra de precio en ninguna superficie pública (incluido llms.txt,
+    // donde el bloque de precios sobrevivió a la retirada del 2026-08-09).
+    // Vigila (a) cifras de puesta en marcha, (b) la tabla Direct v1 que se
+    // retiró y (c) precios por conversación del modelo híbrido aún no aprobado.
+    // No caza precios de ejemplo dentro de conversaciones de demo ("$80/mes"
+    // por una clase), que no son precios de Auphere.
+    forbiddenPatterns: [
+      '\\$\\s?\\d{1,3}(?:[,.]\\d{3})*\\s?(?:setup|de puesta en marcha)',
+      '(?:setup|puesta en marcha)\\s?(?:de|of|\\+)?\\s?\\$\\s?\\d',
+      '\\$\\s?(?:120|249|390|850|1[,.]?490|2[,.]?990)\\b',
+      '\\$\\s?\\d+(?:[,.]\\d+)?\\s?(?:/|por|per)\\s?(?:conversaci[oó]n|conversation)',
+    ],
   },
 ] as const;
 

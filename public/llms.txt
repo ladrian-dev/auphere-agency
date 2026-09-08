@@ -35,15 +35,12 @@ land earlier). Integrations: calendars (Google Calendar, Booksy, Treatwell, Fres
 CRMs, payments, and anything with a documented API — plus the browser-automation rule
 for systems without one.
 
-## Pricing (Direct tier, published)
+## How billing works
 
-All pricing in USD, taxes not included. 50% on signing, 50% on kickoff. 10% off billed
-annually. Cancel any month after the first three with 30 days notice.
-
-- **Essential** — $850 setup + $120/mo. Up to 1,500 conversations/mo, 1 channel.
-- **Pro** — $1,490 setup + $249/mo. Up to 4,000 conversations/mo, up to 3 channels.
-- **Business 360** — $2,990 setup + $390/mo. Up to 10,000 conversations/mo, 4h incident-response window.
-
+No prices are published. The model has three parts and nothing else: the diagnostic is
+free; the build is quoted as a fixed fee once the diagnostic ends, with the scope in
+writing; from go-live there is a monthly fee made of a base with conversations included
+plus usage that follows your volume. No annual contracts. Figures are given on the call.
 Enterprise and partner economics are discussed in calls, not published.
 
 ## Use cases (verticals with dedicated pages)

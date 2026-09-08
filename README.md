@@ -1,8 +1,8 @@
 # auphere-agency
 
-Landing v2 de [auphere.com](https://auphere.com).
+Landing de [auphere.com](https://auphere.com) — v3 «Platform Era» + capa v4 «IA como servicio». Producción en `main`, staging (`landing-staging.auphere.com`) en `develop`.
 
-**Stack:** Next.js 16 · React 19 · Tailwind 4 · next-intl 4 · Motion · Lenis · Cal.com embed.
+**Stack:** Next.js 16 · React 19 · Tailwind 4 · next-intl 4 · GSAP (único motor de movimiento) · Lenis · Cal.com embed · Plausible.
 
 ## Quick start
 
