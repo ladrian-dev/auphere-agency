@@ -35,7 +35,6 @@ Copia `.env.example` a `.env.local` y rellena:
 
 ```
 NEXT_PUBLIC_SITE_URL=https://auphere.com
-NEXT_PUBLIC_CAL_LINK=auphere/diagnostico-45min
 NEXT_PUBLIC_PLAUSIBLE_DOMAIN=auphere.com
 RESEND_API_KEY=          # (opcional) form de contacto alternativo
 ```

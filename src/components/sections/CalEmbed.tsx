@@ -7,9 +7,10 @@ import { cn } from '@/lib/utils/cn';
 /**
  * Reunión de diagnóstico · 30 min · sin coste. Todos los públicos (Home,
  * Partners, Enterprise) reservan la misma reunión (README §Panel de reserva).
+ * Fijo en código a propósito: una variable de entorno heredada apuntaba al
+ * evento antiguo de 45 min y no debe poder desviar el calendario en producción.
  */
-export const CAL_LINK =
-  process.env.NEXT_PUBLIC_CAL_LINK || 'auphere-team/diagnostico-auphere-30-min-sin-coste';
+export const CAL_LINK = 'auphere-team/diagnostico-auphere-30-min-sin-coste';
 
 interface Props {
   calLink?: string;
