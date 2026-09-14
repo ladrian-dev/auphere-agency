@@ -3,8 +3,8 @@
 > Auphere builds, operates and answers for AI agents in production — AI as a Service
 > for companies that need the outcome without building an AI team, and for technology
 > and service companies that want to offer AI to their clients without building the
-> platform. EU-hosted, EU AI Act Article 50 compliant by design, human escalation
-> enabled by default. Operated 24/7 by the team that built it.
+> platform. EU-hosted, the agent identifies itself as AI from the first message, human
+> escalation enabled by default. Operated 24/7 by the team that built it.
 
 ## What Auphere is
 
@@ -57,21 +57,14 @@ Enterprise and partner economics are discussed in calls, not published.
 
 ## Compliance and data
 
-- The agent identifies itself as AI from the first message on every channel (EU AI Act
-  Article 50, applicable since August 2, 2026). Full posture published at /en/trust.
-- Human escalation ships enabled by default — which is also what Spain's Ley 10/2025
-  requires of customer-service bots from December 28, 2026.
+- The agent identifies itself as AI from the first message on every channel. Security
+  posture published at /en/security.
+- Human escalation ships enabled by default, with three triggers and full context.
 - EU-hosted production runtime by default; vendor exceptions listed in the privacy policy.
 - DPA signed before any real client data flows. Client data never trains models sold to others.
 - SOC 2 is on the certification roadmap (not started — we say it plainly); security
   questionnaire and documented controls available under NDA.
 - HIPAA: not currently in scope.
-
-## Regulation guides
-
-- [EU AI Act Article 50 (EN)](/en/eu-ai-act-article-50) — do chatbots have to disclose they are AI in the EU? Yes: what the article requires, who it binds, white-label liability, extraterritoriality.
-- [Art. 50 Reglamento IA (ES)](/es/eu-ai-act-article-50) — la misma guía en español.
-- [Ley 10/2025 (ES only)](/es/ley-10-2025-atencion-cliente) — desde el 28-dic-2026 tu bot debe ofrecer un humano: a quién aplica, qué exige, los tres errores típicos y checklist de cumplimiento.
 
 ## Languages and markets
 
@@ -91,6 +84,6 @@ Diagnostic booking and email: contacto@auphere.com · https://auphere.com
 - [Enterprise](/en/enterprise) — written guarantees with dates, compliance, launch program.
 - [Partners](/en/partners) — referral/reseller/embedded tracks, honest economics policy.
 - [Use cases hub](/en/use-cases) — directory of vertical landings.
-- [Trust & security](/en/trust) — data, isolation, AI transparency posture.
+- [Security](/en/security) — isolation, tool control, encryption, access, deployments, incidents.
 - [API documentation](/en/docs) — partner-facing technical docs.
 - [About](/en/about) · [Privacy](/en/privacy) · [Terms](/en/terms)

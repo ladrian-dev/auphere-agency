@@ -815,7 +815,7 @@
           },
           "voiceQuality": {
             "q": "¿Mis clientes se darán cuenta de que es una IA?",
-            "a": "Sí: el agente se identifica como IA desde el primer momento — lo exige el art. 50 del Reglamento europeo de IA desde agosto de 2026, y además convierte mejor. Lo que tus clientes valoran no es que parezca humano: es que les resuelva. Habla con naturalidad, maneja acentos y ruido de fondo, y si alguien pide una persona, escala por SMS o WhatsApp a tu barbero, sin bucles robóticos."
+            "a": "Sí: el agente se identifica como IA desde el primer momento — lo exige la normativa europea de IA desde agosto de 2026, y además convierte mejor. Lo que tus clientes valoran no es que parezca humano: es que les resuelva. Habla con naturalidad, maneja acentos y ruido de fondo, y si alguien pide una persona, escala por SMS o WhatsApp a tu barbero, sin bucles robóticos."
           },
           "walkIn": {
             "q": "¿Qué pasa con los walk-ins?",

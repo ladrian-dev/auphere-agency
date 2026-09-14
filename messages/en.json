@@ -815,7 +815,7 @@
           },
           "voiceQuality": {
             "q": "Will my clients hear that it's an AI?",
-            "a": "Yes: the agent identifies itself as AI from the start — the EU AI Act's Article 50 requires it since August 2026, and it converts better anyway. What your clients value isn't that it sounds human: it's that it solves their problem. It speaks naturally, handles accents and background noise, and if anyone asks for a human it escalates by SMS or WhatsApp to your barber. No robot loop."
+            "a": "Yes: the agent identifies itself as AI from the start — EU AI rules require it since August 2026, and it converts better anyway. What your clients value isn't that it sounds human: it's that it solves their problem. It speaks naturally, handles accents and background noise, and if anyone asks for a human it escalates by SMS or WhatsApp to your barber. No robot loop."
           },
           "walkIn": {
             "q": "What about walk-ins?",

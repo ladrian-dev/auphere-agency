@@ -60,8 +60,8 @@ export const lifecycleStops = [
   {
     title: { es: 'Escala a humano cuando debe', en: 'It escalates to a human when it should' },
     body: {
-      es: 'Tres disparadores — fuera de alcance, petición explícita, confianza baja — y el handoff cae en un inbox nominal de tu equipo con el contexto completo. Activado de serie. Es también lo que exige la Ley 10/2025.',
-      en: 'Three triggers — out of scope, explicit request, low confidence — and the handoff lands in your team’s named inbox with full context. Enabled by default. It is also what Ley 10/2025 requires.',
+      es: 'Tres disparadores — fuera de alcance, petición explícita, confianza baja — y el handoff cae en un inbox nominal de tu equipo con el contexto completo. Activado de serie.',
+      en: 'Three triggers — out of scope, explicit request, low confidence — and the handoff lands in your team’s named inbox with full context. Enabled by default.',
     },
   },
 ] as const;

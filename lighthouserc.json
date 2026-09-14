@@ -6,7 +6,7 @@
         "http://localhost:3000/es",
         "http://localhost:3000/en/enterprise",
         "http://localhost:3000/en/partners",
-        "http://localhost:3000/en/trust",
+        "http://localhost:3000/en/security",
         "http://localhost:3000/es/use-cases/barbershop"
       ],
       "numberOfRuns": 1,
