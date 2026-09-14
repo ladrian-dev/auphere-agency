@@ -265,6 +265,182 @@
       "lead": "30 minutos con quien va a operar tu agente. Gratis y sin compromiso: sales con una respuesta clara, en un sentido u otro."
     }
   },
+  "partners": {
+    "meta": {
+      "title": "Partners · Gana margen recurrente revendiendo Auphere",
+      "description": "Programa de partners de Auphere: recomienda, revende o integra agentes de IA operados 24/7 bajo tu marca. Tú vendes e implementas; nosotros ponemos la plataforma, la operación y las garantías."
+    },
+    "hero": {
+      "eyebrow": "Programa de partners",
+      "line1": "Gana margen recurrente",
+      "line2": "revendiendo Auphere.",
+      "lead": "Comisión desde el primer cliente, marca blanca, formación y soporte de la consola. Tú vendes e implementas, de la plataforma, la operación y la automatización constante nos encargamos nosotros.",
+      "cta": "Únete al programa",
+      "secondary": "Ver cómo se gana",
+      "alt": ""
+    },
+    "ways": {
+      "eyebrow": "Tres formas de ganar",
+      "title": "Recomienda, revende o integra.",
+      "items": {
+        "referral": {
+          "eyebrow": "Recomienda",
+          "name": "Referral",
+          "audience": "Consultores y profesionales con cartera",
+          "body": "Presentas al cliente, nosotros cerramos y operamos. Tú cobras comisión recurrente mientras el cliente siga activo.",
+          "cta": "Únete como Referral"
+        },
+        "reseller": {
+          "eyebrow": "Revende",
+          "name": "Reseller",
+          "audience": "Agencias, integradores y MSPs",
+          "body": "Vendes bajo tu marca y a tu precio de lista. La plataforma, la operación y las garantías son nuestras. El cliente es tuyo, también en el contrato.",
+          "cta": "Únete como Reseller"
+        },
+        "embedded": {
+          "eyebrow": "Integra",
+          "name": "Embedded",
+          "audience": "Productos SaaS, ERPs verticales, plataformas",
+          "body": "IA dentro de tu producto vía API. Tu marca, tu factura y tu margen, nuestra infraestructura y operación.",
+          "cta": "Integra Auphere en tu producto"
+        }
+      }
+    },
+    "get": {
+      "eyebrow": "Formación, soporte de canal y panel",
+      "title": "Todo lo que recibes como partner.",
+      "today": "Hoy",
+      "dated": "Con fecha",
+      "items": {
+        "i1": {
+          "text": "Formación y onboarding técnico de tu equipo, certificación para subir de tramo"
+        },
+        "i2": {
+          "text": "Ingeniería en la implantación de tus primeros clientes"
+        },
+        "i3": {
+          "text": "Backchannel directo con el equipo que opera (WhatsApp/Slack)"
+        },
+        "i4": {
+          "text": "Registro de oportunidad por escrito (protege tu deal)"
+        },
+        "i5": {
+          "text": "Panel de partner: prompts, sandbox, versiones y consumo por cliente",
+          "note": "Mes 5 del programa · en el roadmap técnico con fase asignada"
+        },
+        "i6": {
+          "text": "Conector MCP: ajusta los agentes de tus clientes desde tu propia consola y agentes de trabajo",
+          "note": "Con la consola"
+        }
+      }
+    },
+    "who": {
+      "eyebrow": "Quién hace qué",
+      "title": "Tu marca vende. Nosotros operamos.",
+      "you": "Tú",
+      "us": "Nosotros",
+      "youItems": {
+        "i1": "El agente y todos sus canales llevan tu marca",
+        "i2": "Propuestas y precio de venta",
+        "i3": "La relación comercial y la factura (Reseller)",
+        "i4": "La primera línea: «¿puede el agente hacer X?»",
+        "i5": "La venta y la expansión de tu cartera"
+      },
+      "usItems": {
+        "i1": "Operación 24/7, incidentes y su resolución, con compromiso por contrato",
+        "i2": "Configuración, integraciones, evals y ciclo de mejora",
+        "i3": "Escalados técnicos de tus clientes, contigo en copia",
+        "i4": "DPA y documentación de seguridad",
+        "i5": "Garantías de operación y sus fechas"
+      }
+    },
+    "apply": {
+      "eyebrow": "Únete al programa",
+      "title": "Crece con nosotros desde el principio.",
+      "lead": "8 campos, 2 minutos. Con menos de 3 clientes potenciales empiezas por Referral, con 3 o más, llamada de Reseller con los márgenes sobre la mesa.",
+      "form": {
+        "name": "Nombre y apellidos",
+        "namePlaceholder": "Ana García",
+        "email": "Email de trabajo",
+        "emailPlaceholder": "ana@tuempresa.com",
+        "company": "Empresa o marca",
+        "companyPlaceholder": "Nombre comercial",
+        "website": "Web o LinkedIn",
+        "websitePlaceholder": "https://",
+        "clients": "Clientes potenciales en 6 meses",
+        "clientsPlaceholder": "Selecciona un rango",
+        "clientsOptions": {
+          "0-2": "0-2",
+          "3-10": "3-10",
+          "11-50": "11-50",
+          "50+": "Más de 50"
+        },
+        "vertical": "Vertical principal de tu cartera",
+        "verticalPlaceholder": "Selecciona una vertical",
+        "verticals": {
+          "health": "Salud y clínicas",
+          "beauty": "Belleza y bienestar",
+          "hospitality": "Hostelería y reservas",
+          "retail": "Retail y e-commerce",
+          "services": "Servicios profesionales",
+          "software": "Software / SaaS",
+          "other": "Otro"
+        },
+        "country": "País",
+        "countryPlaceholder": "Selecciona tu país",
+        "countries": {
+          "ES": "España",
+          "PT": "Portugal",
+          "FR": "Francia",
+          "IT": "Italia",
+          "DE": "Alemania",
+          "GB": "Reino Unido",
+          "IE": "Irlanda",
+          "NL": "Países Bajos",
+          "BE": "Bélgica",
+          "CH": "Suiza",
+          "AD": "Andorra",
+          "MX": "México",
+          "CO": "Colombia",
+          "CL": "Chile",
+          "AR": "Argentina",
+          "PE": "Perú",
+          "EC": "Ecuador",
+          "UY": "Uruguay",
+          "PY": "Paraguay",
+          "BO": "Bolivia",
+          "VE": "Venezuela",
+          "CR": "Costa Rica",
+          "PA": "Panamá",
+          "GT": "Guatemala",
+          "HN": "Honduras",
+          "SV": "El Salvador",
+          "NI": "Nicaragua",
+          "DO": "República Dominicana",
+          "PR": "Puerto Rico",
+          "CU": "Cuba",
+          "US": "Estados Unidos",
+          "CA": "Canadá",
+          "BR": "Brasil",
+          "OTHER": "Otro"
+        },
+        "notes": "¿Algo que debamos saber?",
+        "optional": "(opcional)",
+        "notesPlaceholder": "Cuéntanos sobre tu cartera o tu producto",
+        "submit": "Únete al programa",
+        "sending": "Enviando…",
+        "sent": "Solicitud enviada",
+        "sentMessage": "Recibida. Te respondemos en 48 h laborables, una persona, no un autoresponder.",
+        "error": "No hemos podido enviar la solicitud. Escríbenos a contacto@auphere.com y la registramos a mano.",
+        "required": "Este campo es obligatorio",
+        "emailInvalid": "Escribe un email válido"
+      },
+      "or": {
+        "eyebrow": "O agenda la reunión de diagnóstico",
+        "lead": "Todos los partners pasan primero por la misma reunión de diagnóstico de 30 minutos. Si prefieres hablar antes de rellenar el formulario, reserva aquí."
+      }
+    }
+  },
   "hero": {
     "orchestrator": {
       "whatsapp": "WhatsApp",

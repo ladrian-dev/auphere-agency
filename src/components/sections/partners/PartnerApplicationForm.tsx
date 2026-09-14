@@ -1,44 +1,38 @@
 'use client';
 import { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm, useWatch } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
+import { useLocale, useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils/cn';
 import { track } from '@/lib/analytics';
 
-interface Copy {
-  fields: Record<'name' | 'email' | 'company' | 'website' | 'clients' | 'vertical' | 'country' | 'notes', string>;
-  clientOptions: { value: string; label: string }[];
-  verticalOptions: { value: string; label: string }[];
-  submit: string;
-  sending: string;
-  success: string;
-  error: string;
-  requiredMsg: string;
-  emailMsg: string;
-}
+const CLIENT_OPTIONS = ['0-2', '3-10', '11-50', '50+'] as const;
+const VERTICALS = ['health', 'beauty', 'hospitality', 'retail', 'services', 'software', 'other'] as const;
+const COUNTRIES = [
+  'ES', 'PT', 'FR', 'IT', 'DE', 'GB', 'IE', 'NL', 'BE', 'CH', 'AD', 'MX', 'CO', 'CL', 'AR', 'PE', 'EC', 'UY', 'PY', 'BO', 'VE',
+  'CR', 'PA', 'GT', 'HN', 'SV', 'NI', 'DO', 'PR', 'CU', 'US', 'CA', 'BR', 'OTHER',
+] as const;
 
-interface Props {
-  locale: 'es' | 'en';
-  copy: Copy;
-}
+/**
+ * Formulario del programa de partners (README §Partners 5): 8 campos con la
+ * etiqueta encima, inputs de 48 px y radio 12, selects con chevron propio y
+ * color atenuado hasta elegir; País y Notas a ancho completo; botón de 52 px.
+ * Envía a /api/partner-application (honeypot `fax`, rate limit, Zod).
+ */
+export function PartnerApplicationForm() {
+  const t = useTranslations('partners.apply.form');
+  const locale = useLocale();
 
-const inputClasses = cn(
-  'w-full h-[48px] px-4 rounded-lg bg-[var(--color-bone)] text-[var(--color-ink)] text-[15px]',
-  'border border-[var(--color-ink-subtle)] placeholder:text-[var(--color-ink-dim)]',
-  'focus:outline-2 focus:outline-offset-1 focus:outline-[var(--color-bangladesh-green)]',
-);
-
-export function PartnerApplicationForm({ locale, copy }: Props) {
   const schema = z.object({
-    name: z.string().min(2, copy.requiredMsg),
-    email: z.string().email(copy.emailMsg),
-    company: z.string().min(1, copy.requiredMsg),
-    website: z.string().min(2, copy.requiredMsg),
-    clients: z.string().min(1, copy.requiredMsg),
-    vertical: z.string().min(1, copy.requiredMsg),
-    country: z.string().min(2, copy.requiredMsg),
-    notes: z.string().optional(),
+    name: z.string().min(2, t('required')),
+    email: z.string().email(t('emailInvalid')),
+    company: z.string().min(1, t('required')),
+    website: z.string().min(2, t('required')),
+    clients: z.enum(CLIENT_OPTIONS, { message: t('required') }),
+    vertical: z.enum(VERTICALS, { message: t('required') }),
+    country: z.enum(COUNTRIES, { message: t('required') }),
+    notes: z.string().max(2000).optional(),
     fax: z.string().optional(),
   });
   type FormData = z.infer<typeof schema>;
@@ -47,8 +41,13 @@ export function PartnerApplicationForm({ locale, copy }: Props) {
   const {
     register,
     handleSubmit,
+    control,
     formState: { errors },
   } = useForm<FormData>({ resolver: zodResolver(schema) });
+
+  // Los selects van atenuados hasta que se elige algo (README §Partners 5).
+  const [selClients, selVertical, selCountry] = useWatch({ control, name: ['clients', 'vertical', 'country'] });
+  const sel = { clients: selClients, vertical: selVertical, country: selCountry };
 
   async function onSubmit(values: FormData) {
     setStatus('sending');
@@ -56,7 +55,12 @@ export function PartnerApplicationForm({ locale, copy }: Props) {
       const res = await fetch('/api/partner-application', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...values, locale }),
+        body: JSON.stringify({
+          ...values,
+          // El API guarda el nombre del país tal y como lo ve el lead.
+          country: t(`countries.${values.country}`),
+          locale,
+        }),
       });
       setStatus(res.ok ? 'success' : 'error');
       if (res.ok) track('partner_apply_submit', { clients: values.clients, vertical: values.vertical });
@@ -65,128 +69,108 @@ export function PartnerApplicationForm({ locale, copy }: Props) {
     }
   }
 
-  if (status === 'success') {
-    return (
-      <div role="status" className="rounded-2xl border border-[var(--color-bangladesh-green)]/30 bg-[var(--color-bangladesh-green)]/5 p-8 text-center">
-        <p className="font-display font-semibold text-xl text-[var(--color-bangladesh-green)]">✓</p>
-        <p className="mt-3 text-[15px] leading-relaxed">{copy.success}</p>
-      </div>
-    );
-  }
-
-  const err = (key: keyof FormData) =>
-    errors[key] && (
-      <p role="alert" className="text-[12px] text-[var(--color-status-danger)] mt-1.5">
-        {errors[key]?.message as string}
+  const err = (field: keyof FormData) =>
+    errors[field] ? (
+      <p role="alert" className="text-[13px] text-[#E2857B]">
+        {errors[field]?.message as string}
       </p>
-    );
+    ) : null;
+
+  const labelCls = 'text-[13px] font-medium text-[rgba(241,247,246,.65)]';
+  const fieldCls = 'flex min-w-0 flex-col gap-1.5';
+  const sent = status === 'success';
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} noValidate className="grid grid-cols-1 md:grid-cols-2 gap-5">
-      {/* Honeypot — hidden from humans, aria-hidden, tab-skipped */}
-      <div aria-hidden className="absolute left-[-9999px] top-0 h-0 w-0 overflow-hidden">
-        <label>
-          Fax
-          <input type="text" tabIndex={-1} autoComplete="off" {...register('fax')} />
-        </label>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      noValidate
+      className={cn(
+        'grid grid-cols-1 gap-3.5 rounded-[24px] border border-[var(--color-line-2)] bg-[rgba(3,34,33,.6)] p-7 text-left backdrop-blur-[12px]',
+        'sm:grid-cols-2',
+        'max-tab:px-5 max-tab:py-6',
+      )}
+      aria-busy={status === 'sending'}
+    >
+      {/* Honeypot: las personas no lo ven; los bots lo rellenan. */}
+      <div className="hidden" aria-hidden>
+        <label htmlFor="pf-fax">Fax</label>
+        <input id="pf-fax" type="text" tabIndex={-1} autoComplete="off" {...register('fax')} />
       </div>
 
-      <div>
-        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-name">
-          {copy.fields.name}
-        </label>
-        <input id="pa-name" className={inputClasses} autoComplete="name" {...register('name')} />
+      <div className={fieldCls}>
+        <label htmlFor="pf-name" className={labelCls}>{t('name')}</label>
+        <input id="pf-name" type="text" className="field" placeholder={t('namePlaceholder')} autoComplete="name" required disabled={sent} {...register('name')} />
         {err('name')}
       </div>
-
-      <div>
-        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-email">
-          {copy.fields.email}
-        </label>
-        <input id="pa-email" type="email" className={inputClasses} autoComplete="email" {...register('email')} />
+      <div className={fieldCls}>
+        <label htmlFor="pf-email" className={labelCls}>{t('email')}</label>
+        <input id="pf-email" type="email" className="field" placeholder={t('emailPlaceholder')} autoComplete="email" required disabled={sent} {...register('email')} />
         {err('email')}
       </div>
-
-      <div>
-        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-company">
-          {copy.fields.company}
-        </label>
-        <input id="pa-company" className={inputClasses} autoComplete="organization" {...register('company')} />
+      <div className={fieldCls}>
+        <label htmlFor="pf-company" className={labelCls}>{t('company')}</label>
+        <input id="pf-company" type="text" className="field" placeholder={t('companyPlaceholder')} autoComplete="organization" required disabled={sent} {...register('company')} />
         {err('company')}
       </div>
-
-      <div>
-        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-website">
-          {copy.fields.website}
-        </label>
-        <input id="pa-website" className={inputClasses} inputMode="url" {...register('website')} />
+      <div className={fieldCls}>
+        <label htmlFor="pf-web" className={labelCls}>{t('website')}</label>
+        <input id="pf-web" type="url" className="field" placeholder={t('websitePlaceholder')} inputMode="url" required disabled={sent} {...register('website')} />
         {err('website')}
       </div>
-
-      <div>
-        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-clients">
-          {copy.fields.clients}
-        </label>
-        <select id="pa-clients" className={inputClasses} defaultValue="" {...register('clients')}>
-          <option value="" disabled hidden />
-          {copy.clientOptions.map((o) => (
-            <option key={o.value} value={o.value}>
-              {o.label}
-            </option>
+      <div className={fieldCls}>
+        <label htmlFor="pf-clients" className={labelCls}>{t('clients')}</label>
+        <select id="pf-clients" className={cn('field', !sel.clients && 'is-empty')} defaultValue="" required disabled={sent} {...register('clients')}>
+          <option value="" disabled>{t('clientsPlaceholder')}</option>
+          {CLIENT_OPTIONS.map((o) => (
+            <option key={o} value={o}>{t(`clientsOptions.${o}`)}</option>
           ))}
         </select>
         {err('clients')}
       </div>
-
-      <div>
-        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-vertical">
-          {copy.fields.vertical}
-        </label>
-        <select id="pa-vertical" className={inputClasses} defaultValue="" {...register('vertical')}>
-          <option value="" disabled hidden />
-          {copy.verticalOptions.map((o) => (
-            <option key={o.value} value={o.value}>
-              {o.label}
-            </option>
+      <div className={fieldCls}>
+        <label htmlFor="pf-vertical" className={labelCls}>{t('vertical')}</label>
+        <select id="pf-vertical" className={cn('field', !sel.vertical && 'is-empty')} defaultValue="" required disabled={sent} {...register('vertical')}>
+          <option value="" disabled>{t('verticalPlaceholder')}</option>
+          {VERTICALS.map((v) => (
+            <option key={v} value={v}>{t(`verticals.${v}`)}</option>
           ))}
         </select>
         {err('vertical')}
       </div>
-
-      <div>
-        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-country">
-          {copy.fields.country}
-        </label>
-        <input id="pa-country" className={inputClasses} autoComplete="country-name" {...register('country')} />
+      <div className={cn(fieldCls, 'sm:col-span-2')}>
+        <label htmlFor="pf-country" className={labelCls}>{t('country')}</label>
+        <select id="pf-country" className={cn('field', !sel.country && 'is-empty')} defaultValue="" autoComplete="country" required disabled={sent} {...register('country')}>
+          <option value="" disabled>{t('countryPlaceholder')}</option>
+          {COUNTRIES.map((c) => (
+            <option key={c} value={c}>{t(`countries.${c}`)}</option>
+          ))}
+        </select>
         {err('country')}
       </div>
-
-      <div className="md:col-span-2">
-        <label className="block type-meta text-[var(--color-ink-muted)] mb-2" htmlFor="pa-notes">
-          {copy.fields.notes}
+      <div className={cn(fieldCls, 'sm:col-span-2')}>
+        <label htmlFor="pf-notes" className={labelCls}>
+          {t('notes')} <span className="font-normal text-[var(--color-text-4)]">{t('optional')}</span>
         </label>
-        <textarea id="pa-notes" rows={3} className={cn(inputClasses, 'h-auto py-3')} {...register('notes')} />
+        <textarea id="pf-notes" className="field" placeholder={t('notesPlaceholder')} rows={4} disabled={sent} {...register('notes')} />
       </div>
 
-      <div className="md:col-span-2 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-        <button
-          type="submit"
-          disabled={status === 'sending'}
-          className={cn(
-            'inline-flex items-center justify-center h-[52px] px-[32px] rounded-full font-medium text-[15px] tracking-tight',
-            'bg-[var(--color-ink)] text-[var(--color-bone)] hover:bg-[var(--color-bangladesh-green)]',
-            'active:scale-[0.98] transition-[background-color,transform] duration-200 ease-out disabled:opacity-60',
-            'focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[var(--color-bangladesh-green)]',
-          )}
-        >
-          {status === 'sending' ? copy.sending : copy.submit}
-        </button>
-        {status === 'error' && (
-          <p role="alert" className="text-[14px] text-[var(--color-status-danger)]">
-            {copy.error}
-          </p>
-        )}
-      </div>
+      <button
+        type="submit"
+        disabled={status === 'sending' || sent}
+        className="btn btn-primary h-[52px] w-full text-[16px] sm:col-span-2 disabled:cursor-default disabled:hover:translate-y-0 disabled:hover:shadow-none"
+      >
+        {status === 'sending' ? t('sending') : sent ? t('sent') : t('submit')}
+      </button>
+      {sent && (
+        <p role="status" className="text-[14px] text-[var(--color-primary)] sm:col-span-2">
+          {t('sentMessage')}
+        </p>
+      )}
+      {status === 'error' && (
+        <p role="alert" className="text-[14px] text-[#E2857B] sm:col-span-2">
+          {t('error')}
+        </p>
+      )}
     </form>
   );
 }
