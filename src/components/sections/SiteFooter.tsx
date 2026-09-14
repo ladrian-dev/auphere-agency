@@ -51,13 +51,11 @@ export function SiteFooter() {
             <FooterLink href={home}>{t('home')}</FooterLink>
             <FooterLink href={`${home}/partners`}>{t('partners')}</FooterLink>
             <FooterLink href={`${home}/enterprise`}>{t('enterprise')}</FooterLink>
-            <FooterLink href={`${home}/about`}>{t('about')}</FooterLink>
           </FooterColumn>
 
           <FooterColumn title={t('resources')}>
             <FooterLink href={`${home}#funciones`}>{t('skills')}</FooterLink>
             <FooterLink href={`${home}#como`}>{t('how')}</FooterLink>
-            <FooterLink href={`${home}#precio`}>{t('pricing')}</FooterLink>
           </FooterColumn>
 
           <FooterColumn title={t('legal')}>
