@@ -141,8 +141,8 @@ export function TalkToSales({ lang }: { lang: Lang }) {
         style={{ background: 'radial-gradient(50% 60% at 50% 30%, rgba(0,223,129,.22), transparent 70%)' }}
       />
       <div className="container-site relative z-[1]">
-        <div className="mx-auto max-w-[56ch] text-center max-tab:max-w-none">
-          <h2 className="text-[clamp(36px,5vw,64px)] font-semibold leading-[1.04] tracking-[-0.03em] [text-wrap:balance] max-tab:text-[clamp(28px,7.6vw,34px)] max-tab:leading-[1.12]">
+        <div className="mx-auto max-w-[64ch] text-center max-tab:max-w-none">
+          <h2 className="text-[clamp(36px,4.6vw,58px)] font-semibold leading-[1.04] tracking-[-0.03em] [text-wrap:balance] max-tab:text-[clamp(28px,7.6vw,34px)] max-tab:leading-[1.12]">
             {pick(sales.title, lang)}
           </h2>
           <p className="type-lead mt-[18px]">{pick(sales.lead, lang)}</p>
