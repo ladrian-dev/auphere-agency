@@ -56,10 +56,8 @@ export function StatsCounter({ stats, label }: { stats: StatSpec[]; label: strin
     >
       {stats.map((s) => (
         <li key={s.label} className="text-center">
-          <p
-            className="text-[clamp(34px,4vw,52px)] font-semibold leading-none tracking-[-0.025em] [font-variant-numeric:tabular-nums]"
-            aria-label={`${s.prefix}${s.value}${s.suffix}`}
-          >
+          <p className="text-[clamp(34px,4vw,52px)] font-semibold leading-none tracking-[-0.025em] [font-variant-numeric:tabular-nums]">
+            <span className="sr-only">{`${s.prefix}${s.value}${s.suffix}`}</span>
             <span aria-hidden>
               {s.prefix}
               {Math.round(s.value * progress)}
