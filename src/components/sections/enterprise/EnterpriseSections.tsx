@@ -24,7 +24,8 @@ export function Guarantees({ lang }: { lang: Lang }) {
         <div className="grid grid-cols-1 items-start gap-10 cal:grid-cols-2 cal:gap-16">
           <div className="max-tab:text-center">
             <p className="type-eyebrow">{pick(guarantees.eyebrow, lang)}</p>
-            <h2 className="type-h2 mt-3.5 max-w-[20ch] max-tab:mx-auto max-tab:max-w-none">{pick(guarantees.title, lang)}</h2>
+            {/* Máximo dos líneas en desktop: baja un escalón porque vive en media columna. */}
+            <h2 className="type-h2 mt-3.5 max-w-[24ch] cal:text-[clamp(30px,3.4vw,44px)] max-tab:mx-auto max-tab:max-w-none">{pick(guarantees.title, lang)}</h2>
             <p className="mt-4 max-w-[40ch] text-[16px] leading-[1.55] text-[rgba(241,247,246,.65)] max-tab:mx-auto max-tab:max-w-none">
               {pick(guarantees.lead, lang)}
             </p>
