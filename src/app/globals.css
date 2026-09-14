@@ -63,16 +63,19 @@
  * ───────────────────────────────────────────── */
 .skip-link {
   position: absolute;
-  top: -40px;
+  top: 0;
   left: 0;
   background: var(--color-primary);
   color: var(--color-on-primary);
   padding: 8px 16px;
   z-index: 100;
-  transition: top var(--dur-fast) var(--ease-out);
+  /* Escondido del todo (antes, con `top:-40px`, asomaban 3 px del borde
+   * inferior); solo aparece al recibir el foco con Tab. */
+  transform: translateY(-110%);
+  transition: transform var(--dur-fast) var(--ease-out);
 }
 .skip-link:focus {
-  top: 0;
+  transform: none;
 }
 
 /* ─────────────────────────────────────────────
