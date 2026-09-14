@@ -22,7 +22,7 @@ export default async function MarketingLayout({ children, params }: Props) {
 
   return (
     <>
-      <SiteHeader />
+      <SiteHeader solid />
       <main id="main" className="surface-light">
         {children}
       </main>

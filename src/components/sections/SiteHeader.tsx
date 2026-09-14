@@ -33,7 +33,15 @@ function counterpartPath(pathname: string, target: Locale): string {
   return pathname;
 }
 
-export function SiteHeader() {
+interface Props {
+  /**
+   * Sobre superficies claras (páginas heredadas) la píldora sube su opacidad:
+   * al 72 % el bone de debajo se cuela y los enlaces al 72 % bajan a 4,2:1.
+   */
+  solid?: boolean;
+}
+
+export function SiteHeader({ solid = false }: Props) {
   const t = useTranslations('site.header');
   const locale = useLocale() as Locale;
   const pathname = usePathname();
@@ -132,7 +140,8 @@ export function SiteHeader() {
         <div
           className={cn(
             'pointer-events-auto flex h-[60px] w-full max-w-[1200px] items-center justify-between gap-4',
-            'rounded-full border border-[var(--color-line)] bg-[rgba(3,34,33,.72)] pl-5 pr-[10px] backdrop-blur-[20px]',
+            'rounded-full border border-[var(--color-line)] pl-5 pr-[10px] backdrop-blur-[20px]',
+            solid ? 'bg-[rgba(3,34,33,.94)]' : 'bg-[rgba(3,34,33,.72)]',
             'max-tab:h-[56px] max-tab:gap-2 max-tab:pl-[14px] max-tab:pr-2',
             'max-[420px]:gap-1.5 max-[420px]:pl-3 max-[420px]:pr-1.5',
           )}
