@@ -296,7 +296,7 @@ export const deploymentSteps: readonly Step[] = [
 
 /** 05 — Habla con ventas (#agenda). */
 export const sales = {
-  title: { es: 'Trae a seguridad a la primera llamada.', en: 'Bring security to the first call.' },
+  title: { es: 'Obtén la seguridad a la primera llamada.', en: 'Get security on the first call.' },
   lead: {
     es: '30 minutos con el ingeniero que opera la plataforma, no con un comercial. Arquitectura, integración con tus sistemas, cumplimiento y un go/no-go honesto.',
     en: '30 minutes with the engineer who runs the platform, not a salesperson. Architecture, integration with your systems, compliance and an honest go/no-go.',
