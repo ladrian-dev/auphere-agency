@@ -36,7 +36,7 @@ export function ThreeWays() {
                 <p className="text-[14px] text-[rgba(241,247,246,.6)]">{t(`items.${track}.audience`)}</p>
                 <p className="text-[16px] leading-[1.55] text-[rgba(241,247,246,.8)] [text-wrap:pretty]">{t(`items.${track}.body`)}</p>
                 <span className="mt-auto text-[15px] font-semibold text-[var(--color-primary)]">
-                  {t(`items.${track}.cta`)} <span aria-hidden>→</span>
+                  {t(`items.${track}.cta`)}
                 </span>
               </a>
             );
