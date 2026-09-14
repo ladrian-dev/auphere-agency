@@ -15,10 +15,10 @@ interface Props {
 export default async function TwitterImage({ params }: Props) {
   const { locale: raw } = await params;
   const locale = hasLocale(routing.locales, raw) ? raw : routing.defaultLocale;
-  const t = await getTranslations({ locale, namespace: 'hero' });
+  const t = await getTranslations({ locale, namespace: 'home.hero' });
   const tMeta = await getTranslations({ locale, namespace: 'meta' });
 
-  const headline = t('headline');
+  const headline = t('title');
   const eyebrow =
     locale === 'es'
       ? 'AGENTES DE IA · BESPOKE + MANAGED'

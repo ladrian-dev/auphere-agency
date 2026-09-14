@@ -52,11 +52,245 @@
       "loading": "Loading calendar…"
     }
   },
+  "home": {
+    "meta": {
+      "title": "Auphere · AI solutions tailored to your business",
+      "description": "Auphere replies in seconds, books appointments and follows up for you. We build, run and improve the AI agent your team needs. Book a free 30-minute diagnostic meeting."
+    },
+    "hero": {
+      "chipA": "AI agents",
+      "chipB": "Operated by us",
+      "title": "AI solutions tailored to your business.",
+      "lead": "Auphere replies in seconds, books appointments and follows up for you. We run it; you pay for what it handles.",
+      "ctaPrimary": "Book now",
+      "ctaSecondary": "See the agent in action",
+      "tasksLabel": "Tasks the agent handles",
+      "tasks": {
+        "t1": "Answers WhatsApp",
+        "t2": "Books appointments",
+        "t3": "Sends reminders",
+        "t4": "Reschedules",
+        "t5": "Charges and confirms",
+        "t6": "Wins customers back",
+        "t7": "Reads voice notes",
+        "t8": "Hands off to a person",
+        "t9": "Reports every month"
+      },
+      "chat": {
+        "label": "Sample conversation with the agent",
+        "agent": "Auphere agent",
+        "business": "Clínica Dental Norte · WhatsApp",
+        "status": "Online",
+        "typing": "Typing",
+        "m1": "Hi, do you have any availability this week for a cleaning?",
+        "m2": "Hi Marta. Yes: Thursday 17:30 or Friday 10:00. Which do you prefer?",
+        "m3": "Friday at 10",
+        "m4": "Booked with Dr. Ruiz. I'll send the confirmation and remind you the day before."
+      }
+    },
+    "problem": {
+      "eyebrow": "The problem",
+      "title": "Your team is drowning in messages.",
+      "lead": "WhatsApp bookings, last-minute changes and 11 pm messages asking if there is a slot. Your team spends the day answering chats instead of serving people in person.",
+      "painsLabel": "Common pains",
+      "pains": {
+        "p1": "No follow-up",
+        "p2": "Missed appointments",
+        "p3": "Late replies",
+        "p4": "Customers who don't return",
+        "p5": "Blocked number"
+      },
+      "notifsLabel": "Unattended notifications",
+      "notifs": {
+        "wa": {
+          "title": "New message · WhatsApp",
+          "body": "Any availability today?",
+          "when": "1 min ago"
+        },
+        "ig": {
+          "title": "Instagram · unanswered",
+          "body": "Price of a cleaning? · 3 h without reply",
+          "when": "3 h ago"
+        },
+        "tel": {
+          "title": "Missed call",
+          "body": "+34 6•• ••• 412 · out of hours",
+          "when": "22:05"
+        },
+        "cal": {
+          "title": "Unconfirmed appointment",
+          "body": "Tomorrow 12:00 · no reminder sent",
+          "when": "yesterday"
+        }
+      }
+    },
+    "solution": {
+      "eyebrow": "The solution",
+      "text": "We build, run and improve the AI agent your team needs, without you having to hire anyone new."
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "titleA": "From the meeting to",
+      "titleB": "an agent at work.",
+      "lead": "We plug into the calendar, CRM and payments you already use.",
+      "steps": {
+        "s1": {
+          "n": "01",
+          "title": "Book 30 minutes",
+          "body": "We look at how you work today: channels, tools and where the time goes. Together we decide whether automation really solves your problem.",
+          "alt": "Screenshot · meeting and scope"
+        },
+        "s2": {
+          "n": "02",
+          "title": "We set it up",
+          "body": "We connect calendar, CRM and payments and train the agent on your voice and rules. You approve every version before it goes live.",
+          "alt": "Screenshot · connected integrations"
+        },
+        "s3": {
+          "n": "03",
+          "title": "Agent live",
+          "body": "The agent goes live and starts serving your customers. We supervise it constantly, measure the key results and improve its performance month after month.",
+          "alt": "Screenshot · first-month metrics"
+        }
+      },
+      "statsLabel": "Key figures",
+      "stats": {
+        "s1": {
+          "prefix": "",
+          "suffix": " min",
+          "label": "First meeting, free of charge"
+        },
+        "s2": {
+          "prefix": "2–",
+          "suffix": " wks",
+          "label": "Until it is in production"
+        },
+        "s3": {
+          "prefix": "",
+          "suffix": "/7",
+          "label": "Supervised by our team"
+        },
+        "s4": {
+          "prefix": "",
+          "suffix": " %",
+          "label": "Data hosted in the EU"
+        }
+      }
+    },
+    "skills": {
+      "eyebrow": "Capabilities",
+      "titleA": "Every feature, seen",
+      "titleB": "at work.",
+      "lead": "Four things the agent does for your business.",
+      "cta": "See it in the demo",
+      "items": {
+        "audio": {
+          "eyebrow": "Voice notes and images",
+          "title": "Understands the voice note and the receipt photo.",
+          "body": "Your customers write however they like. The agent transcribes audio, reads images and replies with sense, on WhatsApp and Instagram.",
+          "b1": "Transcribes two-minute voice notes",
+          "b2": "Reads receipts, photos and screenshots",
+          "b3": "Replies in the same channel and tone",
+          "b4": "Works with your current number",
+          "alt": "Screenshot · voice note transcribed and answered"
+        },
+        "memory": {
+          "eyebrow": "Memory per customer",
+          "title": "Remembers every person, every time.",
+          "body": "Today's conversation knows the previous ones: preferences, history and issues. That is what separates an agent from a form with a chat box.",
+          "b1": "Full history per customer",
+          "b2": "Preferences and usual professional",
+          "b3": "Spots customers who stopped coming",
+          "b4": "Integrates with your CRM or booking system",
+          "alt": "Screenshot · customer profile with history"
+        },
+        "bookings": {
+          "eyebrow": "Bookings and follow-up",
+          "title": "Books, reminds and follows up on its own.",
+          "body": "One-tap confirmation and rescheduling, reminders that cut no-shows, follow-up on unpaid bills and reactivation of inactive customers.",
+          "b1": "Calendar synced with Google, Outlook or your PMS",
+          "b2": "Automatic reminder the day before",
+          "b3": "Payments and invoicing via Stripe",
+          "b4": "Reactivation of inactive customers",
+          "alt": "Screenshot · calendar with confirmed appointments"
+        },
+        "handoff": {
+          "eyebrow": "Handoff to a person",
+          "title": "Knows when to stop and alert your team.",
+          "body": "Out of scope, customer request or low confidence: the agent hands the full conversation to a real person.",
+          "b1": "Three handoff triggers",
+          "b2": "Full context, nothing repeated",
+          "b3": "A named owner on your team",
+          "b4": "Identifies itself as an AI assistant from the first message",
+          "alt": "Screenshot · handoff to a person with context"
+        }
+      }
+    },
+    "pricing": {
+      "eyebrow": "Pricing model",
+      "title": "A base membership plus what the agents consume",
+      "lead": "No plans to switch, no per-seat licences. If it handles more one month, you pay more; if less, less. The exact figure comes out of the meeting, in writing.",
+      "b1": "Operation, supervision and monthly improvements included",
+      "b2": "Scales from 200 to 10,000 in usage without changing plan",
+      "b3": "30-day free trial",
+      "cta": "Book now",
+      "usageLabel": "Usage in conversations",
+      "sliderLabel": "Conversations per month",
+      "min": "A single practice",
+      "max": "A chain",
+      "base": "Fixed base",
+      "usage": "Agent usage",
+      "note": "Illustrative: the split changes with the agents' real usage. The fixed base does not change."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Your questions, answered",
+      "items": {
+        "q1": {
+          "q": "How do I pay?",
+          "a": "A small base fee plus a variable part for the conversations it handles. The exact figure comes out of the meeting, in writing."
+        },
+        "q2": {
+          "q": "Will my customers know they are talking to an AI?",
+          "a": "Yes, from the first message, on every channel. European law requires it and, in practice, it converts better: what people value is getting things solved."
+        },
+        "q3": {
+          "q": "How long until it is up and running?",
+          "a": "Two to six weeks depending on the integrations your company already runs. You leave the meeting with the timeline."
+        },
+        "q4": {
+          "q": "Does it work for my sector?",
+          "a": "Clinics, dentists, physios, salons, barbers, spas, vets, pharmacies, restaurants, academies. If your business lives on the phone and the calendar, yes."
+        },
+        "q5": {
+          "q": "Where is my data?",
+          "a": "On EU infrastructure. We sign the data processing agreement before touching any data, and it is never used to train models for other clients."
+        },
+        "q6": {
+          "q": "What if I want to leave?",
+          "a": "Give 30 days' notice after the first three months. You take your data, your conversations and your configuration with you."
+        },
+        "q7": {
+          "q": "Can I request new features?",
+          "a": "Yes. Every month we review the metrics with you and prioritise what comes next. Anything already in production is switched on at no extra development cost."
+        }
+      },
+      "help": {
+        "title": "Can't find your answer?",
+        "body": "Send us your question and a member of the team replies within one working day. Or bring it to the meeting.",
+        "cta": "Write to contacto@auphere.com",
+        "alt": "Illustration · Auphere team"
+      }
+    },
+    "agenda": {
+      "eyebrow": "Get started",
+      "title": "Leave the chats. Connect with what matters",
+      "lead": "30 minutes with the people who will run your agent. Free and no strings: you leave with a clear answer, one way or the other.",
+      "cta": "Book now",
+      "back": "Back to features"
+    }
+  },
   "hero": {
-    "eyebrow": "OPERATED AI INFRASTRUCTURE · EU",
-    "subheadline": "It answers your customers on WhatsApp, Instagram and voice. We deploy it, monitor it 24/7 and improve it every month.",
-    "ctaPrimary": "Book a diagnostic · 30 min",
-    "ctaSecondary": "See the platform →",
     "orchestrator": {
       "whatsapp": "WhatsApp",
       "instagram": "Instagram",
@@ -69,159 +303,7 @@
       "browser": "Browser",
       "response": "Respond",
       "human": "Human"
-    },
-    "headline": "Your AI agent, built and run by us."
-  },
-  "howWeWork": {
-    "marker": {
-      "label": "How we work",
-      "meta": "3 stages · 3 to 6 weeks"
-    },
-    "headline": "From first call to production, in three stages.",
-    "intro": "Every stage closes with something you can read: a plan, a version you sign off, a performance report.",
-    "steps": {
-      "diagnose": {
-        "timing": "30 min",
-        "title": "Diagnostic",
-        "body": "Half an hour with your team to see where the time actually goes. If automation is not the answer, we say so and it ends there. If it is, you leave with the scope in writing: which flows, which integrations, what it costs and what to expect in which week."
-      },
-      "configure": {
-        "timing": "2 to 6 weeks",
-        "title": "Configuration",
-        "body": "We integrate with the tools you already use, train the agent on your data and tune it to your voice and business rules. You review each iteration, and no version reaches production without your sign-off."
-      },
-      "goLive": {
-        "timing": "Ongoing · 24/7",
-        "title": "In production",
-        "body": "The agent starts answering. We monitor how it performs, measure the metrics agreed in the diagnostic and improve it every month. You have direct contact with the team running it."
-      }
     }
-  },
-  "pullQuote": {
-    "text": "An agent nobody runs is a demo with a monthly invoice.",
-    "attribution": "Auphere"
-  },
-  "cases": {
-    "marker": {
-      "label": "Cases",
-      "meta": "Coming soon"
-    },
-    "headline": "Working agents. Measurable wins.",
-    "intro": "We don't ship case studies until the metric is real and the client signs off. New cases land here as that happens.",
-    "portraitPlaceholder": "Hand-drawn portrait, coming soon",
-    "moreSoon": "First case studies coming soon"
-  },
-  "whyAuphere": {
-    "marker": {
-      "label": "Why Auphere",
-      "meta": "4 commitments"
-    },
-    "headline": "Four commitments you can verify.",
-    "intro": "Gartner expects 40% of agent projects to be scrapped before they reach production. The stretch that fails — deploying it, running it and answering for it — is exactly the one we sell.",
-    "promises": {
-      "production": {
-        "title": "In production, or nothing happened.",
-        "body": "We measure the project on one thing: whether it is serving real customers. A demo, a pilot or a staging environment does not count as delivery, and we do not invoice it as one."
-      },
-      "compliance": {
-        "title": "Compliant by design, and it says so out loud.",
-        "body": "Your agent identifies itself as AI — Article 50 of the EU AI Act — and escalates to a person from day one, ahead of what Spain’s Law 10/2025 will require. The full position is published at /trust, not behind an NDA."
-      },
-      "isolation": {
-        "title": "Isolation is enforced by the database.",
-        "body": "Not by the good faith of the code: forced RLS, a whitelist at two points, auditing under impersonation, and isolation tests that block the deploy when they fail."
-      },
-      "oneTeam": {
-        "title": "Whoever sells it is whoever runs it.",
-        "body": "The same team runs the diagnostic, configures the agent and keeps it up in production. No subcontractors, no handoffs, with runbooks, alerts that have an owner and continuity written into the contract."
-      }
-    }
-  },
-  "qualifier": {
-    "marker": {
-      "label": "Is this for you?",
-      "meta": "4 yes · 3 no"
-    },
-    "headline": "Built for teams already feeling the bottleneck.",
-    "yesTitle": "This is for you if…",
-    "yes": {
-      "yes1": "Your team loses hours every week to the same interactions: bookings, follow-ups, status questions and post-sale support.",
-      "yes2": "You are past the “could AI help?” stage and want an agent answering, with measurable results in weeks rather than quarters.",
-      "yes3": "You tried no-code or a catalogue chatbot and it broke the moment volume rose or the first edge case showed up.",
-      "yes4": "You would rather have an agent that works and that we run than one more tool, one more repo and one more vendor to manage."
-    },
-    "noTitle": "This is not for you if…",
-    "no": {
-      "no1": "You are buying on price. There is a team running every agent, so we are not the cheap option: if cost per month is the deciding criterion, a template beats us.",
-      "no2": "You need someone live tomorrow. Diagnostic slots open two to three weeks out and we do not cut scope to arrive sooner.",
-      "no3": "You want your customers not to know they are talking to an AI. Our agents always identify themselves: EU law requires it, and it converts better anyway."
-    }
-  },
-  "faq": {
-    "marker": {
-      "label": "FAQ",
-      "meta": "11 questions"
-    },
-    "headline": "Questions everybody asks.",
-    "intro": "If yours is not here, bring it to the diagnostic call.",
-    "items": {
-      "cost": {
-        "q": "How does billing work?",
-        "a": "Three line items and nothing else: the diagnostic is free, the build is quoted as a fixed fee once it ends, and from go-live there is a monthly fee to run the agent. The budget comes out of the diagnostic with the scope in writing, so there is nothing left to renegotiate. You pay 50% on signing and 50% on kickoff. No annual contracts: after the first three months you can cancel with 30 days notice."
-      },
-      "timing": {
-        "q": "How long until the agent is live?",
-        "a": "Most agents go live 3 to 4 weeks after kickoff. Up to 6 weeks if integrations are heavy or your data needs cleanup first. The diagnostic gives you the exact timeline (and the milestones) in writing before you commit to setup."
-      },
-      "codeOwnership": {
-        "q": "Do we own the code?",
-        "a": "No, and that's by design. Your agent runs on infrastructure we monitor and improve 24/7. You own everything that actually matters: your data, conversation history, integrations, business rules, and the agent's logic and tone. You can export all of it at any time. What you don't get is a codebase to maintain, hire for, or babysit. That's our job."
-      },
-      "leaving": {
-        "q": "What if we want to leave?",
-        "a": "Cancel any month after the first 3, with 30 days' notice. We export your data, conversation history and configuration in standard formats. If you're moving to another vendor, we help with the handoff. No clawbacks, no contractual lock-in."
-      },
-      "compliance": {
-        "q": "Is our data safe? GDPR / CCPA?",
-        "a": "Yes. EU-hosted infrastructure for European clients (GDPR-compliant by default). DPA signed before any real data touches our systems. Your data is never used to train models we sell to other clients. SOC 2 is on our roadmap; until then we share our security questionnaire and current controls under NDA."
-      },
-      "channels": {
-        "q": "Which channels and tools do you integrate with?",
-        "a": "Out of the box: WhatsApp Business, Instagram DM, email, Google Calendar, Outlook, Stripe, Cal.com, HubSpot, common PMS / CRM / booking systems, and most no-code platforms (Make, n8n, Zapier). Anything with a documented API is fair game. The diagnostic confirms the exact list before you sign."
-      },
-      "engineer": {
-        "q": "Do we need an in-house engineer to manage this?",
-        "a": "No. That's the entire point. You get a working agent and a direct line to the team operating it. Operations, monitoring, model upgrades and the monthly improvement cycle are on us. Your team only does the work that genuinely needs a human."
-      },
-      "metrics": {
-        "q": "What do you actually measure, and how do we know it's working?",
-        "a": "We agree on 2 to 3 outcome metrics during the diagnostic, usually response time, resolution rate or no-shows recovered. We measure them continuously and review them with you every improvement cycle, alongside conversation logs you can request at any time. If a metric drifts, the next improvement cycle prioritizes fixing it."
-      },
-      "nda": {
-        "q": "Do you sign NDAs?",
-        "a": "Yes, but not for the first call. Our standard MSA + DPA cover most clients. We sign custom NDAs for regulated industries (healthcare, financial services, legal) on request, no friction."
-      },
-      "different": {
-        "q": "How do we know you're different from another AI agency?",
-        "a": "Two ways to test it. One: ask for a 15-minute reference call with a live client before you commit, and we'll arrange it. Two: the diagnostic itself. An agency that wants to sell at any cost doesn't tell clients to walk away. We do, when it's the right call. Shipping something the wrong client won't use is worse for both sides."
-      },
-      "noNeed": {
-        "q": "What if the diagnostic concludes we don't need you?",
-        "a": "We tell you straight and you keep whatever notes and recommendations came out of the call to act on however you want: in-house, with another vendor, or shelved for later. We'd rather lose one deal than ship something that won't earn its keep. Long term, that's the only marketing that scales."
-      },
-      "aiDisclosure": {
-        "q": "Will my customers know they are talking to an AI?",
-        "a": "Yes: the agent identifies itself as AI from the first message, on every channel. The EU AI Act's Article 50 requires it since August 2026 — and it converts better anyway: what your customers value is not that it seems human, it is that it solves their problem. When it cannot, it hands off to a person on your team with full context."
-      }
-    }
-  },
-  "finalCta": {
-    "eyebrow": "LET’S SEE IF WE FIT",
-    "headline": "30 minutes.",
-    "headlineAccent": "No cost, no commitment.",
-    "subheadline": "Half an hour to review your operation and decide whether this helps. You leave with a clear answer — ours or yours — and, if we continue, with the scope in writing.",
-    "microcopy": "No slot that works for you? Email contacto@auphere.com and we will find one.",
-    "loadingCalendar": "Loading calendar…"
   },
   "useCases": {
     "common": {
@@ -2430,117 +2512,6 @@
       "next": "Next",
       "required": "Required",
       "version": "v0.1"
-    }
-  },
-  "threeWays": {
-    "marker": {
-      "label": "Three ways to work with us",
-      "meta": "Hire it · Resell it · Embed it"
-    },
-    "headline": "One platform. Three ways to work with it.",
-    "tracks": {
-      "hire": {
-        "verb": "Hire it",
-        "who": "For your operation",
-        "body": "Built around your operation and backed by our team.",
-        "cta": "See the platform",
-        "href": "/platform"
-      },
-      "resell": {
-        "verb": "Resell it",
-        "who": "Your brand, your client",
-        "body": "Sell AI to your book of business without building the platform: we run it, you invoice.",
-        "cta": "Partner program",
-        "href": "/partners"
-      },
-      "embed": {
-        "verb": "Embed it",
-        "who": "Inside your product",
-        "body": "AI inside your product over an API: your brand, your invoice, our infrastructure.",
-        "cta": "Auphere Embedded",
-        "href": "/partners/embedded"
-      }
-    },
-    "intro": "The same engine in all three. What changes is whose brand is on it, who invoices, and who faces the customer.",
-    "enterpriseLine": "Buying committee, security review and a contractual SLA?",
-    "enterpriseCta": "Auphere for enterprise"
-  },
-  "capabilities": {
-    "marker": {
-      "label": "What it does",
-      "meta": "6 capabilities in production"
-    },
-    "headline": "What your agent does from day one.",
-    "intro": "Everything on this list is in production today. Open any of them for the technical detail.",
-    "cells": {
-      "media": {
-        "title": "Understands audio and images",
-        "body": "The two-minute voice note and the photo of the receipt, read and answered.",
-        "detail": "It transcribes voice notes and reads the images that arrive over WhatsApp or Instagram: payment receipts, product photos, screenshots. Customers write however they like; the agent adapts."
-      },
-      "memory": {
-        "title": "Remembers every customer",
-        "body": "Today’s conversation knows the history from previous months.",
-        "detail": "Per-customer memory: preferences, history and past issues. It is the only item on this list the end customer notices directly, and what separates an agent from a form with a chat window."
-      },
-      "jobs": {
-        "title": "Books, reminds and follows up",
-        "body": "Appointments, reminders, unpaid invoices and customers who stopped coming.",
-        "detail": "Bookings with one-tap confirmation and rescheduling, reminders that cut no-shows, follow-up on unpaid invoices and win-back for inactive customers. Each flow only switches on if your operation needs it."
-      },
-      "browser": {
-        "title": "Works with software that has no API",
-        "body": "If your back office only has a screen, the agent uses the screen.",
-        "detail": "The agent drives a browser session and works your legacy panel the way a person would. Running an older system stops being the reason automation is off the table."
-      },
-      "escalation": {
-        "title": "Hands over to a person when it should",
-        "body": "Three triggers, the full conversation, and a named owner.",
-        "detail": "Out of scope, an explicit customer request, or low confidence: the agent transfers the case to your team with the entire context. It is also what Spain’s Law 10/2025 requires from December."
-      },
-      "hygiene": {
-        "title": "Protects your number’s quality rating",
-        "body": "The real risk of running WhatsApp, handled as part of the service.",
-        "detail": "Monitoring of the number’s quality rating, approved templates and send rates within Meta’s limits. A blocked number is a lost channel: keeping it healthy is part of the service."
-      }
-    }
-  },
-  "stage": {
-    "channels": {
-      "whatsapp": "WhatsApp",
-      "instagram": "Instagram",
-      "tiktok": "TikTok · soon",
-      "voice": "Voice"
-    },
-    "tools": {
-      "calendar": "Calendar",
-      "crm": "CRM",
-      "payments": "Payments",
-      "browser": "Browser"
-    },
-    "core": "Classify",
-    "out": "Respond",
-    "human": "Person",
-    "tracks": {
-      "hire": "Hire it",
-      "resell": "Resell it",
-      "embed": "Embed it"
-    },
-    "stages": {
-      "diagnose": "Diagnostic",
-      "configure": "Configuration",
-      "production": "Production"
-    },
-    "annotations": {
-      "sharedEngine": "One engine",
-      "t0": "30 min",
-      "t1": "2 to 6 weeks",
-      "t2": "Ongoing",
-      "tenantA": "Tenant A",
-      "tenantB": "Tenant B",
-      "wall": "RLS",
-      "rowData": "Data",
-      "rowConv": "Conversations"
     }
   }
 }

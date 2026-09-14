@@ -52,11 +52,245 @@
       "loading": "Cargando calendario…"
     }
   },
+  "home": {
+    "meta": {
+      "title": "Auphere · Soluciones de IA adaptadas a tu negocio",
+      "description": "Auphere responde en segundos, reserva citas y hace seguimiento por ti. Construimos, operamos y mejoramos el agente de IA que tu equipo necesita. Reserva una reunión de diagnóstico de 30 minutos sin coste."
+    },
+    "hero": {
+      "chipA": "Agentes de IA",
+      "chipB": "Operado por nosotros",
+      "title": "Soluciones de IA adaptadas a tu negocio.",
+      "lead": "Auphere responde en segundos, reserva citas y hace seguimiento por ti. Nosotros lo operamos; tú pagas por lo que atiende.",
+      "ctaPrimary": "Agenda ahora",
+      "ctaSecondary": "Ver el agente en acción",
+      "tasksLabel": "Tareas que hace el agente",
+      "tasks": {
+        "t1": "Responde WhatsApp",
+        "t2": "Reserva citas",
+        "t3": "Recuerda la cita",
+        "t4": "Cambia horarios",
+        "t5": "Cobra y confirma",
+        "t6": "Recupera clientes",
+        "t7": "Lee notas de voz",
+        "t8": "Deriva a una persona",
+        "t9": "Informa cada mes"
+      },
+      "chat": {
+        "label": "Conversación de ejemplo con el agente",
+        "agent": "Agente Auphere",
+        "business": "Clínica Dental Norte · WhatsApp",
+        "status": "En línea",
+        "typing": "Escribiendo",
+        "m1": "Hola, ¿tenéis disponibilidad esta semana para una limpieza?",
+        "m2": "Hola, Marta. Sí: jueves 17:30 o viernes 10:00. ¿Cuál prefieres?",
+        "m3": "Viernes a las 10",
+        "m4": "Reservado con la Dra. Ruiz. Te envío la confirmación y te recuerdo el día antes."
+      }
+    },
+    "problem": {
+      "eyebrow": "El problema",
+      "title": "Tu equipo se colapsa en mensajes.",
+      "lead": "Reservas por WhatsApp, cambios de última hora y mensajes a las 11 de la noche preguntando si hay disponibilidad. Tu equipo pierde el día respondiendo chats en lugar de dar un buen servicio en persona.",
+      "painsLabel": "Dolores habituales",
+      "pains": {
+        "p1": "Sin seguimiento",
+        "p2": "Citas perdidas",
+        "p3": "Respuestas tarde",
+        "p4": "Clientes que no vuelven",
+        "p5": "Número bloqueado"
+      },
+      "notifsLabel": "Notificaciones sin atender",
+      "notifs": {
+        "wa": {
+          "title": "Nuevo mensaje · WhatsApp",
+          "body": "¿Tenéis disponibilidad hoy?",
+          "when": "hace 1 min"
+        },
+        "ig": {
+          "title": "Instagram · sin responder",
+          "body": "Precio de la limpieza? · 3 h sin respuesta",
+          "when": "hace 3 h"
+        },
+        "tel": {
+          "title": "Llamada perdida",
+          "body": "+34 6•• ••• 412 · fuera de horario",
+          "when": "22:05"
+        },
+        "cal": {
+          "title": "Cita sin confirmar",
+          "body": "Mañana 12:00 · sin recordatorio enviado",
+          "when": "ayer"
+        }
+      }
+    },
+    "solution": {
+      "eyebrow": "La solución",
+      "text": "Construimos, operamos y mejoramos el agente de IA que tu equipo necesita, sin que tengas que contratar a nadie nuevo."
+    },
+    "how": {
+      "eyebrow": "Cómo funciona",
+      "titleA": "De la reunión al",
+      "titleB": "agente atendiendo.",
+      "lead": "Nos conectamos a la agenda, el CRM y los pagos que ya usas.",
+      "steps": {
+        "s1": {
+          "n": "01",
+          "title": "Agenda 30 minutos",
+          "body": "Miramos tu metodología de trabajo contigo: canales, herramientas y dónde se va el tiempo. Decidimos juntos si automatizar realmente resuelve tu problema.",
+          "alt": "Captura · reunión y alcance"
+        },
+        "s2": {
+          "n": "02",
+          "title": "Lo configuramos",
+          "body": "Conectamos agenda, CRM y pagos, entrenamos el agente con tu voz y tus reglas. Apruebas cada versión antes de salir.",
+          "alt": "Captura · integraciones conectadas"
+        },
+        "s3": {
+          "n": "03",
+          "title": "Agente activo",
+          "body": "El agente entra en acción y comienza a atender a tus clientes. Mantenemos una supervisión constante, medimos los resultados clave y optimizamos su rendimiento mes a mes.",
+          "alt": "Captura · métricas del primer mes"
+        }
+      },
+      "statsLabel": "Cifras clave",
+      "stats": {
+        "s1": {
+          "prefix": "",
+          "suffix": " min",
+          "label": "Primera reunión, sin coste"
+        },
+        "s2": {
+          "prefix": "2–",
+          "suffix": " sem",
+          "label": "Hasta estar en producción"
+        },
+        "s3": {
+          "prefix": "",
+          "suffix": "/7",
+          "label": "Supervisado por nuestro equipo"
+        },
+        "s4": {
+          "prefix": "",
+          "suffix": " %",
+          "label": "Datos alojados en la UE"
+        }
+      }
+    },
+    "skills": {
+      "eyebrow": "Habilidades",
+      "titleA": "Cada función se ve",
+      "titleB": "trabajando.",
+      "lead": "Cuatro cosas que el agente hace por tu negocio.",
+      "cta": "Verlo en la demo",
+      "items": {
+        "audio": {
+          "eyebrow": "Audios e imágenes",
+          "title": "Entiende la nota de voz y la foto del comprobante.",
+          "body": "Tus clientes escriben como quieren. El agente transcribe audios, lee imágenes y contesta con sentido, en WhatsApp e Instagram.",
+          "b1": "Transcribe notas de voz de dos minutos",
+          "b2": "Lee comprobantes, fotos y capturas",
+          "b3": "Responde en el mismo canal y tono",
+          "b4": "Funciona con tu número actual",
+          "alt": "Captura · nota de voz transcrita y respondida"
+        },
+        "memory": {
+          "eyebrow": "Memoria por cliente",
+          "title": "Recuerda a cada persona, cada vez.",
+          "body": "La conversación de hoy conoce las anteriores: preferencias, historial e incidencias. Es lo que separa un agente de un formulario con chat.",
+          "b1": "Historial completo por cliente",
+          "b2": "Preferencias y profesional habitual",
+          "b3": "Detecta clientes que dejaron de venir",
+          "b4": "Se integra con tu CRM o sistema de reservas",
+          "alt": "Captura · ficha de cliente con historial"
+        },
+        "bookings": {
+          "eyebrow": "Reservas y seguimiento",
+          "title": "Reserva, recuerda y hace seguimiento solo.",
+          "body": "Citas con confirmación y cambio en un toque, recordatorios que reducen ausencias, seguimiento de impagos y reactivación de clientes inactivos.",
+          "b1": "Agenda sincronizada con Google, Outlook o tu PMS",
+          "b2": "Recordatorio automático el día antes",
+          "b3": "Cobro y facturación por Stripe",
+          "b4": "Reactivación de clientes inactivos",
+          "alt": "Captura · agenda con citas confirmadas"
+        },
+        "handoff": {
+          "eyebrow": "Escalado a persona",
+          "title": "Sabe cuándo parar y avisar a tu equipo.",
+          "body": "Fuera de alcance, petición del cliente o poca confianza: el agente pasa la conversación completa a una persona real.",
+          "b1": "Tres disparadores de escalado",
+          "b2": "Contexto completo, sin repetir nada",
+          "b3": "Un responsable con nombre en tu equipo",
+          "b4": "Se identifica como asistente IA desde el primer mensaje",
+          "alt": "Captura · traspaso a una persona con contexto"
+        }
+      }
+    },
+    "pricing": {
+      "eyebrow": "Cómo se cobra",
+      "title": "Una membresía base más el consumo de los agentes",
+      "lead": "Sin planes que cambiar ni licencias por persona. Si un mes atiende más, pagas más, si atiende menos, menos. La cifra exacta sale de la reunión, por escrito.",
+      "b1": "Operación, supervisión y mejoras mensuales incluidas",
+      "b2": "Escala de 200 a 10.000 en consumo sin cambiar de plan",
+      "b3": "Prueba gratuita de 30 días",
+      "cta": "Agenda ahora",
+      "usageLabel": "Consumo en conversaciones",
+      "sliderLabel": "Conversaciones al mes",
+      "min": "Una consulta",
+      "max": "Una cadena",
+      "base": "Base fija",
+      "usage": "Consumo de los agentes",
+      "note": "Ilustrativo: la proporción cambia en base al consumo real de los agentes al operar. La base fija no cambia."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Tus preguntas respondidas",
+      "items": {
+        "q1": {
+          "q": "¿Cómo se paga?",
+          "a": "Una cuota base pequeña y una parte variable por las conversaciones que atiende. La cifra exacta sale de la reunión, por escrito."
+        },
+        "q2": {
+          "q": "¿Mis clientes sabrán que hablan con una IA?",
+          "a": "Sí, desde el primer mensaje, en todos los canales. Lo exige la ley europea y, en la práctica, convierte mejor: lo que valoran es que les resuelva."
+        },
+        "q3": {
+          "q": "¿Cuánto tarda en estar en marcha?",
+          "a": "Entre dos y seis semanas según las integraciones que actualmente implementa tu empresa. Sales de la reunión con el calendario."
+        },
+        "q4": {
+          "q": "¿Funciona para mi sector?",
+          "a": "Clínicas, dentistas, fisios, salones, barberías, spas, veterinarias, farmacias, restaurantes, academias. Si tu negocio vive del teléfono y la agenda, sí."
+        },
+        "q5": {
+          "q": "¿Dónde están mis datos?",
+          "a": "En infraestructura de la UE. Firmamos el acuerdo de tratamiento antes de tocar ningún dato y nunca se usan para entrenar modelos de otros clientes."
+        },
+        "q6": {
+          "q": "¿Y si quiero irme?",
+          "a": "Avisas con 30 días de anticipación, después de los tres primeros meses. Te llevas tus datos, tus conversaciones y tu configuración."
+        },
+        "q7": {
+          "q": "¿Puedo pedir funciones nuevas?",
+          "a": "Sí. Cada mes revisamos contigo las métricas y priorizamos lo siguiente. Lo que ya está en producción se activa sin coste extra de desarrollo."
+        }
+      },
+      "help": {
+        "title": "¿No encuentras tu respuesta?",
+        "body": "Escríbenos tu pregunta y te contesta una persona del equipo en menos de un día laborable. O tráela a la reunión.",
+        "cta": "Escribir a contacto@auphere.com",
+        "alt": "Ilustración · equipo Auphere"
+      }
+    },
+    "agenda": {
+      "eyebrow": "Empieza",
+      "title": "Deja los chats. Conéctate a lo real",
+      "lead": "30 minutos con quien va a operar tu agente. Gratis y sin compromiso: sales con una respuesta clara, en un sentido u otro.",
+      "cta": "Agenda ahora",
+      "back": "Volver a las funciones"
+    }
+  },
   "hero": {
-    "eyebrow": "INFRAESTRUCTURA DE IA OPERADA · UE",
-    "subheadline": "Atiende a tus clientes en WhatsApp, Instagram y voz. Nosotros lo desplegamos, lo supervisamos 24/7 y lo mejoramos cada mes.",
-    "ctaPrimary": "Reservar diagnóstico · 30 min",
-    "ctaSecondary": "Ver la plataforma →",
     "orchestrator": {
       "whatsapp": "WhatsApp",
       "instagram": "Instagram",
@@ -69,159 +303,7 @@
       "browser": "Navegador",
       "response": "Responde",
       "human": "Humano"
-    },
-    "headline": "Tu agente de IA, construido y operado por nosotros."
-  },
-  "howWeWork": {
-    "marker": {
-      "label": "Cómo trabajamos",
-      "meta": "3 etapas · 3 a 6 semanas"
-    },
-    "headline": "De la primera llamada a producción, en tres etapas.",
-    "intro": "Cada etapa cierra con algo que puedes leer: un plan, una versión que apruebas, un informe de rendimiento.",
-    "steps": {
-      "diagnose": {
-        "timing": "30 min",
-        "title": "Diagnóstico",
-        "body": "Media hora con tu equipo para ver dónde se va hoy el tiempo. Si automatizar no es la respuesta, lo decimos y ahí termina. Si lo es, sales con el alcance por escrito: qué flujos, qué integraciones, qué coste y qué esperar en qué semana."
-      },
-      "configure": {
-        "timing": "2 a 6 semanas",
-        "title": "Configuración",
-        "body": "Integramos con las herramientas que ya usas, entrenamos el agente con tus datos y lo ajustamos a tu voz y a tus reglas de negocio. Revisas cada iteración y ninguna versión llega a producción sin tu aprobación."
-      },
-      "goLive": {
-        "timing": "Continuo · 24/7",
-        "title": "En producción",
-        "body": "El agente empieza a atender. Nosotros supervisamos su funcionamiento, medimos las métricas acordadas en el diagnóstico y lo mejoramos cada mes. Tienes contacto directo con el equipo que lo opera."
-      }
     }
-  },
-  "pullQuote": {
-    "text": "Un agente que nadie opera es una demo con factura mensual.",
-    "attribution": "Auphere"
-  },
-  "cases": {
-    "marker": {
-      "label": "Casos",
-      "meta": "Próximamente"
-    },
-    "headline": "Agentes en producción. Resultados medibles.",
-    "intro": "No publicamos casos hasta que la métrica es real y el cliente lo aprueba. Los nuevos casos aparecerán aquí cuando eso ocurra.",
-    "portraitPlaceholder": "Retrato hand-drawn (próximamente)",
-    "moreSoon": "Primeros casos próximamente"
-  },
-  "whyAuphere": {
-    "marker": {
-      "label": "Por qué Auphere",
-      "meta": "4 compromisos"
-    },
-    "headline": "Cuatro compromisos que puedes verificar.",
-    "intro": "Gartner estima que el 40% de los proyectos de agentes se cancelará antes de llegar a producción. El tramo que falla —desplegar, operar y responder por ello— es exactamente el que vendemos.",
-    "promises": {
-      "production": {
-        "title": "En producción, o no ha pasado nada.",
-        "body": "Medimos el proyecto por una sola cosa: si está atendiendo a clientes reales. Una demo, un piloto o un entorno de staging no cuentan como entrega, y no los facturamos como tal."
-      },
-      "compliance": {
-        "title": "Cumple por diseño y lo dice en voz alta.",
-        "body": "Tu agente se identifica como IA —art. 50 del Reglamento Europeo de IA— y escala a una persona desde el primer día, antes de que la Ley 10/2025 lo exija. La postura completa está publicada en /trust, no bajo NDA."
-      },
-      "isolation": {
-        "title": "El aislamiento lo impone la base de datos.",
-        "body": "No la buena fe del código: RLS forzado, whitelist en dos puntos, auditoría bajo impersonación y tests de aislamiento que bloquean el despliegue cuando fallan."
-      },
-      "oneTeam": {
-        "title": "Quien lo vende es quien lo opera.",
-        "body": "El mismo equipo hace el diagnóstico, configura el agente y lo sostiene en producción. Sin subcontratas ni traspasos, con runbooks, alertas con destinatario y continuidad pactada en el contrato."
-      }
-    }
-  },
-  "qualifier": {
-    "marker": {
-      "label": "¿Es para ti?",
-      "meta": "4 sí · 3 no"
-    },
-    "headline": "Pensado para equipos que ya sienten el cuello de botella.",
-    "yesTitle": "Esto es para ti si…",
-    "yes": {
-      "yes1": "Tu equipo pierde horas cada semana en las mismas interacciones: reservas, seguimiento, preguntas de estado y soporte post-venta.",
-      "yes2": "Ya pasaste la fase de «¿puede ayudar la IA?» y quieres un agente atendiendo, con resultados medibles en semanas y no en trimestres.",
-      "yes3": "Probaste con no-code o con un chatbot de catálogo y se rompió en cuanto subió el volumen o apareció el primer caso borde.",
-      "yes4": "Prefieres un agente que funcione y que operemos nosotros antes que otra herramienta, otro repositorio y otro proveedor que gestionar."
-    },
-    "noTitle": "Esto no es para ti si…",
-    "no": {
-      "no1": "Compras por precio. Detrás de cada agente hay un equipo operándolo, así que no somos la opción barata: si el criterio es el coste por mes, una plantilla lo gana.",
-      "no2": "Necesitas a alguien activo mañana. Los slots de diagnóstico abren con dos o tres semanas de antelación y no recortamos el alcance para llegar antes.",
-      "no3": "Quieres que tus clientes no sepan que hablan con una IA. Nuestros agentes se identifican siempre: lo exige la ley europea y, además, convierte mejor."
-    }
-  },
-  "faq": {
-    "marker": {
-      "label": "FAQ",
-      "meta": "11 preguntas"
-    },
-    "headline": "Preguntas que todo el mundo hace.",
-    "intro": "Si la tuya no está aquí, llévala a la llamada de diagnóstico.",
-    "items": {
-      "cost": {
-        "q": "¿Cómo se factura?",
-        "a": "Tres partidas y ninguna más: el diagnóstico no se cobra, la puesta en marcha se cotiza cerrada al terminarlo y a partir del go-live hay una cuota mensual de operación. El presupuesto sale del diagnóstico con el alcance por escrito, así que no hay nada que renegociar después. Se paga 50% al firmar y 50% al arrancar. Sin contratos anuales: pasados los tres primeros meses, se cancela con 30 días de preaviso."
-      },
-      "timing": {
-        "q": "¿Cuánto tiempo hasta que el agente esté operando?",
-        "a": "La mayoría de los agentes entran en producción en 3 a 4 semanas tras el arranque. Hasta 6 semanas si hay muchas integraciones o tus datos necesitan limpieza previa. El diagnóstico te entrega el cronograma exacto y los hitos por escrito antes de que firmes el setup."
-      },
-      "codeOwnership": {
-        "q": "¿El código es nuestro?",
-        "a": "No, y es deliberado. Tu agente vive en infraestructura que monitoreamos y mejoramos 24/7. Es tuyo todo lo que de verdad importa: tus datos, tu historial de conversaciones, tus integraciones, tus reglas de negocio y la lógica y personalidad del agente. Puedes exportar todo cuando quieras. Lo que no recibes es un repositorio que mantener, contratar para o cuidar. Ese trabajo corre por nuestra cuenta."
-      },
-      "leaving": {
-        "q": "¿Qué pasa si nos queremos ir?",
-        "a": "Cancela cualquier mes después de los 3 primeros, con 30 días de preaviso. Exportamos tus datos, historial de conversaciones y configuración en formatos estándar. Si te mueves a otro proveedor, ayudamos con el handoff. Sin clawbacks ni lock-in contractual."
-      },
-      "compliance": {
-        "q": "¿Nuestros datos están seguros? ¿GDPR / CCPA?",
-        "a": "Sí. Infraestructura alojada en la UE para clientes europeos (GDPR-compliant por defecto). DPA firmado antes de que cualquier dato real toque nuestros sistemas. Tus datos nunca se usan para entrenar modelos que vendemos a otros clientes. SOC 2 está en nuestro roadmap; hasta entonces compartimos el cuestionario de seguridad y los controles vigentes bajo NDA."
-      },
-      "channels": {
-        "q": "¿Con qué canales y herramientas integráis?",
-        "a": "De fábrica: WhatsApp Business, Instagram DM, email, Google Calendar, Outlook, Stripe, Cal.com, HubSpot, PMS / CRM / sistemas de reservas comunes y la mayoría de plataformas no-code (Make, n8n, Zapier). Cualquier herramienta con API documentada es candidata; el diagnóstico confirma la lista exacta antes de firmar."
-      },
-      "engineer": {
-        "q": "¿Necesitamos un ingeniero interno para gestionarlo?",
-        "a": "No. Ese es exactamente el punto. Recibes un agente que funciona y una línea directa con el equipo que lo opera. Operación, monitoreo, upgrades de modelos y el ciclo mensual de mejora corren por nuestra cuenta. Tu equipo solo hace el trabajo que de verdad necesita un humano."
-      },
-      "metrics": {
-        "q": "¿Qué medís exactamente y cómo sabemos que está funcionando?",
-        "a": "Acordamos 2 o 3 métricas de resultado durante el diagnóstico: habitualmente tiempo de respuesta, tasa de resolución o no-shows recuperados. Las medimos en continuo y las revisamos contigo en cada ciclo de mejora, junto a los logs de conversación, que puedes pedir cuando quieras. Si una métrica se desvía, el siguiente ciclo de mejora prioriza arreglarla."
-      },
-      "nda": {
-        "q": "¿Firmáis NDAs?",
-        "a": "Sí, pero no para la primera llamada. Nuestro MSA + DPA estándar cubren la mayoría de clientes. Firmamos NDAs a medida para industrias reguladas (salud, servicios financieros, legal) bajo solicitud, sin fricción."
-      },
-      "different": {
-        "q": "¿Cómo sabemos que sois distintos a otra \"AI agency\"?",
-        "a": "Dos formas de probarlo. Una: pide una llamada de referencia de 15 min con un cliente activo antes de comprometerte; la organizamos. Dos: el diagnóstico mismo. Una agencia que quiere vender a cualquier coste no le dice a un cliente que se vaya. Nosotros sí, cuando es lo correcto. Entregar algo que el cliente equivocado no usará es peor para ambos."
-      },
-      "noNeed": {
-        "q": "¿Y si el diagnóstico concluye que no nos hacéis falta?",
-        "a": "Te lo decimos sin rodeos y te quedas con las notas y recomendaciones que salgan de la llamada para que las ejecutes como prefieras: internamente, con otro proveedor o aparcado para más adelante. Preferimos perder un deal a entregar algo que no se va a ganar el sueldo. A largo plazo es la única estrategia de marketing que escala."
-      },
-      "aiDisclosure": {
-        "q": "¿Mis clientes sabrán que hablan con una IA?",
-        "a": "Sí: el agente se identifica como IA desde el primer mensaje, en todos los canales. Lo exige el art. 50 del Reglamento europeo de IA desde agosto de 2026 — y además convierte mejor: lo que tus clientes valoran no es que parezca humano, es que les resuelva. Cuando no puede, pasa a una persona de tu equipo con el contexto completo."
-      }
-    }
-  },
-  "finalCta": {
-    "eyebrow": "VEAMOS SI ENCAJAMOS",
-    "headline": "30 minutos.",
-    "headlineAccent": "Sin coste, sin compromiso.",
-    "subheadline": "Media hora para revisar tu operación y decidir si esto te sirve. Sales con una respuesta clara —nuestra o tuya— y, si seguimos, con el alcance por escrito.",
-    "microcopy": "¿No ves un slot que te encaje? Escríbenos a contacto@auphere.com y buscamos uno.",
-    "loadingCalendar": "Cargando calendario…"
   },
   "useCases": {
     "common": {
@@ -2430,117 +2512,6 @@
       "next": "Siguiente",
       "required": "Requerido",
       "version": "v0.1"
-    }
-  },
-  "threeWays": {
-    "marker": {
-      "label": "Tres formas de trabajar",
-      "meta": "Contrátalo · Revéndelo · Intégralo"
-    },
-    "headline": "Una plataforma. Tres formas de trabajar con ella.",
-    "tracks": {
-      "hire": {
-        "verb": "Contrátalo",
-        "who": "Para tu operación",
-        "body": "Construido alrededor de tu operación y respaldado por nuestro equipo.",
-        "cta": "Ver la plataforma",
-        "href": "/platform"
-      },
-      "resell": {
-        "verb": "Revéndelo",
-        "who": "Tu marca, tu cliente",
-        "body": "Vendes IA a tu cartera sin construir la plataforma: nosotros la operamos, tú facturas.",
-        "cta": "Programa de partners",
-        "href": "/partners"
-      },
-      "embed": {
-        "verb": "Intégralo",
-        "who": "Dentro de tu producto",
-        "body": "IA dentro de tu producto vía API: tu marca, tu factura, nuestra infraestructura.",
-        "cta": "Auphere Embedded",
-        "href": "/partners/embedded"
-      }
-    },
-    "intro": "El mismo motor en las tres. Cambia quién pone la marca, quién factura y quién da la cara.",
-    "enterpriseLine": "¿Comité de compras, revisión de seguridad y SLA por contrato?",
-    "enterpriseCta": "Auphere para empresas"
-  },
-  "capabilities": {
-    "marker": {
-      "label": "Lo que hace",
-      "meta": "6 capacidades en producción"
-    },
-    "headline": "Lo que tu agente hace desde el primer día.",
-    "intro": "Todo lo de esta lista está en producción hoy. Abre cualquiera para ver el detalle técnico.",
-    "cells": {
-      "media": {
-        "title": "Entiende audios e imágenes",
-        "body": "La nota de voz de dos minutos y la foto del comprobante, leídas y contestadas.",
-        "detail": "Transcribe las notas de voz y lee las imágenes que llegan por WhatsApp o Instagram: comprobantes de pago, fotos de producto, capturas de pantalla. El cliente escribe como quiere; el agente se adapta."
-      },
-      "memory": {
-        "title": "Recuerda a cada cliente",
-        "body": "La conversación de hoy conoce el historial de los meses anteriores.",
-        "detail": "Memoria por cliente final: preferencias, historial e incidencias previas. Es lo único de esta lista que el cliente percibe directamente, y lo que separa un agente de un formulario con conversación."
-      },
-      "jobs": {
-        "title": "Reserva, recuerda y hace seguimiento",
-        "body": "Citas, recordatorios, impagos y clientes que dejaron de venir.",
-        "detail": "Reservas con confirmación y reagendado en un toque, recordatorios que reducen las ausencias, seguimiento de impagos y recuperación de clientes inactivos. Cada flujo se activa solo si tu operación lo necesita."
-      },
-      "browser": {
-        "title": "Trabaja con software sin API",
-        "body": "Si tu sistema de gestión solo tiene pantalla, el agente la usa.",
-        "detail": "El agente opera una sesión de navegador y trabaja en el panel de tu software heredado como lo haría una persona. Tener un sistema antiguo deja de ser el motivo por el que no se puede automatizar."
-      },
-      "escalation": {
-        "title": "Deriva a una persona cuando corresponde",
-        "body": "Tres disparadores, la conversación completa y un responsable con nombre.",
-        "detail": "Fuera de alcance, petición explícita del cliente o confianza baja: el agente transfiere el caso a tu equipo con el contexto entero. Es también lo que exige la Ley 10/2025 desde diciembre."
-      },
-      "hygiene": {
-        "title": "Protege la calidad de tu número",
-        "body": "El riesgo real de operar WhatsApp, gestionado como parte del servicio.",
-        "detail": "Vigilancia de la calificación del número, plantillas aprobadas y ritmo de envío dentro de los límites de Meta. Un número bloqueado es un canal perdido: mantenerlo sano es parte del servicio."
-      }
-    }
-  },
-  "stage": {
-    "channels": {
-      "whatsapp": "WhatsApp",
-      "instagram": "Instagram",
-      "tiktok": "TikTok · pronto",
-      "voice": "Voz"
-    },
-    "tools": {
-      "calendar": "Calendario",
-      "crm": "CRM",
-      "payments": "Pagos",
-      "browser": "Navegador"
-    },
-    "core": "Clasifica",
-    "out": "Responde",
-    "human": "Persona",
-    "tracks": {
-      "hire": "Contrátalo",
-      "resell": "Revéndelo",
-      "embed": "Intégralo"
-    },
-    "stages": {
-      "diagnose": "Diagnóstico",
-      "configure": "Configuración",
-      "production": "Producción"
-    },
-    "annotations": {
-      "sharedEngine": "El mismo motor",
-      "t0": "30 min",
-      "t1": "2 a 6 semanas",
-      "t2": "Continuo",
-      "tenantA": "Cliente A",
-      "tenantB": "Cliente B",
-      "wall": "RLS",
-      "rowData": "Datos",
-      "rowConv": "Conversaciones"
     }
   }
 }

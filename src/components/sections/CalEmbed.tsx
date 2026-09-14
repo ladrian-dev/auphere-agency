@@ -84,8 +84,11 @@ export function CalEmbed({ calLink = CAL_LINK, theme = 'dark', minHeight = 620, 
           config={{
             layout: 'month_view',
             theme,
-            // Cal no hereda el idioma de la página: hay que pasárselo.
+            // Cal no hereda el idioma de la página: hay que pasárselo. `lang`
+            // es el parámetro que usa el embed de referencia; `locale` el que
+            // documenta embed-react. Se envían los dos.
             locale,
+            lang: locale,
           }}
           // Sin `overflow: auto`: convertía el contenedor en una región
           // desplazable que el teclado no puede enfocar (axe
