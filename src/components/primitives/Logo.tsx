@@ -3,32 +3,32 @@ import { cn } from '@/lib/utils/cn';
 
 interface Props {
   className?: string;
-  /** Wordmark height in px. Mark scales proportionally. */
+  /** Alto en px. El ancho se deriva de la proporción del SVG (1511.49 × 390.99). */
   height?: number;
-  variant?: 'default' | 'dark';
+  /** `bone` sobre fondo profundo (rediseño); `ink` sobre bone (páginas heredadas). */
+  variant?: 'bone' | 'ink' | 'default' | 'dark';
   priority?: boolean;
 }
 
+const RATIO = 1511.49 / 390.99;
+
 /**
- * Logo wrapper. Currently uses PNG (the SVG vector source isn't ready yet).
- * When the SVG version lands in /public/brand/auphere-logo.svg, swap.
+ * Logotipo completo. Siempre el archivo entero (README §Assets: nunca isotipo
+ * + texto separados). Dos tintas, un solo trazado.
  */
-export function Logo({ className, height = 32, variant = 'default', priority = false }: Props) {
+export function Logo({ className, height = 30, variant = 'ink', priority = false }: Props) {
+  // `default` / `dark` son los nombres de la v3: se mapean a las tintas nuevas.
+  const tint = variant === 'bone' || variant === 'dark' ? 'bone' : 'ink';
+  const width = Math.round(height * RATIO);
   return (
     <Image
-      src="/brand/auphere-logo.png"
+      src={`/brand/auphere-logo-${tint}.svg`}
       alt="Auphere"
       height={height}
-      // Calculate width preserving aspect ratio (~5:1)
-      width={Math.round(height * 5)}
+      width={width}
       priority={priority}
-      className={cn(
-        'select-none',
-        variant === 'dark' ? 'invert brightness-0' : '',
-        className,
-      )}
-      // Ambas dimensiones en el style: con solo `height` (o solo la utilidad
-      // `w-auto`) Next avisa en cada carga de que se modificó una sin la otra.
+      unoptimized
+      className={cn('block select-none', className)}
       style={{ height: `${height}px`, width: 'auto' }}
     />
   );

@@ -4,10 +4,11 @@ import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { routing } from '@/i18n/routing';
-import { helvena, behindTheNineties, jetbrainsMono } from '../fonts';
+import { helvena } from '../fonts';
 import { SmoothScroll } from '@/components/motion/SmoothScroll';
 import { EnvironmentBadge } from '@/components/primitives/EnvironmentBadge';
 import { isProduction } from '@/lib/deployment';
+import { SOCIAL_PROFILES } from '@/lib/site';
 import '../globals.css';
 
 interface Props {
@@ -23,12 +24,10 @@ export async function generateStaticParams() {
 }
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#F1F7F6' },
-    { media: '(prefers-color-scheme: dark)', color: '#03624C' },
-  ],
+  themeColor: '#032221',
   width: 'device-width',
   initialScale: 1,
+  viewportFit: 'cover',
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -97,7 +96,7 @@ function buildOrganizationSchema(locale: string, metaDescription: string) {
     '@type': 'ProfessionalService',
     '@id': `${SITE_URL}/#organization`,
     name: 'Auphere',
-    legalName: 'Auphere',
+    legalName: 'Auphere Intelligence S.L.',
     alternateName: 'Auphere Agency',
     url: SITE_URL,
     logo: {
@@ -129,11 +128,11 @@ function buildOrganizationSchema(locale: string, metaDescription: string) {
       { '@type': 'Country', name: 'Argentina' },
       { '@type': 'Country', name: 'Venezuela' },
     ],
-    serviceType: 'Bespoke AI agent design, deployment and operations',
+    serviceType: 'AI agents built, operated and improved as a service',
     slogan:
       locale === 'es'
-        ? 'Agentes de IA que construimos, operamos y mejoramos por ti.'
-        : 'AI agents we build, run and improve for your team.',
+        ? 'Soluciones de IA adaptadas a tu negocio.'
+        : 'AI solutions tailored to your business.',
     contactPoint: [
       {
         '@type': 'ContactPoint',
@@ -143,13 +142,9 @@ function buildOrganizationSchema(locale: string, metaDescription: string) {
         areaServed: ['EU', 'US', 'LATAM'],
       },
     ],
-    // Mismos perfiles que enlaza el pie (Footer.tsx). Un `sameAs` que no
+    // Los mismos perfiles que enlaza el pie (SiteFooter). Un `sameAs` que no
     // coincide con los enlaces visibles debilita la entidad ante los motores.
-    sameAs: [
-      'https://www.linkedin.com/company/auphere',
-      'https://www.instagram.com/somos.auphere',
-      'https://www.tiktok.com/@somos.auphere',
-    ],
+    sameAs: SOCIAL_PROFILES.map((profile) => profile.href),
   };
 }
 
@@ -178,21 +173,15 @@ export default async function LocaleLayout({ children, params }: Props) {
   const websiteSchema = buildWebsiteSchema(locale);
 
   return (
-    <html
-      lang={locale}
-      dir="ltr"
-      className={`${helvena.variable} ${behindTheNineties.variable} ${jetbrainsMono.variable}`}
-    >
+    <html lang={locale} dir="ltr" className={helvena.variable}>
       <head>
         <link rel="preconnect" href="https://app.cal.com" crossOrigin="" />
         <script
           type="application/ld+json"
-           
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         <script
           type="application/ld+json"
-           
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
@@ -201,12 +190,10 @@ export default async function LocaleLayout({ children, params }: Props) {
           {ta11y('skipToContent')}
         </a>
         <NextIntlClientProvider>
-          <SmoothScroll>
-            {children}
-          </SmoothScroll>
+          <SmoothScroll>{children}</SmoothScroll>
         </NextIntlClientProvider>
         <EnvironmentBadge />
-        {/* Plausible (sin cookies, §9.3). Solo en el despliegue de producción:
+        {/* Plausible (sin cookies). Solo en el despliegue de producción:
             staging y local no deben contaminar las métricas. Sin esta etiqueta
             `track()` en lib/analytics.ts es un no-op silencioso. */}
         {isProduction() && PLAUSIBLE_DOMAIN ? (

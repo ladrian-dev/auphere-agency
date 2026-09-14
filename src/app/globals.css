@@ -15,37 +15,37 @@
 
   html {
     font-family: var(--font-display);
-    color: var(--color-ink);
-    background-color: var(--color-bone);
-    /* Sin `overflow-x: hidden` global. Era un parche que convertía desbordes
-     * reales en invisibles — tapaba el recorte del orquestador (58 px a
-     * 1440 px) y el de la fila del FAQ (10 px a 390 px). Si algo se sale, que
-     * se vea y se arregle en su sitio; el recorte deliberado va con
-     * `overflow-hidden` en la sección concreta. Auditoría 2026-08-09 §A-2. */
+    color: var(--color-text);
+    background-color: var(--color-surface);
+    /* Sin scroll horizontal en ningún breakpoint (README §Interacciones).
+     * `clip` y no `hidden`: no crea un contenedor de scroll, así que
+     * `position: sticky` y los anclas siguen funcionando. */
+    overflow-x: clip;
   }
 
   body {
-    font-family: var(--font-display);
-    font-size: var(--text-base);
-    line-height: var(--leading-normal);
-    color: var(--color-ink);
-    background-color: var(--color-bone);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-surface);
     min-height: 100dvh;
+    overflow-x: clip;
   }
 
   ::selection {
     background-color: var(--color-primary);
-    color: var(--color-ink);
+    color: var(--color-on-primary);
   }
 
-  /* Focus styles — never browser blue */
+  /* Foco: nunca azul de navegador */
   :focus-visible {
     outline: 2px solid var(--color-primary);
     outline-offset: 3px;
     border-radius: 2px;
   }
 
-  /* Reduced motion — disable scroll-driven and entrance animations */
+  /* Reduced motion — sin animaciones de entrada ni bucles */
   @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -65,8 +65,8 @@
   position: absolute;
   top: -40px;
   left: 0;
-  background: var(--color-ink);
-  color: var(--color-bone);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
   padding: 8px 16px;
   z-index: 100;
   transition: top var(--dur-fast) var(--ease-out);
@@ -90,4 +90,127 @@ html.lenis body {
 }
 .lenis.lenis-stopped {
   overflow: clip;
+}
+
+/* ─────────────────────────────────────────────
+ * Movimiento del rediseño — keyframes compartidos
+ * (todos se apagan con prefers-reduced-motion arriba)
+ * ───────────────────────────────────────────── */
+@keyframes g-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes g-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes g-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes g-dot {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+  40%           { transform: translateY(-3px); opacity: 1; }
+}
+@keyframes g-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+@keyframes g-glow {
+  0%, 100% { opacity: 0.55; }
+  50%      { opacity: 0.9; }
+}
+@keyframes g-line {
+  from { transform: translate3d(0, 110%, 0) skewY(2deg); }
+  to   { transform: none; }
+}
+@keyframes g-kb {
+  from { transform: scale(1.04) translate3d(-1%, 0, 0); }
+  to   { transform: scale(1.12) translate3d(1%, -1.5%, 0); }
+}
+@keyframes g-copy {
+  from { opacity: 0; transform: translateY(10px) scale(0.995); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes g-action {
+  from { opacity: 0; transform: translateY(8px) scale(0.985); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes g-card {
+  from { opacity: 0; transform: translateY(12px) scale(0.968); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Slider de conversaciones (Cómo se cobra) */
+input[type='range'].slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  margin: 0;
+  cursor: pointer;
+}
+input[type='range'].slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color-line-3);
+}
+input[type='range'].slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 3px solid var(--color-surface);
+  box-shadow: 0 2px 10px rgba(0, 223, 129, 0.45);
+  margin-top: -12px;
+  cursor: grab;
+}
+input[type='range'].slider::-moz-range-track {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color-line-3);
+}
+input[type='range'].slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 3px solid var(--color-surface);
+  box-shadow: 0 2px 10px rgba(0, 223, 129, 0.45);
+}
+input[type='range'].slider:focus-visible {
+  outline: none;
+}
+input[type='range'].slider:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* Selects oscuros: chevron propio y color atenuado hasta elegir */
+select.field {
+  -webkit-appearance: none;
+  appearance: none;
+  padding-right: 44px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23F1F7F6' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M3.5 5.75 8 10.25l4.5-4.5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+select.field.is-empty {
+  color: var(--color-text-4);
+}
+select.field option {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+textarea.field {
+  height: auto;
+  min-height: 110px;
+  padding: 12px 14px;
+  resize: vertical;
 }

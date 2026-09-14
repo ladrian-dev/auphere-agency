@@ -28,8 +28,8 @@ export function FinalCta() {
 
         <div className="relative">
           <CtaHalo />
-          <div className="relative">
-            <CalEmbed />
+          <div className="relative overflow-hidden rounded-2xl border border-[var(--color-bone)]/15 bg-[var(--color-bone)] shadow-2xl shadow-black/30">
+            <CalEmbed theme="light" minHeight={650} />
           </div>
         </div>
 

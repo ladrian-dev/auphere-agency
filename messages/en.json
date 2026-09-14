@@ -6,51 +6,52 @@
   "a11y": {
     "skipToContent": "Skip to content"
   },
-  "nav": {
-    "howItWorks": "How it works",
-    "useCases": "Use cases",
-    "cases": "Cases",
-    "faq": "FAQ",
-    "cta": "Book",
-    "platform": "Platform",
-    "solutions": "Solutions",
-    "partnersMenu": "Partners",
-    "enterprise": "Enterprise",
-    "openMenu": "Open menu",
-    "closeMenu": "Close menu",
-    "menu": {
-      "platformWhat": {
-        "label": "What we build",
-        "desc": "The full lifecycle and the 10 capabilities"
-      },
-      "platformSecurity": {
-        "label": "Security & isolation",
-        "desc": "The 9 controls, with the mechanism"
-      },
-      "platformTrust": {
-        "label": "Trust",
-        "desc": "Data, Article 50 and the full posture"
-      },
-      "solutionsSectors": {
-        "label": "By sector",
-        "desc": "9 verticals, from barbershops to clinics"
-      },
-      "solutionsWhatsapp": {
-        "label": "WhatsApp agent",
-        "desc": "The channel where your demand lives"
-      },
-      "partnersJoin": {
-        "label": "Become a partner",
-        "desc": "Resell under your brand; we operate"
-      },
-      "partnersEmbedded": {
-        "label": "Embed Auphere",
-        "desc": "AI inside your product, via API"
-      },
-      "partnersDocs": {
-        "label": "API documentation",
-        "desc": "The technical contract, published"
-      }
+  "site": {
+    "header": {
+      "home": "Home",
+      "how": "How it works",
+      "skills": "Capabilities",
+      "features": "Features",
+      "pricing": "Pricing model",
+      "faq": "FAQ",
+      "partners": "Partners",
+      "enterprise": "Enterprise",
+      "cta": "Book now",
+      "language": "Language",
+      "languageEs": "Español",
+      "languageEn": "English",
+      "menu": "Menu",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "sections": "Sections"
+    },
+    "footer": {
+      "tagline": "The AI agent that serves your business, run by the same team that builds it.",
+      "social": "Social media",
+      "pages": "Pages",
+      "resources": "Resources",
+      "legal": "Legal",
+      "contact": "Contact",
+      "home": "Home",
+      "partners": "Partners",
+      "enterprise": "Enterprise",
+      "about": "About us",
+      "skills": "Capabilities",
+      "how": "How it works",
+      "pricing": "Pricing model",
+      "privacy": "Privacy",
+      "terms": "Terms and conditions",
+      "security": "Security",
+      "book": "Book a meeting",
+      "rights": "All rights reserved. © 2026 • Auphere"
+    },
+    "cal": {
+      "title": "Diagnostic · 30 min",
+      "meta": "Europe/Madrid · 30 min",
+      "b1": "Free · no commitment",
+      "b2": "With the engineer who runs the platform",
+      "b3": "You leave with a clear yes or no, and the scope in writing",
+      "loading": "Loading calendar…"
     }
   },
   "hero": {
@@ -2431,31 +2432,6 @@
       "next": "Next",
       "required": "Required",
       "version": "v0.1"
-    }
-  },
-  "footer": {
-    "tagline": "Bespoke AI agents, built, run and improved for the operations that keep your business moving.",
-    "product": {
-      "title": "Product",
-      "how": "How it works",
-      "useCases": "Use cases",
-      "docs": "Documentation",
-      "cases": "Cases",
-      "faq": "FAQ",
-      "platform": "Platform"
-    },
-    "company": {
-      "title": "Company",
-      "contact": "Talk to us",
-      "about": "About",
-      "enterprise": "Enterprise",
-      "partners": "Partners"
-    },
-    "legal": {
-      "title": "Legal & Trust",
-      "privacy": "Privacy",
-      "terms": "Terms",
-      "trust": "Trust & Security"
     }
   },
   "threeWays": {

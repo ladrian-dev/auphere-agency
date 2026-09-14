@@ -1,21 +1,21 @@
 /*
  * Auphere — Design Tokens
- * Source of truth: ~/Work/Auphere/brand/brand-system.md
- * Validated WCAG 2.2 AA on critical fg/bg pairs.
+ * Fuente de verdad: design_handoff_auphere_web/README.md §Design tokens
+ * (rediseño AIaaS 2026-09). Una sola familia (Helvena), pesos 400/500/600,
+ * un acento (#00DF81) sobre fondo profundo (#032221).
  */
 
 @theme {
   /* ─────────────────────────────────────────────
-   * Color · primarios (escala verde Auphere)
+   * Color · escala de marca
    * ───────────────────────────────────────────── */
-  --color-rich-black:        #0D0F01;  /* --ink — texto darkest */
-  --color-dark-green:        #032221;  /* superficies inmersivas alt */
-  --color-bangladesh-green:  #03624C;  /* --primary-deep · brand dark */
-  --color-mountain-meadow:   #2CC295;  /* --primary-mid · hover */
-  --color-caribbean-green:   #00DF81;  /* --primary · CTAs, links */
-  --color-anti-flash:        #F1F7F6;  /* --bone — bg claro principal */
+  --color-rich-black:        #0D0F01;
+  --color-dark-green:        #032221;  /* fondo del sitio */
+  --color-bangladesh-green:  #03624C;
+  --color-mountain-meadow:   #2CC295;
+  --color-caribbean-green:   #00DF81;  /* acento único */
+  --color-anti-flash:        #F1F7F6;  /* bone · texto */
 
-  /* secundarios (escala verde extendida) */
   --color-pine:              #0B453A;
   --color-basil:             #116958;
   --color-forest:            #095544;
@@ -25,22 +25,37 @@
   --color-sand:              #E4ECEA;
 
   /* ─────────────────────────────────────────────
-   * Color · roles semánticos (alias humanos)
+   * Color · roles semánticos del rediseño
    * ───────────────────────────────────────────── */
   --color-ink:               var(--color-rich-black);
   --color-bone:              var(--color-anti-flash);
+  --color-surface:           var(--color-dark-green);
+  --color-surface-deep:      var(--color-dark-green);
   --color-primary:           var(--color-caribbean-green);
+  --color-on-primary:        var(--color-dark-green);
   --color-primary-mid:       var(--color-mountain-meadow);
   --color-primary-deep:      var(--color-bangladesh-green);
   --color-accent-bright:     var(--color-caribbean-green);
   --color-accent-mid:        var(--color-mint);
   --color-accent-soft:       var(--color-pistachio);
+  --color-alert:             #A8443A;  /* solo iconos «problema» */
 
-  /* Attio-inspired refined gray scale (jerarquía por color, no por size)
-   * NOTE: --color-ink-muted bumped from 55% → 65% on 2026-05-25 to pass WCAG 1.4.3 AA
-   * contrast (4.5:1 minimum) against --color-bone background. Verified via axe-core
-   * 4.10.2 — previous 55% mix computed to #74776F → 4.2:1 (failed AA across 39 nodes).
-   * --color-ink-dim kept at 30% for decorative/disabled states (not body copy). */
+  /* Texto sobre fondo profundo */
+  --color-text:              var(--color-anti-flash);
+  --color-text-2:            rgba(241, 247, 246, 0.72);
+  --color-text-3:            rgba(241, 247, 246, 0.55);
+  --color-text-4:            rgba(241, 247, 246, 0.45);
+
+  /* Superficies y líneas sobre fondo profundo */
+  --color-card:              rgba(241, 247, 246, 0.04);
+  --color-card-2:            rgba(241, 247, 246, 0.06);
+  --color-line:              rgba(241, 247, 246, 0.10);
+  --color-line-2:            rgba(241, 247, 246, 0.12);
+  --color-line-3:            rgba(241, 247, 246, 0.14);
+  --color-line-4:            rgba(241, 247, 246, 0.18);
+  --color-primary-tint:      rgba(0, 223, 129, 0.12);
+
+  /* Escala gris sobre bone — la conservan las páginas heredadas (claras). */
   --color-ink-dim:           color-mix(in srgb, var(--color-ink) 30%, var(--color-bone));
   --color-ink-muted:         color-mix(in srgb, var(--color-ink) 65%, var(--color-bone));
   --color-ink-subtle:        color-mix(in srgb, var(--color-ink) 12%, var(--color-bone));
@@ -49,38 +64,40 @@
   /* Estados */
   --color-status-positive:   var(--color-caribbean-green);
   --color-status-warning:    #B5874A;
-  --color-status-danger:     #A8443A;
+  --color-status-danger:     var(--color-alert);
   --color-status-info:       var(--color-mint);
 
-  /* ─────────────────────────────────────────────
-   * v3 §10.1 — superficies oscuras extendidas y escala de datos
-   * (/enterprise y /platform/security leen sobre oscuro)
-   * ───────────────────────────────────────────── */
-  --color-surface-deep:      var(--color-dark-green);
-  /* Escala de datos para tablas de garantías (✅ / — / 🗓).
-   * Base calibrada para bone; la utility surface-deep las remapea a las
-   * variantes brillantes para mantener contraste sobre oscuro. */
-  --color-data-positive:     var(--color-forest);   /* AA sobre bone (frog daba 4.1:1) */
+  /* Escala de datos (tablas heredadas) */
+  --color-data-positive:     var(--color-forest);
   --color-data-neutral:      color-mix(in srgb, var(--color-ink) 45%, var(--color-bone));
-  --color-data-pending:      #8A5A15;               /* AA sobre bone */
+  --color-data-pending:      #8A5A15;
 
-  /* Medidas tipográficas por género de página */
   --measure-editorial: 58ch;
   --measure-technical: 68ch;
+  --measure-legal:     72ch;
 
   /* ─────────────────────────────────────────────
-   * Tipografía
+   * Tipografía — Helvena única familia, pesos 400/500/600.
+   * `--font-accent` y `--font-mono` se conservan como alias para las páginas
+   * heredadas, pero resuelven a Helvena: no hay segunda familia.
    * ───────────────────────────────────────────── */
-  --font-display: var(--font-display), system-ui, -apple-system, sans-serif;
-  --font-body:    var(--font-display), system-ui, -apple-system, sans-serif;
-  --font-accent:  var(--font-accent), Georgia, serif;
-  --font-mono:    var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+  --font-display: var(--font-helvena), system-ui, -apple-system, sans-serif;
+  --font-body:    var(--font-helvena), system-ui, -apple-system, sans-serif;
+  --font-accent:  var(--font-helvena), system-ui, -apple-system, sans-serif;
+  --font-mono:    var(--font-helvena), system-ui, -apple-system, sans-serif;
 
-  /* Escala — tokens estáticos para uso directo */
+  --font-weight-normal:   400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+  /* Nunca 700+. Las utilidades `font-bold` quedan igualadas a 600. */
+  --font-weight-bold:      600;
+  --font-weight-extrabold: 600;
+  --font-weight-black:     600;
+
   --text-xs:    12px;
   --text-sm:    14px;
   --text-base:  16px;
-  --text-md:    18px;
+  --text-md:    17px;
   --text-lg:    20px;
   --text-xl:    24px;
   --text-2xl:   32px;
@@ -89,7 +106,6 @@
   --text-5xl:   84px;
   --text-6xl:   120px;
 
-  /* Tracking */
   --tracking-tightest: -0.04em;
   --tracking-tighter:  -0.03em;
   --tracking-tight:    -0.02em;
@@ -97,57 +113,59 @@
   --tracking-wide:     0.04em;
   --tracking-eyebrow:  0.12em;
 
-  /* Leading */
-  --leading-tight:    1.05;
+  --leading-tight:    1.04;
   --leading-snug:     1.2;
   --leading-normal:   1.5;
-  --leading-relaxed:  1.65;
+  --leading-relaxed:  1.6;
 
   /* ─────────────────────────────────────────────
-   * Spacing — NO declarar nada aquí.
-   *
-   * En Tailwind 4 el namespace `--spacing-*` no crea tokens paralelos:
-   * reescribe utilidades. Dos accidentes ya vividos (ver
-   * ~/Work/Auphere/landing/audit-2026-08-09-landing-v3.md §A-1):
-   *
-   *   1. `--spacing-1 … --spacing-11` sobrescribían la escala numérica
-   *      entera → `w-10` valía 128 px (el hamburguesa del nav era un óvalo
-   *      de 128 px) y la escala dejaba de ser monótona: `h-8` (64 px) >
-   *      `h-12` (48 px).
-   *   2. Renombrarlos a claves con nombre tampoco es seguro: la clave
-   *      `block` generaba `.inline-block { inline-size: 48px }`, que colisiona
-   *      con la utilidad de display `inline-block` y encogía cada palabra
-   *      del H1 a 48 px.
-   *
-   * La escala de espaciado es la de Tailwind (`--spacing: 0.25rem`, base 4 px).
-   * Ritmo editorial de referencia: 4 · 8 · 12 · 16 · 24 · 32 · 48 · 64 · 96 ·
-   * 128 · 192, que en utilidades es 1 · 2 · 3 · 4 · 6 · 8 · 12 · 16 · 24 · 32 · 48.
+   * Breakpoints propios del rediseño (además de los de Tailwind)
+   *   tab  ≤760 → `max-tab:`   (móvil)
+   *   desk ≥960 → `desk:`      (hero en dos columnas)
+   *   cal  ≥900 → `cal:`       (panel Cal en dos columnas)
+   *   nav  ≥1100 → `nav:`      (enlaces del header)
+   * ───────────────────────────────────────────── */
+  --breakpoint-tab:  761px;
+  --breakpoint-cal:  900px;
+  --breakpoint-desk: 960px;
+  --breakpoint-nav:  1100px;
+
+  /* ─────────────────────────────────────────────
+   * Spacing — NO declarar nada aquí (ver auditoría 2026-08-09 §A-1:
+   * `--spacing-*` reescribe la escala de utilidades de Tailwind 4).
    * ───────────────────────────────────────────── */
 
   /* ─────────────────────────────────────────────
-   * Borders / Radii — sistema único 0·4·8·999
+   * Radios — pills 999 · tarjetas 16/20/24 · paneles 32 (24 en móvil)
    * ───────────────────────────────────────────── */
   --radius-none: 0;
   --radius-sm:   4px;
   --radius-md:   8px;
-  --radius-lg:   16px;     /* solo cards grandes editoriales (Attio) */
-  --radius-xl:   24px;     /* mockups */
-  --radius-2xl:  32px;     /* hero card */
+  --radius-lg:   16px;
+  --radius-card: 20px;
+  --radius-xl:   24px;
+  --radius-2xl:  32px;
   --radius-pill: 999px;
 
   /* ─────────────────────────────────────────────
-   * Shadows (editoriales, casi inexistentes)
+   * Sombras — solo halo del CTA y sombra de paneles grandes
    * ───────────────────────────────────────────── */
   --shadow-1: 0 1px 2px rgb(10 15 14 / 0.04);
   --shadow-2: 0 4px 16px rgb(10 15 14 / 0.06);
   --shadow-3: 0 16px 48px rgb(10 15 14 / 0.10);
+  --shadow-cta:   0 12px 36px -12px rgba(0, 223, 129, 0.7);
+  --shadow-cta-sm: 0 10px 30px -10px rgba(0, 223, 129, 0.6);
+  --shadow-panel: 0 60px 120px -60px rgba(0, 0, 0, 0.8);
+  --shadow-pop:   0 20px 50px -20px rgba(0, 0, 0, 0.7);
   --shadow-glow: 0 0 0 4px color-mix(in srgb, var(--color-primary) 20%, transparent);
 
   /* ─────────────────────────────────────────────
-   * Motion — easings y durations
+   * Movimiento — cubic-bezier(.32,.72,0,1); hover 200 ms; entradas 400–800 ms
    * ───────────────────────────────────────────── */
   --ease-out:    cubic-bezier(0.32, 0.72, 0, 1);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-cine:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-line:   cubic-bezier(0.22, 1, 0.36, 1);
 
   --dur-instant: 80ms;
   --dur-fast:    200ms;
@@ -155,9 +173,7 @@
   --dur-slow:    800ms;
   --dur-reveal:  1200ms;
 
-  /* ─────────────────────────────────────────────
-   * Backgrounds editoriales (Attio-inspired)
-   * ───────────────────────────────────────────── */
+  /* Fondos heredados (páginas claras) */
   --bg-dot-grid: radial-gradient(
     circle at 1px 1px,
     color-mix(in srgb, var(--color-ink) 7%, transparent) 1px,
@@ -173,7 +189,380 @@
 }
 
 /* ─────────────────────────────────────────────
- * Custom utilities
+ * Contenedor y ritmo del rediseño
+ * ───────────────────────────────────────────── */
+
+/** Contenedor 1200 px con gutter fluido. */
+@utility container-site {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: clamp(20px, 4vw, 48px);
+  box-sizing: border-box;
+}
+
+/** Ritmo entre secciones: 80–140 px en desktop, 56–80 px en móvil. */
+@utility section-y {
+  padding-block: clamp(80px, 10vw, 140px);
+  @media (width < 761px) {
+    padding-block: clamp(56px, 14vw, 80px);
+  }
+}
+
+/** Variante para páginas interiores (Partners / Enterprise): 64–120 px. */
+@utility section-y-inner {
+  padding-block: clamp(64px, 8vw, 120px);
+  @media (width < 761px) {
+    padding-block: clamp(56px, 14vw, 80px);
+  }
+}
+
+/** Variante densa para bloques técnicos heredados. */
+@utility section-y-tight {
+  padding-block: clamp(3rem, 5vw, 6rem);
+}
+
+/** Hero de página interior heredada. Reserva el header fijo. */
+@utility hero-y {
+  padding-top: clamp(9rem, 4vw + 7rem, 11rem);
+  padding-bottom: clamp(3.5rem, 6vw, 7rem);
+}
+
+@utility section-edge {
+  border-top: 1px solid var(--section-edge, var(--color-line));
+}
+
+/* ─────────────────────────────────────────────
+ * Tipografía por rol (README §Design tokens)
+ * ───────────────────────────────────────────── */
+
+/** H1 del hero de la home. */
+@utility type-h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(38px, 5.4vw, 66px);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+  @media (width < 761px) {
+    font-size: clamp(34px, 9.5vw, 42px);
+    line-height: 1.08;
+  }
+}
+
+/** H1 de los heroes cinematográficos (Partners / Enterprise). */
+@utility type-h1-cine {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(36px, min(6.4vh, 4.6vw), 76px);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  @media (width < 761px) {
+    font-size: clamp(34px, 10vw, 48px);
+  }
+}
+
+/** H1 de artículo legal. */
+@utility type-h1-article {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(34px, 4.6vw, 56px);
+  line-height: 1.06;
+  letter-spacing: -0.028em;
+  text-wrap: balance;
+}
+
+/** H2 de sección. Máximo dos líneas en desktop. */
+@utility type-h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.06;
+  letter-spacing: -0.028em;
+  text-wrap: balance;
+  @media (width < 761px) {
+    font-size: clamp(28px, 7.6vw, 34px);
+    line-height: 1.12;
+  }
+}
+
+/** H3 de tarjeta o bloque. */
+@utility type-h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  @media (width < 761px) {
+    font-size: clamp(20px, 5.6vw, 24px);
+    line-height: 1.2;
+  }
+}
+
+/** H3 grande de las filas de habilidades. */
+@utility type-h3-feature {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+  @media (width < 761px) {
+    font-size: clamp(20px, 5.6vw, 24px);
+    line-height: 1.2;
+  }
+}
+
+/** Título de tarjeta o ítem de lista (heredado). */
+@utility type-h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.0625rem, 1.2vw, 1.25rem);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+/** Eyebrow: 14 px 600 acento. */
+@utility type-eyebrow {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--color-primary);
+}
+
+/** Párrafo de apoyo de un H1/H2: 18 px sobre texto secundario. */
+@utility type-lead {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--color-text-2);
+  text-wrap: pretty;
+}
+
+/** Párrafo del hero de la home. */
+@utility type-hero-lead {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(17px, 1.5vw, 20px);
+  line-height: 1.5;
+  color: rgba(241, 247, 246, 0.74);
+  text-wrap: pretty;
+}
+
+/** Entradilla de sección (heredada, ahora sin negrita). */
+@utility type-intro {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+/** Cuerpo 17 / 1.6. */
+@utility type-body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/** Metadato en mayúsculas (heredado). Ya no es monoespaciado. */
+@utility type-meta {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+/* ─────────────────────────────────────────────
+ * Botones — pills. Hover: translateY(-1px) + halo.
+ * ───────────────────────────────────────────── */
+
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  font-family: var(--font-display);
+  transition:
+    transform var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out),
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+  }
+}
+
+/** CTA primario: acento sobre texto profundo. */
+@utility btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  font-weight: 600;
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-cta);
+    color: var(--color-on-primary);
+  }
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+/** Botón fantasma: borde .18 y fondo .04. */
+@utility btn-ghost {
+  background-color: var(--color-card);
+  color: var(--color-text);
+  font-weight: 500;
+  border: 1px solid var(--color-line-4);
+  &:hover {
+    border-color: rgba(241, 247, 246, 0.45);
+    color: var(--color-text);
+  }
+}
+
+/** Botón de borde que se tiñe de acento al pasar (fila de habilidades). */
+@utility btn-outline-accent {
+  background-color: transparent;
+  color: var(--color-text);
+  font-weight: 500;
+  border: 1px solid var(--color-line-4);
+  &:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+}
+
+/* Tamaños */
+@utility btn-lg {
+  height: 52px;
+  padding-inline: 26px;
+  font-size: 16px;
+}
+@utility btn-xl {
+  height: 54px;
+  padding-inline: 28px;
+  font-size: 16px;
+}
+@utility btn-md {
+  height: 48px;
+  padding-inline: 22px;
+  font-size: 15px;
+}
+@utility btn-sm {
+  height: 44px;
+  padding-inline: 18px;
+  font-size: 15px;
+}
+@utility btn-nav {
+  height: 42px;
+  padding-inline: 20px;
+  font-size: 15px;
+}
+
+/* ─────────────────────────────────────────────
+ * Superficies del rediseño
+ * ───────────────────────────────────────────── */
+
+/** Tarjeta: radio 24, borde .12, fondo .04. */
+@utility card {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-line-2);
+  background-color: var(--color-card);
+  @media (width < 761px) {
+    padding: 24px 20px;
+  }
+}
+
+/** Tarjeta que sube el borde a acento al pasar. */
+@utility card-hover {
+  transition: border-color var(--dur-fast) var(--ease-out);
+  &:hover {
+    border-color: rgba(0, 223, 129, 0.5);
+  }
+}
+
+/** Tarjeta con degradado suave (marcos de imagen, paneles medianos). */
+@utility card-gradient {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-line-2);
+  background-image: linear-gradient(180deg, rgba(241, 247, 246, 0.06), rgba(241, 247, 246, 0.02));
+}
+
+/** Panel grande: radio 32 y padding fluido; 24 px / 28×20 en móvil. */
+@utility panel {
+  border-radius: var(--radius-2xl);
+  border: 1px solid var(--color-line-2);
+  background-image: linear-gradient(180deg, rgba(241, 247, 246, 0.06), rgba(241, 247, 246, 0.02));
+  padding: clamp(32px, 5vw, 72px);
+  @media (width < 761px) {
+    border-radius: var(--radius-xl);
+    padding: 28px 20px;
+  }
+}
+
+/** Línea de separación al 10 %. */
+@utility hairline {
+  border-color: var(--color-line);
+}
+
+/** Etiqueta pill pequeña (Hoy / Con fecha). */
+@utility tag {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+@utility tag-accent {
+  background-color: rgba(0, 223, 129, 0.14);
+  color: var(--color-primary);
+}
+@utility tag-muted {
+  background-color: rgba(241, 247, 246, 0.08);
+  color: rgba(241, 247, 246, 0.7);
+}
+
+/** Campo de formulario oscuro: 48 px, radio 12. */
+@utility field {
+  width: 100%;
+  min-width: 0;
+  height: 48px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: var(--font-display);
+  color: var(--color-text);
+  background-color: rgba(241, 247, 246, 0.05);
+  border: 1px solid var(--color-line-3);
+  border-radius: 12px;
+  outline: none;
+  transition: border-color var(--dur-fast) var(--ease-out);
+  &::placeholder {
+    color: var(--color-text-4);
+  }
+  &:focus {
+    border-color: var(--color-primary);
+  }
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+/* ─────────────────────────────────────────────
+ * Superficies heredadas (páginas claras que aún no se han rediseñado)
  * ───────────────────────────────────────────── */
 
 @utility dot-grid {
@@ -204,8 +593,6 @@
   --section-edge: var(--color-ink-subtle);
 }
 
-/* v3 §10.1 — superficie inmersiva de /enterprise y /platform/security.
- * Remapea la escala de datos a variantes brillantes (contraste sobre oscuro). */
 @utility surface-deep {
   background-color: var(--color-surface-deep);
   color: var(--color-bone);
@@ -215,127 +602,6 @@
   --color-data-pending: #D9A96A;
 }
 
-/* ─────────────────────────────────────────────
- * Capa de composición — ritmo, tipografía y superficies
- *
- * Existe porque la v3 se construyó en cinco fases y cada una fijó sus propios
- * valores a mano: 5 ritmos verticales distintos (`py-24 md:py-32`,
- * `py-20 md:py-28`, `py-16 md:py-24`, `py-14 md:py-20`, `py-20 md:py-24`) y
- * ~50 recetas tipográficas para lo que son cuatro roles. El resultado es que
- * cada página se leía como un sitio distinto.
- *
- * Regla: ninguna sección declara su propio padding vertical ni su propia
- * escala de titular. Se usan estas utilidades. Los valores salen de
- * brand-system.md §2 (escala) y §4 (ritmo vertical 96–128 px).
- * ───────────────────────────────────────────── */
-
-/* ── Ritmo vertical ─────────────────────────── */
-
-/** Ritmo canónico entre secciones: 64 px en móvil → 128 px en desktop. */
-@utility section-y {
-  padding-block: clamp(4rem, 7vw, 8rem);
-}
-
-/** Variante densa para bloques técnicos y de apoyo: 48 → 96 px. */
-@utility section-y-tight {
-  padding-block: clamp(3rem, 5vw, 6rem);
-}
-
-/** Hero de página interior. El padding-top reserva el nav fijo (144 → 176 px). */
-@utility hero-y {
-  padding-top: clamp(9rem, 4vw + 7rem, 11rem);
-  padding-bottom: clamp(3.5rem, 6vw, 7rem);
-}
-
-/* ── Separadores de sección ─────────────────── */
-
-/**
- * Borde superior de sección. El color se resuelve por superficie: cada
- * utilidad de superficie redefine `--section-edge`, así que una sección
- * oscura nunca hereda el borde de la clara (y al revés).
- */
-@utility section-edge {
-  border-top: 1px solid var(--section-edge, var(--color-ink-subtle));
-}
-
-/* ── Escala tipográfica por rol ─────────────── */
-
-/** H1 de página. Único en la pantalla.
- *  El máximo (56 px) es el que ya tenía el hero de la home, que está calibrado
- *  para que el CTA primario quede sobre el fold en 1280 × 720 (auditoría §B-1).
- *  Las páginas interiores bajan de 62 a 56 px y pasan a compartirlo. */
-@utility type-h1 {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(2.25rem, 4.4vw, 3.5rem);
-  line-height: 1.04;
-  letter-spacing: -0.035em;
-  text-wrap: balance;
-}
-
-/** H2 de sección. */
-@utility type-h2 {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(2rem, 4.2vw, 3.25rem);
-  line-height: 1.06;
-  letter-spacing: -0.03em;
-  text-wrap: balance;
-}
-
-/** H3 — bloques dentro de una sección, tarjetas grandes, pull quotes cortos. */
-@utility type-h3 {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
-  line-height: 1.1;
-  letter-spacing: -0.025em;
-  text-wrap: balance;
-}
-
-/** Título de tarjeta o de ítem de lista — el escalón por debajo de `type-h3`. */
-@utility type-h4 {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: clamp(1.0625rem, 1.2vw, 1.25rem);
-  line-height: 1.3;
-  letter-spacing: -0.01em;
-}
-
-/** Subtítulo del hero — acompaña siempre a `type-h1`. */
-@utility type-lead {
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
-  line-height: 1.45;
-  text-wrap: pretty;
-}
-
-/** Entradilla de sección — acompaña siempre a `type-h2`. */
-@utility type-intro {
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: clamp(1rem, 1.6vw, 1.25rem);
-  line-height: 1.5;
-  text-wrap: pretty;
-}
-
-/** Metadato monoespaciado: marcadores, microcopy, etiquetas de dato. */
-@utility type-meta {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  line-height: 1.4;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-}
-
-/* ── Superficies de hero ────────────────────── */
-
-/**
- * Degradado de hero de las páginas de plataforma y canal. Estaba escrito a
- * mano, idéntico, en `/platform` y `/partners`; cualquier ajuste en una
- * dejaba la otra atrás.
- */
 @utility surface-hero {
   background-image: radial-gradient(
     120% 90% at 100% 50%,
@@ -347,11 +613,6 @@
   --section-edge: color-mix(in srgb, var(--color-bone) 12%, transparent);
 }
 
-/**
- * Trama de puntos de los heroes oscuros. Antes era un `<div aria-hidden>` con
- * estilo inline repetido en cuatro páginas, con dos tamaños de rejilla
- * distintos. Ahora es una capa del propio hero.
- */
 @utility hero-dots {
   position: relative;
   isolation: isolate;

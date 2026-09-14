@@ -6,51 +6,52 @@
   "a11y": {
     "skipToContent": "Saltar al contenido"
   },
-  "nav": {
-    "howItWorks": "Cómo trabajamos",
-    "useCases": "Casos de uso",
-    "cases": "Casos",
-    "faq": "FAQ",
-    "cta": "Reservar",
-    "platform": "Plataforma",
-    "solutions": "Soluciones",
-    "partnersMenu": "Partners",
-    "enterprise": "Empresas",
-    "openMenu": "Abrir menú",
-    "closeMenu": "Cerrar menú",
-    "menu": {
-      "platformWhat": {
-        "label": "Qué construimos",
-        "desc": "El ciclo de vida completo y las 10 capacidades"
-      },
-      "platformSecurity": {
-        "label": "Seguridad y aislamiento",
-        "desc": "Los 9 controles, con el mecanismo"
-      },
-      "platformTrust": {
-        "label": "Confianza",
-        "desc": "Datos, art. 50 y postura completa"
-      },
-      "solutionsSectors": {
-        "label": "Por sector",
-        "desc": "9 verticales, de barberías a clínicas"
-      },
-      "solutionsWhatsapp": {
-        "label": "Agente de WhatsApp",
-        "desc": "El canal donde vive tu demanda"
-      },
-      "partnersJoin": {
-        "label": "Ser partner",
-        "desc": "Revende con tu marca; operamos nosotros"
-      },
-      "partnersEmbedded": {
-        "label": "Integrar Auphere",
-        "desc": "IA dentro de tu producto, vía API"
-      },
-      "partnersDocs": {
-        "label": "Documentación API",
-        "desc": "El contrato técnico, publicado"
-      }
+  "site": {
+    "header": {
+      "home": "Inicio",
+      "how": "Cómo funciona",
+      "skills": "Habilidades",
+      "features": "Funciones",
+      "pricing": "Cómo se cobra",
+      "faq": "FAQ",
+      "partners": "Partners",
+      "enterprise": "Enterprise",
+      "cta": "Agenda ahora",
+      "language": "Idioma",
+      "languageEs": "Español",
+      "languageEn": "English",
+      "menu": "Menú",
+      "openMenu": "Abrir menú",
+      "closeMenu": "Cerrar menú",
+      "sections": "Secciones"
+    },
+    "footer": {
+      "tagline": "El agente de IA que atiende tu negocio, operado por el mismo equipo que lo construye.",
+      "social": "Redes sociales",
+      "pages": "Páginas",
+      "resources": "Recursos",
+      "legal": "Legal",
+      "contact": "Contacto",
+      "home": "Inicio",
+      "partners": "Partners",
+      "enterprise": "Enterprise",
+      "about": "Sobre nosotros",
+      "skills": "Habilidades",
+      "how": "Cómo funciona",
+      "pricing": "Cómo se cobra",
+      "privacy": "Privacidad",
+      "terms": "Términos y condiciones",
+      "security": "Seguridad",
+      "book": "Agenda una reunión",
+      "rights": "Todos los derechos reservados. © 2026 • Auphere"
+    },
+    "cal": {
+      "title": "Diagnóstico · 30 min",
+      "meta": "Europe/Madrid · 30 min",
+      "b1": "Sin coste · sin compromiso",
+      "b2": "Con el ingeniero que opera la plataforma",
+      "b3": "Sales con un sí o un no claro, y el alcance por escrito",
+      "loading": "Cargando calendario…"
     }
   },
   "hero": {
@@ -2431,31 +2432,6 @@
       "next": "Siguiente",
       "required": "Requerido",
       "version": "v0.1"
-    }
-  },
-  "footer": {
-    "tagline": "Agentes de IA a medida, construidos, operados y mejorados para las operaciones que mantienen tu negocio en marcha.",
-    "product": {
-      "title": "Producto",
-      "how": "Cómo trabajamos",
-      "useCases": "Casos de uso",
-      "docs": "Documentación",
-      "cases": "Casos",
-      "faq": "FAQ",
-      "platform": "Plataforma"
-    },
-    "company": {
-      "title": "Empresa",
-      "contact": "Hablemos",
-      "about": "Sobre nosotros",
-      "enterprise": "Empresas",
-      "partners": "Partners"
-    },
-    "legal": {
-      "title": "Legal & Trust",
-      "privacy": "Privacidad",
-      "terms": "Términos",
-      "trust": "Trust & Seguridad"
     }
   },
   "threeWays": {
