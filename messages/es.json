@@ -152,29 +152,6 @@
           "body": "El agente entra en acción y comienza a atender a tus clientes. Mantenemos una supervisión constante, medimos los resultados clave y optimizamos su rendimiento mes a mes.",
           "alt": "Captura · métricas del primer mes"
         }
-      },
-      "statsLabel": "Cifras clave",
-      "stats": {
-        "s1": {
-          "prefix": "",
-          "suffix": " min",
-          "label": "Primera reunión, sin coste"
-        },
-        "s2": {
-          "prefix": "2–",
-          "suffix": " sem",
-          "label": "Hasta estar en producción"
-        },
-        "s3": {
-          "prefix": "",
-          "suffix": "/7",
-          "label": "Supervisado por nuestro equipo"
-        },
-        "s4": {
-          "prefix": "",
-          "suffix": " %",
-          "label": "Datos alojados en la UE"
-        }
       }
     },
     "skills": {
@@ -285,9 +262,7 @@
     "agenda": {
       "eyebrow": "Empieza",
       "title": "Deja los chats. Conéctate a lo real",
-      "lead": "30 minutos con quien va a operar tu agente. Gratis y sin compromiso: sales con una respuesta clara, en un sentido u otro.",
-      "cta": "Agenda ahora",
-      "back": "Volver a las funciones"
+      "lead": "30 minutos con quien va a operar tu agente. Gratis y sin compromiso: sales con una respuesta clara, en un sentido u otro."
     }
   },
   "hero": {

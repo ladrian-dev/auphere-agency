@@ -152,29 +152,6 @@
           "body": "The agent goes live and starts serving your customers. We supervise it constantly, measure the key results and improve its performance month after month.",
           "alt": "Screenshot · first-month metrics"
         }
-      },
-      "statsLabel": "Key figures",
-      "stats": {
-        "s1": {
-          "prefix": "",
-          "suffix": " min",
-          "label": "First meeting, free of charge"
-        },
-        "s2": {
-          "prefix": "2–",
-          "suffix": " wks",
-          "label": "Until it is in production"
-        },
-        "s3": {
-          "prefix": "",
-          "suffix": "/7",
-          "label": "Supervised by our team"
-        },
-        "s4": {
-          "prefix": "",
-          "suffix": " %",
-          "label": "Data hosted in the EU"
-        }
       }
     },
     "skills": {
@@ -285,9 +262,7 @@
     "agenda": {
       "eyebrow": "Get started",
       "title": "Leave the chats. Connect with what matters",
-      "lead": "30 minutes with the people who will run your agent. Free and no strings: you leave with a clear answer, one way or the other.",
-      "cta": "Book now",
-      "back": "Back to features"
+      "lead": "30 minutes with the people who will run your agent. Free and no strings: you leave with a clear answer, one way or the other."
     }
   },
   "hero": {

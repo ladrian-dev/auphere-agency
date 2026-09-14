@@ -78,7 +78,6 @@ export function Skills() {
                   className="btn btn-outline-accent btn-sm mt-[26px] max-tab:min-w-[220px]"
                 >
                   {t('cta')}
-                  <span aria-hidden>→</span>
                 </CtaLink>
               </div>
             </article>

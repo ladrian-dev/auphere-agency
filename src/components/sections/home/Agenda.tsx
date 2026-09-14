@@ -1,9 +1,8 @@
 import { useTranslations } from 'next-intl';
 import { CalPanel } from '@/components/sections/CalPanel';
-import { CtaLink } from '@/components/primitives/CtaLink';
 
 /**
- * Agenda ahora (README §Home 8): H2, párrafo, dos CTAs y el panel de reserva.
+ * Agenda ahora (README §Home 8): H2, párrafo y el panel de reserva.
  */
 export function Agenda() {
   const t = useTranslations('home.agenda');
@@ -25,14 +24,6 @@ export function Agenda() {
             {t('title')}
           </h2>
           <p className="type-lead mt-[18px]">{t('lead')}</p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3 max-tab:flex-col">
-            <CtaLink href="#cal" section="agenda" className="btn btn-primary btn-xl max-tab:h-[52px] max-tab:w-full">
-              {t('cta')}
-            </CtaLink>
-            <a href="#funciones" className="btn btn-ghost h-[54px] px-6 text-[16px] max-tab:h-[52px] max-tab:w-full">
-              {t('back')}
-            </a>
-          </div>
         </div>
         <div id="cal" className="mt-14 scroll-mt-24 max-tab:mt-10">
           <CalPanel />

@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { StatsCounter } from './StatsCounter';
 
 const STEPS = [
   { key: 's1', src: '/img/step-01.webp' },
@@ -8,21 +7,12 @@ const STEPS = [
   { key: 's3', src: '/img/step-03.webp' },
 ] as const;
 
-const STAT_VALUES = { s1: 30, s2: 6, s3: 24, s4: 100 } as const;
-
 /**
  * Cómo funciona (README §Home 4). Cabecera centrada, tres tarjetas numeradas
- * con imagen 904:368 y, debajo, cuatro cifras con contador animado.
+ * con imagen 904:368.
  */
 export function HowItWorks() {
   const t = useTranslations('home.how');
-
-  const stats = (['s1', 's2', 's3', 's4'] as const).map((k) => ({
-    value: STAT_VALUES[k],
-    prefix: t(`stats.${k}.prefix`),
-    suffix: t(`stats.${k}.suffix`),
-    label: t(`stats.${k}.label`),
-  }));
 
   return (
     <section id="como" className="section-y scroll-mt-24">
@@ -56,7 +46,6 @@ export function HowItWorks() {
           ))}
         </ol>
 
-        <StatsCounter stats={stats} label={t('statsLabel')} />
       </div>
     </section>
   );
