@@ -441,6 +441,144 @@
       }
     }
   },
+  "legal": {
+    "eyebrow": "Legal",
+    "updated": "Última actualización: 12 de septiembre de 2026",
+    "privacy": {
+      "meta": {
+        "title": "Política de privacidad",
+        "description": "Qué datos trata Auphere, para qué y con qué base legal. Escrito para leerse."
+      },
+      "title": "Política de privacidad",
+      "lead": "Qué datos tratamos, para qué y con qué base. Escrito para leerse, no para cubrirse.",
+      "items": {
+        "s01": {
+          "title": "Quién trata tus datos",
+          "body": "Auphere Intelligence S.L. Con domicilio en España, es la responsable del tratamiento de los datos que nos facilitas a través de esta web y de nuestros canales de contacto. Para los datos que nuestros agentes procesan en nombre de un cliente, Auphere actúa como encargada del tratamiento y el cliente es el responsable."
+        },
+        "s02": {
+          "title": "Qué datos recogemos",
+          "body": "En la web: los que introduces en formularios (nombre, email, empresa, país y el mensaje que escribas), y datos técnicos mínimos de navegación mediante analítica sin cookies. En el servicio: las conversaciones que tus clientes mantienen con el agente, los datos de integración que autorizas (agenda, CRM, pagos) y registros de operación."
+        },
+        "s03": {
+          "title": "Para qué los usamos",
+          "body": "Para responder a tu solicitud, organizar la reunión que nos pides, prestar y operar el servicio contratado, cumplir obligaciones legales y mejorar el agente de cada cliente con sus propios datos. Nunca usamos las conversaciones de un cliente para entrenar modelos que vendamos a terceros."
+        },
+        "s04": {
+          "title": "Base legal",
+          "body": "Consentimiento cuando nos escribes o solicitas una reunión, ejecución de contrato cuando prestamos el servicio, interés legítimo para la seguridad y la analítica agregada, y obligación legal cuando la ley lo exige."
+        },
+        "s05": {
+          "title": "Dónde se alojan",
+          "body": "En infraestructura ubicada en la Unión Europea por defecto. Los proveedores que no ofrecen región europea están identificados en el anexo de subencargados de cada contrato, con las garantías de transferencia correspondientes."
+        },
+        "s06": {
+          "title": "Cuánto tiempo los guardamos",
+          "body": "Los datos de contacto, mientras dure la relación y hasta 12 meses después. Los datos del servicio, mientras el contrato esté vigente y durante el plazo de exportación acordado tras su fin. Después, se eliminan o anonimizan."
+        },
+        "s07": {
+          "title": "Tus derechos",
+          "body": "Acceso, rectificación, supresión, oposición, limitación y portabilidad. Escríbenos a contacto@auphere.com y te respondemos en un plazo máximo de 30 días. También puedes reclamar ante la Agencia Española de Protección de Datos."
+        },
+        "s08": {
+          "title": "Cambios en esta política",
+          "body": "Si cambia algo relevante, lo publicaremos aquí con fecha y, si eres cliente, te avisaremos antes de que entre en vigor."
+        }
+      }
+    },
+    "terms": {
+      "meta": {
+        "title": "Términos y condiciones",
+        "description": "Las reglas del servicio de agentes de IA operados por Auphere, en el mismo lenguaje en que lo vendemos."
+      },
+      "title": "Términos y condiciones",
+      "lead": "Las reglas del servicio, en el mismo lenguaje en que te lo vendemos.",
+      "items": {
+        "s01": {
+          "title": "Objeto",
+          "body": "Estos términos regulan el uso de la web auphere.com y, junto con el contrato y el acuerdo de tratamiento de datos que firmamos con cada cliente, la prestación del servicio de agentes de IA operados por Auphere."
+        },
+        "s02": {
+          "title": "El servicio",
+          "body": "Auphere diseña, configura, opera y mejora agentes de IA que atienden conversaciones en nombre del cliente. El alcance, los canales, las integraciones y las métricas se fijan por escrito tras la reunión inicial y forman parte del contrato."
+        },
+        "s03": {
+          "title": "Precio y facturación",
+          "body": "El precio se compone de una cuota base y una parte variable según el consumo de los agentes. Se comunica por escrito antes de la firma y no cambia sin aviso previo de al menos 30 días. Las facturas se emiten mensualmente."
+        },
+        "s04": {
+          "title": "Duración y cancelación",
+          "body": "El contrato tiene una permanencia inicial de tres meses. Después, cualquiera de las partes puede cancelar con 30 días de preaviso. Al finalizar, el cliente puede exportar sus datos, conversaciones y configuración."
+        },
+        "s05": {
+          "title": "Obligaciones del cliente",
+          "body": "Facilitar los accesos necesarios a las integraciones acordadas, informar a sus usuarios de que interactúan con un agente de IA cuando la ley lo exija y usar el servicio conforme a la normativa aplicable."
+        },
+        "s06": {
+          "title": "Obligaciones de Auphere",
+          "body": "Operar el servicio con diligencia, supervisarlo, resolver incidencias dentro de los plazos comprometidos, mantener la confidencialidad y tratar los datos conforme a la política de privacidad y al acuerdo de tratamiento."
+        },
+        "s07": {
+          "title": "Propiedad intelectual",
+          "body": "La plataforma y su tecnología son de Auphere. Los datos, las conversaciones, las reglas de negocio y la personalidad del agente configurada para el cliente son del cliente."
+        },
+        "s08": {
+          "title": "Responsabilidad",
+          "body": "Auphere responde de los daños directos derivados de un incumplimiento propio hasta el importe facturado en los 12 meses anteriores. No responde de decisiones tomadas por el cliente a partir de la información del agente ni de fallos de terceros ajenos a su control."
+        },
+        "s09": {
+          "title": "Ley aplicable",
+          "body": "Estos términos se rigen por la legislación española. Para cualquier controversia, las partes se someten a los juzgados y tribunales del domicilio de Auphere, salvo que la ley disponga otra cosa para consumidores."
+        }
+      }
+    },
+    "security": {
+      "meta": {
+        "title": "Seguridad",
+        "description": "Cómo Auphere protege los datos de tus clientes y los tuyos: aislamiento, control de herramientas, cifrado, acceso, despliegues, incidentes."
+      },
+      "title": "Seguridad",
+      "lead": "Cómo protegemos los datos de tus clientes y los tuyos. Lo que está en producción hoy, sin adornos.",
+      "items": {
+        "s01": {
+          "title": "Aislamiento por cliente",
+          "body": "Cada cliente vive en su propia partición lógica, impuesta por la base de datos mediante seguridad a nivel de fila. El código no puede elegir a qué cliente accede, aunque quisiera."
+        },
+        "s02": {
+          "title": "Control de herramientas",
+          "body": "Cada agente tiene una lista explícita de las acciones que puede ejecutar, verificada en dos puntos del sistema. Lo que no está en la lista no se ejecuta."
+        },
+        "s03": {
+          "title": "Cifrado",
+          "body": "Datos cifrados en tránsito (TLS 1.2 o superior) y en reposo. Las credenciales de integración se almacenan cifradas y se rotan bajo demanda."
+        },
+        "s04": {
+          "title": "Acceso del equipo",
+          "body": "Acceso mínimo necesario, autenticación de dos factores obligatoria y registro de auditoría de toda acción realizada por el equipo de Auphere, incluida la identidad real de quien actúa en nombre de un cliente."
+        },
+        "s05": {
+          "title": "Despliegues seguros",
+          "body": "Ningún cambio llega a producción si fallan las pruebas de aislamiento. Cada versión del agente se aprueba antes de publicarse y puede revertirse."
+        },
+        "s06": {
+          "title": "Escalado a personas",
+          "body": "El agente detecta cuando debe parar: fuera de alcance, petición explícita o baja confianza. En esos casos, pasa la conversación completa a una persona designada por el cliente."
+        },
+        "s07": {
+          "title": "Residencia y proveedores",
+          "body": "Infraestructura en la Unión Europea por defecto. Proveedores de modelos con retención cero de datos. Lista de subencargados disponible en el contrato."
+        },
+        "s08": {
+          "title": "Gestión de incidentes",
+          "body": "Monitorización continua con alertas asignadas a una persona. Notificación al cliente de cualquier incidente que afecte a sus datos dentro de los plazos legales."
+        },
+        "s09": {
+          "title": "Cómo reportar una vulnerabilidad",
+          "body": "Si encuentras un problema de seguridad, escríbenos a seguridad@auphere.com. Respondemos en 48 horas laborables y no emprendemos acciones contra quien reporta de buena fe."
+        }
+      }
+    }
+  },
   "hero": {
     "orchestrator": {
       "whatsapp": "WhatsApp",
@@ -2323,318 +2461,6 @@
       "headline": "¿Hablamos?",
       "body": "30 minutos. Sin coste. La llamada la hace un ingeniero del equipo que construye el agente.",
       "button": "Agendar diagnóstico"
-    }
-  },
-  "privacy": {
-    "meta": {
-      "title": "Privacidad",
-      "description": "Cómo Auphere recolecta, usa y protege datos personales, alineado con GDPR, CCPA y LGPD."
-    },
-    "header": {
-      "eyebrow": "PRIVACIDAD",
-      "meta": "Actualizado 2026-05-21",
-      "title": "Cómo manejamos los datos: los tuyos y los de tus clientes.",
-      "intro": "Esta política describe qué recolecta Auphere, por qué, dónde vive, quién puede tocarlo y cuánto tiempo lo conservamos. Aplica a auphere.com, a clientes del servicio gestionado de agentes y a las personas que interactúan con agentes que operamos."
-    },
-    "sections": {
-      "controller": {
-        "title": "Quiénes somos",
-        "p1": "Auphere es el responsable del tratamiento de los datos personales descritos en esta política. Para cualquier consulta sobre privacidad, escribe a contacto@auphere.com; leemos todos los mensajes y respondemos en menos de 30 días.",
-        "p2": "Si resides en el Espacio Económico Europeo, Reino Unido o Suiza, tienes derecho a presentar una reclamación ante tu autoridad local de protección de datos; cooperaremos plenamente."
-      },
-      "dataCollected": {
-        "title": "Datos que recolectamos",
-        "intro": "Solo recolectamos lo necesario para operar el sitio, evaluar encaje en una llamada de diagnóstico, prestar el servicio y cumplir obligaciones legales. Tres grupos de personas, tres conjuntos de datos:",
-        "groups": {
-          "visitors": {
-            "term": "Visitantes del sitio",
-            "description": "Analítica respetuosa con la privacidad (Plausible): sin cookies, sin tracking cross-site, sin identificadores personales. Agregamos páginas vistas, referrers y país (nunca IP)."
-          },
-          "leads": {
-            "term": "Personas que agendan llamada o nos escriben",
-            "description": "Nombre, correo profesional, empresa, el mensaje que enviaste y la grabación de la llamada si das tu consentimiento. Lo usamos para evaluar encaje y responder. Nunca lo vendemos."
-          },
-          "clients": {
-            "term": "Clientes activos y sus usuarios finales",
-            "description": "Lo que tu contrato indica que procesamos por tu cuenta: logs de conversación, metadatos de integración, configuración. Para estos datos somos encargados del tratamiento; tú eres el responsable. Firmamos un DPA antes de tocar datos reales. Cuando el canal es WhatsApp, somos Tech Provider autorizado de Meta Platforms, Inc. y procesamos datos obtenidos vía WhatsApp Business Platform: número de teléfono del usuario final (E.164), profile name, contenido de los mensajes (texto, voz, media, ubicación, reacciones), identificadores de mensaje (wamid) y Business-Scoped User ID (BSUID) — solo para operar el agente que tú nos contrataste."
-          }
-        }
-      },
-      "legalBasis": {
-        "title": "Base legal (GDPR Art. 6)",
-        "items": {
-          "consent": {
-            "term": "Consentimiento",
-            "description": "Lo das al optar por grabar una llamada o suscribirte a algo que ofrecemos. Puedes retirarlo en cualquier momento."
-          },
-          "contract": {
-            "term": "Ejecución de contrato",
-            "description": "Para prestar el diagnóstico, el setup del agente y el servicio gestionado continuo que acordamos por escrito."
-          },
-          "legitimate": {
-            "term": "Interés legítimo",
-            "description": "Para operar el sitio, combatir abuso, evaluar leads entrantes y mejorar los agentes que operamos, siempre que tus derechos fundamentales no prevalezcan."
-          },
-          "legal": {
-            "term": "Obligación legal",
-            "description": "Impuestos, contabilidad, requerimientos regulatorios. Conservamos solo lo que la ley exige, solo el tiempo que exige."
-          }
-        }
-      },
-      "subProcessors": {
-        "title": "Subencargados del tratamiento",
-        "intro": "Usamos una lista reducida de proveedores validados para prestar el servicio. Cada uno está vinculado por un DPA y procesa solo los datos descritos junto a su nombre. Actualizamos esta lista cuando cambia.",
-        "items": {
-          "vercel": {
-            "term": "Vercel (US/EU)",
-            "description": "Hospeda auphere.com y nuestro panel admin. Sin datos de producción de clientes."
-          },
-          "railway": {
-            "term": "Railway (EU)",
-            "description": "Corre la API y el worker que mueven los agentes gestionados."
-          },
-          "postgres": {
-            "term": "PostgreSQL (EU)",
-            "description": "Almacén principal de datos de cliente. Aislamiento por tenant a nivel de fila."
-          },
-          "anthropic": {
-            "term": "Anthropic (EU/US)",
-            "description": "Proveedor de LLM (Claude Sonnet 4.6, Haiku 4.5). Los datos no se usan para entrenar modelos: API zero-retention."
-          },
-          "openai": {
-            "term": "OpenAI (EU/US)",
-            "description": "Proveedor LLM de respaldo (GPT-4o). Mismas condiciones zero-retention."
-          },
-          "meta": {
-            "term": "Meta Platforms, Inc. (US)",
-            "description": "WhatsApp Business Platform (Cloud API y Coexistence). Auphere opera como Tech Provider autorizado: procesamos mensajes, números E.164, profile names, BSUID e identificadores de WABA estrictamente para entregar el canal WhatsApp que contrataste. Meta factura directamente al cliente final el consumo de mensajería."
-          },
-          "composio": {
-            "term": "Composio (EU/US)",
-            "description": "Broker OAuth para integraciones (Calendar, CRM, etc.). Las credenciales son nuestras; Composio media la conexión."
-          },
-          "browserbase": {
-            "term": "Browserbase (EU/US)",
-            "description": "Sesiones de navegador headless para reservar en paneles de terceros, solo cuando el agente debe operar una UI de proveedor."
-          },
-          "langfuse": {
-            "term": "Langfuse (EU)",
-            "description": "Observabilidad LLM: trazas, evaluaciones y ciclos de mejora."
-          },
-          "plausible": {
-            "term": "Plausible (EU)",
-            "description": "Analítica respetuosa con la privacidad para auphere.com. Sin cookies, sin tracking cross-site."
-          },
-          "resend": {
-            "term": "Resend (EU/US)",
-            "description": "Email transaccional para confirmaciones de diagnóstico y notificaciones operativas."
-          },
-          "cal": {
-            "term": "Cal.com (EU)",
-            "description": "Agenda para la llamada de diagnóstico."
-          }
-        }
-      },
-      "retention": {
-        "title": "Cuánto tiempo conservamos los datos",
-        "p1": "Analítica del sitio: agregada, sin caducidad.",
-        "p2": "Datos de la llamada de diagnóstico (notas, grabación si diste consentimiento): 12 meses, después se borran salvo que firmemos un acuerdo.",
-        "p3": "Datos de producción del cliente: durante toda la vigencia del contrato, más una ventana de 30 días tras la terminación para exportación, y luego borrado permanente (logs de auditoría se conservan según exija la ley)."
-      },
-      "rights": {
-        "title": "Tus derechos",
-        "intro": "Independientemente de tu jurisdicción, honramos lo siguiente bajo solicitud. Escribe a contacto@auphere.com.",
-        "items": {
-          "access": {
-            "term": "Acceso",
-            "description": "Obtener una copia de todo lo que tenemos sobre ti."
-          },
-          "rectify": {
-            "term": "Rectificación",
-            "description": "Corregir cualquier dato erróneo."
-          },
-          "erase": {
-            "term": "Supresión",
-            "description": "Pedir su borrado, sujeto a obligaciones legales de conservación."
-          },
-          "portability": {
-            "term": "Portabilidad",
-            "description": "Recibir tus datos en formato estándar y legible por máquina."
-          },
-          "object": {
-            "term": "Oposición",
-            "description": "Pedirnos que dejemos de tratar datos bajo interés legítimo."
-          },
-          "ccpa": {
-            "term": "Do Not Sell (CCPA)",
-            "description": "No vendemos información personal. Lo confirmamos por escrito a solicitud."
-          }
-        }
-      },
-      "transfers": {
-        "title": "Transferencias internacionales",
-        "p1": "Cuando los datos salen de la UE, nos apoyamos en Cláusulas Contractuales Tipo (SCCs) y en el mecanismo de transferencia de cada proveedor. Los clientes europeos pueden solicitar procesamiento EU-only; lo honramos salvo para proveedores sin región europea (listados arriba con claridad)."
-      },
-      "cookies": {
-        "title": "Cookies",
-        "p1": "auphere.com solo emplea cookies estrictamente necesarias. Plausible no usa cookies. Si esto cambia, verás un banner de consentimiento antes de que se instale cualquier cookie."
-      },
-      "contact": {
-        "title": "Contacto",
-        "p1": "Consultas, solicitudes, reclamaciones, solicitudes de borrado de datos: contacto@auphere.com. Acusamos recibo en 5 días hábiles y respondemos en menos de 30 días, normalmente en la misma semana."
-      }
-    }
-  },
-  "terms": {
-    "meta": {
-      "title": "Términos",
-      "description": "El contrato del diagnóstico, setup y servicio gestionado de Auphere. Bespoke + managed: el código se queda con nosotros, tus datos siguen siendo tuyos."
-    },
-    "header": {
-      "eyebrow": "TÉRMINOS",
-      "meta": "Actualizado 2026-05-21",
-      "title": "El contrato, en español claro.",
-      "intro": "Estos términos regulan la llamada de diagnóstico, el setup del agente y el servicio gestionado continuo. Aplican junto al Master Services Agreement (MSA) y al Data Processing Agreement (DPA) que firmamos antes de procesar datos reales."
-    },
-    "sections": {
-      "service": {
-        "title": "Qué entregamos",
-        "p1": "Auphere opera un servicio bespoke de agente de IA en tres fases: una llamada de diagnóstico (gratuita, 30 minutos), un setup del agente (pago único, alcance acordado por escrito) y un servicio gestionado continuo (cuota mensual, el agente corre en nuestra infraestructura, operado 24/7 por nuestro equipo).",
-        "p2": "No somos un proveedor SaaS. No somos un contratista de software que entrega un código y se va. La relación es la operación: corremos el agente mientras el contrato esté vigente. Cuando el canal es WhatsApp, Auphere opera como Tech Provider autorizado por Meta Platforms, Inc.: el cliente conserva la propiedad de su WhatsApp Business Account (WABA) y Meta factura directamente al cliente el consumo de mensajería; Auphere solo cobra la cuota del servicio gestionado."
-      },
-      "diagnostic": {
-        "title": "El diagnóstico",
-        "p1": "El diagnóstico es una conversación de 30 minutos con un ingeniero. Sin coste y sin compromiso. Salimos con un una respuesta clara por escrito: qué workflows se automatizarían, qué integraciones harían falta, una estimación y un timeline.",
-        "p2": "Si concluimos que la automatización no resuelve tu problema, lo decimos y la relación termina ahí. Te quedas con nuestras notas."
-      },
-      "bespoke": {
-        "title": "Bespoke + managed",
-        "p1": "Tras firmar, configuramos el agente para tu operación real: tus herramientas, tu voz, tus reglas. El setup es un pago único, alcance por escrito, 50% al firmar y 50% al arranque. El agente sale en vivo solo cuando tú validas la configuración.",
-        "p2": "Desde el go-live, el agente corre bajo un servicio gestionado mensual: lo hospedamos, lo monitoreamos 24/7, arreglamos lo que se rompa y lo mejoramos en un ciclo acordado (mensual, quincenal o semanal según el tier)."
-      },
-      "code": {
-        "title": "Propiedad del código e infraestructura",
-        "p1": "El agente corre en infraestructura operada por Auphere. El código, los modelos, los prompts, la lógica de orquestación y la plataforma subyacente pertenecen a Auphere, no al cliente.",
-        "p2": "Esto es deliberado. Compras un agente funcionando y un servicio, no un código que mantener, contratar ingenieros para él o vigilar. Esa es nuestra responsabilidad."
-      },
-      "clientData": {
-        "title": "Lo que sí es tuyo",
-        "p1": "Tus datos son tuyos. Tu historial de conversaciones es tuyo. Tus reglas de negocio, tus integraciones, la configuración del agente y el tono de voz que afinamos a tu marca: todo tuyo. Puedes exportarlo cuando quieras, en formatos estándar.",
-        "p2": "Auphere nunca usa tus datos para entrenar modelos que vendemos a otros clientes. El DPA que firmamos lo codifica. Como contrapartida, el cliente se obliga a una política de uso aceptable: cumplir las políticas de WhatsApp (Business Messaging Policy y Commerce Policy), obtener opt-in válido del usuario final antes de iniciar conversaciones, no usar listas compradas o scrapeadas, y honrar las solicitudes de baja sin reintento. Si detectamos riesgo material de compliance — caída sostenida del quality rating, alerta de Meta, patrón de abuso — podemos suspender el canal de forma inmediata para proteger al resto de clientes; notificamos lo antes posible y damos al cliente la oportunidad de presentar descargos."
-      },
-      "fees": {
-        "title": "Cuotas y facturación",
-        "p1": "Los precios son en USD, impuestos excluidos. El setup se paga 50% al firmar el contrato, 50% al arranque. El servicio gestionado se factura mensualmente (o anualmente, con 10% de descuento).",
-        "p2": "Si el uso supera el volumen contratado (conversaciones, integraciones), acordamos el siguiente tier antes del siguiente ciclo de facturación. Sin facturas sorpresa."
-      },
-      "cancellation": {
-        "title": "Cancelación",
-        "p1": "Puedes cancelar el servicio gestionado cualquier mes a partir del cuarto, con 30 días de preaviso por escrito. No hay clawbacks ni lock-in contractual más allá del mínimo inicial de 3 meses.",
-        "p2": "Al terminar, abrimos una ventana de 30 días de exportación durante la cual entregamos tus datos, historial de conversaciones y configuración en formatos estándar. Si te mudas a otro proveedor, ayudamos con el handoff. Tras la ventana de exportación, borramos todos los datos del cliente salvo lo que la ley exija conservar."
-      },
-      "confidentiality": {
-        "title": "Confidencialidad y NDAs",
-        "p1": "Ambas partes tratan la información confidencial de la otra como confidencial, sin excepciones. Nuestro MSA estándar cubre esto para la mayoría de engagements. Firmamos NDAs personalizados para industrias reguladas (salud, servicios financieros, legal) bajo solicitud, sin fricción."
-      },
-      "sla": {
-        "title": "Niveles de servicio",
-        "p1": "Cada tier incluye un compromiso de respuesta a incidentes, escrito en el contrato. Business 360 incluye una ventana de respuesta de 4 horas para incidentes en producción.",
-        "p2": "Medimos métricas de resultado acordadas en el diagnóstico (tiempo de respuesta, tasa de resolución, no-shows recuperados). Las revisamos contigo en cada ciclo de mejora. Si una métrica se desvía, el siguiente ciclo de mejora prioriza arreglarla."
-      },
-      "liability": {
-        "title": "Responsabilidad",
-        "p1": "Nuestra responsabilidad agregada está limitada a las cuotas pagadas a Auphere en los doce meses anteriores a la reclamación. Excluimos daños indirectos y consecuenciales en la medida permitida por la ley.",
-        "p2": "Estos límites no aplican a indemnizaciones por incumplimientos de confidencialidad, conducta dolosa o incumplimiento de obligaciones de protección de datos; el MSA detalla las excepciones."
-      },
-      "law": {
-        "title": "Ley aplicable",
-        "p1": "Salvo que tu MSA indique lo contrario, estos términos se rigen por la ley española. Los clientes UE pueden elegir regirse por la ley de su residencia habitual a efectos de protección al consumidor."
-      }
-    }
-  },
-  "trust": {
-    "meta": {
-      "title": "Trust & Seguridad",
-      "description": "Cómo Auphere aísla los datos de cliente, dónde viven, quién los puede tocar y qué hacemos cuando algo sale mal."
-    },
-    "header": {
-      "eyebrow": "TRUST & SEGURIDAD",
-      "meta": "Compliance · aislamiento · transparencia",
-      "title": "Compliance-by-design. No checklist.",
-      "intro": "Dónde viven los datos, cómo se aíslan los tenants, qué se encripta, quién puede tocar qué y qué pasa cuando algo sale mal. La arquitectura, no el marketing."
-    },
-    "sections": {
-      "hosting": {
-        "title": "Dónde viven los datos",
-        "p1": "Nuestro runtime de producción está hospedado en infraestructura en la Unión Europea por defecto. Los clientes UE obtienen procesamiento EU-only bajo solicitud, con la excepción de proveedores que no ofrecen región UE (listados en la política de privacidad con su región).",
-        "p2": "Procesamiento US-only o LATAM-only está disponible para clientes con requisitos regulatorios que lo exijan, contrato por contrato."
-      },
-      "isolation": {
-        "title": "Cómo se aíslan los tenants",
-        "items": {
-          "rls": {
-            "term": "Aislamiento por fila",
-            "description": "Los datos de cada tenant están particionados a nivel de base de datos. El contexto de tenant se aplica automáticamente en cada query: el código de aplicación no puede aceptar un tenant_id de un caller, por diseño."
-          },
-          "tools": {
-            "term": "Whitelist de herramientas",
-            "description": "Cada agente lleva una lista explícita de herramientas e integraciones permitidas. Si un modelo intentara llamar algo fuera de la lista, el runtime rechaza la llamada antes de salir a un tercero."
-          },
-          "models": {
-            "term": "Sin entrenamiento cross-tenant",
-            "description": "Los datos de tus conversaciones nunca se usan para entrenar modelos que vendamos a otros clientes. Usamos APIs zero-retention con nuestros proveedores LLM."
-          }
-        }
-      },
-      "encryption": {
-        "title": "Encriptación",
-        "p1": "Todos los datos se encriptan en tránsito (TLS 1.3) y en reposo (AES-256 sobre almacenamiento gestionado). Los secretos se gestionan en Doppler y se rotan en calendario.",
-        "p2": "Los backups se encriptan con los mismos controles y se conservan 30 días."
-      },
-      "access": {
-        "title": "Quién accede a qué",
-        "p1": "El acceso a datos de cliente está restringido a los ingenieros que están entregando o soportando activamente el agente de ese cliente: una lista corta y nominal por engagement. Todo acceso queda logueado.",
-        "p2": "Los ingenieros usan cuentas nominales, MFA por hardware y credenciales de vida corta. Sin cuentas compartidas. Sin reutilización de contraseñas entre sistemas."
-      },
-      "compliance": {
-        "title": "Postura de compliance",
-        "items": {
-          "gdpr": {
-            "term": "GDPR",
-            "description": "alojada en la UE por defecto. DPA firmado antes de tocar datos reales. Subencargados listados en la política de privacidad."
-          },
-          "ccpa": {
-            "term": "CCPA",
-            "description": "No vendemos información personal. Residentes en California pueden ejercer derechos CCPA vía contacto@auphere.com."
-          },
-          "lgpd": {
-            "term": "LGPD",
-            "description": "Clientes brasileños pueden solicitar procesamiento alineado con LGPD: mismas garantías operativas que GDPR, con enmiendas contractuales según sea necesario."
-          },
-          "soc2": {
-            "term": "SOC 2",
-            "description": "Aún no iniciada: está en nuestro plan de certificación. Mientras tanto, compartimos el cuestionario de seguridad y los controles vigentes bajo NDA, a solicitud."
-          }
-        }
-      },
-      "aitransparency": {
-        "title": "Transparencia de IA (art. 50 del Reglamento europeo de IA)",
-        "p1": "Todo agente de Auphere se identifica como IA desde el primer mensaje, en todos los canales. Es un deber de diseño del art. 50 del Reglamento europeo de IA, aplicable desde el 2 de agosto de 2026: en voz, el agente lo dice al inicio de la llamada; en texto, en su presentación. No diseñamos agentes para hacerse pasar por humanos, y rechazamos configuraciones que lo pidan.",
-        "p2": "Cuando el agente no puede o no debe resolver algo, escala a una persona con el contexto completo de la conversación. Ese escalado a humano viene activado de serie — es también lo que exige a los bots de atención al cliente la Ley 10/2025 en España a partir del 28 de diciembre de 2026."
-      },
-      "subprocessors": {
-        "title": "Subencargados",
-        "p1": "La lista completa y actualizada de subencargados se publica en nuestra política de privacidad, con la región y el propósito de cada uno. Notificamos a los clientes con antelación ante cualquier cambio."
-      },
-      "incident": {
-        "title": "Si algo sale mal",
-        "p1": "Nos comprometemos a notificar a los clientes afectados de cualquier incidente de seguridad confirmado en un plazo de 72 horas desde su detección, con lo que sepamos en ese momento y cómo estamos respondiendo.",
-        "p2": "Hacemos postmortems sin culpa para cualquier incidente de producción con impacto material y compartimos los hallazgos relevantes con los clientes."
-      },
-      "vuln": {
-        "title": "Reportar una vulnerabilidad",
-        "p1": "Si crees haber encontrado un problema de seguridad, escribe a contacto@auphere.com con asunto [security]. Acusamos recibo en 1 día laboral, arreglamos los problemas verificados sin ceremonia y damos crédito a los reporteros que quieran el reconocimiento."
-      }
     }
   },
   "docs": {

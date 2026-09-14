@@ -18,6 +18,19 @@ const nextConfig: NextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
   },
+  // Rutas legales antiguas y slugs en el idioma equivocado → slug correcto.
+  async redirects() {
+    return [
+      { source: '/es/privacy', destination: '/es/privacidad', permanent: true },
+      { source: '/es/terms', destination: '/es/terminos', permanent: true },
+      { source: '/es/security', destination: '/es/seguridad', permanent: true },
+      { source: '/es/trust', destination: '/es/seguridad', permanent: true },
+      { source: '/en/privacidad', destination: '/en/privacy', permanent: true },
+      { source: '/en/terminos', destination: '/en/terms', permanent: true },
+      { source: '/en/seguridad', destination: '/en/security', permanent: true },
+      { source: '/en/trust', destination: '/en/security', permanent: true },
+    ];
+  },
   async headers() {
     return [
       {

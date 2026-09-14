@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 import { VERTICAL_SLUGS } from '@/lib/use-cases/verticals';
 import { DOC_PAGES } from '@/content/docs/registry';
+import { LEGAL_SLUGS } from '@/lib/site';
 
 const STATIC_ROUTES = [
   '',
@@ -14,9 +15,6 @@ const STATIC_ROUTES = [
   '/use-cases',
   '/eu-ai-act-article-50',
   '/about',
-  '/trust',
-  '/privacy',
-  '/terms',
 ] as const;
 
 /** ES-only (D-11): la Ley 10/2025 no tiene gemela EN. */
@@ -59,6 +57,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
+  // Legales: un slug por idioma (README §Estructura), con alternates cruzados.
+  const legal = routing.locales.flatMap((locale) =>
+    (Object.keys(LEGAL_SLUGS) as Array<keyof typeof LEGAL_SLUGS>).map((key) => ({
+      url: `${url}/${locale}/${LEGAL_SLUGS[key][locale]}`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.4,
+      alternates: {
+        languages: Object.fromEntries(routing.locales.map((l) => [l, `${url}/${l}/${LEGAL_SLUGS[key][l]}`])),
+      },
+    })),
+  );
+
   const esOnly = ES_ONLY_ROUTES.map((route) => ({
     url: `${url}/es${route}`,
     lastModified: now,
@@ -66,5 +77,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: priorityFor(route),
   }));
 
-  return [...localized, ...esOnly];
+  return [...localized, ...legal, ...esOnly];
 }
