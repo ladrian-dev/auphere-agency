@@ -8,7 +8,7 @@ import { RevealText } from './RevealText';
 export function Solution() {
   const t = useTranslations('home.solution');
   return (
-    <section className="pt-[clamp(64px,12vw,140px)] pb-[clamp(64px,8vw,140px)] max-tab:py-[clamp(56px,14vw,80px)]">
+    <section className="section-y">
       <div className="container-site">
         <p className="type-eyebrow text-center">{t('eyebrow')}</p>
         <RevealText

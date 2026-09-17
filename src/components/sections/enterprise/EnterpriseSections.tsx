@@ -133,7 +133,7 @@ export function TalkToSales({ lang }: { lang: Lang }) {
   return (
     <section
       id="agenda"
-      className="relative isolate scroll-mt-16 pt-[clamp(96px,12vw,160px)] pb-[clamp(64px,8vw,100px)] max-tab:py-[clamp(56px,14vw,80px)]"
+      className="relative isolate scroll-mt-16 section-y"
     >
       <div
         aria-hidden

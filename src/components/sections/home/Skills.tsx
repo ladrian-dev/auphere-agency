@@ -1,14 +1,14 @@
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { TickIcon } from '@/components/primitives/icons';
 import { CtaLink } from '@/components/primitives/CtaLink';
 import { cn } from '@/lib/utils/cn';
 
 const ITEMS = [
-  { key: 'audio', src: '/img/skill-audio.webp', flip: false },
-  { key: 'memory', src: '/img/skill-memory.webp', flip: true },
-  { key: 'bookings', src: '/img/skill-bookings.webp', flip: false },
-  { key: 'handoff', src: '/img/skill-handoff.webp', flip: true },
+  { key: 'audio', image: 'skill-audio', flip: false },
+  { key: 'memory', image: 'skill-memory', flip: true },
+  { key: 'bookings', image: 'skill-bookings', flip: false },
+  { key: 'handoff', image: 'skill-handoff', flip: true },
 ] as const;
 
 const BULLETS = ['b1', 'b2', 'b3', 'b4'] as const;
@@ -19,6 +19,8 @@ const BULLETS = ['b1', 'b2', 'b3', 'b4'] as const;
  */
 export function Skills() {
   const t = useTranslations('home.skills');
+  // Las capturas llevan texto: cada idioma tiene la suya (`skill-audio.webp` / `skill-audio.en.webp`).
+  const suffix = useLocale() === 'en' ? '.en' : '';
 
   return (
     <section id="funciones" className="section-y scroll-mt-24">
@@ -32,7 +34,7 @@ export function Skills() {
           <p className="type-lead mt-[18px]">{t('lead')}</p>
         </div>
 
-        <div className="mt-[72px] flex flex-col gap-[clamp(56px,8vw,120px)] max-tab:mt-12">
+        <div className="mt-14 flex flex-col gap-[clamp(48px,6vw,88px)] max-tab:mt-10">
           {ITEMS.map((item) => (
             <article
               key={item.key}
@@ -47,7 +49,7 @@ export function Skills() {
                 <div className="card-gradient relative p-3">
                   <div className="overflow-hidden rounded-[14px] bg-[#04302D]" style={{ aspectRatio: '4 / 3' }}>
                     <Image
-                      src={item.src}
+                      src={`/img/${item.image}${suffix}.webp`}
                       alt={t(`items.${item.key}.alt`)}
                       width={1200}
                       height={896}

@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 const STEPS = [
-  { key: 's1', src: '/img/step-01.webp' },
-  { key: 's2', src: '/img/step-02.webp' },
-  { key: 's3', src: '/img/step-03.webp' },
+  { key: 's1', image: 'step-01' },
+  { key: 's2', image: 'step-02' },
+  { key: 's3', image: 'step-03' },
 ] as const;
 
 /**
@@ -13,6 +13,8 @@ const STEPS = [
  */
 export function HowItWorks() {
   const t = useTranslations('home.how');
+  // Las capturas llevan texto: cada idioma tiene la suya (`step-01.webp` / `step-01.en.webp`).
+  const suffix = useLocale() === 'en' ? '.en' : '';
 
   return (
     <section id="como" className="section-y scroll-mt-24">
@@ -26,7 +28,7 @@ export function HowItWorks() {
           <p className="type-lead mt-[18px]">{t('lead')}</p>
         </div>
 
-        <ol className="mt-16 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4 max-tab:mt-10">
+        <ol className="mt-12 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4 max-tab:mt-10">
           {STEPS.map((step) => (
             <li key={step.key} className="card card-hover flex flex-col gap-3.5 p-7 max-tab:text-center">
               <span className="text-[14px] font-semibold text-[var(--color-primary)]">{t(`steps.${step.key}.n`)}</span>
@@ -34,7 +36,7 @@ export function HowItWorks() {
               <p className="text-[16px] leading-[1.55] text-[rgba(241,247,246,.7)] [text-wrap:pretty]">{t(`steps.${step.key}.body`)}</p>
               <div className="mt-auto overflow-hidden rounded-[14px] border border-[rgba(241,247,246,.08)] bg-[#04302D]" style={{ aspectRatio: '904 / 368' }}>
                 <Image
-                  src={step.src}
+                  src={`/img/${step.image}${suffix}.webp`}
                   alt={t(`steps.${step.key}.alt`)}
                   width={1344}
                   height={576}
