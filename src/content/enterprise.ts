@@ -58,7 +58,7 @@ export const enterpriseHero = {
 /** 02 — Garantías y SLAs: lo que cumplimos hoy y lo que firmamos con fecha. */
 export const guarantees = {
   eyebrow: { es: 'Garantías y SLAs', en: 'Guarantees and SLAs' },
-  title: { es: 'Lo que cumplimos hoy y lo que firmamos.', en: 'What we deliver today and what we sign.' },
+  title: { es: 'Palabras que se cumplen, plazos que se firman.', en: 'Words we keep, deadlines we sign.' },
   lead: {
     es: 'Lo que está con fecha va al contrato con fecha, y con derecho de terminación sin penalización si no se cumple.',
     en: 'Anything dated goes into the contract with its date, and with the right to terminate without penalty if it is not met.',

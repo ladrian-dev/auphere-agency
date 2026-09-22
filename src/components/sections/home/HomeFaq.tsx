@@ -84,16 +84,21 @@ export function HomeFaq() {
             <a href={`mailto:${CONTACT_EMAIL}`} className="btn btn-outline-accent btn-sm self-start max-tab:self-stretch">
               {t('help.cta')}
             </a>
-            <div className="mt-auto overflow-hidden rounded-[14px] bg-[#04302D]" style={{ aspectRatio: '677 / 388' }}>
-              <Image
-                src="/img/faq-team.webp"
-                alt={t('help.alt')}
-                width={1100}
-                height={619}
-                sizes="(min-width: 961px) 520px, 100vw"
-                className="size-full object-cover"
-              />
-            </div>
+            {/* Mark es el único presentador autorizado (brand-system §9.1): siempre
+                etiquetado como generado con IA, sobre superficie de marca. */}
+            <figure className="mt-auto">
+              <div className="overflow-hidden rounded-[14px] bg-[#04302D]" style={{ aspectRatio: '677 / 388' }}>
+                <Image
+                  src="/img/faq-mark.webp"
+                  alt={t('help.alt')}
+                  width={1200}
+                  height={688}
+                  sizes="(min-width: 961px) 520px, 100vw"
+                  className="size-full object-cover"
+                />
+              </div>
+              <figcaption className="mt-2 text-[12px] text-[var(--color-text-4)]">{t('help.aiNote')}</figcaption>
+            </figure>
           </div>
         </div>
       </div>
