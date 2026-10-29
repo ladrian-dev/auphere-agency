@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 import type { LegalKey } from '@/lib/site';
 
 const ITEMS: Record<LegalKey, readonly string[]> = {
-  privacy: ['s01', 's02', 's03', 's04', 's05', 's06', 's07', 's08'],
+  privacy: ['s01', 's02', 's03', 's04', 's05', 's06', 's07', 's09', 's10', 's11', 's08'],
   terms: ['s01', 's02', 's03', 's04', 's05', 's06', 's07', 's08', 's09'],
   security: ['s01', 's02', 's03', 's04', 's05', 's06', 's07', 's08', 's09'],
 };
@@ -26,7 +26,8 @@ export function LegalArticle({ page }: { page: LegalKey }) {
           <p className="type-eyebrow">{t('eyebrow')}</p>
           <h1 className="type-h1-article mt-3.5">{tp('title')}</h1>
           <p className="type-lead mt-[18px]">{tp('lead')}</p>
-          <p className="mt-3.5 text-[14px] text-[rgba(241,247,246,.5)]">{t('updated')}</p>
+          {/* Una página puede llevar su propia fecha; si no, usa la común de `legal`. */}
+          <p className="mt-3.5 text-[14px] text-[rgba(241,247,246,.5)]">{tp.has(key('updated')) ? tp(key('updated')) : t('updated')}</p>
         </header>
         <ol className="mt-14 flex max-w-[72ch] flex-col border-t border-[var(--color-line)] max-tab:mt-10">
           {ITEMS[page].map((k, i) => (

@@ -452,6 +452,7 @@
       },
       "title": "Privacy policy",
       "lead": "What data we process, why and on what basis. Written to be read, not to cover ourselves.",
+      "updated": "Last updated: 29 October 2026",
       "items": {
         "s01": {
           "title": "Who processes your data",
@@ -484,6 +485,18 @@
         "s08": {
           "title": "Changes to this policy",
           "body": "If anything relevant changes we will publish it here with a date and, if you are a client, let you know before it takes effect."
+        },
+        "s09": {
+          "title": "WhatsApp, Instagram and Messenger data",
+          "body": "When a business connects its WhatsApp number, its Instagram professional account or its Facebook Page to Auphere, we receive from Meta only what its agent needs to handle the conversations: the ID and profile name of the person writing (on WhatsApp, also their phone number), the messages, files and reactions they send, delivery and read status, comments and mentions on the business's posts, and data about the connected account (IDs, name, message templates and product catalog). We use it only to reply on behalf of that business, show the business its conversations and comply with Meta's rules. We do not sell it, use it for advertising or profiling, or combine it across businesses. The business is the controller of this data and Auphere processes it on its behalf, in line with the Meta Platform Terms."
+        },
+        "s10": {
+          "title": "Who we share this data with",
+          "body": "With the business that connected the account, which sees its conversations in the Auphere console. With Meta, which carries the messages. With the providers that host the service and the AI model providers that generate the agent's replies, which act as sub-processors under a data processing agreement. And with authorities only when the law requires it. Sub-processors are listed in the annex of each contract (see \"Where it is hosted\")."
+        },
+        "s11": {
+          "title": "How to ask us to delete your data",
+          "body": "If you wrote to a business on WhatsApp, Instagram or Messenger and want us to delete your messages and profile data, email contacto@auphere.com with the subject \"Delete my data\", stating the channel, the business name and your number or username. We confirm and delete it within 30 days at most, and we let the business know, as it is the controller. If you are a business, you can disconnect the channel from the console or remove Auphere's access in Facebook's Business Integrations settings or Instagram's Apps and Websites settings; we stop receiving data immediately, delete the access tokens and delete or anonymise the rest within 30 days at most, except what the law requires us to keep."
         }
       }
     },

@@ -452,6 +452,7 @@
       },
       "title": "Política de privacidad",
       "lead": "Qué datos tratamos, para qué y con qué base. Escrito para leerse, no para cubrirse.",
+      "updated": "Última actualización: 29 de octubre de 2026",
       "items": {
         "s01": {
           "title": "Quién trata tus datos",
@@ -484,6 +485,18 @@
         "s08": {
           "title": "Cambios en esta política",
           "body": "Si cambia algo relevante, lo publicaremos aquí con fecha y, si eres cliente, te avisaremos antes de que entre en vigor."
+        },
+        "s09": {
+          "title": "Datos de WhatsApp, Instagram y Messenger",
+          "body": "Cuando un negocio conecta su número de WhatsApp, su cuenta profesional de Instagram o su página de Facebook a Auphere, recibimos de Meta solo lo necesario para que su agente atienda las conversaciones: el identificador y el nombre de perfil de quien escribe (en WhatsApp, también su número de teléfono), los mensajes, archivos y reacciones que envía, el estado de entrega y lectura, los comentarios y menciones en las publicaciones del negocio, y los datos de la cuenta conectada (identificadores, nombre, plantillas y catálogo de productos). Los usamos únicamente para responder en nombre de ese negocio, mostrarle sus conversaciones y cumplir las normas de Meta. No los vendemos, no los usamos para publicidad ni para crear perfiles, y no los cruzamos entre negocios. El negocio es el responsable de esos datos y Auphere los trata por su cuenta, de acuerdo con las Condiciones de la Plataforma de Meta."
+        },
+        "s10": {
+          "title": "Con quién compartimos estos datos",
+          "body": "Con el negocio que conectó la cuenta, que ve sus conversaciones en la consola de Auphere. Con Meta, que es por donde viajan los mensajes. Con los proveedores que alojan el servicio y con los proveedores de modelos de IA que generan las respuestas del agente, que actúan como subencargados con contrato de tratamiento de datos. Y con las autoridades, solo cuando la ley nos obliga. Los subencargados están listados en el anexo de cada contrato (ver «Dónde se alojan»)."
+        },
+        "s11": {
+          "title": "Cómo pedir que borremos tus datos",
+          "body": "Si escribiste a un negocio por WhatsApp, Instagram o Messenger y quieres que borremos tus mensajes y datos de perfil, escríbenos a contacto@auphere.com con el asunto «Borrar mis datos», indicando el canal, el nombre del negocio y tu número o usuario. Lo confirmamos y lo borramos en un plazo máximo de 30 días, y avisamos al negocio, que es el responsable. Si eres un negocio, puedes desconectar el canal desde la consola o quitar el acceso de Auphere en la configuración de integraciones comerciales de Facebook o de apps y sitios web de Instagram; dejamos de recibir datos al instante, borramos los tokens de acceso y eliminamos o anonimizamos el resto en un plazo máximo de 30 días, salvo lo que la ley nos obligue a conservar."
         }
       }
     },
