@@ -452,7 +452,7 @@
       },
       "title": "Política de privacidad",
       "lead": "Qué datos tratamos, para qué y con qué base. Escrito para leerse, no para cubrirse.",
-      "updated": "Última actualización: 29 de octubre de 2026",
+      "updated": "Última actualización: 26 de noviembre de 2026",
       "items": {
         "s01": {
           "title": "Quién trata tus datos",
@@ -497,6 +497,10 @@
         "s11": {
           "title": "Cómo pedir que borremos tus datos",
           "body": "Si escribiste a un negocio por WhatsApp, Instagram o Messenger y quieres que borremos tus mensajes y datos de perfil, escríbenos a contacto@auphere.com con el asunto «Borrar mis datos», indicando el canal, el nombre del negocio y tu número o usuario. Lo confirmamos y lo borramos en un plazo máximo de 30 días, y avisamos al negocio, que es el responsable. Si eres un negocio, puedes desconectar el canal desde la consola o quitar el acceso de Auphere en la configuración de integraciones comerciales de Facebook o de apps y sitios web de Instagram; dejamos de recibir datos al instante, borramos los tokens de acceso y eliminamos o anonimizamos el resto en un plazo máximo de 30 días, salvo lo que la ley nos obligue a conservar."
+        },
+        "s12": {
+          "title": "La app Auphere Customers",
+          "body": "La app Auphere Customers, en el App Store y en Google Play, es para las personas de los negocios que usan Auphere. La cuenta la da Auphere o la empresa que gestiona el agente del negocio; desde la app no se puede crear. Al usarla tratamos tu nombre, tu correo y el identificador de tu cuenta, para que entres y veas lo de tu negocio. También tratamos, por cuenta del negocio, los mensajes, las fotos y los archivos que envías a sus clientes desde la Bandeja, y el nombre y el teléfono de los clientes a los que reservas. Del teléfono guardamos el modelo, el sistema, el idioma, la versión de la app, un identificador de instalación y el token de avisos, para mantener tu sesión y enviarte los avisos que actives. La cámara y la galería solo se usan cuando eliges enviar una foto, y los avisos solo llegan si los activas; los dos permisos se retiran en los ajustes del teléfono. Los avisos los entregan Apple (APNs) y Google (Firebase Cloud Messaging), y las actualizaciones de la app, Expo. La app no tiene anuncios ni analítica de terceros, no te rastrea y no lee el identificador de publicidad. Para borrar tu cuenta, entra en Ajustes › «Solicitar el borrado de la cuenta» o escríbenos a contacto@auphere.com: te lo confirmamos por correo y borramos la cuenta y sus datos personales en un plazo máximo de un mes, salvo lo que la ley nos obligue a conservar. Los mensajes que enviaste a los clientes son parte de las conversaciones del negocio, que decide cuánto se guardan."
         }
       }
     },

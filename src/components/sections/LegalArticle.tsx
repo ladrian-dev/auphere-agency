@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 import type { LegalKey } from '@/lib/site';
 
 const ITEMS: Record<LegalKey, readonly string[]> = {
-  privacy: ['s01', 's02', 's03', 's04', 's05', 's06', 's07', 's09', 's10', 's11', 's08'],
+  privacy: ['s01', 's02', 's03', 's04', 's05', 's06', 's07', 's09', 's10', 's11', 's12', 's08'],
   terms: ['s01', 's02', 's03', 's04', 's05', 's06', 's07', 's08', 's09'],
   security: ['s01', 's02', 's03', 's04', 's05', 's06', 's07', 's08', 's09'],
 };
