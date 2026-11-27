@@ -452,7 +452,7 @@
       },
       "title": "Privacy policy",
       "lead": "What data we process, why and on what basis. Written to be read, not to cover ourselves.",
-      "updated": "Last updated: 29 October 2026",
+      "updated": "Last updated: 26 November 2026",
       "items": {
         "s01": {
           "title": "Who processes your data",
@@ -497,6 +497,10 @@
         "s11": {
           "title": "How to ask us to delete your data",
           "body": "If you wrote to a business on WhatsApp, Instagram or Messenger and want us to delete your messages and profile data, email contacto@auphere.com with the subject \"Delete my data\", stating the channel, the business name and your number or username. We confirm and delete it within 30 days at most, and we let the business know, as it is the controller. If you are a business, you can disconnect the channel from the console or remove Auphere's access in Facebook's Business Integrations settings or Instagram's Apps and Websites settings; we stop receiving data immediately, delete the access tokens and delete or anonymise the rest within 30 days at most, except what the law requires us to keep."
+        },
+        "s12": {
+          "title": "The Auphere Customers app",
+          "body": "The Auphere Customers app, on the App Store and Google Play, is for the people at businesses that use Auphere. Accounts are issued by Auphere or by the company that manages the business's agent; they cannot be created in the app. When you use it, we process your name, your email address and your account identifier, so that you can sign in and see your business. On the business's behalf, we also process the messages, photos and files you send to its customers from the Inbox, and the name and phone number of the customers you book. From your phone, we keep its model, operating system, language, app version, an installation identifier and its notification token, to keep you signed in and to send you the notifications you turn on. The camera and photo library are only used when you choose to send a photo, and notifications only arrive if you turn them on; you can withdraw both permissions in your phone's settings. Notifications are delivered by Apple (APNs) and Google (Firebase Cloud Messaging), and app updates by Expo. The app has no ads and no third-party analytics, does not track you and does not read the advertising identifier. To delete your account, go to Settings › \"Request account deletion\" or email contacto@auphere.com: we confirm it by email and delete the account and its personal data within one month at most, except what the law requires us to keep. The messages you sent to customers are part of the business's conversations, and the business decides how long they are kept."
         }
       }
     },
